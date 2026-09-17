@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "checkedAt": "2026-09-16T20:47:16.763Z",
   "files": {
     "transport": {
@@ -36,5 +36,8 @@
       "status": "aggiornato",
       "error": null
     }
-  }
+  },
+  "app": "muevt",
+  "signedAt": "2026-09-17T16:55:40.270Z",
+  "keyId": "5VTN2Etz"
 }

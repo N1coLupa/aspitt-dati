@@ -32,10 +32,13 @@ jobs:
         with:
           node-version: 22
 
-      - run: npm install --no-audit --no-fund
+      # Niente script di installazione delle dipendenze: meno rischi dalla catena di fornitura.
+      - run: npm ci --ignore-scripts --no-audit --no-fund
 
-      - name: Scarica e controlla
+      - name: Scarica, controlla e firma
         run: npm run aggiorna
+        env:
+          MUEVT_FIRMA_CHIAVE: ${{ secrets.MUEVT_FIRMA_CHIAVE }}
 
       - name: Pubblica i dati cambiati
         run: |
