@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T20:47:10.320Z",
+  "generatedAt": "2026-09-19T16:51:53.966Z",
   "sources": [
     {
       "name": "AltamuraLive",
@@ -11,51 +11,6 @@
     }
   ],
   "events": [
-    {
-      "id": "life-legami-rassegna-di-cinema-nel-teatro-mercadante",
-      "title": "Legàmi, rassegna di cinema nel Teatro Mercadante",
-      "url": "https://www.altamuralife.it/eventi/legami-rassegna-di-cinema-nel-teatro-mercadante/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17",
-      "startTime": null,
-      "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_manifesto_legami.jpg",
-      "summary": "Da giovedì 17 settembre",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "live-legami-al-teatro-mercadante-quattro-film-per-raccontare-cio-",
-      "title": "“Legàmi”, al Teatro Mercadante quattro film per raccontare ciò che unisce e divide la società italiana",
-      "url": "https://altamuralive.it/2026/09/11/legami-al-teatro-mercadante-quattro-film-per-raccontare-cio-che-unisce-e-divide-la-societa-italiana/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-09-11T09:05:35.000Z",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17",
-      "startTime": null,
-      "venue": "Teatro Mercadante",
-      "image": null,
-      "summary": "Dal 17 settembre al 1° ottobre torna al Teatro Mercadante la rassegna “Legàmi”, organizzata da Altamura al Cinema: quattro appuntamenti tra politica, sport, famiglia e religione, con proiezioni, ospiti e dibattiti. Si parte con “Giulio Regeni, tutto il male del mondo”. Biglietti a 6 euro.",
-      "tags": [
-        "Cultura",
-        "Spettacolo",
-        "appuntamenti culturali",
-        "comune di altamura",
-        "iniziativa pubblica",
-        "rassegna cinematografica"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
     {
       "id": "live-murgia-a-morsi-2026-ad-altamura-tre-giorni-tra-sapori-musica",
       "title": "Murgia a Morsi 2026: ad Altamura tre giorni tra sapori, musica, cultura e tradizioni",
@@ -189,6 +144,25 @@
       "dated": true
     },
     {
+      "id": "life-legami-rassegna-di-cinema-nel-teatro-mercadante",
+      "title": "Legàmi, rassegna di cinema nel Teatro Mercadante",
+      "url": "https://www.altamuralife.it/eventi/legami-rassegna-di-cinema-nel-teatro-mercadante/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": "2026-10-01",
+      "startTime": null,
+      "venue": null,
+      "image": "https://altamura.gocity.it/library/media/mfront_manifesto_legami.jpg",
+      "summary": "Fino al 1 ottobre",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
       "id": "live-santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curios",
       "title": "“Santa Maria” ad Altamura: le origini, le tradizioni e le curiosità della festa altamurana",
       "url": "https://altamuralive.it/2026/08/14/santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curiosita-della-festa-altamurana/",
@@ -209,6 +183,25 @@
         "comunità",
         "Festa di Santa Maria Assunta"
       ],
+      "categories": [
+        "cultura"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo",
+      "title": "Nel segno di Brera: in mostra i dipinti di Addamiano, De Cosmo e Scazzosi",
+      "url": "https://www.altamuralife.it/eventi/nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo-e-scazzosi/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "image": "https://altamura.gocity.it/library/media/mfront_mostra_adda.jpg",
+      "summary": "Oggi",
+      "tags": [],
       "categories": [
         "cultura"
       ],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T20:47:16.757Z",
+  "generatedAt": "2026-09-19T16:51:17.261Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -95,6 +95,14 @@
           "distance": 266
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 279
+        },
+        {
           "stopId": "stop-via-dei-mille-103",
           "name": "Via Dei Mille 103",
           "lines": [
@@ -102,14 +110,6 @@
             "linea-ovest"
           ],
           "distance": 302
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 309
         }
       ]
     },
@@ -160,22 +160,22 @@
           "distance": 278
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
           "lines": [
-            "linea-ovest"
+            "navette-hub"
           ],
-          "distance": 328
+          "distance": 300
         },
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
           "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "tpl-regionale"
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
           ],
-          "distance": 339
+          "distance": 323
         }
       ],
       "image": null,
@@ -238,6 +238,14 @@
           "distance": 265
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 272
+        },
+        {
           "stopId": "stop-via-dei-mille-103",
           "name": "Via Dei Mille 103",
           "lines": [
@@ -245,14 +253,6 @@
             "linea-ovest"
           ],
           "distance": 285
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 293
         }
       ],
       "image": null,
@@ -339,12 +339,13 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri",
-          "name": "Viale Martiri",
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri 6",
           "lines": [
+            "navette-hub",
             "linea-scuola-3"
           ],
-          "distance": 276
+          "distance": 281
         },
         {
           "stopId": "stop-via-santeramo-119",
@@ -419,6 +420,14 @@
       "experience": null,
       "nearbyStops": [
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 38
+        },
+        {
           "stopId": "stop-piazza-unita-d-italia-8",
           "name": "Piazza Unità D’Italia 8",
           "lines": [
@@ -432,14 +441,6 @@
           "name": "Via IV Novembre (fronte 1)",
           "lines": [
             "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 285
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
             "navette-hub"
           ],
           "distance": 285
@@ -494,12 +495,23 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri",
-          "name": "Viale Martiri",
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri 6",
           "lines": [
+            "navette-hub",
             "linea-scuola-3"
           ],
-          "distance": 181
+          "distance": 180
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 185
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
@@ -507,17 +519,7 @@
           "lines": [
             "linea-ovest"
           ],
-          "distance": 193
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "tpl-regionale"
-          ],
-          "distance": 220
+          "distance": 202
         }
       ]
     },
@@ -719,14 +721,6 @@
           "distance": 101
         },
         {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 116
-        },
-        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
@@ -737,6 +731,14 @@
             "tpl-regionale"
           ],
           "distance": 132
+        },
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 136
         }
       ]
     },
@@ -931,30 +933,31 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
+          "stopId": "stop-via-palestro-58-empire",
+          "name": "Via Palestro 58 (Empire)",
           "lines": [
             "navette-hub"
           ],
-          "distance": 321
+          "distance": 64
         },
         {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 379
-        },
-        {
-          "stopId": "stop-via-santeramo-161",
-          "name": "Via Santeramo 161",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
           "lines": [
             "ospedale-2",
-            "navette-hub"
+            "ospedale-domenica-e-festivi",
+            "navette-hub",
+            "linea-scuola-3"
           ],
-          "distance": 407
+          "distance": 78
+        },
+        {
+          "stopId": "stop-via-papa-giovanni-xxiii-83",
+          "name": "Via Papa Giovanni XXIII 83",
+          "lines": [
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 370
         }
       ]
     },
@@ -994,21 +997,20 @@
           "distance": 155
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 175
+        },
+        {
           "stopId": "stop-via-santeramo-119",
           "name": "Via Santeramo 119",
           "lines": [
             "ospedale-2"
           ],
           "distance": 336
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 406
         }
       ]
     },
@@ -1048,21 +1050,20 @@
           "distance": 171
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 194
+        },
+        {
           "stopId": "stop-via-santeramo-119",
           "name": "Via Santeramo 119",
           "lines": [
             "ospedale-2"
           ],
           "distance": 327
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 405
         }
       ]
     },
@@ -1102,21 +1103,21 @@
           "distance": 82
         },
         {
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 84
+        },
+        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri 6",
           "lines": [
             "navette-hub",
             "linea-scuola-3"
           ],
-          "distance": 144
-        },
-        {
-          "stopId": "stop-viale-martiri",
-          "name": "Viale Martiri",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 241
+          "distance": 250
         }
       ]
     },
@@ -1156,20 +1157,20 @@
           "distance": 262
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 294
+        },
+        {
           "stopId": "stop-via-santeramo-119",
           "name": "Via Santeramo 119",
           "lines": [
             "ospedale-2"
           ],
           "distance": 301
-        },
-        {
-          "stopId": "stop-viale-martiri",
-          "name": "Viale Martiri",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 351
         }
       ]
     },
@@ -1205,7 +1206,7 @@
           "lines": [
             "navette-hub"
           ],
-          "distance": 149
+          "distance": 120
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -1217,14 +1218,14 @@
           "distance": 152
         },
         {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli 7",
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "pescariello-z-i"
+            "navette-hub",
+            "pescariello-z-i",
+            "tpl-regionale"
           ],
-          "distance": 171
+          "distance": 198
         }
       ]
     },
@@ -1339,30 +1340,31 @@
       "experience": null,
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri 6",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-3"
+          ],
+          "distance": 37
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 83
+        },
+        {
           "stopId": "stop-viale-martiri",
           "name": "Viale Martiri",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 45
-        },
-        {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 91
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "tpl-regionale"
-          ],
-          "distance": 130
+          "distance": 84
         }
       ]
     },
@@ -1444,21 +1446,20 @@
           "distance": 119
         },
         {
-          "stopId": "stop-via-bresso",
-          "name": "Via Bresso",
-          "lines": [
-            "linea-scuola-2",
-            "linea-scuola-3"
-          ],
-          "distance": 138
-        },
-        {
           "stopId": "stop-cimitero-presso-ingresso-monumentale",
           "name": "Cimitero presso Ingresso Monumentale",
           "lines": [
             "ospedale-1"
           ],
           "distance": 193
+        },
+        {
+          "stopId": "stop-cimitero-entrata-monumentale",
+          "name": "Cimitero (entrata Monumentale)",
+          "lines": [
+            "linea-ovest"
+          ],
+          "distance": 221
         }
       ],
       "image": null,
@@ -1529,21 +1530,23 @@
           "distance": 334
         },
         {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 375
-        },
-        {
-          "stopId": "stop-via-iv-novembre-fronte-1",
-          "name": "Via IV Novembre (fronte 1)",
+          "stopId": "stop-via-parisi-66",
+          "name": "Via Parisi 66",
           "lines": [
             "ospedale-2",
-            "navette-hub"
+            "ospedale-domenica-e-festivi",
+            "linea-ovest",
+            "pescariello-z-i"
           ],
-          "distance": 428
+          "distance": 365
+        },
+        {
+          "stopId": "stop-via-parisi-fronte-civico-66",
+          "name": "Via Parisi - fronte civico 66",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 365
         }
       ]
     },
@@ -2313,6 +2316,14 @@
           "distance": 239
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 255
+        },
+        {
           "stopId": "stop-via-dei-mille-103",
           "name": "Via Dei Mille 103",
           "lines": [
@@ -2320,14 +2331,6 @@
             "linea-ovest"
           ],
           "distance": 333
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 341
         }
       ]
     },
@@ -2502,6 +2505,14 @@
           "distance": 199
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 205
+        },
+        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
@@ -2512,14 +2523,6 @@
             "tpl-regionale"
           ],
           "distance": 337
-        },
-        {
-          "stopId": "stop-via-dei-mille-fronte-40",
-          "name": "Via Dei Mille fronte 40",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 339
         }
       ]
     },
@@ -2559,6 +2562,14 @@
           "distance": 264
         },
         {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 271
+        },
+        {
           "stopId": "stop-via-dei-mille-103",
           "name": "Via Dei Mille 103",
           "lines": [
@@ -2566,14 +2577,6 @@
             "linea-ovest"
           ],
           "distance": 284
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 293
         }
       ]
     },
@@ -2631,13 +2634,12 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
+          "stopId": "stop-viale-martiri-102",
+          "name": "Viale Martiri 102",
           "lines": [
-            "navette-hub",
-            "linea-scuola-3"
+            "navette-hub"
           ],
-          "distance": 105
+          "distance": 80
         },
         {
           "stopId": "stop-viale-martiri-129",
@@ -2649,13 +2651,12 @@
           "distance": 129
         },
         {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
+            "navette-hub"
           ],
-          "distance": 185
+          "distance": 177
         }
       ]
     },
@@ -2686,6 +2687,15 @@
       "experience": null,
       "nearbyStops": [
         {
+          "stopId": "stop-viale-traiano-35",
+          "name": "Viale Traiano 35",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2"
+          ],
+          "distance": 99
+        },
+        {
           "stopId": "stop-viale-traiano-16",
           "name": "Viale Traiano 16",
           "lines": [
@@ -2693,15 +2703,6 @@
             "linea-scuola-1"
           ],
           "distance": 107
-        },
-        {
-          "stopId": "stop-viale-traiano-35",
-          "name": "Viale Traiano 35",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 174
         },
         {
           "stopId": "stop-viale-traiano-4",
@@ -2750,22 +2751,20 @@
           "distance": 57
         },
         {
+          "stopId": "stop-via-iv-novembre",
+          "name": "Via IV Novembre",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 109
+        },
+        {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre-pedagogico",
           "name": "Via Mura Megalitiche ang. Via IV Novembre Pedagogico",
           "lines": [
             "linea-scuola-4"
           ],
           "distance": 164
-        },
-        {
-          "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-          "name": "Via Mura Megalitiche ang. Via IV Novembre",
-          "lines": [
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-3"
-          ],
-          "distance": 165
         }
       ]
     },
@@ -2910,20 +2909,23 @@
           "distance": 169
         },
         {
-          "stopId": "stop-via-nicolo-piccinni-ang-via-de-pineto",
-          "name": "Via Nicolò Piccinni ang. Via de Pineto",
+          "stopId": "stop-via-parisi-66",
+          "name": "Via Parisi 66",
           "lines": [
-            "linea-ovest"
+            "ospedale-2",
+            "ospedale-domenica-e-festivi",
+            "linea-ovest",
+            "pescariello-z-i"
           ],
-          "distance": 204
+          "distance": 178
         },
         {
-          "stopId": "stop-via-gravina-92",
-          "name": "Via Gravina 92",
+          "stopId": "stop-via-parisi-fronte-civico-66",
+          "name": "Via Parisi - fronte civico 66",
           "lines": [
-            "ospedale-1"
+            "pescariello-z-i"
           ],
-          "distance": 230
+          "distance": 178
         }
       ]
     },
@@ -2954,6 +2956,15 @@
       "experience": null,
       "nearbyStops": [
         {
+          "stopId": "stop-via-treviso-27",
+          "name": "Via Treviso 27",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1"
+          ],
+          "distance": 187
+        },
+        {
           "stopId": "stop-via-treviso-50",
           "name": "Via Treviso 50",
           "lines": [
@@ -2962,15 +2973,6 @@
             "tpl-regionale"
           ],
           "distance": 193
-        },
-        {
-          "stopId": "stop-via-matera-39",
-          "name": "Via Matera 39",
-          "lines": [
-            "linea-ovest",
-            "pescariello-z-i"
-          ],
-          "distance": 261
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
@@ -3031,12 +3033,12 @@
           "distance": 175
         },
         {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
+          "stopId": "stop-via-iv-novembre",
+          "name": "Via IV Novembre",
           "lines": [
-            "navette-hub"
+            "pescariello-z-i"
           ],
-          "distance": 188
+          "distance": 244
         }
       ]
     },
@@ -3120,14 +3122,6 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 189
-        },
-        {
           "stopId": "stop-via-iv-novembre-fronte-1",
           "name": "Via IV Novembre (fronte 1)",
           "lines": [
@@ -3143,6 +3137,14 @@
             "ospedale-domenica-e-festivi"
           ],
           "distance": 288
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 290
         }
       ]
     },
@@ -3173,6 +3175,14 @@
       "experience": null,
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-102",
+          "name": "Viale Martiri 102",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 53
+        },
+        {
           "stopId": "stop-viale-martiri-129",
           "name": "Viale Martiri 129",
           "lines": [
@@ -3182,21 +3192,12 @@
           "distance": 95
         },
         {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 153
-        },
-        {
           "stopId": "stop-viale-martiri-fronte-83",
           "name": "Viale Martiri (fronte 83)",
           "lines": [
             "navette-hub"
           ],
-          "distance": 183
+          "distance": 223
         }
       ]
     },
@@ -3233,7 +3234,7 @@
             "linea-scuola-1",
             "linea-scuola-3"
           ],
-          "distance": 111
+          "distance": 101
         },
         {
           "stopId": "stop-via-nicolo-piccinni-ang-via-de-pineto",
@@ -3358,14 +3359,13 @@
           "distance": 289
         },
         {
-          "stopId": "stop-via-treviso-50",
-          "name": "Via Treviso 50",
+          "stopId": "stop-via-treviso-27",
+          "name": "Via Treviso 27",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "tpl-regionale"
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1"
           ],
-          "distance": 306
+          "distance": 303
         }
       ]
     },
@@ -3406,22 +3406,20 @@
           "distance": 23
         },
         {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli 7",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 46
-        },
-        {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "P.zza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
-          "distance": 57
+          "distance": 41
+        },
+        {
+          "stopId": "stop-viale-martiri",
+          "name": "Viale Martiri",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 54
         }
       ]
     },
@@ -3461,22 +3459,20 @@
           "distance": 106
         },
         {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
           "lines": [
-            "navette-hub",
-            "linea-scuola-3"
+            "navette-hub"
           ],
-          "distance": 120
+          "distance": 109
         },
         {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
+          "stopId": "stop-viale-martiri-102",
+          "name": "Viale Martiri 102",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
+            "navette-hub"
           ],
-          "distance": 300
+          "distance": 258
         }
       ]
     },
@@ -3579,13 +3575,12 @@
           "distance": 225
         },
         {
-          "stopId": "stop-via-gravina-79",
-          "name": "Via Gravina 79",
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
           "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
+            "navette-hub"
           ],
-          "distance": 256
+          "distance": 251
         }
       ]
     },
@@ -3616,22 +3611,20 @@
       "experience": null,
       "nearbyStops": [
         {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli 7",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 98
-        },
-        {
           "stopId": "stop-via-quintino-sella-29",
           "name": "Via Quintino Sella, 29",
           "lines": [
             "linea-scuola-3"
           ],
           "distance": 111
+        },
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille 88",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 126
         },
         {
           "stopId": "stop-piazza-zanardelli-pensilina",
@@ -3762,22 +3755,22 @@
           "distance": 292
         },
         {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 310
+        },
+        {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "P.zza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
-          "distance": 314
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "tpl-regionale"
-          ],
-          "distance": 324
+          "distance": 312
         }
       ]
     },
@@ -3817,22 +3810,20 @@
           "distance": 97
         },
         {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
           "lines": [
-            "navette-hub",
-            "linea-scuola-3"
+            "navette-hub"
           ],
-          "distance": 118
+          "distance": 101
         },
         {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
+          "stopId": "stop-viale-martiri-102",
+          "name": "Viale Martiri 102",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
+            "navette-hub"
           ],
-          "distance": 305
+          "distance": 263
         }
       ]
     },
@@ -3929,7 +3920,7 @@
             "ospedale-domenica-e-festivi",
             "linea-scuola-3"
           ],
-          "distance": 266
+          "distance": 267
         }
       ],
       "image": null,
@@ -4047,21 +4038,21 @@
           "distance": 85
         },
         {
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 85
+        },
+        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri 6",
           "lines": [
             "navette-hub",
             "linea-scuola-3"
           ],
-          "distance": 144
-        },
-        {
-          "stopId": "stop-viale-martiri",
-          "name": "Viale Martiri",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 244
+          "distance": 253
         }
       ]
     },

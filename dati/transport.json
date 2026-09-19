@@ -25,9 +25,10 @@
           "stopId": "stop-ospedale-fermata-bus",
           "index": 1,
           "name": "OSPEDALE Fermata Bus",
-          "lat": 40.8271046,
-          "lon": 16.5128376,
-          "interpolated": true
+          "lat": 40.82005,
+          "lon": 16.471071,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-s-v-villa-serena",
@@ -35,23 +36,26 @@
           "name": "7° Reggimento Bersaglieri - S.V. Villa Serena",
           "lat": 40.8270908,
           "lon": 16.5127931,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-231",
           "index": 3,
           "name": "Via Gravina 231",
-          "lat": 40.8282533,
-          "lon": 16.5201171,
-          "interpolated": true
+          "lat": 40.826639,
+          "lon": 16.523566,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-del-mandorlo-fronte-conad",
           "index": 4,
           "name": "Via del Mandorlo (fronte Conad)",
-          "lat": 40.8258408,
-          "lon": 16.5331209,
-          "interpolated": true
+          "lat": 40.826726,
+          "lon": 16.53298,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-cimitero-viale-della-pace-presso-rotonda",
@@ -59,7 +63,8 @@
           "name": "Cimitero Viale della Pace presso rotonda",
           "lat": 40.8258217,
           "lon": 16.5427544,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-cimitero-presso-ingresso-monumentale",
@@ -67,7 +72,8 @@
           "name": "Cimitero presso Ingresso Monumentale",
           "lat": 40.8259584,
           "lon": 16.5438228,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-fronte-5",
@@ -75,7 +81,8 @@
           "name": "Via Bresso (fronte 5)",
           "lat": 40.825913,
           "lon": 16.5459189,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-fronte-111",
@@ -83,7 +90,8 @@
           "name": "Via Bresso (fronte 111)",
           "lat": 40.8231669,
           "lon": 16.5470481,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze",
@@ -91,7 +99,8 @@
           "name": "Via Selva (ang. via Centonze)",
           "lat": 40.8195661,
           "lon": 16.5441857,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-190",
@@ -99,7 +108,8 @@
           "name": "Via Selva 190",
           "lat": 40.8174797,
           "lon": 16.5427809,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-fronte-chiesa-ss-redentore",
@@ -107,7 +117,8 @@
           "name": "Largo Giovanni Paolo II (fronte Chiesa SS. Redentore)",
           "lat": 40.8161211,
           "lon": 16.5434219,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-fronte-9-pensilina",
@@ -115,7 +126,8 @@
           "name": "Via A. di Crollalanza (fronte 9 - Pensilina)",
           "lat": 40.8134969,
           "lon": 16.5449722,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-70",
@@ -123,7 +135,8 @@
           "name": "Via A. di Crollalanza 70",
           "lat": 40.8135699,
           "lon": 16.5467842,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-g-gentile-fronte-4",
@@ -131,7 +144,8 @@
           "name": "Via G. Gentile (fronte 4)",
           "lat": 40.8152726,
           "lon": 16.5489509,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
@@ -139,7 +153,8 @@
           "name": "Via Bitonto (ang. via Trentacapilli - Pensilina)",
           "lat": 40.8136808,
           "lon": 16.5511879,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-25",
@@ -147,7 +162,8 @@
           "name": "Via Putignano 25",
           "lat": 40.8168178,
           "lon": 16.5520885,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-50",
@@ -155,7 +171,8 @@
           "name": "Via Treviso 50",
           "lat": 40.818569,
           "lon": 16.5556861,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
@@ -163,7 +180,8 @@
           "name": "Via Treviso (ang. via Manzoni)",
           "lat": 40.8185599,
           "lon": 16.5595269,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-carpentino-ang-via-salvatore-fortunato",
@@ -171,7 +189,8 @@
           "name": "Via Carpentino (ang. via Salvatore Fortunato)",
           "lat": 40.8191378,
           "lon": 16.5630208,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cicerone-fronte-75",
@@ -179,15 +198,17 @@
           "name": "Via Cicerone (fronte 75)",
           "lat": 40.8194075,
           "lon": 16.5658244,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-traiano-35",
           "index": 21,
           "name": "Viale Traiano 35",
-          "lat": 40.8215773,
-          "lon": 16.5622484,
-          "interpolated": true
+          "lat": 40.820518,
+          "lon": 16.563874,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-129",
@@ -195,7 +216,8 @@
           "name": "Viale Martiri 129",
           "lat": 40.8233914,
           "lon": 16.5610968,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-83",
@@ -203,15 +225,17 @@
           "name": "Viale Martiri 83",
           "lat": 40.8237409,
           "lon": 16.5574441,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
           "index": 24,
           "name": "Piazza Zanardelli 7",
-          "lat": 40.8244128,
-          "lon": 16.5516348,
-          "interpolated": true
+          "lat": 40.824293,
+          "lon": 16.552748,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -219,7 +243,8 @@
           "name": "Via Dei Mille 103",
           "lat": 40.8263465,
           "lon": 16.5495333,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -227,7 +252,8 @@
           "name": "Via Dei Mille 40",
           "lat": 40.8279608,
           "lon": 16.5488106,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-12",
@@ -235,7 +261,8 @@
           "name": "Via Gravina 12",
           "lat": 40.8289667,
           "lon": 16.5479633,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-92",
@@ -243,7 +270,8 @@
           "name": "Via Gravina 92",
           "lat": 40.8286475,
           "lon": 16.5446014,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-ang-via-della-cicoriella",
@@ -251,7 +279,8 @@
           "name": "Via Gravina (ang. via della Cicoriella)",
           "lat": 40.8276865,
           "lon": 16.5341785,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-fronte-231",
@@ -259,7 +288,8 @@
           "name": "Via Gravina (fronte 231)",
           "lat": 40.8268301,
           "lon": 16.5246627,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena",
@@ -267,15 +297,17 @@
           "name": "7° Reggimento Bersaglieri - Via Gravina ang. S.V. Villa Serena",
           "lat": 40.8276023,
           "lon": 16.5124202,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-ospedale-fermata-bus",
           "index": 32,
           "name": "OSPEDALE Fermata Bus",
-          "lat": 40.8276298,
-          "lon": 16.512142,
-          "interpolated": true
+          "lat": 40.82005,
+          "lon": 16.471071,
+          "interpolated": true,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -4622,7 +4654,9 @@
           "lon": 16.4711099
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-03-31"
     },
     {
       "id": "ospedale-2",
@@ -4639,7 +4673,8 @@
           "name": "OSPEDALE Fermata Bus",
           "lat": 40.8200499,
           "lon": 16.4710713,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-s-v-villa-serena",
@@ -4647,15 +4682,17 @@
           "name": "7° Reggimento Bersaglieri - S.V. Villa Serena",
           "lat": 40.8270868,
           "lon": 16.5128333,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-231",
           "index": 3,
           "name": "Via Gravina 231",
-          "lat": 40.8331013,
-          "lon": 16.570252,
-          "interpolated": true
+          "lat": 40.826639,
+          "lon": 16.523566,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
@@ -4663,7 +4700,8 @@
           "name": "Via Gravina (fronte via della Cicoriella)",
           "lat": 40.8276095,
           "lon": 16.5341336,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-155",
@@ -4671,7 +4709,8 @@
           "name": "Via Gravina 155",
           "lat": 40.8285482,
           "lon": 16.544494,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-79",
@@ -4679,23 +4718,26 @@
           "name": "Via Gravina 79",
           "lat": 40.828879,
           "lon": 16.5480317,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-7",
           "index": 7,
           "name": "Via Gravina 7",
-          "lat": 40.8277099,
-          "lon": 16.5342172,
-          "interpolated": true
+          "lat": 40.828865,
+          "lon": 16.548032,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-66",
           "index": 8,
           "name": "Via Parisi 66",
-          "lat": 40.8277099,
-          "lon": 16.5342172,
-          "interpolated": true
+          "lat": 40.830642,
+          "lon": 16.547986,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-192-fronte-polivalente",
@@ -4703,7 +4745,8 @@
           "name": "Via Parisi 192 (fronte Polivalente)",
           "lat": 40.8341609,
           "lon": 16.5457953,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio-fronte-uscita-so-opasso-fal-fermata",
@@ -4711,7 +4754,8 @@
           "name": "Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus",
           "lat": 40.8373749,
           "lon": 16.5522581,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -4719,7 +4763,8 @@
           "name": "Via IV Novembre (ang. Via II Giugno)",
           "lat": 40.8364002,
           "lon": 16.5540398,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche-fronte-stadio",
@@ -4727,7 +4772,8 @@
           "name": "Via Mura Megalitiche (fronte Stadio)",
           "lat": 40.8359549,
           "lon": 16.557391,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
@@ -4735,7 +4781,8 @@
           "name": "Via Bari ang. Via Vincenzo Russo ( Parcheggio Pubblico)",
           "lat": 40.83477,
           "lon": 16.5603057,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-150",
@@ -4743,7 +4790,8 @@
           "name": "Via Bari 150",
           "lat": 40.8363831,
           "lon": 16.5624032,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-londra-30",
@@ -4751,7 +4799,8 @@
           "name": "Via Londra 30",
           "lat": 40.837589,
           "lon": 16.5654437,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-madrid-66",
@@ -4759,7 +4808,8 @@
           "name": "Via Madrid 66",
           "lat": 40.8361108,
           "lon": 16.5684579,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dino-delucia-1",
@@ -4767,7 +4817,8 @@
           "name": "Via Dino Delucia 1",
           "lat": 40.8333793,
           "lon": 16.57011,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cassano-fronte-strada-comunale-fontanelle",
@@ -4775,15 +4826,17 @@
           "name": "Via Cassano fronte Strada Comunale Fontanelle",
           "lat": 40.8317236,
           "lon": 16.5658837,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 19,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.8277099,
-          "lon": 16.5342172,
-          "interpolated": true
+          "lat": 40.825533,
+          "lon": 16.565663,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-santeramo-161",
@@ -4791,7 +4844,8 @@
           "name": "Via Santeramo 161",
           "lat": 40.8273268,
           "lon": 16.560661,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-santeramo-119",
@@ -4799,7 +4853,8 @@
           "name": "Via Santeramo 119",
           "lat": 40.8283656,
           "lon": 16.5576316,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -4807,7 +4862,8 @@
           "name": "Piazza Unità D’Italia 8",
           "lat": 40.8295668,
           "lon": 16.5542786,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-1",
@@ -4815,7 +4871,8 @@
           "name": "Via IV Novembre (fronte 1)",
           "lat": 40.8315432,
           "lon": 16.5558086,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-74",
@@ -4823,7 +4880,8 @@
           "name": "Via IV Novembre (fronte 74)",
           "lat": 40.8339978,
           "lon": 16.5547881,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-via-ii-giugno",
@@ -4831,7 +4889,8 @@
           "name": "Via IV Novembre (fronte Via II Giugno)",
           "lat": 40.8364036,
           "lon": 16.5541103,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-so-opasso-fal",
@@ -4839,7 +4898,8 @@
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
           "lat": 40.8374216,
           "lon": 16.5522487,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-ang-via-del-timo",
@@ -4847,15 +4907,17 @@
           "name": "Via Gravina (ang. Via del Timo)",
           "lat": 40.8276958,
           "lon": 16.5341245,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-ang-via-della-cicoriella",
           "index": 28,
           "name": "Via Gravina (ang. Via della Cicoriella)",
-          "lat": 40.826618,
-          "lon": 16.5226354,
-          "interpolated": true
+          "lat": 40.827686,
+          "lon": 16.534178,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-fronte-231",
@@ -4863,7 +4925,8 @@
           "name": "Via Gravina (fronte 231)",
           "lat": 40.8268058,
           "lon": 16.5246775,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena",
@@ -4871,15 +4934,17 @@
           "name": "7° Reggimento Bersaglieri - Via Gravina ang. S.V. Villa Serena",
           "lat": 40.8276003,
           "lon": 16.5128038,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-ospedale-fermata-bus",
           "index": 31,
           "name": "OSPEDALE Fermata Bus",
-          "lat": 40.8275962,
-          "lon": 16.5128561,
-          "interpolated": true
+          "lat": 40.82005,
+          "lon": 16.471071,
+          "interpolated": true,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -9453,7 +9518,9 @@
           "lon": 16.4711146
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-06-12"
     },
     {
       "id": "ospedale-domenica-e-festivi",
@@ -9468,9 +9535,10 @@
           "stopId": "stop-ospedale-fermata-bus",
           "index": 1,
           "name": "OSPEDALE Fermata Bus",
-          "lat": 40.8270657,
-          "lon": 16.5125966,
-          "interpolated": true
+          "lat": 40.82005,
+          "lon": 16.471071,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-s-v-villa-serena",
@@ -9478,15 +9546,17 @@
           "name": "7° Reggimento Bersaglieri - S.V. Villa Serena",
           "lat": 40.8270218,
           "lon": 16.5124471,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-231",
           "index": 3,
           "name": "Via Gravina 231",
-          "lat": 40.8198215,
-          "lon": 16.5625066,
-          "interpolated": true
+          "lat": 40.826639,
+          "lon": 16.523566,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
@@ -9494,7 +9564,8 @@
           "name": "Via Gravina (fronte via della Cicoriella)",
           "lat": 40.8276043,
           "lon": 16.5341895,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-79",
@@ -9502,7 +9573,8 @@
           "name": "Via Gravina 79",
           "lat": 40.8285421,
           "lon": 16.5444376,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-7",
@@ -9510,7 +9582,8 @@
           "name": "Via Gravina 7",
           "lat": 40.8288648,
           "lon": 16.5480317,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-66",
@@ -9518,7 +9591,8 @@
           "name": "Via Parisi 66",
           "lat": 40.8306424,
           "lon": 16.5479859,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-192-fronte-polivalente",
@@ -9526,7 +9600,8 @@
           "name": "Via Parisi 192 (fronte Polivalente)",
           "lat": 40.8341507,
           "lon": 16.5458436,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio-fronte-uscita-so-opasso-fal-fermata",
@@ -9534,7 +9609,8 @@
           "name": "Stazione Via XXIV Maggio fronte uscita sottopasso Fal “Fermata Bus”",
           "lat": 40.83737,
           "lon": 16.552163,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -9542,7 +9618,8 @@
           "name": "Via IV Novembre (ang. Via II Giugno)",
           "lat": 40.8363911,
           "lon": 16.5540358,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
@@ -9550,7 +9627,8 @@
           "name": "Via Mura Megalitiche (ang. Via Vecchia Buoncammino)",
           "lat": 40.8346782,
           "lon": 16.5592359,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
@@ -9558,7 +9636,8 @@
           "name": "Via Bari ang. Via Vincenzo Russo ( Parcheggio Pubblico)",
           "lat": 40.8347897,
           "lon": 16.5603266,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-150",
@@ -9566,7 +9645,8 @@
           "name": "Via Bari 150",
           "lat": 40.8365941,
           "lon": 16.5626888,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-londra-30",
@@ -9574,7 +9654,8 @@
           "name": "Via Londra 30",
           "lat": 40.8375774,
           "lon": 16.5655121,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-madrid-66",
@@ -9582,7 +9663,8 @@
           "name": "Via Madrid 66",
           "lat": 40.8361214,
           "lon": 16.5684324,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dino-delucia-1",
@@ -9590,7 +9672,8 @@
           "name": "Via Dino Delucia 1",
           "lat": 40.8331545,
           "lon": 16.570222,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cassano-fronte-strada-comunale-fontanelle",
@@ -9598,7 +9681,8 @@
           "name": "Via Cassano fronte Strada Comunale Fontanelle",
           "lat": 40.8317824,
           "lon": 16.5657496,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cassano-81",
@@ -9606,7 +9690,8 @@
           "name": "Via Cassano 81",
           "lat": 40.8299158,
           "lon": 16.5613996,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cassano-13",
@@ -9614,7 +9699,8 @@
           "name": "Via Cassano 13",
           "lat": 40.8285393,
           "lon": 16.559345,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-santeramo-scuola-don-milani",
@@ -9622,7 +9708,8 @@
           "name": "Via Santeramo (Scuola Don Milani)",
           "lat": 40.8272781,
           "lon": 16.5605687,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -9630,23 +9717,26 @@
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
           "lat": 40.8255328,
           "lon": 16.565663,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-papa-giovanni-xxiii-83",
           "index": 22,
           "name": "Via Papa Giovanni XXIII 83",
-          "lat": 40.8274612,
-          "lon": 16.5328629,
-          "interpolated": true
+          "lat": 40.822241,
+          "lon": 16.566209,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-cicerone-11",
           "index": 23,
           "name": "Via Cicerone 11",
-          "lat": 40.8274612,
-          "lon": 16.5328629,
-          "interpolated": true
+          "lat": 40.819534,
+          "lon": 16.566161,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-carpentino-fronte-134",
@@ -9654,7 +9744,8 @@
           "name": "Via Carpentino (fronte 134)",
           "lat": 40.8197484,
           "lon": 16.5625798,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
@@ -9662,23 +9753,26 @@
           "name": "Via Treviso (ang. via Manzoni)",
           "lat": 40.8185803,
           "lon": 16.5595219,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-27",
           "index": 26,
           "name": "Via Treviso 27",
-          "lat": 40.8274612,
-          "lon": 16.5328629,
-          "interpolated": true
+          "lat": 40.81863,
+          "lon": 16.555703,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-matera-118",
           "index": 27,
           "name": "Via Matera 118",
-          "lat": 40.8274612,
-          "lon": 16.5328629,
-          "interpolated": true
+          "lat": 40.817705,
+          "lon": 16.553819,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-putignano-16",
@@ -9686,7 +9780,8 @@
           "name": "Via Putignano 16",
           "lat": 40.8168946,
           "lon": 16.5520159,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-giovanni-gentile-4",
@@ -9694,7 +9789,8 @@
           "name": "Via Giovanni Gentile 4",
           "lat": 40.8152255,
           "lon": 16.548847,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-fronte-70",
@@ -9702,15 +9798,17 @@
           "name": "Via A. Di Crollalanza (fronte 70)",
           "lat": 40.8135614,
           "lon": 16.5464588,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-9-fronte-pensilina",
           "index": 31,
           "name": "Via A. Di Crollalanza 9 (fronte Pensilina)",
-          "lat": 40.8274612,
-          "lon": 16.5328629,
-          "interpolated": true
+          "lat": 40.813452,
+          "lon": 16.54522,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
@@ -9718,7 +9816,8 @@
           "name": "Largo Giovanni Paolo II (Pensilina)",
           "lat": 40.816104,
           "lon": 16.5436518,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-fronte-via-centonze",
@@ -9726,7 +9825,8 @@
           "name": "Via Selva (fronte Via Centonze)",
           "lat": 40.8195302,
           "lon": 16.5442497,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-117",
@@ -9734,7 +9834,8 @@
           "name": "Via Selva 117",
           "lat": 40.8215284,
           "lon": 16.5459454,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-111",
@@ -9742,7 +9843,8 @@
           "name": "Via Bresso 111",
           "lat": 40.8232081,
           "lon": 16.5470655,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-5",
@@ -9750,7 +9852,8 @@
           "name": "Via Bresso 5",
           "lat": 40.8259841,
           "lon": 16.5459859,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-cimitero-viale-della-pace-presso-rotonda",
@@ -9758,7 +9861,8 @@
           "name": "Cimitero Viale della Pace (presso rotonda)",
           "lat": 40.8259779,
           "lon": 16.5418023,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-fronte-231",
@@ -9766,7 +9870,8 @@
           "name": "Via Gravina (fronte 231)",
           "lat": 40.8268149,
           "lon": 16.5246788,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena",
@@ -9774,15 +9879,17 @@
           "name": "7° Reggimento Bersaglieri - Via Gravina ang. S.V. Villa Serena",
           "lat": 40.8275871,
           "lon": 16.5125248,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-ospedale-fermata-bus",
           "index": 40,
           "name": "OSPEDALE Fermata Bus",
-          "lat": 40.8274957,
-          "lon": 16.5123842,
-          "interpolated": true
+          "lat": 40.82005,
+          "lon": 16.471071,
+          "interpolated": true,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -13937,7 +14044,9 @@
           "lon": 16.4710541
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-06-12"
     },
     {
       "id": "linea-ovest",
@@ -13954,7 +14063,8 @@
           "name": "Via XXIV Maggio uscita sottopasso Fal",
           "lat": 40.8374491,
           "lon": 16.5526485,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-padre-pio-presso-ingresso-istituto-tecnico",
@@ -13962,7 +14072,8 @@
           "name": "Viale Padre Pio ( presso ingresso Istituto Tecnico)",
           "lat": 40.8340571,
           "lon": 16.5425857,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-nicolo-piccinni-ang-via-de-pineto",
@@ -13970,7 +14081,8 @@
           "name": "Via Nicolò Piccinni ang. Via de Pineto",
           "lat": 40.8298447,
           "lon": 16.5435999,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-cimitero-entrata-monumentale",
@@ -13978,7 +14090,8 @@
           "name": "Cimitero (entrata Monumentale)",
           "lat": 40.825998,
           "lon": 16.544187,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-fronte-civ-5",
@@ -13986,7 +14099,8 @@
           "name": "Via Bresso (fronte civ. 5)",
           "lat": 40.8258948,
           "lon": 16.5459457,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-fronte-civ-111",
@@ -13994,7 +14108,8 @@
           "name": "Via Bresso (fronte civ. 111)",
           "lat": 40.8231709,
           "lon": 16.5470213,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-fronte-civ-117",
@@ -14002,7 +14117,8 @@
           "name": "Via Selva (fronte civ. 117)",
           "lat": 40.8216017,
           "lon": 16.5459942,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze",
@@ -14010,7 +14126,8 @@
           "name": "Via Selva ang. Via Centonze",
           "lat": 40.8195458,
           "lon": 16.5441991,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-190",
@@ -14018,7 +14135,8 @@
           "name": "Via Selva 190",
           "lat": 40.8174939,
           "lon": 16.542754,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-fronte-chiesa-ss-redentore",
@@ -14026,7 +14144,8 @@
           "name": "Largo Giovanni Paolo II (fronte Chiesa SS. Redentore)",
           "lat": 40.8161425,
           "lon": 16.5433246,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-fronte-civ-9",
@@ -14034,15 +14153,17 @@
           "name": "Via A. di Crollalanza (fronte civ. 9)",
           "lat": 40.8135086,
           "lon": 16.5450158,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-70",
           "index": 12,
           "name": "Via A. di Crollalanza 70",
-          "lat": 40.8144427,
-          "lon": 16.5485412,
-          "interpolated": true
+          "lat": 40.81357,
+          "lon": 16.546784,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-g-gentile-fronte-civ-4",
@@ -14050,7 +14171,8 @@
           "name": "Via G. Gentile (fronte civ. 4)",
           "lat": 40.8152583,
           "lon": 16.5489267,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
@@ -14058,47 +14180,53 @@
           "name": "Via Bitonto ang. Via Trentacapilli (Pensillina)",
           "lat": 40.8135803,
           "lon": 16.5510997,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-25",
           "index": 15,
           "name": "Via Putignano 25",
-          "lat": 40.8146213,
-          "lon": 16.5516096,
-          "interpolated": true
+          "lat": 40.816818,
+          "lon": 16.552088,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-matera-101",
           "index": 16,
           "name": "Via Matera 101",
-          "lat": 40.8171303,
-          "lon": 16.5504294,
-          "interpolated": true
+          "lat": 40.818999,
+          "lon": 16.553956,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-matera-39",
           "index": 17,
           "name": "Via Matera 39",
-          "lat": 40.8206136,
-          "lon": 16.5539807,
-          "interpolated": true
+          "lat": 40.821574,
+          "lon": 16.553559,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "index": 18,
           "name": "P.zza Zanardelli 7 (Bar Gelo)",
-          "lat": 40.8242671,
-          "lon": 16.5526288,
-          "interpolated": true
+          "lat": 40.824327,
+          "lon": 16.552371,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-dei-mille-103",
           "index": 19,
           "name": "Via dei Mille 103",
-          "lat": 40.8256472,
-          "lon": 16.5502041,
-          "interpolated": true
+          "lat": 40.826346,
+          "lon": 16.549533,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -14106,15 +14234,17 @@
           "name": "Via dei Mille 40",
           "lat": 40.8279745,
           "lon": 16.5489004,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-66",
           "index": 21,
           "name": "Via Parisi 66",
-          "lat": 40.8300555,
-          "lon": 16.5483802,
-          "interpolated": true
+          "lat": 40.830642,
+          "lon": 16.547986,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-192-fronte-polivalente",
@@ -14122,7 +14252,8 @@
           "name": "Via Parisi 192 (fronte Polivalente)",
           "lat": 40.8342461,
           "lon": 16.5458731,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-xxiv-maggio-uscita-so-opasso-fal",
@@ -14130,7 +14261,8 @@
           "name": "Via XXIV Maggio (uscita sottopasso Fal)",
           "lat": 40.8372787,
           "lon": 16.5526109,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -17191,7 +17323,9 @@
           "lon": 16.5526031
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-03-30"
     },
     {
       "id": "navette-hub",
@@ -17206,33 +17340,37 @@
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 1,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.8314714,
-          "lon": 16.5559399,
-          "interpolated": true
+          "lat": 40.825533,
+          "lon": 16.565663,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-santeramo-161",
           "index": 2,
           "name": "Via Santeramo 161",
-          "lat": 40.8314714,
-          "lon": 16.5559399,
-          "interpolated": true
+          "lat": 40.827327,
+          "lon": 16.560661,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-unita-d-italia-8",
           "index": 3,
           "name": "Piazza Unità D’Italia 8",
-          "lat": 40.8314714,
-          "lon": 16.5559399,
-          "interpolated": true
+          "lat": 40.829567,
+          "lon": 16.554279,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-14",
           "index": 4,
           "name": "Via Bari 14",
-          "lat": 40.8314714,
-          "lon": 16.5559399,
-          "interpolated": true
+          "lat": 40.829828,
+          "lon": 16.55386,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-1",
@@ -17240,7 +17378,8 @@
           "name": "Via IV Novembre (fronte 1)",
           "lat": 40.8315625,
           "lon": 16.5557738,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-74",
@@ -17248,15 +17387,17 @@
           "name": "Via IV Novembre (fronte 74)",
           "lat": 40.8363691,
           "lon": 16.5541237,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-via-ii-giugno",
           "index": 7,
           "name": "Via IV Novembre (fronte Via II Giugno)",
-          "lat": 40.8373891,
-          "lon": 16.5538156,
-          "interpolated": true
+          "lat": 40.836404,
+          "lon": 16.55411,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-so-opasso-fal",
@@ -17264,7 +17405,8 @@
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
           "lat": 40.8374106,
           "lon": 16.5522702,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-fronte-192-polivalente",
@@ -17272,7 +17414,8 @@
           "name": "Via Parisi (fronte 192 - Polivalente)",
           "lat": 40.8342046,
           "lon": 16.5455137,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-fronte-66",
@@ -17280,23 +17423,26 @@
           "name": "Via Parisi (fronte 66)",
           "lat": 40.8305787,
           "lon": 16.5478911,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dei-mille-40",
           "index": 11,
           "name": "Via Dei Mille 40",
-          "lat": 40.8279501,
-          "lon": 16.5486805,
-          "interpolated": true
+          "lat": 40.827961,
+          "lon": 16.548811,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dei-mille-88",
           "index": 12,
           "name": "Via Dei Mille 88",
-          "lat": 40.8262109,
-          "lon": 16.5495241,
-          "interpolated": true
+          "lat": 40.825878,
+          "lon": 16.549824,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-piazza-zanardelli-pensilina",
@@ -17304,31 +17450,35 @@
           "name": "Piazza Zanardelli (Pensilina)",
           "lat": 40.8242726,
           "lon": 16.5521234,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-6",
           "index": 14,
           "name": "Viale Martiri 6",
-          "lat": 40.8235886,
-          "lon": 16.5583646,
-          "interpolated": true
+          "lat": 40.824067,
+          "lon": 16.553955,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-fronte-83",
           "index": 15,
           "name": "Viale Martiri (fronte 83)",
-          "lat": 40.8232232,
-          "lon": 16.5622163,
-          "interpolated": true
+          "lat": 40.823686,
+          "lon": 16.557521,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-viale-martiri-102",
           "index": 16,
           "name": "Viale Martiri 102",
-          "lat": 40.8221678,
-          "lon": 16.5621197,
-          "interpolated": true
+          "lat": 40.823383,
+          "lon": 16.560517,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-viale-traiano-4",
@@ -17336,7 +17486,8 @@
           "name": "Viale Traiano 4",
           "lat": 40.8215257,
           "lon": 16.5622089,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-traiano-16",
@@ -17344,7 +17495,8 @@
           "name": "Viale Traiano 16",
           "lat": 40.8204403,
           "lon": 16.5638865,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bersaglio-ang-via-ugo-la-malfa",
@@ -17352,7 +17504,8 @@
           "name": "Via Bersaglio ang. Via Ugo la Malfa",
           "lat": 40.8186995,
           "lon": 16.5672748,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-giuseppe-di-vi-orio-fronte-21",
@@ -17360,23 +17513,26 @@
           "name": "Via Giuseppe di Vittorio (fronte 21)",
           "lat": 40.8216286,
           "lon": 16.5672526,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-palestro-58-empire",
           "index": 21,
           "name": "Via Palestro 58 (Empire)",
-          "lat": 40.821567,
-          "lon": 16.567291,
-          "interpolated": true
+          "lat": 40.824957,
+          "lon": 16.564248,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 22,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.821567,
-          "lon": 16.567291,
-          "interpolated": true
+          "lat": 40.825533,
+          "lon": 16.565663,
+          "interpolated": true,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -19838,7 +19994,9 @@
           "lon": 16.565368
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-03-30"
     },
     {
       "id": "linea-scuola-1",
@@ -19855,7 +20013,8 @@
           "name": "Viale Traiano, 4",
           "lat": 40.8216058,
           "lon": 16.5620932,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-traiano-16",
@@ -19863,15 +20022,17 @@
           "name": "Viale Traiano, 16",
           "lat": 40.8204728,
           "lon": 16.5638999,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cicerone-11",
           "index": 3,
           "name": "Via Cicerone, 11",
-          "lat": 40.8196008,
-          "lon": 16.5659767,
-          "interpolated": true
+          "lat": 40.819534,
+          "lon": 16.566161,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-carpentino-fronte-134",
@@ -19879,7 +20040,8 @@
           "name": "Via Carpentino fronte 134",
           "lat": 40.8197789,
           "lon": 16.5626522,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
@@ -19887,7 +20049,8 @@
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.8186225,
           "lon": 16.5596383,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -19895,7 +20058,8 @@
           "name": "Via Treviso, 27",
           "lat": 40.8186301,
           "lon": 16.5557033,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-16",
@@ -19903,7 +20067,8 @@
           "name": "Via Putignano, 16",
           "lat": 40.816854,
           "lon": 16.5520802,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-giorgio-almirante",
@@ -19911,7 +20076,8 @@
           "name": "Via Giorgio Almirante",
           "lat": 40.8154979,
           "lon": 16.5490716,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
@@ -19919,7 +20085,8 @@
           "name": "Via Lama di Cervo ang. Via Giorgio Almirante",
           "lat": 40.8169002,
           "lon": 16.5462522,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
@@ -19927,7 +20094,8 @@
           "name": "Largo Giovanni Paolo II",
           "lat": 40.8162075,
           "lon": 16.5432924,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze",
@@ -19935,7 +20103,8 @@
           "name": "Via Selva ang. Via Centonze",
           "lat": 40.8195376,
           "lon": 16.5442206,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-111",
@@ -19943,7 +20112,8 @@
           "name": "Via Bresso 111",
           "lat": 40.8232163,
           "lon": 16.5470709,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-gravina-fronte-via-della-cicorella",
@@ -19951,23 +20121,26 @@
           "name": "Via Gravina fronte Via della Cicorella",
           "lat": 40.8276237,
           "lon": 16.5341899,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-padre-pio",
           "index": 14,
           "name": "Viale Padre Pio",
-          "lat": 40.8305379,
-          "lon": 16.5417415,
-          "interpolated": true
+          "lat": 40.830661,
+          "lon": 16.541725,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-xxiv-maggio",
           "index": 15,
           "name": "Via XXIV Maggio",
-          "lat": 40.8354612,
-          "lon": 16.5449842,
-          "interpolated": true
+          "lat": 40.83729,
+          "lon": 16.551149,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
@@ -19975,7 +20148,8 @@
           "name": "Via Mura Megalitiche ang. Via IV Novembre",
           "lat": 40.8352129,
           "lon": 16.555228,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -21355,7 +21529,9 @@
           "lon": 16.5552625
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": true,
+      "validFrom": "2026-09-02"
     },
     {
       "id": "linea-scuola-2",
@@ -21372,15 +21548,17 @@
           "name": "Via Gravina ang. Via della Cicorella",
           "lat": 40.8276299,
           "lon": 16.5340922,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso",
           "index": 2,
           "name": "Via Bresso",
-          "lat": 40.8258659,
-          "lon": 16.543048,
-          "interpolated": true
+          "lat": 40.826164,
+          "lon": 16.545717,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze",
@@ -21388,7 +21566,8 @@
           "name": "Via Selva ang. Via Centonze",
           "lat": 40.8195458,
           "lon": 16.544175,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parco-del-vecchio-bovio",
@@ -21396,23 +21575,26 @@
           "name": "Via Parco del Vecchio Bovio",
           "lat": 40.8194104,
           "lon": 16.5393793,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-caduti-di-nassiriya",
           "index": 5,
           "name": "Via Caduti di Nassiriya",
-          "lat": 40.8179336,
-          "lon": 16.5406662,
-          "interpolated": true
+          "lat": 40.81775,
+          "lon": 16.54007,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
           "index": 6,
           "name": "Largo Giovanni Paolo II",
-          "lat": 40.8160377,
-          "lon": 16.5436864,
-          "interpolated": true
+          "lat": 40.816104,
+          "lon": 16.543652,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-a-di-crollalanza-fronte-9-pensilina",
@@ -21420,7 +21602,8 @@
           "name": "Via A. di Crollalanza fronte 9",
           "lat": 40.8134517,
           "lon": 16.5452197,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-g-gentile",
@@ -21428,7 +21611,8 @@
           "name": "Via G. Gentile",
           "lat": 40.8153355,
           "lon": 16.5489965,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
@@ -21436,7 +21620,8 @@
           "name": "Via Bitonto ang. Via Trentacapilli",
           "lat": 40.8137051,
           "lon": 16.5512228,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-25",
@@ -21444,7 +21629,8 @@
           "name": "Via Putignano, 25",
           "lat": 40.8168148,
           "lon": 16.5520657,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-50",
@@ -21452,7 +21638,8 @@
           "name": "Via Treviso, 50",
           "lat": 40.8185781,
           "lon": 16.5557733,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
@@ -21460,7 +21647,8 @@
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818565,
           "lon": 16.5596838,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
@@ -21468,7 +21656,8 @@
           "name": "Via Carpentino ang. Via S. Fortunato",
           "lat": 40.8190965,
           "lon": 16.5630289,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cicerone",
@@ -21476,7 +21665,8 @@
           "name": "Via Cicerone",
           "lat": 40.8183088,
           "lon": 16.5641858,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-traiano-35",
@@ -21484,7 +21674,8 @@
           "name": "Viale Traiano, 35",
           "lat": 40.8205184,
           "lon": 16.5638737,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-129",
@@ -21492,7 +21683,8 @@
           "name": "Viale Martiri, 129",
           "lat": 40.8233934,
           "lon": 16.5610807,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-83",
@@ -21500,15 +21692,17 @@
           "name": "Viale Martiri, 83",
           "lat": 40.823753,
           "lon": 16.5574601,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
           "index": 18,
           "name": "Piazza Zanardelli, 7",
-          "lat": 40.8279807,
-          "lon": 16.548788,
-          "interpolated": true
+          "lat": 40.824293,
+          "lon": 16.552748,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-parisi-192",
@@ -21516,15 +21710,17 @@
           "name": "Via Parisi, 192",
           "lat": 40.8341304,
           "lon": 16.5458168,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-xxiv-maggio",
           "index": 20,
           "name": "Via XXIV Maggio",
-          "lat": 40.8372673,
-          "lon": 16.546551,
-          "interpolated": true
+          "lat": 40.83729,
+          "lon": 16.551149,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
@@ -21532,7 +21728,8 @@
           "name": "Via Mura Megalitiche ang. Via IV Novembre",
           "lat": 40.8349544,
           "lon": 16.5549179,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -23393,7 +23590,9 @@
           "lon": 16.5559495
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": true,
+      "validFrom": "2026-09-02"
     },
     {
       "id": "linea-scuola-3",
@@ -23410,7 +23609,8 @@
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro",
           "lat": 40.8257408,
           "lon": 16.5652285,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-santeramo-ang-via-cassano",
@@ -23418,7 +23618,8 @@
           "name": "Via Santeramo ang. Via Cassano",
           "lat": 40.8279506,
           "lon": 16.5587449,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-cassano-ang-via-lucera",
@@ -23426,7 +23627,8 @@
           "name": "Via Cassano ang. Via Lucera",
           "lat": 40.8298599,
           "lon": 16.5614298,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-dino-delucia",
@@ -23434,7 +23636,8 @@
           "name": "Via Dino Delucia",
           "lat": 40.8334914,
           "lon": 16.5701208,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-madrid",
@@ -23442,7 +23645,8 @@
           "name": "Via Madrid",
           "lat": 40.8361107,
           "lon": 16.5686502,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-londra-23",
@@ -23450,7 +23654,8 @@
           "name": "Via Londra, 23",
           "lat": 40.8375794,
           "lon": 16.5657696,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-265",
@@ -23458,7 +23663,8 @@
           "name": "Via Bari, 265",
           "lat": 40.8366224,
           "lon": 16.5625892,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
@@ -23466,7 +23672,8 @@
           "name": "Via Mura Megalitiche ang. Via Vecchia Buoncammino",
           "lat": 40.8346836,
           "lon": 16.5593649,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
@@ -23474,31 +23681,35 @@
           "name": "Via Mura Megalitiche ang. Via IV Novembre",
           "lat": 40.8349998,
           "lon": 16.5548565,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-xxiv-maggio",
           "index": 10,
           "name": "Via XXIV Maggio",
-          "lat": 40.8354913,
-          "lon": 16.54483,
-          "interpolated": true
+          "lat": 40.83729,
+          "lon": 16.551149,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-viale-padre-pio",
           "index": 11,
           "name": "Viale Padre Pio",
-          "lat": 40.8283639,
-          "lon": 16.5418045,
-          "interpolated": true
+          "lat": 40.830661,
+          "lon": 16.541725,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-bresso",
           "index": 12,
           "name": "Via Bresso",
-          "lat": 40.8257944,
-          "lon": 16.542357,
-          "interpolated": true
+          "lat": 40.826164,
+          "lon": 16.545717,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-quintino-sella-29",
@@ -23506,7 +23717,8 @@
           "name": "Via Quintino Sella, 29",
           "lat": 40.8242067,
           "lon": 16.5502679,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri-6",
@@ -23514,15 +23726,17 @@
           "name": "Viale Martiri, 6",
           "lat": 40.8240671,
           "lon": 16.5539552,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-martiri",
           "index": 15,
           "name": "Viale Martiri",
-          "lat": 40.8240662,
-          "lon": 16.554067,
-          "interpolated": true
+          "lat": 40.8241,
+          "lon": 16.552631,
+          "interpolated": true,
+          "position": "street"
         }
       ],
       "trips": [
@@ -24204,7 +24418,9 @@
           "lon": 16.5573823
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": true,
+      "validFrom": "2025-11-18"
     },
     {
       "id": "linea-scuola-4",
@@ -24221,7 +24437,8 @@
           "name": "Via Bitonto ang. Via Trentacapilli Pensilina",
           "lat": 40.8136787,
           "lon": 16.5511718,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
@@ -24229,7 +24446,8 @@
           "name": "Largo Giovanni Paolo II - Pensilina",
           "lat": 40.8162354,
           "lon": 16.5432146,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-caduti-di-nassiriya-fronte-pensilina",
@@ -24237,7 +24455,8 @@
           "name": "Via Caduti di Nassiriya - fronte Pensilina",
           "lat": 40.8170326,
           "lon": 16.5405311,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze-alberghiero-1",
@@ -24245,7 +24464,8 @@
           "name": "Via Selva ang. Via Centonze Alberghiero 1",
           "lat": 40.8195282,
           "lon": 16.544231,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bresso-111",
@@ -24253,7 +24473,8 @@
           "name": "Via Bresso 111",
           "lat": 40.8231757,
           "lon": 16.5470869,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-viale-padre-pio-fronte-ingresso-istituto-tecnico-tecnico-sci",
@@ -24261,7 +24482,8 @@
           "name": "Viale Padre Pio - fronte ingresso Istituto Tecnico Tecnico-Scientifico",
           "lat": 40.8348182,
           "lon": 16.5439617,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-xxiv-maggio-fronte-uscita-so-opasso-fal-alberghiero-2",
@@ -24269,7 +24491,8 @@
           "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
           "lat": 40.837377,
           "lon": 16.5517338,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre-pedagogico",
@@ -24277,7 +24500,8 @@
           "name": "Via Mura Megalitiche ang. Via IV Novembre Pedagogico",
           "lat": 40.8351736,
           "lon": 16.5552747,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         }
       ],
       "trips": [
@@ -25081,7 +25305,9 @@
           "lon": 16.5553134
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": true,
+      "validFrom": "2026-09-02"
     },
     {
       "id": "pescariello-z-i",
@@ -25098,15 +25324,17 @@
           "name": "Via Selva - fronte civico 117",
           "lat": 40.8215104,
           "lon": 16.5458413,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
           "index": 2,
           "name": "Largo Giovanni Paolo II",
-          "lat": 40.8161167,
-          "lon": 16.5434202,
-          "interpolated": true
+          "lat": 40.816104,
+          "lon": 16.543652,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-g-gentile",
@@ -25114,7 +25342,8 @@
           "name": "Via G. Gentile",
           "lat": 40.8153497,
           "lon": 16.5490018,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-25",
@@ -25122,7 +25351,8 @@
           "name": "Via Putignano, 25",
           "lat": 40.8168249,
           "lon": 16.5520416,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-matera-101",
@@ -25130,7 +25360,8 @@
           "name": "Via Matera, 101",
           "lat": 40.8189992,
           "lon": 16.5539556,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-matera-39",
@@ -25138,15 +25369,17 @@
           "name": "Via Matera, 39",
           "lat": 40.821574,
           "lon": 16.5535585,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
           "index": 7,
           "name": "Piazza Zanardelli, 7",
-          "lat": 40.8246032,
-          "lon": 16.5513166,
-          "interpolated": true
+          "lat": 40.824293,
+          "lon": 16.552748,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-dei-mille-fronte-40",
@@ -25154,7 +25387,8 @@
           "name": "Via Dei Mille fronte 40",
           "lat": 40.8279992,
           "lon": 16.5487848,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-66",
@@ -25162,7 +25396,8 @@
           "name": "Via Parisi, 66",
           "lat": 40.8307073,
           "lon": 16.5479417,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-parisi-192",
@@ -25170,15 +25405,17 @@
           "name": "Via Parisi, 192",
           "lat": 40.8341527,
           "lon": 16.5458034,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio",
           "index": 11,
           "name": "Stazione Via XXIV Maggio",
-          "lat": 40.8371616,
-          "lon": 16.5461507,
-          "interpolated": true
+          "lat": 40.837297,
+          "lon": 16.551181,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -25186,7 +25423,8 @@
           "name": "Via IV Novembre ang. Via II Giugno",
           "lat": 40.8363941,
           "lon": 16.5540371,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche",
@@ -25194,7 +25432,8 @@
           "name": "Via Mura Megalitiche",
           "lat": 40.8360103,
           "lon": 16.5570973,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
@@ -25202,7 +25441,8 @@
           "name": "Via Bari ang. Via Vincenzo Russo (Parcheggio Pubblico)",
           "lat": 40.8347826,
           "lon": 16.5603105,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-bari-150",
@@ -25210,7 +25450,8 @@
           "name": "Via Bari, 150",
           "lat": 40.8364328,
           "lon": 16.5624796,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-tecnomec",
@@ -25218,7 +25459,8 @@
           "name": "Tecnomec",
           "lat": 40.9512473,
           "lon": 16.6434186,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-contempo-logama",
@@ -25226,140 +25468,157 @@
           "name": "Contempo/Logama",
           "lat": 40.9393644,
           "lon": 16.6368319,
-          "interpolated": false
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-coseco",
           "index": 18,
           "name": "Coseco",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.939639,
+          "lon": 16.636264,
+          "interpolated": true,
+          "position": "estimated"
         },
         {
           "stopId": "stop-tecnomec",
           "index": 19,
           "name": "Tecnomec",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.951247,
+          "lon": 16.643419,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-contempo-logama",
           "index": 20,
           "name": "Contempo/Logama",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.939364,
+          "lon": 16.636832,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-coseco",
           "index": 21,
           "name": "Coseco",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.939639,
+          "lon": 16.636264,
+          "interpolated": true,
+          "position": "estimated"
         },
         {
           "stopId": "stop-via-bari-265",
           "index": 22,
           "name": "Via Bari, 265",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.836622,
+          "lon": 16.562589,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche",
           "index": 23,
           "name": "Via Mura Megalitiche",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.83601,
+          "lon": 16.557097,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-iv-novembre",
           "index": 24,
           "name": "Via IV Novembre",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.83486,
+          "lon": 16.554698,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio",
           "index": 25,
           "name": "Stazione Via XXIV Maggio",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.837297,
+          "lon": 16.551181,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-parisi-fronte-civico-192-polivalente",
           "index": 26,
           "name": "Via Parisi - fronte civico 192 (Polivalente)",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.834161,
+          "lon": 16.545795,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-parisi-fronte-civico-66",
           "index": 27,
           "name": "Via Parisi - fronte civico 66",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.830642,
+          "lon": 16.547986,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-via-dei-mille-40",
           "index": 28,
           "name": "Via Dei Mille, 40",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.827961,
+          "lon": 16.548811,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-zanardelli-pensilina",
           "index": 29,
           "name": "Piazza Zanardelli Pensilina",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.824273,
+          "lon": 16.552123,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-pietro-colle-a-204",
           "index": 30,
           "name": "Via Pietro Colletta 204",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.817125,
+          "lon": 16.55062,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-g-gentile-4",
           "index": 31,
           "name": "G. Gentile, 4",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.815265,
+          "lon": 16.548934,
+          "interpolated": true,
+          "position": "street"
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
           "index": 32,
           "name": "Largo Giovanni Paolo II Pensilina",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.816104,
+          "lon": 16.543652,
+          "interpolated": true,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-selva-117",
           "index": 33,
           "name": "Via Selva, 117",
-          "lat": 40.9393214,
-          "lon": 16.6369611,
-          "interpolated": true
+          "lat": 40.821528,
+          "lon": 16.545945,
+          "interpolated": true,
+          "position": "exact"
         }
       ],
       "trips": [
         {
-          "id": "pescariello-z-i-p1-corsa-1",
+          "id": "pescariello-z-i-p1-corsa-1-a",
           "code": "Corsa 1",
           "variant": null,
           "serviceLabel": "da Lunedì a Venerdì",
@@ -25483,6 +25742,220 @@
             {
               "stopId": "stop-tecnomec",
               "index": 19,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 20,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 21,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-265",
+              "index": 22,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 23,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre",
+              "index": 24,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 25,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-192-polivalente",
+              "index": 26,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-66",
+              "index": 27,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-40",
+              "index": 28,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-pensilina",
+              "index": 29,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-pietro-colle-a-204",
+              "index": 30,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-g-gentile-4",
+              "index": 31,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 32,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-selva-117",
+              "index": 33,
+              "time": null,
+              "served": false
+            }
+          ]
+        },
+        {
+          "id": "pescariello-z-i-p1-corsa-1-b",
+          "code": "Corsa 1",
+          "variant": null,
+          "serviceLabel": "da Lunedì a Venerdì",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "departure": "15:50",
+          "stopTimes": [
+            {
+              "stopId": "stop-via-selva-fronte-civico-117",
+              "index": 1,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-g-gentile",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-putignano-25",
+              "index": 4,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-101",
+              "index": 5,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-39",
+              "index": 6,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-7",
+              "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-fronte-40",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-66",
+              "index": 9,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-192",
+              "index": 10,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 11,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
+              "index": 12,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 13,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+              "index": 14,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 15,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 16,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 17,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 18,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 19,
               "time": "15:50",
               "served": true
             },
@@ -25573,7 +26046,7 @@
           ]
         },
         {
-          "id": "pescariello-z-i-p1-corsa-unica",
+          "id": "pescariello-z-i-p1-corsa-unica-a",
           "code": "Corsa unica",
           "variant": null,
           "serviceLabel": "Sabato",
@@ -25693,6 +26166,216 @@
             {
               "stopId": "stop-tecnomec",
               "index": 19,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 20,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 21,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-265",
+              "index": 22,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 23,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre",
+              "index": 24,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 25,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-192-polivalente",
+              "index": 26,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-66",
+              "index": 27,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-40",
+              "index": 28,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-pensilina",
+              "index": 29,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-pietro-colle-a-204",
+              "index": 30,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-g-gentile-4",
+              "index": 31,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 32,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-selva-117",
+              "index": 33,
+              "time": null,
+              "served": false
+            }
+          ]
+        },
+        {
+          "id": "pescariello-z-i-p1-corsa-unica-b",
+          "code": "Corsa unica",
+          "variant": null,
+          "serviceLabel": "Sabato",
+          "days": [
+            6
+          ],
+          "departure": "12:05",
+          "stopTimes": [
+            {
+              "stopId": "stop-via-selva-fronte-civico-117",
+              "index": 1,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-g-gentile",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-putignano-25",
+              "index": 4,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-101",
+              "index": 5,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-39",
+              "index": 6,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-7",
+              "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-fronte-40",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-66",
+              "index": 9,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-192",
+              "index": 10,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 11,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
+              "index": 12,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 13,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+              "index": 14,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 15,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 16,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 17,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 18,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 19,
               "time": "12:05",
               "served": true
             },
@@ -25783,7 +26466,7 @@
           ]
         },
         {
-          "id": "pescariello-z-i-p1-corsa-2",
+          "id": "pescariello-z-i-p1-corsa-2-a",
           "code": "Corsa 2",
           "variant": null,
           "serviceLabel": "da Lunedì a Venerdì",
@@ -25903,6 +26586,220 @@
               "index": 18,
               "time": "07:50",
               "served": true
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 19,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 20,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 21,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-265",
+              "index": 22,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 23,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre",
+              "index": 24,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 25,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-192-polivalente",
+              "index": 26,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-fronte-civico-66",
+              "index": 27,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-40",
+              "index": 28,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-pensilina",
+              "index": 29,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-pietro-colle-a-204",
+              "index": 30,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-g-gentile-4",
+              "index": 31,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 32,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-selva-117",
+              "index": 33,
+              "time": null,
+              "served": false
+            }
+          ]
+        },
+        {
+          "id": "pescariello-z-i-p1-corsa-2-b",
+          "code": "Corsa 2",
+          "variant": null,
+          "serviceLabel": "da Lunedì a Venerdì",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "departure": "16:42",
+          "stopTimes": [
+            {
+              "stopId": "stop-via-selva-fronte-civico-117",
+              "index": 1,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-g-gentile",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-putignano-25",
+              "index": 4,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-101",
+              "index": 5,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-matera-39",
+              "index": 6,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-7",
+              "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-fronte-40",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-66",
+              "index": 9,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi-192",
+              "index": 10,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 11,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
+              "index": 12,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 13,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+              "index": 14,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 15,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-tecnomec",
+              "index": 16,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-contempo-logama",
+              "index": 17,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-coseco",
+              "index": 18,
+              "time": null,
+              "served": false
             },
             {
               "stopId": "stop-tecnomec",
@@ -27119,7 +28016,9 @@
           "lon": 16.6374928
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "school": false,
+      "validFrom": "2026-08-04"
     },
     {
       "id": "tpl-regionale",
@@ -27142,17 +28041,19 @@
           "stopId": "stop-via-mura-megalitiche",
           "index": 2,
           "name": "Via Mura Megalitiche",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.83601,
+          "lon": 16.557097,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-stazione-via-xxiv-maggio",
           "index": 3,
           "name": "Stazione Via XXIV Maggio",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.837297,
+          "lon": 16.551181,
+          "interpolated": false,
+          "position": "street"
         },
         {
           "stopId": "stop-via-parisi",
@@ -27174,49 +28075,55 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 6,
           "name": "Via dei Mille 40",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.827961,
+          "lon": 16.548811,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-piazza-zanardelli-pensilina",
           "index": 7,
           "name": "Piazza Zanardelli",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.824273,
+          "lon": 16.552123,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-putignano-25",
           "index": 8,
           "name": "Via Putignano 25",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.816818,
+          "lon": 16.552088,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-50",
           "index": 9,
           "name": "Via Treviso 50",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.818569,
+          "lon": 16.555686,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
           "index": 10,
           "name": "Via Treviso ang. via Manzoni",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.81856,
+          "lon": 16.559527,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 11,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "lat": 40.819097,
+          "lon": 16.563029,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-ferrosud",
@@ -27513,7 +28420,7 @@
             {
               "stopId": "stop-via-parisi",
               "index": 5,
-              "time": "05:17",
+              "time": "05:18",
               "served": true
             },
             {
@@ -27817,7 +28724,7 @@
             {
               "stopId": "stop-via-parisi",
               "index": 5,
-              "time": "06:17",
+              "time": "06:18",
               "served": true
             },
             {
@@ -28275,7 +29182,7 @@
             {
               "stopId": "stop-via-parisi",
               "index": 5,
-              "time": "07:17",
+              "time": "07:18",
               "served": true
             },
             {
@@ -29769,7 +30676,7 @@
           ]
         },
         {
-          "id": "tpl-regionale-p3-corsa-1",
+          "id": "tpl-regionale-p3-corsa-1-a",
           "code": "Corsa 1",
           "variant": 3,
           "serviceLabel": "da Lunedì a Venerdì",
@@ -29851,6 +30758,154 @@
             {
               "stopId": "stop-ferrosud",
               "index": 12,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-cornacchia-falegnameria",
+              "index": 13,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-natuzzi-jesce-1",
+              "index": 14,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-styling",
+              "index": 15,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-mec-line-laminboard",
+              "index": 16,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-natuzzi-jesce-2",
+              "index": 17,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-domar",
+              "index": 18,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-meridianagri",
+              "index": 19,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-bawer",
+              "index": 20,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-takler",
+              "index": 21,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-loken-sanflex",
+              "index": 22,
+              "time": null,
+              "served": false
+            }
+          ]
+        },
+        {
+          "id": "tpl-regionale-p3-corsa-1-b",
+          "code": "Corsa 1",
+          "variant": 3,
+          "serviceLabel": "da Lunedì a Venerdì",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "departure": "12:05",
+          "stopTimes": [
+            {
+              "stopId": "stop-hub-via-santeramo",
+              "index": 1,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi",
+              "index": 4,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi",
+              "index": 5,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-40",
+              "index": 6,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-pensilina",
+              "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-putignano-25",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-treviso-50",
+              "index": 9,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "index": 10,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-carpentino-ang-via-s-fortunato",
+              "index": 11,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-ferrosud",
+              "index": 12,
               "time": "12:05",
               "served": true
             },
@@ -29917,7 +30972,7 @@
           ]
         },
         {
-          "id": "tpl-regionale-p3-corsa-2",
+          "id": "tpl-regionale-p3-corsa-2-a",
           "code": "Corsa 2",
           "variant": 3,
           "serviceLabel": "da Lunedì a Venerdì",
@@ -29999,6 +31054,154 @@
             {
               "stopId": "stop-ferrosud",
               "index": 12,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-cornacchia-falegnameria",
+              "index": 13,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-natuzzi-jesce-1",
+              "index": 14,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-styling",
+              "index": 15,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-mec-line-laminboard",
+              "index": 16,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-natuzzi-jesce-2",
+              "index": 17,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-domar",
+              "index": 18,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-meridianagri",
+              "index": 19,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-bawer",
+              "index": 20,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-takler",
+              "index": 21,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-loken-sanflex",
+              "index": 22,
+              "time": null,
+              "served": false
+            }
+          ]
+        },
+        {
+          "id": "tpl-regionale-p3-corsa-2-b",
+          "code": "Corsa 2",
+          "variant": 3,
+          "serviceLabel": "da Lunedì a Venerdì",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "departure": "18:05",
+          "stopTimes": [
+            {
+              "stopId": "stop-hub-via-santeramo",
+              "index": 1,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche",
+              "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi",
+              "index": 4,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-parisi",
+              "index": 5,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-dei-mille-40",
+              "index": 6,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-piazza-zanardelli-pensilina",
+              "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-putignano-25",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-treviso-50",
+              "index": 9,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "index": 10,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-carpentino-ang-via-s-fortunato",
+              "index": 11,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-ferrosud",
+              "index": 12,
               "time": "18:05",
               "served": true
             },
@@ -30041,7 +31244,7 @@
             {
               "stopId": "stop-meridianagri",
               "index": 19,
-              "time": "18:36",
+              "time": "18:37",
               "served": true
             },
             {
@@ -30707,774 +31910,852 @@
       "shape": [],
       "warnings": [
         "23 fermate senza coordinate"
-      ]
+      ],
+      "school": false,
+      "validFrom": "2026-07-16"
     }
   ],
   "stops": [
     {
       "id": "stop-ospedale-fermata-bus",
       "name": "OSPEDALE Fermata Bus",
-      "lat": 40.8271046,
-      "lon": 16.5128376,
+      "lat": 40.82005,
+      "lon": 16.471071,
       "lines": [
         "ospedale-1",
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-7-reggimento-bersaglieri-s-v-villa-serena",
       "name": "7° Reggimento Bersaglieri - S.V. Villa Serena",
-      "lat": 40.8270908,
-      "lon": 16.5127931,
+      "lat": 40.827091,
+      "lon": 16.512793,
       "lines": [
         "ospedale-1",
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-231",
       "name": "Via Gravina 231",
-      "lat": 40.8282533,
-      "lon": 16.5201171,
+      "lat": 40.826639,
+      "lon": 16.523566,
       "lines": [
         "ospedale-1",
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-del-mandorlo-fronte-conad",
       "name": "Via del Mandorlo (fronte Conad)",
-      "lat": 40.8258408,
-      "lon": 16.5331209,
+      "lat": 40.826726,
+      "lon": 16.53298,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-cimitero-viale-della-pace-presso-rotonda",
       "name": "Cimitero Viale della Pace presso rotonda",
-      "lat": 40.8258217,
-      "lon": 16.5427544,
+      "lat": 40.825822,
+      "lon": 16.542754,
       "lines": [
         "ospedale-1",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-cimitero-presso-ingresso-monumentale",
       "name": "Cimitero presso Ingresso Monumentale",
-      "lat": 40.8259584,
-      "lon": 16.5438228,
+      "lat": 40.825958,
+      "lon": 16.543823,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-fronte-5",
       "name": "Via Bresso (fronte 5)",
       "lat": 40.825913,
-      "lon": 16.5459189,
+      "lon": 16.545919,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-fronte-111",
       "name": "Via Bresso (fronte 111)",
-      "lat": 40.8231669,
-      "lon": 16.5470481,
+      "lat": 40.823167,
+      "lon": 16.547048,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-ang-via-centonze",
       "name": "Via Selva (ang. via Centonze)",
-      "lat": 40.8195661,
-      "lon": 16.5441857,
+      "lat": 40.819566,
+      "lon": 16.544186,
       "lines": [
         "ospedale-1",
         "linea-ovest",
         "linea-scuola-1",
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-190",
       "name": "Via Selva 190",
-      "lat": 40.8174797,
-      "lon": 16.5427809,
+      "lat": 40.81748,
+      "lon": 16.542781,
       "lines": [
         "ospedale-1",
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-largo-giovanni-paolo-ii-fronte-chiesa-ss-redentore",
       "name": "Largo Giovanni Paolo II (fronte Chiesa SS. Redentore)",
-      "lat": 40.8161211,
-      "lon": 16.5434219,
+      "lat": 40.816121,
+      "lon": 16.543422,
       "lines": [
         "ospedale-1",
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-fronte-9-pensilina",
       "name": "Via A. di Crollalanza (fronte 9 - Pensilina)",
-      "lat": 40.8134969,
-      "lon": 16.5449722,
+      "lat": 40.813497,
+      "lon": 16.544972,
       "lines": [
         "ospedale-1",
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-70",
       "name": "Via A. di Crollalanza 70",
-      "lat": 40.8135699,
-      "lon": 16.5467842,
+      "lat": 40.81357,
+      "lon": 16.546784,
       "lines": [
         "ospedale-1",
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-g-gentile-fronte-4",
       "name": "Via G. Gentile (fronte 4)",
-      "lat": 40.8152726,
-      "lon": 16.5489509,
+      "lat": 40.815273,
+      "lon": 16.548951,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
       "name": "Via Bitonto (ang. via Trentacapilli - Pensilina)",
-      "lat": 40.8136808,
-      "lon": 16.5511879,
+      "lat": 40.813681,
+      "lon": 16.551188,
       "lines": [
         "ospedale-1",
         "linea-scuola-2",
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-putignano-25",
       "name": "Via Putignano 25",
-      "lat": 40.8168178,
-      "lon": 16.5520885,
+      "lat": 40.816818,
+      "lon": 16.552088,
       "lines": [
         "ospedale-1",
         "linea-ovest",
         "linea-scuola-2",
         "pescariello-z-i",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-treviso-50",
       "name": "Via Treviso 50",
       "lat": 40.818569,
-      "lon": 16.5556861,
+      "lon": 16.555686,
       "lines": [
         "ospedale-1",
         "linea-scuola-2",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-treviso-ang-via-manzoni",
       "name": "Via Treviso (ang. via Manzoni)",
-      "lat": 40.8185599,
-      "lon": 16.5595269,
+      "lat": 40.81856,
+      "lon": 16.559527,
       "lines": [
         "ospedale-1",
         "ospedale-domenica-e-festivi",
         "linea-scuola-1",
         "linea-scuola-2",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-carpentino-ang-via-salvatore-fortunato",
       "name": "Via Carpentino (ang. via Salvatore Fortunato)",
-      "lat": 40.8191378,
-      "lon": 16.5630208,
+      "lat": 40.819138,
+      "lon": 16.563021,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cicerone-fronte-75",
       "name": "Via Cicerone (fronte 75)",
-      "lat": 40.8194075,
-      "lon": 16.5658244,
+      "lat": 40.819407,
+      "lon": 16.565824,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-traiano-35",
       "name": "Viale Traiano 35",
-      "lat": 40.8215773,
-      "lon": 16.5622484,
+      "lat": 40.820518,
+      "lon": 16.563874,
       "lines": [
         "ospedale-1",
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-martiri-129",
       "name": "Viale Martiri 129",
-      "lat": 40.8233914,
-      "lon": 16.5610968,
+      "lat": 40.823391,
+      "lon": 16.561097,
       "lines": [
         "ospedale-1",
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-martiri-83",
       "name": "Viale Martiri 83",
-      "lat": 40.8237409,
-      "lon": 16.5574441,
+      "lat": 40.823741,
+      "lon": 16.557444,
       "lines": [
         "ospedale-1",
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-piazza-zanardelli-7",
       "name": "Piazza Zanardelli 7",
-      "lat": 40.8244128,
-      "lon": 16.5516348,
+      "lat": 40.824293,
+      "lon": 16.552748,
       "lines": [
         "ospedale-1",
         "linea-scuola-2",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-dei-mille-103",
       "name": "Via Dei Mille 103",
-      "lat": 40.8263465,
-      "lon": 16.5495333,
+      "lat": 40.826346,
+      "lon": 16.549533,
       "lines": [
         "ospedale-1",
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-dei-mille-40",
       "name": "Via Dei Mille 40",
-      "lat": 40.8279608,
-      "lon": 16.5488106,
+      "lat": 40.827961,
+      "lon": 16.548811,
       "lines": [
         "ospedale-1",
         "linea-ovest",
         "navette-hub",
         "pescariello-z-i",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-12",
       "name": "Via Gravina 12",
-      "lat": 40.8289667,
-      "lon": 16.5479633,
+      "lat": 40.828967,
+      "lon": 16.547963,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-92",
       "name": "Via Gravina 92",
-      "lat": 40.8286475,
-      "lon": 16.5446014,
+      "lat": 40.828648,
+      "lon": 16.544601,
       "lines": [
         "ospedale-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-ang-via-della-cicoriella",
       "name": "Via Gravina (ang. via della Cicoriella)",
-      "lat": 40.8276865,
-      "lon": 16.5341785,
+      "lat": 40.827686,
+      "lon": 16.534178,
       "lines": [
         "ospedale-1",
         "ospedale-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-fronte-231",
       "name": "Via Gravina (fronte 231)",
-      "lat": 40.8268301,
-      "lon": 16.5246627,
+      "lat": 40.82683,
+      "lon": 16.524663,
       "lines": [
         "ospedale-1",
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena",
       "name": "7° Reggimento Bersaglieri - Via Gravina ang. S.V. Villa Serena",
-      "lat": 40.8276023,
-      "lon": 16.5124202,
+      "lat": 40.827602,
+      "lon": 16.51242,
       "lines": [
         "ospedale-1",
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-fronte-via-della-cicoriella",
       "name": "Via Gravina (fronte via della Cicoriella)",
-      "lat": 40.8276095,
-      "lon": 16.5341336,
+      "lat": 40.82761,
+      "lon": 16.534134,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-155",
       "name": "Via Gravina 155",
-      "lat": 40.8285482,
+      "lat": 40.828548,
       "lon": 16.544494,
       "lines": [
         "ospedale-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-79",
       "name": "Via Gravina 79",
       "lat": 40.828879,
-      "lon": 16.5480317,
+      "lon": 16.548032,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-7",
       "name": "Via Gravina 7",
-      "lat": 40.8277099,
-      "lon": 16.5342172,
+      "lat": 40.828865,
+      "lon": 16.548032,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-parisi-66",
       "name": "Via Parisi 66",
-      "lat": 40.8277099,
-      "lon": 16.5342172,
+      "lat": 40.830642,
+      "lon": 16.547986,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "linea-ovest",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-parisi-192-fronte-polivalente",
       "name": "Via Parisi 192 (fronte Polivalente)",
-      "lat": 40.8341609,
-      "lon": 16.5457953,
+      "lat": 40.834161,
+      "lon": 16.545795,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-stazione-via-xxiv-maggio-fronte-uscita-so-opasso-fal-fermata",
       "name": "Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus",
-      "lat": 40.8373749,
-      "lon": 16.5522581,
+      "lat": 40.837375,
+      "lon": 16.552258,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-iv-novembre-ang-via-ii-giugno",
       "name": "Via IV Novembre (ang. Via II Giugno)",
-      "lat": 40.8364002,
-      "lon": 16.5540398,
+      "lat": 40.8364,
+      "lon": 16.55404,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-mura-megalitiche-fronte-stadio",
       "name": "Via Mura Megalitiche (fronte Stadio)",
-      "lat": 40.8359549,
+      "lat": 40.835955,
       "lon": 16.557391,
       "lines": [
         "ospedale-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
       "name": "Via Bari ang. Via Vincenzo Russo ( Parcheggio Pubblico)",
       "lat": 40.83477,
-      "lon": 16.5603057,
+      "lon": 16.560306,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bari-150",
       "name": "Via Bari 150",
-      "lat": 40.8363831,
-      "lon": 16.5624032,
+      "lat": 40.836383,
+      "lon": 16.562403,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-londra-30",
       "name": "Via Londra 30",
       "lat": 40.837589,
-      "lon": 16.5654437,
+      "lon": 16.565444,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-madrid-66",
       "name": "Via Madrid 66",
-      "lat": 40.8361108,
-      "lon": 16.5684579,
+      "lat": 40.836111,
+      "lon": 16.568458,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-dino-delucia-1",
       "name": "Via Dino Delucia 1",
-      "lat": 40.8333793,
+      "lat": 40.833379,
       "lon": 16.57011,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cassano-fronte-strada-comunale-fontanelle",
       "name": "Via Cassano fronte Strada Comunale Fontanelle",
-      "lat": 40.8317236,
-      "lon": 16.5658837,
+      "lat": 40.831724,
+      "lon": 16.565884,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
       "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-      "lat": 40.8277099,
-      "lon": 16.5342172,
+      "lat": 40.825533,
+      "lon": 16.565663,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
         "navette-hub",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-santeramo-161",
       "name": "Via Santeramo 161",
-      "lat": 40.8273268,
+      "lat": 40.827327,
       "lon": 16.560661,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-santeramo-119",
       "name": "Via Santeramo 119",
-      "lat": 40.8283656,
-      "lon": 16.5576316,
+      "lat": 40.828366,
+      "lon": 16.557632,
       "lines": [
         "ospedale-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-piazza-unita-d-italia-8",
       "name": "Piazza Unità D’Italia 8",
-      "lat": 40.8295668,
-      "lon": 16.5542786,
+      "lat": 40.829567,
+      "lon": 16.554279,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-iv-novembre-fronte-1",
       "name": "Via IV Novembre (fronte 1)",
-      "lat": 40.8315432,
-      "lon": 16.5558086,
+      "lat": 40.831543,
+      "lon": 16.555809,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-iv-novembre-fronte-74",
       "name": "Via IV Novembre (fronte 74)",
-      "lat": 40.8339978,
-      "lon": 16.5547881,
+      "lat": 40.833998,
+      "lon": 16.554788,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-iv-novembre-fronte-via-ii-giugno",
       "name": "Via IV Novembre (fronte Via II Giugno)",
-      "lat": 40.8364036,
-      "lon": 16.5541103,
+      "lat": 40.836404,
+      "lon": 16.55411,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-stazione-via-xxiv-maggio-uscita-so-opasso-fal",
       "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-      "lat": 40.8374216,
-      "lon": 16.5522487,
+      "lat": 40.837422,
+      "lon": 16.552249,
       "lines": [
         "ospedale-2",
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-ang-via-del-timo",
       "name": "Via Gravina (ang. Via del Timo)",
-      "lat": 40.8276958,
-      "lon": 16.5341245,
+      "lat": 40.827696,
+      "lon": 16.534125,
       "lines": [
         "ospedale-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
       "name": "Via Mura Megalitiche (ang. Via Vecchia Buoncammino)",
-      "lat": 40.8346782,
-      "lon": 16.5592359,
+      "lat": 40.834678,
+      "lon": 16.559236,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cassano-81",
       "name": "Via Cassano 81",
-      "lat": 40.8299158,
-      "lon": 16.5613996,
+      "lat": 40.829916,
+      "lon": 16.5614,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cassano-13",
       "name": "Via Cassano 13",
-      "lat": 40.8285393,
+      "lat": 40.828539,
       "lon": 16.559345,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-santeramo-scuola-don-milani",
       "name": "Via Santeramo (Scuola Don Milani)",
-      "lat": 40.8272781,
-      "lon": 16.5605687,
+      "lat": 40.827278,
+      "lon": 16.560569,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-papa-giovanni-xxiii-83",
       "name": "Via Papa Giovanni XXIII 83",
-      "lat": 40.8274612,
-      "lon": 16.5328629,
+      "lat": 40.822241,
+      "lon": 16.566209,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-cicerone-11",
       "name": "Via Cicerone 11",
-      "lat": 40.8274612,
-      "lon": 16.5328629,
+      "lat": 40.819534,
+      "lon": 16.566161,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-carpentino-fronte-134",
       "name": "Via Carpentino (fronte 134)",
-      "lat": 40.8197484,
-      "lon": 16.5625798,
+      "lat": 40.819748,
+      "lon": 16.56258,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-treviso-27",
       "name": "Via Treviso 27",
-      "lat": 40.8274612,
-      "lon": 16.5328629,
+      "lat": 40.81863,
+      "lon": 16.555703,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-matera-118",
       "name": "Via Matera 118",
-      "lat": 40.8274612,
-      "lon": 16.5328629,
+      "lat": 40.817705,
+      "lon": 16.553819,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-putignano-16",
       "name": "Via Putignano 16",
-      "lat": 40.8168946,
-      "lon": 16.5520159,
+      "lat": 40.816895,
+      "lon": 16.552016,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-giovanni-gentile-4",
       "name": "Via Giovanni Gentile 4",
-      "lat": 40.8152255,
+      "lat": 40.815225,
       "lon": 16.548847,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-fronte-70",
       "name": "Via A. Di Crollalanza (fronte 70)",
-      "lat": 40.8135614,
-      "lon": 16.5464588,
+      "lat": 40.813561,
+      "lon": 16.546459,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-9-fronte-pensilina",
       "name": "Via A. Di Crollalanza 9 (fronte Pensilina)",
-      "lat": 40.8274612,
-      "lon": 16.5328629,
+      "lat": 40.813452,
+      "lon": 16.54522,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-largo-giovanni-paolo-ii-pensilina",
       "name": "Largo Giovanni Paolo II (Pensilina)",
       "lat": 40.816104,
-      "lon": 16.5436518,
+      "lon": 16.543652,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1",
         "linea-scuola-2",
         "linea-scuola-4",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-fronte-via-centonze",
       "name": "Via Selva (fronte Via Centonze)",
-      "lat": 40.8195302,
-      "lon": 16.5442497,
+      "lat": 40.81953,
+      "lon": 16.54425,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-117",
       "name": "Via Selva 117",
-      "lat": 40.8215284,
-      "lon": 16.5459454,
+      "lat": 40.821528,
+      "lon": 16.545945,
       "lines": [
         "ospedale-domenica-e-festivi",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-111",
       "name": "Via Bresso 111",
-      "lat": 40.8232081,
-      "lon": 16.5470655,
+      "lat": 40.823208,
+      "lon": 16.547065,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1",
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-5",
       "name": "Via Bresso 5",
-      "lat": 40.8259841,
-      "lon": 16.5459859,
+      "lat": 40.825984,
+      "lon": 16.545986,
       "lines": [
         "ospedale-domenica-e-festivi"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-xxiv-maggio-uscita-so-opasso-fal",
       "name": "Via XXIV Maggio uscita sottopasso Fal",
-      "lat": 40.8374491,
-      "lon": 16.5526485,
+      "lat": 40.837449,
+      "lon": 16.552649,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-padre-pio-presso-ingresso-istituto-tecnico",
       "name": "Viale Padre Pio ( presso ingresso Istituto Tecnico)",
-      "lat": 40.8340571,
-      "lon": 16.5425857,
+      "lat": 40.834057,
+      "lon": 16.542586,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-nicolo-piccinni-ang-via-de-pineto",
       "name": "Via Nicolò Piccinni ang. Via de Pineto",
-      "lat": 40.8298447,
-      "lon": 16.5435999,
+      "lat": 40.829845,
+      "lon": 16.5436,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-cimitero-entrata-monumentale",
@@ -31483,575 +32764,637 @@
       "lon": 16.544187,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-fronte-civ-5",
       "name": "Via Bresso (fronte civ. 5)",
-      "lat": 40.8258948,
-      "lon": 16.5459457,
+      "lat": 40.825895,
+      "lon": 16.545946,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso-fronte-civ-111",
       "name": "Via Bresso (fronte civ. 111)",
-      "lat": 40.8231709,
-      "lon": 16.5470213,
+      "lat": 40.823171,
+      "lon": 16.547021,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-fronte-civ-117",
       "name": "Via Selva (fronte civ. 117)",
-      "lat": 40.8216017,
-      "lon": 16.5459942,
+      "lat": 40.821602,
+      "lon": 16.545994,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-fronte-civ-9",
       "name": "Via A. di Crollalanza (fronte civ. 9)",
-      "lat": 40.8135086,
-      "lon": 16.5450158,
+      "lat": 40.813509,
+      "lon": 16.545016,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-g-gentile-fronte-civ-4",
       "name": "Via G. Gentile (fronte civ. 4)",
-      "lat": 40.8152583,
-      "lon": 16.5489267,
+      "lat": 40.815258,
+      "lon": 16.548927,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
       "name": "Via Bitonto ang. Via Trentacapilli (Pensillina)",
-      "lat": 40.8135803,
-      "lon": 16.5510997,
+      "lat": 40.81358,
+      "lon": 16.5511,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-matera-101",
       "name": "Via Matera 101",
-      "lat": 40.8171303,
-      "lon": 16.5504294,
+      "lat": 40.818999,
+      "lon": 16.553956,
       "lines": [
         "linea-ovest",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-matera-39",
       "name": "Via Matera 39",
-      "lat": 40.8206136,
-      "lon": 16.5539807,
+      "lat": 40.821574,
+      "lon": 16.553559,
       "lines": [
         "linea-ovest",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-p-zza-zanardelli-7-bar-gelo",
       "name": "P.zza Zanardelli 7 (Bar Gelo)",
-      "lat": 40.8242671,
-      "lon": 16.5526288,
+      "lat": 40.824327,
+      "lon": 16.552371,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-bari-14",
       "name": "Via Bari 14",
-      "lat": 40.8314714,
-      "lon": 16.5559399,
+      "lat": 40.829828,
+      "lon": 16.55386,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-parisi-fronte-192-polivalente",
       "name": "Via Parisi (fronte 192 - Polivalente)",
-      "lat": 40.8342046,
-      "lon": 16.5455137,
+      "lat": 40.834205,
+      "lon": 16.545514,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-parisi-fronte-66",
       "name": "Via Parisi (fronte 66)",
-      "lat": 40.8305787,
-      "lon": 16.5478911,
+      "lat": 40.830579,
+      "lon": 16.547891,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-dei-mille-88",
       "name": "Via Dei Mille 88",
-      "lat": 40.8262109,
-      "lon": 16.5495241,
+      "lat": 40.825878,
+      "lon": 16.549824,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-piazza-zanardelli-pensilina",
       "name": "Piazza Zanardelli (Pensilina)",
-      "lat": 40.8242726,
-      "lon": 16.5521234,
+      "lat": 40.824273,
+      "lon": 16.552123,
       "lines": [
         "navette-hub",
         "pescariello-z-i",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-martiri-6",
       "name": "Viale Martiri 6",
-      "lat": 40.8235886,
-      "lon": 16.5583646,
+      "lat": 40.824067,
+      "lon": 16.553955,
       "lines": [
         "navette-hub",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-martiri-fronte-83",
       "name": "Viale Martiri (fronte 83)",
-      "lat": 40.8232232,
-      "lon": 16.5622163,
+      "lat": 40.823686,
+      "lon": 16.557521,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-viale-martiri-102",
       "name": "Viale Martiri 102",
-      "lat": 40.8221678,
-      "lon": 16.5621197,
+      "lat": 40.823383,
+      "lon": 16.560517,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-viale-traiano-4",
       "name": "Viale Traiano 4",
-      "lat": 40.8215257,
-      "lon": 16.5622089,
+      "lat": 40.821526,
+      "lon": 16.562209,
       "lines": [
         "navette-hub",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-traiano-16",
       "name": "Viale Traiano 16",
-      "lat": 40.8204403,
-      "lon": 16.5638865,
+      "lat": 40.82044,
+      "lon": 16.563886,
       "lines": [
         "navette-hub",
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bersaglio-ang-via-ugo-la-malfa",
       "name": "Via Bersaglio ang. Via Ugo la Malfa",
-      "lat": 40.8186995,
-      "lon": 16.5672748,
+      "lat": 40.8187,
+      "lon": 16.567275,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-giuseppe-di-vi-orio-fronte-21",
       "name": "Via Giuseppe di Vittorio (fronte 21)",
-      "lat": 40.8216286,
-      "lon": 16.5672526,
+      "lat": 40.821629,
+      "lon": 16.567253,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-palestro-58-empire",
       "name": "Via Palestro 58 (Empire)",
-      "lat": 40.821567,
-      "lon": 16.567291,
+      "lat": 40.824957,
+      "lon": 16.564248,
       "lines": [
         "navette-hub"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-giorgio-almirante",
       "name": "Via Giorgio Almirante",
-      "lat": 40.8154979,
-      "lon": 16.5490716,
+      "lat": 40.815498,
+      "lon": 16.549072,
       "lines": [
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
       "name": "Via Lama di Cervo ang. Via Giorgio Almirante",
-      "lat": 40.8169002,
-      "lon": 16.5462522,
+      "lat": 40.8169,
+      "lon": 16.546252,
       "lines": [
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-fronte-via-della-cicorella",
       "name": "Via Gravina fronte Via della Cicorella",
-      "lat": 40.8276237,
-      "lon": 16.5341899,
+      "lat": 40.827624,
+      "lon": 16.53419,
       "lines": [
         "linea-scuola-1"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-padre-pio",
       "name": "Viale Padre Pio",
-      "lat": 40.8305379,
-      "lon": 16.5417415,
+      "lat": 40.830661,
+      "lon": 16.541725,
       "lines": [
         "linea-scuola-1",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-xxiv-maggio",
       "name": "Via XXIV Maggio",
-      "lat": 40.8354612,
-      "lon": 16.5449842,
+      "lat": 40.83729,
+      "lon": 16.551149,
       "lines": [
         "linea-scuola-1",
         "linea-scuola-2",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-mura-megalitiche-ang-via-iv-novembre",
       "name": "Via Mura Megalitiche ang. Via IV Novembre",
-      "lat": 40.8352129,
+      "lat": 40.835213,
       "lon": 16.555228,
       "lines": [
         "linea-scuola-1",
         "linea-scuola-2",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-gravina-ang-via-della-cicorella",
       "name": "Via Gravina ang. Via della Cicorella",
-      "lat": 40.8276299,
-      "lon": 16.5340922,
+      "lat": 40.82763,
+      "lon": 16.534092,
       "lines": [
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bresso",
       "name": "Via Bresso",
-      "lat": 40.8258659,
-      "lon": 16.543048,
+      "lat": 40.826164,
+      "lon": 16.545717,
       "lines": [
         "linea-scuola-2",
         "linea-scuola-3"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-parco-del-vecchio-bovio",
       "name": "Via Parco del Vecchio Bovio",
-      "lat": 40.8194104,
-      "lon": 16.5393793,
+      "lat": 40.81941,
+      "lon": 16.539379,
       "lines": [
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-caduti-di-nassiriya",
       "name": "Via Caduti di Nassiriya",
-      "lat": 40.8179336,
-      "lon": 16.5406662,
+      "lat": 40.81775,
+      "lon": 16.54007,
       "lines": [
         "linea-scuola-2"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-g-gentile",
       "name": "Via G. Gentile",
-      "lat": 40.8153355,
-      "lon": 16.5489965,
+      "lat": 40.815336,
+      "lon": 16.548997,
       "lines": [
         "linea-scuola-2",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-carpentino-ang-via-s-fortunato",
       "name": "Via Carpentino ang. Via S. Fortunato",
-      "lat": 40.8190965,
-      "lon": 16.5630289,
+      "lat": 40.819097,
+      "lon": 16.563029,
       "lines": [
         "linea-scuola-2",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cicerone",
       "name": "Via Cicerone",
-      "lat": 40.8183088,
-      "lon": 16.5641858,
+      "lat": 40.818309,
+      "lon": 16.564186,
       "lines": [
         "linea-scuola-2"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-parisi-192",
       "name": "Via Parisi, 192",
-      "lat": 40.8341304,
-      "lon": 16.5458168,
+      "lat": 40.83413,
+      "lon": 16.545817,
       "lines": [
         "linea-scuola-2",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-santeramo-ang-via-cassano",
       "name": "Via Santeramo ang. Via Cassano",
-      "lat": 40.8279506,
-      "lon": 16.5587449,
+      "lat": 40.827951,
+      "lon": 16.558745,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-cassano-ang-via-lucera",
       "name": "Via Cassano ang. Via Lucera",
-      "lat": 40.8298599,
-      "lon": 16.5614298,
+      "lat": 40.82986,
+      "lon": 16.56143,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-dino-delucia",
       "name": "Via Dino Delucia",
-      "lat": 40.8334914,
-      "lon": 16.5701208,
+      "lat": 40.833491,
+      "lon": 16.570121,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-madrid",
       "name": "Via Madrid",
-      "lat": 40.8361107,
-      "lon": 16.5686502,
+      "lat": 40.836111,
+      "lon": 16.56865,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-londra-23",
       "name": "Via Londra, 23",
-      "lat": 40.8375794,
-      "lon": 16.5657696,
+      "lat": 40.837579,
+      "lon": 16.56577,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-bari-265",
       "name": "Via Bari, 265",
-      "lat": 40.8366224,
-      "lon": 16.5625892,
+      "lat": 40.836622,
+      "lon": 16.562589,
       "lines": [
         "linea-scuola-3",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-quintino-sella-29",
       "name": "Via Quintino Sella, 29",
-      "lat": 40.8242067,
-      "lon": 16.5502679,
+      "lat": 40.824207,
+      "lon": 16.550268,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-martiri",
       "name": "Viale Martiri",
-      "lat": 40.8240662,
-      "lon": 16.554067,
+      "lat": 40.8241,
+      "lon": 16.552631,
       "lines": [
         "linea-scuola-3"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-caduti-di-nassiriya-fronte-pensilina",
       "name": "Via Caduti di Nassiriya - fronte Pensilina",
-      "lat": 40.8170326,
-      "lon": 16.5405311,
+      "lat": 40.817033,
+      "lon": 16.540531,
       "lines": [
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-ang-via-centonze-alberghiero-1",
       "name": "Via Selva ang. Via Centonze Alberghiero 1",
-      "lat": 40.8195282,
+      "lat": 40.819528,
       "lon": 16.544231,
       "lines": [
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-viale-padre-pio-fronte-ingresso-istituto-tecnico-tecnico-sci",
       "name": "Viale Padre Pio - fronte ingresso Istituto Tecnico Tecnico-Scientifico",
-      "lat": 40.8348182,
-      "lon": 16.5439617,
+      "lat": 40.834818,
+      "lon": 16.543962,
       "lines": [
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-xxiv-maggio-fronte-uscita-so-opasso-fal-alberghiero-2",
       "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
       "lat": 40.837377,
-      "lon": 16.5517338,
+      "lon": 16.551734,
       "lines": [
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-mura-megalitiche-ang-via-iv-novembre-pedagogico",
       "name": "Via Mura Megalitiche ang. Via IV Novembre Pedagogico",
-      "lat": 40.8351736,
-      "lon": 16.5552747,
+      "lat": 40.835174,
+      "lon": 16.555275,
       "lines": [
         "linea-scuola-4"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-selva-fronte-civico-117",
       "name": "Via Selva - fronte civico 117",
-      "lat": 40.8215104,
-      "lon": 16.5458413,
+      "lat": 40.82151,
+      "lon": 16.545841,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-dei-mille-fronte-40",
       "name": "Via Dei Mille fronte 40",
-      "lat": 40.8279992,
-      "lon": 16.5487848,
+      "lat": 40.827999,
+      "lon": 16.548785,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-stazione-via-xxiv-maggio",
       "name": "Stazione Via XXIV Maggio",
-      "lat": 40.8371616,
-      "lon": 16.5461507,
+      "lat": 40.837297,
+      "lon": 16.551181,
       "lines": [
         "pescariello-z-i",
         "tpl-regionale"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-mura-megalitiche",
       "name": "Via Mura Megalitiche",
-      "lat": 40.8360103,
-      "lon": 16.5570973,
+      "lat": 40.83601,
+      "lon": 16.557097,
       "lines": [
         "pescariello-z-i",
         "tpl-regionale"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-tecnomec",
       "name": "Tecnomec",
-      "lat": 40.9512473,
-      "lon": 16.6434186,
+      "lat": 40.951247,
+      "lon": 16.643419,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-contempo-logama",
       "name": "Contempo/Logama",
-      "lat": 40.9393644,
-      "lon": 16.6368319,
+      "lat": 40.939364,
+      "lon": 16.636832,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-coseco",
       "name": "Coseco",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.939639,
+      "lon": 16.636264,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "estimated"
     },
     {
       "id": "stop-via-iv-novembre",
       "name": "Via IV Novembre",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.83486,
+      "lon": 16.554698,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-parisi-fronte-civico-192-polivalente",
       "name": "Via Parisi - fronte civico 192 (Polivalente)",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.834161,
+      "lon": 16.545795,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-parisi-fronte-civico-66",
       "name": "Via Parisi - fronte civico 66",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.830642,
+      "lon": 16.547986,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-pietro-colle-a-204",
       "name": "Via Pietro Colletta 204",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.817125,
+      "lon": 16.55062,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-g-gentile-4",
       "name": "G. Gentile, 4",
-      "lat": 40.9393214,
-      "lon": 16.6369611,
+      "lat": 40.815265,
+      "lon": 16.548934,
       "lines": [
         "pescariello-z-i"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-hub-via-santeramo",
@@ -32408,5 +33751,38 @@
       "summary": "È fresco, intuitivo e giovane. Il nuovo sito dedicato al trasporto locale di Altamura ha rinnovato il suo stile prediligendo un look più POP.",
       "url": "https://marinobusurbano.it/wp-content/uploads/2023/06/News-MarinoBus-Urbano-22-05-2023.pdf"
     }
-  ]
+  ],
+  "calendar": {
+    "localHolidays": [
+      {
+        "mese": 5,
+        "giorno": 5,
+        "nome": "Sant'Irene, patrona di Altamura"
+      }
+    ],
+    "schoolYears": [
+      {
+        "anno": "2026/2027",
+        "inizio": "2026-09-17",
+        "fine": "2027-06-08",
+        "sospensioni": [
+          {
+            "dal": "2026-12-07",
+            "al": "2026-12-08",
+            "motivo": "Ponte dell'Immacolata"
+          },
+          {
+            "dal": "2026-12-23",
+            "al": "2027-01-06",
+            "motivo": "Vacanze di Natale"
+          },
+          {
+            "dal": "2027-03-25",
+            "al": "2027-03-30",
+            "motivo": "Vacanze di Pasqua"
+          }
+        ]
+      }
+    ]
+  }
 }

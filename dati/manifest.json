@@ -1,43 +1,43 @@
 {
   "schema": 2,
-  "checkedAt": "2026-09-16T20:47:16.763Z",
+  "checkedAt": "2026-09-19T16:53:20.510Z",
   "files": {
     "transport": {
       "generatedAt": "2026-09-07T14:55:27.668Z",
-      "bytes": 847470,
-      "sha256": "caac6699ba5165687473d566af76a1ea8540cc5656f78ac70b3b1481e942f621"
+      "bytes": 885231,
+      "sha256": "007a6475df30a4b78f25d3d398cc7a8f3cb8a6350a660f3cca7e463523f2e91f"
     },
     "events": {
-      "generatedAt": "2026-09-16T20:47:10.320Z",
-      "bytes": 8329,
-      "sha256": "a8612e9592a79e4b19c0a45994a1f4c8a5bab69761872fc702071930ca1bec68"
+      "generatedAt": "2026-09-19T16:51:53.966Z",
+      "bytes": 7790,
+      "sha256": "09984041e5d4d8b9155b6522542d8988e3abc6aa06416fc7ec6a5ed5656fa297"
     },
     "places": {
-      "generatedAt": "2026-09-16T20:47:16.757Z",
-      "bytes": 109292,
-      "sha256": "eb10dffea8bca84bb5e2a4cdadfbfb1f31c90c0aa41def04ea3524b7975f0f0b"
+      "generatedAt": "2026-09-19T16:51:17.261Z",
+      "bytes": 109039,
+      "sha256": "172c6c38819d3d8694cc389f27b0cf14fa36b298225be321571ada932592a319"
     },
     "alerts": {
-      "generatedAt": "2026-09-16T20:47:16.763Z",
+      "generatedAt": "2026-09-19T16:53:20.510Z",
       "bytes": 63,
-      "sha256": "48fe779e7802d57b3eed81a5c884dac02316ba2a3cf192125b0c6c72addef069"
+      "sha256": "794b0d2eba370369b67f2a36417cbdcfdd595ed129ca0c9ea98398592b15ddb5"
     }
   },
   "sources": {
     "transport": {
       "status": "invariato",
-      "error": "Nessuna linea nella homepage: il sito ha risposto con una pagina di verifica o ha cambiato struttura."
+      "error": "il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/"
     },
     "events": {
       "status": "aggiornato",
       "error": null
     },
     "places": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "HTTP 504"
     }
   },
   "app": "muevt",
-  "signedAt": "2026-09-17T16:55:40.270Z",
+  "signedAt": "2026-09-19T16:53:20.621Z",
   "keyId": "5VTN2Etz"
 }
