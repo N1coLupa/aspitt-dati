@@ -1,0 +1,16 @@
+{
+  "_nota": "Calendario del servizio. Le festivita' nazionali (Pasqua compresa) le calcola l'app; qui vanno solo quelle locali e il calendario scolastico, da aggiornare ogni anno quando la Regione Puglia approva quello nuovo. Fonte 2026/27: delibera della Giunta regionale, press.regione.puglia.it.",
+  "festiviLocali": [{ "mese": 5, "giorno": 5, "nome": "Sant'Irene, patrona di Altamura" }],
+  "scuola": [
+    {
+      "anno": "2026/2027",
+      "inizio": "2026-09-17",
+      "fine": "2027-06-08",
+      "sospensioni": [
+        { "dal": "2026-12-07", "al": "2026-12-08", "motivo": "Ponte dell'Immacolata" },
+        { "dal": "2026-12-23", "al": "2027-01-06", "motivo": "Vacanze di Natale" },
+        { "dal": "2027-03-25", "al": "2027-03-30", "motivo": "Vacanze di Pasqua" }
+      ]
+    }
+  ]
+}

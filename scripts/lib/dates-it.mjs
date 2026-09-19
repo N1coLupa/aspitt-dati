@@ -3,24 +3,40 @@
 // Qui li riduciamo a date ISO utilizzabili per ordinare e filtrare l'agenda.
 
 const MONTHS = {
-  gennaio: 1, febbraio: 2, marzo: 3, aprile: 4, maggio: 5, giugno: 6,
-  luglio: 7, agosto: 8, settembre: 9, ottobre: 10, novembre: 11, dicembre: 12,
-  gen: 1, feb: 2, mar: 3, apr: 4, mag: 5, giu: 6,
-  lug: 7, ago: 8, set: 9, ott: 10, nov: 11, dic: 12,
+  gennaio: 1,
+  febbraio: 2,
+  marzo: 3,
+  aprile: 4,
+  maggio: 5,
+  giugno: 6,
+  luglio: 7,
+  agosto: 8,
+  settembre: 9,
+  ottobre: 10,
+  novembre: 11,
+  dicembre: 12,
+  gen: 1,
+  feb: 2,
+  mar: 3,
+  apr: 4,
+  mag: 5,
+  giu: 6,
+  lug: 7,
+  ago: 8,
+  set: 9,
+  ott: 10,
+  nov: 11,
+  dic: 12,
 };
 
 const MONTH_NAMES = Object.keys(MONTHS).join('|');
 const RANGE_RE = new RegExp(`\\bdal?\\s+(\\d{1,2})\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
-const CROSS_RE = new RegExp(
-  `\\bdal?\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`,
-  'i'
-);
+const CROSS_RE = new RegExp(`\\bdal?\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
 const SINGLE_RE = new RegExp(`\\b(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
 const UNTIL_RE = new RegExp(`\\bfino\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
 const TIME_RE = /\b(?:ore\s+)?([01]?\d|2[0-3])[:.](\d{2})\b/;
 
-const iso = (year, month, day) =>
-  `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+const iso = (year, month, day) => `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
 // Senza anno esplicito, una data gia' passata da oltre due mesi appartiene
 // all'edizione dell'anno prossimo, non a quella appena conclusa.
@@ -36,8 +52,7 @@ export function parseItalianDateRange(text, reference = new Date()) {
   if (!source) return null;
 
   const explicitYear = /\b(20\d{2})\b/.exec(source)?.[1];
-  const withYear = (month, day) =>
-    iso(explicitYear ? Number(explicitYear) : resolveYear(month, day, reference), month, day);
+  const withYear = (month, day) => iso(explicitYear ? Number(explicitYear) : resolveYear(month, day, reference), month, day);
 
   const time = TIME_RE.exec(source);
   const startTime = time ? `${time[1].padStart(2, '0')}:${time[2]}` : null;

@@ -14,10 +14,7 @@ import { slugify } from '../lib/slug.mjs';
 import { distanceMeters } from '../lib/geo.mjs';
 import { attachImages } from './images.mjs';
 
-const OVERPASS_ENDPOINTS = [
-  'https://overpass-api.de/api/interpreter',
-  'https://overpass.kumi.systems/api/interpreter',
-];
+const OVERPASS_ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 
 // Il territorio comunale di Altamura vale oltre 400 km2 e comprende il Pulo, la
 // grotta di Lamalunga e le masserie della Murgia. Interrogare il confine
@@ -225,8 +222,7 @@ export async function scrapePlaces() {
   };
 }
 
-const invokedDirectly =
-  process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
+const invokedDirectly = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
 
 if (invokedDirectly) {
   const data = await scrapePlaces();

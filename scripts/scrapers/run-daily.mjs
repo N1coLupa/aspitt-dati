@@ -18,6 +18,8 @@ import { validateEvents, validatePlaces, validateTransport } from '../check-data
 import { scrapeTransport } from './transport.mjs';
 import { scrapeEvents } from './events.mjs';
 import { scrapePlaces } from './places.mjs';
+import { enrichTransport } from '../lib/arricchisci.mjs';
+import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
 
 // Nel repository dei dati la cartella e' diversa: la sceglie la variabile d'ambiente.
 const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
@@ -158,11 +160,16 @@ function diffTransport(previous, next) {
  * risponde, risponde con una pagina di verifica o il risultato e' rotto, resta
  * il file del giorno prima: meglio orari di ieri che nessun orario.
  */
-async function refresh(name, scrape, validate) {
+async function refresh(name, scrape, validate, enrich) {
   const file = path.join(DATA_DIR, `${name}.json`);
   const previous = await readJson(file);
   try {
-    const next = await scrape();
+    const next = await scrape(previous);
+    if (enrich) {
+      const fixes = [];
+      await enrich(next, fixes);
+      for (const message of fixes) console.log(`  corretto: ${message}`);
+    }
     const { problems, notes } = validate(next);
     for (const message of notes) console.log(`  nota: ${message}`);
     if (problems.length) throw new Error(problems.join('; '));
@@ -171,6 +178,16 @@ async function refresh(name, scrape, validate) {
   } catch (err) {
     console.error(`  ${name}: tenuti i dati precedenti (${err.message})`);
     if (!previous) throw new Error(`${name}: nessun dato valido disponibile (${err.message})`);
+    // Anche senza dati nuovi, calendario e correzioni si applicano a quelli di
+    // ieri: un calendario scolastico aggiornato non deve aspettare il sito.
+    if (enrich) {
+      const kept = structuredClone(previous);
+      await enrich(kept, []);
+      if (!validate(kept).problems.length) {
+        await writeJson(file, kept);
+        return { name, status: 'invariato', error: err.message, data: kept, previous };
+      }
+    }
     return { name, status: 'invariato', error: err.message, data: previous, previous };
   }
 }
@@ -190,7 +207,9 @@ async function main() {
   console.log(`Aggiornamento dati Muevt - ${new Date().toLocaleString('it-IT')}\n`);
 
   console.log('[1/4] Trasporti');
-  const transportResult = await refresh('transport', scrapeTransport, validateTransport);
+  const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport);
+  await writeMissingList().catch(() => {});
+  if (usage.missing.size) console.log(`  cosa salvare a mano: ${path.join(COPY_DIR, 'DA-SALVARE.txt')}`);
 
   console.log('\n[2/4] Eventi');
   const eventsResult = await refresh('events', scrapeEvents, validateEvents);
@@ -211,9 +230,7 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
   const merged = [
     ...alerts,
-    ...previousAlerts.filter(
-      (a) => !known.has(a.id) && (a.validUntil ? a.validUntil >= today : a.createdAt >= cutoff)
-    ),
+    ...previousAlerts.filter((a) => !known.has(a.id) && (a.validUntil ? a.validUntil >= today : a.createdAt >= cutoff)),
   ];
 
   await writeJson(path.join(DATA_DIR, 'alerts.json'), {
@@ -222,10 +239,7 @@ async function main() {
   });
 
   if (transportResult.status === 'aggiornato' && transportResult.previous) {
-    await writeJson(
-      path.join(SNAPSHOT_DIR, `transport-${new Date().toISOString().slice(0, 10)}.json`),
-      transportResult.previous
-    );
+    await writeJson(path.join(SNAPSHOT_DIR, `transport-${new Date().toISOString().slice(0, 10)}.json`), transportResult.previous);
   }
 
   // Il manifest e' quello che l'app scarica per primo: dice quali file sono

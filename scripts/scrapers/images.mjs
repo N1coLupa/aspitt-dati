@@ -21,19 +21,14 @@ async function getJson(url) {
   return res.json();
 }
 
-const chunk = (items, size) =>
-  Array.from({ length: Math.ceil(items.length / size) }, (_, i) =>
-    items.slice(i * size, i * size + size)
-  );
+const chunk = (items, size) => Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, i * size + size));
 
 /** Nome del file immagine (P18) per una lista di entita' Wikidata. */
 async function imagesFromWikidata(ids) {
   const found = new Map();
 
   for (const batch of chunk(ids, 50)) {
-    const url =
-      'https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims' +
-      `&ids=${batch.join('|')}`;
+    const url = 'https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims' + `&ids=${batch.join('|')}`;
     try {
       const data = await getJson(url);
       for (const [id, entity] of Object.entries(data.entities ?? {})) {
@@ -56,8 +51,7 @@ async function imageFromWikipedia(reference) {
   if (!lang || !title) return null;
 
   const url =
-    `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages` +
-    `&piprop=name&titles=${encodeURIComponent(title)}`;
+    `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages` + `&piprop=name&titles=${encodeURIComponent(title)}`;
   try {
     const data = await getJson(url);
     const pages = Object.values(data.query?.pages ?? {});
@@ -105,11 +99,9 @@ function stripHtml(value) {
     .slice(0, 120);
 }
 
-const fileUrl = (file) =>
-  `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${THUMB_WIDTH}`;
+const fileUrl = (file) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${THUMB_WIDTH}`;
 
-const filePage = (file) =>
-  `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`;
+const filePage = (file) => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`;
 
 /**
  * Aggiunge `image`, `imageCredit`, `imageLicense` e `imageSource` ai luoghi che
@@ -129,9 +121,7 @@ export async function attachImages(places) {
   }
 
   // Ripiego: la voce di Wikipedia, per i luoghi senza P18 su Wikidata.
-  const leftovers = places.filter(
-    (place) => place.wikipedia && !place.image && !fileByPlace.has(place.id)
-  );
+  const leftovers = places.filter((place) => place.wikipedia && !place.image && !fileByPlace.has(place.id));
   for (const place of leftovers) {
     const file = await imageFromWikipedia(place.wikipedia);
     if (file) fileByPlace.set(place.id, file);

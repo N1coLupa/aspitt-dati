@@ -12,7 +12,8 @@
 // Uso: node scripts/scrapers/transport.mjs
 
 import * as cheerio from 'cheerio';
-import { getText, getBuffer, sleep } from '../lib/http.mjs';
+import { sleep } from '../lib/http.mjs';
+import { COPY_DIR, marinoBuffer, marinoText, usage } from '../lib/copia-locale.mjs';
 import { fetchKmlGeometry, kmlUrlFromMyMapsLink } from '../lib/kml.mjs';
 import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
@@ -56,8 +57,7 @@ function parseLines($) {
       name,
       color: color ? color.toLowerCase() : null,
       route: clean(el.find('.gen--p').first().text()) || null,
-      timetableUrl:
-        links.find((l) => /\.pdf$/i.test(l.href) && /orari/i.test(l.href))?.href ?? null,
+      timetableUrl: links.find((l) => /\.pdf$/i.test(l.href) && /orari/i.test(l.href))?.href ?? null,
       mapUrl: links.find((l) => l.href.includes('google.com/maps'))?.href ?? null,
       noticeUrl,
     });
@@ -102,12 +102,22 @@ function parseFares($) {
 
 async function parseNews() {
   const MONTHS = {
-    gen: 1, feb: 2, mar: 3, apr: 4, mag: 5, giu: 6,
-    lug: 7, ago: 8, set: 9, ott: 10, nov: 11, dic: 12,
+    gen: 1,
+    feb: 2,
+    mar: 3,
+    apr: 4,
+    mag: 5,
+    giu: 6,
+    lug: 7,
+    ago: 8,
+    set: 9,
+    ott: 10,
+    nov: 11,
+    dic: 12,
   };
 
   try {
-    const $ = cheerio.load(await getText(NEWS_URL));
+    const $ = cheerio.load(await marinoText(NEWS_URL, 'news--list'));
     return $('.news--list .news')
       .map((_, node) => {
         const el = $(node);
@@ -115,14 +125,17 @@ async function parseNews() {
         if (!title) return null;
 
         // La data e' impaginata su tre righe: "12<br>Mar<br>2026".
-        const parts = clean(el.find('.number').first().html()?.replace(/<br\s*\/?>/gi, '|') ?? '')
+        const parts = clean(
+          el
+            .find('.number')
+            .first()
+            .html()
+            ?.replace(/<br\s*\/?>/gi, '|') ?? ''
+        )
           .split('|')
           .map(clean);
         const month = MONTHS[(parts[1] ?? '').slice(0, 3).toLowerCase()];
-        const date =
-          parts.length >= 3 && month
-            ? `${parts[2]}-${String(month).padStart(2, '0')}-${parts[0].padStart(2, '0')}`
-            : null;
+        const date = parts.length >= 3 && month ? `${parts[2]}-${String(month).padStart(2, '0')}-${parts[0].padStart(2, '0')}` : null;
 
         return {
           id: slugify(title),
@@ -153,7 +166,11 @@ function matchKmlStop(pdfName, kmlStops, used) {
   let bestScore = 0;
   kmlStops.forEach((stop, index) => {
     if (used.has(index)) return;
-    const other = new Set(stopKey(stop.name).split(' ').filter((t) => t.length > 2));
+    const other = new Set(
+      stopKey(stop.name)
+        .split(' ')
+        .filter((t) => t.length > 2)
+    );
     const shared = [...tokens].filter((t) => other.has(t)).length;
     const score = shared / Math.max(tokens.size, other.size, 1);
     if (score > bestScore) {
@@ -164,7 +181,21 @@ function matchKmlStop(pdfName, kmlStops, used) {
   return bestScore >= 0.6 ? best : -1;
 }
 
-async function scrapeLine(line, registry) {
+function register(registry, stop, lineId) {
+  const key = stopKey(stop.name);
+  if (!registry.has(key)) {
+    registry.set(key, { id: `stop-${slugify(stop.name)}`, name: stop.name, lat: stop.lat, lon: stop.lon, lines: [] });
+  }
+  const entry = registry.get(key);
+  if (entry.lat == null && stop.lat != null) {
+    entry.lat = stop.lat;
+    entry.lon = stop.lon;
+  }
+  if (!entry.lines.includes(lineId)) entry.lines.push(lineId);
+  return entry;
+}
+
+async function scrapeLine(line, registry, previousLine) {
   const result = { ...line, stops: [], trips: [], shape: [], warnings: [] };
 
   let kml = { stops: [], shape: [] };
@@ -183,10 +214,19 @@ async function scrapeLine(line, registry) {
   let tables = [];
   if (line.timetableUrl) {
     try {
-      tables = await parseTimetablePdf(await getBuffer(line.timetableUrl));
+      tables = await parseTimetablePdf(await marinoBuffer(line.timetableUrl));
     } catch (err) {
       result.warnings.push(`PDF orari non leggibile: ${err.message}`);
     }
+  }
+
+  // PDF irraggiungibile ma identico a quello di ieri (stesso indirizzo): le
+  // corse di ieri valgono ancora. Un quadro nuovo invece va scaricato davvero.
+  if (!tables.length && previousLine?.trips?.length && previousLine.timetableUrl === line.timetableUrl) {
+    result.warnings.push('PDF non scaricabile: tenute le corse di ieri, stesso quadro orario');
+    usage.missing.delete(line.timetableUrl);
+    for (const stop of previousLine.stops) register(registry, stop, line.id);
+    return { ...result, stops: previousLine.stops, trips: previousLine.trips, shape: result.shape.length ? result.shape : previousLine.shape };
   }
 
   // L'elenco fermate autorevole e' quello del PDF: e' l'ordine delle corse.
@@ -211,22 +251,7 @@ async function scrapeLine(line, registry) {
   if (missing) result.warnings.push(`${missing} fermate senza coordinate`);
 
   result.stops = located.map((stop) => {
-    const key = stopKey(stop.name);
-    if (!registry.has(key)) {
-      registry.set(key, {
-        id: `stop-${slugify(stop.name)}`,
-        name: stop.name,
-        lat: stop.lat,
-        lon: stop.lon,
-        lines: [],
-      });
-    }
-    const entry = registry.get(key);
-    if (entry.lat == null && stop.lat != null) {
-      entry.lat = stop.lat;
-      entry.lon = stop.lon;
-    }
-    if (!entry.lines.includes(line.id)) entry.lines.push(line.id);
+    const entry = register(registry, stop, line.id);
 
     return {
       stopId: entry.id,
@@ -275,13 +300,14 @@ async function scrapeLine(line, registry) {
  * settembre", "fino al 27 settembre"). Serve all'app per togliere l'avviso
  * quando il periodo e' finito, invece di mostrarlo per sempre.
  */
-async function readNoticeValidity(url) {
+async function readNoticeValidity(url, previousLine) {
   if (!url) return { noticeFrom: null, noticeUntil: null };
+  const known = previousLine?.noticeUrl === url ? { noticeFrom: previousLine.noticeFrom ?? null, noticeUntil: previousLine.noticeUntil ?? null } : null;
   try {
     let text;
     if (/\.pdf($|\?)/i.test(url)) {
       const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
-      const doc = await pdfjs.getDocument({ data: new Uint8Array(await getBuffer(url)) }).promise;
+      const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)) }).promise;
       const parts = [];
       for (let page = 1; page <= Math.min(doc.numPages, 3); page += 1) {
         const content = await (await doc.getPage(page)).getTextContent();
@@ -289,19 +315,22 @@ async function readNoticeValidity(url) {
       }
       text = parts.join(' ');
     } else {
-      const page = cheerio.load(await getText(url));
+      const page = cheerio.load(await marinoText(url, null));
       text = page('main, article, .entry-content, body').first().text();
     }
     const range = parseItalianDateRange(clean(text));
     return { noticeFrom: range?.start ?? null, noticeUntil: range?.end ?? null };
   } catch {
-    return { noticeFrom: null, noticeUntil: null };
+    if (known) usage.missing.delete(url);
+    return known ?? { noticeFrom: null, noticeUntil: null };
   }
 }
 
-export async function scrapeTransport() {
+export async function scrapeTransport(previous = null) {
   console.log('> homepage MarinoBus Urbano');
-  const html = await getText(HOME_URL);
+  usage.local.clear();
+  usage.missing.clear();
+  const html = await marinoText(HOME_URL, 'home--lines');
   const $ = cheerio.load(html);
 
   const lines = parseLines($);
@@ -316,12 +345,10 @@ export async function scrapeTransport() {
   const scraped = [];
   for (const line of lines) {
     process.stdout.write(`> ${line.name} ... `);
-    const result = await scrapeLine(line, registry);
-    Object.assign(result, await readNoticeValidity(line.noticeUrl));
-    const suppressed = result.trips.reduce(
-      (total, trip) => total + trip.stopTimes.filter((st) => !st.served).length,
-      0
-    );
+    const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
+    const result = await scrapeLine(line, registry, previousLine);
+    Object.assign(result, await readNoticeValidity(line.noticeUrl, previousLine));
+    const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);
     console.log(
       `${result.stops.length} fermate, ${result.trips.length} corse, ${suppressed} soppressioni` +
         (result.warnings.length ? ` [${result.warnings.join('; ')}]` : '')
@@ -330,17 +357,28 @@ export async function scrapeTransport() {
     await sleep(400);
   }
 
+  const news = await parseNews();
+  // Le news sono facoltative: senza, restano quelle di ieri nell'app.
+  usage.missing.delete(NEWS_URL);
+  if (!news.length && previous?.news?.length) news.push(...previous.news);
+  const retrieval = { mode: usage.local.size ? 'copia locale' : 'rete', missing: [...usage.missing] };
+  if (usage.local.size) console.log(`  usata la copia salvata a mano in ${COPY_DIR} per ${usage.local.size} file`);
+  if (usage.missing.size) {
+    console.log(`  il sito chiede la verifica anti-bot: per aggiornare salva in ${COPY_DIR}:`);
+    for (const url of usage.missing) console.log(`    ${url}`);
+  }
+
   return {
     generatedAt: new Date().toISOString(),
     source: HOME_URL,
+    retrieval,
     operator: {
       name: 'Autolinee Marino Michele S.r.l.',
       phone: '+390803112335',
       email: 'info@marinobusurbano.it',
       website: HOME_URL,
       ticketing: {
-        singleTicket:
-          'https://booking.marinobusurbano.it/it/from/Urbano%20Altamura/today/to/Urbano%20Altamura/?adulti=1',
+        singleTicket: 'https://booking.marinobusurbano.it/it/from/Urbano%20Altamura/today/to/Urbano%20Altamura/?adulti=1',
         pass: 'https://booking.marinobusurbano.it/it/u/Urbano%20Altamura',
       },
     },
@@ -348,19 +386,19 @@ export async function scrapeTransport() {
     stops: [...registry.values()],
     vendors: parseVendors(html),
     fares: parseFares($),
-    news: await parseNews(),
+    news,
   };
 }
 
-const invokedDirectly =
-  process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
+const invokedDirectly = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
 
 if (invokedDirectly) {
   const fs = await import('node:fs/promises');
-  const data = await scrapeTransport();
+  const { enrichTransport } = await import('../lib/arricchisci.mjs');
+  const previous = JSON.parse(await fs.readFile('src/dati/transport.json', 'utf8').catch(() => 'null'));
+  const data = await enrichTransport(await scrapeTransport(previous));
   await fs.mkdir('src/dati', { recursive: true });
   await fs.writeFile('src/dati/transport.json', JSON.stringify(data, null, 2));
-  console.log(
-    `\nScritto src/dati/transport.json (${data.lines.length} linee, ${data.stops.length} fermate uniche)`
-  );
+  console.log(`
+Scritto src/dati/transport.json (${data.lines.length} linee, ${data.stops.length} fermate uniche)`);
 }

@@ -10,7 +10,7 @@ const TIME_RE = /^(\d{1,2})[:.](\d{2})$/;
 const SKIP_RE = /^[-\u2013\u2014]$/;
 const CORSA_RE = /CORSA\s*(\d+|UNICA|BIS)/gi;
 
-const ROW_TOLERANCE = 4;    // punti PDF: le righe distano 12
+const ROW_TOLERANCE = 4; // punti PDF: le righe distano 12
 const COLUMN_TOLERANCE = 14; // le colonne distano ~33
 
 function clusterValues(values, tolerance) {
@@ -93,7 +93,10 @@ function parsePage(items, pageNumber) {
 
   if (cells.length < 4) return null;
 
-  const columns = clusterValues(cells.map((c) => c.x), COLUMN_TOLERANCE);
+  const columns = clusterValues(
+    cells.map((c) => c.x),
+    COLUMN_TOLERANCE
+  );
   const gridLeft = Math.min(...columns) - COLUMN_TOLERANCE;
 
   // Ancore di riga: il numero progressivo della fermata. Vive nella colonna piu'
@@ -112,20 +115,13 @@ function parsePage(items, pageNumber) {
     if (!byRow.has(key) || byRow.get(key).x > item.x) byRow.set(key, item);
   }
 
-  const anchors = [...byRow.values()]
-    .map((item) => ({ index: Number(item.s), y: item.y }))
-    .sort((a, b) => b.y - a.y);
+  const anchors = [...byRow.values()].map((item) => ({ index: Number(item.s), y: item.y })).sort((a, b) => b.y - a.y);
 
   if (anchors.length < 2) return null;
 
   const stops = anchors.map((anchor, position) => {
     const label = items
-      .filter(
-        (item) =>
-          Math.abs(item.y - anchor.y) <= ROW_TOLERANCE &&
-          item.x >= nameLeft &&
-          item.x < gridLeft
-      )
+      .filter((item) => Math.abs(item.y - anchor.y) <= ROW_TOLERANCE && item.x >= nameLeft && item.x < gridLeft)
       .sort((a, b) => a.x - b.x)
       .map((item) => item.s)
       .join(' ')
@@ -138,9 +134,7 @@ function parsePage(items, pageNumber) {
   });
 
   const headerY = Math.max(...anchors.map((a) => a.y)) + 6;
-  const corsaLabels = items
-    .filter((item) => /CORSA/i.test(item.s) && item.y > headerY)
-    .flatMap(expandCorsaLabels);
+  const corsaLabels = items.filter((item) => /CORSA/i.test(item.s) && item.y > headerY).flatMap(expandCorsaLabels);
   const corsaCenters = corsaLabels.map((c) => c.x);
 
   const serviceLabels = items
@@ -149,11 +143,7 @@ function parsePage(items, pageNumber) {
 
   const trips = columns.map((columnX, columnIndex) => {
     const stopTimes = stops.map((stop) => {
-      const cell = cells.find(
-        (c) =>
-          Math.abs(c.y - stop.y) <= ROW_TOLERANCE &&
-          Math.abs(c.x - columnX) <= COLUMN_TOLERANCE
-      );
+      const cell = cells.find((c) => Math.abs(c.y - stop.y) <= ROW_TOLERANCE && Math.abs(c.x - columnX) <= COLUMN_TOLERANCE);
       return {
         stopIndex: stop.index,
         time: cell?.time ?? null,
@@ -163,8 +153,7 @@ function parsePage(items, pageNumber) {
 
     const corsa = corsaLabels[nearestIndex(corsaCenters, columnX, 22)];
     const service =
-      serviceLabels.find((s) => columnX >= s.x - 12 && columnX <= s.x + s.w + 12) ??
-      (serviceLabels.length === 1 ? serviceLabels[0] : null);
+      serviceLabels.find((s) => columnX >= s.x - 12 && columnX <= s.x + s.w + 12) ?? (serviceLabels.length === 1 ? serviceLabels[0] : null);
 
     return {
       code: corsa ? `Corsa ${corsa.label.toLowerCase()}` : `Corsa ${columnIndex + 1}`,
@@ -180,9 +169,7 @@ function parsePage(items, pageNumber) {
   return {
     page: pageNumber,
     stops: stops.map(({ index, name }) => ({ index, name })),
-    trips: trips
-      .filter((t) => t.departure)
-      .sort((a, b) => a.departure.localeCompare(b.departure)),
+    trips: trips.filter((t) => t.departure).sort((a, b) => a.departure.localeCompare(b.departure)),
   };
 }
 

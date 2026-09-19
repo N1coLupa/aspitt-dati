@@ -34,10 +34,7 @@ export async function fetchKmlGeometry(kmlUrl) {
 
   // MyMaps annida i Placemark in uno o piu' Folder, oppure li mette in linea.
   const root = doc?.kml?.Document ?? {};
-  const placemarks = [
-    ...asArray(root.Placemark),
-    ...asArray(root.Folder).flatMap((f) => asArray(f.Placemark)),
-  ];
+  const placemarks = [...asArray(root.Placemark), ...asArray(root.Folder).flatMap((f) => asArray(f.Placemark))];
 
   const stops = [];
   const paths = [];
@@ -45,9 +42,7 @@ export async function fetchKmlGeometry(kmlUrl) {
   for (const pm of placemarks) {
     const name = typeof pm.name === 'string' ? pm.name.trim() : '';
     const address = typeof pm.address === 'string' ? pm.address.trim() : null;
-    const order = Number(
-      asArray(pm.ExtendedData?.Data).find((d) => d?.['@_name'] === '#')?.value
-    );
+    const order = Number(asArray(pm.ExtendedData?.Data).find((d) => d?.['@_name'] === '#')?.value);
     const point = pm.Point?.coordinates
       ? parseCoordinateList(pm.Point.coordinates)[0]
       : asArray(pm.MultiGeometry)

@@ -66,9 +66,7 @@ function checkTransport(data) {
     }
     // Ogni corsa deve avere un orario per almeno metà delle fermate: se il
     // parser della griglia va fuori asse, il sintomo è proprio questo.
-    const broken = line.trips.filter(
-      (trip) => trip.stopTimes.filter((st) => st.served).length < line.stops.length * 0.4
-    );
+    const broken = line.trips.filter((trip) => trip.stopTimes.filter((st) => st.served).length < line.stops.length * 0.4);
     if (broken.length > line.trips.length / 2) {
       fail(`${line.name}: ${broken.length}/${line.trips.length} corse quasi vuote`);
     }
@@ -80,7 +78,19 @@ function checkTransport(data) {
     if (outOfOrder.length) {
       note(`${line.name}: ${outOfOrder.length} corse con orari non crescenti (possibile corsa a cavallo della mezzanotte)`);
     }
+    if (line.timetableUrl && !line.validFrom) note(`${line.name}: data di validita' non leggibile dal nome del PDF`);
   }
+
+  // Il calendario scolastico va aggiunto a mano ogni anno: se manca quello
+  // dell'anno che sta per cominciare, le linee Scuola resterebbero spente.
+  const years = data.calendar?.schoolYears ?? [];
+  const today = new Date().toISOString().slice(0, 10);
+  const soon = new Date(Date.now() + 45 * 86400000).toISOString().slice(0, 10);
+  if (data.calendar && !years.some((year) => year.fine >= soon) && soon.slice(5) >= '08-01') {
+    note(`calendario scolastico da aggiornare: nessun anno dopo il ${years.map((y) => y.fine).sort().pop() ?? today} (scripts/data/calendario.json)`);
+  }
+  const estimated = data.stops.filter((stop) => stop.position === 'estimated');
+  if (estimated.length) note(`${estimated.length} fermate con posizione solo stimata: ${estimated.map((s) => s.name).join(', ')}`);
 }
 
 function checkEvents(data) {
@@ -98,9 +108,7 @@ function checkPlaces(data) {
   if (data.places.length < 40) fail(`solo ${data.places.length} luoghi: attesi almeno 40`);
   if (!data.places.some((place) => place.highlight)) fail('nessun luogo in evidenza');
 
-  const outside = data.places.filter(
-    (place) => place.lat < 40.6 || place.lat > 41.1 || place.lon < 16.2 || place.lon > 16.9
-  );
+  const outside = data.places.filter((place) => place.lat < 40.6 || place.lat > 41.1 || place.lon < 16.2 || place.lon > 16.9);
   if (outside.length) fail(`${outside.length} luoghi fuori dal territorio di Altamura`);
 }
 

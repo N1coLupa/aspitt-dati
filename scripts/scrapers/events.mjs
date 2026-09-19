@@ -17,10 +17,7 @@ const SOURCES = {
   altamuralive: {
     name: 'AltamuraLive',
     homepage: 'https://altamuralive.it/',
-    feeds: [
-      'https://altamuralive.it/notizie/eventi/feed/',
-      'https://altamuralive.it/notizie/news/cultura/feed/',
-    ],
+    feeds: ['https://altamuralive.it/notizie/eventi/feed/', 'https://altamuralive.it/notizie/news/cultura/feed/'],
   },
   altamuralife: {
     name: 'AltamuraLife',
@@ -232,8 +229,7 @@ export async function scrapeEvents() {
   };
 }
 
-const invokedDirectly =
-  process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
+const invokedDirectly = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
 
 if (invokedDirectly) {
   const fs = await import('node:fs/promises');
