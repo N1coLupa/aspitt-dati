@@ -18,9 +18,9 @@
       "sha256": "db059202ddc15230669a8282a8f9fab9f0ada3524b7a6ce5fddb1d9cdb68581b"
     },
     "alerts": {
-      "generatedAt": "2026-09-20T21:26:10.381Z",
-      "bytes": 14308,
-      "sha256": "f7d0dcfae157ec6cc3f22b1be430fb3aebb4e18d8c42afe6b85bb3c72347245c"
+      "generatedAt": "2026-09-20T21:32:06.911Z",
+      "bytes": 63,
+      "sha256": "837de03e79ec3cd0f3b60192d82087629da06b63fd2d30b534ddf324653a1f7e"
     }
   },
   "sources": {
@@ -38,6 +38,6 @@
     }
   },
   "app": "muevt",
-  "signedAt": "2026-09-20T21:26:10.435Z",
+  "signedAt": "2026-09-20T21:32:06.986Z",
   "keyId": "5VTN2Etz"
 }
