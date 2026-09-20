@@ -8,8 +8,161 @@
     "icon": "church",
     "highlight": true,
     "duration": "45 min",
-    "description": "Fondata da Federico II nel 1232, è l'unica delle quattro basiliche palatine di Puglia rimasta legata alla città che la ospita. Il portale trecentesco racconta episodi della vita di Cristo in una sequenza di formelle che vale la pena leggere dal basso verso l'alto. I due campanili e il rosone sono aggiunte cinquecentesche: la facciata che vedi oggi guarda in direzione opposta rispetto a quella originaria, ruotata durante i lavori del Cinquecento.",
-    "tips": "L'ingresso è gratuito. Nel primo pomeriggio la luce entra dal rosone e illumina la navata centrale."
+    "description": "Federico II la volle nel 1232 come cappella palatina, e da allora è il centro di tutto: la città le è cresciuta intorno, non il contrario. Il terremoto del 1316 la rase quasi al suolo, gli Angioini la rialzarono e nel 1534 le girarono perfino la facciata, che oggi guarda dalla parte opposta rispetto alle origini. Dentro restano l'ambone cinquecentesco e il coro ligneo del 1543; fuori, le formelle del portale raccontano la vita di Cristo a chi ha la pazienza di leggerle dal basso.",
+    "tips": "L'ingresso è gratuito. Nel primo pomeriggio la luce entra dal rosone e attraversa la navata centrale."
+  },
+  {
+    "id": "chiesa-di-san-nicola-dei-greci",
+    "name": "Chiesa di San Nicola dei Greci",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "20 min",
+    "description": "Eretta alla fine del Duecento, è la chiesa della comunità greco-ortodossa che visse ad Altamura fino al Seicento: due riti, due lingue e due calendari a poche decine di metri dalla Cattedrale. La facciata romanica con il portale scolpito è rimasta quella, incastrata fra le case del centro storico.",
+    "tips": "Si trova sul corso, a pochi passi da Porta Bari: è la sosta naturale prima di infilarsi nei claustri."
+  },
+  {
+    "id": "chiesa-san-domenico",
+    "name": "Chiesa e convento di San Domenico",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "20 min",
+    "description": "Il complesso cresce fra Cinquecento e Ottocento e conserva altari in marmo e dipinti del Settecento, quando i conventi altamurani erano anche scuole e biblioteche. È uno di quegli interni che non ti aspetti dietro una facciata sobria.",
+    "tips": "Gli orari seguono le funzioni: la mattina presto e il tardo pomeriggio sono i momenti buoni."
+  },
+  {
+    "id": "chiesa-di-santa-chiara",
+    "name": "Chiesa e monastero di Santa Chiara",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "20 min",
+    "description": "Chiesa e monastero fra Seicento e Settecento, ancora abitati da una comunità di clausura: dietro le grate la vita scorre con i tempi di quattro secoli fa, a due passi dal traffico del centro. La chiesa custodisce l'apparato decorativo barocco tipico degli istituti femminili altamurani.",
+    "tips": "Essendo un monastero di clausura, la visita si limita alla chiesa e va rispettato il silenzio."
+  },
+  {
+    "id": "santuario-madonna-del-buon-cammino",
+    "name": "Santuario di Maria Santissima del Buoncammino",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "30 min",
+    "description": "Sta fuori dall'abitato, sulla strada che sale verso la Murgia, ed è la chiesa che gli altamurani sentono più loro: la Madonna del Buoncammino è compatrona della città. La domenica dopo il 15 agosto qui arriva la Cavalcata, con i cavalli bardati a festa.",
+    "tips": "Ci si arriva in una passeggiata dal centro: la strada è in leggera salita e il tramonto da qui è quello buono."
+  },
+  {
+    "id": "museo-archeologico-nazionale",
+    "name": "Museo Archeologico Nazionale di Altamura",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "museum",
+    "highlight": true,
+    "duration": "1 h 30",
+    "description": "Racconta la Murgia da quando era fondale marino a quando era terra di pastori: corredi peuceti, ceramiche, armi, e il racconto dell'Uomo di Altamura per chi nella grotta di Lamalunga non potrà mai entrare. È il posto dove capisci che qui sotto ci sono 130.000 anni di storia.",
+    "tips": "Un'ora e mezza basta per la visita completa; il biglietto costa poco e il primo ingresso del mattino è il più tranquillo.",
+    "lat": 40.82749,
+    "lon": 16.5586
+  },
+  {
+    "id": "palazzo-baldassarre",
+    "name": "Palazzo Baldassarre",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "museum",
+    "highlight": true,
+    "duration": "1 h",
+    "description": "Un palazzo del centro storico trasformato nel racconto multimediale dell'Uomo di Altamura: proiezioni, ricostruzioni e la voce di chi quello scheletro l'ha studiato per trent'anni. È la tappa che rende comprensibile tutto il resto, dalla grotta alle vetrine del museo.",
+    "tips": "Fa parte della Rete Museale dell'Uomo di Altamura: conviene abbinarlo al Museo Archeologico nello stesso pomeriggio.",
+    "lat": 40.82626,
+    "lon": 16.5556
+  },
+  {
+    "id": "centro-visite-lamalunga",
+    "name": "Centro Visite Lamalunga",
+    "categories": [
+      "cultura",
+      "trekking"
+    ],
+    "icon": "museum",
+    "duration": "1 h",
+    "lat": 40.86512,
+    "lon": 16.58153,
+    "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
+    "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata."
+  },
+  {
+    "id": "cava-dei-dinosauri-pontrelli",
+    "name": "Cava dei Dinosauri (Pontrelli)",
+    "categories": [
+      "trekking",
+      "cultura"
+    ],
+    "icon": "archaeology",
+    "highlight": true,
+    "duration": "1 h",
+    "description": "Una cava di pietra abbandonata con oltre trentamila orme di dinosauro sul fondo, lasciate settanta milioni di anni fa quando qui c'era una laguna. Cammini su una superficie che è insieme pavimento e fotografia: le impronte si incrociano come tracce sulla sabbia bagnata.",
+    "tips": "L'accesso non è libero: si entra solo con le visite guidate organizzate, che vengono annunciate nella sezione Eventi.",
+    "lat": 40.80625,
+    "lon": 16.62465
+  },
+  {
+    "id": "museo-arte-tipografica-portoghese",
+    "name": "Museo dell'Arte Tipografica Portoghese",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "museum",
+    "duration": "45 min",
+    "lat": 40.82468,
+    "lon": 16.55544,
+    "description": "La tipografia della famiglia Portoghese aprì nel 1891 nell'ex convento di Sant'Antonio e chiuse nel 2000; dieci anni dopo è diventata museo senza spostare nulla. Torchi, caratteri di legno e di piombo, manifesti politici ed etichette: le macchine funzionano ancora e ogni tanto le fanno girare.",
+    "tips": "Si visita in occasione di aperture e giornate speciali: conviene controllare gli eventi prima di andarci."
+  },
+  {
+    "id": "archivio-biblioteca-museo-civico",
+    "name": "Archivio Biblioteca Museo Civico (ABMC)",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "museum",
+    "duration": "45 min",
+    "lat": 40.8241,
+    "lon": 16.55209,
+    "description": "In piazza Zanardelli convivono l'archivio storico della città, la biblioteca e un museo civico fatto di dipinti, monete, cimeli di guerra, mobili antichi e reperti in pietra e bronzo. È il posto dove Altamura conserva la memoria di sé, compresa quella scomoda.",
+    "tips": "Aperto nei giorni feriali, mattina e pomeriggio: è a due passi dalla Cattedrale."
+  },
+  {
+    "id": "museo-etnografico-alta-murgia",
+    "name": "Museo Etnografico dell'Alta Murgia",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "museum",
+    "duration": "45 min",
+    "lat": 40.82906,
+    "lon": 16.55106,
+    "description": "Nell'ex convento dei Carmelitani Scalzi, in piazza Santa Teresa, la Murgia contadina raccontata dagli oggetti: attrezzi dei campi, banchi d'artigiano, roba da ovile e da cucina. Inaugurato nel 2010, è il museo che spiega come si viveva qui prima del pane DOP e dei pullman turistici.",
+    "tips": "Apre in giorni limitati della settimana: meglio verificare gli orari prima di partire."
+  },
+  {
+    "id": "area-archeologica-la-croce",
+    "name": "Area archeologica de La Croce",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "archaeology",
+    "duration": "30 min",
+    "lat": 40.82706,
+    "lon": 16.55941,
+    "description": "A ridosso del centro storico, nella zona dove oggi sorge il Museo Archeologico, c'è l'abitato peuceta: testimonianze che vanno dall'età del Bronzo fino all'epoca ellenistica. È il motivo per cui Altamura è una città antica molto prima di essere medievale.",
+    "tips": "Si visita insieme al Museo Archeologico, che espone i materiali trovati proprio qui."
   },
   {
     "id": "claustri-del-centro-storico",
@@ -20,11 +173,22 @@
     ],
     "icon": "landmark",
     "highlight": true,
+    "duration": "1 h",
+    "description": "Ottanta cortili chiusi che si aprono all'improvviso sulle strade del centro: ne restano circa ottanta degli oltre duecento originari, e ognuno ha un nome che racconta una storia, da Claustro Giudecca, l'antico quartiere ebraico, a Claustro Tradimento e Claustro Inferno. Nati come spazi di vicinato, sono ancora il salotto di chi ci abita.",
+    "tips": "Si girano senza meta, entrando quando l'arco è aperto. La sera l'illuminazione bassa li rende un'altra cosa.",
     "lat": 40.82715,
-    "lon": 16.55345,
-    "duration": "1 h 30",
-    "description": "Sono oltre ottanta cortili chiusi che si aprono all'improvviso lungo i vicoli del centro. Nati come spazi difensivi e poi diventati luoghi di vita condivisa, ognuno ha un nome proprio e una storia legata alle famiglie che ci abitavano. Non esiste un percorso segnato: si entra, si guarda, si torna indietro. Claustro Tradotto, Claustro Sant'Anna e Claustro dei Martiri sono fra i più riconoscibili.",
-    "tips": "Sono cortili abitati. Vale la pena visitarli di giorno e senza alzare la voce."
+    "lon": 16.55345
+  },
+  {
+    "id": "arco-basso",
+    "name": "Arco Basso",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "description": "Uno dei passaggi più stretti e bassi del centro storico: ci si passa chinando la testa e si sbuca in un claustro. È il dettaglio che spiega meglio di mille parole com'era fatta la città dentro le mura.",
+    "tips": "Sta lungo la passeggiata dei claustri: tienilo d'occhio o rischi di passarci davanti senza vederlo."
   },
   {
     "id": "porta-bari",
@@ -35,29 +199,152 @@
     "icon": "monument",
     "highlight": true,
     "duration": "15 min",
-    "description": "L'accesso storico alla città murata, ricostruito nel Settecento sull'impianto federiciano. Da qui parte il corso che porta alla Cattedrale, ed è il punto in cui il tessuto ottocentesco lascia spazio ai vicoli del nucleo antico."
+    "description": "L'ingresso storico alla città dal lato di Bari, incastonato in Palazzo De Angelis-Viti: passato l'arco comincia il corso e finisce la città moderna. È il punto in cui gli altamurani si danno appuntamento da sempre.",
+    "tips": "È il migliore punto di partenza per il giro del centro storico, con le fermate degli autobus a pochi metri."
   },
   {
-    "id": "museo-archeologico-nazionale-di-altamura",
-    "name": "Museo Archeologico Nazionale",
+    "id": "porta-matera",
+    "name": "Porta Matera e Piazza della Resistenza",
+    "categories": [
+      "cultura",
+      "parchi"
+    ],
+    "icon": "monument",
+    "duration": "15 min",
+    "lat": 40.82536,
+    "lon": 16.55288,
+    "description": "La porta non c'è più, ma la piazza porta il nome di quello che accadde qui: nel 1799 fu da questo varco che l'esercito sanfedista del cardinale Ruffo sfondò, dopo la resistenza degli altamurani. Si chiama Piazza della Resistenza per quel giorno.",
+    "tips": "Da qui si vedono i tratti superstiti delle mura medievali che chiudevano il centro."
+  },
+  {
+    "id": "anello-delle-mura-megalitiche",
+    "name": "Mura megalitiche",
+    "categories": [
+      "trekking",
+      "cultura"
+    ],
+    "icon": "monument",
+    "duration": "1 h 30",
+    "description": "Blocchi enormi posati a secco fra il V e il IV secolo a.C., l'opera più antica che Altamura conserva: correvano per chilometri intorno all'insediamento preromano e oggi spuntano fra le case, i muretti e i campi. Seguirne i tratti è un modo diverso di girare la città.",
+    "tips": "I tratti migliori si vedono lungo via Mura Megalitiche e nella zona nord: portati scarpe comode.",
+    "lat": 40.83404,
+    "lon": 16.55368
+  },
+  {
+    "id": "mura-medievali",
+    "name": "Mura medievali",
     "categories": [
       "cultura"
     ],
-    "icon": "museum",
-    "highlight": true,
-    "duration": "1 h",
-    "description": "Il percorso copre la preistoria della Murgia, l'età peuceta e la Roma imperiale, con i corredi funerari provenienti dalle necropoli del territorio. È il punto di partenza più sensato per capire il contesto in cui è vissuto l'Uomo di Altamura."
+    "icon": "monument",
+    "duration": "20 min",
+    "lat": 40.82559,
+    "lon": 16.5532,
+    "description": "Della cinta che Federico II fece rialzare restano tratti ben visibili, soprattutto affacciandosi da Piazza della Resistenza e da Piazza Unità d'Italia. Sono il confine che per secoli ha diviso il dentro dal fuori, e che oggi separa il centro storico dai quartieri nuovi.",
+    "tips": "Il modo migliore per leggerle è camminare lungo il perimetro del centro storico, non attraversarlo."
   },
   {
-    "id": "palazzo-baldassarre-museo-dell-uomo-di-altamura",
-    "name": "Palazzo Baldassarre",
+    "id": "teatro-mercadante",
+    "name": "Teatro Mercadante",
     "categories": [
       "cultura"
     ],
-    "icon": "museum",
+    "icon": "landmark",
+    "duration": "30 min",
+    "lat": 40.82481,
+    "lon": 16.55126,
+    "description": "Costruito nel 1895 per il primo centenario della nascita di Saverio Mercadante, il compositore che Altamura ha dato all'Ottocento europeo: tre ordini di palchi e un loggione ampio, in un teatro all'italiana in miniatura. È tuttora la sala dove la città si ritrova per la stagione di prosa.",
+    "tips": "Il modo migliore per vederlo è entrarci per uno spettacolo: il cartellone è nella sezione Eventi."
+  },
+  {
+    "id": "monumento-ai-martiri-del-1799",
+    "name": "Monumento ai Martiri del 1799",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "monument",
+    "duration": "10 min",
+    "lat": 40.82741,
+    "lon": 16.55322,
+    "description": "In mezzo a Piazza Duomo, davanti alla Cattedrale, il monumento che Arnaldo Zocchi scolpì nel 1899 per il centenario della rivoluzione altamurana. Qui era stato piantato l'albero della libertà, e qui la città ricorda chi pagò quella scelta con la vita.",
+    "tips": "La piazza è il punto di ritrovo della città: al tramonto si riempie di gente."
+  },
+  {
+    "id": "palazzo-melodia",
+    "name": "Palazzo Melodia",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.82733,
+    "lon": 16.55341,
+    "description": "Costruito nel 1817 su progetto dell'ingegnere Orazio Lerario, chiude Piazza Duomo di fronte alla Cattedrale con una facciata neoclassica: venti colonne in breccia corallina reggono il balcone sopra dieci grandi finestre. La famiglia Melodia dava giudici alla città già dal Duecento.",
+    "tips": "Guardalo dal lato opposto della piazza: è l'unico punto da cui si vede tutta la facciata."
+  },
+  {
+    "id": "palazzo-calderoni-sabini",
+    "name": "Palazzo Calderoni Sabini",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "15 min",
+    "lat": 40.82801,
+    "lon": 16.55063,
+    "description": "Facciata settecentesca su un'origine più antica, probabilmente seicentesca: dentro, uno scalone monumentale e un salone in stile Luigi XIV con affreschi mitologici, colonne tortili e specchi a tutta altezza. Fu la casa di Michele Martini, giurista e sostenitore della repubblica del 1799, e restò ai conti Sabini fino al 1950.",
+    "tips": "Si affaccia su via Bisanzio Filo, nel cuore del centro storico: apre in occasione di visite e mostre."
+  },
+  {
+    "id": "palazzo-filo",
+    "name": "Palazzo Filo",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.82811,
+    "lon": 16.55072,
+    "description": "Addossato a Palazzo Sabini, con cui per un periodo formava un corpo unico, ha un portale ad arco fra due semicolonne che reggono un timpano spezzato. Nel 1799 qui c'era il comando repubblicano: una porta di casa diventata per qualche settimana il centro della città.",
+    "tips": "Si guarda dalla strada, in via Bisanzio Filo, insieme al vicino Palazzo Calderoni Sabini."
+  },
+  {
+    "id": "palazzo-viti-de-angelis",
+    "name": "Palazzo Viti-De Angelis",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.82949,
+    "lon": 16.55379,
+    "description": "Palazzo quattrocentesco che ingloba Porta Bari: l'arco d'ingresso alla città vecchia è letteralmente dentro la casa. Un modo tutto altamurano di risolvere la questione fra difesa e abitare.",
+    "tips": "Passandoci sotto, alza lo sguardo: la porta e il palazzo si leggono solo da vicino."
+  },
+  {
+    "id": "pulo-di-altamura",
+    "name": "Pulo di Altamura",
+    "categories": [
+      "trekking"
+    ],
+    "icon": "nature",
     "highlight": true,
-    "duration": "50 min",
-    "description": "Ospita il racconto multimediale dell'Uomo di Altamura, lo scheletro neandertaliano trovato nella grotta di Lamalunga nel 1993. La grotta non è visitabile, quindi questo è il modo più diretto per vedere da vicino la ricostruzione e capire come è stato studiato senza mai estrarlo."
+    "duration": "2 h",
+    "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
+    "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
+    "lat": 40.89015,
+    "lon": 16.56795
+  },
+  {
+    "id": "complesso-ipogeo-di-san-michele-delle-grotte",
+    "name": "Ipogeo di San Michele delle Grotte",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "archaeology",
+    "duration": "30 min",
+    "description": "Chiesa scavata nella roccia appena fuori dall'antico giro delle mura, un tempo chiamata Sant'Angelo di Larissa: una navata sotterranea con affreschi, fredda d'estate e silenziosa sempre. È la Altamura rupestre, quella che sta sotto il livello della strada.",
+    "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate."
   },
   {
     "id": "grotta-di-lamalunga",
@@ -68,25 +355,9 @@
     ],
     "icon": "cave",
     "highlight": true,
-    "duration": "mezza giornata",
-    "difficulty": "media",
-    "description": "Il sito in cui riposa l'Uomo di Altamura, incrostato di calcite da circa 150.000 anni. L'interno non è accessibile per ragioni di conservazione, ma il Centro Visite in superficie spiega la scoperta e la campagna murgiana attorno merita il percorso a piedi.",
-    "tips": "Si raggiunge dalla strada per Santeramo. Scarpe chiuse e acqua: non ci sono punti di ristoro."
-  },
-  {
-    "id": "pulo-di-altamura",
-    "name": "Pulo di Altamura",
-    "categories": [
-      "trekking"
-    ],
-    "icon": "nature",
-    "highlight": true,
-    "lat": 40.89093,
-    "lon": 16.57098,
-    "duration": "2 h",
-    "difficulty": "media",
-    "description": "La dolina carsica più grande della Murgia: 550 metri di diametro e pareti alte fino a novanta. Sul fondo e lungo il bordo si aprono grotte abitate nel Neolitico. Il belvedere sul lato sud dà la misura della cavità in un colpo d'occhio; il sentiero perimetrale richiede circa due ore.",
-    "tips": "D'estate conviene andarci presto: non c'è ombra lungo il bordo."
+    "duration": "30 min",
+    "description": "Nel 1993 due speleologi trovarono qui lo scheletro più completo di Neanderthal mai scoperto in Europa, saldato alle concrezioni della grotta da 130.000 anni. L'Uomo di Altamura è ancora là dentro, dove è rimasto: la grotta non si visita, ma il vallone attorno sì.",
+    "tips": "Si arriva al Centro Visite Lamalunga, che racconta la scoperta e organizza le uscite nel vallone."
   },
   {
     "id": "parco-nazionale-dell-alta-murgia",
@@ -96,35 +367,36 @@
     ],
     "icon": "nature",
     "highlight": true,
-    "duration": "intera giornata",
-    "difficulty": "variabile",
-    "description": "Steppa mediterranea, muretti a secco, jazzi e masserie fortificate su oltre 68.000 ettari. È l'unico parco nazionale italiano nato per proteggere un paesaggio agricolo, e i sentieri partono a pochi chilometri dal centro di Altamura."
+    "duration": "Mezza giornata",
+    "description": "Sessantamila ettari di steppa, muretti a secco, jazzi e masserie: l'ultimo grande pascolo d'Europa comincia dove finiscono le case di Altamura. In primavera è un tappeto di fiori, d'estate è giallo e durissimo, e in ogni stagione è il posto dove si capisce perché qui si fa quel pane.",
+    "tips": "I sentieri partono dalle strade per il Pulo e per Lamalunga: acqua e cappello non sono un consiglio, sono necessari.",
+    "lat": 40.8745,
+    "lon": 16.58
   },
   {
-    "id": "cava-pontrelli",
-    "name": "Cava dei dinosauri (Pontrelli)",
+    "id": "bosco-sauro",
+    "name": "Bosco Sauro",
     "categories": [
-      "trekking",
-      "cultura"
+      "esperienze",
+      "trekking"
     ],
-    "icon": "archaeology",
-    "highlight": true,
-    "lat": 40.80625,
-    "lon": 16.62465,
-    "duration": "1 h",
-    "description": "Una ex cava di calcare con circa trentamila orme di dinosauro impresse nel fondale di una laguna del Cretaceo. È uno dei giacimenti icnologici più estesi al mondo. L'area è recintata e la visita è possibile solo in date programmate: conviene verificare prima di mettersi in strada.",
-    "tips": "L'accesso non è libero. Controlla il calendario delle aperture prima di partire."
+    "icon": "park",
+    "duration": "2 h",
+    "lat": 40.91747,
+    "lon": 16.6342,
+    "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
+    "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie."
   },
   {
-    "id": "masseria-jesce",
-    "name": "Masseria Jesce",
+    "id": "parco-degli-ulivi",
+    "name": "Parco degli Ulivi",
     "categories": [
-      "cultura",
-      "esperienze"
+      "parchi"
     ],
-    "icon": "monument",
-    "duration": "1 h",
-    "description": "Masseria fortificata sull'antica via Appia, con una cripta rupestre affrescata tra XI e XIV secolo. Gli affreschi bizantini della cripta sono fra i meglio conservati dell'area murgiana."
+    "icon": "park",
+    "duration": "30 min",
+    "description": "Il verde più vicino al centro: ulivi, panchine e vialetti dove la città va a prendere aria appena il sole cala. Non è una meta turistica, è il posto dove gli altamurani portano i bambini e i cani.",
+    "tips": "A metà pomeriggio è pieno di gente del quartiere; la mattina è il posto più tranquillo della zona."
   },
   {
     "id": "parco-san-giuliano",
@@ -133,81 +405,79 @@
       "parchi"
     ],
     "icon": "park",
-    "duration": "1 h",
-    "description": "Il polmone verde a nord del centro, con percorsi pedonali, area giochi e prati. È servito dalle linee che passano dall'hub di via Santeramo, quindi è il parco più facile da raggiungere in autobus."
+    "duration": "45 min",
+    "description": "Il polmone verde a est della città, con spazi ampi per correre e giocare, lontano dal traffico del centro. È la meta di chi vuole camminare un'ora senza incrociare una macchina.",
+    "tips": "Ci passano le linee che servono la zona dell'ospedale e dell'hub: comodo anche senza auto."
   },
   {
-    "id": "pane-di-altamura-dop",
-    "name": "Il pane di Altamura DOP",
+    "id": "parco-scuola-tommaso-fiore",
+    "name": "Parco della Scuola Tommaso Fiore",
     "categories": [
-      "esperienze"
+      "parchi"
     ],
-    "icon": "landmark",
-    "highlight": true,
-    "lat": 40.82762,
-    "lon": 16.55247,
-    "duration": "1 h",
-    "experience": "gusto",
-    "description": "Semola di grano duro, lievito madre, sale e acqua: il primo pane in Europa ad avere ottenuto la denominazione di origine protetta. I forni del centro storico lavorano ancora a legna e la cottura segue un disciplinare preciso. Diversi panifici aprono il laboratorio in orario di infornata.",
-    "tips": "La forma alta si chiama 'u sckuanète'. Si conserva bene per giorni: è nel disciplinare."
+    "icon": "park",
+    "duration": "20 min",
+    "lat": 40.82135,
+    "lon": 16.56429,
+    "description": "Area verde di quartiere accanto alla scuola Tommaso Fiore, con giochi e alberatura: uno di quei posti che tengono insieme un pezzo di città fuori dal centro.",
+    "tips": "È la sosta giusta se stai aspettando alla fermata di viale Martiri con dei bambini."
   },
   {
-    "id": "passeggiata-mura-megalitiche",
-    "name": "Anello delle mura megalitiche",
+    "id": "piazza-giuseppe-zanardelli",
+    "name": "Piazza Zanardelli",
     "categories": [
-      "trekking",
+      "parchi",
       "cultura"
     ],
-    "icon": "monument",
-    "lat": 40.82438,
-    "lon": 16.54812,
-    "duration": "1 h 15",
-    "difficulty": "facile",
-    "description": "Un percorso urbano lungo i tratti superstiti della cinta megalitica di età preclassica, il motivo per cui la città si chiama Altamura. Si cammina su asfalto, con qualche tratto sterrato nei pressi dei blocchi meglio conservati."
+    "icon": "park",
+    "duration": "20 min",
+    "description": "La piazza dove la città si ferma: caffè, panchine, l'ABMC sotto i portici e il passeggio della sera. È anche uno dei nodi degli autobus urbani, quindi prima o poi ci passi comunque.",
+    "tips": "Da qui parte il corso verso la Cattedrale: è il punto d'inizio naturale di qualsiasi giro."
   },
   {
-    "id": "stazione-di-altamura",
-    "name": "Stazione di Altamura",
-    "lat": 40.83814,
-    "lon": 16.55172,
+    "id": "piazza-santa-teresa",
+    "name": "Piazza Santa Teresa",
     "categories": [
-      "esperienze"
-    ],
-    "icon": "station",
-    "osm": "way/410905814",
-    "description": "Il capolinea ferroviario delle Ferrovie Appulo Lucane, da cui partono i treni per Bari e per Matera. E' anche il nodo da cui si diramano quasi tutte le linee urbane: chi arriva ad Altamura in treno comincia da qui.",
-    "highlight": false,
-    "duration": null,
-    "difficulty": null
-  },
-  {
-    "id": "stadio-tonino-dangelo",
-    "name": "Stadio Comunale Tonino D'Angelo",
-    "lat": 40.83677,
-    "lon": 16.55769,
-    "categories": [
-      "esperienze"
-    ],
-    "icon": "stadium",
-    "osm": "way/1386678728",
-    "description": "Lo stadio comunale, intitolato a Tonino D'Angelo, e' il campo della squadra cittadina e il punto di riferimento per le partite e le manifestazioni sportive.",
-    "highlight": false,
-    "duration": null,
-    "difficulty": null
-  },
-  {
-    "id": "cimitero-di-altamura",
-    "name": "Cimitero di Altamura",
-    "lat": 40.82493,
-    "lon": 16.54197,
-    "categories": [
+      "parchi",
       "cultura"
     ],
-    "icon": "cemetery",
-    "osm": "way/145910685",
-    "description": "Il cimitero monumentale, servito da piu' linee urbane: e' una delle destinazioni piu' frequenti del servizio, soprattutto nei giorni di festa.",
-    "highlight": false,
-    "duration": null,
-    "difficulty": null
+    "icon": "park",
+    "duration": "15 min",
+    "description": "Piazza raccolta davanti all'ex convento dei Carmelitani Scalzi, che oggi ospita il Museo Etnografico. Una di quelle piazze dove ci si siede senza motivo, all'ombra.",
+    "tips": "Si abbina in dieci minuti alla visita del Museo Etnografico, che si affaccia proprio qui."
+  },
+  {
+    "id": "piazza-saverio-mercadante",
+    "name": "Piazza Mercadante",
+    "categories": [
+      "parchi",
+      "cultura"
+    ],
+    "icon": "park",
+    "duration": "15 min",
+    "description": "La piazza davanti al teatro, dedicata al compositore che la città ha dato al mondo. Nelle sere di spettacolo si riempie mezz'ora prima del sipario.",
+    "tips": "È a due passi da Piazza della Resistenza: le due si visitano insieme."
+  },
+  {
+    "id": "piazza-aldo-moro",
+    "name": "Piazza Aldo Moro",
+    "categories": [
+      "parchi"
+    ],
+    "icon": "park",
+    "duration": "15 min",
+    "description": "Grande spazio aperto a est del centro, con alberi e panchine, punto di riferimento per il quartiere e per chi aspetta l'autobus.",
+    "tips": "Da qui partono le linee Scuola: la mattina presto è il posto più affollato della città."
+  },
+  {
+    "id": "piazza-stazione",
+    "name": "Piazza Stazione",
+    "categories": [
+      "parchi"
+    ],
+    "icon": "park",
+    "duration": "10 min",
+    "description": "Il piazzale davanti alla stazione delle Ferrovie Appulo Lucane, porta d'ingresso di chi arriva da Bari o da Matera. Il primo pezzo di Altamura che vedono i visitatori.",
+    "tips": "Qui si incrociano quasi tutte le linee urbane: è il posto giusto per cambiare autobus."
   }
 ]

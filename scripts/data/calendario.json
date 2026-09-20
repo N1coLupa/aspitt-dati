@@ -1,5 +1,5 @@
 {
-  "_nota": "Calendario del servizio. Confermato da Nicola il 20 settembre 2026: il 5 maggio (Sant'Irene) ad Altamura e' festivo, e le linee Scuola seguono il calendario regionale, non quello dei singoli istituti. Le festivita' nazionali (Pasqua compresa) le calcola l'app; qui vanno solo quelle locali e il calendario scolastico, da aggiornare ogni anno quando la Regione Puglia approva quello nuovo. Fonte 2026/27: delibera della Giunta regionale, press.regione.puglia.it.",
+  "_nota": "Calendario del servizio. Confermato da Nicola il 20 settembre 2026: il 5 maggio (Sant'Irene) ad Altamura e' festivo, e le linee Scuola seguono il calendario regionale (la data di inizio che la Regione Puglia fissa ogni anno), non quello dei singoli istituti. Le festivita' nazionali (Pasqua compresa) le calcola l'app; qui vanno solo quelle locali e il calendario scolastico, da aggiornare ogni anno quando la Regione Puglia approva quello nuovo. Fonte 2026/27: delibera della Giunta regionale, press.regione.puglia.it.",
   "festiviLocali": [{ "mese": 5, "giorno": 5, "nome": "Sant'Irene, patrona di Altamura" }],
   "scuola": [
     {

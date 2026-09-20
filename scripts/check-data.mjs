@@ -112,8 +112,13 @@ function checkEvents(data) {
 }
 
 function checkPlaces(data) {
-  if (data.places.length < 40) fail(`solo ${data.places.length} luoghi: attesi almeno 40`);
+  // I luoghi non si contano piu' a centinaia: sono quelli scelti in
+  // scripts/data/places-curated.json, e ognuno deve avere la sua scheda.
+  if (data.places.length < 25) fail(`solo ${data.places.length} luoghi: attesi almeno 25`);
   if (!data.places.some((place) => place.highlight)) fail('nessun luogo in evidenza');
+
+  const muti = data.places.filter((place) => !place.description);
+  if (muti.length) fail(`${muti.length} luoghi senza descrizione: ${muti.map((p) => p.name).join(', ')}`);
 
   const outside = data.places.filter((place) => place.lat < 40.6 || place.lat > 41.1 || place.lon < 16.2 || place.lon > 16.9);
   if (outside.length) fail(`${outside.length} luoghi fuori dal territorio di Altamura`);

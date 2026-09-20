@@ -1,10 +1,13 @@
 // Luoghi di Altamura per la sezione Scopri e per la mappa.
 //
-// Le coordinate e i nomi arrivano da OpenStreetMap via Overpass: e' l'unica
-// fonte aperta con una copertura decente del centro storico e della Murgia.
-// I testi descrittivi non sono scaricabili da nessuna parte, quindi vivono in
-// scripts/data/places-curated.json e vengono agganciati per nome: OSM fornisce
-// il dato geografico, il file curato la voce editoriale.
+// L'elenco lo decide scripts/data/places-curated.json: sono i luoghi scelti uno
+// per uno, ognuno con la sua descrizione. OpenStreetMap serve solo a completarli
+// (coordinate esatte, indirizzo, sito, orari): un luogo che sta su OSM ma non
+// nel file curato non entra nell'app, perche' una scheda col solo nome non dice
+// niente a nessuno.
+//
+// Le fotografie restano ai quattro luoghi simbolo (IMAGE_ALLOWLIST): con una
+// copertura parziale, le schede con foto farebbero sembrare rotte tutte le altre.
 //
 // Uso: node scripts/scrapers/places.mjs
 
@@ -112,10 +115,14 @@ async function readCurated() {
   }
 }
 
+/** I luoghi che tengono la fotografia: gli altri vivono di testo. */
+const IMAGE_ALLOWLIST = new Set(['cattedrale-santa-maria-assunta']);
+
 export async function scrapePlaces() {
   console.log('> OpenStreetMap / Overpass');
   const payload = await overpass(QUERY);
   const curated = await readCurated();
+  const wanted = new Set(curated.map((entry) => entry.id ?? slugify(entry.name)));
 
   const byId = new Map();
   for (const element of payload.elements ?? []) {
@@ -128,7 +135,8 @@ export async function scrapePlaces() {
     if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
 
     const id = slugify(name);
-    if (byId.has(id)) continue;
+    // Solo i luoghi scelti: OSM ne mappa centinaia, l'app ne racconta quaranta.
+    if (!wanted.has(id) || byId.has(id)) continue;
 
     byId.set(id, {
       id,
@@ -198,13 +206,23 @@ export async function scrapePlaces() {
     }
   }
 
-  // Le fotografie arrivano da Wikidata/Commons: si aggiungono alla fine,
-  // quando l'elenco dei luoghi e' ormai definitivo.
+  // Le fotografie arrivano da Wikidata/Commons, ma solo per i luoghi simbolo.
+  const withImages = places.filter((place) => IMAGE_ALLOWLIST.has(place.id));
   try {
-    await attachImages(places);
+    await attachImages(withImages);
   } catch (err) {
     console.warn(`  ! immagini non recuperate: ${err.message}`);
   }
+  for (const place of places) {
+    if (IMAGE_ALLOWLIST.has(place.id)) continue;
+    place.image = null;
+    place.imageCredit = null;
+    place.imageLicense = null;
+    place.imageSource = null;
+  }
+
+  const senzaDescrizione = places.filter((place) => !place.description).map((place) => place.name);
+  if (senzaDescrizione.length) console.warn(`  ! senza descrizione: ${senzaDescrizione.join(', ')}`);
 
   const counts = places.reduce((acc, place) => {
     for (const category of place.categories) acc[category] = (acc[category] ?? 0) + 1;

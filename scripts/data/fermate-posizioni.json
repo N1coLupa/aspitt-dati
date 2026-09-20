@@ -15,6 +15,13 @@
       "fonte": "mymaps",
       "dettaglio": "segnaposto \"Coseco\" nella mappa di Pescariello Z.I."
     },
+    "stop-g-gentile-4": {
+      "nome": "G. Gentile, 4",
+      "lat": 40.938459,
+      "lon": 16.637493,
+      "fonte": "manuale",
+      "dettaglio": "posizione calcolata lungo il percorso, confermata da Nicola il 20 settembre 2026"
+    },
     "stop-hub-via-santeramo-ang-via-rocco-scotellaro": {
       "nome": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
       "lat": 40.825754,
@@ -134,6 +141,13 @@
       "fonte": "mymaps",
       "dettaglio": "segnaposto \"Via Gravina ang. Via della Cicoriella\" nella mappa di Ospedale 2"
     },
+    "stop-via-iv-novembre": {
+      "nome": "Via IV Novembre",
+      "lat": 40.938459,
+      "lon": 16.637493,
+      "fonte": "manuale",
+      "dettaglio": "posizione calcolata lungo il percorso, confermata da Nicola il 20 settembre 2026"
+    },
     "stop-via-iv-novembre-fronte-via-ii-giugno": {
       "nome": "Via IV Novembre (fronte Via II Giugno)",
       "lat": 40.8363691,
@@ -183,12 +197,26 @@
       "fonte": "mymaps",
       "dettaglio": "segnaposto \"Via Papa Giovanni XXIII 83\" nella mappa di Ospedale - Domenica e Festivi"
     },
+    "stop-via-parco-del-vecchio-bovio-fronte-1": {
+      "nome": "Via Parco del Vecchio Bovio - fronte 1",
+      "lat": 40.817116,
+      "lon": 16.540474,
+      "fonte": "manuale",
+      "dettaglio": "posizione calcolata lungo il percorso, confermata da Nicola il 20 settembre 2026"
+    },
     "stop-via-parisi-66": {
       "nome": "Via Parisi 66",
       "lat": 40.8307337,
       "lon": 16.5480181,
       "fonte": "mymaps",
       "dettaglio": "segnaposto \"Via Parisi 66\" nella mappa di Linea Ovest"
+    },
+    "stop-via-pietro-colletta-204": {
+      "nome": "Via Pietro Colletta 204",
+      "lat": 40.938459,
+      "lon": 16.637493,
+      "fonte": "manuale",
+      "dettaglio": "posizione calcolata lungo il percorso, confermata da Nicola il 20 settembre 2026"
     },
     "stop-via-putignano-25": {
       "nome": "Via Putignano 25",
