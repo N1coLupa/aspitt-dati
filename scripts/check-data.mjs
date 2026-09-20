@@ -87,7 +87,14 @@ function checkTransport(data) {
   const today = new Date().toISOString().slice(0, 10);
   const soon = new Date(Date.now() + 45 * 86400000).toISOString().slice(0, 10);
   if (data.calendar && !years.some((year) => year.fine >= soon) && soon.slice(5) >= '08-01') {
-    note(`calendario scolastico da aggiornare: nessun anno dopo il ${years.map((y) => y.fine).sort().pop() ?? today} (scripts/data/calendario.json)`);
+    note(
+      `calendario scolastico da aggiornare: nessun anno dopo il ${
+        years
+          .map((y) => y.fine)
+          .sort()
+          .pop() ?? today
+      } (scripts/data/calendario.json)`
+    );
   }
   const estimated = data.stops.filter((stop) => stop.position === 'estimated');
   if (estimated.length) note(`${estimated.length} fermate con posizione solo stimata: ${estimated.map((s) => s.name).join(', ')}`);

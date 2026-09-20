@@ -68,12 +68,19 @@ function expandCorsaLabels(item) {
   return labels.map((label, i) => ({ label, x: item.x + step * i }));
 }
 
+/**
+ * Nei PDF dell'operatore la legatura "tt" e' codificata con due caratteri
+ * ebraici (U+05BC U+05DE): senza questa riparazione le fermate si chiamano
+ * "soּמopasso" e "Colleּמa" invece di "sottopasso" e "Colletta".
+ */
+const repairLigatures = (text) => text.replace(/ּמ/g, 'tt');
+
 async function readPageItems(page) {
   const content = await page.getTextContent();
   return content.items
     .filter((item) => item.str && item.str.trim())
     .map((item) => ({
-      s: item.str.trim(),
+      s: repairLigatures(item.str.trim()),
       x: item.transform[4],
       y: item.transform[5],
       w: item.width,

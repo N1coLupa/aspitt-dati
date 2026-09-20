@@ -17,8 +17,12 @@ import { BlockedError, getBuffer, getText } from './http.mjs';
 
 export const COPY_DIR = process.env.MUEVT_COPIA_MARINO ?? path.join(os.homedir(), 'Desktop', 'orari-marino');
 
-/** Da dove sono arrivati i dati di questo giro: 'rete' o 'copia locale'. */
-export const usage = { local: new Set(), missing: new Set() };
+/**
+ * Da dove sono arrivati i dati di questo giro. `files` dice, per ogni
+ * indirizzo, il nome del file usato dalla copia: serve per accorgersi che il
+ * PDF salvato a mano e' piu' recente di quello che il sito pubblicava.
+ */
+export const usage = { local: new Set(), missing: new Set(), files: new Map() };
 
 async function files() {
   try {
@@ -59,19 +63,35 @@ export async function marinoText(url, marker) {
   }
 }
 
-/** Come marinoText, per i PDF: la copia deve avere il nome originale del file. */
+/**
+ * Il nome del PDF senza la data finale: "..._Orari_Scuola-2-08-09-2026.pdf" e
+ * "..._Orari_Scuola-2-02-09-2026.pdf" sono lo stesso quadro orario, in due
+ * edizioni. Serve a riconoscere un orario nuovo salvato a mano.
+ */
+const timetableKey = (name) =>
+  name
+    .toLowerCase()
+    .replace(/\.pdf$/, '')
+    .replace(/[-_]?\d{2}[-_.]\d{2}[-_.]\d{4}$/, '')
+    .replace(/[-_]?\d{4}$/, '');
+
+/** Come marinoText, per i PDF: nella copia si cerca il file con lo stesso nome, o una sua edizione piu' recente. */
 export async function marinoBuffer(url) {
   try {
     return await getBuffer(url);
   } catch (err) {
     if (!(err instanceof BlockedError)) throw err;
     const wanted = fileName(url).toLowerCase();
-    const file = (await files()).find((candidate) => path.basename(candidate).toLowerCase() === wanted);
+    const saved = (await files()).filter((candidate) => /\.pdf$/i.test(candidate));
+    const file =
+      saved.find((candidate) => path.basename(candidate).toLowerCase() === wanted) ??
+      saved.find((candidate) => timetableKey(path.basename(candidate)) === timetableKey(wanted));
     if (!file) {
       usage.missing.add(url);
       throw err;
     }
     usage.local.add(url);
+    usage.files.set(url, path.basename(file));
     return fs.readFile(file);
   }
 }
@@ -95,7 +115,7 @@ export async function writeMissingList() {
     '',
     ...[...usage.missing].map((url) => `  ${url}`),
     '',
-    'Poi rilancia l\'aggiornamento (npm run data) o aspetta quello di stanotte.',
+    "Poi rilancia l'aggiornamento (npm run data) o aspetta quello di stanotte.",
   ];
   await fs.mkdir(COPY_DIR, { recursive: true });
   await fs.writeFile(file, `${lines.join('\r\n')}\r\n`);

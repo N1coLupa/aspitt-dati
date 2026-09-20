@@ -21,7 +21,22 @@ const ON_STREET_M = 18;
 /** Passo di campionamento del percorso. */
 const STEP_M = 8;
 
-const PREFIXES = new Set(['via', 'viale', 'piazza', 'largo', 'corso', 'vico', 'vicolo', 'strada', 'contrada', 'piazzale', 'traversa', 'fronte', 'angolo', 'civico']);
+const PREFIXES = new Set([
+  'via',
+  'viale',
+  'piazza',
+  'largo',
+  'corso',
+  'vico',
+  'vicolo',
+  'strada',
+  'contrada',
+  'piazzale',
+  'traversa',
+  'fronte',
+  'angolo',
+  'civico',
+]);
 
 /* ------------------------------------------------------------ Geometria */
 
@@ -122,7 +137,11 @@ function waysFor(street, streets) {
 /** "Via Parisi - fronte civico 66" e "Via Parisi, 66" -> "parisi#66". */
 function twinKey(name) {
   const street = streetOfStop(name);
-  const number = /(\d{1,4})\s*[a-z]?\s*$/i.exec(String(name).replace(/\(.*?\)/g, '').trim())?.[1];
+  const number = /(\d{1,4})\s*[a-z]?\s*$/i.exec(
+    String(name)
+      .replace(/\(.*?\)/g, '')
+      .trim()
+  )?.[1];
   if (!street || !number) return null;
   return `${streetTokens(street)
     .map((token) => ALIASES[token] ?? token)
@@ -247,8 +266,13 @@ export function computeStopPositions(transport, { streets = [], known = {} } = {
     for (const entry of stops) {
       const previous = result.get(entry.stop.stopId);
       const rank = { exact: 3, street: 2, estimated: 1 };
+      const source = known[entry.stop.stopId];
       const next = entry.exact
-        ? { ...entry.exact, position: 'exact', detail: known[entry.stop.stopId] ? 'rilevata sul posto' : 'KML' }
+        ? {
+            ...entry.exact,
+            position: 'exact',
+            detail: source ? (source.dettaglio ?? (source.fonte === 'manuale' ? 'rilevata sul posto' : source.fonte)) : 'KML',
+          }
         : (entry.twin ?? { ...pointAt(entry.s), position: entry.position, detail: entry.detail });
       // Una fermata servita da piu' linee prende la posizione migliore trovata.
       if (!previous || rank[next.position] > rank[previous.position]) result.set(entry.stop.stopId, next);
@@ -287,5 +311,9 @@ export function applyStopPositions(transport, positions) {
 
 /** Le vie salvate in scripts/data/vie-altamura.json, nella forma di fetchStreets. */
 export function streetsFromCache(cache) {
-  return (cache?.vie ?? []).map((way) => ({ name: way.n, tokens: streetTokens(way.n), geometry: way.g.map(([lat, lon]) => ({ lat, lon })) }));
+  return (cache?.vie ?? []).map((way) => ({
+    name: way.n,
+    tokens: streetTokens(way.n),
+    geometry: way.g.map(([lat, lon]) => ({ lat, lon })),
+  }));
 }

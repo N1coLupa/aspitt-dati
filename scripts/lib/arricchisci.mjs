@@ -39,7 +39,11 @@ const fromMinutes = (total) => `${String(Math.floor(total / 60)).padStart(2, '0'
 
 /** "..._Orari_Ospedale-1-31-03-2026.pdf" -> "2026-03-31". */
 export function validFromUrl(url) {
-  const name = decodeURIComponent(String(url ?? '').split('/').pop() ?? '');
+  const name = decodeURIComponent(
+    String(url ?? '')
+      .split('/')
+      .pop() ?? ''
+  );
   const matches = [...name.matchAll(/(\d{2})[-_.](\d{2})[-_.](\d{4})/g)];
   const last = matches[matches.length - 1];
   if (!last) return null;
@@ -70,10 +74,16 @@ function splitAtGaps(line, trip, notes) {
     const gap = toMinutes(served[k].st.time) - toMinutes(served[k - 1].st.time);
     if (gap <= SPLIT_GAP_MIN) continue;
     const cut = served[k].pos;
-    const part = (keep) =>
-      trip.stopTimes.map((st, pos) => (keep(pos) ? { ...st } : { ...st, time: null, served: false }));
-    const first = { ...trip, id: `${trip.id}-a`, stopTimes: part((pos) => pos < cut) };
-    const second = { ...trip, id: `${trip.id}-b`, departure: served[k].st.time, stopTimes: part((pos) => pos >= cut) };
+    // Ogni meta' tiene solo le proprie fermate: se le altre restassero con
+    // `served: false` l'app le mostrerebbe come soppressioni, cioe' come
+    // fermate che la corsa salta apposta.
+    const first = { ...trip, id: `${trip.id}-a`, stopTimes: trip.stopTimes.slice(0, cut).map((st) => ({ ...st })) };
+    const second = {
+      ...trip,
+      id: `${trip.id}-b`,
+      departure: served[k].st.time,
+      stopTimes: trip.stopTimes.slice(cut).map((st) => ({ ...st })),
+    };
     notes.push(`${line.name}, ${trip.code}: ${gap} minuti fra ${served[k - 1].st.time} e ${served[k].st.time}, divisa in due corse`);
     // La seconda meta' puo' avere a sua volta un buco.
     return [first, ...splitAtGaps(line, second, notes)];
@@ -86,6 +96,24 @@ function splitAtGaps(line, trip, notes) {
  * quello che e' stato corretto, per il resoconto dell'aggiornamento.
  */
 export async function enrichTransport(transport, notes = []) {
+  // Linee che l'operatore pubblica ma che l'app non mostra (vedi linee-escluse.json).
+  const escluse = new Set(((await readJson(path.join(DATA, 'linee-escluse.json'), null))?.linee ?? []).map((voce) => voce.id));
+  if (escluse.size) {
+    const prima = transport.lines.length;
+    transport.lines = transport.lines.filter((line) => !escluse.has(line.id));
+    if (transport.lines.length !== prima) {
+      // Le fermate servite solo da quelle linee non servono piu' a nessuno.
+      const restano = new Set(transport.lines.flatMap((line) => line.stops.map((stop) => stop.stopId)));
+      const fermatePrima = transport.stops.length;
+      transport.stops = transport.stops
+        .filter((stop) => restano.has(stop.id))
+        .map((stop) => ({ ...stop, lines: stop.lines.filter((id) => !escluse.has(id)) }));
+      notes.push(
+        `escluse ${prima - transport.lines.length} linee e ${fermatePrima - transport.stops.length} fermate (scripts/data/linee-escluse.json)`
+      );
+    }
+  }
+
   const calendar = await readJson(path.join(DATA, 'calendario.json'), null);
   if (calendar) {
     transport.calendar = { localHolidays: calendar.festiviLocali ?? [], schoolYears: calendar.scuola ?? [] };
@@ -93,7 +121,7 @@ export async function enrichTransport(transport, notes = []) {
 
   for (const line of transport.lines) {
     line.school = isSchoolLine(line);
-    line.validFrom = validFromUrl(line.timetableUrl);
+    line.validFrom = validFromUrl(line.timetableFile ?? line.timetableUrl);
     for (const trip of line.trips) fixTypos(trip, notes, line.name);
     // Una corsa gia' divisa ha id che finisce in -a/-b e non ha piu' buchi.
     line.trips = line.trips.flatMap((trip) => splitAtGaps(line, trip, notes));

@@ -12,7 +12,7 @@
 // Uso: node scripts/scrapers/transport.mjs
 
 import * as cheerio from 'cheerio';
-import { sleep } from '../lib/http.mjs';
+import { BlockedError, sleep } from '../lib/http.mjs';
 import { COPY_DIR, marinoBuffer, marinoText, usage } from '../lib/copia-locale.mjs';
 import { fetchKmlGeometry, kmlUrlFromMyMapsLink } from '../lib/kml.mjs';
 import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
@@ -226,7 +226,12 @@ async function scrapeLine(line, registry, previousLine) {
     result.warnings.push('PDF non scaricabile: tenute le corse di ieri, stesso quadro orario');
     usage.missing.delete(line.timetableUrl);
     for (const stop of previousLine.stops) register(registry, stop, line.id);
-    return { ...result, stops: previousLine.stops, trips: previousLine.trips, shape: result.shape.length ? result.shape : previousLine.shape };
+    return {
+      ...result,
+      stops: previousLine.stops,
+      trips: previousLine.trips,
+      shape: result.shape.length ? result.shape : previousLine.shape,
+    };
   }
 
   // L'elenco fermate autorevole e' quello del PDF: e' l'ordine delle corse.
@@ -302,7 +307,8 @@ async function scrapeLine(line, registry, previousLine) {
  */
 async function readNoticeValidity(url, previousLine) {
   if (!url) return { noticeFrom: null, noticeUntil: null };
-  const known = previousLine?.noticeUrl === url ? { noticeFrom: previousLine.noticeFrom ?? null, noticeUntil: previousLine.noticeUntil ?? null } : null;
+  const known =
+    previousLine?.noticeUrl === url ? { noticeFrom: previousLine.noticeFrom ?? null, noticeUntil: previousLine.noticeUntil ?? null } : null;
   try {
     let text;
     if (/\.pdf($|\?)/i.test(url)) {
@@ -330,11 +336,32 @@ export async function scrapeTransport(previous = null) {
   console.log('> homepage MarinoBus Urbano');
   usage.local.clear();
   usage.missing.clear();
-  const html = await marinoText(HOME_URL, 'home--lines');
-  const $ = cheerio.load(html);
+  usage.files.clear();
 
-  const lines = parseLines($);
-  console.log(`  ${lines.length} linee trovate`);
+  // Senza homepage non si sa quali linee esistono. Se il sito la blocca e non
+  // c'e' una copia salvata, l'elenco (nomi, colori, mappe, PDF) resta quello di
+  // ieri: i PDF salvati a mano bastano per aggiornare gli orari.
+  let html = null;
+  try {
+    html = await marinoText(HOME_URL, 'home--lines');
+  } catch (err) {
+    if (!(err instanceof BlockedError) || !previous?.lines?.length) throw err;
+    console.log('  homepage non disponibile: elenco linee da quello di ieri');
+  }
+  const $ = cheerio.load(html ?? '');
+
+  const lines = html
+    ? parseLines($)
+    : previous.lines.map(({ id, name, color, route, timetableUrl, mapUrl, noticeUrl }) => ({
+        id,
+        name,
+        color,
+        route,
+        timetableUrl,
+        mapUrl,
+        noticeUrl,
+      }));
+  console.log(`  ${lines.length} linee ${html ? 'trovate' : 'riprese da ieri'}`);
   // Se il sito risponde con una pagina di verifica (captcha) non ci sono linee:
   // meglio fallire che sovrascrivere gli orari buoni con un file vuoto.
   if (!lines.length) {
@@ -348,6 +375,10 @@ export async function scrapeTransport(previous = null) {
     const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
     const result = await scrapeLine(line, registry, previousLine);
     Object.assign(result, await readNoticeValidity(line.noticeUrl, previousLine));
+    // Quando l'orario arriva da un PDF salvato a mano, il nome del file e' la
+    // fonte piu' attendibile della data di validita': puo' essere piu' recente
+    // del PDF che il sito pubblicava l'ultima volta che l'abbiamo visto.
+    result.timetableFile = usage.files.get(line.timetableUrl) ?? null;
     const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);
     console.log(
       `${result.stops.length} fermate, ${result.trips.length} corse, ${suppressed} soppressioni` +
@@ -357,7 +388,7 @@ export async function scrapeTransport(previous = null) {
     await sleep(400);
   }
 
-  const news = await parseNews();
+  const news = html ? await parseNews() : [];
   // Le news sono facoltative: senza, restano quelle di ieri nell'app.
   usage.missing.delete(NEWS_URL);
   if (!news.length && previous?.news?.length) news.push(...previous.news);
@@ -384,8 +415,8 @@ export async function scrapeTransport(previous = null) {
     },
     lines: scraped,
     stops: [...registry.values()],
-    vendors: parseVendors(html),
-    fares: parseFares($),
+    vendors: html ? parseVendors(html) : (previous?.vendors ?? []),
+    fares: html ? parseFares($) : (previous?.fares ?? []),
     news,
   };
 }

@@ -1,4 +1,258 @@
 {
   "_nota": "Fermate misurate sul posto: \"<id fermata>\": { \"lat\": 40.8, \"lon\": 16.5, \"nota\": \"chi e quando\" }. Vincono su qualunque calcolo di scripts/lib/posizioni.mjs.",
-  "fermate": {}
+  "fermate": {
+    "stop-contempo-logama": {
+      "nome": "Contempo/Logama",
+      "lat": 40.9393644,
+      "lon": 16.6368319,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Contempo/Logama\" nella mappa di Pescariello Z.I."
+    },
+    "stop-coseco": {
+      "nome": "Coseco",
+      "lat": 40.9384591,
+      "lon": 16.6374928,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Coseco\" nella mappa di Pescariello Z.I."
+    },
+    "stop-hub-via-santeramo-ang-via-rocco-scotellaro": {
+      "nome": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
+      "lat": 40.825754,
+      "lon": 16.565368,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Hub Via Santeramo ang. Via Rocco Scotellaro\" nella mappa di Navette HUB"
+    },
+    "stop-ospedale-fermata-bus": {
+      "nome": "OSPEDALE Fermata Bus",
+      "lat": 40.8200499,
+      "lon": 16.4710713,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"OSPEDALE Fermata Bus (partenza)\" nella mappa di Ospedale 2"
+    },
+    "stop-piazza-unita-d-italia-8": {
+      "nome": "Piazza Unità D’Italia 8",
+      "lat": 40.8295688,
+      "lon": 16.5543242,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Piazza Unità D’Italia 8\" nella mappa di Navette HUB"
+    },
+    "stop-piazza-zanardelli-7": {
+      "nome": "Piazza Zanardelli, 7",
+      "lat": 40.8243788,
+      "lon": 16.5520214,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Piazza Zanardelli, 7\" nella mappa di Pescariello Z.I."
+    },
+    "stop-piazza-zanardelli-pensilina": {
+      "nome": "Piazza Zanardelli Pensilina",
+      "lat": 40.8243788,
+      "lon": 16.5520214,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Piazza Zanardelli, 7\" nella mappa di Pescariello Z.I."
+    },
+    "stop-tecnomec": {
+      "nome": "Tecnomec",
+      "lat": 40.9512473,
+      "lon": 16.6434186,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Tecnomec\" nella mappa di Pescariello Z.I."
+    },
+    "stop-via-a-di-crollalanza-70": {
+      "nome": "Via A. di Crollalanza 70",
+      "lat": 40.8134765,
+      "lon": 16.5468057,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via A. di Crollalanza 70\" nella mappa di Linea Ovest"
+    },
+    "stop-via-a-di-crollalanza-9-fronte-pensilina": {
+      "nome": "Via A. Di Crollalanza 9 (fronte Pensilina)",
+      "lat": 40.8135614,
+      "lon": 16.5464588,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via A. Di Crollalanza fronte 70\" nella mappa di Ospedale - Domenica e Festivi"
+    },
+    "stop-via-bari-14": {
+      "nome": "Via Bari 14",
+      "lat": 40.8303322,
+      "lon": 16.5545675,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Bari 14\" nella mappa di Navette HUB"
+    },
+    "stop-via-bari-265": {
+      "nome": "Via Bari, 265",
+      "lat": 40.8364328,
+      "lon": 16.5624796,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Bari, 150\" nella mappa di Pescariello Z.I."
+    },
+    "stop-via-cicerone-11": {
+      "nome": "Via Cicerone, 11",
+      "lat": 40.8184545,
+      "lon": 16.5642447,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Cicerone, 11\" nella mappa di Linea Scuola 1"
+    },
+    "stop-via-dei-mille-103": {
+      "nome": "Via dei Mille 103",
+      "lat": 40.8263638,
+      "lon": 16.5495467,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via dei Mille 103\" nella mappa di Linea Ovest"
+    },
+    "stop-via-dei-mille-40": {
+      "nome": "Via Dei Mille, 40",
+      "lat": 40.8279992,
+      "lon": 16.5487848,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Dei Mille fronte fronte 40\" nella mappa di Pescariello Z.I."
+    },
+    "stop-via-dei-mille-88": {
+      "nome": "Via Dei Mille 88",
+      "lat": 40.8261913,
+      "lon": 16.5494302,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Dei Mille 88\" nella mappa di Navette HUB"
+    },
+    "stop-via-gravina-231": {
+      "nome": "Via Gravina 231",
+      "lat": 40.8267262,
+      "lon": 16.5246889,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Gravina 231\" nella mappa di Ospedale - Domenica e Festivi"
+    },
+    "stop-via-gravina-7": {
+      "nome": "Via Gravina 7",
+      "lat": 40.828879,
+      "lon": 16.5480317,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Gravina 7\" nella mappa di Ospedale 2"
+    },
+    "stop-via-gravina-ang-via-della-cicoriella": {
+      "nome": "Via Gravina (ang. Via della Cicoriella)",
+      "lat": 40.8276958,
+      "lon": 16.5341245,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Gravina ang. Via della Cicoriella\" nella mappa di Ospedale 2"
+    },
+    "stop-via-iv-novembre-fronte-via-ii-giugno": {
+      "nome": "Via IV Novembre (fronte Via II Giugno)",
+      "lat": 40.8363691,
+      "lon": 16.5541237,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via IV Novembre fronte via II giugno\" nella mappa di Navette HUB"
+    },
+    "stop-via-matera-101": {
+      "nome": "Via Matera 101",
+      "lat": 40.8189992,
+      "lon": 16.5539556,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Matera 101\" nella mappa di Linea Ovest"
+    },
+    "stop-via-matera-118": {
+      "nome": "Via Matera 118",
+      "lat": 40.8183369,
+      "lon": 16.5537905,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Matera 118\" nella mappa di Ospedale - Domenica e Festivi"
+    },
+    "stop-via-matera-39": {
+      "nome": "Via Matera 39",
+      "lat": 40.8216004,
+      "lon": 16.5536403,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Matera 39\" nella mappa di Linea Ovest"
+    },
+    "stop-via-mura-megalitiche": {
+      "nome": "Via Mura Megalitiche",
+      "lat": 40.8360103,
+      "lon": 16.5570973,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Mura Megalitiche - fronte Stadio\" nella mappa di Pescariello Z.I."
+    },
+    "stop-via-palestro-58-empire": {
+      "nome": "Via Palestro 58 (Empire)",
+      "lat": 40.8249886,
+      "lon": 16.5644552,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Palestro 58\" nella mappa di Navette HUB"
+    },
+    "stop-via-papa-giovanni-xxiii-83": {
+      "nome": "Via Papa Giovanni XXIII 83",
+      "lat": 40.8209681,
+      "lon": 16.5668571,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Papa Giovanni XXIII 83\" nella mappa di Ospedale - Domenica e Festivi"
+    },
+    "stop-via-parisi-66": {
+      "nome": "Via Parisi 66",
+      "lat": 40.8307337,
+      "lon": 16.5480181,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Parisi 66\" nella mappa di Linea Ovest"
+    },
+    "stop-via-putignano-25": {
+      "nome": "Via Putignano 25",
+      "lat": 40.8167072,
+      "lon": 16.5520416,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Putignano 25\" nella mappa di Linea Ovest"
+    },
+    "stop-via-santeramo-161": {
+      "nome": "Via Santeramo 161",
+      "lat": 40.8273654,
+      "lon": 16.5606851,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Santeramo 161\" nella mappa di Navette HUB"
+    },
+    "stop-via-selva-117": {
+      "nome": "Via Selva, 117",
+      "lat": 40.8215104,
+      "lon": 16.5458413,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Selva fronte 117\" nella mappa di Pescariello Z.I."
+    },
+    "stop-via-treviso-27": {
+      "nome": "Via Treviso 27",
+      "lat": 40.818691,
+      "lon": 16.5557221,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Via Treviso 27\" nella mappa di Ospedale - Domenica e Festivi"
+    },
+    "stop-viale-martiri": {
+      "nome": "Viale Martiri",
+      "lat": 40.8240671,
+      "lon": 16.5539552,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Viale Martiri, 6\" nella mappa di Linea Scuola 3"
+    },
+    "stop-viale-martiri-102": {
+      "nome": "Viale Martiri 102",
+      "lat": 40.823261,
+      "lon": 16.5609997,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Viale Martiri 102\" nella mappa di Navette HUB"
+    },
+    "stop-viale-martiri-6": {
+      "nome": "Viale Martiri 6",
+      "lat": 40.8240245,
+      "lon": 16.5539579,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Viale Martiri 6\" nella mappa di Navette HUB"
+    },
+    "stop-viale-martiri-fronte-83": {
+      "nome": "Viale Martiri (fronte 83)",
+      "lat": 40.8238936,
+      "lon": 16.5552902,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Viale Martiri (fronte 83)\" nella mappa di Navette HUB"
+    },
+    "stop-viale-traiano-35": {
+      "nome": "Viale Traiano 35",
+      "lat": 40.8205407,
+      "lon": 16.563922,
+      "fonte": "mymaps",
+      "dettaglio": "segnaposto \"Viale Traiano 35\" nella mappa di Ospedale 1"
+    }
+  },
+  "aggiornato": "2026-09-20"
 }

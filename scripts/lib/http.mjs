@@ -28,7 +28,8 @@ export class BlockedError extends Error {
   }
 }
 
-const isChallenge = (res) => Boolean(res.headers.get('sg-captcha')) || (res.status === 202 && /sgcaptcha/i.test(res.headers.get('refresh') ?? ''));
+const isChallenge = (res) =>
+  Boolean(res.headers.get('sg-captcha')) || (res.status === 202 && /sgcaptcha/i.test(res.headers.get('refresh') ?? ''));
 
 async function request(url, { attempts = 3, timeout = 40000, headers = {} } = {}) {
   let lastError;

@@ -94,7 +94,10 @@ function diffTransport(previous, next) {
       continue;
     }
 
-    if (before.timetableUrl !== line.timetableUrl) {
+    // Il quadro orario e' nuovo se cambia il PDF o la data da cui vale: con il
+    // sito bloccato l'indirizzo resta quello di ieri, ma il file salvato a mano
+    // puo' essere di un'edizione piu' recente.
+    if (before.timetableUrl !== line.timetableUrl || (line.validFrom && before.validFrom && before.validFrom !== line.validFrom)) {
       alerts.push({
         id: `orari-${line.id}-${now.slice(0, 10)}`,
         severity: 'warning',
@@ -122,8 +125,13 @@ function diffTransport(previous, next) {
 
   const beforeSuppressions = suppressionMap(previous);
   const afterSuppressions = suppressionMap(next);
+  // Una fermata rinominata cambia identificativo: sembrerebbe sparita e
+  // ricomparsa. Gli avvisi valgono solo per le fermate presenti in entrambi.
+  const beforeStops = new Set(previous.stops.map((stop) => stop.id));
+  const afterStops = new Set(next.stops.map((stop) => stop.id));
 
   for (const [key, entry] of afterSuppressions) {
+    if (!beforeStops.has(entry.stopId)) continue;
     const before = beforeSuppressions.get(key);
     if (before && before.trips.length === entry.trips.length) continue;
     alerts.push({
@@ -140,7 +148,7 @@ function diffTransport(previous, next) {
   }
 
   for (const [key, entry] of beforeSuppressions) {
-    if (afterSuppressions.has(key)) continue;
+    if (afterSuppressions.has(key) || !afterStops.has(entry.stopId)) continue;
     alerts.push({
       id: `ripristino-${key.replace('::', '-')}-${now.slice(0, 10)}`,
       severity: 'info',

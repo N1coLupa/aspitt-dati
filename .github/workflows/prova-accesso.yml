@@ -1,0 +1,30 @@
+# Prova se dai server di GitHub si riesce a leggere il sito dell'operatore.
+#
+# Il sito blocca certi indirizzi IP con una verifica anti-bot: serve a sapere,
+# senza accendere nessun computer, se l'aggiornamento automatico puo' girare
+# qui. Si lancia a mano dalla scheda Actions ("Run workflow") e scrive il
+# risultato nel riepilogo.
+
+name: Prova accesso al sito
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prova
+        run: |
+          set +e
+          node scripts/prova-accesso.mjs | tee esito.txt
+          {
+            echo '```'
+            cat esito.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

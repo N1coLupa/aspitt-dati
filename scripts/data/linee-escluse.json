@@ -1,0 +1,9 @@
+{
+  "_nota": "Linee che l'operatore pubblica ma che Muevt non mostra. Muevt e' l'app del trasporto urbano di Altamura: le linee extraurbane hanno fermate fuori citta' che l'operatore non mappa, quindi non si possono mostrare con onesta'. Tolte dallo scraper a ogni aggiornamento, insieme alle fermate che restano senza nessuna linea.",
+  "linee": [
+    {
+      "id": "tpl-regionale",
+      "motivo": "Linea extraurbana (Jesce, Melfi, La Martella): l'operatore non pubblica una mappa, 14 fermate su 23 non hanno posizione. Tolta su richiesta di Nicola il 20 settembre 2026."
+    }
+  ]
+}
