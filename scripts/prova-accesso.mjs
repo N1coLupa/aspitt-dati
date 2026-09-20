@@ -14,7 +14,10 @@ const PAGES = [
   ['pagina iniziale', 'https://marinobusurbano.it/'],
   ['pagina avvisi', 'https://marinobusurbano.it/news/'],
 ];
-const PDF = ['un PDF degli orari', 'https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf'];
+const PDF = [
+  'un PDF degli orari',
+  'https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf',
+];
 
 async function publicAddress() {
   try {
@@ -49,7 +52,9 @@ for (const [what, url] of PAGES) {
 try {
   const pdf = await getBuffer(PDF[1], { attempts: 1 });
   const isPdf = pdf.subarray(0, 4).toString() === '%PDF';
-  console.log(`  ${isPdf ? 'ok       ' : 'sospetto '} ${PDF[0]}: ${Math.round(pdf.length / 1024)} kB${isPdf ? '' : ' (non sembra un PDF)'}`);
+  console.log(
+    `  ${isPdf ? 'ok       ' : 'sospetto '} ${PDF[0]}: ${Math.round(pdf.length / 1024)} kB${isPdf ? '' : ' (non sembra un PDF)'}`
+  );
 } catch (err) {
   if (err instanceof BlockedError) {
     blocked += 1;
