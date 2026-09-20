@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T16:51:53.966Z",
+  "generatedAt": "2026-09-20T14:25:43.091Z",
   "sources": [
     {
       "name": "AltamuraLive",
@@ -52,25 +52,6 @@
       "venue": null,
       "image": "https://altamura.gocity.it/library/media/mfront_altamura_logo.jpg",
       "summary": "Fino al 20 settembre",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-altamura-in-scena-2026-euphonix-in-concerto",
-      "title": "Altamura in scena 2026: Euphonix in Concerto",
-      "url": "https://www.altamuralife.it/eventi/altamura-in-scena-2026-euphonix-in-concerto/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20",
-      "startTime": null,
-      "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_altamura_in_scena_2026.jpg",
-      "summary": "domenica 20 settembre",
       "tags": [],
       "categories": [
         "cultura"
@@ -163,6 +144,25 @@
       "dated": true
     },
     {
+      "id": "life-nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo",
+      "title": "Nel segno di Brera: in mostra i dipinti di Addamiano, De Cosmo e Scazzosi",
+      "url": "https://www.altamuralife.it/eventi/nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo-e-scazzosi/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": "2026-10-24",
+      "startTime": null,
+      "venue": null,
+      "image": "https://altamura.gocity.it/library/media/mfront_mostra_adda.jpg",
+      "summary": "Fino al 24 ottobre",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
       "id": "live-santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curios",
       "title": "“Santa Maria” ad Altamura: le origini, le tradizioni e le curiosità della festa altamurana",
       "url": "https://altamuralive.it/2026/08/14/santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curiosita-della-festa-altamurana/",
@@ -189,9 +189,9 @@
       "dated": false
     },
     {
-      "id": "life-nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo",
-      "title": "Nel segno di Brera: in mostra i dipinti di Addamiano, De Cosmo e Scazzosi",
-      "url": "https://www.altamuralife.it/eventi/nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo-e-scazzosi/",
+      "id": "life-altamura-in-scena-2026-euphonix-in-concerto",
+      "title": "Altamura in scena 2026: Euphonix in Concerto",
+      "url": "https://www.altamuralife.it/eventi/altamura-in-scena-2026-euphonix-in-concerto/",
       "source": "AltamuraLife",
       "sourceUrl": "https://www.altamuralife.it/",
       "publishedAt": null,
@@ -199,7 +199,7 @@
       "endDate": null,
       "startTime": null,
       "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_mostra_adda.jpg",
+      "image": "https://altamura.gocity.it/library/media/mfront_locandina20set26.jpg",
       "summary": "Oggi",
       "tags": [],
       "categories": [
