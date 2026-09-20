@@ -1,32 +1,32 @@
 {
   "schema": 2,
-  "checkedAt": "2026-09-20T14:29:30.234Z",
+  "checkedAt": "2026-09-20T21:26:10.386Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-09-07T14:55:27.668Z",
-      "bytes": 885231,
-      "sha256": "007a6475df30a4b78f25d3d398cc7a8f3cb8a6350a660f3cca7e463523f2e91f"
+      "generatedAt": "2026-09-20T21:25:56.075Z",
+      "bytes": 765186,
+      "sha256": "df9fb0580cec03c1d02e60e0a6f0a3724b050dc23ab1f52741fbc8be929d9bb5"
     },
     "events": {
-      "generatedAt": "2026-09-20T14:25:43.091Z",
+      "generatedAt": "2026-09-20T21:25:58.223Z",
       "bytes": 7773,
-      "sha256": "448680f731136248205b3746f6e68921359abb9584e2f659142a0bbf2eca93e3"
+      "sha256": "a09cf4bdb4f24ea57018ca84067a9058c8deff082ac80cb9e5772716f0ff53bd"
     },
     "places": {
-      "generatedAt": "2026-09-20T14:29:30.230Z",
-      "bytes": 108971,
-      "sha256": "d33c08808998be28ce6738582272b81118b437453f3eab5b2f8e863f3c1bdfa4"
+      "generatedAt": "2026-09-20T21:26:10.377Z",
+      "bytes": 108990,
+      "sha256": "db059202ddc15230669a8282a8f9fab9f0ada3524b7a6ce5fddb1d9cdb68581b"
     },
     "alerts": {
-      "generatedAt": "2026-09-20T14:29:30.233Z",
-      "bytes": 63,
-      "sha256": "2d4c1725f7679f8c7b696f99cd8419e28aaeeaf8e3efe6f1a7ff998867fb9e25"
+      "generatedAt": "2026-09-20T21:26:10.381Z",
+      "bytes": 14308,
+      "sha256": "f7d0dcfae157ec6cc3f22b1be430fb3aebb4e18d8c42afe6b85bb3c72347245c"
     }
   },
   "sources": {
     "transport": {
-      "status": "invariato",
-      "error": "il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/"
+      "status": "aggiornato",
+      "error": null
     },
     "events": {
       "status": "aggiornato",
@@ -38,6 +38,6 @@
     }
   },
   "app": "muevt",
-  "signedAt": "2026-09-20T14:29:30.356Z",
+  "signedAt": "2026-09-20T21:26:10.435Z",
   "keyId": "5VTN2Etz"
 }
