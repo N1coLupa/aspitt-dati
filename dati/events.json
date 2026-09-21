@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:05:29.954Z",
+  "generatedAt": "2026-09-21T16:42:30.607Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -60,6 +60,24 @@
       "tags": [],
       "categories": [
         "esperienze"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-il-carnevale-degli-animali",
+      "title": "Il Carnevale degli animali",
+      "url": "https://iltaccodibacco.it/puglia/eventi/330925.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "🎶🦁 Un viaggio straordinario nel regno degli animali vi aspetta ad Altamura! L’Orchestra Filarmonica Pugliese presenta Il \"Carnevale degli animali\" di Camille Saint-Saëns, una delle opere più affascinanti e divertenti…",
+      "tags": [],
+      "categories": [
+        "cultura"
       ],
       "dated": true
     },
