@@ -1,6 +1,10 @@
 {
-  "generatedAt": "2026-09-20T21:25:58.223Z",
+  "generatedAt": "2026-09-21T00:14:15.884Z",
   "sources": [
+    {
+      "name": "Comune di Altamura",
+      "url": "https://www.comune.altamura.ba.it/it/eventi"
+    },
     {
       "name": "AltamuraLive",
       "url": "https://altamuralive.it/"
@@ -8,84 +12,21 @@
     {
       "name": "AltamuraLife",
       "url": "https://www.altamuralife.it/"
+    },
+    {
+      "name": "Il Tacco di Bacco",
+      "url": "https://iltaccodibacco.it/altamura/"
+    },
+    {
+      "name": "Virgilio Eventi",
+      "url": "https://www.virgilio.it/italia/altamura/eventi/"
+    },
+    {
+      "name": "Vito Barone",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm"
     }
   ],
   "events": [
-    {
-      "id": "live-murgia-a-morsi-2026-ad-altamura-tre-giorni-tra-sapori-musica",
-      "title": "Murgia a Morsi 2026: ad Altamura tre giorni tra sapori, musica, cultura e tradizioni",
-      "url": "https://altamuralive.it/2026/09/11/murgia-a-morsi-2026-ad-altamura-tre-giorni-tra-sapori-musica-cultura-e-tradizioni/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-09-11T14:58:42.000Z",
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-20",
-      "startTime": null,
-      "venue": null,
-      "image": null,
-      "summary": "Dal 18 al 20 settembre nei Giardini della Parrocchia SS. Redentore torna il festival organizzato dall’Associazione Algramà. Tante le attività in programma per adulti e bambini. Tra le novità di questa VII edizione il Palio delle Famiglie.",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "arte",
-        "comune di altamura",
-        "gastronomia",
-        "murgia a morsi"
-      ],
-      "categories": [
-        "trekking",
-        "cultura",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-altamura-in-scena-2026-15-spettacoli-gratuiti-tra-musica-tea",
-      "title": "Altamura in scena 2026: 15 spettacoli gratuiti tra musica, teatro e comicità",
-      "url": "https://www.altamuralife.it/eventi/altamura-in-scena-2026-15-spettacoli-gratuiti-tra-musica-teatro-e-comicita/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-09-20",
-      "startTime": null,
-      "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_altamura_logo.jpg",
-      "summary": "Fino al 20 settembre",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "live-altamura-si-racconta-con-note-sapori-d-autore-due-giorni-tra",
-      "title": "Altamura si racconta con “Note & Sapori d’Autore”: due giorni tra luoghi, storie e identità",
-      "url": "https://altamuralive.it/2026/09/12/altamura-si-racconta-con-note-sapori-dautore-due-giorni-tra-luoghi-storie-e-identita/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-09-12T07:00:00.000Z",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20",
-      "startTime": null,
-      "venue": null,
-      "image": null,
-      "summary": "Sabato 19 e domenica 20 settembre Altamura si racconta con “Note & Sapori d’Autore”: visite guidate, storie, tradizioni, canti e degustazioni tra centro antico e Museo del Pane. Partecipazione gratuita con prenotazione entro il 16 settembre.",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "Eventi",
-        "“Note & Sapori d’Autore”",
-        "attività",
-        "comune di altamura"
-      ],
-      "categories": [
-        "trekking",
-        "cultura",
-        "esperienze"
-      ],
-      "dated": true
-    },
     {
       "id": "life-rassegna-di-libri-non-di-solo-pane",
       "title": "Rassegna di libri \"Non di solo pane\"",
@@ -97,12 +38,12 @@
       "endDate": "2026-09-25",
       "startTime": null,
       "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_non_di_solo_panej.jpg",
       "summary": "Fino al 25 settembre",
       "tags": [],
       "categories": [
         "esperienze"
       ],
+      "image": null,
       "dated": true
     },
     {
@@ -116,12 +57,12 @@
       "endDate": "2026-09-27",
       "startTime": null,
       "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_festa.popoli_logo.jpg",
       "summary": "Fino al 27 settembre",
       "tags": [],
       "categories": [
-        "eventi"
+        "esperienze"
       ],
+      "image": null,
       "dated": true
     },
     {
@@ -134,13 +75,43 @@
       "startDate": null,
       "endDate": "2026-10-01",
       "startTime": null,
-      "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_manifesto_legami.jpg",
+      "venue": "Teatro Mercadante",
       "summary": "Fino al 1 ottobre",
       "tags": [],
       "categories": [
         "cultura"
       ],
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "virgilio-federicus-corteo-storico-ad-altamura-e-palio-di-san-marco",
+      "title": "Federicus: Corteo Storico Ad Altamura e Palio di San Marco",
+      "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6",
+      "source": "Virgilio Eventi",
+      "sourceUrl": "https://www.virgilio.it/italia/altamura/eventi/",
+      "publishedAt": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "startTime": null,
+      "venue": null,
+      "summary": "Federicus: Corteo Storico Ad Altamura e Palio di San Marco Sulla via del ritorno dalla sesta Crociata, Federico II di... Dal 02 Ott Al 04 Ott",
+      "tags": [
+        "SAGRE E FESTE",
+        "PER FAMIGLIE",
+        "GRATIS"
+      ],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "alsoOn": [
+        {
+          "source": "Vito Barone",
+          "url": "https://www.vitobarone.it/altamura/eventi.htm"
+        }
+      ],
+      "image": null,
       "dated": true
     },
     {
@@ -154,12 +125,122 @@
       "endDate": "2026-10-24",
       "startTime": null,
       "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_mostra_adda.jpg",
       "summary": "Fino al 24 ottobre",
       "tags": [],
       "categories": [
         "cultura"
       ],
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-presepe-vivente-al-pisciulo",
+      "title": "Presepe vivente al \"Pisciulo\"",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2026-12-23",
+      "endDate": "2026-12-23",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 23 dicembre 1990.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-di-san-giuseppe-con-i-tradizionali-falo",
+      "title": "Festa di San Giuseppe con i tradizionali falò",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-03-19",
+      "endDate": "2027-03-19",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 19 marzo.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-falo-dell-annunziata",
+      "title": "Falò dell'Annunziata",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-03-25",
+      "endDate": "2027-03-25",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 25 marzo.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-della-patrona-sant-irene",
+      "title": "Festa della Patrona Sant'Irene",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-05-05",
+      "endDate": "2027-05-05",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 5 maggio.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "image": null,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-dell-assunta-titolare-della-cattedrale",
+      "title": "Festa dell'Assunta, titolare della Cattedrale",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-08-15",
+      "endDate": "2027-08-15",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 15 agosto.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "image": null,
       "dated": true
     },
     {
@@ -173,8 +254,7 @@
       "endDate": null,
       "startTime": null,
       "venue": null,
-      "image": null,
-      "summary": "Dal Duomo federiciano alla processione, dalla “sullenn” alle 100 Ave Maria, passando per antichi contratti, fuochi e memorie familiari: alla vigilia di Santa Maria Assunta riscopriamo riti e curiosità che da secoli accompagnano Altamura.",
+      "summary": "Dal Duomo federiciano alla processione, dalla “sullenn” alle 100 Ave Maria, passando per antichi contratti, fuochi e memorie familiari: alla vigilia di Santa Maria Assunta riscopriamo riti e curiosità che da secoli…",
       "tags": [
         "Attualità",
         "Cultura",
@@ -184,27 +264,10 @@
         "Festa di Santa Maria Assunta"
       ],
       "categories": [
-        "cultura"
+        "cultura",
+        "esperienze"
       ],
-      "dated": false
-    },
-    {
-      "id": "life-altamura-in-scena-2026-euphonix-in-concerto",
-      "title": "Altamura in scena 2026: Euphonix in Concerto",
-      "url": "https://www.altamuralife.it/eventi/altamura-in-scena-2026-euphonix-in-concerto/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "image": "https://altamura.gocity.it/library/media/mfront_locandina20set26.jpg",
-      "summary": "Oggi",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
+      "image": null,
       "dated": false
     }
   ]

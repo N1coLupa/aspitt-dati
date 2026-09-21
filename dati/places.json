@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T21:26:10.377Z",
+  "generatedAt": "2026-09-21T00:14:20.264Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -12,47 +12,112 @@
   ],
   "places": [
     {
-      "id": "passeggiata-mura-megalitiche",
-      "icon": "monument",
+      "id": "archivio-biblioteca-museo-civico",
+      "icon": "museum",
       "categories": [
-        "trekking",
         "cultura"
       ],
       "osm": null,
-      "name": "Anello delle mura megalitiche",
-      "lat": 40.82438,
-      "lon": 16.54812,
-      "duration": "1 h 15",
-      "difficulty": "facile",
-      "description": "Un percorso urbano lungo i tratti superstiti della cinta megalitica di età preclassica, il motivo per cui la città si chiama Altamura. Si cammina su asfalto, con qualche tratto sterrato nei pressi dei blocchi meglio conservati.",
+      "name": "Archivio Biblioteca Museo Civico (ABMC)",
+      "duration": "45 min",
+      "lat": 40.8241,
+      "lon": 16.55209,
+      "description": "In piazza Zanardelli convivono l'archivio storico della città, la biblioteca e un museo civico fatto di dipinti, monete, cimeli di guerra, mobili antichi e reperti in pietra e bronzo. È il posto dove Altamura conserva la memoria di sé, compresa quella scomoda.",
+      "tips": "Aperto nei giorni feriali, mattina e pomeriggio: è a due passi dalla Cattedrale.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-bresso-111",
-          "name": "Via Bresso 111",
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
           "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-4"
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
           ],
-          "distance": 158
+          "distance": 32
         },
         {
-          "stopId": "stop-via-bresso-fronte-111",
-          "name": "Via Bresso (fronte 111)",
-          "lines": [
-            "ospedale-1"
-          ],
-          "distance": 162
-        },
-        {
-          "stopId": "stop-via-bresso-fronte-civ-111",
-          "name": "Via Bresso (fronte civ. 111)",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "name": "P.zza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
-          "distance": 163
+          "distance": 32
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
+          "lines": [
+            "navette-hub",
+            "pescariello-z-i"
+          ],
+          "distance": 32
         }
       ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "area-archeologica-la-croce",
+      "icon": "archaeology",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Area archeologica de La Croce",
+      "duration": "30 min",
+      "lat": 40.82706,
+      "lon": 16.55941,
+      "description": "A ridosso del centro storico, nella zona dove oggi sorge il Museo Archeologico, c'è l'abitato peuceta: testimonianze che vanno dall'età del Bronzo fino all'epoca ellenistica. È il motivo per cui Altamura è una città antica molto prima di essere medievale.",
+      "tips": "Si visita insieme al Museo Archeologico, che espone i materiali trovati proprio qui.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-santeramo-scuola-don-milani",
+          "name": "Via Santeramo (Scuola Don Milani)",
+          "lines": [
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 100
+        },
+        {
+          "stopId": "stop-via-santeramo-161",
+          "name": "Via Santeramo 161",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 113
+        },
+        {
+          "stopId": "stop-via-santeramo-ang-via-cassano",
+          "name": "Via Santeramo ang. Via Cassano",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 114
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "bosco-sauro",
+      "icon": "park",
+      "categories": [
+        "esperienze",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Bosco Sauro",
+      "duration": "2 h",
+      "lat": 40.91747,
+      "lon": 16.6342,
+      "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
+      "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
+      "nearbyStops": [],
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
@@ -74,7 +139,7 @@
       "openingHours": null,
       "wikidata": "Q277433",
       "wikipedia": "it:Cattedrale di Santa Maria Assunta (Altamura)",
-      "description": "Fondata da Federico II nel 1232, è l'unica delle quattro basiliche palatine di Puglia rimasta legata alla città che la ospita. Il portale trecentesco racconta episodi della vita di Cristo in una sequenza di formelle che vale la pena leggere dal basso verso l'alto. I due campanili e il rosone sono aggiunte cinquecentesche: la facciata che vedi oggi guarda in direzione opposta rispetto a quella originaria, ruotata durante i lavori del Cinquecento.",
+      "description": "Federico II la volle nel 1232 come cappella palatina, e da allora è il centro di tutto: la città le è cresciuta intorno, non il contrario. Il terremoto del 1316 la rase quasi al suolo, gli Angioini la rialzarono e nel 1534 le girarono perfino la facciata, che oggi guarda dalla parte opposta rispetto alle origini. Dentro restano l'ambone cinquecentesco e il coro ligneo del 1543; fuori, le formelle del portale raccontano la vita di Cristo a chi ha la pazienza di leggerle dal basso.",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Puglia%20Altamura1%20tango7174.jpg?width=1200",
       "imageCredit": "Tango7174",
       "imageLicense": "CC BY-SA 4.0",
@@ -83,7 +148,7 @@
       "duration": "45 min",
       "difficulty": null,
       "experience": null,
-      "tips": "L'ingresso è gratuito. Nel primo pomeriggio la luce entra dal rosone e illumina la navata centrale.",
+      "tips": "L'ingresso è gratuito. Nel primo pomeriggio la luce entra dal rosone e attraversa la navata centrale.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -114,20 +179,40 @@
       ]
     },
     {
-      "id": "cava-pontrelli",
+      "id": "cava-dei-dinosauri-pontrelli",
       "icon": "archaeology",
       "categories": [
         "trekking",
         "cultura"
       ],
       "osm": null,
-      "name": "Cava dei dinosauri (Pontrelli)",
+      "name": "Cava dei Dinosauri (Pontrelli)",
       "highlight": true,
+      "duration": "1 h",
+      "description": "Una cava di pietra abbandonata con oltre trentamila orme di dinosauro sul fondo, lasciate settanta milioni di anni fa quando qui c'era una laguna. Cammini su una superficie che è insieme pavimento e fotografia: le impronte si incrociano come tracce sulla sabbia bagnata.",
+      "tips": "L'accesso non è libero: si entra solo con le visite guidate organizzate, che vengono annunciate nella sezione Eventi.",
       "lat": 40.80625,
       "lon": 16.62465,
+      "nearbyStops": [],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "centro-visite-lamalunga",
+      "icon": "museum",
+      "categories": [
+        "cultura",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Centro Visite Lamalunga",
       "duration": "1 h",
-      "description": "Una ex cava di calcare con circa trentamila orme di dinosauro impresse nel fondale di una laguna del Cretaceo. È uno dei giacimenti icnologici più estesi al mondo. L'area è recintata e la visita è possibile solo in date programmate: conviene verificare prima di mettersi in strada.",
-      "tips": "L'accesso non è libero. Controlla il calendario delle aperture prima di partire.",
+      "lat": 40.86512,
+      "lon": 16.58153,
+      "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
+      "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
       "nearbyStops": [],
       "image": null,
       "imageCredit": null,
@@ -144,11 +229,11 @@
       "osm": null,
       "name": "Claustri del centro storico",
       "highlight": true,
+      "duration": "1 h",
+      "description": "Ottanta cortili chiusi che si aprono all'improvviso sulle strade del centro: ne restano circa ottanta degli oltre duecento originari, e ognuno ha un nome che racconta una storia, da Claustro Giudecca, l'antico quartiere ebraico, a Claustro Tradimento e Claustro Inferno. Nati come spazi di vicinato, sono ancora il salotto di chi ci abita.",
+      "tips": "Si girano senza meta, entrando quando l'arco è aperto. La sera l'illuminazione bassa li rende un'altra cosa.",
       "lat": 40.82715,
       "lon": 16.55345,
-      "duration": "1 h 30",
-      "description": "Sono oltre ottanta cortili chiusi che si aprono all'improvviso lungo i vicoli del centro. Nati come spazi difensivi e poi diventati luoghi di vita condivisa, ognuno ha un nome proprio e una storia legata alle famiglie che ci abitavano. Non esiste un percorso segnato: si entra, si guarda, si torna indietro. Claustro Tradotto, Claustro Sant'Anna e Claustro dei Martiri sono fra i più riconoscibili.",
-      "tips": "Sono cortili abitati. Vale la pena visitarli di giorno e senza alzare la voce.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -200,91 +285,32 @@
       "openingHours": null,
       "wikidata": "Q55369216",
       "wikipedia": null,
-      "description": "Il sito in cui riposa l'Uomo di Altamura, incrostato di calcite da circa 150.000 anni. L'interno non è accessibile per ragioni di conservazione, ma il Centro Visite in superficie spiega la scoperta e la campagna murgiana attorno merita il percorso a piedi.",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/GROTTA%20LAMALUNGA.jpg?width=1200",
-      "imageCredit": "Domenico Capitanio",
-      "imageLicense": "CC BY-SA 3.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:GROTTA_LAMALUNGA.jpg",
-      "highlight": true,
-      "duration": "mezza giornata",
-      "difficulty": "media",
-      "experience": null,
-      "tips": "Si raggiunge dalla strada per Santeramo. Scarpe chiuse e acqua: non ci sono punti di ristoro.",
-      "nearbyStops": []
-    },
-    {
-      "id": "pane-di-altamura-dop",
-      "icon": "landmark",
-      "categories": [
-        "esperienze"
-      ],
-      "osm": null,
-      "name": "Il pane di Altamura DOP",
-      "highlight": true,
-      "lat": 40.82762,
-      "lon": 16.55247,
-      "duration": "1 h",
-      "experience": "gusto",
-      "description": "Semola di grano duro, lievito madre, sale e acqua: il primo pane in Europa ad avere ottenuto la denominazione di origine protetta. I forni del centro storico lavorano ancora a legna e la cottura segue un disciplinare preciso. Diversi panifici aprono il laboratorio in orario di infornata.",
-      "tips": "La forma alta si chiama 'u sckuanète'. Si conserva bene per giorni: è nel disciplinare.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 267
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 283
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 301
-        }
-      ],
+      "description": "Nel 1993 due speleologi trovarono qui lo scheletro più completo di Neanderthal mai scoperto in Europa, saldato alle concrezioni della grotta da 130.000 anni. L'Uomo di Altamura è ancora là dentro, dove è rimasto: la grotta non si visita, ma il vallone attorno sì.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null
+      "imageSource": null,
+      "highlight": true,
+      "duration": "30 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Si arriva al Centro Visite Lamalunga, che racconta la scoperta e organizza le uscite nel vallone.",
+      "nearbyStops": []
     },
     {
-      "id": "museo-archeologico-nazionale-di-altamura",
-      "name": "Museo Archeologico Nazionale",
-      "lat": 40.8274895,
-      "lon": 16.5586028,
+      "id": "museo-archeologico-nazionale",
+      "icon": "museum",
       "categories": [
         "cultura"
       ],
-      "icon": "museum",
-      "osm": "way/234566547",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q24941299",
-      "wikipedia": "it:Museo archeologico nazionale di Altamura",
-      "description": "Il percorso copre la preistoria della Murgia, l'età peuceta e la Roma imperiale, con i corredi funerari provenienti dalle necropoli del territorio. È il punto di partenza più sensato per capire il contesto in cui è vissuto l'Uomo di Altamura.",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Altamura%2C%20museo%20archeologico%20nazionale.jpg?width=1200",
-      "imageCredit": "Sailko",
-      "imageLicense": "CC BY 3.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Altamura%2C_museo_archeologico_nazionale.jpg",
+      "osm": null,
+      "name": "Museo Archeologico Nazionale di Altamura",
       "highlight": true,
-      "duration": "1 h",
-      "difficulty": null,
-      "experience": null,
+      "duration": "1 h 30",
+      "description": "Racconta la Murgia da quando era fondale marino a quando era terra di pastori: corredi peuceti, ceramiche, armi, e il racconto dell'Uomo di Altamura per chi nella grotta di Lamalunga non potrà mai entrare. È il posto dove capisci che qui sotto ci sono 130.000 anni di storia.",
+      "tips": "Un'ora e mezza basta per la visita completa; il biglietto costa poco e il primo ingresso del mattino è il più tranquillo.",
+      "lat": 40.82749,
+      "lon": 16.5586,
       "nearbyStops": [
         {
           "stopId": "stop-via-santeramo-ang-via-cassano",
@@ -310,33 +336,26 @@
           ],
           "distance": 132
         }
-      ]
-    },
-    {
-      "id": "palazzo-baldassarre-museo-dell-uomo-di-altamura",
-      "name": "Palazzo Baldassarre",
-      "lat": 40.826265,
-      "lon": 16.5555969,
-      "categories": [
-        "cultura"
       ],
-      "icon": "museum",
-      "osm": "node/9397086999",
-      "address": "Via Baldassarre Fratelli 1",
-      "website": null,
-      "phone": null,
-      "openingHours": "Tu-Su 10:00-13:00, 16:00-21:00",
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Ospita il racconto multimediale dell'Uomo di Altamura, lo scheletro neandertaliano trovato nella grotta di Lamalunga nel 1993. La grotta non è visitabile, quindi questo è il modo più diretto per vedere da vicino la ricostruzione e capire come è stato studiato senza mai estrarlo.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null,
+      "imageSource": null
+    },
+    {
+      "id": "palazzo-baldassarre",
+      "icon": "museum",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Baldassarre",
       "highlight": true,
-      "duration": "50 min",
-      "difficulty": null,
-      "experience": null,
+      "duration": "1 h",
+      "description": "Un palazzo del centro storico trasformato nel racconto multimediale dell'Uomo di Altamura: proiezioni, ricostruzioni e la voce di chi quello scheletro l'ha studiato per trent'anni. È la tappa che rende comprensibile tutto il resto, dalla grotta alle vetrine del museo.",
+      "tips": "Fa parte della Rete Museale dell'Uomo di Altamura: conviene abbinarlo al Museo Archeologico nello stesso pomeriggio.",
+      "lat": 40.82626,
+      "lon": 16.5556,
       "nearbyStops": [
         {
           "stopId": "stop-viale-martiri-fronte-83",
@@ -344,7 +363,7 @@
           "lines": [
             "navette-hub"
           ],
-          "distance": 265
+          "distance": 264
         },
         {
           "stopId": "stop-viale-martiri",
@@ -352,7 +371,7 @@
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 281
+          "distance": 280
         },
         {
           "stopId": "stop-viale-martiri-6",
@@ -361,15 +380,19 @@
             "navette-hub",
             "linea-scuola-3"
           ],
-          "distance": 285
+          "distance": 284
         }
-      ]
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
     },
     {
       "id": "parco-nazionale-dell-alta-murgia",
       "name": "Parco Nazionale dell'Alta Murgia",
-      "lat": 40.9746743,
-      "lon": 16.4171988,
+      "lat": 40.8745,
+      "lon": 16.58,
       "categories": [
         "trekking"
       ],
@@ -381,15 +404,16 @@
       "openingHours": null,
       "wikidata": "Q680313",
       "wikipedia": "fr:Parc national Alta Murgia",
-      "description": "Steppa mediterranea, muretti a secco, jazzi e masserie fortificate su oltre 68.000 ettari. È l'unico parco nazionale italiano nato per proteggere un paesaggio agricolo, e i sentieri partono a pochi chilometri dal centro di Altamura.",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20vallata%20di%20Poggiorsini%20vista%20nel%20dettaglio.jpg?width=1200",
-      "imageCredit": "Fishmax77",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:La_vallata_di_Poggiorsini_vista_nel_dettaglio.jpg",
+      "description": "Sessantamila ettari di steppa, muretti a secco, jazzi e masserie: l'ultimo grande pascolo d'Europa comincia dove finiscono le case di Altamura. In primavera è un tappeto di fiori, d'estate è giallo e durissimo, e in ogni stagione è il posto dove si capisce perché qui si fa quel pane.",
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null,
       "highlight": true,
-      "duration": "intera giornata",
-      "difficulty": "variabile",
+      "duration": "Mezza giornata",
+      "difficulty": null,
       "experience": null,
+      "tips": "I sentieri partono dalle strade per il Pulo e per Lamalunga: acqua e cappello non sono un consiglio, sono necessari.",
       "nearbyStops": []
     },
     {
@@ -408,15 +432,16 @@
       "openingHours": null,
       "wikidata": "Q68456596",
       "wikipedia": "it:Porta Bari (Altamura)",
-      "description": "L'accesso storico alla città murata, ricostruito nel Settecento sull'impianto federiciano. Da qui parte il corso che porta alla Cattedrale, ed è il punto in cui il tessuto ottocentesco lascia spazio ai vicoli del nucleo antico.",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Altamura%2C%20porta%20bari%2001.jpg?width=1200",
-      "imageCredit": "Sailko",
-      "imageLicense": "CC BY 3.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Altamura%2C_porta_bari_01.jpg",
+      "description": "L'ingresso storico alla città dal lato di Bari, incastonato in Palazzo De Angelis-Viti: passato l'arco comincia il corso e finisce la città moderna. È il punto in cui gli altamurani si danno appuntamento da sempre.",
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null,
       "highlight": true,
       "duration": "15 min",
       "difficulty": null,
       "experience": null,
+      "tips": "È il migliore punto di partenza per il giro del centro storico, con le fermate degli autobus a pochi metri.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -447,27 +472,6 @@
       ]
     },
     {
-      "id": "pulo-di-altamura",
-      "icon": "nature",
-      "categories": [
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Pulo di Altamura",
-      "highlight": true,
-      "lat": 40.89093,
-      "lon": 16.57098,
-      "duration": "2 h",
-      "difficulty": "media",
-      "description": "La dolina carsica più grande della Murgia: 550 metri di diametro e pareti alte fino a novanta. Sul fondo e lungo il bordo si aprono grotte abitate nel Neolitico. Il belvedere sul lato sud dà la misura della cavità in un colpo d'occhio; il sentiero perimetrale richiede circa due ore.",
-      "tips": "D'estate conviene andarci presto: non c'è ombra lungo il bordo.",
-      "nearbyStops": [],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
-    },
-    {
       "id": "arco-basso",
       "name": "Arco Basso",
       "lat": 40.8256889,
@@ -483,15 +487,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Uno dei passaggi più stretti e bassi del centro storico: ci si passa chinando la testa e si sbuca in un claustro. È il dettaglio che spiega meglio di mille parole com'era fatta la città dentro le mura.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "10 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Sta lungo la passeggiata dei claustri: tienilo d'occhio o rischi di passarci davanti senza vederlo.",
       "nearbyStops": [
         {
           "stopId": "stop-viale-martiri",
@@ -523,497 +528,6 @@
       ]
     },
     {
-      "id": "area-picnic-di-puolo-di-altamura",
-      "name": "Area picnic di Puolo di Altamura",
-      "lat": 40.8764969,
-      "lon": 16.5662423,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "landmark",
-      "osm": "way/886170196",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "automotrice-fs-ale-782-001",
-      "name": "Automotrice FS ALe 782.001",
-      "lat": 40.9389573,
-      "lon": 16.4952569,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/9468073715",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "belvedere-delle-grandi-gravi",
-      "name": "Belvedere delle grandi Gravi.",
-      "lat": 40.9076015,
-      "lon": 16.4299784,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "viewpoint",
-      "osm": "node/3419935920",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "belvedere-pulo-di-altamura",
-      "name": "Belvedere Pulo di Altamura",
-      "lat": 40.8909254,
-      "lon": 16.5709849,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "viewpoint",
-      "osm": "node/3419935917",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "casino-de-angelis",
-      "name": "Casino de Angelis",
-      "lat": 40.9220429,
-      "lon": 16.5758243,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/4610386257",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "centro-visita-uomo-di-altamura",
-      "name": "Centro Visita Uomo di Altamura",
-      "lat": 40.8650582,
-      "lon": 16.5814334,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "museum",
-      "osm": "node/1824011767",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": "Tu-Su 10:00-17:00",
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "chiesa-del-carmine",
-      "name": "Chiesa del Carmine",
-      "lat": 40.8271862,
-      "lon": 16.5499981,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904549",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 99
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 121
-        },
-        {
-          "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille 40",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "navette-hub",
-            "pescariello-z-i"
-          ],
-          "distance": 136
-        }
-      ]
-    },
-    {
-      "id": "chiesa-del-santissimo-redentore",
-      "name": "Chiesa del Santissimo Redentore",
-      "lat": 40.816468,
-      "lon": 16.5440831,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/1323141064",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q121214263",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
-          "name": "Largo Giovanni Paolo II (Pensilina)",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-4",
-            "pescariello-z-i"
-          ],
-          "distance": 54
-        },
-        {
-          "stopId": "stop-largo-giovanni-paolo-ii-fronte-chiesa-ss-redentore",
-          "name": "Largo Giovanni Paolo II (fronte Chiesa SS. Redentore)",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 68
-        },
-        {
-          "stopId": "stop-via-selva-190",
-          "name": "Via Selva 190",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 157
-        }
-      ]
-    },
-    {
-      "id": "chiesa-del-santissimo-rosario-di-pompei",
-      "name": "Chiesa del Santissimo Rosario di Pompei",
-      "lat": 40.8202441,
-      "lon": 16.5484093,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904772",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q85860685",
-      "wikipedia": "it:Chiesa del Santissimo Rosario di Pompei (Altamura)",
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20del%20Santissimo%20Rosario%20di%20Pompei%20(Altamura)%20-%20Outside%20-%201.jpg?width=1200",
-      "imageCredit": "Jenajix889",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_del_Santissimo_Rosario_di_Pompei_(Altamura)_-_Outside_-_1.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-selva-fronte-civ-117",
-          "name": "Via Selva (fronte civ. 117)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 253
-        },
-        {
-          "stopId": "stop-via-selva-117",
-          "name": "Via Selva 117",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "pescariello-z-i"
-          ],
-          "distance": 258
-        },
-        {
-          "stopId": "stop-via-selva-fronte-civico-117",
-          "name": "Via Selva - fronte civico 117",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 258
-        }
-      ]
-    },
-    {
-      "id": "chiesa-della-santissima-trinita",
-      "name": "Chiesa della Santissima Trinità",
-      "lat": 40.8261697,
-      "lon": 16.5562442,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410903653",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q110335666",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Campanile%20Chiesa%20della%20Trinit%C3%A0%20vecchia%20(Altamura).jpg?width=1200",
-      "imageCredit": "Ilfinocchiodoro",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Campanile_Chiesa_della_Trinit%C3%A0_vecchia_(Altamura).jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 265
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 271
-        },
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 288
-        }
-      ]
-    },
-    {
-      "id": "chiesa-della-trasfigurazione",
-      "name": "Chiesa della Trasfigurazione",
-      "lat": 40.8253784,
-      "lon": 16.5647583,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410918599",
-      "address": "Via Palestro",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q121214268",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-palestro-58-empire",
-          "name": "Via Palestro 58 (Empire)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 50
-        },
-        {
-          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
-          "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 66
-        },
-        {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 379
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-san-biagio",
-      "name": "Chiesa di San Biagio",
-      "lat": 40.8282587,
-      "lon": 16.5536419,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410918724",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q106245801",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20San%20Biagio%20(Altamura)01.jpg?width=1200",
-      "imageCredit": "Asia",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_San_Biagio_(Altamura)01.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 157
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 243
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 336
-        }
-      ]
-    },
-    {
       "id": "chiesa-di-san-nicola-dei-greci",
       "name": "Chiesa di San Nicola dei Greci",
       "lat": 40.8280825,
@@ -1029,15 +543,16 @@
       "openingHours": null,
       "wikidata": "Q1255912",
       "wikipedia": "it:Chiesa di San Nicola dei Greci",
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Nicola%20dei%20Greci%20(Altamura)01.jpg?width=1200",
-      "imageCredit": "Asia",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:San_Nicola_dei_Greci_(Altamura)01.jpg",
+      "description": "Eretta alla fine del Duecento, è la chiesa della comunità greco-ortodossa che visse ad Altamura fino al Seicento: due riti, due lingue e due calendari a poche decine di metri dalla Cattedrale. La facciata romanica con il portale scolpito è rimasta quella, incastrata fra le case del centro storico.",
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "20 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Si trova sul corso, a pochi passi da Porta Bari: è la sosta naturale prima di infilarsi nei claustri.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -1067,253 +582,8 @@
       ]
     },
     {
-      "id": "chiesa-di-sant-antonio",
-      "name": "Chiesa di Sant'Antonio",
-      "lat": 40.8232445,
-      "lon": 16.5567157,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410916419",
-      "address": "Via Annibale di Francia 25",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q113017415",
-      "wikipedia": "it:Chiesa di Sant'Antonio (Altamura)",
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20e%20convento%20di%20Sant'Antonio%20(Altamura)%20(cropped).jpg?width=1200",
-      "imageCredit": "Ilfinocchiodoro",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_e_convento_di_Sant'Antonio_(Altamura)_(cropped).jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 82
-        },
-        {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 140
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 248
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-santa-chiara",
-      "name": "Chiesa di Santa Chiara",
-      "lat": 40.8272128,
-      "lon": 16.5543994,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904719",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q1256145",
-      "wikipedia": "it:Chiesa di Santa Chiara (Altamura)",
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 262
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 301
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 347
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-santa-lucia",
-      "name": "Chiesa di Santa Lucia",
-      "lat": 40.8259229,
-      "lon": 16.5512535,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904141",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q55083880",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 152
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 156
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli 7",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 183
-        }
-      ]
-    },
-    {
-      "id": "chiesa-e-chiostro-di-santa-teresa",
-      "name": "Chiesa e chiostro di Santa Teresa",
-      "lat": 40.829604,
-      "lon": 16.5508646,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410919646",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q25409851",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20di%20Santa%20Teresa%20(Altamura)%20-%202.jpg?width=1200",
-      "imageCredit": "Jenajix889",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Teresa_(Altamura)_-_2.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille 40",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "navette-hub",
-            "pescariello-z-i"
-          ],
-          "distance": 250
-        },
-        {
-          "stopId": "stop-via-dei-mille-fronte-40",
-          "name": "Via Dei Mille fronte 40",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 250
-        },
-        {
-          "stopId": "stop-via-gravina-79",
-          "name": "Via Gravina 79",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 252
-        }
-      ]
-    },
-    {
-      "id": "chiesa-rurale-domus-mea",
-      "name": "Chiesa Rurale Domus Mea",
-      "lat": 40.8767139,
-      "lon": 16.4850363,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "landmark",
-      "osm": "node/13201229457",
-      "address": null,
-      "website": "https://chiesadomusmea.it",
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
       "id": "chiesa-san-domenico",
-      "name": "Chiesa San Domenico",
+      "name": "Chiesa e convento di San Domenico",
       "lat": 40.8238925,
       "lon": 16.553585,
       "categories": [
@@ -1327,15 +597,16 @@
       "openingHours": null,
       "wikidata": "Q1255648",
       "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20di%20san%20domenico.JPG?width=1200",
-      "imageCredit": "Nicola.rifino",
-      "imageLicense": "Public domain",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_di_san_domenico.JPG",
+      "description": "Il complesso cresce fra Cinquecento e Ottocento e conserva altari in marmo e dipinti del Settecento, quando i conventi altamurani erano anche scuole e biblioteche. È uno di quegli interni che non ti aspetti dietro una facciata sobria.",
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "20 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Gli orari seguono le funzioni: la mattina presto e il tardo pomeriggio sono i momenti buoni.",
       "nearbyStops": [
         {
           "stopId": "stop-viale-martiri-6",
@@ -1367,134 +638,62 @@
       ]
     },
     {
-      "id": "chiesa-santa-maria-del-carmine",
-      "name": "Chiesa Santa Maria del Carmine",
-      "lat": 40.8353199,
-      "lon": 16.5681927,
+      "id": "chiesa-di-santa-chiara",
+      "name": "Chiesa e monastero di Santa Chiara",
+      "lat": 40.8272128,
+      "lon": 16.5543994,
       "categories": [
         "cultura"
       ],
       "icon": "church",
-      "osm": "way/1386064980",
+      "osm": "way/410904719",
       "address": null,
       "website": null,
       "phone": null,
       "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
+      "wikidata": "Q1256145",
+      "wikipedia": "it:Chiesa di Santa Chiara (Altamura)",
+      "description": "Chiesa e monastero fra Seicento e Settecento, ancora abitati da una comunità di clausura: dietro le grate la vita scorre con i tempi di quattro secoli fa, a due passi dal traffico del centro. La chiesa custodisce l'apparato decorativo barocco tipico degli istituti femminili altamurani.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "20 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Essendo un monastero di clausura, la visita si limita alla chiesa e va rispettato il silenzio.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-madrid-66",
-          "name": "Via Madrid 66",
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
           "lines": [
             "ospedale-2",
-            "ospedale-domenica-e-festivi"
+            "navette-hub"
           ],
-          "distance": 91
+          "distance": 262
         },
         {
-          "stopId": "stop-via-madrid",
-          "name": "Via Madrid",
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
           "lines": [
-            "linea-scuola-3"
+            "ospedale-2"
           ],
-          "distance": 96
+          "distance": 301
         },
         {
-          "stopId": "stop-via-dino-delucia",
-          "name": "Via Dino Delucia",
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
           "lines": [
-            "linea-scuola-3"
+            "navette-hub"
           ],
-          "distance": 260
+          "distance": 347
         }
       ]
     },
     {
-      "id": "cimitero-di-altamura",
-      "icon": "cemetery",
-      "categories": [
-        "cultura"
-      ],
-      "osm": "way/145910685",
-      "name": "Cimitero di Altamura",
-      "lat": 40.82493,
-      "lon": 16.54197,
-      "description": "Il cimitero monumentale, servito da piu' linee urbane: e' una delle destinazioni piu' frequenti del servizio, soprattutto nei giorni di festa.",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-cimitero-viale-della-pace-presso-rotonda",
-          "name": "Cimitero Viale della Pace presso rotonda",
-          "lines": [
-            "ospedale-1",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 119
-        },
-        {
-          "stopId": "stop-cimitero-presso-ingresso-monumentale",
-          "name": "Cimitero presso Ingresso Monumentale",
-          "lines": [
-            "ospedale-1"
-          ],
-          "distance": 193
-        },
-        {
-          "stopId": "stop-cimitero-entrata-monumentale",
-          "name": "Cimitero (entrata Monumentale)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 221
-        }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
-    },
-    {
-      "id": "cippo-commemorativo-a-don-francesco-cassol",
-      "name": "Cippo commemorativo a Don Francesco Cassol",
-      "lat": 40.8917883,
-      "lon": 16.5716918,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/7653868080",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
-      "name": "Complesso ipogeo di San Michele delle Grotte",
+      "name": "Ipogeo di San Michele delle Grotte",
       "lat": 40.8329482,
       "lon": 16.5510709,
       "categories": [
@@ -1508,15 +707,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Chiesa scavata nella roccia appena fuori dall'antico giro delle mura, un tempo chiamata Sant'Angelo di Larissa: una navata sotterranea con affreschi, fredda d'estate e silenziosa sempre. È la Altamura rupestre, quella che sta sotto il livello della strada.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "30 min",
       "difficulty": null,
       "experience": null,
+      "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
           "stopId": "stop-via-iv-novembre-fronte-74",
@@ -1549,760 +749,18 @@
       ]
     },
     {
-      "id": "dinosaur-tracksite",
-      "name": "Dinosaur Tracksite",
-      "lat": 40.8062545,
-      "lon": 16.6246505,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "way/338338840",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "ex-sito-jupiter-altamura-casal-sabini",
-      "name": "Ex Sito Jupiter ALTAMURA CASAL SABINI",
-      "lat": 40.8129648,
-      "lon": 16.6355438,
+      "id": "monumento-ai-martiri-del-1799",
+      "icon": "monument",
       "categories": [
         "cultura"
       ],
-      "icon": "monument",
-      "osm": "node/2234017153",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grave-3-paduli",
-      "name": "Grave 3 Paduli",
-      "lat": 40.9114028,
-      "lon": 16.4387237,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "way/334870679",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grave-del-pulo",
-      "name": "Grave del Pulo",
-      "lat": 40.8922457,
-      "lon": 16.5702653,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "cave",
-      "osm": "node/9463674585",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grave-gurio-lamanna",
-      "name": "Grave Gurio Lamanna",
-      "lat": 40.9105383,
-      "lon": 16.4237752,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "way/334870678",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q55423516",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gurio%20Lamanna%20-%20Panoramic%20view.jpg?width=1200",
-      "imageCredit": "dott. ing. Fabrizio Berloco",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Gurio_Lamanna_-_Panoramic_view.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grotta-del-colombo",
-      "name": "Grotta del colombo",
-      "lat": 40.8917368,
-      "lon": 16.5670107,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "cave",
-      "osm": "node/7653942237",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grotta-dell-imbroglio",
-      "name": "Grotta dell'Imbroglio",
-      "lat": 40.8924321,
-      "lon": 16.5701153,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "cave",
-      "osm": "node/7653942240",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "grotta-dell-orco",
-      "name": "Grotta dell'orco",
-      "lat": 40.8924451,
-      "lon": 16.5702828,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "cave",
-      "osm": "node/7653942239",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "i-vuotani",
-      "name": "I vuotani",
-      "lat": 40.859408,
-      "lon": 16.6950063,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "way/352580472",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "iazzo",
-      "name": "Iazzo",
-      "lat": 40.9076272,
-      "lon": 16.6369813,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/4610203251",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "iazzo-censo",
-      "name": "Iazzo Censo",
-      "lat": 40.9217588,
-      "lon": 16.6462724,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/4610203253",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "iazzo-di-griffi",
-      "name": "Iazzo di Griffi",
-      "lat": 40.8936636,
-      "lon": 16.5720789,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/1824011772",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "jazzo",
-      "name": "Jazzo",
-      "lat": 40.9150982,
-      "lon": 16.6160006,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/398272430",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "jazzo-del-corvo",
-      "name": "Jazzo del Corvo",
-      "lat": 40.8916296,
-      "lon": 16.5278236,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/1317881631",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "jazzo-gurolamanna",
-      "name": "Jazzo Gurolamanna",
-      "lat": 40.9125226,
-      "lon": 16.4245439,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/1317881634",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "jazzo-sant-agostino",
-      "name": "Jazzo Sant'Agostino",
-      "lat": 40.8795911,
-      "lon": 16.6801804,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/12197006110",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "largo-del-biancospino",
-      "name": "Largo del Biancospino",
-      "lat": 40.8909514,
-      "lon": 16.5657326,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "viewpoint",
-      "osm": "node/7653868078",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-di-s-teresa",
-      "name": "Masseria di S. Teresa",
-      "lat": 40.95852,
-      "lon": 16.3746395,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/2260080770",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-gravattale",
-      "name": "Masseria Gravattale",
-      "lat": 40.9042976,
-      "lon": 16.6589624,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/4610225277",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-jesce",
-      "name": "Masseria Jesce",
-      "lat": 40.7510857,
-      "lon": 16.646695,
-      "categories": [
-        "cultura",
-        "esperienze"
-      ],
-      "icon": "monument",
-      "osm": "node/1823005961",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Masseria fortificata sull'antica via Appia, con una cripta rupestre affrescata tra XI e XIV secolo. Gli affreschi bizantini della cripta sono fra i meglio conservati dell'area murgiana.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": "1 h",
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-lama-la-grotte",
-      "name": "Masseria Lama la Grotte",
-      "lat": 40.887536,
-      "lon": 16.6813803,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/564618268",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-lillo",
-      "name": "Masseria Lillo",
-      "lat": 40.8401965,
-      "lon": 16.683143,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/410919047",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "masseria-pescariello",
-      "name": "Masseria Pescariello",
-      "lat": 40.873744,
-      "lon": 16.6088537,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/466094458",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "monte-belvedere",
-      "name": "Monte Belvedere",
-      "lat": 40.8688124,
-      "lon": 16.559081,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/1824011785",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "monte-chiancaro",
-      "name": "Monte Chiancaro",
-      "lat": 40.90599,
-      "lon": 16.6059266,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/4610386261",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q31624160",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "monte-le-casette-di-castigliolo",
-      "name": "Monte Le Casette di Castigliolo",
-      "lat": 40.9323686,
-      "lon": 16.5181482,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5964915943",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "monte-povero",
-      "name": "Monte Povero",
-      "lat": 40.7826212,
-      "lon": 16.5352177,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5962181730",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "monumento-ai-caduti-del-1799",
-      "name": "Monumento ai Caduti del 1799",
-      "lat": 40.8276001,
-      "lon": 16.5531327,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/410900083",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "osm": null,
+      "name": "Monumento ai Martiri del 1799",
+      "duration": "10 min",
+      "lat": 40.82741,
+      "lon": 16.55322,
+      "description": "In mezzo a Piazza Duomo, davanti alla Cattedrale, il monumento che Arnaldo Zocchi scolpì nel 1899 per il centenario della rivoluzione altamurana. Qui era stato piantato l'albero della libertà, e qui la città ricorda chi pagò quella scelta con la vita.",
+      "tips": "La piazza è il punto di ritrovo della città: al tramonto si riempie di gente.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
@@ -2311,15 +769,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 241
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 327
+          "distance": 257
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -2328,179 +778,7 @@
             "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 332
-        }
-      ]
-    },
-    {
-      "id": "monumento-alle-vittime-di-chernobyl",
-      "name": "Monumento alle Vittime di Chernobyl",
-      "lat": 40.8368838,
-      "lon": 16.5519256,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "landmark",
-      "osm": "node/12832189035",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
-          "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
-          "lines": [
-            "linea-scuola-4"
-          ],
-          "distance": 57
-        },
-        {
-          "stopId": "stop-stazione-via-xxiv-maggio-fronte-uscita-sottopasso-fal-fermat",
-          "name": "Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 61
-        },
-        {
-          "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
-          "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 66
-        }
-      ]
-    },
-    {
-      "id": "murgia-lama-rosa",
-      "name": "Murgia Lama Rosa",
-      "lat": 40.9786588,
-      "lon": 16.4723146,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5964915941",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "murgia-parco-fiscale",
-      "name": "Murgia Parco Fiscale",
-      "lat": 40.9289642,
-      "lon": 16.5646684,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5964915944",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "murgia-sgolgore",
-      "name": "Murgia Sgolgore",
-      "lat": 40.8394959,
-      "lon": 16.677525,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5962117875",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q3867396",
-      "wikipedia": "it:Murgia Sgolgore",
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Italy_relief_location_map.jpg?width=1200",
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Italy_relief_location_map.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "museo-arte-presepiale-antonio-colonna",
-      "name": "Museo Arte Presepiale Antonio Colonna",
-      "lat": 40.8281646,
-      "lon": 16.5528088,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "museum",
-      "osm": "node/12132442615",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 202
+          "distance": 330
         },
         {
           "stopId": "stop-via-bari-14",
@@ -2508,8 +786,168 @@
           "lines": [
             "navette-hub"
           ],
-          "distance": 283
+          "distance": 344
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "mura-medievali",
+      "icon": "monument",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Mura medievali",
+      "duration": "20 min",
+      "lat": 40.82559,
+      "lon": 16.5532,
+      "description": "Della cinta che Federico II fece rialzare restano tratti ben visibili, soprattutto affacciandosi da Piazza della Resistenza e da Piazza Unità d'Italia. Sono il confine che per secoli ha diviso il dentro dal fuori, e che oggi separa il centro storico dai quartieri nuovi.",
+      "tips": "Il modo migliore per leggerle è camminare lungo il perimetro del centro storico, non attraversarlo.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 167
         },
+        {
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "lines": [
+            "linea-ovest"
+          ],
+          "distance": 167
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
+          "lines": [
+            "navette-hub",
+            "pescariello-z-i"
+          ],
+          "distance": 167
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "anello-delle-mura-megalitiche",
+      "icon": "monument",
+      "categories": [
+        "trekking",
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Mura megalitiche",
+      "duration": "1 h 30",
+      "description": "Blocchi enormi posati a secco fra il V e il IV secolo a.C., l'opera più antica che Altamura conserva: correvano per chilometri intorno all'insediamento preromano e oggi spuntano fra le case, i muretti e i campi. Seguirne i tratti è un modo diverso di girare la città.",
+      "tips": "I tratti migliori si vedono lungo via Mura Megalitiche e nella zona nord: portati scarpe comode.",
+      "lat": 40.83404,
+      "lon": 16.55368,
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-iv-novembre-fronte-74",
+          "name": "Via IV Novembre (fronte 74)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 93
+        },
+        {
+          "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+          "name": "Via Mura Megalitiche ang. Via IV Novembre",
+          "lines": [
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-scuola-3"
+          ],
+          "distance": 184
+        },
+        {
+          "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre-pedagogico",
+          "name": "Via Mura Megalitiche ang. Via IV Novembre Pedagogico",
+          "lines": [
+            "linea-scuola-4"
+          ],
+          "distance": 184
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "museo-arte-tipografica-portoghese",
+      "icon": "museum",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Museo dell'Arte Tipografica Portoghese",
+      "duration": "45 min",
+      "lat": 40.82468,
+      "lon": 16.55544,
+      "description": "La tipografia della famiglia Portoghese aprì nel 1891 nell'ex convento di Sant'Antonio e chiuse nel 2000; dieci anni dopo è diventata museo senza spostare nulla. Torchi, caratteri di legno e di piombo, manifesti politici ed etichette: le macchine funzionano ancora e ogni tanto le fanno girare.",
+      "tips": "Si visita in occasione di aperture e giornate speciali: conviene controllare gli eventi prima di andarci.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-viale-martiri-fronte-83",
+          "name": "Viale Martiri (fronte 83)",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 88
+        },
+        {
+          "stopId": "stop-viale-martiri",
+          "name": "Viale Martiri",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 142
+        },
+        {
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri 6",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-3"
+          ],
+          "distance": 144
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "museo-etnografico-alta-murgia",
+      "icon": "museum",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Museo Etnografico dell'Alta Murgia",
+      "duration": "45 min",
+      "lat": 40.82906,
+      "lon": 16.55106,
+      "description": "Nell'ex convento dei Carmelitani Scalzi, in piazza Santa Teresa, la Murgia contadina raccontata dagli oggetti: attrezzi dei campi, banchi d'artigiano, roba da ovile e da cucina. Inaugurato nel 2010, è il museo che spiega come si viveva qui prima del pane DOP e dei pullman turistici.",
+      "tips": "Apre in giorni limitati della settimana: meglio verificare gli orari prima di partire.",
+      "nearbyStops": [
         {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
@@ -2519,44 +957,63 @@
             "navette-hub",
             "pescariello-z-i"
           ],
-          "distance": 339
+          "distance": 225
+        },
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 225
+        },
+        {
+          "stopId": "stop-via-gravina-79",
+          "name": "Via Gravina 79",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 256
         }
-      ]
-    },
-    {
-      "id": "museo-del-pane-di-vito-forte",
-      "name": "Museo del Pane di Vito Forte",
-      "lat": 40.827629,
-      "lon": 16.5524577,
-      "categories": [
-        "cultura"
       ],
-      "icon": "museum",
-      "osm": "node/11631042369",
-      "address": "Via Onorato Candiota 2",
-      "website": "https://www.museodelpaneforte.it/",
-      "phone": "+39 342 5562711",
-      "openingHours": "Th-Fr 16:00-20:00; Sa-Su 10:00-13:00 \"reservation required 48 hours in advance\"",
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "imageSource": null
+    },
+    {
+      "id": "palazzo-calderoni-sabini",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Calderoni Sabini",
+      "duration": "15 min",
+      "lat": 40.82801,
+      "lon": 16.55063,
+      "description": "Facciata settecentesca su un'origine più antica, probabilmente seicentesca: dentro, uno scalone monumentale e un salone in stile Luigi XIV con affreschi mitologici, colonne tortili e specchi a tutta altezza. Fu la casa di Michele Martini, giurista e sostenitore della repubblica del 1799, e restò ai conti Sabini fino al 1950.",
+      "tips": "Si affaccia su via Bisanzio Filo, nel cuore del centro storico: apre in occasione di visite e mostre.",
       "nearbyStops": [
         {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
+          "stopId": "stop-via-dei-mille-40",
+          "name": "Via Dei Mille 40",
           "lines": [
-            "ospedale-2",
-            "navette-hub"
+            "ospedale-1",
+            "linea-ovest",
+            "navette-hub",
+            "pescariello-z-i"
           ],
-          "distance": 267
+          "distance": 155
+        },
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 155
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -2565,124 +1022,169 @@
             "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 282
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille 88",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 301
+          "distance": 204
         }
-      ]
-    },
-    {
-      "id": "orme-di-dinosauri-chiusa-al-pubblico",
-      "name": "Orme di dinosauri (chiusa al pubblico)",
-      "lat": 40.806253,
-      "lon": 16.6244379,
-      "categories": [
-        "cultura"
       ],
-      "icon": "archaeology",
-      "osm": "node/3419856630",
-      "address": null,
-      "website": "https://www.dinosauridialtamura.it/cava-pontrelli/",
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q105978747",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sito%20con%20orme%20di%20dinosauri%20di%20Altamura%20(Cretacico%20Superiore%2C%20Bari%2C%20Puglia)%20Foto%20Luca%20Bellarosa%20.jpg?width=1200",
-      "imageCredit": "Luca Bellarosa",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Sito_con_orme_di_dinosauri_di_Altamura_(Cretacico_Superiore%2C_Bari%2C_Puglia)_Foto_Luca_Bellarosa_.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "palazzo-dell-acquedotto",
-      "name": "Palazzo dell'Acquedotto",
-      "lat": 40.8233278,
-      "lon": 16.5595681,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/410903660",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "imageSource": null
+    },
+    {
+      "id": "palazzo-filo",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Filo",
+      "duration": "10 min",
+      "lat": 40.82811,
+      "lon": 16.55072,
+      "description": "Addossato a Palazzo Sabini, con cui per un periodo formava un corpo unico, ha un portale ad arco fra due semicolonne che reggono un timpano spezzato. Nel 1799 qui c'era il comando repubblicano: una porta di casa diventata per qualche settimana il centro della città.",
+      "tips": "Si guarda dalla strada, in via Bisanzio Filo, insieme al vicino Palazzo Calderoni Sabini.",
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-102",
-          "name": "Viale Martiri 102",
+          "stopId": "stop-via-dei-mille-40",
+          "name": "Via Dei Mille 40",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "navette-hub",
+            "pescariello-z-i"
+          ],
+          "distance": 163
+        },
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 163
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 218
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "palazzo-melodia",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Melodia",
+      "duration": "10 min",
+      "lat": 40.82733,
+      "lon": 16.55341,
+      "description": "Costruito nel 1817 su progetto dell'ingegnere Orazio Lerario, chiude Piazza Duomo di fronte alla Cattedrale con una facciata neoclassica: venti colonne in breccia corallina reggono il balcone sopra dieci grandi finestre. La famiglia Melodia dava giudici alla città già dal Duecento.",
+      "tips": "Guardalo dal lato opposto della piazza: è l'unico punto da cui si vede tutta la facciata.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 261
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 342
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 348
+        }
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "palazzo-viti-de-angelis",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Viti-De Angelis",
+      "duration": "10 min",
+      "lat": 40.82949,
+      "lon": 16.55379,
+      "description": "Palazzo quattrocentesco che ingloba Porta Bari: l'arco d'ingresso alla città vecchia è letteralmente dentro la casa. Un modo tutto altamurano di risolvere la questione fra difesa e abitare.",
+      "tips": "Passandoci sotto, alza lo sguardo: la porta e il palazzo si leggono solo da vicino.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 46
+        },
+        {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
           "lines": [
             "navette-hub"
           ],
-          "distance": 121
+          "distance": 114
         },
         {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
+          "stopId": "stop-via-iv-novembre-fronte-1",
+          "name": "Via IV Novembre (fronte 1)",
           "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
+            "ospedale-2",
+            "navette-hub"
           ],
-          "distance": 129
-        },
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 185
+          "distance": 285
         }
-      ]
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
     },
     {
-      "id": "parc-della-scuola-statale-tommasco-fiore",
-      "name": "Parc della Scuola Statale Tommasco Fiore",
-      "lat": 40.821351,
-      "lon": 16.5642907,
+      "id": "parco-scuola-tommaso-fiore",
+      "icon": "park",
       "categories": [
         "parchi"
       ],
-      "icon": "park",
-      "osm": "way/886245939",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "osm": null,
+      "name": "Parco della Scuola Tommaso Fiore",
+      "duration": "20 min",
+      "lat": 40.82135,
+      "lon": 16.56429,
+      "description": "Area verde di quartiere accanto alla scuola Tommaso Fiore, con giochi e alberatura: uno di quei posti che tengono insieme un pezzo di città fuori dal centro.",
+      "tips": "È la sosta giusta se stai aspettando alla fermata di viale Martiri con dei bambini.",
       "nearbyStops": [
         {
           "stopId": "stop-viale-traiano-35",
@@ -2711,7 +1213,31 @@
           ],
           "distance": 176
         }
-      ]
+      ],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
+    },
+    {
+      "id": "pulo-di-altamura",
+      "icon": "nature",
+      "categories": [
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Pulo di Altamura",
+      "highlight": true,
+      "duration": "2 h",
+      "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
+      "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
+      "lat": 40.89015,
+      "lon": 16.56795,
+      "nearbyStops": [],
+      "image": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSource": null
     },
     {
       "id": "parco-degli-ulivi",
@@ -2729,15 +1255,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Il verde più vicino al centro: ulivi, panchine e vialetti dove la città va a prendere aria appena il sole cala. Non è una meta turistica, è il posto dove gli altamurani portano i bambini e i cani.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "30 min",
       "difficulty": null,
       "experience": null,
+      "tips": "A metà pomeriggio è pieno di gente del quartiere; la mattina è il posto più tranquillo della zona.",
       "nearbyStops": [
         {
           "stopId": "stop-via-iv-novembre-fronte-74",
@@ -2784,15 +1311,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": "Il polmone verde a nord del centro, con percorsi pedonali, area giochi e prati. È servito dalle linee che passano dall'hub di via Santeramo, quindi è il parco più facile da raggiungere in autobus.",
+      "description": "Il polmone verde a est della città, con spazi ampi per correre e giocare, lontano dal traffico del centro. È la meta di chi vuole camminare un'ora senza incrociare una macchina.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": "1 h",
+      "duration": "45 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Ci passano le linee che servono la zona dell'ospedale e dell'hub: comodo anche senza auto.",
       "nearbyStops": [
         {
           "stopId": "stop-via-madrid",
@@ -2822,331 +1350,6 @@
       ]
     },
     {
-      "id": "parrocchia-madonna-del-rosario",
-      "name": "Parrocchia Madonna del Rosario",
-      "lat": 40.8201728,
-      "lon": 16.5483387,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/235959518",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-selva-fronte-civ-117",
-          "name": "Via Selva (fronte civ. 117)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 253
-        },
-        {
-          "stopId": "stop-via-selva-117",
-          "name": "Via Selva 117",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "pescariello-z-i"
-          ],
-          "distance": 257
-        },
-        {
-          "stopId": "stop-via-selva-fronte-civico-117",
-          "name": "Via Selva - fronte civico 117",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 257
-        }
-      ]
-    },
-    {
-      "id": "parrocchia-sacro-cuore-di-gesu",
-      "name": "Parrocchia Sacro Cuore di Gesù",
-      "lat": 40.8304748,
-      "lon": 16.5458821,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904201",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 169
-        },
-        {
-          "stopId": "stop-via-parisi-66",
-          "name": "Via Parisi 66",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-ovest",
-            "pescariello-z-i"
-          ],
-          "distance": 182
-        },
-        {
-          "stopId": "stop-via-parisi-fronte-civico-66",
-          "name": "Via Parisi - fronte civico 66",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 182
-        }
-      ]
-    },
-    {
-      "id": "parrocchia-san-giovanni-bosco",
-      "name": "Parrocchia San Giovanni Bosco",
-      "lat": 40.8200077,
-      "lon": 16.5569738,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/235956859",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q25300618",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20di%20San%20Giovanni%20Bosco%20-%20Altamura.jpg?width=1200",
-      "imageCredit": "Polpettone",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Giovanni_Bosco_-_Altamura.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-treviso-27",
-          "name": "Via Treviso 27",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1"
-          ],
-          "distance": 180
-        },
-        {
-          "stopId": "stop-via-treviso-50",
-          "name": "Via Treviso 50",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 193
-        },
-        {
-          "stopId": "stop-via-treviso-ang-via-manzoni",
-          "name": "Via Treviso (ang. via Manzoni)",
-          "lines": [
-            "ospedale-1",
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-2"
-          ],
-          "distance": 268
-        }
-      ]
-    },
-    {
-      "id": "parrocchia-san-michele-arcangelo",
-      "name": "Parrocchia San Michele Arcangelo",
-      "lat": 40.8326756,
-      "lon": 16.5543693,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904930",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q121214274",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-iv-novembre-fronte-74",
-          "name": "Via IV Novembre (fronte 74)",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 151
-        },
-        {
-          "stopId": "stop-via-iv-novembre-fronte-1",
-          "name": "Via IV Novembre (fronte 1)",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 175
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 261
-        }
-      ]
-    },
-    {
-      "id": "parrocchia-sant-anna",
-      "name": "Parrocchia Sant' Anna",
-      "lat": 40.8175841,
-      "lon": 16.5625203,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904675",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q121214281",
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-cicerone",
-          "name": "Via Cicerone",
-          "lines": [
-            "linea-scuola-2"
-          ],
-          "distance": 162
-        },
-        {
-          "stopId": "stop-via-cicerone-11",
-          "name": "Via Cicerone 11",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1"
-          ],
-          "distance": 174
-        },
-        {
-          "stopId": "stop-via-carpentino-ang-via-s-fortunato",
-          "name": "Via Carpentino ang. Via S. Fortunato",
-          "lines": [
-            "linea-scuola-2"
-          ],
-          "distance": 174
-        }
-      ]
-    },
-    {
-      "id": "parrocchia-sant-agostino-e-santa-maria-della-santita",
-      "name": "Parrocchia Sant'Agostino e Santa Maria della Santità",
-      "lat": 40.8309514,
-      "lon": 16.5580843,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/235955619",
-      "address": "Via Porta Alba 1",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-iv-novembre-fronte-1",
-          "name": "Via IV Novembre (fronte 1)",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 202
-        },
-        {
-          "stopId": "stop-via-cassano-13",
-          "name": "Via Cassano 13",
-          "lines": [
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 288
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 290
-        }
-      ]
-    },
-    {
       "id": "piazza-aldo-moro",
       "name": "Piazza Aldo Moro",
       "lat": 40.8230705,
@@ -3162,15 +1365,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Grande spazio aperto a est del centro, con alberi e panchine, punto di riferimento per il quartiere e per chi aspetta l'autobus.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "15 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Da qui partono le linee Scuola: la mattina presto è il posto più affollato della città.",
       "nearbyStops": [
         {
           "stopId": "stop-viale-martiri-102",
@@ -3201,197 +1405,41 @@
       ]
     },
     {
-      "id": "piazza-del-sole",
-      "name": "Piazza del Sole",
-      "lat": 40.8313344,
-      "lon": 16.5425281,
+      "id": "piazza-saverio-mercadante",
+      "name": "Piazza Mercadante",
+      "lat": 40.8250846,
+      "lon": 16.55089,
       "categories": [
-        "parchi"
+        "parchi",
+        "cultura"
       ],
       "icon": "park",
-      "osm": "way/1386587171",
+      "osm": "way/483653502",
       "address": null,
       "website": null,
       "phone": null,
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "La piazza davanti al teatro, dedicata al compositore che la città ha dato al mondo. Nelle sere di spettacolo si riempie mezz'ora prima del sipario.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "15 min",
       "difficulty": null,
       "experience": null,
+      "tips": "È a due passi da Piazza della Resistenza: le due si visitano insieme.",
       "nearbyStops": [
         {
-          "stopId": "stop-viale-padre-pio",
-          "name": "Viale Padre Pio",
+          "stopId": "stop-via-quintino-sella-29",
+          "name": "Via Quintino Sella, 29",
           "lines": [
-            "linea-scuola-1",
             "linea-scuola-3"
           ],
-          "distance": 101
+          "distance": 111
         },
-        {
-          "stopId": "stop-via-nicolo-piccinni-ang-via-de-pineto",
-          "name": "Via Nicolò Piccinni ang. Via de Pineto",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 189
-        },
-        {
-          "stopId": "stop-viale-padre-pio-presso-ingresso-istituto-tecnico",
-          "name": "Viale Padre Pio ( presso ingresso Istituto Tecnico)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 303
-        }
-      ]
-    },
-    {
-      "id": "piazza-ettore-fieramosca",
-      "name": "Piazza Ettore Fieramosca",
-      "lat": 40.8288007,
-      "lon": 16.5501416,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/1386093328",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille 40",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "navette-hub",
-            "pescariello-z-i"
-          ],
-          "distance": 145
-        },
-        {
-          "stopId": "stop-via-dei-mille-fronte-40",
-          "name": "Via Dei Mille fronte 40",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 145
-        },
-        {
-          "stopId": "stop-via-gravina-79",
-          "name": "Via Gravina 79",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 178
-        }
-      ]
-    },
-    {
-      "id": "piazza-giuseppe-de-napoli",
-      "name": "Piazza Giuseppe de Napoli",
-      "lat": 40.8191516,
-      "lon": 16.5592392,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/386598930",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-treviso-ang-via-manzoni",
-          "name": "Via Treviso (ang. via Manzoni)",
-          "lines": [
-            "ospedale-1",
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-2"
-          ],
-          "distance": 70
-        },
-        {
-          "stopId": "stop-via-carpentino-fronte-134",
-          "name": "Via Carpentino (fronte 134)",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1"
-          ],
-          "distance": 289
-        },
-        {
-          "stopId": "stop-via-treviso-27",
-          "name": "Via Treviso 27",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1"
-          ],
-          "distance": 300
-        }
-      ]
-    },
-    {
-      "id": "piazza-giuseppe-zanardelli",
-      "name": "Piazza Giuseppe Zanardelli",
-      "lat": 40.8240969,
-      "lon": 16.5519898,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/234553214",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
         {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli 7",
@@ -3400,7 +1448,7 @@
             "linea-scuola-2",
             "pescariello-z-i"
           ],
-          "distance": 31
+          "distance": 123
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
@@ -3408,122 +1456,7 @@
           "lines": [
             "linea-ovest"
           ],
-          "distance": 31
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i"
-          ],
-          "distance": 31
-        }
-      ]
-    },
-    {
-      "id": "piazza-raffaele-laudati",
-      "name": "Piazza Raffaele Laudati",
-      "lat": 40.8246194,
-      "lon": 16.5579259,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/1386678754",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 106
-        },
-        {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 236
-        },
-        {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 300
-        }
-      ]
-    },
-    {
-      "id": "piazza-san-lorenzo",
-      "name": "Piazza San Lorenzo",
-      "lat": 40.8266708,
-      "lon": 16.556937,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/1386678779",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 197
-        },
-        {
-          "stopId": "stop-via-santeramo-ang-via-cassano",
-          "name": "Via Santeramo ang. Via Cassano",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 208
-        },
-        {
-          "stopId": "stop-via-cassano-13",
-          "name": "Via Cassano 13",
-          "lines": [
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 290
+          "distance": 123
         }
       ]
     },
@@ -3533,7 +1466,8 @@
       "lat": 40.8290568,
       "lon": 16.5510596,
       "categories": [
-        "parchi"
+        "parchi",
+        "cultura"
       ],
       "icon": "park",
       "osm": "way/1386093320",
@@ -3543,15 +1477,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Piazza raccolta davanti all'ex convento dei Carmelitani Scalzi, che oggi ospita il Museo Etnografico. Una di quelle piazze dove ci si siede senza motivo, all'ombra.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "15 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Si abbina in dieci minuti alla visita del Museo Etnografico, che si affaccia proprio qui.",
       "nearbyStops": [
         {
           "stopId": "stop-via-dei-mille-40",
@@ -3584,60 +1519,6 @@
       ]
     },
     {
-      "id": "piazza-saverio-mercadante",
-      "name": "Piazza Saverio Mercadante",
-      "lat": 40.8250846,
-      "lon": 16.55089,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/483653502",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 111
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli 7",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 123
-        },
-        {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 123
-        }
-      ]
-    },
-    {
       "id": "piazza-stazione",
       "name": "Piazza Stazione",
       "lat": 40.8369235,
@@ -3653,15 +1534,16 @@
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "Il piazzale davanti alla stazione delle Ferrovie Appulo Lucane, porta d'ingresso di chi arriva da Bari o da Matera. Il primo pezzo di Altamura che vedono i visitatori.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "10 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Qui si incrociano quasi tutte le linee urbane: è il posto giusto per cambiare autobus.",
       "nearbyStops": [
         {
           "stopId": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
@@ -3692,67 +1574,33 @@
       ]
     },
     {
-      "id": "pulicchio-di-toritto",
-      "name": "Pulicchio di Toritto",
-      "lat": 40.9317615,
-      "lon": 16.5811239,
+      "id": "piazza-giuseppe-zanardelli",
+      "name": "Piazza Zanardelli",
+      "lat": 40.8240969,
+      "lon": 16.5519898,
       "categories": [
-        "trekking"
+        "parchi",
+        "cultura"
       ],
-      "icon": "viewpoint",
-      "osm": "node/2129259687",
+      "icon": "park",
+      "osm": "way/234553214",
       "address": null,
       "website": null,
       "phone": null,
       "openingHours": null,
       "wikidata": null,
       "wikipedia": null,
-      "description": null,
+      "description": "La piazza dove la città si ferma: caffè, panchine, l'ABMC sotto i portici e il passeggio della sera. È anche uno dei nodi degli autobus urbani, quindi prima o poi ci passi comunque.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "20 min",
       "difficulty": null,
       "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "san-michele-o-del-purgatorio",
-      "name": "San Michele o del Purgatorio",
-      "lat": 40.8270484,
-      "lon": 16.553296,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410919825",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q71725587",
-      "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Altamura%2C%20chiesa%20di%20san%20michele%2001.jpg?width=1200",
-      "imageCredit": "Sailko",
-      "imageLicense": "CC BY 3.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Altamura%2C_chiesa_di_san_michele_01.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "tips": "Da qui parte il corso verso la Cattedrale: è il punto d'inizio naturale di qualsiasi giro.",
       "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 293
-        },
         {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli 7",
@@ -3761,7 +1609,7 @@
             "linea-scuola-2",
             "pescariello-z-i"
           ],
-          "distance": 316
+          "distance": 31
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
@@ -3769,67 +1617,70 @@
           "lines": [
             "linea-ovest"
           ],
-          "distance": 316
+          "distance": 31
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
+          "lines": [
+            "navette-hub",
+            "pescariello-z-i"
+          ],
+          "distance": 31
         }
       ]
     },
     {
-      "id": "sant-annibale-maria-di-francia",
-      "name": "Sant'Annibale Maria di Francia",
-      "lat": 40.8245629,
-      "lon": 16.5578145,
+      "id": "porta-matera",
+      "icon": "monument",
       "categories": [
-        "cultura"
+        "cultura",
+        "parchi"
       ],
-      "icon": "landmark",
-      "osm": "node/12837578772",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
+      "osm": null,
+      "name": "Porta Matera e Piazza della Resistenza",
+      "duration": "15 min",
+      "lat": 40.82536,
+      "lon": 16.55288,
+      "description": "La porta non c'è più, ma la piazza porta il nome di quello che accadde qui: nel 1799 fu da questo varco che l'esercito sanfedista del cardinale Ruffo sfondò, dopo la resistenza degli altamurani. Si chiama Piazza della Resistenza per quel giorno.",
+      "tips": "Da qui si vedono i tratti superstiti delle mura medievali che chiudevano il centro.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-2",
+            "pescariello-z-i"
+          ],
+          "distance": 131
+        },
+        {
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "lines": [
+            "linea-ovest"
+          ],
+          "distance": 131
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
+          "lines": [
+            "navette-hub",
+            "pescariello-z-i"
+          ],
+          "distance": 131
+        }
+      ],
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 97
-        },
-        {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 225
-        },
-        {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2"
-          ],
-          "distance": 305
-        }
-      ]
+      "imageSource": null
     },
     {
       "id": "santuario-madonna-del-buon-cammino",
-      "name": "Santuario Madonna del Buon Cammino",
+      "name": "Santuario di Maria Santissima del Buoncammino",
       "lat": 40.8489339,
       "lon": 16.5658981,
       "categories": [
@@ -3843,244 +1694,64 @@
       "openingHours": null,
       "wikidata": "Q1161476",
       "wikipedia": null,
-      "description": null,
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary%20of%20Maria%20Santissima%20del%20Buoncammino.jpg?width=1200",
-      "imageCredit": "dott. ing. Fabrizio Berloco",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Sanctuary_of_Maria_Santissima_del_Buoncammino.jpg",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "serra-di-mele",
-      "name": "Serra di Mele",
-      "lat": 40.7837016,
-      "lon": 16.5092647,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "peak",
-      "osm": "node/5964915950",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
+      "description": "Sta fuori dall'abitato, sulla strada che sale verso la Murgia, ed è la chiesa che gli altamurani sentono più loro: la Madonna del Buoncammino è compatrona della città. La domenica dopo il 15 agosto qui arriva la Cavalcata, con i cavalli bardati a festa.",
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
       "imageSource": null,
       "highlight": false,
-      "duration": null,
+      "duration": "30 min",
       "difficulty": null,
       "experience": null,
+      "tips": "Ci si arriva in una passeggiata dal centro: la strada è in leggera salita e il tramonto da qui è quello buono.",
       "nearbyStops": []
     },
     {
-      "id": "stadio-tonino-dangelo",
-      "icon": "stadium",
-      "categories": [
-        "esperienze"
-      ],
-      "osm": "way/1386678728",
-      "name": "Stadio Comunale Tonino D'Angelo",
-      "lat": 40.83677,
-      "lon": 16.55769,
-      "description": "Lo stadio comunale, intitolato a Tonino D'Angelo, e' il campo della squadra cittadina e il punto di riferimento per le partite e le manifestazioni sportive.",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-mura-megalitiche-fronte-stadio",
-          "name": "Via Mura Megalitiche (fronte Stadio)",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 94
-        },
-        {
-          "stopId": "stop-via-mura-megalitiche",
-          "name": "Via Mura Megalitiche",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 98
-        },
-        {
-          "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
-          "name": "Via Mura Megalitiche (ang. Via Vecchia Buoncammino)",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-3"
-          ],
-          "distance": 267
-        }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
-    },
-    {
-      "id": "stazione-di-altamura",
-      "icon": "station",
-      "categories": [
-        "esperienze"
-      ],
-      "osm": "way/410905814",
-      "name": "Stazione di Altamura",
-      "lat": 40.83814,
-      "lon": 16.55172,
-      "description": "Il capolinea ferroviario delle Ferrovie Appulo Lucane, da cui partono i treni per Bari e per Matera. E' anche il nodo da cui si diramano quasi tutte le linee urbane: chi arriva ad Altamura in treno comincia da qui.",
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
-          "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
-          "lines": [
-            "linea-scuola-4"
-          ],
-          "distance": 85
-        },
-        {
-          "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
-          "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 91
-        },
-        {
-          "stopId": "stop-stazione-via-xxiv-maggio-fronte-uscita-sottopasso-fal-fermat",
-          "name": "Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 96
-        }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
-    },
-    {
-      "id": "tombe-la-mena",
-      "name": "Tombe La Mena",
-      "lat": 40.9079931,
-      "lon": 16.5960783,
+      "id": "teatro-mercadante",
+      "icon": "landmark",
       "categories": [
         "cultura"
       ],
-      "icon": "archaeology",
-      "osm": "way/249467593",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
-    },
-    {
-      "id": "tumulo-di-melania-calvat",
-      "name": "Tumulo di Melania Calvat",
-      "lat": 40.8232,
-      "lon": 16.5567337,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "node/12407748566",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": "en:Mélanie Calvat",
-      "description": null,
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
+      "osm": null,
+      "name": "Teatro Mercadante",
+      "duration": "30 min",
+      "lat": 40.82481,
+      "lon": 16.55126,
+      "description": "Costruito nel 1895 per il primo centenario della nascita di Saverio Mercadante, il compositore che Altamura ha dato all'Ottocento europeo: tre ordini di palchi e un loggione ampio, in un teatro all'italiana in miniatura. È tuttora la sala dove la città si ritrova per la stagione di prosa.",
+      "tips": "Il modo migliore per vederlo è entrarci per uno spettacolo: il cartellone è nella sezione Eventi.",
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli 7",
           "lines": [
             "ospedale-1",
-            "linea-scuola-2"
+            "linea-scuola-2",
+            "pescariello-z-i"
           ],
-          "distance": 85
+          "distance": 80
         },
         {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "name": "P.zza Zanardelli 7 (Bar Gelo)",
           "lines": [
-            "navette-hub"
+            "linea-ovest"
           ],
-          "distance": 144
+          "distance": 80
         },
         {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri 6",
+          "stopId": "stop-piazza-zanardelli-pensilina",
+          "name": "Piazza Zanardelli (Pensilina)",
           "lines": [
             "navette-hub",
-            "linea-scuola-3"
+            "pescariello-z-i"
           ],
-          "distance": 251
+          "distance": 80
         }
-      ]
-    },
-    {
-      "id": "uomo-di-altamura",
-      "name": "Uomo di Altamura",
-      "lat": 40.8716502,
-      "lon": 16.5881217,
-      "categories": [
-        "cultura"
       ],
-      "icon": "archaeology",
-      "osm": "node/3419899498",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": null,
       "image": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSource": null,
-      "highlight": false,
-      "duration": null,
-      "difficulty": null,
-      "experience": null,
-      "nearbyStops": []
+      "imageSource": null
     }
   ]
 }
