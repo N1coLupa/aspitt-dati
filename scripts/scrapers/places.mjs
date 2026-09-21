@@ -6,8 +6,9 @@
 // nel file curato non entra nell'app, perche' una scheda col solo nome non dice
 // niente a nessuno.
 //
-// Le fotografie restano ai quattro luoghi simbolo (IMAGE_ALLOWLIST): con una
-// copertura parziale, le schede con foto farebbero sembrare rotte tutte le altre.
+// Nessun luogo ha una fotografia: le foto libere coprivano meno di un luogo su
+// cinque e rendevano incomplete tutte le altre schede. Al loro posto, in app,
+// c'e' una superficie tinta con l'icona del tipo di luogo.
 //
 // Uso: node scripts/scrapers/places.mjs
 
@@ -15,7 +16,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { slugify } from '../lib/slug.mjs';
 import { distanceMeters } from '../lib/geo.mjs';
-import { attachImages } from './images.mjs';
 
 const OVERPASS_ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 
@@ -115,9 +115,6 @@ async function readCurated() {
   }
 }
 
-/** I luoghi che tengono la fotografia: gli altri vivono di testo. */
-const IMAGE_ALLOWLIST = new Set(['cattedrale-santa-maria-assunta']);
-
 export async function scrapePlaces() {
   console.log('> OpenStreetMap / Overpass');
   const payload = await overpass(QUERY);
@@ -153,10 +150,6 @@ export async function scrapePlaces() {
       wikidata: tags.wikidata ?? null,
       wikipedia: tags.wikipedia ?? null,
       description: null,
-      image: null,
-      imageCredit: null,
-      imageLicense: null,
-      imageSource: null,
       highlight: false,
       duration: null,
       difficulty: null,
@@ -204,21 +197,6 @@ export async function scrapePlaces() {
         .sort((a, b) => a.distance - b.distance)
         .slice(0, 3);
     }
-  }
-
-  // Le fotografie arrivano da Wikidata/Commons, ma solo per i luoghi simbolo.
-  const withImages = places.filter((place) => IMAGE_ALLOWLIST.has(place.id));
-  try {
-    await attachImages(withImages);
-  } catch (err) {
-    console.warn(`  ! immagini non recuperate: ${err.message}`);
-  }
-  for (const place of places) {
-    if (IMAGE_ALLOWLIST.has(place.id)) continue;
-    place.image = null;
-    place.imageCredit = null;
-    place.imageLicense = null;
-    place.imageSource = null;
   }
 
   const senzaDescrizione = places.filter((place) => !place.description).map((place) => place.name);

@@ -551,7 +551,7 @@ export async function scrapeEvents() {
   const recentThreshold = new Date(Date.now() - 45 * 24 * 3600 * 1000).toISOString();
 
   const events = dedupe(fromSources.flat())
-    .map((event) => ({ ...event, image: null, dated: Boolean(event.startDate || event.endDate) }))
+    .map((event) => ({ ...event, dated: Boolean(event.startDate || event.endDate) }))
     .filter((event) => {
       // Gli appuntamenti conclusi escono dall'agenda. Le segnalazioni senza una
       // data riconoscibile restano solo se ancora fresche: sono spunti per la
