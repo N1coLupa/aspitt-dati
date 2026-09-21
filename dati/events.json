@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:14:15.884Z",
+  "generatedAt": "2026-09-21T10:05:29.954Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -43,7 +43,6 @@
       "categories": [
         "esperienze"
       ],
-      "image": null,
       "dated": true
     },
     {
@@ -62,7 +61,25 @@
       "categories": [
         "esperienze"
       ],
-      "image": null,
+      "dated": true
+    },
+    {
+      "id": "tacco-rete-museale-per-federicus",
+      "title": "Rete Museale per Federicus",
+      "url": "https://iltaccodibacco.it/puglia/eventi/330894.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-09-30",
+      "endDate": "2026-10-04",
+      "startTime": null,
+      "venue": "Palazzo Baldassarre - Museo dell'Uomo di",
+      "summary": "🦅 Dalle origini del tempo ai Custodi del Mondo: la storia ti aspetta dove tutto è iniziato! 📜 In occasione di Federicus - Festa Medievale 2026, la Rete Museale Uomo di Altamura vi invita a vivere un viaggio…",
+      "tags": [],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
       "dated": true
     },
     {
@@ -81,7 +98,6 @@
       "categories": [
         "cultura"
       ],
-      "image": null,
       "dated": true
     },
     {
@@ -111,7 +127,6 @@
           "url": "https://www.vitobarone.it/altamura/eventi.htm"
         }
       ],
-      "image": null,
       "dated": true
     },
     {
@@ -130,7 +145,6 @@
       "categories": [
         "cultura"
       ],
-      "image": null,
       "dated": true
     },
     {
@@ -152,7 +166,6 @@
         "eventi"
       ],
       "annual": true,
-      "image": null,
       "dated": true
     },
     {
@@ -174,7 +187,6 @@
         "esperienze"
       ],
       "annual": true,
-      "image": null,
       "dated": true
     },
     {
@@ -196,7 +208,6 @@
         "eventi"
       ],
       "annual": true,
-      "image": null,
       "dated": true
     },
     {
@@ -218,7 +229,6 @@
         "esperienze"
       ],
       "annual": true,
-      "image": null,
       "dated": true
     },
     {
@@ -240,7 +250,6 @@
         "esperienze"
       ],
       "annual": true,
-      "image": null,
       "dated": true
     },
     {
@@ -267,7 +276,6 @@
         "cultura",
         "esperienze"
       ],
-      "image": null,
       "dated": false
     }
   ]

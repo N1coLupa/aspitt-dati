@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:14:20.264Z",
+  "generatedAt": "2026-09-21T10:05:35.611Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -52,11 +52,7 @@
           ],
           "distance": 32
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "area-archeologica-la-croce",
@@ -97,11 +93,7 @@
           ],
           "distance": 114
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "bosco-sauro",
@@ -117,11 +109,7 @@
       "lon": 16.6342,
       "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
       "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
-      "nearbyStops": [],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      "nearbyStops": []
     },
     {
       "id": "cattedrale-santa-maria-assunta",
@@ -140,10 +128,6 @@
       "wikidata": "Q277433",
       "wikipedia": "it:Cattedrale di Santa Maria Assunta (Altamura)",
       "description": "Federico II la volle nel 1232 come cappella palatina, e da allora è il centro di tutto: la città le è cresciuta intorno, non il contrario. Il terremoto del 1316 la rase quasi al suolo, gli Angioini la rialzarono e nel 1534 le girarono perfino la facciata, che oggi guarda dalla parte opposta rispetto alle origini. Dentro restano l'ambone cinquecentesco e il coro ligneo del 1543; fuori, le formelle del portale raccontano la vita di Cristo a chi ha la pazienza di leggerle dal basso.",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Puglia%20Altamura1%20tango7174.jpg?width=1200",
-      "imageCredit": "Tango7174",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Puglia_Altamura1_tango7174.jpg",
       "highlight": true,
       "duration": "45 min",
       "difficulty": null,
@@ -193,11 +177,7 @@
       "tips": "L'accesso non è libero: si entra solo con le visite guidate organizzate, che vengono annunciate nella sezione Eventi.",
       "lat": 40.80625,
       "lon": 16.62465,
-      "nearbyStops": [],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      "nearbyStops": []
     },
     {
       "id": "centro-visite-lamalunga",
@@ -213,11 +193,7 @@
       "lon": 16.58153,
       "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
       "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
-      "nearbyStops": [],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      "nearbyStops": []
     },
     {
       "id": "claustri-del-centro-storico",
@@ -262,11 +238,7 @@
           ],
           "distance": 331
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "grotta-di-lamalunga",
@@ -286,10 +258,6 @@
       "wikidata": "Q55369216",
       "wikipedia": null,
       "description": "Nel 1993 due speleologi trovarono qui lo scheletro più completo di Neanderthal mai scoperto in Europa, saldato alle concrezioni della grotta da 130.000 anni. L'Uomo di Altamura è ancora là dentro, dove è rimasto: la grotta non si visita, ma il vallone attorno sì.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": true,
       "duration": "30 min",
       "difficulty": null,
@@ -336,11 +304,7 @@
           ],
           "distance": 132
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "palazzo-baldassarre",
@@ -382,11 +346,7 @@
           ],
           "distance": 284
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "parco-nazionale-dell-alta-murgia",
@@ -405,10 +365,6 @@
       "wikidata": "Q680313",
       "wikipedia": "fr:Parc national Alta Murgia",
       "description": "Sessantamila ettari di steppa, muretti a secco, jazzi e masserie: l'ultimo grande pascolo d'Europa comincia dove finiscono le case di Altamura. In primavera è un tappeto di fiori, d'estate è giallo e durissimo, e in ogni stagione è il posto dove si capisce perché qui si fa quel pane.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": true,
       "duration": "Mezza giornata",
       "difficulty": null,
@@ -433,10 +389,6 @@
       "wikidata": "Q68456596",
       "wikipedia": "it:Porta Bari (Altamura)",
       "description": "L'ingresso storico alla città dal lato di Bari, incastonato in Palazzo De Angelis-Viti: passato l'arco comincia il corso e finisce la città moderna. È il punto in cui gli altamurani si danno appuntamento da sempre.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": true,
       "duration": "15 min",
       "difficulty": null,
@@ -488,10 +440,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Uno dei passaggi più stretti e bassi del centro storico: ci si passa chinando la testa e si sbuca in un claustro. È il dettaglio che spiega meglio di mille parole com'era fatta la città dentro le mura.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "10 min",
       "difficulty": null,
@@ -544,10 +492,6 @@
       "wikidata": "Q1255912",
       "wikipedia": "it:Chiesa di San Nicola dei Greci",
       "description": "Eretta alla fine del Duecento, è la chiesa della comunità greco-ortodossa che visse ad Altamura fino al Seicento: due riti, due lingue e due calendari a poche decine di metri dalla Cattedrale. La facciata romanica con il portale scolpito è rimasta quella, incastrata fra le case del centro storico.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "20 min",
       "difficulty": null,
@@ -598,10 +542,6 @@
       "wikidata": "Q1255648",
       "wikipedia": null,
       "description": "Il complesso cresce fra Cinquecento e Ottocento e conserva altari in marmo e dipinti del Settecento, quando i conventi altamurani erano anche scuole e biblioteche. È uno di quegli interni che non ti aspetti dietro una facciata sobria.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "20 min",
       "difficulty": null,
@@ -654,10 +594,6 @@
       "wikidata": "Q1256145",
       "wikipedia": "it:Chiesa di Santa Chiara (Altamura)",
       "description": "Chiesa e monastero fra Seicento e Settecento, ancora abitati da una comunità di clausura: dietro le grate la vita scorre con i tempi di quattro secoli fa, a due passi dal traffico del centro. La chiesa custodisce l'apparato decorativo barocco tipico degli istituti femminili altamurani.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "20 min",
       "difficulty": null,
@@ -708,10 +644,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Chiesa scavata nella roccia appena fuori dall'antico giro delle mura, un tempo chiamata Sant'Angelo di Larissa: una navata sotterranea con affreschi, fredda d'estate e silenziosa sempre. È la Altamura rupestre, quella che sta sotto il livello della strada.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "30 min",
       "difficulty": null,
@@ -788,11 +720,7 @@
           ],
           "distance": 344
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "mura-medievali",
@@ -835,11 +763,7 @@
           ],
           "distance": 167
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "anello-delle-mura-megalitiche",
@@ -883,11 +807,7 @@
           ],
           "distance": 184
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "museo-arte-tipografica-portoghese",
@@ -928,11 +848,7 @@
           ],
           "distance": 144
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "museo-etnografico-alta-murgia",
@@ -976,11 +892,7 @@
           ],
           "distance": 256
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "palazzo-calderoni-sabini",
@@ -1024,11 +936,7 @@
           ],
           "distance": 204
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "palazzo-filo",
@@ -1072,11 +980,7 @@
           ],
           "distance": 218
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "palazzo-melodia",
@@ -1120,11 +1024,7 @@
           ],
           "distance": 348
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "palazzo-viti-de-angelis",
@@ -1166,11 +1066,7 @@
           ],
           "distance": 285
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "parco-scuola-tommaso-fiore",
@@ -1213,11 +1109,7 @@
           ],
           "distance": 176
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "pulo-di-altamura",
@@ -1233,11 +1125,7 @@
       "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
       "lat": 40.89015,
       "lon": 16.56795,
-      "nearbyStops": [],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      "nearbyStops": []
     },
     {
       "id": "parco-degli-ulivi",
@@ -1256,10 +1144,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Il verde più vicino al centro: ulivi, panchine e vialetti dove la città va a prendere aria appena il sole cala. Non è una meta turistica, è il posto dove gli altamurani portano i bambini e i cani.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "30 min",
       "difficulty": null,
@@ -1312,10 +1196,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Il polmone verde a est della città, con spazi ampi per correre e giocare, lontano dal traffico del centro. È la meta di chi vuole camminare un'ora senza incrociare una macchina.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "45 min",
       "difficulty": null,
@@ -1366,10 +1246,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Grande spazio aperto a est del centro, con alberi e panchine, punto di riferimento per il quartiere e per chi aspetta l'autobus.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "15 min",
       "difficulty": null,
@@ -1422,10 +1298,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "La piazza davanti al teatro, dedicata al compositore che la città ha dato al mondo. Nelle sere di spettacolo si riempie mezz'ora prima del sipario.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "15 min",
       "difficulty": null,
@@ -1478,10 +1350,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Piazza raccolta davanti all'ex convento dei Carmelitani Scalzi, che oggi ospita il Museo Etnografico. Una di quelle piazze dove ci si siede senza motivo, all'ombra.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "15 min",
       "difficulty": null,
@@ -1535,10 +1403,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "Il piazzale davanti alla stazione delle Ferrovie Appulo Lucane, porta d'ingresso di chi arriva da Bari o da Matera. Il primo pezzo di Altamura che vedono i visitatori.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "10 min",
       "difficulty": null,
@@ -1591,10 +1455,6 @@
       "wikidata": null,
       "wikipedia": null,
       "description": "La piazza dove la città si ferma: caffè, panchine, l'ABMC sotto i portici e il passeggio della sera. È anche uno dei nodi degli autobus urbani, quindi prima o poi ci passi comunque.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "20 min",
       "difficulty": null,
@@ -1672,11 +1532,7 @@
           ],
           "distance": 131
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     },
     {
       "id": "santuario-madonna-del-buon-cammino",
@@ -1695,10 +1551,6 @@
       "wikidata": "Q1161476",
       "wikipedia": null,
       "description": "Sta fuori dall'abitato, sulla strada che sale verso la Murgia, ed è la chiesa che gli altamurani sentono più loro: la Madonna del Buoncammino è compatrona della città. La domenica dopo il 15 agosto qui arriva la Cavalcata, con i cavalli bardati a festa.",
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null,
       "highlight": false,
       "duration": "30 min",
       "difficulty": null,
@@ -1747,11 +1599,7 @@
           ],
           "distance": 80
         }
-      ],
-      "image": null,
-      "imageCredit": null,
-      "imageLicense": null,
-      "imageSource": null
+      ]
     }
   ]
 }
