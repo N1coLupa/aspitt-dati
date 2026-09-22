@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T16:42:30.607Z",
+  "generatedAt": "2026-09-22T00:48:55.226Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -269,6 +269,32 @@
       ],
       "annual": true,
       "dated": true
+    },
+    {
+      "id": "live-note-sapori-d-autore-altamura-si-racconta-tra-vicoli-canti-e",
+      "title": "“Note & Sapori d’Autore”, Altamura si racconta tra vicoli, canti e pane",
+      "url": "https://altamuralive.it/2026/09/21/note-sapori-dautore-altamura-si-racconta-tra-vicoli-canti-e-pane/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-09-21T17:11:01.000Z",
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Si chiude con una buona affluenza la seconda edizione di “Note & Sapori d’Autore”: tra claustri, tradizioni popolari e Museo del Pane, Altamura ha accolto visitatori dai comuni vicini e turisti dal Nord Italia, dalla…",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "canti popolari",
+        "Claustri",
+        "evento",
+        "pane di altamura"
+      ],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "dated": false
     },
     {
       "id": "live-santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curios",
