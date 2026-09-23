@@ -1,4 +1,35 @@
 {
-  "generatedAt": "2026-09-23T00:29:28.487Z",
-  "alerts": []
+  "generatedAt": "2026-09-23T09:24:26.485Z",
+  "alerts": [
+    {
+      "id": "avviso-ospedale-1-2026-09-23",
+      "severity": "critical",
+      "lineId": "ospedale-1",
+      "title": "Avviso su Ospedale 1",
+      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
+      "createdAt": "2026-09-23T09:24:26.479Z",
+      "validUntil": null
+    },
+    {
+      "id": "avviso-linea-ovest-2026-09-23",
+      "severity": "critical",
+      "lineId": "linea-ovest",
+      "title": "Avviso su Linea Ovest",
+      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avvio-Linea-Ovest.pdf",
+      "createdAt": "2026-09-23T09:24:26.479Z",
+      "validUntil": null
+    },
+    {
+      "id": "avviso-navette-hub-2026-09-23",
+      "severity": "critical",
+      "lineId": "navette-hub",
+      "title": "Avviso su Navette HUB",
+      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
+      "createdAt": "2026-09-23T09:24:26.479Z",
+      "validUntil": null
+    }
+  ]
 }
