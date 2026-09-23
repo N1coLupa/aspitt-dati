@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T00:29:20.808Z",
+  "generatedAt": "2026-09-23T09:24:11.830Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -23,7 +23,7 @@
       "route": "Via Gravina - Trentacapilli - Piazza Zanardelli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1tlPJKgyJkTU1oxiuXrDXOT7PosuwWvI&ll=40.8212292561109%2C16.516982050000006&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -14068,7 +14068,7 @@
       "route": "Stazione - Trentacapilli - P.zza Zanardelli",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Linea-Ovest-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1XtBpsAD3wEXY92VL6ri3CBbmFMhv3Vc&ll=40.82546210811353%2C16.54774995000003&z=15",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avvio-Linea-Ovest.pdf",
       "stops": [
         {
           "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
@@ -17350,7 +17350,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
