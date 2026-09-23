@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T15:15:58.340Z",
+  "generatedAt": "2026-09-23T00:29:26.137Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -269,6 +269,32 @@
       ],
       "annual": true,
       "dated": true
+    },
+    {
+      "id": "live-pane-di-altamura-sopravvalutato-dop-anni-di-storia-e-ricerca",
+      "title": "Pane di Altamura “sopravvalutato”? DOP, anni di storia e ricerca scientifica oltre le opinioni",
+      "url": "https://altamuralive.it/2026/09/22/pane-di-altamura-sopravvalutato-dop-anni-di-storia-e-ricerca-scientifica-oltre-le-opinioni/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-09-22T17:37:24.000Z",
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Tre pagnotte e due giorni di assaggi hanno acceso il dibattito sul Pane di Altamura. Ma prima di dichiarare “sopravvalutato” un simbolo della città, vale la pena mettere sul tavolo DOP europea, disciplinare, controlli…",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "Consorzio Pane di Altamura DOP",
+        "EUR-Leg",
+        "Feamp Puglia",
+        "identità"
+      ],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "dated": false
     },
     {
       "id": "live-note-sapori-d-autore-altamura-si-racconta-tra-vicoli-canti-e",
