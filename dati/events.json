@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T09:42:12.432Z",
+  "generatedAt": "2026-09-25T15:40:26.692Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -38,7 +38,7 @@
       "endDate": "2026-09-25",
       "startTime": "20:30",
       "venue": null,
-      "summary": "Anteprima alla cittadinanza del docufilm dedicato alla città, diretto da Max De Carolis. La serie doc, prodotta da ERMA PICTURES, che attravers...",
+      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
       "tags": [
         "Cinema",
         "Eventi sociali",
@@ -90,6 +90,56 @@
       "tags": [],
       "categories": [
         "esperienze"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-727957",
+      "title": "Festa di inaugurazione Villa Piazza Aldo Moro",
+      "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-09-25T08:53:59.000Z",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "startTime": "19:00",
+      "venue": null,
+      "summary": "Cerimonia inaugurale Villa Piazza Aldo Moro sabato 26 settembre a partire dalle ore 19 con le seguenti attività: Cerimonia inaugurale Animazio...",
+      "tags": [
+        "Anziani",
+        "Bimbi",
+        "Eventi sociali"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-727962",
+      "title": "Festa di inaugurazione Villa Piazza Aldo Moro",
+      "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione-727962",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-09-25T08:53:59.000Z",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "startTime": "17:00",
+      "venue": null,
+      "summary": "Festa di inaugurazione Villa Piazza Aldo Moro domenica 27 settembre a partire dalle ore 17 con le seguenti attività: Grandi giochi musicali An...",
+      "tags": [
+        "Anziani",
+        "Bimbi",
+        "Eventi sociali"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "alsoOn": [
+        {
+          "source": "Comune di Altamura",
+          "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione-727959"
+        }
       ],
       "dated": true
     },
@@ -207,6 +257,24 @@
       "startTime": null,
       "venue": null,
       "summary": "Fino al 24 ottobre",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "life-federicult-la-rassegna-culturale-tra-fede-arte-e-storia",
+      "title": "Federicult: la rassegna culturale tra fede, arte e storia",
+      "url": "https://www.altamuralife.it/eventi/federicult-la-rassegna-culturale-tra-fede-arte-e-storia/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": "2026-10-31",
+      "startTime": null,
+      "venue": null,
+      "summary": "Fino al 31 ottobre",
       "tags": [],
       "categories": [
         "cultura"
