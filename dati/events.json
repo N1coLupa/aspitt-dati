@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T00:32:38.587Z",
+  "generatedAt": "2026-09-25T09:42:12.432Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,6 +27,28 @@
     }
   ],
   "events": [
+    {
+      "id": "comune-727936",
+      "title": "Altamura si prepara a raccontarsi sullo schermo",
+      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-09-25T08:33:56.000Z",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "startTime": "20:30",
+      "venue": null,
+      "summary": "Anteprima alla cittadinanza del docufilm dedicato alla città, diretto da Max De Carolis. La serie doc, prodotta da ERMA PICTURES, che attravers...",
+      "tags": [
+        "Cinema",
+        "Eventi sociali",
+        "Evento culturale"
+      ],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
     {
       "id": "live-oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-",
       "title": "Oliva Dolce Food Festival: a Bitetto tre giorni di festa per una delle eccellenze del territorio del Gal Terre di Murgia",
