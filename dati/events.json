@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T15:35:54.680Z",
+  "generatedAt": "2026-09-25T00:32:38.587Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,6 +27,32 @@
     }
   ],
   "events": [
+    {
+      "id": "live-oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-",
+      "title": "Oliva Dolce Food Festival: a Bitetto tre giorni di festa per una delle eccellenze del territorio del Gal Terre di Murgia",
+      "url": "https://altamuralive.it/2026/09/24/oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-una-delle-eccellenze-del-territorio-del-gal-terre-di-murgia/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-09-24T16:37:46.000Z",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "startTime": null,
+      "venue": null,
+      "summary": "Dal 25 al 27 settembre 2026 la XXXIII Sagra dell'Oliva Dolce di Bitetto celebra l'\"oro verde\" del territorio tra enogastronomia, identità rurale e spettacoli dal vivo.",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "eccellenza",
+        "evento",
+        "festa",
+        "GAL Terre di Murgia"
+      ],
+      "categories": [
+        "trekking",
+        "esperienze"
+      ],
+      "dated": true
+    },
     {
       "id": "life-rassegna-di-libri-non-di-solo-pane",
       "title": "Rassegna di libri \"Non di solo pane\"",
