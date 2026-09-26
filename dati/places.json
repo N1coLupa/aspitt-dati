@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T15:42:02.723Z",
+  "generatedAt": "2026-09-26T00:37:13.896Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -630,15 +630,15 @@
     {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8317322,
-      "lon": 16.5499294,
+      "lat": 40.8329482,
+      "lon": 16.5510709,
       "categories": [
         "cultura"
       ],
       "icon": "archaeology",
-      "osm": "node/4126595981",
+      "osm": "way/1547047721",
       "address": null,
-      "website": null,
+      "website": "https://www.abmcaltamura.it/ipogeo/",
       "phone": null,
       "openingHours": null,
       "wikidata": null,
@@ -651,6 +651,15 @@
       "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
+          "stopId": "stop-via-iv-novembre-fronte-74",
+          "name": "Via IV Novembre (fronte 74)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 334
+        },
+        {
           "stopId": "stop-via-parisi-66",
           "name": "Via Parisi 66",
           "lines": [
@@ -659,7 +668,7 @@
             "linea-ovest",
             "pescariello-z-i"
           ],
-          "distance": 195
+          "distance": 356
         },
         {
           "stopId": "stop-via-parisi-fronte-civico-66",
@@ -667,15 +676,7 @@
           "lines": [
             "pescariello-z-i"
           ],
-          "distance": 195
-        },
-        {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 214
+          "distance": 356
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T15:40:26.692Z",
+  "generatedAt": "2026-09-26T00:37:02.739Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -28,28 +28,6 @@
   ],
   "events": [
     {
-      "id": "comune-727936",
-      "title": "Altamura si prepara a raccontarsi sullo schermo",
-      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-09-25T08:33:56.000Z",
-      "startDate": "2026-09-25",
-      "endDate": "2026-09-25",
-      "startTime": "20:30",
-      "venue": null,
-      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
-      "tags": [
-        "Cinema",
-        "Eventi sociali",
-        "Evento culturale"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
       "id": "live-oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-",
       "title": "Oliva Dolce Food Festival: a Bitetto tre giorni di festa per una delle eccellenze del territorio del Gal Terre di Murgia",
       "url": "https://altamuralive.it/2026/09/24/oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-una-delle-eccellenze-del-territorio-del-gal-terre-di-murgia/",
@@ -71,24 +49,6 @@
       ],
       "categories": [
         "trekking",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-rassegna-di-libri-non-di-solo-pane",
-      "title": "Rassegna di libri \"Non di solo pane\"",
-      "url": "https://www.altamuralife.it/eventi/rassegna-di-libri-non-di-solo-pane/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-09-25",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fino al 25 settembre",
-      "tags": [],
-      "categories": [
         "esperienze"
       ],
       "dated": true
