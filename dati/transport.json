@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-09-26T00:36:57.206Z",
+  "generatedAt": "2026-09-26T09:26:36.394Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
-    "missing": []
+    "missing": [
+      "https://marinobusurbano.it/"
+    ]
   },
   "operator": {
     "name": "Autolinee Marino Michele S.r.l.",
@@ -4658,7 +4660,10 @@
           "lon": 16.4711099
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -9525,7 +9530,10 @@
           "lon": 16.4711146
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -14054,7 +14062,10 @@
           "lon": 16.4710541
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -17336,7 +17347,10 @@
           "lon": 16.5526031
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Linea-Ovest-30-03-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -20010,7 +20024,10 @@
           "lon": 16.565368
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -21548,7 +21565,10 @@
           "lon": 16.5552625
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-1-02-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -23648,7 +23668,10 @@
           "lon": 16.5559495
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-2-08-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -24479,7 +24502,10 @@
           "lon": 16.5573823
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2025/11/MarinoBus_Urbano_Orari_Scuola-3-18-11-2025.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -25384,7 +25410,10 @@
           "lon": 16.5553134
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-4-08-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -27504,7 +27533,10 @@
           "lon": 16.6374928
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/08/MarinoBus_Urbano_Orari_Pescariello-04-08-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
