@@ -300,6 +300,8 @@ async function scrapeLine(line, registry, previousLine) {
   return result;
 }
 
+const fileName = (url) => decodeURIComponent(String(url).split(/[?#]/)[0].split('/').pop() ?? '');
+
 /**
  * Il periodo di validita' di un avviso, letto dal suo testo ("dal 10 al 15
  * settembre", "fino al 27 settembre"). Serve all'app per togliere l'avviso
@@ -324,7 +326,9 @@ async function readNoticeValidity(url, previousLine) {
       const page = cheerio.load(await marinoText(url, null));
       text = page('main, article, .entry-content, body').first().text();
     }
-    const range = parseItalianDateRange(clean(text));
+    // Se il testo non dice le date, spesso le dice il nome del file
+    // ("Avviso-26.09.26.pdf").
+    const range = parseItalianDateRange(clean(text)) ?? parseItalianDateRange(fileName(url));
     return { noticeFrom: range?.start ?? null, noticeUntil: range?.end ?? null };
   } catch {
     if (known) usage.missing.delete(url);

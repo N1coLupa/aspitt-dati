@@ -34,7 +34,15 @@ const RANGE_RE = new RegExp(`\\bdal?\\s+(\\d{1,2})\\s+al\\s+(\\d{1,2})\\s+(${MON
 const CROSS_RE = new RegExp(`\\bdal?\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
 const SINGLE_RE = new RegExp(`\\b(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
 const UNTIL_RE = new RegExp(`\\bfino\\s+al\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\b`, 'i');
+// Date in cifre, come negli avvisi dell'operatore ("il giorno 26.09.2026",
+// "dal 10/09/26 al 15/09/26", "Avviso-26.09.26.pdf").
+const NUM = String.raw`(\d{1,2})[./-](\d{1,2})[./-](\d{4}|\d{2})(?!\d)`;
+const NUM_RANGE_RE = new RegExp(String.raw`\bdal?\s+${NUM}\s+al\s+${NUM}`, 'i');
+const NUM_RE = new RegExp(String.raw`(?<!\d)${NUM}`);
 const TIME_RE = /\b(?:ore\s+)?([01]?\d|2[0-3])[:.](\d{2})\b/;
+
+const fullYear = (year) => (year.length === 2 ? 2000 + Number(year) : Number(year));
+const validDate = (day, month) => month >= 1 && month <= 12 && day >= 1 && day <= 31;
 
 const iso = (year, month, day) => `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
@@ -54,8 +62,18 @@ export function parseItalianDateRange(text, reference = new Date()) {
   const explicitYear = /\b(20\d{2})\b/.exec(source)?.[1];
   const withYear = (month, day) => iso(explicitYear ? Number(explicitYear) : resolveYear(month, day, reference), month, day);
 
-  const time = TIME_RE.exec(source);
+  // "26.09.26" e' una data, non le 26:09: le date in cifre si tolgono prima di cercare l'ora.
+  const time = TIME_RE.exec(source.replace(new RegExp(NUM, 'g'), ' '));
   const startTime = time ? `${time[1].padStart(2, '0')}:${time[2]}` : null;
+
+  const numRange = NUM_RANGE_RE.exec(source);
+  if (numRange && validDate(Number(numRange[1]), Number(numRange[2])) && validDate(Number(numRange[4]), Number(numRange[5]))) {
+    return {
+      start: iso(fullYear(numRange[3]), Number(numRange[2]), Number(numRange[1])),
+      end: iso(fullYear(numRange[6]), Number(numRange[5]), Number(numRange[4])),
+      startTime,
+    };
+  }
 
   const cross = CROSS_RE.exec(source);
   if (cross) {
@@ -83,6 +101,12 @@ export function parseItalianDateRange(text, reference = new Date()) {
     const month = MONTHS[until[2].toLowerCase()];
     const end = withYear(month, Number(until[1]));
     return { start: null, end, startTime };
+  }
+
+  const numeric = NUM_RE.exec(source);
+  if (numeric && validDate(Number(numeric[1]), Number(numeric[2]))) {
+    const start = iso(fullYear(numeric[3]), Number(numeric[2]), Number(numeric[1]));
+    return { start, end: start, startTime };
   }
 
   const single = SINGLE_RE.exec(source);
