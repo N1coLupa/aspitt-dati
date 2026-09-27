@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:49:04.256Z",
+  "generatedAt": "2026-09-27T00:34:08.988Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -49,28 +49,6 @@
       ],
       "categories": [
         "trekking",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-727957",
-      "title": "Festa di inaugurazione Villa Piazza Aldo Moro",
-      "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-09-25T08:53:59.000Z",
-      "startDate": "2026-09-26",
-      "endDate": "2026-09-26",
-      "startTime": "19:00",
-      "venue": null,
-      "summary": "Cerimonia inaugurale Villa Piazza Aldo Moro sabato 26 settembre a partire dalle ore 19 con le seguenti attività: Cerimonia inaugurale Animazio...",
-      "tags": [
-        "Anziani",
-        "Bimbi",
-        "Eventi sociali"
-      ],
-      "categories": [
         "esperienze"
       ],
       "dated": true
