@@ -5,6 +5,7 @@
   "description": "Orari, avvisi, eventi e luoghi di Altamura per Muevt, aggiornati ogni giorno.",
   "scripts": {
     "aggiorna": "node scripts/aggiorna.mjs",
+    "scarica": "node scripts/aggiorna.mjs --solo-scarica",
     "controlla": "node scripts/aggiorna.mjs --solo-controllo"
   },
   "dependencies": {

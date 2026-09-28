@@ -186,6 +186,8 @@ export async function parseTimetablePdf(buffer) {
     data: new Uint8Array(buffer),
     useSystemFonts: true,
     verbosity: 0,
+    // I PDF arrivano da un sito esterno: niente codice generato dai font (CVE-2024-4367).
+    isEvalSupported: false,
   });
   const doc = await task.promise;
 

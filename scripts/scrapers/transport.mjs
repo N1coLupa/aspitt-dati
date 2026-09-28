@@ -315,7 +315,7 @@ async function readNoticeValidity(url, previousLine) {
     let text;
     if (/\.pdf($|\?)/i.test(url)) {
       const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
-      const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)) }).promise;
+      const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)), isEvalSupported: false }).promise;
       const parts = [];
       for (let page = 1; page <= Math.min(doc.numPages, 3); page += 1) {
         const content = await (await doc.getPage(page)).getTextContent();

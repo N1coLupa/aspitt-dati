@@ -4,6 +4,13 @@
 # giornata. Se una fonte non risponde, run-daily tiene i dati del giorno prima
 # e aggiorna le altre; i file cambiati vengono pubblicati subito sul ramo
 # principale, da cui l'app li scarica.
+#
+# Due lavori separati, su due macchine diverse:
+#   1. "scarica" legge i siti esterni (PDF, pagine, API) senza chiave di firma
+#      e senza poter scrivere nel repository;
+#   2. "firma" riceve solo i file JSON, li controlla, li firma e li pubblica.
+# Cosi' un PDF o una pagina costruiti per sfruttare un difetto di una libreria
+# non possono arrivare alla chiave privata ne' al permesso di scrittura.
 
 name: Aggiorna dati
 
@@ -15,18 +22,22 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: aggiorna-dati
   cancel-in-progress: false
 
 jobs:
-  aggiorna:
+  scarica:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v5
         with:
@@ -35,9 +46,57 @@ jobs:
       # Niente script di installazione delle dipendenze: meno rischi dalla catena di fornitura.
       - run: npm ci --ignore-scripts --no-audit --no-fund
 
-      - name: Scarica, controlla e firma
-        run: npm run aggiorna
+      - name: Scarica e controlla
+        run: npm run scarica
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dati-grezzi
+          path: |
+            dati/*.json
+            storico/*.json
+          if-no-files-found: error
+          retention-days: 1
+
+  firma:
+    needs: scarica
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: dati-grezzi
+          path: arrivo
+
+      # Dal primo lavoro si prendono solo file di dati con nomi attesi: niente
+      # script, niente altri percorsi. Nessuna dipendenza npm qui: firma e
+      # controllo usano solo i moduli di Node.
+      - name: Copia i dati attesi
+        run: |
+          set -eu
+          for name in transport events places alerts manifest; do
+            test -f "arrivo/dati/$name.json"
+            cp "arrivo/dati/$name.json" "dati/$name.json"
+          done
+          mkdir -p storico
+          if [ -d arrivo/storico ]; then
+            find arrivo/storico -maxdepth 1 -type f -regextype posix-extended \
+              -regex '.*/[a-z]+-[0-9]{4}-[0-9]{2}-[0-9]{2}\.json' -exec cp {} storico/ \;
+          fi
+          rm -rf arrivo
+
+      - name: Controlla e firma
+        run: node scripts/check-data.mjs && node scripts/firma-dati.mjs dati
         env:
+          MUEVT_DATA_DIR: dati
           MUEVT_FIRMA_CHIAVE: ${{ secrets.MUEVT_FIRMA_CHIAVE }}
 
       - name: Pubblica i dati cambiati

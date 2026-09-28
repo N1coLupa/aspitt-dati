@@ -10,12 +10,17 @@ name: Prova accesso al sito
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   prova:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v5
         with:
           node-version: 22
