@@ -38,29 +38,6 @@ async function writeJson(file, value) {
   await fs.writeFile(file, JSON.stringify(value, null, 2));
 }
 
-// Per ogni linea, quante corse saltano ciascuna fermata.
-function suppressionMap(transport) {
-  const map = new Map();
-  for (const line of transport.lines) {
-    for (const trip of line.trips) {
-      for (const stopTime of trip.stopTimes) {
-        if (stopTime.served || !stopTime.stopId) continue;
-        const key = `${line.id}::${stopTime.stopId}`;
-        const entry = map.get(key) ?? {
-          lineId: line.id,
-          lineName: line.name,
-          stopId: stopTime.stopId,
-          stopName: line.stops.find((s) => s.stopId === stopTime.stopId)?.name ?? stopTime.stopId,
-          trips: [],
-        };
-        entry.trips.push(trip.code);
-        map.set(key, entry);
-      }
-    }
-  }
-  return map;
-}
-
 function diffTransport(previous, next) {
   const alerts = [];
   const now = new Date().toISOString();
@@ -123,42 +100,8 @@ function diffTransport(previous, next) {
     }
   }
 
-  const beforeSuppressions = suppressionMap(previous);
-  const afterSuppressions = suppressionMap(next);
-  // Una fermata rinominata cambia identificativo: sembrerebbe sparita e
-  // ricomparsa. Gli avvisi valgono solo per le fermate presenti in entrambi.
-  const beforeStops = new Set(previous.stops.map((stop) => stop.id));
-  const afterStops = new Set(next.stops.map((stop) => stop.id));
-
-  for (const [key, entry] of afterSuppressions) {
-    if (!beforeStops.has(entry.stopId)) continue;
-    const before = beforeSuppressions.get(key);
-    if (before && before.trips.length === entry.trips.length) continue;
-    alerts.push({
-      id: `soppressione-${key.replace('::', '-')}-${now.slice(0, 10)}`,
-      severity: 'warning',
-      lineId: entry.lineId,
-      stopId: entry.stopId,
-      title: `${entry.stopName} non è servita da alcune corse`,
-      body: `Sulla linea ${entry.lineName} la fermata resta fuori percorso per ${entry.trips.length} corse su ${
-        next.lines.find((l) => l.id === entry.lineId)?.trips.length ?? '?'
-      }.`,
-      createdAt: now,
-    });
-  }
-
-  for (const [key, entry] of beforeSuppressions) {
-    if (afterSuppressions.has(key) || !afterStops.has(entry.stopId)) continue;
-    alerts.push({
-      id: `ripristino-${key.replace('::', '-')}-${now.slice(0, 10)}`,
-      severity: 'info',
-      lineId: entry.lineId,
-      stopId: entry.stopId,
-      title: `${entry.stopName} è di nuovo servita`,
-      body: `La fermata torna nel percorso della linea ${entry.lineName}.`,
-      createdAt: now,
-    });
-  }
+  // Le fermate che una corsa non fa non diventano un avviso: nell'app ogni
+  // corsa mostra semplicemente le fermate che fa.
 
   return alerts;
 }

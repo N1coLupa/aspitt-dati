@@ -537,6 +537,15 @@ async function collect(label, scrape) {
   }
 }
 
+/** "AAAA-MM-GG" con giorno e mese veri, oppure null. */
+function isoDay(value) {
+  const text = typeof value === 'string' ? value.trim().slice(0, 10) : '';
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+  const [year, month, day] = text.split('-').map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day ? text : null;
+}
+
 export async function scrapeEvents() {
   const fromSources = [
     await collect(SOURCES.comune.name, scrapeComune),
@@ -551,6 +560,10 @@ export async function scrapeEvents() {
   const recentThreshold = new Date(Date.now() - 45 * 24 * 3600 * 1000).toISOString();
 
   const events = dedupe(fromSources.flat())
+    // Ogni fonte scrive le date a modo suo ("2026-10-05 00:00:00", "2026-10-05T..."):
+    // nell'app arriva solo AAAA-MM-GG valido, o niente. Una data malformata
+    // farebbe fallire la formattazione e chiudere la schermata.
+    .map((event) => ({ ...event, startDate: isoDay(event.startDate), endDate: isoDay(event.endDate) }))
     .map((event) => ({ ...event, dated: Boolean(event.startDate || event.endDate) }))
     .filter((event) => {
       // Gli appuntamenti conclusi escono dall'agenda. Le segnalazioni senza una
