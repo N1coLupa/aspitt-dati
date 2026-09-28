@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T00:42:38.332Z",
+  "generatedAt": "2026-09-28T11:05:23.065Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -65,32 +65,48 @@
       "dated": true
     },
     {
-      "id": "virgilio-federicus-corteo-storico-ad-altamura-e-palio-di-san-marco",
-      "title": "Federicus: Corteo Storico Ad Altamura e Palio di San Marco",
-      "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6",
-      "source": "Virgilio Eventi",
-      "sourceUrl": "https://www.virgilio.it/italia/altamura/eventi/",
+      "id": "life-federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-a",
+      "title": "Federicus 2026 (2, 3 e 4 ottobre). Importante novità: la grande Arena Spettacoli in Piazza Matteotti",
+      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
       "publishedAt": null,
       "startDate": "2026-10-02",
-      "endDate": "2026-10-04",
+      "endDate": "2026-10-02",
       "startTime": null,
-      "venue": null,
-      "summary": "Federicus: Corteo Storico Ad Altamura e Palio di San Marco Sulla via del ritorno dalla sesta Crociata, Federico II di... Dal 02 Ott Al 04 Ott",
-      "tags": [
-        "SAGRE E FESTE",
-        "PER FAMIGLIE",
-        "GRATIS"
-      ],
+      "venue": "Piazza Matteotti",
+      "summary": "Da venerdì 2 ottobre",
+      "tags": [],
       "categories": [
-        "cultura",
-        "esperienze"
+        "eventi"
       ],
       "alsoOn": [
         {
-          "source": "Vito Barone",
-          "url": "https://www.vitobarone.it/altamura/eventi.htm"
+          "source": "Virgilio Eventi",
+          "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
         }
       ],
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-federicus-festa-medioevale-tredicesima-edizione",
+      "title": "Federicus - festa medioevale - tredicesima edizione",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 2, 3 e 4 ottobre 2026.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
       "dated": true
     },
     {
@@ -279,32 +295,6 @@
         "Claustri",
         "evento",
         "pane di altamura"
-      ],
-      "categories": [
-        "cultura",
-        "esperienze"
-      ],
-      "dated": false
-    },
-    {
-      "id": "live-santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curios",
-      "title": "“Santa Maria” ad Altamura: le origini, le tradizioni e le curiosità della festa altamurana",
-      "url": "https://altamuralive.it/2026/08/14/santa-maria-ad-altamura-le-origini-le-tradizioni-e-le-curiosita-della-festa-altamurana/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-08-14T11:00:00.000Z",
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "summary": "Dal Duomo federiciano alla processione, dalla “sullenn” alle 100 Ave Maria, passando per antichi contratti, fuochi e memorie familiari: alla vigilia di Santa Maria Assunta riscopriamo riti e curiosità che da secoli…",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "Cattedrale di Santa Maria Assunta",
-        "comune di altamura",
-        "comunità",
-        "Festa di Santa Maria Assunta"
       ],
       "categories": [
         "cultura",
