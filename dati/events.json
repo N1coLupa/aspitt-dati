@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T15:27:48.977Z",
+  "generatedAt": "2026-09-28T00:42:38.332Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,96 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "live-oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-",
-      "title": "Oliva Dolce Food Festival: a Bitetto tre giorni di festa per una delle eccellenze del territorio del Gal Terre di Murgia",
-      "url": "https://altamuralive.it/2026/09/24/oliva-dolce-food-festival-a-bitetto-tre-giorni-di-festa-per-una-delle-eccellenze-del-territorio-del-gal-terre-di-murgia/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-09-24T16:37:46.000Z",
-      "startDate": "2026-09-25",
-      "endDate": "2026-09-27",
-      "startTime": null,
-      "venue": null,
-      "summary": "Dal 25 al 27 settembre 2026 la XXXIII Sagra dell'Oliva Dolce di Bitetto celebra l'\"oro verde\" del territorio tra enogastronomia, identità rurale e spettacoli dal vivo.",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "eccellenza",
-        "evento",
-        "festa",
-        "GAL Terre di Murgia"
-      ],
-      "categories": [
-        "trekking",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-727962",
-      "title": "Festa di inaugurazione Villa Piazza Aldo Moro",
-      "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione-727962",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-09-25T08:53:59.000Z",
-      "startDate": "2026-09-27",
-      "endDate": "2026-09-27",
-      "startTime": "17:00",
-      "venue": null,
-      "summary": "Festa di inaugurazione Villa Piazza Aldo Moro domenica 27 settembre a partire dalle ore 17 con le seguenti attività: Grandi giochi musicali An...",
-      "tags": [
-        "Anziani",
-        "Bimbi",
-        "Eventi sociali"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "alsoOn": [
-        {
-          "source": "Comune di Altamura",
-          "url": "https://www.comune.altamura.ba.it/it/events/grande-festa-di-inaugurazione-727959"
-        }
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-festa-dei-popoli-musica-e-incontri-interculturali",
-      "title": "Festa dei popoli: musica e incontri interculturali",
-      "url": "https://www.altamuralife.it/eventi/festa-dei-popoli-musica-e-incontri-interculturali/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-09-27",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fino al 27 settembre",
-      "tags": [],
-      "categories": [
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-il-carnevale-degli-animali",
-      "title": "Il Carnevale degli animali",
-      "url": "https://iltaccodibacco.it/puglia/eventi/330925.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-09-27",
-      "endDate": "2026-09-27",
-      "startTime": null,
-      "venue": "Teatro Mercadante",
-      "summary": "🎶🦁 Un viaggio straordinario nel regno degli animali vi aspetta ad Altamura! L’Orchestra Filarmonica Pugliese presenta Il \"Carnevale degli animali\" di Camille Saint-Saëns, una delle opere più affascinanti e divertenti…",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
     {
       "id": "tacco-rete-museale-per-federicus",
       "title": "Rete Museale per Federicus",
