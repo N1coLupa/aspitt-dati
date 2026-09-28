@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:05:23.065Z",
+  "generatedAt": "2026-09-28T18:18:55.172Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -28,6 +28,37 @@
   ],
   "events": [
     {
+      "id": "live-legami-al-teatro-mercadante-quattro-film-per-raccontare-cio-",
+      "title": "“Legàmi”, al Teatro Mercadante quattro film per raccontare ciò che unisce e divide la società italiana",
+      "url": "https://altamuralive.it/2026/09/11/legami-al-teatro-mercadante-quattro-film-per-raccontare-cio-che-unisce-e-divide-la-societa-italiana/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-09-11T09:05:35.000Z",
+      "startDate": "2026-09-17",
+      "endDate": "2026-10-01",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "Dal 17 settembre al 1° ottobre torna al Teatro Mercadante la rassegna “Legàmi”, organizzata da Altamura al Cinema: quattro appuntamenti tra politica, sport, famiglia e religione, con proiezioni, ospiti e dibattiti.",
+      "tags": [
+        "Cultura",
+        "Spettacolo",
+        "appuntamenti culturali",
+        "comune di altamura",
+        "iniziativa pubblica",
+        "rassegna cinematografica"
+      ],
+      "categories": [
+        "cultura"
+      ],
+      "alsoOn": [
+        {
+          "source": "AltamuraLife",
+          "url": "https://www.altamuralife.it/eventi/legami-rassegna-di-cinema-nel-teatro-mercadante/"
+        }
+      ],
+      "dated": true
+    },
+    {
       "id": "tacco-rete-museale-per-federicus",
       "title": "Rete Museale per Federicus",
       "url": "https://iltaccodibacco.it/puglia/eventi/330894.html",
@@ -43,24 +74,6 @@
       "categories": [
         "cultura",
         "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-legami-rassegna-di-cinema-nel-teatro-mercadante",
-      "title": "Legàmi, rassegna di cinema nel Teatro Mercadante",
-      "url": "https://www.altamuralife.it/eventi/legami-rassegna-di-cinema-nel-teatro-mercadante/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-10-01",
-      "startTime": null,
-      "venue": "Teatro Mercadante",
-      "summary": "Fino al 1 ottobre",
-      "tags": [],
-      "categories": [
-        "cultura"
       ],
       "dated": true
     },
@@ -100,6 +113,27 @@
       "startTime": null,
       "venue": null,
       "summary": "Appuntamento fisso del calendario altamurano: 2, 3 e 4 ottobre 2026.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-giornata-mondiale-del-pane",
+      "title": "Giornata mondiale del Pane",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 16 ottobre - 16 novembre 2025.",
       "tags": [
         "Ricorrenza"
       ],
@@ -157,6 +191,27 @@
       "startTime": null,
       "venue": null,
       "summary": "Appuntamento fisso del calendario altamurano: 23 dicembre 1990.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-l-uomo-di-altamura-in-maschera",
+      "title": "L'Uomo di Altamura \"In maschera\"",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-02-03",
+      "endDate": "2027-02-03",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 3 febbraio - 3 marzo 2019.",
       "tags": [
         "Ricorrenza"
       ],
