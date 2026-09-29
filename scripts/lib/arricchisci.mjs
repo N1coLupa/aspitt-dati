@@ -95,6 +95,71 @@ function splitAtGaps(line, trip, notes) {
  * Applica calendario, validita', correzioni e posizioni. `notes` raccoglie
  * quello che e' stato corretto, per il resoconto dell'aggiornamento.
  */
+const SPELLING_FIXES = [
+  [/\bP\.\s?zza\b/gi, 'Piazza'],
+  [/\bPensillina\b/gi, 'Pensilina'],
+  [/\bCicorella\b/g, 'Cicoriella'],
+  [/\bciv(?:ico|\.)\s*/gi, ''],
+  [/\s+-\s+fronte\b/gi, ' fronte'],
+  [/\s{2,}/g, ' '],
+];
+
+const SAME_STOP_METERS = 40;
+
+const fixSpelling = (name) => SPELLING_FIXES.reduce((text, [pattern, replacement]) => text.replace(pattern, replacement), name).trim();
+
+const spellingKey = (name) =>
+  fixSpelling(name)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+const metersBetween = (a, b) => Math.hypot((a.lat - b.lat) * 111_000, (a.lon - b.lon) * 84_000);
+
+function unifyStopSpellings(transport, notes) {
+  for (const stop of transport.stops) stop.name = fixSpelling(stop.name);
+  for (const line of transport.lines) for (const stop of line.stops) stop.name = fixSpelling(stop.name);
+
+  const groups = new Map();
+  for (const stop of transport.stops) {
+    const key = spellingKey(stop.name);
+    groups.set(key, [...(groups.get(key) ?? []), stop]);
+  }
+
+  const replaced = new Map();
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    const ranked = [...group].sort((a, b) => b.lines.length - a.lines.length || a.id.localeCompare(b.id));
+    const keep = ranked[0];
+    for (const other of ranked.slice(1)) {
+      if (keep.lat != null && other.lat != null && metersBetween(keep, other) > SAME_STOP_METERS) continue;
+      replaced.set(other.id, keep);
+      keep.lines = [...new Set([...keep.lines, ...other.lines])];
+    }
+  }
+  if (!replaced.size) return;
+
+  transport.stops = transport.stops.filter((stop) => !replaced.has(stop.id));
+  for (const line of transport.lines) {
+    for (const stop of line.stops) {
+      const keep = replaced.get(stop.stopId);
+      if (keep) {
+        stop.stopId = keep.id;
+        stop.name = keep.name;
+      }
+    }
+    for (const trip of line.trips) {
+      for (const stopTime of trip.stopTimes) {
+        const keep = replaced.get(stopTime.stopId);
+        if (keep) stopTime.stopId = keep.id;
+      }
+    }
+  }
+  notes.push(`unificate ${replaced.size} fermate scritte in modo diverso: ${[...replaced.keys()].join(', ')}`);
+}
+
 export async function enrichTransport(transport, notes = []) {
   // Linee che l'operatore pubblica ma che l'app non mostra (vedi linee-escluse.json).
   const escluse = new Set(((await readJson(path.join(DATA, 'linee-escluse.json'), null))?.linee ?? []).map((voce) => voce.id));
@@ -126,6 +191,8 @@ export async function enrichTransport(transport, notes = []) {
     // Una corsa gia' divisa ha id che finisce in -a/-b e non ha piu' buchi.
     line.trips = line.trips.flatMap((trip) => splitAtGaps(line, trip, notes));
   }
+
+  unifyStopSpellings(transport, notes);
 
   const streets = streetsFromCache(await readJson(path.join(DATA, 'vie-altamura.json'), null));
   const manual = (await readJson(path.join(DATA, 'fermate-posizioni.json'), {})).fermate ?? {};
