@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T10:48:36.481Z",
+  "generatedAt": "2026-09-29T16:42:02.571Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -37,7 +37,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -232,7 +232,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -672,7 +672,7 @@
         },
         {
           "stopId": "stop-via-parisi-fronte-civico-66",
-          "name": "Via Parisi - fronte civico 66",
+          "name": "Via Parisi fronte 66",
           "lines": [
             "pescariello-z-i"
           ],
@@ -748,7 +748,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -1318,7 +1318,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -1403,7 +1403,7 @@
       "nearbyStops": [
         {
           "stopId": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
-          "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
+          "name": "Via XXIV Maggio fronte uscita sottopasso Fal Alberghiero 2",
           "lines": [
             "linea-scuola-4"
           ],
@@ -1465,7 +1465,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -1509,7 +1509,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],
@@ -1576,7 +1576,7 @@
         },
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
           ],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T10:48:26.741Z",
+  "generatedAt": "2026-09-29T16:41:53.930Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -14107,18 +14107,18 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-bresso-fronte-civ-5",
+          "stopId": "stop-via-bresso-fronte-5",
           "index": 5,
-          "name": "Via Bresso (fronte civ. 5)",
+          "name": "Via Bresso (fronte 5)",
           "lat": 40.8258948,
           "lon": 16.5459457,
           "interpolated": false,
           "position": "exact"
         },
         {
-          "stopId": "stop-via-bresso-fronte-civ-111",
+          "stopId": "stop-via-bresso-fronte-111",
           "index": 6,
-          "name": "Via Bresso (fronte civ. 111)",
+          "name": "Via Bresso (fronte 111)",
           "lat": 40.8231709,
           "lon": 16.5470213,
           "interpolated": false,
@@ -14127,7 +14127,7 @@
         {
           "stopId": "stop-via-selva-fronte-civ-117",
           "index": 7,
-          "name": "Via Selva (fronte civ. 117)",
+          "name": "Via Selva (fronte 117)",
           "lat": 40.8216017,
           "lon": 16.5459942,
           "interpolated": false,
@@ -14163,7 +14163,7 @@
         {
           "stopId": "stop-via-a-di-crollalanza-fronte-civ-9",
           "index": 11,
-          "name": "Via A. di Crollalanza (fronte civ. 9)",
+          "name": "Via A. di Crollalanza (fronte 9)",
           "lat": 40.8135086,
           "lon": 16.5450158,
           "interpolated": false,
@@ -14179,18 +14179,18 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-g-gentile-fronte-civ-4",
+          "stopId": "stop-via-g-gentile-fronte-4",
           "index": 13,
-          "name": "Via G. Gentile (fronte civ. 4)",
+          "name": "Via G. Gentile (fronte 4)",
           "lat": 40.8152583,
           "lon": 16.5489267,
           "interpolated": false,
           "position": "exact"
         },
         {
-          "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+          "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
           "index": 14,
-          "name": "Via Bitonto ang. Via Trentacapilli (Pensillina)",
+          "name": "Via Bitonto (ang. via Trentacapilli - Pensilina)",
           "lat": 40.8135803,
           "lon": 16.5510997,
           "interpolated": false,
@@ -14226,7 +14226,7 @@
         {
           "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "index": 18,
-          "name": "P.zza Zanardelli 7 (Bar Gelo)",
+          "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lat": 40.824379,
           "lon": 16.552021,
           "interpolated": true,
@@ -14319,13 +14319,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "07:39",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "07:40",
               "served": true
@@ -14367,13 +14367,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "07:47",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": null,
               "served": false
@@ -14474,13 +14474,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "08:14",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "08:15",
               "served": true
@@ -14522,13 +14522,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "08:22",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "08:23",
               "served": true
@@ -14629,13 +14629,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "08:49",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "08:50",
               "served": true
@@ -14677,13 +14677,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "08:57",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "08:58",
               "served": true
@@ -14784,13 +14784,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "09:59",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "10:00",
               "served": true
@@ -14832,13 +14832,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "10:07",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "10:08",
               "served": true
@@ -14939,13 +14939,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "10:44",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "10:45",
               "served": true
@@ -14987,13 +14987,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "10:52",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "10:53",
               "served": true
@@ -15094,13 +15094,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "11:29",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "11:30",
               "served": true
@@ -15142,13 +15142,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "11:37",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "11:38",
               "served": true
@@ -15249,13 +15249,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "12:19",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "12:20",
               "served": true
@@ -15297,13 +15297,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "12:27",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "12:28",
               "served": true
@@ -15404,13 +15404,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "12:54",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "12:55",
               "served": true
@@ -15452,13 +15452,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "13:02",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "13:03",
               "served": true
@@ -15559,13 +15559,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "13:29",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "13:30",
               "served": true
@@ -15607,13 +15607,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "13:37",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "13:38",
               "served": true
@@ -15714,13 +15714,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "14:09",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "14:10",
               "served": true
@@ -15762,13 +15762,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "14:17",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "14:18",
               "served": true
@@ -15869,13 +15869,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "15:54",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "15:55",
               "served": true
@@ -15917,13 +15917,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "16:02",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "16:03",
               "served": true
@@ -16024,13 +16024,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "16:29",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "16:30",
               "served": true
@@ -16072,13 +16072,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "16:37",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "16:38",
               "served": true
@@ -16179,13 +16179,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "17:04",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "17:05",
               "served": true
@@ -16227,13 +16227,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "17:12",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "17:13",
               "served": true
@@ -16334,13 +16334,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "17:39",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "17:40",
               "served": true
@@ -16382,13 +16382,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "17:47",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "17:48",
               "served": true
@@ -16489,13 +16489,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "18:49",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "18:50",
               "served": true
@@ -16537,13 +16537,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "18:57",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "18:58",
               "served": true
@@ -16644,13 +16644,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "19:24",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "19:25",
               "served": true
@@ -16692,13 +16692,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "19:32",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "19:33",
               "served": true
@@ -16799,13 +16799,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "19:59",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "20:00",
               "served": true
@@ -16847,13 +16847,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "20:07",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "20:08",
               "served": true
@@ -16954,13 +16954,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-5",
+              "stopId": "stop-via-bresso-fronte-5",
               "index": 5,
               "time": "20:34",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-fronte-civ-111",
+              "stopId": "stop-via-bresso-fronte-111",
               "index": 6,
               "time": "20:35",
               "served": true
@@ -17002,13 +17002,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-g-gentile-fronte-civ-4",
+              "stopId": "stop-via-g-gentile-fronte-4",
               "index": 13,
               "time": "20:42",
               "served": true
             },
             {
-              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
+              "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensilina",
               "index": 14,
               "time": "20:43",
               "served": true
@@ -20135,9 +20135,9 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+          "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
           "index": 13,
-          "name": "Via Gravina fronte Via della Cicorella",
+          "name": "Via Gravina (fronte via della Cicoriella)",
           "lat": 40.8276237,
           "lon": 16.5341899,
           "interpolated": false,
@@ -20259,7 +20259,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": "07:47",
               "served": true
@@ -20367,7 +20367,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": "07:47",
               "served": true
@@ -20479,7 +20479,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": "13:34",
               "served": true
@@ -20604,7 +20604,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": null,
               "served": false
@@ -20728,7 +20728,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": "14:14",
               "served": true
@@ -20848,7 +20848,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicorella",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 13,
               "time": null,
               "served": false
@@ -21565,9 +21565,9 @@
       "noticeUrl": null,
       "stops": [
         {
-          "stopId": "stop-via-gravina-ang-via-della-cicorella",
+          "stopId": "stop-via-gravina-ang-via-della-cicoriella",
           "index": 1,
-          "name": "Via Gravina ang. Via della Cicorella",
+          "name": "Via Gravina (ang. via della Cicoriella)",
           "lat": 40.8276299,
           "lon": 16.5340922,
           "interpolated": false,
@@ -21770,7 +21770,7 @@
           "departure": "07:10",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "07:10",
               "served": true
@@ -21908,7 +21908,7 @@
           "departure": "07:10",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "07:10",
               "served": true
@@ -22050,7 +22050,7 @@
           "departure": "12:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "12:25",
               "served": true
@@ -22205,7 +22205,7 @@
           "departure": "12:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "12:25",
               "served": true
@@ -22359,7 +22359,7 @@
           "departure": "13:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "13:25",
               "served": true
@@ -22509,7 +22509,7 @@
           "departure": "13:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "13:25",
               "served": true
@@ -22663,7 +22663,7 @@
           "departure": "14:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "14:25",
               "served": true
@@ -22818,7 +22818,7 @@
           "departure": "14:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-gravina-ang-via-della-cicorella",
+              "stopId": "stop-via-gravina-ang-via-della-cicoriella",
               "index": 1,
               "time": "14:25",
               "served": true
@@ -24516,7 +24516,7 @@
         {
           "stopId": "stop-via-parco-del-vecchio-bovio-fronte-1",
           "index": 3,
-          "name": "Via Parco del Vecchio Bovio - fronte 1",
+          "name": "Via Parco del Vecchio Bovio fronte 1",
           "lat": 40.817116,
           "lon": 16.540474,
           "interpolated": true,
@@ -24552,7 +24552,7 @@
         {
           "stopId": "stop-viale-padre-pio-fronte-ingresso-istituto-tecnico-tecnico-sci",
           "index": 7,
-          "name": "Viale Padre Pio - fronte ingresso Istituto Tecnico Tecnico-Scientifico",
+          "name": "Viale Padre Pio fronte ingresso Istituto Tecnico Tecnico-Scientifico",
           "lat": 40.8348182,
           "lon": 16.5439617,
           "interpolated": false,
@@ -24561,7 +24561,7 @@
         {
           "stopId": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
           "index": 8,
-          "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
+          "name": "Via XXIV Maggio fronte uscita sottopasso Fal Alberghiero 2",
           "lat": 40.837377,
           "lon": 16.5517338,
           "interpolated": false,
@@ -25401,9 +25401,9 @@
       "noticeUrl": null,
       "stops": [
         {
-          "stopId": "stop-via-selva-fronte-civico-117",
+          "stopId": "stop-via-selva-fronte-civ-117",
           "index": 1,
-          "name": "Via Selva - fronte civico 117",
+          "name": "Via Selva (fronte 117)",
           "lat": 40.8215104,
           "lon": 16.5458413,
           "interpolated": false,
@@ -25628,7 +25628,7 @@
         {
           "stopId": "stop-via-parisi-fronte-civico-192-polivalente",
           "index": 26,
-          "name": "Via Parisi - fronte civico 192 (Polivalente)",
+          "name": "Via Parisi fronte 192 (Polivalente)",
           "lat": 40.834161,
           "lon": 16.545795,
           "interpolated": true,
@@ -25637,7 +25637,7 @@
         {
           "stopId": "stop-via-parisi-fronte-civico-66",
           "index": 27,
-          "name": "Via Parisi - fronte civico 66",
+          "name": "Via Parisi fronte 66",
           "lat": 40.830734,
           "lon": 16.548018,
           "interpolated": true,
@@ -25714,7 +25714,7 @@
           "departure": "06:05",
           "stopTimes": [
             {
-              "stopId": "stop-via-selva-fronte-civico-117",
+              "stopId": "stop-via-selva-fronte-civ-117",
               "index": 1,
               "time": "06:05",
               "served": true
@@ -25940,7 +25940,7 @@
           "departure": "06:10",
           "stopTimes": [
             {
-              "stopId": "stop-via-selva-fronte-civico-117",
+              "stopId": "stop-via-selva-fronte-civ-117",
               "index": 1,
               "time": "06:10",
               "served": true
@@ -26166,7 +26166,7 @@
           "departure": "07:10",
           "stopTimes": [
             {
-              "stopId": "stop-via-selva-fronte-civico-117",
+              "stopId": "stop-via-selva-fronte-civ-117",
               "index": 1,
               "time": "07:10",
               "served": true
@@ -27586,7 +27586,8 @@
       "lat": 40.825913,
       "lon": 16.545919,
       "lines": [
-        "ospedale-1"
+        "ospedale-1",
+        "linea-ovest"
       ],
       "position": "exact"
     },
@@ -27596,7 +27597,8 @@
       "lat": 40.823167,
       "lon": 16.547048,
       "lines": [
-        "ospedale-1"
+        "ospedale-1",
+        "linea-ovest"
       ],
       "position": "exact"
     },
@@ -27663,7 +27665,8 @@
       "lat": 40.815273,
       "lon": 16.548951,
       "lines": [
-        "ospedale-1"
+        "ospedale-1",
+        "linea-ovest"
       ],
       "position": "exact"
     },
@@ -27675,7 +27678,8 @@
       "lines": [
         "ospedale-1",
         "linea-scuola-2",
-        "linea-scuola-4"
+        "linea-scuola-4",
+        "linea-ovest"
       ],
       "position": "exact"
     },
@@ -27831,7 +27835,8 @@
       "lon": 16.534125,
       "lines": [
         "ospedale-1",
-        "ospedale-2"
+        "ospedale-2",
+        "linea-scuola-2"
       ],
       "position": "exact"
     },
@@ -27866,7 +27871,8 @@
       "lon": 16.534134,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-1"
       ],
       "position": "exact"
     },
@@ -28359,60 +28365,21 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-bresso-fronte-civ-5",
-      "name": "Via Bresso (fronte civ. 5)",
-      "lat": 40.825895,
-      "lon": 16.545946,
-      "lines": [
-        "linea-ovest"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-bresso-fronte-civ-111",
-      "name": "Via Bresso (fronte civ. 111)",
-      "lat": 40.823171,
-      "lon": 16.547021,
-      "lines": [
-        "linea-ovest"
-      ],
-      "position": "exact"
-    },
-    {
       "id": "stop-via-selva-fronte-civ-117",
-      "name": "Via Selva (fronte civ. 117)",
+      "name": "Via Selva (fronte 117)",
       "lat": 40.821602,
       "lon": 16.545994,
       "lines": [
-        "linea-ovest"
+        "linea-ovest",
+        "pescariello-z-i"
       ],
       "position": "exact"
     },
     {
       "id": "stop-via-a-di-crollalanza-fronte-civ-9",
-      "name": "Via A. di Crollalanza (fronte civ. 9)",
+      "name": "Via A. di Crollalanza (fronte 9)",
       "lat": 40.813509,
       "lon": 16.545016,
-      "lines": [
-        "linea-ovest"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-g-gentile-fronte-civ-4",
-      "name": "Via G. Gentile (fronte civ. 4)",
-      "lat": 40.815258,
-      "lon": 16.548927,
-      "lines": [
-        "linea-ovest"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
-      "name": "Via Bitonto ang. Via Trentacapilli (Pensillina)",
-      "lat": 40.81358,
-      "lon": 16.5511,
       "lines": [
         "linea-ovest"
       ],
@@ -28442,7 +28409,7 @@
     },
     {
       "id": "stop-p-zza-zanardelli-7-bar-gelo",
-      "name": "P.zza Zanardelli 7 (Bar Gelo)",
+      "name": "Piazza Zanardelli 7 (Bar Gelo)",
       "lat": 40.824379,
       "lon": 16.552021,
       "lines": [
@@ -28625,16 +28592,6 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-gravina-fronte-via-della-cicorella",
-      "name": "Via Gravina fronte Via della Cicorella",
-      "lat": 40.827624,
-      "lon": 16.53419,
-      "lines": [
-        "linea-scuola-1"
-      ],
-      "position": "exact"
-    },
-    {
       "id": "stop-viale-padre-pio",
       "name": "Viale Padre Pio",
       "lat": 40.830661,
@@ -28666,16 +28623,6 @@
         "linea-scuola-1",
         "linea-scuola-2",
         "linea-scuola-3"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-gravina-ang-via-della-cicorella",
-      "name": "Via Gravina ang. Via della Cicorella",
-      "lat": 40.82763,
-      "lon": 16.534092,
-      "lines": [
-        "linea-scuola-2"
       ],
       "position": "exact"
     },
@@ -28835,7 +28782,7 @@
     },
     {
       "id": "stop-via-parco-del-vecchio-bovio-fronte-1",
-      "name": "Via Parco del Vecchio Bovio - fronte 1",
+      "name": "Via Parco del Vecchio Bovio fronte 1",
       "lat": 40.817116,
       "lon": 16.540474,
       "lines": [
@@ -28865,7 +28812,7 @@
     },
     {
       "id": "stop-viale-padre-pio-fronte-ingresso-istituto-tecnico-tecnico-sci",
-      "name": "Viale Padre Pio - fronte ingresso Istituto Tecnico Tecnico-Scientifico",
+      "name": "Viale Padre Pio fronte ingresso Istituto Tecnico Tecnico-Scientifico",
       "lat": 40.834818,
       "lon": 16.543962,
       "lines": [
@@ -28875,7 +28822,7 @@
     },
     {
       "id": "stop-via-xxiv-maggio-fronte-uscita-sottopasso-fal-alberghiero-2",
-      "name": "Via XXIV Maggio - fronte uscita sottopasso Fal Alberghiero 2",
+      "name": "Via XXIV Maggio fronte uscita sottopasso Fal Alberghiero 2",
       "lat": 40.837377,
       "lon": 16.551734,
       "lines": [
@@ -28890,16 +28837,6 @@
       "lon": 16.555275,
       "lines": [
         "linea-scuola-4"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-selva-fronte-civico-117",
-      "name": "Via Selva - fronte civico 117",
-      "lat": 40.82151,
-      "lon": 16.545841,
-      "lines": [
-        "pescariello-z-i"
       ],
       "position": "exact"
     },
@@ -28975,7 +28912,7 @@
     },
     {
       "id": "stop-via-parisi-fronte-civico-192-polivalente",
-      "name": "Via Parisi - fronte civico 192 (Polivalente)",
+      "name": "Via Parisi fronte 192 (Polivalente)",
       "lat": 40.834161,
       "lon": 16.545795,
       "lines": [
@@ -28985,7 +28922,7 @@
     },
     {
       "id": "stop-via-parisi-fronte-civico-66",
-      "name": "Via Parisi - fronte civico 66",
+      "name": "Via Parisi fronte 66",
       "lat": 40.830734,
       "lon": 16.548018,
       "lines": [
