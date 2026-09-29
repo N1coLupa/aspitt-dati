@@ -1,11 +1,9 @@
 {
-  "generatedAt": "2026-09-28T18:18:50.315Z",
+  "generatedAt": "2026-09-29T01:54:38.226Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
-    "missing": [
-      "https://marinobusurbano.it/"
-    ]
+    "missing": []
   },
   "operator": {
     "name": "Autolinee Marino Michele S.r.l.",
@@ -25,7 +23,7 @@
       "route": "Via Gravina - Trentacapilli - Piazza Zanardelli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1tlPJKgyJkTU1oxiuXrDXOT7PosuwWvI&ll=40.8212292561109%2C16.516982050000006&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -4660,10 +4658,7 @@
           "lon": 16.4711099
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -4677,7 +4672,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-partita-calcio-19.09.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -9530,10 +9525,7 @@
           "lon": 16.4711146
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -14062,10 +14054,7 @@
           "lon": 16.4710541
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -14077,14 +14066,14 @@
       "name": "Linea Ovest",
       "color": "#0089f9",
       "route": "Stazione - Trentacapilli - P.zza Zanardelli",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Linea-Ovest-30-03-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Linea-Ovest-28-09-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1XtBpsAD3wEXY92VL6ri3CBbmFMhv3Vc&ll=40.82546210811353%2C16.54774995000003&z=15",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avvio-Linea-Ovest.pdf",
+      "noticeUrl": null,
       "stops": [
         {
-          "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+          "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
           "index": 1,
-          "name": "Via XXIV Maggio uscita sottopasso Fal",
+          "name": "Via XXIV Maggio uscita so tt opasso Fal",
           "lat": 40.8374491,
           "lon": 16.5526485,
           "interpolated": false,
@@ -14253,13 +14242,13 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-dei-mille-40",
+          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
           "index": 20,
-          "name": "Via dei Mille 40",
-          "lat": 40.8279745,
-          "lon": 16.5489004,
-          "interpolated": false,
-          "position": "exact"
+          "name": "V i a d e i M i l l e 4 0",
+          "lat": 40.828509,
+          "lon": 16.548675,
+          "interpolated": true,
+          "position": "estimated"
         },
         {
           "stopId": "stop-via-parisi-66",
@@ -14271,18 +14260,18 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-parisi-192-fronte-polivalente",
+          "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
           "index": 22,
-          "name": "Via Parisi 192 (fronte Polivalente)",
-          "lat": 40.8342461,
-          "lon": 16.5458731,
-          "interpolated": false,
-          "position": "exact"
+          "name": "V i a P a r i s i 1 9 2 (fronte Polivalente)",
+          "lat": 40.836104,
+          "lon": 16.54546,
+          "interpolated": true,
+          "position": "estimated"
         },
         {
-          "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+          "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
           "index": 23,
-          "name": "Via XXIV Maggio (uscita sottopasso Fal)",
+          "name": "Via XXIV Maggio (uscita so tt opasso Fal)",
           "lat": 40.8372787,
           "lon": 16.5526109,
           "interpolated": false,
@@ -14306,7 +14295,7 @@
           "departure": "07:35",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "07:35",
               "served": true
@@ -14386,8 +14375,8 @@
             {
               "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
               "index": 14,
-              "time": "07:48",
-              "served": true
+              "time": null,
+              "served": false
             },
             {
               "stopId": "stop-via-putignano-25",
@@ -14420,7 +14409,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "07:55",
               "served": true
@@ -14432,13 +14421,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "07:58",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "08:00",
               "served": true
@@ -14461,7 +14450,7 @@
           "departure": "08:10",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "08:10",
               "served": true
@@ -14575,7 +14564,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "08:30",
               "served": true
@@ -14587,13 +14576,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "08:33",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "08:35",
               "served": true
@@ -14616,7 +14605,7 @@
           "departure": "08:45",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "08:45",
               "served": true
@@ -14730,7 +14719,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "09:05",
               "served": true
@@ -14742,13 +14731,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "09:08",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "09:10",
               "served": true
@@ -14771,7 +14760,7 @@
           "departure": "09:55",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "09:55",
               "served": true
@@ -14885,7 +14874,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "10:15",
               "served": true
@@ -14897,13 +14886,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "10:18",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "10:20",
               "served": true
@@ -14926,7 +14915,7 @@
           "departure": "10:40",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "10:40",
               "served": true
@@ -15040,7 +15029,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "11:00",
               "served": true
@@ -15052,13 +15041,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "11:03",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "11:05",
               "served": true
@@ -15081,7 +15070,7 @@
           "departure": "11:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "11:25",
               "served": true
@@ -15195,7 +15184,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "11:45",
               "served": true
@@ -15207,13 +15196,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "11:48",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "11:50",
               "served": true
@@ -15236,7 +15225,7 @@
           "departure": "12:15",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "12:15",
               "served": true
@@ -15350,7 +15339,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "12:35",
               "served": true
@@ -15362,13 +15351,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "12:38",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "12:40",
               "served": true
@@ -15391,7 +15380,7 @@
           "departure": "12:50",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "12:50",
               "served": true
@@ -15505,7 +15494,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "13:10",
               "served": true
@@ -15517,13 +15506,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "13:13",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "13:15",
               "served": true
@@ -15546,7 +15535,7 @@
           "departure": "13:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "13:25",
               "served": true
@@ -15660,7 +15649,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "13:45",
               "served": true
@@ -15672,13 +15661,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "13:48",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "13:50",
               "served": true
@@ -15698,144 +15687,144 @@
             5,
             6
           ],
-          "departure": "14:00",
+          "departure": "14:05",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
-              "time": "14:00",
+              "time": "14:05",
               "served": true
             },
             {
               "stopId": "stop-viale-padre-pio-presso-ingresso-istituto-tecnico",
               "index": 2,
-              "time": "14:01",
+              "time": "14:06",
               "served": true
             },
             {
               "stopId": "stop-via-nicolo-piccinni-ang-via-de-pineto",
               "index": 3,
-              "time": "14:02",
+              "time": "14:07",
               "served": true
             },
             {
               "stopId": "stop-cimitero-entrata-monumentale",
               "index": 4,
-              "time": "14:03",
+              "time": "14:08",
               "served": true
             },
             {
               "stopId": "stop-via-bresso-fronte-civ-5",
               "index": 5,
-              "time": "14:04",
+              "time": "14:09",
               "served": true
             },
             {
               "stopId": "stop-via-bresso-fronte-civ-111",
               "index": 6,
-              "time": "14:05",
+              "time": "14:10",
               "served": true
             },
             {
               "stopId": "stop-via-selva-fronte-civ-117",
               "index": 7,
-              "time": "14:06",
+              "time": "14:11",
               "served": true
             },
             {
               "stopId": "stop-via-selva-ang-via-centonze",
               "index": 8,
-              "time": "14:07",
+              "time": "14:12",
               "served": true
             },
             {
               "stopId": "stop-via-selva-190",
               "index": 9,
-              "time": "14:08",
+              "time": "14:13",
               "served": true
             },
             {
               "stopId": "stop-largo-giovanni-paolo-ii-fronte-chiesa-ss-redentore",
               "index": 10,
-              "time": "14:09",
+              "time": "14:14",
               "served": true
             },
             {
               "stopId": "stop-via-a-di-crollalanza-fronte-civ-9",
               "index": 11,
-              "time": "14:10",
+              "time": "14:15",
               "served": true
             },
             {
               "stopId": "stop-via-a-di-crollalanza-70",
               "index": 12,
-              "time": "14:11",
+              "time": "14:16",
               "served": true
             },
             {
               "stopId": "stop-via-g-gentile-fronte-civ-4",
               "index": 13,
-              "time": "14:12",
+              "time": "14:17",
               "served": true
             },
             {
               "stopId": "stop-via-bitonto-ang-via-trentacapilli-pensillina",
               "index": 14,
-              "time": "14:13",
+              "time": "14:18",
               "served": true
             },
             {
               "stopId": "stop-via-putignano-25",
               "index": 15,
-              "time": "14:14",
+              "time": "14:19",
               "served": true
             },
             {
               "stopId": "stop-via-matera-101",
               "index": 16,
-              "time": "14:15",
+              "time": "14:20",
               "served": true
             },
             {
               "stopId": "stop-via-matera-39",
               "index": 17,
-              "time": "14:17",
+              "time": "14:21",
               "served": true
             },
             {
               "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
               "index": 18,
-              "time": "14:18",
+              "time": "14:23",
               "served": true
             },
             {
               "stopId": "stop-via-dei-mille-103",
               "index": 19,
-              "time": "14:19",
+              "time": "14:24",
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
-              "time": "14:20",
+              "time": "14:25",
               "served": true
             },
             {
               "stopId": "stop-via-parisi-66",
               "index": 21,
-              "time": "14:22",
+              "time": "14:27",
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
-              "time": "14:23",
+              "time": "14:30",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
-              "time": "14:25",
+              "time": "14:35",
               "served": true
             }
           ]
@@ -15856,7 +15845,7 @@
           "departure": "15:50",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "15:50",
               "served": true
@@ -15970,7 +15959,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "16:10",
               "served": true
@@ -15982,13 +15971,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "16:13",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "16:15",
               "served": true
@@ -16011,7 +16000,7 @@
           "departure": "16:25",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "16:25",
               "served": true
@@ -16125,7 +16114,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "16:45",
               "served": true
@@ -16137,13 +16126,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "16:48",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "16:50",
               "served": true
@@ -16166,7 +16155,7 @@
           "departure": "17:00",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "17:00",
               "served": true
@@ -16280,7 +16269,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "17:20",
               "served": true
@@ -16292,13 +16281,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "17:23",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "17:25",
               "served": true
@@ -16321,7 +16310,7 @@
           "departure": "17:35",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "17:35",
               "served": true
@@ -16435,7 +16424,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "17:55",
               "served": true
@@ -16447,13 +16436,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "17:58",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "18:00",
               "served": true
@@ -16476,7 +16465,7 @@
           "departure": "18:45",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "18:45",
               "served": true
@@ -16590,7 +16579,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "19:05",
               "served": true
@@ -16602,13 +16591,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "19:08",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "19:10",
               "served": true
@@ -16631,7 +16620,7 @@
           "departure": "19:20",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "19:20",
               "served": true
@@ -16745,7 +16734,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "19:40",
               "served": true
@@ -16757,13 +16746,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "19:43",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "19:45",
               "served": true
@@ -16786,7 +16775,7 @@
           "departure": "19:55",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "19:55",
               "served": true
@@ -16900,7 +16889,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "20:15",
               "served": true
@@ -16912,13 +16901,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "20:18",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "20:20",
               "served": true
@@ -16941,7 +16930,7 @@
           "departure": "20:30",
           "stopTimes": [
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 1,
               "time": "20:30",
               "served": true
@@ -17055,7 +17044,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-dei-mille-40",
+              "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
               "index": 20,
               "time": "20:50",
               "served": true
@@ -17067,13 +17056,13 @@
               "served": true
             },
             {
-              "stopId": "stop-via-parisi-192-fronte-polivalente",
+              "stopId": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
               "index": 22,
               "time": "20:53",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
+              "stopId": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
               "index": 23,
               "time": "20:55",
               "served": true
@@ -17347,15 +17336,12 @@
           "lon": 16.5526031
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Linea-Ovest-30-03-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
       "school": false,
-      "validFrom": "2026-03-30"
+      "validFrom": "2026-09-28"
     },
     {
       "id": "navette-hub",
@@ -17364,7 +17350,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-26.09.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -20024,10 +20010,7 @@
           "lon": 16.565368
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -21565,10 +21548,7 @@
           "lon": 16.5552625
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-1-02-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -23668,10 +23648,7 @@
           "lon": 16.5559495
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-2-08-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -23683,7 +23660,7 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2025/11/MarinoBus_Urbano_Orari_Scuola-3-18-11-2025.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/MainoBus_Urbano_Orari_Scuola-3-28-09-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
@@ -24502,15 +24479,12 @@
           "lon": 16.5573823
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2025/11/MarinoBus_Urbano_Orari_Scuola-3-18-11-2025.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
       "school": true,
-      "validFrom": "2025-11-18"
+      "validFrom": "2026-09-28"
     },
     {
       "id": "linea-scuola-4",
@@ -25410,10 +25384,7 @@
           "lon": 16.5553134
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-4-08-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -27533,10 +27504,7 @@
           "lon": 16.6374928
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/08/MarinoBus_Urbano_Orari_Pescariello-04-08-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "timetableFile": null,
@@ -27831,7 +27799,6 @@
       "lon": 16.548785,
       "lines": [
         "ospedale-1",
-        "linea-ovest",
         "navette-hub",
         "pescariello-z-i"
       ],
@@ -27955,8 +27922,7 @@
       "lon": 16.545795,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi",
-        "linea-ovest"
+        "ospedale-domenica-e-festivi"
       ],
       "position": "exact"
     },
@@ -28353,8 +28319,8 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-xxiv-maggio-uscita-sottopasso-fal",
-      "name": "Via XXIV Maggio uscita sottopasso Fal",
+      "id": "stop-via-xxiv-maggio-uscita-so-tt-opasso-fal",
+      "name": "Via XXIV Maggio uscita so tt opasso Fal",
       "lat": 40.837449,
       "lon": 16.552649,
       "lines": [
@@ -28483,6 +28449,26 @@
         "linea-ovest"
       ],
       "position": "street"
+    },
+    {
+      "id": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
+      "name": "V i a d e i M i l l e 4 0",
+      "lat": 40.828509,
+      "lon": 16.548675,
+      "lines": [
+        "linea-ovest"
+      ],
+      "position": "estimated"
+    },
+    {
+      "id": "stop-v-i-a-p-a-r-i-s-i-1-9-2-fronte-polivalente",
+      "name": "V i a P a r i s i 1 9 2 (fronte Polivalente)",
+      "lat": 40.836104,
+      "lon": 16.54546,
+      "lines": [
+        "linea-ovest"
+      ],
+      "position": "estimated"
     },
     {
       "id": "stop-via-bari-14",

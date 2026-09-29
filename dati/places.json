@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:09:54.438Z",
+  "generatedAt": "2026-09-29T01:54:53.923Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -206,7 +206,7 @@
       "name": "Claustri del centro storico",
       "highlight": true,
       "duration": "1 h",
-      "description": "Ottanta cortili chiusi che si aprono all'improvviso sulle strade del centro: ne restano circa ottanta degli oltre duecento originari, e ognuno ha un nome che racconta una storia, da Claustro Giudecca, l'antico quartiere ebraico, a Claustro Tradimento e Claustro Inferno. Nati come spazi di vicinato, sono ancora il salotto di chi ci abita.",
+      "description": "Piccoli cortili chiusi che si aprono all'improvviso sulle strade del centro: ne restano circa ottanta degli oltre duecento originari, e ognuno ha un nome che racconta una storia, da Claustro Giudecca, l'antico quartiere ebraico, a Claustro Tradimento e Claustro Inferno. Nati come spazi di vicinato, sono ancora il salotto di chi ci abita.",
       "tips": "Si girano senza meta, entrando quando l'arco è aperto. La sera l'illuminazione bassa li rende un'altra cosa.",
       "lat": 40.82715,
       "lon": 16.55345,
@@ -630,15 +630,15 @@
     {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8317322,
-      "lon": 16.5499294,
+      "lat": 40.8329482,
+      "lon": 16.5510709,
       "categories": [
         "cultura"
       ],
       "icon": "archaeology",
-      "osm": "node/4126595981",
+      "osm": "way/1547047721",
       "address": null,
-      "website": null,
+      "website": "https://www.abmcaltamura.it/ipogeo/",
       "phone": null,
       "openingHours": null,
       "wikidata": null,
@@ -651,6 +651,15 @@
       "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
+          "stopId": "stop-via-iv-novembre-fronte-74",
+          "name": "Via IV Novembre (fronte 74)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 334
+        },
+        {
           "stopId": "stop-via-parisi-66",
           "name": "Via Parisi 66",
           "lines": [
@@ -659,7 +668,7 @@
             "linea-ovest",
             "pescariello-z-i"
           ],
-          "distance": 195
+          "distance": 356
         },
         {
           "stopId": "stop-via-parisi-fronte-civico-66",
@@ -667,15 +676,7 @@
           "lines": [
             "pescariello-z-i"
           ],
-          "distance": 195
-        },
-        {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 214
+          "distance": 356
         }
       ]
     },
@@ -864,11 +865,18 @@
       "tips": "Apre in giorni limitati della settimana: meglio verificare gli orari prima di partire.",
       "nearbyStops": [
         {
+          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
+          "name": "V i a d e i M i l l e 4 0",
+          "lines": [
+            "linea-ovest"
+          ],
+          "distance": 210
+        },
+        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
-            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -881,15 +889,6 @@
             "pescariello-z-i"
           ],
           "distance": 225
-        },
-        {
-          "stopId": "stop-via-gravina-79",
-          "name": "Via Gravina 79",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 256
         }
       ]
     },
@@ -912,7 +911,6 @@
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
-            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -927,13 +925,12 @@
           "distance": 155
         },
         {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
+          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
+          "name": "V i a d e i M i l l e 4 0",
           "lines": [
-            "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 204
+          "distance": 174
         }
       ]
     },
@@ -956,7 +953,6 @@
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
-            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -971,13 +967,12 @@
           "distance": 163
         },
         {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
+          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
+          "name": "V i a d e i M i l l e 4 0",
           "lines": [
-            "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 218
+          "distance": 178
         }
       ]
     },
@@ -1356,11 +1351,18 @@
       "tips": "Si abbina in dieci minuti alla visita del Museo Etnografico, che si affaccia proprio qui.",
       "nearbyStops": [
         {
+          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
+          "name": "V i a d e i M i l l e 4 0",
+          "lines": [
+            "linea-ovest"
+          ],
+          "distance": 210
+        },
+        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
-            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -1373,15 +1375,6 @@
             "pescariello-z-i"
           ],
           "distance": 225
-        },
-        {
-          "stopId": "stop-via-gravina-79",
-          "name": "Via Gravina 79",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 256
         }
       ]
     },
