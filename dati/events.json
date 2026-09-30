@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T10:48:31.904Z",
+  "generatedAt": "2026-09-30T16:33:47.000Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -98,6 +98,24 @@
           "source": "Virgilio Eventi",
           "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
         }
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-sarah-jane-morris-maurizio-di-fulvio-group",
+      "title": "SARAH JANE MORRIS & MAURIZIO DI FULVIO GROUP",
+      "url": "https://iltaccodibacco.it/puglia/eventi/331878.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Riparte la XVI Stagione di Musica e Spettacolo COMPONIMENTI d&apos;AUTUNNO 2026. Si apre venerdì 02 OTTOBRE 2026 con SARAH JANE MORRIS LIVE.",
+      "tags": [],
+      "categories": [
+        "cultura"
       ],
       "dated": true
     },
