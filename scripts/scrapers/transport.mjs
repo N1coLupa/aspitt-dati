@@ -164,6 +164,9 @@ function matchKmlStop(pdfName, kmlStops, used) {
 const compactName = (name) => stopKey(name).replace(/ /g, '');
 const isSpacedOut = (name) => String(name).split(' ').filter((token) => token.length === 1).length >= 6;
 
+// La legatura "tt" dei PDF a volte arriva staccata: "so tt opasso".
+const joinLigature = (name) => String(name).replace(/(\p{Ll}) tt (\p{Ll})/gu, '$1tt$2');
+
 function restoreSpacedName(name, known) {
   if (!isSpacedOut(name)) return name;
   const target = compactName(name);
@@ -224,7 +227,7 @@ async function scrapeLine(line, registry, previousLine) {
   const pdfStops = tables[0]?.stops ?? [];
   const knownNames = [...kml.stops, ...(previousLine?.stops ?? []), ...registry.values()].map((stop) => stop.name);
   const baseStops = pdfStops.length
-    ? pdfStops.map((s) => ({ index: s.index, name: restoreSpacedName(s.name, knownNames) }))
+    ? pdfStops.map((s) => ({ index: s.index, name: restoreSpacedName(joinLigature(s.name), knownNames) }))
     : kml.stops.map((s, i) => ({ index: i + 1, name: s.name }));
 
   const used = new Set();
