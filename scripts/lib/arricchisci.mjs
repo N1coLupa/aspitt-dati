@@ -15,6 +15,7 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { applyRoadShapes } from './forme-stradali.mjs';
 import { applyStopPositions, computeStopPositions, streetsFromCache } from './posizioni.mjs';
 
 const DATA = path.join('scripts', 'data');
@@ -199,6 +200,9 @@ export async function enrichTransport(transport, notes = []) {
   applyStopPositions(transport, computeStopPositions(transport, { streets, known: manual }));
   const estimated = transport.stops.filter((stop) => stop.position === 'estimated').map((stop) => stop.name);
   if (estimated.length) notes.push(`posizione solo stimata, da verificare sul posto: ${estimated.join(', ')}`);
+
+  // Tracciati disegnati a mano dall'operatore agganciati alle strade vere (cache in scripts/data).
+  await applyRoadShapes(transport, path.join(DATA, 'forme-stradali.json'), notes);
 
   return transport;
 }
