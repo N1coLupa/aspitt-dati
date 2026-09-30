@@ -77,7 +77,10 @@ async function snapToRoads(shape) {
 }
 
 export async function applyRoadShapes(transport, cacheFile, notes = []) {
-  const cache = await readJson(cacheFile, { fonte: '© OpenStreetMap contributors, ODbL (tracciati agganciati alle strade con OSRM)', linee: {} });
+  const cache = await readJson(cacheFile, {
+    fonte: '© OpenStreetMap contributors, ODbL (tracciati agganciati alle strade con OSRM)',
+    linee: {},
+  });
   let changed = false;
 
   for (const line of transport.lines) {
@@ -93,7 +96,9 @@ export async function applyRoadShapes(transport, cacheFile, notes = []) {
       try {
         const { points, straight, total } = await snapToRoads(drawn);
         if (straight > total * 0.25) {
-          notes.push(`${line.name}: tracciato non agganciato alle strade (${straight} tratti su ${total} senza strada), resta quello originale`);
+          notes.push(
+            `${line.name}: tracciato non agganciato alle strade (${straight} tratti su ${total} senza strada), resta quello originale`
+          );
           continue;
         }
         entry = { chiave: key, forma: points.map((point) => [round(point.lat), round(point.lon)]) };
