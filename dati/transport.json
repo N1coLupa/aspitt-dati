@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T10:36:19.342Z",
+  "generatedAt": "2026-09-30T16:33:39.662Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -23,7 +23,7 @@
       "route": "Via Gravina - Trentacapilli - Piazza Zanardelli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1tlPJKgyJkTU1oxiuXrDXOT7PosuwWvI&ll=40.8212292561109%2C16.516982050000006&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -4659,8 +4659,8 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": null,
-      "noticeUntil": null,
+      "noticeFrom": "2026-10-03",
+      "noticeUntil": "2026-10-03",
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-03-31"
@@ -4672,7 +4672,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -9526,8 +9526,8 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": null,
-      "noticeUntil": null,
+      "noticeFrom": "2026-10-03",
+      "noticeUntil": "2026-10-03",
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-06-12"
@@ -9539,7 +9539,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub - Trentacapilli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1iCfk8GkhcM_SZt7b7aedeL2_E_uDhNc&ll=40.825646463944054%2C16.51911380000001&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-04.10.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -14055,8 +14055,8 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": null,
-      "noticeUntil": null,
+      "noticeFrom": "2026-10-04",
+      "noticeUntil": "2026-10-04",
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-06-12"
