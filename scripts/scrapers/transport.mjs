@@ -1,16 +1,3 @@
-// Scraper del trasporto pubblico urbano di Altamura (Autolinee Marino Michele).
-//
-// Il sito non espone nessuna API e non esistono orari in tempo reale. Quello che
-// esiste, e che qui viene messo insieme, e':
-//   - la homepage, con l'elenco delle linee, il colore ufficiale, il PDF orari,
-//     il link alla mappa MyMaps e gli eventuali avvisi;
-//   - l'export KML di ogni mappa MyMaps, unica fonte con nomi e coordinate reali
-//     delle fermate piu' il tracciato del percorso;
-//   - il PDF orari, una griglia fermate x corse in cui le celle "-" segnano le
-//     fermate NON servite da quella corsa.
-//
-// Uso: node scripts/scrapers/transport.mjs
-
 import * as cheerio from 'cheerio';
 import { BlockedError, sleep } from '../lib/http.mjs';
 import { COPY_DIR, marinoBuffer, marinoText, usage } from '../lib/copia-locale.mjs';
@@ -19,12 +6,11 @@ import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
 import { parseItalianDateRange } from '../lib/dates-it.mjs';
+import { noticeStops, noticeTimes } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
 const NEWS_URL = 'https://marinobusurbano.it/news/';
 
-// I PDF dell'operatore codificano la legatura "tt" con due caratteri ebraici
-// (U+05BC U+05DE): "sottopasso" arrivava come "soּמopasso".
 const clean = (value) =>
   String(value ?? '')
     .replace(/ּמ/g, 'tt')
@@ -67,7 +53,6 @@ function parseLines($) {
 }
 
 function parseVendors(html) {
-  // I punti vendita vivono in un array JS di stringhe JSON usato da Leaflet.
   const block = /markers_list\s*=\s*\[([\s\S]*?)\];/.exec(html);
   if (!block) return [];
 
@@ -85,9 +70,7 @@ function parseVendors(html) {
         lat: Number.isFinite(lat) ? lat : null,
         lon: Number.isFinite(lon) ? lon : null,
       });
-    } catch {
-      // Un elemento malformato non deve fermare l'intero scrape.
-    }
+    } catch {}
   }
   return vendors;
 }
@@ -124,7 +107,6 @@ async function parseNews() {
         const title = clean(el.find('h3, h4').first().text());
         if (!title) return null;
 
-        // La data e' impaginata su tre righe: "12<br>Mar<br>2026".
         const parts = clean(
           el
             .find('.number')
@@ -154,8 +136,6 @@ async function parseNews() {
   }
 }
 
-// Le fermate del PDF e quelle del KML sono la stessa cosa scritta in due modi.
-// Prima si prova la chiave normalizzata, poi la sovrapposizione di parole.
 function matchKmlStop(pdfName, kmlStops, used) {
   const key = stopKey(pdfName);
   const exact = kmlStops.findIndex((s, i) => !used.has(i) && stopKey(s.name) === key);
@@ -220,8 +200,6 @@ async function scrapeLine(line, registry, previousLine) {
     }
   }
 
-  // PDF irraggiungibile ma identico a quello di ieri (stesso indirizzo): le
-  // corse di ieri valgono ancora. Un quadro nuovo invece va scaricato davvero.
   if (!tables.length && previousLine?.trips?.length && previousLine.timetableUrl === line.timetableUrl) {
     result.warnings.push('PDF non scaricabile: tenute le corse di ieri, stesso quadro orario');
     usage.missing.delete(line.timetableUrl);
@@ -234,8 +212,6 @@ async function scrapeLine(line, registry, previousLine) {
     };
   }
 
-  // L'elenco fermate autorevole e' quello del PDF: e' l'ordine delle corse.
-  // Il KML fornisce le coordinate. Se il PDF manca si ripiega sul solo KML.
   const pdfStops = tables[0]?.stops ?? [];
   const baseStops = pdfStops.length
     ? pdfStops.map((s) => ({ index: s.index, name: s.name }))
@@ -277,7 +253,6 @@ async function scrapeLine(line, registry, previousLine) {
       serviceLabel: trip.serviceLabel,
       days: trip.days ?? [1, 2, 3, 4, 5, 6],
       departure: trip.departure,
-      // Le fermate con `served: false` sono soppresse per questa corsa.
       stopTimes: trip.stopTimes.map((st) => ({
         stopId: byIndex.get(st.stopIndex) ?? null,
         index: st.stopIndex,
@@ -287,9 +262,6 @@ async function scrapeLine(line, registry, previousLine) {
     }))
   );
 
-  // Due quadri sulla stessa pagina possono numerare le corse allo stesso modo
-  // (le linee Scuola): l'id deve restare unico, altrimenti l'app scarta corse
-  // vere come doppioni.
   const usedIds = new Map();
   for (const trip of result.trips) {
     const count = (usedIds.get(trip.id) ?? 0) + 1;
@@ -302,37 +274,51 @@ async function scrapeLine(line, registry, previousLine) {
 
 const fileName = (url) => decodeURIComponent(String(url).split(/[?#]/)[0].split('/').pop() ?? '');
 
-/**
- * Il periodo di validita' di un avviso, letto dal suo testo ("dal 10 al 15
- * settembre", "fino al 27 settembre"). Serve all'app per togliere l'avviso
- * quando il periodo e' finito, invece di mostrarlo per sempre.
- */
-async function readNoticeValidity(url, previousLine) {
-  if (!url) return { noticeFrom: null, noticeUntil: null };
-  const known =
-    previousLine?.noticeUrl === url ? { noticeFrom: previousLine.noticeFrom ?? null, noticeUntil: previousLine.noticeUntil ?? null } : null;
+const NOTICE_KEYS = ['noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeText'];
+const noticeTexts = new Map();
+
+async function noticeText(url) {
+  if (!noticeTexts.has(url)) {
+    noticeTexts.set(
+      url,
+      (async () => {
+        if (!/\.pdf($|\?)/i.test(url)) {
+          const page = cheerio.load(await marinoText(url, null));
+          return clean(page('main, article, .entry-content, body').first().text());
+        }
+        const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
+        const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)), isEvalSupported: false }).promise;
+        const parts = [];
+        for (let page = 1; page <= Math.min(doc.numPages, 3); page += 1) {
+          const content = await (await doc.getPage(page)).getTextContent();
+          parts.push(content.items.map((item) => item.str).join(' '));
+        }
+        return clean(parts.join(' '));
+      })()
+    );
+  }
+  return noticeTexts.get(url);
+}
+
+async function readNotice(url, previousLine, stops) {
+  const empty = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
+  if (!url) return empty;
   try {
-    let text;
-    if (/\.pdf($|\?)/i.test(url)) {
-      const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
-      const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)), isEvalSupported: false }).promise;
-      const parts = [];
-      for (let page = 1; page <= Math.min(doc.numPages, 3); page += 1) {
-        const content = await (await doc.getPage(page)).getTextContent();
-        parts.push(content.items.map((item) => item.str).join(' '));
-      }
-      text = parts.join(' ');
-    } else {
-      const page = cheerio.load(await marinoText(url, null));
-      text = page('main, article, .entry-content, body').first().text();
-    }
-    // Se il testo non dice le date, spesso le dice il nome del file
-    // ("Avviso-26.09.26.pdf").
-    const range = parseItalianDateRange(clean(text)) ?? parseItalianDateRange(fileName(url));
-    return { noticeFrom: range?.start ?? null, noticeUntil: range?.end ?? null };
+    const text = await noticeText(url);
+    const range = parseItalianDateRange(text) ?? parseItalianDateRange(fileName(url));
+    const times = noticeTimes(text);
+    return {
+      noticeFrom: range?.start ?? null,
+      noticeUntil: range?.end ?? null,
+      noticeStart: times.from,
+      noticeEnd: times.to,
+      noticeStops: noticeStops(text, stops),
+      noticeText: text.slice(0, 1200) || null,
+    };
   } catch {
-    if (known) usage.missing.delete(url);
-    return known ?? { noticeFrom: null, noticeUntil: null };
+    if (previousLine?.noticeUrl !== url) return empty;
+    usage.missing.delete(url);
+    return Object.fromEntries(NOTICE_KEYS.map((key) => [key, previousLine[key] ?? empty[key]]));
   }
 }
 
@@ -341,10 +327,8 @@ export async function scrapeTransport(previous = null) {
   usage.local.clear();
   usage.missing.clear();
   usage.files.clear();
+  noticeTexts.clear();
 
-  // Senza homepage non si sa quali linee esistono. Se il sito la blocca e non
-  // c'e' una copia salvata, l'elenco (nomi, colori, mappe, PDF) resta quello di
-  // ieri: i PDF salvati a mano bastano per aggiornare gli orari.
   let html = null;
   try {
     html = await marinoText(HOME_URL, 'home--lines');
@@ -366,8 +350,6 @@ export async function scrapeTransport(previous = null) {
         noticeUrl,
       }));
   console.log(`  ${lines.length} linee ${html ? 'trovate' : 'riprese da ieri'}`);
-  // Se il sito risponde con una pagina di verifica (captcha) non ci sono linee:
-  // meglio fallire che sovrascrivere gli orari buoni con un file vuoto.
   if (!lines.length) {
     throw new Error('Nessuna linea nella homepage: il sito ha risposto con una pagina di verifica o ha cambiato struttura.');
   }
@@ -378,10 +360,7 @@ export async function scrapeTransport(previous = null) {
     process.stdout.write(`> ${line.name} ... `);
     const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
     const result = await scrapeLine(line, registry, previousLine);
-    Object.assign(result, await readNoticeValidity(line.noticeUrl, previousLine));
-    // Quando l'orario arriva da un PDF salvato a mano, il nome del file e' la
-    // fonte piu' attendibile della data di validita': puo' essere piu' recente
-    // del PDF che il sito pubblicava l'ultima volta che l'abbiamo visto.
+    Object.assign(result, await readNotice(line.noticeUrl, previousLine, result.stops));
     result.timetableFile = usage.files.get(line.timetableUrl) ?? null;
     const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);
     console.log(
@@ -393,7 +372,6 @@ export async function scrapeTransport(previous = null) {
   }
 
   const news = html ? await parseNews() : [];
-  // Le news sono facoltative: senza, restano quelle di ieri nell'app.
   usage.missing.delete(NEWS_URL);
   if (!news.length && previous?.news?.length) news.push(...previous.news);
   const retrieval = { mode: usage.local.size ? 'copia locale' : 'rete', missing: [...usage.missing] };

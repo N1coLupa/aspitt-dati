@@ -1,16 +1,3 @@
-// Aggiornamento quotidiano dei dati dell'app.
-//
-// Va lanciato dopo l'ultima corsa della giornata (indicativamente alle 23:30):
-// a quell'ora il sito dell'operatore ha gia' pubblicato eventuali avvisi per il
-// giorno dopo, e nessun utente sta consultando orari che cambierebbero sotto i
-// suoi occhi.
-//
-//   node scripts/scrapers/run-daily.mjs
-//
-// Confronta il risultato con lo snapshot del giorno prima e produce
-// src/dati/alerts.json: e' quello che l'app mostra in cima a Trasporti quando
-// una fermata viene soppressa o un orario cambia.
-
 import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -21,7 +8,6 @@ import { scrapePlaces } from './places.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
 
-// Nel repository dei dati la cartella e' diversa: la sceglie la variabile d'ambiente.
 const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
 const SNAPSHOT_DIR = process.env.MUEVT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
 
@@ -71,9 +57,6 @@ function diffTransport(previous, next) {
       continue;
     }
 
-    // Il quadro orario e' nuovo se cambia il PDF o la data da cui vale: con il
-    // sito bloccato l'indirizzo resta quello di ieri, ma il file salvato a mano
-    // puo' essere di un'edizione piu' recente.
     if (before.timetableUrl !== line.timetableUrl || (line.validFrom && before.validFrom && before.validFrom !== line.validFrom)) {
       alerts.push({
         id: `orari-${line.id}-${now.slice(0, 10)}`,
@@ -85,32 +68,11 @@ function diffTransport(previous, next) {
         createdAt: now,
       });
     }
-
-    if (line.noticeUrl && before.noticeUrl !== line.noticeUrl) {
-      alerts.push({
-        id: `avviso-${line.id}-${now.slice(0, 10)}`,
-        severity: 'critical',
-        lineId: line.id,
-        title: `Avviso su ${line.name}`,
-        body: 'L’operatore ha pubblicato un avviso di servizio per questa linea.',
-        url: line.noticeUrl,
-        createdAt: now,
-        validUntil: line.noticeUntil ?? null,
-      });
-    }
   }
-
-  // Le fermate che una corsa non fa non diventano un avviso: nell'app ogni
-  // corsa mostra semplicemente le fermate che fa.
 
   return alerts;
 }
 
-/**
- * Scarica una fonte e la tiene solo se passa i controlli. Se il sito non
- * risponde, risponde con una pagina di verifica o il risultato e' rotto, resta
- * il file del giorno prima: meglio orari di ieri che nessun orario.
- */
 async function refresh(name, scrape, validate, enrich) {
   const file = path.join(DATA_DIR, `${name}.json`);
   const previous = await readJson(file);
@@ -129,8 +91,6 @@ async function refresh(name, scrape, validate, enrich) {
   } catch (err) {
     console.error(`  ${name}: tenuti i dati precedenti (${err.message})`);
     if (!previous) throw new Error(`${name}: nessun dato valido disponibile (${err.message})`);
-    // Anche senza dati nuovi, calendario e correzioni si applicano a quelli di
-    // ieri: un calendario scolastico aggiornato non deve aspettare il sito.
     if (enrich) {
       const kept = structuredClone(previous);
       await enrich(kept, []);
@@ -173,9 +133,6 @@ async function main() {
   const alerts = transportResult.status === 'aggiornato' ? diffTransport(transportResult.previous, transport) : [];
   const previousAlerts = (await readJson(path.join(DATA_DIR, 'alerts.json')))?.alerts ?? [];
 
-  // Gli avvisi si ripuliscono ogni giorno, anche se gli orari non sono cambiati:
-  // uno con una data di fine resta finche' il periodo non e' finito, gli altri
-  // decadono dopo una settimana.
   const cutoff = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
   const known = new Set(alerts.map((a) => a.id));
   const today = new Date().toISOString().slice(0, 10);
@@ -193,8 +150,6 @@ async function main() {
     await writeJson(path.join(SNAPSHOT_DIR, `transport-${new Date().toISOString().slice(0, 10)}.json`), transportResult.previous);
   }
 
-  // Il manifest e' quello che l'app scarica per primo: dice quali file sono
-  // cambiati, con impronta e dimensione per verificarli dopo il download.
   const results = [transportResult, eventsResult, placesResult];
   const manifest = {
     schema: 1,
