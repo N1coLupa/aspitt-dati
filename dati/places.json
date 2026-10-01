@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T16:33:51.995Z",
+  "generatedAt": "2026-10-01T01:16:58.898Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -865,18 +865,11 @@
       "tips": "Apre in giorni limitati della settimana: meglio verificare gli orari prima di partire.",
       "nearbyStops": [
         {
-          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
-          "name": "V i a d e i M i l l e 4 0",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 210
-        },
-        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
+            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -889,6 +882,15 @@
             "pescariello-z-i"
           ],
           "distance": 225
+        },
+        {
+          "stopId": "stop-via-gravina-79",
+          "name": "Via Gravina 79",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 256
         }
       ]
     },
@@ -911,6 +913,7 @@
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
+            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -925,12 +928,13 @@
           "distance": 155
         },
         {
-          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
-          "name": "V i a d e i M i l l e 4 0",
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
           "lines": [
+            "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 174
+          "distance": 204
         }
       ]
     },
@@ -953,6 +957,7 @@
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
+            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -967,12 +972,13 @@
           "distance": 163
         },
         {
-          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
-          "name": "V i a d e i M i l l e 4 0",
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
           "lines": [
+            "ospedale-1",
             "linea-ovest"
           ],
-          "distance": 178
+          "distance": 218
         }
       ]
     },
@@ -1351,18 +1357,11 @@
       "tips": "Si abbina in dieci minuti alla visita del Museo Etnografico, che si affaccia proprio qui.",
       "nearbyStops": [
         {
-          "stopId": "stop-v-i-a-d-e-i-m-i-l-l-e-4-0",
-          "name": "V i a d e i M i l l e 4 0",
-          "lines": [
-            "linea-ovest"
-          ],
-          "distance": 210
-        },
-        {
           "stopId": "stop-via-dei-mille-40",
           "name": "Via Dei Mille 40",
           "lines": [
             "ospedale-1",
+            "linea-ovest",
             "navette-hub",
             "pescariello-z-i"
           ],
@@ -1375,6 +1374,15 @@
             "pescariello-z-i"
           ],
           "distance": 225
+        },
+        {
+          "stopId": "stop-via-gravina-79",
+          "name": "Via Gravina 79",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 256
         }
       ]
     },
