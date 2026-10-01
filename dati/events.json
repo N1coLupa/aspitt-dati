@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T01:16:54.475Z",
+  "generatedAt": "2026-10-01T11:04:06.124Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -78,9 +78,9 @@
       "dated": true
     },
     {
-      "id": "life-federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-a",
-      "title": "Federicus 2026 (2, 3 e 4 ottobre). Importante novità: la grande Arena Spettacoli in Piazza Matteotti",
-      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/",
+      "id": "life-federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-t",
+      "title": "Federicus 2026 (2, 3 e 4 ottobre): il programma integrale e il tema francescano",
+      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-tema-francescano/",
       "source": "AltamuraLife",
       "sourceUrl": "https://www.altamuralife.it/",
       "publishedAt": null,
@@ -94,6 +94,10 @@
         "eventi"
       ],
       "alsoOn": [
+        {
+          "source": "AltamuraLife",
+          "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/"
+        },
         {
           "source": "Virgilio Eventi",
           "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
