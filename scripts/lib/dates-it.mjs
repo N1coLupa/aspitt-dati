@@ -1,7 +1,3 @@
-// I titoli e le didascalie delle testate locali datano gli eventi in italiano
-// discorsivo ("il 29 luglio", "dal 3 al 5 ottobre", "Fino al 27 settembre").
-// Qui li riduciamo a date ISO utilizzabili per ordinare e filtrare l'agenda.
-
 const MONTHS = {
   gennaio: 1,
   febbraio: 2,
@@ -30,7 +26,6 @@ const MONTHS = {
 };
 
 const MONTH_NAMES = Object.keys(MONTHS).join('|');
-// "3", "1°"; "dal 3" e "dall'8"; "al 5" e "all'8"; un anno facoltativo dopo il mese.
 const DAY = String.raw`(\d{1,2})°?`;
 const FROM = String.raw`\bdal(?:l['’]\s*|\s+)`;
 const TO = String.raw`\s+al(?:l['’]\s*|\s+)`;
@@ -39,29 +34,21 @@ const CROSS_RE = new RegExp(String.raw`${FROM}${DAY}\s+(${MONTH_NAMES})${YEAR}${
 const RANGE_RE = new RegExp(String.raw`${FROM}${DAY}${TO}${DAY}\s+(${MONTH_NAMES})${YEAR}\b`, 'i');
 const UNTIL_RE = new RegExp(String.raw`\bfino\s+al(?:l['’]\s*|\s+)${DAY}\s+(${MONTH_NAMES})${YEAR}\b`, 'i');
 const SINGLE_RE = new RegExp(String.raw`(?<![\p{L}\d])${DAY}\s+(${MONTH_NAMES})${YEAR}\b`, 'giu');
-// Un numero seguito da un mese dopo "via", "piazza"... e' un indirizzo (via 20 Settembre), non una data.
 const STREET_BEFORE = /\b(via|viale|v\.le|piazza|p\.zza|piazzetta|corso|c\.so|largo|vico|vicolo|contrada|strada)\s+$/i;
-// Date in cifre, come negli avvisi dell'operatore ("il giorno 26.09.2026",
-// "dal 10/09/26 al 15/09/26", "Avviso-26.09.26.pdf").
 const NUM = String.raw`(\d{1,2})[./-](\d{1,2})[./-](\d{4}|\d{2})(?!\d)`;
 const NUM_RANGE_RE = new RegExp(String.raw`\bdal?\s+${NUM}\s+al\s+${NUM}`, 'i');
 const NUM_RE = new RegExp(String.raw`(?<!\d)${NUM}`);
-// "21:30" ovunque; "21.30" solo dopo "ore", "alle", "dalle" ("ingresso 10.00 euro" non e' un orario).
 const TIME_RE = /\b(?:(?:ore|alle|dalle)\s+)?([01]?\d|2[0-3]):([0-5]\d)\b|\b(?:ore|alle|dalle)\s+([01]?\d|2[0-3])[.,]([0-5]\d)\b/i;
 
 const fullYear = (year) => (year.length === 2 ? 2000 + Number(year) : Number(year));
 const DAY_MS = 24 * 3600 * 1000;
 
-/** AAAA-MM-GG solo se la data esiste (niente 31 febbraio). */
 function iso(year, month, day) {
   const date = new Date(Date.UTC(year, month - 1, day));
   if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
   return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 }
 
-// Senza anno esplicito si sceglie l'anno piu' sensato rispetto a oggi: una data
-// passata da oltre due mesi e' l'edizione dell'anno prossimo; una che cadrebbe
-// fra piu' di dieci mesi e' quella appena passata ("il 28 dicembre" letto a gennaio).
 function resolveYear(month, day, reference) {
   const year = reference.getFullYear();
   const candidate = new Date(year, month - 1, day).getTime();
@@ -76,7 +63,6 @@ export function parseItalianDateRange(text, reference = new Date()) {
   const source = String(text ?? '');
   if (!source) return null;
 
-  // "26.09.26" e' una data, non le 26:09: le date in cifre si tolgono prima di cercare l'ora.
   const time = TIME_RE.exec(source.replace(new RegExp(NUM, 'g'), ' '));
   const hours = time ? (time[1] ?? time[3]) : null;
   const startTime = time ? `${hours.padStart(2, '0')}:${time[2] ?? time[4]}` : null;
@@ -85,7 +71,6 @@ export function parseItalianDateRange(text, reference = new Date()) {
   if (numRange) {
     const start = iso(fullYear(numRange[3]), Number(numRange[2]), Number(numRange[1]));
     const end = iso(fullYear(numRange[6]), Number(numRange[5]), Number(numRange[4]));
-    // Un intervallo al contrario ("dal 15 al 10") vale per il primo giorno.
     if (start && end) return { start, end: end >= start ? end : start, startTime };
   }
 
@@ -97,7 +82,6 @@ export function parseItalianDateRange(text, reference = new Date()) {
     const toDay = Number(cross[4]);
     let fromYear = cross[3] ? Number(cross[3]) : null;
     let toYear = cross[6] ? Number(cross[6]) : null;
-    // "dal 30 dicembre al 2 gennaio 2027": l'anno scritto vale per la fine, l'inizio e' l'anno prima.
     if (fromYear == null && toYear != null) fromYear = toMonth < fromMonth ? toYear - 1 : toYear;
     fromYear ??= resolveYear(fromMonth, fromDay, reference);
     toYear ??= toMonth < fromMonth ? fromYear + 1 : fromYear;
@@ -139,4 +123,31 @@ export function parseItalianDateRange(text, reference = new Date()) {
   }
 
   return null;
+}
+
+/** La data di caricamento di un file di WordPress (".../wp-content/uploads/2026/10/..."), se c'e'. */
+export function publishedOn(url) {
+  const match = /\/uploads\/(20\d{2})\/(\d{2})\//.exec(String(url ?? ''));
+  return match ? new Date(Number(match[1]), Number(match[2]) - 1, 15) : null;
+}
+
+/**
+ * Corregge l'anno sbagliato di una data scritta dall'operatore. Un avviso o un orario parla di
+ * giorni vicini a quando e' stato pubblicato: se l'anno scritto lo allontana di piu' di otto mesi
+ * e lo stesso giorno di un anno vicino cade a ridosso della pubblicazione, vale quell'anno.
+ */
+export function plausibleDay(isoDay, reference) {
+  if (!reference) return isoDay ?? null;
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(isoDay ?? '');
+  if (!match) return isoDay ?? null;
+  const [, year, month, day] = match.map(Number);
+  const at = (y) => new Date(y, month - 1, day).getTime();
+  const distance = (y) => at(y) - reference.getTime();
+  if (Math.abs(distance(year)) <= 240 * DAY_MS) return isoDay;
+  const candidates = [reference.getFullYear() - 1, reference.getFullYear(), reference.getFullYear() + 1].filter(
+    (y) => distance(y) >= -90 * DAY_MS && distance(y) <= 240 * DAY_MS
+  );
+  if (!candidates.length) return isoDay;
+  const best = candidates.sort((a, b) => Math.abs(distance(a)) - Math.abs(distance(b)))[0];
+  return `${best}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 }

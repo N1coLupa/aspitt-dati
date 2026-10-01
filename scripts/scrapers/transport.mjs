@@ -5,7 +5,7 @@ import { fetchKmlGeometry, kmlUrlFromMyMapsLink } from '../lib/kml.mjs';
 import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
-import { parseItalianDateRange } from '../lib/dates-it.mjs';
+import { parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
 import { noticeStops, noticeTimes } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
@@ -162,7 +162,10 @@ function matchKmlStop(pdfName, kmlStops, used) {
 }
 
 const compactName = (name) => stopKey(name).replace(/ /g, '');
-const isSpacedOut = (name) => String(name).split(' ').filter((token) => token.length === 1).length >= 6;
+const isSpacedOut = (name) =>
+  String(name)
+    .split(' ')
+    .filter((token) => token.length === 1).length >= 6;
 
 // La legatura "tt" dei PDF a volte arriva staccata: "so tt opasso".
 const joinLigature = (name) => String(name).replace(/(\p{Ll}) tt (\p{Ll})/gu, '$1tt$2');
@@ -313,19 +316,22 @@ async function noticeText(url) {
   return noticeTexts.get(url);
 }
 
-async function readNotice(url, previousLine, stops) {
+async function readNotice(url, previousLine, stops, lineName, lineNames) {
   const empty = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
   if (!url) return empty;
   try {
     const text = await noticeText(url);
-    const range = parseItalianDateRange(text) ?? parseItalianDateRange(fileName(url));
+    // L'anno scritto dall'operatore si controlla con la data in cui il PDF e' stato caricato:
+    // "13 ottobre 2025" in un avviso pubblicato a ottobre 2026 e' un errore di battitura.
+    const published = publishedOn(url);
+    const range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
     const times = noticeTimes(text);
     return {
-      noticeFrom: range?.start ?? null,
-      noticeUntil: range?.end ?? null,
+      noticeFrom: plausibleDay(range?.start ?? null, published),
+      noticeUntil: plausibleDay(range?.end ?? null, published),
       noticeStart: times.from,
       noticeEnd: times.to,
-      noticeStops: noticeStops(text, stops),
+      noticeStops: noticeStops(text, stops, lineName, lineNames),
       noticeText: text.slice(0, 1200) || null,
     };
   } catch {
@@ -373,7 +379,16 @@ export async function scrapeTransport(previous = null) {
     process.stdout.write(`> ${line.name} ... `);
     const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
     const result = await scrapeLine(line, registry, previousLine);
-    Object.assign(result, await readNotice(line.noticeUrl, previousLine, result.stops));
+    Object.assign(
+      result,
+      await readNotice(
+        line.noticeUrl,
+        previousLine,
+        result.stops,
+        line.name,
+        lines.map((item) => item.name)
+      )
+    );
     result.timetableFile = usage.files.get(line.timetableUrl) ?? null;
     const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);
     console.log(

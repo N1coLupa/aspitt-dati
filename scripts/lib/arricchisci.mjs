@@ -1,27 +1,11 @@
-// Pulizia e completamento dei dati dei trasporti, dopo lo scrape.
-//
-// Lo scrape riporta quello che l'operatore pubblica; qui si aggiunge quello che
-// serve all'app per non sbagliare e si correggono gli errori noti dei PDF:
-//   - calendario del servizio (festivi locali, anno scolastico);
-//   - linee scolastiche, che girano solo nei giorni di lezione;
-//   - data da cui vale ogni quadro orario, letta dal nome del PDF;
-//   - corse che il PDF mette in un'unica colonna ma sono due (andata al mattino,
-//     ritorno ore dopo): spezzate, altrimenti il pianificatore propone un
-//     "viaggio" di sette ore;
-//   - orari che tornano indietro di un minuto per un refuso del quadro;
-//   - posizione delle fermate che MyMaps lascia senza coordinate.
-//
-// E' idempotente: si puo' applicare ai dati appena scaricati o a quelli di ieri.
-
 import fs from 'node:fs/promises';
+import { plausibleDay, publishedOn } from './dates-it.mjs';
 import path from 'node:path';
 import { applyRoadShapes } from './forme-stradali.mjs';
 import { applyStopPositions, computeStopPositions, streetsFromCache } from './posizioni.mjs';
 
 const DATA = path.join('scripts', 'data');
-/** Oltre quest'attesa fra due fermate consecutive, sono due corse diverse. */
 const SPLIT_GAP_MIN = 60;
-/** Un orario che torna indietro al massimo di tanto e' un refuso, non un'altra corsa. */
 const TYPO_MIN = 5;
 
 const readJson = async (file, fallback) => {
@@ -38,7 +22,6 @@ const toMinutes = (time) => {
 };
 const fromMinutes = (total) => `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
 
-/** "..._Orari_Ospedale-1-31-03-2026.pdf" -> "2026-03-31". */
 export function validFromUrl(url) {
   const name = decodeURIComponent(
     String(url ?? '')
@@ -50,7 +33,7 @@ export function validFromUrl(url) {
   if (!last) return null;
   const [, day, month, year] = last;
   if (+month < 1 || +month > 12 || +day < 1 || +day > 31) return null;
-  return `${year}-${month}-${day}`;
+  return plausibleDay(`${year}-${month}-${day}`, publishedOn(url));
 }
 
 export const isSchoolLine = (line) => /\bscuol/i.test(line.name) || line.id.startsWith('linea-scuola');
@@ -75,9 +58,6 @@ function splitAtGaps(line, trip, notes) {
     const gap = toMinutes(served[k].st.time) - toMinutes(served[k - 1].st.time);
     if (gap <= SPLIT_GAP_MIN) continue;
     const cut = served[k].pos;
-    // Ogni meta' tiene solo le proprie fermate: se le altre restassero con
-    // `served: false` l'app le mostrerebbe come soppressioni, cioe' come
-    // fermate che la corsa salta apposta.
     const first = { ...trip, id: `${trip.id}-a`, stopTimes: trip.stopTimes.slice(0, cut).map((st) => ({ ...st })) };
     const second = {
       ...trip,
@@ -86,16 +66,11 @@ function splitAtGaps(line, trip, notes) {
       stopTimes: trip.stopTimes.slice(cut).map((st) => ({ ...st })),
     };
     notes.push(`${line.name}, ${trip.code}: ${gap} minuti fra ${served[k - 1].st.time} e ${served[k].st.time}, divisa in due corse`);
-    // La seconda meta' puo' avere a sua volta un buco.
     return [first, ...splitAtGaps(line, second, notes)];
   }
   return [trip];
 }
 
-/**
- * Applica calendario, validita', correzioni e posizioni. `notes` raccoglie
- * quello che e' stato corretto, per il resoconto dell'aggiornamento.
- */
 const SPELLING_FIXES = [
   [/\bP\.\s?zza\b/gi, 'Piazza'],
   [/\bPensillina\b/gi, 'Pensilina'],
@@ -162,13 +137,11 @@ function unifyStopSpellings(transport, notes) {
 }
 
 export async function enrichTransport(transport, notes = []) {
-  // Linee che l'operatore pubblica ma che l'app non mostra (vedi linee-escluse.json).
   const escluse = new Set(((await readJson(path.join(DATA, 'linee-escluse.json'), null))?.linee ?? []).map((voce) => voce.id));
   if (escluse.size) {
     const prima = transport.lines.length;
     transport.lines = transport.lines.filter((line) => !escluse.has(line.id));
     if (transport.lines.length !== prima) {
-      // Le fermate servite solo da quelle linee non servono piu' a nessuno.
       const restano = new Set(transport.lines.flatMap((line) => line.stops.map((stop) => stop.stopId)));
       const fermatePrima = transport.stops.length;
       transport.stops = transport.stops
@@ -189,7 +162,6 @@ export async function enrichTransport(transport, notes = []) {
     line.school = isSchoolLine(line);
     line.validFrom = validFromUrl(line.timetableFile ?? line.timetableUrl);
     for (const trip of line.trips) fixTypos(trip, notes, line.name);
-    // Una corsa gia' divisa ha id che finisce in -a/-b e non ha piu' buchi.
     line.trips = line.trips.flatMap((trip) => splitAtGaps(line, trip, notes));
   }
 
@@ -201,7 +173,6 @@ export async function enrichTransport(transport, notes = []) {
   const estimated = transport.stops.filter((stop) => stop.position === 'estimated').map((stop) => stop.name);
   if (estimated.length) notes.push(`posizione solo stimata, da verificare sul posto: ${estimated.join(', ')}`);
 
-  // Tracciati disegnati a mano dall'operatore agganciati alle strade vere (cache in scripts/data).
   await applyRoadShapes(transport, path.join(DATA, 'forme-stradali.json'), notes);
 
   return transport;
