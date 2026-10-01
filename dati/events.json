@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:04:06.124Z",
+  "generatedAt": "2026-10-01T17:11:27.003Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -124,6 +124,32 @@
       "dated": true
     },
     {
+      "id": "live-racconta-federicus-in-uno-scatto-aperte-le-iscrizioni-al-con",
+      "title": "Racconta Federicus in uno scatto: aperte le iscrizioni al concorso fotografico “Il Mondo Creato”",
+      "url": "https://altamuralive.it/2026/10/01/racconta-federicus-in-uno-scatto-aperte-le-iscrizioni-al-concorso-fotografico-il-mondo-creato/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-10-01T15:37:57.000Z",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "startTime": null,
+      "venue": null,
+      "summary": "Fotografi professionisti e appassionati potranno raccontare Federicus 2026 attraverso luoghi e persone. Iscrizioni gratuite entro il 4 ottobre, fotografie da inviare entro il 9.",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "comune di altamura",
+        "Concorso di Fotografia",
+        "concorso fotografico",
+        "Federicus 2026"
+      ],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "dated": true
+    },
+    {
       "id": "ricorrenza-federicus-festa-medioevale-tredicesima-edizione",
       "title": "Federicus - festa medioevale - tredicesima edizione",
       "url": "https://www.vitobarone.it/altamura/eventi.htm",
@@ -142,6 +168,24 @@
         "esperienze"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-philidor-300-musica-e-strategia",
+      "title": "Philidor 300: Musica e strategia",
+      "url": "https://iltaccodibacco.it/puglia/eventi/332067.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "startTime": null,
+      "venue": "Ex monastero SantaCroce",
+      "summary": "Philidor scacchista e musicista a 300 anni dalla nascita Condurrà la serata dott.ssa Lucrezia Baldassarra Presidente dell&apos;Accademia Scacchi Altamura ASD Interviene Dott.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
       "dated": true
     },
     {

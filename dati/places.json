@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:06:23.005Z",
+  "generatedAt": "2026-10-01T17:11:30.941Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -36,7 +36,7 @@
           "distance": 32
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -231,7 +231,7 @@
           "distance": 331
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -630,15 +630,15 @@
     {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8317322,
-      "lon": 16.5499294,
+      "lat": 40.8329482,
+      "lon": 16.5510709,
       "categories": [
         "cultura"
       ],
       "icon": "archaeology",
-      "osm": "node/4126595981",
+      "osm": "way/1547047721",
       "address": null,
-      "website": null,
+      "website": "https://www.abmcaltamura.it/ipogeo/",
       "phone": null,
       "openingHours": null,
       "wikidata": null,
@@ -651,6 +651,15 @@
       "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
+          "stopId": "stop-via-iv-novembre-fronte-74",
+          "name": "Via IV Novembre (fronte 74)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 334
+        },
+        {
           "stopId": "stop-via-parisi-66",
           "name": "Via Parisi 66",
           "lines": [
@@ -659,23 +668,16 @@
             "linea-ovest",
             "pescariello-z-i"
           ],
-          "distance": 195
-        },
-        {
-          "stopId": "stop-via-parisi-fronte-civico-66",
-          "name": "Via Parisi fronte 66",
-          "lines": [
-            "pescariello-z-i"
-          ],
-          "distance": 195
+          "distance": 356
         },
         {
           "stopId": "stop-via-parisi-fronte-66",
           "name": "Via Parisi (fronte 66)",
           "lines": [
-            "navette-hub"
+            "navette-hub",
+            "pescariello-z-i"
           ],
-          "distance": 214
+          "distance": 375
         }
       ]
     },
@@ -746,7 +748,7 @@
           "distance": 167
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1322,7 +1324,7 @@
           "distance": 123
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1471,7 +1473,7 @@
           "distance": 31
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1515,7 +1517,7 @@
           "distance": 131
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1582,7 +1584,7 @@
           "distance": 80
         },
         {
-          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
+          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
