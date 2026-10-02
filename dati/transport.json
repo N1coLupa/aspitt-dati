@@ -1,11 +1,9 @@
 {
-  "generatedAt": "2026-10-02T01:40:07.489Z",
+  "generatedAt": "2026-10-02T10:36:40.967Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
-    "missing": [
-      "https://marinobusurbano.it/"
-    ]
+    "missing": []
   },
   "operator": {
     "name": "Autolinee Marino Michele S.r.l.",
@@ -7032,21 +7030,21 @@
           "lon": 16.47111
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": "2026-10-03",
       "noticeUntil": "2026-10-03",
       "noticeStart": "16:00",
       "noticeEnd": "24:00",
       "noticeStops": [
-        "stop-via-gravina-231",
         "stop-via-cicerone-fronte-75",
+        "stop-viale-traiano-35",
+        "stop-viale-martiri-129",
+        "stop-viale-martiri-83",
+        "stop-piazza-zanardelli-7",
+        "stop-via-dei-mille-103",
+        "stop-via-dei-mille-40",
         "stop-via-gravina-12",
-        "stop-via-gravina-92",
-        "stop-via-gravina-ang-via-della-cicoriella",
-        "stop-via-gravina-fronte-231"
+        "stop-via-gravina-92"
       ],
       "noticeText": "Si comunica che il 03.10.26 dalle 16:00 alle 24:00 su: - LINEA OSPEDALE 1 saranno SOPPRESSE le fermate da Via Cicerone (fronte 75) a Via Gravina 92; - LINEA OSPEDALE 2 saranno GARANTITE SOLO le seguenti fermate: - via Gravina 155 - Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus - da Via Londra 30 fino a Hub Via Santeramo ang. via Rocco Scotellaro",
       "timetableFile": null,
@@ -14441,27 +14439,35 @@
           "lon": 16.47108
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": "2026-10-03",
       "noticeUntil": "2026-10-03",
       "noticeStart": "16:00",
       "noticeEnd": "24:00",
       "noticeStops": [
+        "stop-ospedale-fermata-bus",
+        "stop-7-reggimento-bersaglieri-s-v-villa-serena",
         "stop-via-gravina-231",
         "stop-via-gravina-fronte-via-della-cicoriella",
-        "stop-via-gravina-155",
         "stop-via-gravina-79",
         "stop-via-gravina-7",
-        "stop-stazione-via-xxiv-maggio-fronte-uscita-sottopasso-fal-fermat",
-        "stop-via-londra-30",
+        "stop-via-parisi-66",
+        "stop-via-parisi-192-fronte-polivalente",
+        "stop-via-iv-novembre-ang-via-ii-giugno",
+        "stop-via-mura-megalitiche-fronte-stadio",
+        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+        "stop-via-bari-150",
         "stop-via-santeramo-161",
         "stop-via-santeramo-119",
+        "stop-piazza-unita-d-italia-8",
+        "stop-via-iv-novembre-fronte-1",
+        "stop-via-iv-novembre-fronte-74",
+        "stop-via-iv-novembre-fronte-via-ii-giugno",
+        "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
         "stop-via-gravina-ang-via-del-timo",
         "stop-via-gravina-ang-via-della-cicoriella",
-        "stop-via-gravina-fronte-231"
+        "stop-via-gravina-fronte-231",
+        "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena"
       ],
       "noticeText": "Si comunica che il 03.10.26 dalle 16:00 alle 24:00 su: - LINEA OSPEDALE 1 saranno SOPPRESSE le fermate da Via Cicerone (fronte 75) a Via Gravina 92; - LINEA OSPEDALE 2 saranno GARANTITE SOLO le seguenti fermate: - via Gravina 155 - Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus - da Via Londra 30 fino a Hub Via Santeramo ang. via Rocco Scotellaro",
       "timetableFile": null,
@@ -21822,22 +21828,16 @@
           "lon": 16.47108
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": "2026-10-04",
       "noticeUntil": "2026-10-04",
       "noticeStart": "10:00",
       "noticeEnd": "13:00",
       "noticeStops": [
-        "stop-via-gravina-231",
-        "stop-via-gravina-fronte-via-della-cicoriella",
         "stop-via-gravina-79",
         "stop-via-gravina-7",
         "stop-via-parisi-66",
-        "stop-via-parisi-192-fronte-polivalente",
-        "stop-via-gravina-fronte-231"
+        "stop-via-parisi-192-fronte-polivalente"
       ],
       "noticeText": "LINEA OSPEDALE DOMENICA E FESTIVI Si comunica che il giorno 04/10/2026 dalle 10:00 alle 13:00 sulla le fermate da: Via Gravina 79 a Via Parisi 192 (fronte Polivalente) SOPPRESSE saranno",
       "timetableFile": null,
@@ -26383,10 +26383,7 @@
           "lon": 16.5526
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Linea-Ovest-28-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -30528,10 +30525,7 @@
           "lon": 16.56535
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -33117,10 +33111,7 @@
           "lon": 16.55528
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-1-02-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -36880,10 +36871,7 @@
           "lon": 16.55593
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-2-08-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -39066,10 +39054,7 @@
           "lon": 16.55738
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MainoBus_Urbano_Orari_Scuola-3-28-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -40822,10 +40807,7 @@
           "lon": 16.55531
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-4-08-09-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -45245,10 +45227,7 @@
           "lon": 16.63828
         }
       ],
-      "warnings": [
-        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/08/MarinoBus_Urbano_Orari_Pescariello-04-08-2026.pdf",
-        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
-      ],
+      "warnings": [],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -45392,7 +45371,6 @@
       "lon": 16.544972,
       "lines": [
         "ospedale-1",
-        "linea-ovest",
         "linea-scuola-2"
       ],
       "position": "exact"
@@ -45426,9 +45404,9 @@
       "lon": 16.551188,
       "lines": [
         "ospedale-1",
-        "linea-ovest",
         "linea-scuola-2",
-        "linea-scuola-4"
+        "linea-scuola-4",
+        "linea-ovest"
       ],
       "position": "exact"
     },
@@ -46116,14 +46094,25 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-selva-fronte-117",
+      "id": "stop-via-selva-fronte-civ-117",
       "name": "Via Selva (fronte 117)",
-      "lat": 40.8216017,
-      "lon": 16.5459942,
+      "lat": 40.821602,
+      "lon": 16.545994,
       "lines": [
         "linea-ovest",
         "pescariello-z-i"
-      ]
+      ],
+      "position": "exact"
+    },
+    {
+      "id": "stop-via-a-di-crollalanza-fronte-civ-9",
+      "name": "Via A. di Crollalanza (fronte 9)",
+      "lat": 40.813509,
+      "lon": 16.545016,
+      "lines": [
+        "linea-ovest"
+      ],
+      "position": "exact"
     },
     {
       "id": "stop-via-matera-101",
@@ -46148,13 +46137,14 @@
       "position": "exact"
     },
     {
-      "id": "stop-piazza-zanardelli-7-bar-gelo",
+      "id": "stop-p-zza-zanardelli-7-bar-gelo",
       "name": "Piazza Zanardelli 7 (Bar Gelo)",
       "lat": 40.824379,
       "lon": 16.552021,
       "lines": [
         "linea-ovest"
-      ]
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-bari-14",
@@ -46172,8 +46162,7 @@
       "lat": 40.834205,
       "lon": 16.545514,
       "lines": [
-        "navette-hub",
-        "pescariello-z-i"
+        "navette-hub"
       ],
       "position": "exact"
     },
@@ -46183,8 +46172,7 @@
       "lat": 40.830579,
       "lon": 16.547891,
       "lines": [
-        "navette-hub",
-        "pescariello-z-i"
+        "navette-hub"
       ],
       "position": "exact"
     },
@@ -46630,6 +46618,26 @@
         "pescariello-z-i"
       ],
       "position": "exact"
+    },
+    {
+      "id": "stop-via-parisi-fronte-civico-192-polivalente",
+      "name": "Via Parisi fronte 192 (Polivalente)",
+      "lat": 40.834161,
+      "lon": 16.545795,
+      "lines": [
+        "pescariello-z-i"
+      ],
+      "position": "street"
+    },
+    {
+      "id": "stop-via-parisi-fronte-civico-66",
+      "name": "Via Parisi fronte 66",
+      "lat": 40.830734,
+      "lon": 16.548018,
+      "lines": [
+        "pescariello-z-i"
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-pietro-colletta-204",
