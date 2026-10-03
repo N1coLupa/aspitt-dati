@@ -1,26 +1,26 @@
 {
   "schema": 2,
-  "checkedAt": "2026-10-02T16:27:13.473Z",
+  "checkedAt": "2026-10-03T01:10:50.464Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-10-02T16:25:09.313Z",
-      "bytes": 1085303,
-      "sha256": "fc9b4b2f424c080789def009f557b1a3a8c7fd6ace46ecce2c21503794a0b06f"
+      "generatedAt": "2026-10-03T01:10:38.091Z",
+      "bytes": 1087417,
+      "sha256": "b9e21c5aaa4ddba07b889eca3bb35f59b442fbd98b8fbd90a9dda3c96be701d4"
     },
     "events": {
-      "generatedAt": "2026-10-02T16:25:17.879Z",
-      "bytes": 13070,
-      "sha256": "f7d9dae01a616fa6250fde1bc8d043e06a788f0c03ef164a4689cedb5bd37d54"
+      "generatedAt": "2026-10-03T01:10:45.005Z",
+      "bytes": 14293,
+      "sha256": "951c96de5511ff148766d2aaca67d37cf7347692a6253c2b3a5285738745effb"
     },
     "places": {
-      "generatedAt": "2026-10-02T10:36:54.478Z",
-      "bytes": 51860,
-      "sha256": "05b92b27df5682b62f3498cdabf05728cd7f24dce67bdf2150be19d782ff270d"
+      "generatedAt": "2026-10-03T01:10:50.454Z",
+      "bytes": 51889,
+      "sha256": "49296017311a761354d27912afcee124d02e6b51bf43cd2b53cf8c351b4c612c"
     },
     "alerts": {
-      "generatedAt": "2026-10-02T16:27:13.465Z",
+      "generatedAt": "2026-10-03T01:10:50.456Z",
       "bytes": 2288,
-      "sha256": "662e7cbf077e546c168a2d6d06f3b990f3899842d4571807d84bd80812dfe6a0"
+      "sha256": "022ca22a4ba6c4ee4117a538d5175cb2b08d2382a7bc46054cb23b7a3be5316b"
     }
   },
   "sources": {
@@ -33,11 +33,11 @@
       "error": null
     },
     "places": {
-      "status": "invariato",
-      "error": "HTTP 504"
+      "status": "aggiornato",
+      "error": null
     }
   },
   "app": "muevt",
-  "signedAt": "2026-10-02T16:27:25.988Z",
+  "signedAt": "2026-10-03T01:11:02.323Z",
   "keyId": "5VTN2Etz"
 }

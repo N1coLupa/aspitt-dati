@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:25:17.879Z",
+  "generatedAt": "2026-10-03T01:10:45.005Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -43,6 +43,38 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": true
+    },
+    {
+      "id": "life-federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-t",
+      "title": "Federicus 2026 (2, 3 e 4 ottobre): il programma integrale e il tema francescano",
+      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-tema-francescano/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "startTime": null,
+      "venue": "Piazza Matteotti",
+      "summary": "Fino al 4 ottobre",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
+      "alsoOn": [
+        {
+          "source": "AltamuraLife",
+          "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/"
+        },
+        {
+          "source": "Virgilio Eventi",
+          "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
+        },
+        {
+          "source": "Vito Barone",
+          "url": "https://www.vitobarone.it/altamura/eventi.htm"
+        }
       ],
       "dated": true
     },
@@ -91,34 +123,20 @@
       "dated": true
     },
     {
-      "id": "life-federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-t",
-      "title": "Federicus 2026 (2, 3 e 4 ottobre): il programma integrale e il tema francescano",
-      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-tema-francescano/",
+      "id": "life-pro-loco-il-pane-e-la-tradizione-della-terra",
+      "title": "Pro Loco: Il pane e la tradizione della terra",
+      "url": "https://www.altamuralife.it/eventi/pro-loco-il-pane-e-la-tradizione-della-terra/",
       "source": "AltamuraLife",
       "sourceUrl": "https://www.altamuralife.it/",
       "publishedAt": null,
-      "startDate": "2026-10-04",
-      "endDate": "2026-10-04",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
       "startTime": null,
-      "venue": "Piazza Matteotti",
-      "summary": "Oggi",
+      "venue": null,
+      "summary": "sabato 10 ottobre",
       "tags": [],
       "categories": [
-        "eventi"
-      ],
-      "alsoOn": [
-        {
-          "source": "AltamuraLife",
-          "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/"
-        },
-        {
-          "source": "Virgilio Eventi",
-          "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
-        },
-        {
-          "source": "Vito Barone",
-          "url": "https://www.vitobarone.it/altamura/eventi.htm"
-        }
+        "esperienze"
       ],
       "dated": true
     },
@@ -372,6 +390,24 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-nel-segno-di-francesco-al-mudima-opere-sacre-dedicate-al-san",
+      "title": "\"Nel segno di Francesco\" al Mudima, opere sacre dedicate al santo",
+      "url": "https://www.altamuralife.it/eventi/nel-segno-di-francesco-al-mudima-di-altamura-opere-sacre-dedicate-al-santo/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }
