@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:57:24.906Z",
+  "generatedAt": "2026-10-03T14:59:26.020Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -390,6 +390,24 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-il-cantico-delle-creature-in-lingua-madre-altamurana",
+      "title": "Il Cantico delle creature in lingua madre altamurana",
+      "url": "https://www.altamuralife.it/eventi/il-cantico-delle-creature-in-lingua-madre-altamurana/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     },
