@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T00:35:41.410Z",
+  "generatedAt": "2026-10-04T10:40:52.618Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -36,7 +36,7 @@
           "distance": 32
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -231,7 +231,7 @@
           "distance": 331
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -671,13 +671,12 @@
           "distance": 356
         },
         {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
+          "stopId": "stop-via-parisi-fronte-civico-66",
+          "name": "Via Parisi fronte 66",
           "lines": [
-            "navette-hub",
             "pescariello-z-i"
           ],
-          "distance": 375
+          "distance": 356
         }
       ]
     },
@@ -748,7 +747,7 @@
           "distance": 167
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1324,7 +1323,7 @@
           "distance": 123
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1473,7 +1472,7 @@
           "distance": 31
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1517,7 +1516,7 @@
           "distance": 131
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
@@ -1584,7 +1583,7 @@
           "distance": 80
         },
         {
-          "stopId": "stop-piazza-zanardelli-7-bar-gelo",
+          "stopId": "stop-p-zza-zanardelli-7-bar-gelo",
           "name": "Piazza Zanardelli 7 (Bar Gelo)",
           "lines": [
             "linea-ovest"
