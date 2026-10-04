@@ -1,26 +1,6 @@
 {
-  "generatedAt": "2026-10-03T15:01:36.322Z",
+  "generatedAt": "2026-10-04T00:35:41.412Z",
   "alerts": [
-    {
-      "id": "avviso-ospedale-1-2026-09-30",
-      "severity": "critical",
-      "lineId": "ospedale-1",
-      "title": "Avviso su Ospedale 1",
-      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
-      "createdAt": "2026-09-30T16:33:51.996Z",
-      "validUntil": "2026-10-03"
-    },
-    {
-      "id": "avviso-ospedale-2-2026-09-30",
-      "severity": "critical",
-      "lineId": "ospedale-2",
-      "title": "Avviso su Ospedale 2",
-      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
-      "createdAt": "2026-09-30T16:33:51.996Z",
-      "validUntil": "2026-10-03"
-    },
     {
       "id": "avviso-ospedale-domenica-e-festivi-2026-09-30",
       "severity": "critical",
