@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:54:07.080Z",
+  "generatedAt": "2026-10-05T11:41:25.228Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -23,7 +23,7 @@
       "route": "Via Gravina - Trentacapilli - Piazza Zanardelli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1tlPJKgyJkTU1oxiuXrDXOT7PosuwWvI&ll=40.8212292561109%2C16.516982050000006&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -7031,22 +7031,12 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": "2026-10-03",
-      "noticeUntil": "2026-10-03",
-      "noticeStart": "16:00",
-      "noticeEnd": "24:00",
-      "noticeStops": [
-        "stop-via-cicerone-fronte-75",
-        "stop-viale-traiano-35",
-        "stop-viale-martiri-129",
-        "stop-viale-martiri-83",
-        "stop-piazza-zanardelli-7",
-        "stop-via-dei-mille-103",
-        "stop-via-dei-mille-40",
-        "stop-via-gravina-12",
-        "stop-via-gravina-92"
-      ],
-      "noticeText": "Si comunica che il 03.10.26 dalle 16:00 alle 24:00 su: - LINEA OSPEDALE 1 saranno SOPPRESSE le fermate da Via Cicerone (fronte 75) a Via Gravina 92; - LINEA OSPEDALE 2 saranno GARANTITE SOLO le seguenti fermate: - via Gravina 155 - Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus - da Via Londra 30 fino a Hub Via Santeramo ang. via Rocco Scotellaro",
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
+      "noticeText": null,
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-03-31"
@@ -7058,7 +7048,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-03.10.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -14440,36 +14430,12 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": "2026-10-03",
-      "noticeUntil": "2026-10-03",
-      "noticeStart": "16:00",
-      "noticeEnd": "24:00",
-      "noticeStops": [
-        "stop-ospedale-fermata-bus",
-        "stop-7-reggimento-bersaglieri-s-v-villa-serena",
-        "stop-via-gravina-231",
-        "stop-via-gravina-fronte-via-della-cicoriella",
-        "stop-via-gravina-79",
-        "stop-via-gravina-7",
-        "stop-via-parisi-66",
-        "stop-via-parisi-192-fronte-polivalente",
-        "stop-via-iv-novembre-ang-via-ii-giugno",
-        "stop-via-mura-megalitiche-fronte-stadio",
-        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
-        "stop-via-bari-150",
-        "stop-via-santeramo-161",
-        "stop-via-santeramo-119",
-        "stop-piazza-unita-d-italia-8",
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-74",
-        "stop-via-iv-novembre-fronte-via-ii-giugno",
-        "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
-        "stop-via-gravina-ang-via-del-timo",
-        "stop-via-gravina-ang-via-della-cicoriella",
-        "stop-via-gravina-fronte-231",
-        "stop-7-reggimento-bersaglieri-via-gravina-ang-s-v-villa-serena"
-      ],
-      "noticeText": "Si comunica che il 03.10.26 dalle 16:00 alle 24:00 su: - LINEA OSPEDALE 1 saranno SOPPRESSE le fermate da Via Cicerone (fronte 75) a Via Gravina 92; - LINEA OSPEDALE 2 saranno GARANTITE SOLO le seguenti fermate: - via Gravina 155 - Stazione Via XXIV Maggio fronte uscita sottopasso Fal Fermata Bus - da Via Londra 30 fino a Hub Via Santeramo ang. via Rocco Scotellaro",
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
+      "noticeText": null,
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-06-12"
@@ -14481,7 +14447,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub - Trentacapilli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1iCfk8GkhcM_SZt7b7aedeL2_E_uDhNc&ll=40.825646463944054%2C16.51911380000001&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-04.10.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -21829,17 +21795,12 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": "2026-10-04",
-      "noticeUntil": "2026-10-04",
-      "noticeStart": "10:00",
-      "noticeEnd": "13:00",
-      "noticeStops": [
-        "stop-via-gravina-79",
-        "stop-via-gravina-7",
-        "stop-via-parisi-66",
-        "stop-via-parisi-192-fronte-polivalente"
-      ],
-      "noticeText": "LINEA OSPEDALE DOMENICA E FESTIVI Si comunica che il giorno 04/10/2026 dalle 10:00 alle 13:00 sulla le fermate da: Via Gravina 79 a Via Parisi 192 (fronte Polivalente) SOPPRESSE saranno",
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
+      "noticeText": null,
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-06-12"
