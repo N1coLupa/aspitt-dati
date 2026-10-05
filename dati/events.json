@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T15:33:52.113Z",
+  "generatedAt": "2026-10-05T00:54:14.466Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,119 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "tacco-rete-museale-per-federicus",
-      "title": "Rete Museale per Federicus",
-      "url": "https://iltaccodibacco.it/puglia/eventi/330894.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-09-30",
-      "endDate": "2026-10-04",
-      "startTime": null,
-      "venue": "Palazzo Baldassarre - Museo dell'Uomo di",
-      "summary": "🦅 Dalle origini del tempo ai Custodi del Mondo: la storia ti aspetta dove tutto è iniziato! 📜 In occasione di Federicus - Festa Medievale 2026, la Rete Museale Uomo di Altamura vi invita a vivere un viaggio…",
-      "tags": [],
-      "categories": [
-        "cultura",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-t",
-      "title": "Federicus 2026 (2, 3 e 4 ottobre): il programma integrale e il tema francescano",
-      "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-il-programma-integrale-e-il-tema-francescano/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-04",
-      "startTime": null,
-      "venue": "Piazza Matteotti",
-      "summary": "Fino al 4 ottobre",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "alsoOn": [
-        {
-          "source": "AltamuraLife",
-          "url": "https://www.altamuralife.it/eventi/federicus-2026-2-3-e-4-ottobre-importante-novita-la-grande-arena-spettacoli-in-piazza-matteotti/"
-        },
-        {
-          "source": "Virgilio Eventi",
-          "url": "https://www.virgilio.it/italia/altamura/eventi/federicus-corteo-storico-ad-altamura-e-palio-di-san-marco-fede-laicit-superstizione_8431057_6"
-        },
-        {
-          "source": "Vito Barone",
-          "url": "https://www.vitobarone.it/altamura/eventi.htm"
-        }
-      ],
-      "dated": true
-    },
-    {
-      "id": "live-racconta-federicus-in-uno-scatto-aperte-le-iscrizioni-al-con",
-      "title": "Racconta Federicus in uno scatto: aperte le iscrizioni al concorso fotografico “Il Mondo Creato”",
-      "url": "https://altamuralive.it/2026/10/01/racconta-federicus-in-uno-scatto-aperte-le-iscrizioni-al-concorso-fotografico-il-mondo-creato/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-10-01T15:37:57.000Z",
-      "startDate": "2026-10-04",
-      "endDate": "2026-10-04",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fotografi professionisti e appassionati potranno raccontare Federicus 2026 attraverso luoghi e persone. Iscrizioni gratuite entro il 4 ottobre, fotografie da inviare entro il 9.",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "comune di altamura",
-        "Concorso di Fotografia",
-        "concorso fotografico",
-        "Federicus 2026"
-      ],
-      "categories": [
-        "cultura",
-        "esperienze"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-il-cantico-delle-creature-in-lingua-madre-altamurana",
-      "title": "Il Cantico delle creature in lingua madre altamurana",
-      "url": "https://www.altamuralife.it/eventi/il-cantico-delle-creature-in-lingua-madre-altamurana/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-10-04",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fino al 4 ottobre",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-nel-segno-di-francesco-al-mudima-opere-sacre-dedicate-al-san",
-      "title": "\"Nel segno di Francesco\" al Mudima, opere sacre dedicate al santo",
-      "url": "https://www.altamuralife.it/eventi/nel-segno-di-francesco-al-mudima-di-altamura-opere-sacre-dedicate-al-santo/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-10-04",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fino al 4 ottobre",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
     {
       "id": "life-pro-loco-il-pane-e-la-tradizione-della-terra",
       "title": "Pro Loco: Il pane e la tradizione della terra",

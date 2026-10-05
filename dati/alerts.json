@@ -1,16 +1,6 @@
 {
-  "generatedAt": "2026-10-04T15:33:56.077Z",
+  "generatedAt": "2026-10-05T00:54:22.608Z",
   "alerts": [
-    {
-      "id": "avviso-ospedale-domenica-e-festivi-2026-09-30",
-      "severity": "critical",
-      "lineId": "ospedale-domenica-e-festivi",
-      "title": "Avviso su Ospedale - Domenica e Festivi",
-      "body": "L’operatore ha pubblicato un avviso di servizio per questa linea.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/Avviso-Federicus-04.10.26.pdf",
-      "createdAt": "2026-09-30T16:33:51.996Z",
-      "validUntil": "2026-10-04"
-    },
     {
       "id": "orari-linea-ovest-2026-09-29",
       "severity": "warning",
