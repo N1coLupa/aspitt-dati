@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:54:14.466Z",
+  "generatedAt": "2026-10-05T11:41:31.335Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -245,6 +245,31 @@
       ],
       "annual": true,
       "dated": true
+    },
+    {
+      "id": "live-il-13enne-americano-joe-petraro-con-radici-altamurane-autism",
+      "title": "Il 13enne americano Joe Petraro con radici altamurane: autismo, Tourette, leucemia e un futuro alla New York University",
+      "url": "https://altamuralive.it/2026/10/05/il-13enne-americano-joe-petraro-con-radici-altamurane-autismo-tourette-leucemia-e-un-futuro-alla-new-york-university/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-10-05T11:01:10.000Z",
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Ha 13 anni, vive a Long Island e porta con sé profonde radici altamurane. Joe Petraro-Hyppolite ha terminato le superiori a 11 anni, studia alla LSU ed è già stato ammesso a un master alla NYU.",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "autismo",
+        "bullismo",
+        "comune di altamura",
+        "Joe Petraro"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "dated": false
     },
     {
       "id": "live-pane-di-altamura-sopravvalutato-dop-anni-di-storia-e-ricerca",
