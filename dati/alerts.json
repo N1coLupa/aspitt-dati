@@ -1,23 +1,4 @@
 {
-  "generatedAt": "2026-10-05T19:34:11.006Z",
-  "alerts": [
-    {
-      "id": "orari-linea-ovest-2026-09-29",
-      "severity": "warning",
-      "lineId": "linea-ovest",
-      "title": "Orari aggiornati: Linea Ovest",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Linea-Ovest-28-09-2026.pdf",
-      "createdAt": "2026-09-29T01:54:53.924Z"
-    },
-    {
-      "id": "orari-linea-scuola-3-2026-09-29",
-      "severity": "warning",
-      "lineId": "linea-scuola-3",
-      "title": "Orari aggiornati: Linea Scuola 3",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/09/MainoBus_Urbano_Orari_Scuola-3-28-09-2026.pdf",
-      "createdAt": "2026-09-29T01:54:53.924Z"
-    }
-  ]
+  "generatedAt": "2026-10-06T02:19:11.091Z",
+  "alerts": []
 }
