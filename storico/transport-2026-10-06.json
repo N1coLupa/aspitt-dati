@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-10-05T19:31:54.688Z",
+  "generatedAt": "2026-10-06T02:16:57.605Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
-    "missing": []
+    "missing": [
+      "https://marinobusurbano.it/"
+    ]
   },
   "operator": {
     "name": "Autolinee Marino Michele S.r.l.",
@@ -7030,7 +7032,10 @@
           "lon": 16.47111
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -14429,7 +14434,10 @@
           "lon": 16.47108
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -21794,7 +21802,10 @@
           "lon": 16.47108
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -26344,7 +26355,10 @@
           "lon": 16.5526
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Linea-Ovest-28-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -30486,7 +30500,10 @@
           "lon": 16.56535
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -33072,7 +33089,10 @@
           "lon": 16.55528
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-1-02-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -36832,7 +36852,10 @@
           "lon": 16.55593
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-2-08-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -39015,7 +39038,10 @@
           "lon": 16.55738
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MainoBus_Urbano_Orari_Scuola-3-28-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -40768,7 +40794,10 @@
           "lon": 16.55531
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-4-08-09-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -45188,7 +45217,10 @@
           "lon": 16.63828
         }
       ],
-      "warnings": [],
+      "warnings": [
+        "PDF orari non leggibile: il sito ha chiesto la verifica anti-bot (captcha) su https://marinobusurbano.it/wp-content/uploads/2026/08/MarinoBus_Urbano_Orari_Pescariello-04-08-2026.pdf",
+        "PDF non scaricabile: tenute le corse di ieri, stesso quadro orario"
+      ],
       "noticeFrom": null,
       "noticeUntil": null,
       "noticeStart": null,
@@ -45332,6 +45364,7 @@
       "lon": 16.544972,
       "lines": [
         "ospedale-1",
+        "linea-ovest",
         "linea-scuola-2"
       ],
       "position": "exact"
@@ -45365,9 +45398,9 @@
       "lon": 16.551188,
       "lines": [
         "ospedale-1",
+        "linea-ovest",
         "linea-scuola-2",
-        "linea-scuola-4",
-        "linea-ovest"
+        "linea-scuola-4"
       ],
       "position": "exact"
     },
@@ -46055,25 +46088,14 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-selva-fronte-civ-117",
+      "id": "stop-via-selva-fronte-117",
       "name": "Via Selva (fronte 117)",
-      "lat": 40.821602,
-      "lon": 16.545994,
+      "lat": 40.8216017,
+      "lon": 16.5459942,
       "lines": [
         "linea-ovest",
         "pescariello-z-i"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-via-a-di-crollalanza-fronte-civ-9",
-      "name": "Via A. di Crollalanza (fronte 9)",
-      "lat": 40.813509,
-      "lon": 16.545016,
-      "lines": [
-        "linea-ovest"
-      ],
-      "position": "exact"
+      ]
     },
     {
       "id": "stop-via-matera-101",
@@ -46098,14 +46120,13 @@
       "position": "exact"
     },
     {
-      "id": "stop-p-zza-zanardelli-7-bar-gelo",
+      "id": "stop-piazza-zanardelli-7-bar-gelo",
       "name": "Piazza Zanardelli 7 (Bar Gelo)",
       "lat": 40.824379,
       "lon": 16.552021,
       "lines": [
         "linea-ovest"
-      ],
-      "position": "street"
+      ]
     },
     {
       "id": "stop-via-bari-14",
@@ -46123,7 +46144,8 @@
       "lat": 40.834205,
       "lon": 16.545514,
       "lines": [
-        "navette-hub"
+        "navette-hub",
+        "pescariello-z-i"
       ],
       "position": "exact"
     },
@@ -46133,7 +46155,8 @@
       "lat": 40.830579,
       "lon": 16.547891,
       "lines": [
-        "navette-hub"
+        "navette-hub",
+        "pescariello-z-i"
       ],
       "position": "exact"
     },
@@ -46579,26 +46602,6 @@
         "pescariello-z-i"
       ],
       "position": "exact"
-    },
-    {
-      "id": "stop-via-parisi-fronte-civico-192-polivalente",
-      "name": "Via Parisi fronte 192 (Polivalente)",
-      "lat": 40.834161,
-      "lon": 16.545795,
-      "lines": [
-        "pescariello-z-i"
-      ],
-      "position": "street"
-    },
-    {
-      "id": "stop-via-parisi-fronte-civico-66",
-      "name": "Via Parisi fronte 66",
-      "lat": 40.830734,
-      "lon": 16.548018,
-      "lines": [
-        "pescariello-z-i"
-      ],
-      "position": "street"
     },
     {
       "id": "stop-via-pietro-colletta-204",
