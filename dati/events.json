@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T17:36:34.671Z",
+  "generatedAt": "2026-10-08T01:54:32.326Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,6 +27,24 @@
     }
   ],
   "events": [
+    {
+      "id": "tacco-ennio-morricone-la-musica-senza-tempo",
+      "title": "Ennio Morricone...la Musica senza Tempo",
+      "url": "https://iltaccodibacco.it/puglia/eventi/332723.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Ennio Morricone è tra i più amati compositori di colonne sonore di tutti i tempi, le sue musiche affascinano generazioni diverse e attraversano svariati generi.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
     {
       "id": "life-pro-loco-il-pane-e-la-tradizione-della-terra",
       "title": "Pro Loco: Il pane e la tradizione della terra",
