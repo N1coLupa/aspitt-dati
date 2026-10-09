@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T02:07:09.905Z",
+  "generatedAt": "2026-10-09T11:25:15.491Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -75,6 +75,24 @@
       "startTime": null,
       "venue": "Ex monastero SantaCroce",
       "summary": "Philidor scacchista e musicista a 300 anni dalla nascita Condurrà la serata dott.ssa Lucrezia Baldassarra Presidente dell&apos;Accademia Scacchi Altamura ASD Interviene Dott.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-sublime-tango",
+      "title": "Sublime Tango",
+      "url": "https://iltaccodibacco.it/puglia/eventi/332965.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Sublime Tango è uno spettacolo di musica e danza. Un vero e proprio racconto musicale e coreografico, in cui diversi quadri narrativi danno forma a storie intense: a volte d’amore, altre volte popolate da personaggi e…",
       "tags": [],
       "categories": [
         "eventi"
