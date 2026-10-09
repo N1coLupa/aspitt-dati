@@ -1,16 +1,16 @@
 {
   "schema": 2,
-  "checkedAt": "2026-10-08T17:39:54.986Z",
+  "checkedAt": "2026-10-09T02:07:23.370Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-10-08T17:39:35.793Z",
+      "generatedAt": "2026-10-09T02:07:03.817Z",
       "bytes": 1082578,
-      "sha256": "0f49d918623971305bfbb528a93ae66c3b9a6abc0bc9051300d8a455288d0273"
+      "sha256": "7afb1744477b56bb61ed0a56976ac44caba4d39844dfcb1f1d53c8ecc75790d6"
     },
     "events": {
-      "generatedAt": "2026-10-08T17:39:44.249Z",
+      "generatedAt": "2026-10-09T02:07:09.905Z",
       "bytes": 11634,
-      "sha256": "cba59f0d5b26eb0a804416e98c570c3dfe79532a3e066f63092f96321018eecc"
+      "sha256": "b9005221da5b50e69105ed535134988a62e4d01f05f40b81c5372f581c67e451"
     },
     "places": {
       "generatedAt": "2026-10-08T01:54:35.526Z",
@@ -18,9 +18,9 @@
       "sha256": "799cdc0ff256d5eeb6a12f18ceeaaa7e1ad9a9246cf713a5e008b1f3767ed7da"
     },
     "alerts": {
-      "generatedAt": "2026-10-08T17:39:54.976Z",
+      "generatedAt": "2026-10-09T02:07:23.366Z",
       "bytes": 63,
-      "sha256": "ffc959c2e2fdd2c156f6bd007af3f1080fac85fa2e27c1220cb1a8ef24f3729e"
+      "sha256": "7b92ffddbfe203c0add2306dd31fc66af3289a2ef290f5f5b502189d9fcf7929"
     }
   },
   "sources": {
@@ -34,10 +34,10 @@
     },
     "places": {
       "status": "invariato",
-      "error": "solo 22 luoghi: attesi almeno 25"
+      "error": "HTTP 500"
     }
   },
   "app": "muevt",
-  "signedAt": "2026-10-08T17:40:03.434Z",
+  "signedAt": "2026-10-09T02:07:34.624Z",
   "keyId": "5VTN2Etz"
 }
