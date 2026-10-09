@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:25:15.491Z",
+  "generatedAt": "2026-10-09T17:15:05.248Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -118,6 +118,24 @@
         "esperienze"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-la-favola-de-andre",
+      "title": "La Favola de Andrè",
+      "url": "https://iltaccodibacco.it/puglia/eventi/332967.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Un viaggio di parole, musica ed emozioni nel mondo di Fabrizio De André. Un racconto unico per riscoprire l&apos;universo poetico e umano di Fabrizio De André.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
       "dated": true
     },
     {
