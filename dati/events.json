@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T10:42:54.693Z",
+  "generatedAt": "2026-10-10T16:00:42.990Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -46,6 +46,28 @@
       "dated": true
     },
     {
+      "id": "comune-729859",
+      "title": "Presentazione docu-film su Altamura",
+      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo-729858-729859",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-10T11:05:17.000Z",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "startTime": "21:30",
+      "venue": null,
+      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
+      "tags": [
+        "Cinema",
+        "Eventi sociali",
+        "Evento culturale"
+      ],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
       "id": "tacco-sublime-tango",
       "title": "Sublime Tango",
       "url": "https://iltaccodibacco.it/puglia/eventi/332965.html",
@@ -82,6 +104,28 @@
         "esperienze"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "comune-729858",
+      "title": "Presentazione docu-film su Altamura",
+      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo-729858",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-10T11:05:17.000Z",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "startTime": "21:30",
+      "venue": null,
+      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
+      "tags": [
+        "Cinema",
+        "Eventi sociali",
+        "Evento culturale"
+      ],
+      "categories": [
+        "cultura"
+      ],
       "dated": true
     },
     {
