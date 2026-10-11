@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T16:00:42.990Z",
+  "generatedAt": "2026-10-11T00:59:25.616Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,24 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "tacco-philidor-300-musica-e-strategia",
-      "title": "Philidor 300: Musica e strategia",
-      "url": "https://iltaccodibacco.it/puglia/eventi/332067.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-10",
-      "startTime": null,
-      "venue": "Ex monastero SantaCroce",
-      "summary": "Philidor scacchista e musicista a 300 anni dalla nascita Condurrà la serata dott.ssa Lucrezia Baldassarra Presidente dell&apos;Accademia Scacchi Altamura ASD Interviene Dott.",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
     {
       "id": "comune-729859",
       "title": "Presentazione docu-film su Altamura",
@@ -381,24 +363,6 @@
       ],
       "categories": [
         "cultura",
-        "esperienze"
-      ],
-      "dated": false
-    },
-    {
-      "id": "life-pro-loco-il-pane-e-la-tradizione-della-terra",
-      "title": "Pro Loco: Il pane e la tradizione della terra",
-      "url": "https://www.altamuralife.it/eventi/pro-loco-il-pane-e-la-tradizione-della-terra/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "summary": "Oggi",
-      "tags": [],
-      "categories": [
         "esperienze"
       ],
       "dated": false
