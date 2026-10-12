@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T01:18:56.518Z",
+  "generatedAt": "2026-10-12T12:15:03.493Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -30502,49 +30502,40 @@
       "name": "Linea Scuola 1",
       "color": "#c967f7",
       "route": "Piazza A. Moro - Via Treviso - Via Gravina - Via IV Novembre",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/MarinoBus_Urbano_Orari_Scuola-1-02-09-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-1-12-10-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1P37iPUbk7CmY7xsF1U0-ajWTVToXIWg&ll=40.826320545416955%2C16.549427800000007&z=15",
       "noticeUrl": null,
       "stops": [
         {
-          "stopId": "stop-viale-traiano-4",
+          "stopId": "stop-",
           "index": 1,
-          "name": "Viale Traiano, 4",
-          "lat": 40.8216058,
-          "lon": 16.5620932,
-          "interpolated": false,
-          "position": "exact"
-        },
-        {
-          "stopId": "stop-viale-traiano-16",
-          "index": 2,
-          "name": "Viale Traiano, 16",
-          "lat": 40.8204728,
-          "lon": 16.5638999,
-          "interpolated": false,
-          "position": "exact"
-        },
-        {
-          "stopId": "stop-via-cicerone-11",
-          "index": 3,
-          "name": "Via Cicerone, 11",
-          "lat": 40.818455,
-          "lon": 16.564245,
+          "name": "",
+          "lat": 40.819987,
+          "lon": 16.564694,
           "interpolated": true,
-          "position": "exact"
+          "position": "estimated"
         },
         {
-          "stopId": "stop-via-carpentino-fronte-134",
-          "index": 4,
-          "name": "Via Carpentino fronte 134",
-          "lat": 40.8197789,
-          "lon": 16.5626522,
-          "interpolated": false,
-          "position": "exact"
+          "stopId": "stop-",
+          "index": 2,
+          "name": "",
+          "lat": 40.819987,
+          "lon": 16.564694,
+          "interpolated": true,
+          "position": "estimated"
+        },
+        {
+          "stopId": "stop-",
+          "index": 3,
+          "name": "",
+          "lat": 40.819987,
+          "lon": 16.564694,
+          "interpolated": true,
+          "position": "estimated"
         },
         {
           "stopId": "stop-via-treviso-ang-via-manzoni",
-          "index": 5,
+          "index": 4,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.8186225,
           "lon": 16.5596383,
@@ -30553,7 +30544,7 @@
         },
         {
           "stopId": "stop-via-treviso-27",
-          "index": 6,
+          "index": 5,
           "name": "Via Treviso, 27",
           "lat": 40.8186301,
           "lon": 16.5557033,
@@ -30562,7 +30553,7 @@
         },
         {
           "stopId": "stop-via-putignano-16",
-          "index": 7,
+          "index": 6,
           "name": "Via Putignano, 16",
           "lat": 40.816854,
           "lon": 16.5520802,
@@ -30571,7 +30562,7 @@
         },
         {
           "stopId": "stop-via-giorgio-almirante",
-          "index": 8,
+          "index": 7,
           "name": "Via Giorgio Almirante",
           "lat": 40.8154979,
           "lon": 16.5490716,
@@ -30580,7 +30571,7 @@
         },
         {
           "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
-          "index": 9,
+          "index": 8,
           "name": "Via Lama di Cervo ang. Via Giorgio Almirante",
           "lat": 40.8169002,
           "lon": 16.5462522,
@@ -30589,7 +30580,7 @@
         },
         {
           "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
-          "index": 10,
+          "index": 9,
           "name": "Largo Giovanni Paolo II",
           "lat": 40.8162075,
           "lon": 16.5432924,
@@ -30598,7 +30589,7 @@
         },
         {
           "stopId": "stop-via-selva-ang-via-centonze",
-          "index": 11,
+          "index": 10,
           "name": "Via Selva ang. Via Centonze",
           "lat": 40.8195376,
           "lon": 16.5442206,
@@ -30607,7 +30598,7 @@
         },
         {
           "stopId": "stop-via-bresso-111",
-          "index": 12,
+          "index": 11,
           "name": "Via Bresso 111",
           "lat": 40.8232163,
           "lon": 16.5470709,
@@ -30616,7 +30607,7 @@
         },
         {
           "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
-          "index": 13,
+          "index": 12,
           "name": "Via Gravina (fronte via della Cicoriella)",
           "lat": 40.8276237,
           "lon": 16.5341899,
@@ -30625,7 +30616,7 @@
         },
         {
           "stopId": "stop-viale-padre-pio",
-          "index": 14,
+          "index": 13,
           "name": "Viale Padre Pio",
           "lat": 40.830661,
           "lon": 16.541725,
@@ -30634,7 +30625,7 @@
         },
         {
           "stopId": "stop-via-xxiv-maggio",
-          "index": 15,
+          "index": 14,
           "name": "Via XXIV Maggio",
           "lat": 40.83729,
           "lon": 16.551149,
@@ -30643,7 +30634,7 @@
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-          "index": 16,
+          "index": 15,
           "name": "Via Mura Megalitiche ang. Via IV Novembre",
           "lat": 40.8352129,
           "lon": 16.555228,
@@ -30653,221 +30644,215 @@
       ],
       "trips": [
         {
-          "id": "linea-scuola-1-p1-corsa-unica",
-          "code": "Corsa unica",
+          "id": "linea-scuola-1-p1-corsa-2",
+          "code": "Corsa 2",
           "variant": 1,
-          "serviceLabel": "da Lunedì a Venerdì",
+          "serviceLabel": null,
           "days": [
             1,
             2,
             3,
             4,
-            5
+            5,
+            6
           ],
-          "departure": "07:20",
+          "departure": "07:21",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
-              "time": "07:20",
-              "served": true
+              "time": null,
+              "served": false
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-",
+              "index": 3,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "index": 4,
               "time": "07:21",
               "served": true
             },
             {
-              "stopId": "stop-via-cicerone-11",
-              "index": 3,
+              "stopId": "stop-via-treviso-27",
+              "index": 5,
               "time": "07:23",
               "served": true
             },
             {
-              "stopId": "stop-via-carpentino-fronte-134",
-              "index": 4,
+              "stopId": "stop-via-putignano-16",
+              "index": 6,
               "time": "07:24",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-ang-via-manzoni",
-              "index": 5,
-              "time": "07:26",
-              "served": true
-            },
-            {
-              "stopId": "stop-via-treviso-27",
-              "index": 6,
-              "time": "07:26",
-              "served": true
-            },
-            {
-              "stopId": "stop-via-putignano-16",
-              "index": 7,
-              "time": "07:28",
-              "served": true
-            },
-            {
               "stopId": "stop-via-giorgio-almirante",
-              "index": 8,
-              "time": "07:30",
+              "index": 7,
+              "time": "07:26",
               "served": true
             },
             {
               "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
-              "index": 9,
-              "time": "07:31",
+              "index": 8,
+              "time": "07:26",
               "served": true
             },
             {
               "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
-              "index": 10,
-              "time": "07:33",
+              "index": 9,
+              "time": "07:28",
               "served": true
             },
             {
               "stopId": "stop-via-selva-ang-via-centonze",
-              "index": 11,
-              "time": "07:36",
+              "index": 10,
+              "time": "07:30",
               "served": true
             },
             {
               "stopId": "stop-via-bresso-111",
-              "index": 12,
-              "time": "07:40",
+              "index": 11,
+              "time": "07:31",
               "served": true
             },
             {
               "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
-              "index": 13,
-              "time": "07:47",
+              "index": 12,
+              "time": "07:33",
               "served": true
             },
             {
               "stopId": "stop-viale-padre-pio",
-              "index": 14,
-              "time": "07:51",
+              "index": 13,
+              "time": "07:36",
               "served": true
             },
             {
               "stopId": "stop-via-xxiv-maggio",
-              "index": 15,
-              "time": "07:54",
+              "index": 14,
+              "time": "07:40",
               "served": true
             },
             {
               "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-              "index": 16,
-              "time": "07:55",
+              "index": 15,
+              "time": "07:47",
               "served": true
             }
           ]
         },
         {
-          "id": "linea-scuola-1-p1-corsa-unica-2",
-          "code": "Corsa unica",
+          "id": "linea-scuola-1-p1-corsa-3",
+          "code": "Corsa 3",
           "variant": 1,
-          "serviceLabel": "Sabato",
+          "serviceLabel": null,
           "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
             6
           ],
-          "departure": "07:20",
+          "departure": "07:21",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
-              "time": "07:20",
-              "served": true
+              "time": null,
+              "served": false
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
-              "time": "07:21",
-              "served": true
+              "time": null,
+              "served": false
             },
             {
-              "stopId": "stop-via-cicerone-11",
+              "stopId": "stop-",
               "index": 3,
-              "time": "07:23",
-              "served": true
-            },
-            {
-              "stopId": "stop-via-carpentino-fronte-134",
-              "index": 4,
               "time": null,
               "served": false
             },
             {
               "stopId": "stop-via-treviso-ang-via-manzoni",
-              "index": 5,
-              "time": null,
-              "served": false
+              "index": 4,
+              "time": "07:21",
+              "served": true
             },
             {
               "stopId": "stop-via-treviso-27",
+              "index": 5,
+              "time": "07:23",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-putignano-16",
               "index": 6,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-via-putignano-16",
+              "stopId": "stop-via-giorgio-almirante",
               "index": 7,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
+              "index": 8,
+              "time": null,
+              "served": false
+            },
+            {
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "index": 9,
               "time": "07:28",
               "served": true
             },
             {
-              "stopId": "stop-via-giorgio-almirante",
-              "index": 8,
+              "stopId": "stop-via-selva-ang-via-centonze",
+              "index": 10,
               "time": "07:30",
               "served": true
             },
             {
-              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
-              "index": 9,
+              "stopId": "stop-via-bresso-111",
+              "index": 11,
               "time": "07:31",
               "served": true
             },
             {
-              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
-              "index": 10,
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
+              "index": 12,
               "time": "07:33",
               "served": true
             },
             {
-              "stopId": "stop-via-selva-ang-via-centonze",
-              "index": 11,
+              "stopId": "stop-viale-padre-pio",
+              "index": 13,
               "time": "07:36",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-111",
-              "index": 12,
+              "stopId": "stop-via-xxiv-maggio",
+              "index": 14,
               "time": "07:40",
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
-              "index": 13,
-              "time": "07:47",
-              "served": true
-            },
-            {
-              "stopId": "stop-viale-padre-pio",
-              "index": 14,
-              "time": "07:51",
-              "served": true
-            },
-            {
-              "stopId": "stop-via-xxiv-maggio",
-              "index": 15,
-              "time": "07:54",
-              "served": true
-            },
-            {
               "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-              "index": 16,
-              "time": "07:55",
+              "index": 15,
+              "time": "07:47",
               "served": true
             }
           ]
@@ -30887,97 +30872,97 @@
           "departure": "13:10",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
               "time": "13:10",
               "served": true
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
               "time": "13:11",
               "served": true
             },
             {
-              "stopId": "stop-via-cicerone-11",
+              "stopId": "stop-",
               "index": 3,
               "time": "13:13",
               "served": true
             },
             {
-              "stopId": "stop-via-carpentino-fronte-134",
+              "stopId": "stop-via-treviso-ang-via-manzoni",
               "index": 4,
               "time": "13:21",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "stopId": "stop-via-treviso-27",
               "index": 5,
               "time": "13:22",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-27",
+              "stopId": "stop-via-putignano-16",
               "index": 6,
               "time": "13:24",
               "served": true
             },
             {
-              "stopId": "stop-via-putignano-16",
+              "stopId": "stop-via-giorgio-almirante",
               "index": 7,
               "time": "13:25",
               "served": true
             },
             {
-              "stopId": "stop-via-giorgio-almirante",
+              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
               "index": 8,
               "time": "13:26",
               "served": true
             },
             {
-              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
               "index": 9,
               "time": "13:27",
               "served": true
             },
             {
-              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "stopId": "stop-via-selva-ang-via-centonze",
               "index": 10,
               "time": "13:28",
               "served": true
             },
             {
-              "stopId": "stop-via-selva-ang-via-centonze",
+              "stopId": "stop-via-bresso-111",
               "index": 11,
               "time": "13:30",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-111",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 12,
               "time": "13:32",
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
+              "stopId": "stop-viale-padre-pio",
               "index": 13,
               "time": "13:34",
               "served": true
             },
             {
-              "stopId": "stop-viale-padre-pio",
+              "stopId": "stop-via-xxiv-maggio",
               "index": 14,
               "time": "13:35",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio",
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
               "index": 15,
               "time": "13:37",
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "stopId": null,
               "index": 16,
               "time": "13:39",
               "served": true
@@ -31012,97 +30997,97 @@
           "departure": "13:10",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
               "time": "13:10",
               "served": true
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
               "time": "13:11",
               "served": true
             },
             {
-              "stopId": "stop-via-cicerone-11",
+              "stopId": "stop-",
               "index": 3,
               "time": "13:13",
               "served": true
             },
             {
-              "stopId": "stop-via-carpentino-fronte-134",
+              "stopId": "stop-via-treviso-ang-via-manzoni",
               "index": 4,
               "time": "13:21",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "stopId": "stop-via-treviso-27",
               "index": 5,
               "time": "13:22",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-27",
+              "stopId": "stop-via-putignano-16",
               "index": 6,
               "time": "13:24",
               "served": true
             },
             {
-              "stopId": "stop-via-putignano-16",
+              "stopId": "stop-via-giorgio-almirante",
               "index": 7,
               "time": "13:25",
               "served": true
             },
             {
-              "stopId": "stop-via-giorgio-almirante",
+              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
               "index": 8,
               "time": "13:26",
               "served": true
             },
             {
-              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
               "index": 9,
               "time": "13:27",
               "served": true
             },
             {
-              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "stopId": "stop-via-selva-ang-via-centonze",
               "index": 10,
               "time": "13:28",
               "served": true
             },
             {
-              "stopId": "stop-via-selva-ang-via-centonze",
+              "stopId": "stop-via-bresso-111",
               "index": 11,
               "time": "13:30",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-111",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 12,
               "time": "13:32",
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
+              "stopId": "stop-viale-padre-pio",
               "index": 13,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-viale-padre-pio",
+              "stopId": "stop-via-xxiv-maggio",
               "index": 14,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-via-xxiv-maggio",
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
               "index": 15,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "stopId": null,
               "index": 16,
               "time": "13:39",
               "served": true
@@ -31136,97 +31121,97 @@
           "departure": "13:50",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
               "time": "13:50",
               "served": true
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
               "time": "13:51",
               "served": true
             },
             {
-              "stopId": "stop-via-cicerone-11",
+              "stopId": "stop-",
               "index": 3,
               "time": "13:53",
               "served": true
             },
             {
-              "stopId": "stop-via-carpentino-fronte-134",
+              "stopId": "stop-via-treviso-ang-via-manzoni",
               "index": 4,
               "time": "14:01",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "stopId": "stop-via-treviso-27",
               "index": 5,
               "time": "14:02",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-27",
+              "stopId": "stop-via-putignano-16",
               "index": 6,
               "time": "14:04",
               "served": true
             },
             {
-              "stopId": "stop-via-putignano-16",
+              "stopId": "stop-via-giorgio-almirante",
               "index": 7,
               "time": "14:05",
               "served": true
             },
             {
-              "stopId": "stop-via-giorgio-almirante",
+              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
               "index": 8,
               "time": "14:06",
               "served": true
             },
             {
-              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
               "index": 9,
               "time": "14:07",
               "served": true
             },
             {
-              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "stopId": "stop-via-selva-ang-via-centonze",
               "index": 10,
               "time": "14:08",
               "served": true
             },
             {
-              "stopId": "stop-via-selva-ang-via-centonze",
+              "stopId": "stop-via-bresso-111",
               "index": 11,
               "time": "14:10",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-111",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 12,
               "time": "14:12",
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
+              "stopId": "stop-viale-padre-pio",
               "index": 13,
               "time": "14:14",
               "served": true
             },
             {
-              "stopId": "stop-viale-padre-pio",
+              "stopId": "stop-via-xxiv-maggio",
               "index": 14,
               "time": "14:15",
               "served": true
             },
             {
-              "stopId": "stop-via-xxiv-maggio",
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
               "index": 15,
               "time": "14:17",
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "stopId": null,
               "index": 16,
               "time": "14:19",
               "served": true
@@ -31256,97 +31241,97 @@
           "departure": "13:50",
           "stopTimes": [
             {
-              "stopId": "stop-viale-traiano-4",
+              "stopId": "stop-",
               "index": 1,
               "time": "13:50",
               "served": true
             },
             {
-              "stopId": "stop-viale-traiano-16",
+              "stopId": "stop-",
               "index": 2,
               "time": "13:51",
               "served": true
             },
             {
-              "stopId": "stop-via-cicerone-11",
+              "stopId": "stop-",
               "index": 3,
               "time": "13:53",
               "served": true
             },
             {
-              "stopId": "stop-via-carpentino-fronte-134",
+              "stopId": "stop-via-treviso-ang-via-manzoni",
               "index": 4,
               "time": "14:01",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-ang-via-manzoni",
+              "stopId": "stop-via-treviso-27",
               "index": 5,
               "time": "14:02",
               "served": true
             },
             {
-              "stopId": "stop-via-treviso-27",
+              "stopId": "stop-via-putignano-16",
               "index": 6,
               "time": "14:04",
               "served": true
             },
             {
-              "stopId": "stop-via-putignano-16",
+              "stopId": "stop-via-giorgio-almirante",
               "index": 7,
               "time": "14:05",
               "served": true
             },
             {
-              "stopId": "stop-via-giorgio-almirante",
+              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
               "index": 8,
               "time": "14:06",
               "served": true
             },
             {
-              "stopId": "stop-via-lama-di-cervo-ang-via-giorgio-almirante",
+              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
               "index": 9,
               "time": "14:07",
               "served": true
             },
             {
-              "stopId": "stop-largo-giovanni-paolo-ii-pensilina",
+              "stopId": "stop-via-selva-ang-via-centonze",
               "index": 10,
               "time": "14:08",
               "served": true
             },
             {
-              "stopId": "stop-via-selva-ang-via-centonze",
+              "stopId": "stop-via-bresso-111",
               "index": 11,
               "time": "14:10",
               "served": true
             },
             {
-              "stopId": "stop-via-bresso-111",
+              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
               "index": 12,
               "time": "14:12",
               "served": true
             },
             {
-              "stopId": "stop-via-gravina-fronte-via-della-cicoriella",
+              "stopId": "stop-viale-padre-pio",
               "index": 13,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-viale-padre-pio",
+              "stopId": "stop-via-xxiv-maggio",
               "index": 14,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-via-xxiv-maggio",
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
               "index": 15,
               "time": null,
               "served": false
             },
             {
-              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "stopId": null,
               "index": 16,
               "time": "14:19",
               "served": true
@@ -33081,7 +33066,7 @@
       "noticeText": null,
       "timetableFile": null,
       "school": true,
-      "validFrom": "2026-09-02"
+      "validFrom": "2026-10-12"
     },
     {
       "id": "linea-scuola-2",
@@ -36848,13 +36833,40 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/09/MainoBus_Urbano_Orari_Scuola-3-28-09-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-12-10-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
         {
-          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "stopId": "stop-viale-traiano-4",
           "index": 1,
+          "name": "Viale Traiano, 4",
+          "lat": 40.821526,
+          "lon": 16.562209,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-viale-traiano-16",
+          "index": 2,
+          "name": "Viale Traiano, 16",
+          "lat": 40.82044,
+          "lon": 16.563886,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-cicerone-11",
+          "index": 3,
+          "name": "Via Cicerone, 11",
+          "lat": 40.818455,
+          "lon": 16.564245,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "index": 4,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro",
           "lat": 40.8257408,
           "lon": 16.5652285,
@@ -36863,7 +36875,7 @@
         },
         {
           "stopId": "stop-via-santeramo-ang-via-cassano",
-          "index": 2,
+          "index": 5,
           "name": "Via Santeramo ang. Via Cassano",
           "lat": 40.8279506,
           "lon": 16.5587449,
@@ -36872,7 +36884,7 @@
         },
         {
           "stopId": "stop-via-cassano-ang-via-lucera",
-          "index": 3,
+          "index": 6,
           "name": "Via Cassano ang. Via Lucera",
           "lat": 40.8298599,
           "lon": 16.5614298,
@@ -36881,7 +36893,7 @@
         },
         {
           "stopId": "stop-via-dino-delucia",
-          "index": 4,
+          "index": 7,
           "name": "Via Dino Delucia",
           "lat": 40.8334914,
           "lon": 16.5701208,
@@ -36890,7 +36902,7 @@
         },
         {
           "stopId": "stop-via-madrid",
-          "index": 5,
+          "index": 8,
           "name": "Via Madrid",
           "lat": 40.8361107,
           "lon": 16.5686502,
@@ -36899,7 +36911,7 @@
         },
         {
           "stopId": "stop-via-londra-23",
-          "index": 6,
+          "index": 9,
           "name": "Via Londra, 23",
           "lat": 40.8375794,
           "lon": 16.5657696,
@@ -36908,7 +36920,7 @@
         },
         {
           "stopId": "stop-via-bari-265",
-          "index": 7,
+          "index": 10,
           "name": "Via Bari, 265",
           "lat": 40.8366224,
           "lon": 16.5625892,
@@ -36917,7 +36929,7 @@
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
-          "index": 8,
+          "index": 11,
           "name": "Via Mura Megalitiche ang. Via Vecchia Buoncammino",
           "lat": 40.8346836,
           "lon": 16.5593649,
@@ -36926,7 +36938,7 @@
         },
         {
           "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-          "index": 9,
+          "index": 12,
           "name": "Via Mura Megalitiche ang. Via IV Novembre",
           "lat": 40.8349998,
           "lon": 16.5548565,
@@ -36935,7 +36947,7 @@
         },
         {
           "stopId": "stop-via-xxiv-maggio",
-          "index": 10,
+          "index": 13,
           "name": "Via XXIV Maggio",
           "lat": 40.83729,
           "lon": 16.551149,
@@ -36944,7 +36956,7 @@
         },
         {
           "stopId": "stop-viale-padre-pio",
-          "index": 11,
+          "index": 14,
           "name": "Viale Padre Pio",
           "lat": 40.830661,
           "lon": 16.541725,
@@ -36953,7 +36965,7 @@
         },
         {
           "stopId": "stop-via-bresso",
-          "index": 12,
+          "index": 15,
           "name": "Via Bresso",
           "lat": 40.826164,
           "lon": 16.545717,
@@ -36962,7 +36974,7 @@
         },
         {
           "stopId": "stop-via-quintino-sella-29",
-          "index": 13,
+          "index": 16,
           "name": "Via Quintino Sella, 29",
           "lat": 40.8242067,
           "lon": 16.5502679,
@@ -36971,7 +36983,7 @@
         },
         {
           "stopId": "stop-viale-martiri-6",
-          "index": 14,
+          "index": 17,
           "name": "Viale Martiri, 6",
           "lat": 40.8240671,
           "lon": 16.5539552,
@@ -36980,7 +36992,7 @@
         },
         {
           "stopId": "stop-viale-martiri",
-          "index": 15,
+          "index": 18,
           "name": "Viale Martiri",
           "lat": 40.824067,
           "lon": 16.553955,
@@ -37002,95 +37014,113 @@
             5,
             6
           ],
-          "departure": "07:26",
+          "departure": "07:20",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-viale-traiano-4",
               "index": 1,
+              "time": "07:20",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-traiano-16",
+              "index": 2,
+              "time": "07:21",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cicerone-11",
+              "index": 3,
+              "time": "07:23",
+              "served": true
+            },
+            {
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "index": 4,
               "time": "07:26",
               "served": true
             },
             {
               "stopId": "stop-via-santeramo-ang-via-cassano",
-              "index": 2,
+              "index": 5,
               "time": "07:28",
               "served": true
             },
             {
               "stopId": "stop-via-cassano-ang-via-lucera",
-              "index": 3,
+              "index": 6,
               "time": "07:30",
               "served": true
             },
             {
               "stopId": "stop-via-dino-delucia",
-              "index": 4,
+              "index": 7,
               "time": "07:32",
               "served": true
             },
             {
               "stopId": "stop-via-madrid",
-              "index": 5,
+              "index": 8,
               "time": "07:34",
               "served": true
             },
             {
               "stopId": "stop-via-londra-23",
-              "index": 6,
+              "index": 9,
               "time": "07:35",
               "served": true
             },
             {
               "stopId": "stop-via-bari-265",
-              "index": 7,
+              "index": 10,
               "time": "07:36",
               "served": true
             },
             {
               "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
-              "index": 8,
+              "index": 11,
               "time": "07:39",
               "served": true
             },
             {
               "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-              "index": 9,
+              "index": 12,
               "time": "07:40",
               "served": true
             },
             {
               "stopId": "stop-via-xxiv-maggio",
-              "index": 10,
+              "index": 13,
               "time": "07:43",
               "served": true
             },
             {
               "stopId": "stop-viale-padre-pio",
-              "index": 11,
+              "index": 14,
               "time": "07:45",
               "served": true
             },
             {
               "stopId": "stop-via-bresso",
-              "index": 12,
+              "index": 15,
               "time": "07:50",
               "served": true
             },
             {
               "stopId": "stop-via-quintino-sella-29",
-              "index": 13,
+              "index": 16,
               "time": "07:52",
               "served": true
             },
             {
               "stopId": "stop-viale-martiri-6",
-              "index": 14,
+              "index": 17,
               "time": "07:54",
               "served": true
             },
             {
               "stopId": "stop-viale-martiri",
-              "index": 15,
+              "index": 18,
               "time": "07:55",
               "served": true
             }
@@ -39024,7 +39054,7 @@
       "noticeText": null,
       "timetableFile": null,
       "school": true,
-      "validFrom": "2026-09-28"
+      "validFrom": "2026-10-12"
     },
     {
       "id": "linea-scuola-4",
@@ -45880,7 +45910,7 @@
       "lon": 16.564245,
       "lines": [
         "ospedale-domenica-e-festivi",
-        "linea-scuola-1"
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -45890,8 +45920,7 @@
       "lat": 40.819748,
       "lon": 16.56258,
       "lines": [
-        "ospedale-domenica-e-festivi",
-        "linea-scuola-1"
+        "ospedale-domenica-e-festivi"
       ],
       "position": "exact"
     },
@@ -46196,7 +46225,7 @@
       "lon": 16.562209,
       "lines": [
         "navette-hub",
-        "linea-scuola-1"
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -46207,7 +46236,7 @@
       "lon": 16.563886,
       "lines": [
         "navette-hub",
-        "linea-scuola-1"
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -46240,6 +46269,16 @@
         "navette-hub"
       ],
       "position": "exact"
+    },
+    {
+      "id": "stop-",
+      "name": "",
+      "lat": 40.819987,
+      "lon": 16.564694,
+      "lines": [
+        "linea-scuola-1"
+      ],
+      "position": "estimated"
     },
     {
       "id": "stop-via-giorgio-almirante",
