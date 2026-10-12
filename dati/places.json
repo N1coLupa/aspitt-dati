@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T01:19:07.879Z",
+  "generatedAt": "2026-10-12T12:15:16.056Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -1096,18 +1096,17 @@
           "name": "Viale Traiano 16",
           "lines": [
             "navette-hub",
-            "linea-scuola-1"
+            "linea-scuola-3"
           ],
           "distance": 107
         },
         {
-          "stopId": "stop-viale-traiano-4",
-          "name": "Viale Traiano 4",
+          "stopId": "stop-",
+          "name": "",
           "lines": [
-            "navette-hub",
             "linea-scuola-1"
           ],
-          "distance": 176
+          "distance": 155
         }
       ]
     },
