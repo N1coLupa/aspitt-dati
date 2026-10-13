@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T03:02:20.551Z",
+  "generatedAt": "2026-10-13T11:58:42.474Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -147,6 +147,24 @@
       "dated": true
     },
     {
+      "id": "tacco-sua-maesta-il-pianoforte",
+      "title": "Sua Maestà il Pianoforte!",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333329.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "“Sua Maestà il Pianoforte!” è un concerto speciale per due pianoforti che celebra lo strumento simbolo della grande tradizione musicale nella sua veste più spettacolare e coinvolgente.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
       "id": "life-federicult-la-rassegna-culturale-tra-fede-arte-e-storia",
       "title": "Federicult: la rassegna culturale tra fede, arte e storia",
       "url": "https://www.altamuralife.it/eventi/federicult-la-rassegna-culturale-tra-fede-arte-e-storia/",
@@ -161,6 +179,78 @@
       "tags": [],
       "categories": [
         "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-the-sound-of-magic",
+      "title": "The Sound of Magic",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333331.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Cartoons Orchestra nasce nel 2023 per celebrare i 100 anni della Disney Corporation ed ha come finalità offrire al pubblico l’ascolto delle più belle colonne sonore Disney di tutti i tempi interpretate da un ensemble di…",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-immagini-tra-le-note",
+      "title": "Immagini Tra le Note",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333332.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "“Immagini tra le Note” offre un’esperienza straordinaria che esplora il potente legame tra la musica e il cinema, abbracciando una varietà di stili e dimensioni artistiche.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-daria-biancardi-orchestra",
+      "title": "Daria Biancardi & Orchestra",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333333.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Il concerto è un evento unico che unisce la straordinaria e potente voce soul di Daria Biancardi all’eleganza orchestrale dell’Orchestra del Levante.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-gli-inediti-mercadantiani",
+      "title": "Gli Inediti Mercadantiani",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "startTime": null,
+      "venue": "Chiesa Sant'Agostino - Altamura (Ba)",
+      "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": true
     },
