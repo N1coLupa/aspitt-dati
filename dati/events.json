@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T17:51:43.664Z",
+  "generatedAt": "2026-10-14T01:12:35.366Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,28 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "comune-729859",
-      "title": "Presentazione docu-film su Altamura",
-      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo-729858-729859",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-10-10T11:05:17.000Z",
-      "startDate": "2026-10-13",
-      "endDate": "2026-10-13",
-      "startTime": "21:30",
-      "venue": null,
-      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
-      "tags": [
-        "Cinema",
-        "Eventi sociali",
-        "Evento culturale"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
     {
       "id": "tacco-sublime-tango",
       "title": "Sublime Tango",
