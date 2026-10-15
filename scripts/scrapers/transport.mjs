@@ -227,7 +227,18 @@ async function scrapeLine(line, registry, previousLine) {
     };
   }
 
-  const pdfStops = tables[0]?.stops ?? [];
+  // Ogni pagina del PDF ha il suo elenco di fermate. Se e' lo stesso della prima (corse in piu') si
+  // riusa; se e' diverso (il ritorno, con altre fermate) si aggiunge in coda con numeri propri. Prima
+  // gli orari di ogni pagina venivano letti sulle fermate della prima: dal 12/10/2026 il ritorno della
+  // Linea Scuola 1 finiva su fermate sbagliate.
+  const sameList = (a, b) => a.length === b.length && a.every((stop, i) => stopKey(stop.name) === stopKey(b[i].name));
+  const pdfStops = [];
+  const offsets = tables.map((table, tableIndex) => {
+    if (tableIndex > 0 && sameList(table.stops, tables[0].stops)) return 0;
+    const offset = pdfStops.length;
+    pdfStops.push(...table.stops.map((stop) => ({ ...stop, index: stop.index + offset })));
+    return offset;
+  });
   const knownNames = [...kml.stops, ...(previousLine?.stops ?? []), ...registry.values()].map((stop) => stop.name);
   const baseStops = pdfStops.length
     ? pdfStops.map((s) => ({ index: s.index, name: restoreSpacedName(joinLigature(s.name), knownNames) }))
@@ -270,8 +281,8 @@ async function scrapeLine(line, registry, previousLine) {
       days: trip.days ?? [1, 2, 3, 4, 5, 6],
       departure: trip.departure,
       stopTimes: trip.stopTimes.map((st) => ({
-        stopId: byIndex.get(st.stopIndex) ?? null,
-        index: st.stopIndex,
+        stopId: byIndex.get(st.stopIndex + offsets[tableIndex]) ?? null,
+        index: st.stopIndex + offsets[tableIndex],
         time: st.time,
         served: st.served,
       })),

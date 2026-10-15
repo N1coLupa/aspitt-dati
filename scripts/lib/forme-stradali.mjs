@@ -76,6 +76,59 @@ async function snapToRoads(shape) {
   return { points: result, straight, total: points.length - 1 };
 }
 
+const LOOP_MIN_M = 60;
+const LOOP_MAX_M = 900;
+const LOOP_CLOSE_M = 20;
+const STOP_NEAR_M = 50;
+const TURN_PROBE_M = 40;
+const TURN_SAME_M = 25;
+
+// Il punto a circa `distance` metri prima (step -1) o dopo (step +1) dell'indice dato.
+function probe(points, index, step, distance) {
+  let k = index;
+  let walked = 0;
+  while (k + step >= 0 && k + step < points.length && walked < distance) {
+    walked += meters(points[k], points[k + step]);
+    k += step;
+  }
+  return walked >= distance * 0.6 ? points[k] : null;
+}
+
+// L'aggancio alle strade a volte fa fare all'autobus il giro di un isolato per tornare nello stesso punto
+// (una fermata dall'altra parte della strada, un senso unico). Un giro cosi' si toglie, a meno che serva
+// una fermata o sia un'inversione: in quel caso la linea esce dalla stessa strada da cui e' entrata.
+export function removeEmptyLoops(shape, stops = []) {
+  const located = stops.filter((stop) => Number.isFinite(stop?.lat) && Number.isFinite(stop?.lon));
+  let points = shape.slice();
+  let i = 0;
+  while (i < points.length) {
+    let walked = 0;
+    let end = -1;
+    for (let j = i + 1; j < points.length; j += 1) {
+      walked += meters(points[j - 1], points[j]);
+      if (walked > LOOP_MAX_M) break;
+      if (walked > LOOP_MIN_M && meters(points[i], points[j]) < LOOP_CLOSE_M) end = j;
+    }
+    if (end < 0) {
+      i += 1;
+      continue;
+    }
+    const inner = points.slice(i + 1, end);
+    const servesStop = located.some(
+      (stop) => meters(stop, points[i]) > 30 && meters(stop, points[end]) > 30 && inner.some((point) => meters(stop, point) < STOP_NEAR_M)
+    );
+    const before = probe(points, i, -1, TURN_PROBE_M);
+    const after = probe(points, end, 1, TURN_PROBE_M);
+    const turnaround = before && after && meters(before, after) < TURN_SAME_M;
+    if (servesStop || turnaround) {
+      i = end;
+      continue;
+    }
+    points = [...points.slice(0, i + 1), ...points.slice(end + 1)];
+  }
+  return points;
+}
+
 export async function applyRoadShapes(transport, cacheFile, notes = []) {
   const cache = await readJson(cacheFile, {
     fonte: '© OpenStreetMap contributors, ODbL (tracciati agganciati alle strade con OSRM)',
@@ -109,7 +162,9 @@ export async function applyRoadShapes(transport, cacheFile, notes = []) {
         continue;
       }
     }
-    line.shape = entry.forma.map(([lat, lon]) => ({ lat, lon }));
+    const snapped = entry.forma.map(([lat, lon]) => ({ lat, lon }));
+    line.shape = removeEmptyLoops(snapped, line.stops);
+    if (line.shape.length < snapped.length) notes.push(`${line.name}: tolti dal tracciato giri d'isolato senza fermate`);
   }
 
   if (changed) await fs.writeFile(cacheFile, `${JSON.stringify(cache)}\n`);

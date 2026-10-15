@@ -1,14 +1,3 @@
-// Controllo di sanità sui dati generati dagli scraper.
-//
-// Serve a impedire che una modifica al sito dell'operatore, un PDF illeggibile
-// o un feed vuoto finiscano nell'app come "nessuna corsa in programma". Se una
-// di queste condizioni non regge, l'aggiornamento va fermato e i dati del
-// giorno prima restano validi.
-//
-// Uso: node scripts/check-data.mjs
-// Le funzioni `validate*` sono usate anche da run-daily.mjs per decidere, fonte
-// per fonte, se i dati nuovi sono buoni o se tenere quelli del giorno prima.
-
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
@@ -20,7 +9,6 @@ let notes = [];
 const fail = (message) => problems.push(message);
 const note = (message) => notes.push(message);
 
-/** Esegue un controllo e restituisce i problemi trovati, senza toccare lo stato globale. */
 function collect(check, data) {
   const savedProblems = problems;
   const savedNotes = notes;
@@ -40,6 +28,27 @@ function collect(check, data) {
 export const validateTransport = (data) => collect(checkTransport, data);
 export const validateEvents = (data) => collect(checkEvents, data);
 export const validatePlaces = (data) => collect(checkPlaces, data);
+export const validateZtl = (data) => collect(checkZtl, data);
+export const validateParking = (data) => collect(checkParking, data);
+
+function checkZtl(data) {
+  if (!data.zones?.length) fail('nessuna zona ZTL');
+  for (const zone of data.zones ?? []) {
+    if ((zone.polygon?.length ?? 0) < 4) fail(`${zone.name}: perimetro senza punti`);
+    if (!zone.sources?.length) fail(`${zone.name}: nessuna fonte`);
+    if (!zone.bands?.length && !zone.always) fail(`${zone.name}: nessun orario`);
+  }
+  const age = (Date.now() - Date.parse(data.verifiedAt)) / 86400000;
+  if (age > 180) note(`ZTL: regole verificate ${Math.round(age)} giorni fa, ricontrollare le ordinanze (scripts/data/ztl.json)`);
+}
+
+function checkParking(data) {
+  if ((data.parking?.length ?? 0) < 10) fail(`solo ${data.parking?.length ?? 0} parcheggi`);
+  for (const item of data.parking ?? []) {
+    if (!Number.isFinite(item.lat) || !Number.isFinite(item.lon)) fail(`${item.id}: senza coordinate`);
+    if (item.access !== 'public' && item.access !== 'private') fail(`${item.id}: accesso non valido`);
+  }
+}
 
 async function readJson(name) {
   return JSON.parse(await fs.readFile(path.join(DATA_DIR, name), 'utf8'));
@@ -64,8 +73,6 @@ function checkTransport(data) {
       note(`${line.name}: nessuna corsa importata`);
       continue;
     }
-    // Ogni corsa deve avere un orario per almeno metà delle fermate: se il
-    // parser della griglia va fuori asse, il sintomo è proprio questo.
     const broken = line.trips.filter((trip) => trip.stopTimes.filter((st) => st.served).length < line.stops.length * 0.4);
     if (broken.length > line.trips.length / 2) {
       fail(`${line.name}: ${broken.length}/${line.trips.length} corse quasi vuote`);
@@ -81,8 +88,6 @@ function checkTransport(data) {
     if (line.timetableUrl && !line.validFrom) note(`${line.name}: data di validita' non leggibile dal nome del PDF`);
   }
 
-  // Il calendario scolastico va aggiunto a mano ogni anno: se manca quello
-  // dell'anno che sta per cominciare, le linee Scuola resterebbero spente.
   const years = data.calendar?.schoolYears ?? [];
   const today = new Date().toISOString().slice(0, 10);
   const soon = new Date(Date.now() + 45 * 86400000).toISOString().slice(0, 10);
@@ -112,8 +117,6 @@ function checkEvents(data) {
 }
 
 function checkPlaces(data) {
-  // I luoghi non si contano piu' a centinaia: sono quelli scelti in
-  // scripts/data/places-curated.json, e ognuno deve avere la sua scheda.
   if (data.places.length < 25) fail(`solo ${data.places.length} luoghi: attesi almeno 25`);
   if (!data.places.some((place) => place.highlight)) fail('nessun luogo in evidenza');
 
@@ -132,9 +135,12 @@ async function main() {
   checkTransport(transport);
   checkEvents(events);
   checkPlaces(places);
+  // ZTL e parcheggi sono arrivati dopo: se il file c'e' deve essere valido.
+  const ztl = await readJson('ztl.json').catch(() => null);
+  const parking = await readJson('parcheggi.json').catch(() => null);
+  if (ztl) checkZtl(ztl);
+  if (parking) checkParking(parking);
 
-  // Orari vecchi non sono un errore: se il sito dell'operatore blocca lo
-  // scaricamento si tengono gli ultimi validi. Lo si segnala e basta.
   const age = (Date.now() - new Date(transport.generatedAt).getTime()) / 3600000;
   if (age > 48) note(`i dati dei trasporti hanno ${Math.round(age)} ore (tenuti gli ultimi validi)`);
 

@@ -1,0 +1,385 @@
+{
+  "generatedAt": "2026-10-15T20:57:36.092Z",
+  "verifiedAt": "2026-10-15",
+  "source": "Comune di Altamura; perimetro © OpenStreetMap",
+  "zones": [
+    {
+      "id": "centro-storico",
+      "name": "ZTL Centro storico",
+      "polygon": [
+        [
+          40.825755,
+          16.551348
+        ],
+        [
+          40.825756,
+          16.551235
+        ],
+        [
+          40.825876,
+          16.550843
+        ],
+        [
+          40.825932,
+          16.550667
+        ],
+        [
+          40.826056,
+          16.55042
+        ],
+        [
+          40.826315,
+          16.550167
+        ],
+        [
+          40.826588,
+          16.550047
+        ],
+        [
+          40.826764,
+          16.54997
+        ],
+        [
+          40.826807,
+          16.549951
+        ],
+        [
+          40.827021,
+          16.549873
+        ],
+        [
+          40.827169,
+          16.549824
+        ],
+        [
+          40.827525,
+          16.54991
+        ],
+        [
+          40.827817,
+          16.54997
+        ],
+        [
+          40.828065,
+          16.550024
+        ],
+        [
+          40.828141,
+          16.550056
+        ],
+        [
+          40.828204,
+          16.550091
+        ],
+        [
+          40.828233,
+          16.550108
+        ],
+        [
+          40.828409,
+          16.550208
+        ],
+        [
+          40.828497,
+          16.550258
+        ],
+        [
+          40.828546,
+          16.550304
+        ],
+        [
+          40.828581,
+          16.550352
+        ],
+        [
+          40.828625,
+          16.55043
+        ],
+        [
+          40.828681,
+          16.550549
+        ],
+        [
+          40.828856,
+          16.550917
+        ],
+        [
+          40.828512,
+          16.551758
+        ],
+        [
+          40.828582,
+          16.55192
+        ],
+        [
+          40.828617,
+          16.552006
+        ],
+        [
+          40.828704,
+          16.55223
+        ],
+        [
+          40.82871,
+          16.552274
+        ],
+        [
+          40.828711,
+          16.552313
+        ],
+        [
+          40.828617,
+          16.552006
+        ],
+        [
+          40.829051,
+          16.551764
+        ],
+        [
+          40.829182,
+          16.552284
+        ],
+        [
+          40.82961,
+          16.553809
+        ],
+        [
+          40.829564,
+          16.553896
+        ],
+        [
+          40.829487,
+          16.554043
+        ],
+        [
+          40.829272,
+          16.554478
+        ],
+        [
+          40.828882,
+          16.554876
+        ],
+        [
+          40.828684,
+          16.555067
+        ],
+        [
+          40.828593,
+          16.555155
+        ],
+        [
+          40.828491,
+          16.555269
+        ],
+        [
+          40.828369,
+          16.555406
+        ],
+        [
+          40.828077,
+          16.55561
+        ],
+        [
+          40.827856,
+          16.555761
+        ],
+        [
+          40.8277,
+          16.55585
+        ],
+        [
+          40.827452,
+          16.555994
+        ],
+        [
+          40.827325,
+          16.556075
+        ],
+        [
+          40.827224,
+          16.556145
+        ],
+        [
+          40.827183,
+          16.556174
+        ],
+        [
+          40.826952,
+          16.556329
+        ],
+        [
+          40.826731,
+          16.556486
+        ],
+        [
+          40.826611,
+          16.556532
+        ],
+        [
+          40.826611,
+          16.556532
+        ],
+        [
+          40.826351,
+          16.556573
+        ],
+        [
+          40.826169,
+          16.556563
+        ],
+        [
+          40.826081,
+          16.556548
+        ],
+        [
+          40.826063,
+          16.556545
+        ],
+        [
+          40.825981,
+          16.556521
+        ],
+        [
+          40.825926,
+          16.55649
+        ],
+        [
+          40.82588,
+          16.556423
+        ],
+        [
+          40.825825,
+          16.556338
+        ],
+        [
+          40.825704,
+          16.556073
+        ],
+        [
+          40.825656,
+          16.555963
+        ],
+        [
+          40.825559,
+          16.555725
+        ],
+        [
+          40.825547,
+          16.555695
+        ],
+        [
+          40.825472,
+          16.555395
+        ],
+        [
+          40.825438,
+          16.555256
+        ],
+        [
+          40.825404,
+          16.554951
+        ],
+        [
+          40.825402,
+          16.55491
+        ],
+        [
+          40.825392,
+          16.554674
+        ],
+        [
+          40.825376,
+          16.554143
+        ],
+        [
+          40.825376,
+          16.554098
+        ],
+        [
+          40.825378,
+          16.553879
+        ],
+        [
+          40.825424,
+          16.553052
+        ],
+        [
+          40.825223,
+          16.551677
+        ],
+        [
+          40.825669,
+          16.551773
+        ],
+        [
+          40.825755,
+          16.551348
+        ],
+        [
+          40.825755,
+          16.551348
+        ]
+      ],
+      "perimeterNote": "Ricostruito dalle vie che chiudono il centro storico (OpenStreetMap). La planimetria ufficiale del Comune non è pubblicata: i confini esatti sono quelli dei cartelli ai varchi.",
+      "always": {
+        "varchi": [
+          "Piazza Unità d'Italia",
+          "Piazza Resistenza"
+        ],
+        "orari": "0-24, tutti i giorni"
+      },
+      "bands": [
+        {
+          "giorni": "feriali",
+          "ora": "solare",
+          "dalle": "19:30",
+          "alle": "22:00"
+        },
+        {
+          "giorni": "feriali",
+          "ora": "legale",
+          "dalle": "19:30",
+          "alle": "24:00"
+        },
+        {
+          "giorni": "festivi",
+          "ora": "tutte",
+          "dalle": "10:00",
+          "alle": "24:00"
+        }
+      ],
+      "timedGates": [
+        "Via Nicola Melodia",
+        "Via Conservatorio Carmine",
+        "Piazza Madonna dei Martiri"
+      ],
+      "gatesNote": "Varchi di accesso alla ZTL e all'area pedonale elencati nell'Ordinanza n. 809/2024.",
+      "access": [
+        "Residenti autorizzati",
+        "Persone con disabilità con contrassegno (CUDE)",
+        "Titolari di attività commerciali e ricettive del centro storico",
+        "Mezzi di soccorso e forze dell'ordine"
+      ],
+      "enforcement": "Varchi elettronici con telecamera: il transito senza permesso viene multato.",
+      "contact": "Polizia Locale di Altamura, 080 3141014",
+      "status": "La ZTL 0-24 su tutti i varchi, sperimentata da febbraio 2025, è stata rinviata dal Comune alla fine dei lavori nel centro storico: valgono gli orari qui sopra.",
+      "sources": [
+        {
+          "titolo": "Comune di Altamura, Ordinanza dirigenziale n. 809 del 06/12/2024",
+          "url": "https://altamura-api.municipiumapp.it/s3/182/allegati/notizie/2024/ordinanza-dirigenziale-n-809-2024.pdf",
+          "data": "2024-12-06"
+        },
+        {
+          "titolo": "AltamuraLive, ZTL pienamente attiva: orari e varchi sempre attivi",
+          "url": "https://altamuralive.it/2021/08/16/altamura-ztl-pienamente-attiva-terminato-il-periodo-di-pre-esercizio/",
+          "data": "2021-08-16"
+        },
+        {
+          "titolo": "AltamuraLive, rinvio della sperimentazione ZTL 0-24",
+          "url": "https://altamuralive.it/2025/03/27/altamura-rinvio-sperimentazione-ztl-strisce-gialle-tornano-blu/",
+          "data": "2025-03-27"
+        }
+      ]
+    }
+  ]
+}

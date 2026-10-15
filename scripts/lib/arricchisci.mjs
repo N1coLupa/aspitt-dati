@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { plausibleDay, publishedOn } from './dates-it.mjs';
 import path from 'node:path';
 import { applyRoadShapes } from './forme-stradali.mjs';
+import { applyHopRoutes } from './tratti-stradali.mjs';
 import { applyStopPositions, computeStopPositions, streetsFromCache } from './posizioni.mjs';
 
 const DATA = path.join('scripts', 'data');
@@ -75,6 +76,7 @@ const SPELLING_FIXES = [
   [/\bP\.\s?zza\b/gi, 'Piazza'],
   [/\bPensillina\b/gi, 'Pensilina'],
   [/\bCicorella\b/g, 'Cicoriella'],
+  [/\bMegaltiche\b/g, 'Megalitiche'],
   [/\bciv(?:ico|\.)\s*/gi, ''],
   [/\s+-\s+fronte\b/gi, ' fronte'],
   [/\s{2,}/g, ' '],
@@ -136,6 +138,17 @@ function unifyStopSpellings(transport, notes) {
   notes.push(`unificate ${replaced.size} fermate scritte in modo diverso: ${[...replaced.keys()].join(', ')}`);
 }
 
+// Le linee di una fermata sono quelle che la elencano davvero: dopo esclusioni e unificazioni
+// l'elenco in transport.stops restava con linee che non ci passano piu'.
+export function syncStopLines(transport) {
+  const served = new Map();
+  for (const line of transport.lines) {
+    for (const stop of line.stops) served.set(stop.stopId, new Set([...(served.get(stop.stopId) ?? []), line.id]));
+  }
+  for (const stop of transport.stops) stop.lines = transport.lines.map((line) => line.id).filter((id) => served.get(stop.id)?.has(id));
+  transport.stops = transport.stops.filter((stop) => stop.lines.length);
+}
+
 export async function enrichTransport(transport, notes = []) {
   const escluse = new Set(((await readJson(path.join(DATA, 'linee-escluse.json'), null))?.linee ?? []).map((voce) => voce.id));
   if (escluse.size) {
@@ -169,11 +182,15 @@ export async function enrichTransport(transport, notes = []) {
 
   const streets = streetsFromCache(await readJson(path.join(DATA, 'vie-altamura.json'), null));
   const manual = (await readJson(path.join(DATA, 'fermate-posizioni.json'), {})).fermate ?? {};
-  applyStopPositions(transport, computeStopPositions(transport, { streets, known: manual }));
+  const rejected = [];
+  applyStopPositions(transport, computeStopPositions(transport, { streets, known: manual, rejected }));
+  notes.push(...rejected);
+  syncStopLines(transport);
   const estimated = transport.stops.filter((stop) => stop.position === 'estimated').map((stop) => stop.name);
   if (estimated.length) notes.push(`posizione solo stimata, da verificare sul posto: ${estimated.join(', ')}`);
 
   await applyRoadShapes(transport, path.join(DATA, 'forme-stradali.json'), notes);
+  await applyHopRoutes(transport, path.join(DATA, 'tratti-stradali.json'), notes);
 
   return transport;
 }
