@@ -82,7 +82,7 @@ jobs:
       - name: Copia i dati attesi
         run: |
           set -eu
-          for name in transport events places alerts ztl parcheggi manifest; do
+          for name in transport events places alerts parcheggi manifest; do
             test -f "arrivo/dati/$name.json"
             cp "arrivo/dati/$name.json" "dati/$name.json"
           done

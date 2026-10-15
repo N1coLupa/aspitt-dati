@@ -28,19 +28,7 @@ function collect(check, data) {
 export const validateTransport = (data) => collect(checkTransport, data);
 export const validateEvents = (data) => collect(checkEvents, data);
 export const validatePlaces = (data) => collect(checkPlaces, data);
-export const validateZtl = (data) => collect(checkZtl, data);
 export const validateParking = (data) => collect(checkParking, data);
-
-function checkZtl(data) {
-  if (!data.zones?.length) fail('nessuna zona ZTL');
-  for (const zone of data.zones ?? []) {
-    if ((zone.polygon?.length ?? 0) < 4) fail(`${zone.name}: perimetro senza punti`);
-    if (!zone.sources?.length) fail(`${zone.name}: nessuna fonte`);
-    if (!zone.bands?.length && !zone.always) fail(`${zone.name}: nessun orario`);
-  }
-  const age = (Date.now() - Date.parse(data.verifiedAt)) / 86400000;
-  if (age > 180) note(`ZTL: regole verificate ${Math.round(age)} giorni fa, ricontrollare le ordinanze (scripts/data/ztl.json)`);
-}
 
 function checkParking(data) {
   if ((data.parking?.length ?? 0) < 10) fail(`solo ${data.parking?.length ?? 0} parcheggi`);
@@ -135,10 +123,8 @@ async function main() {
   checkTransport(transport);
   checkEvents(events);
   checkPlaces(places);
-  // ZTL e parcheggi sono arrivati dopo: se il file c'e' deve essere valido.
-  const ztl = await readJson('ztl.json').catch(() => null);
+  // I parcheggi sono arrivati dopo: se il file c'e' deve essere valido.
   const parking = await readJson('parcheggi.json').catch(() => null);
-  if (ztl) checkZtl(ztl);
   if (parking) checkParking(parking);
 
   const age = (Date.now() - new Date(transport.generatedAt).getTime()) / 3600000;

@@ -76,6 +76,86 @@ async function snapToRoads(shape) {
   return { points: result, straight, total: points.length - 1 };
 }
 
+const ALIGN_M = 30;
+
+function measure(points) {
+  const cumulative = [0];
+  for (let i = 1; i < points.length; i += 1) cumulative.push(cumulative[i - 1] + meters(points[i - 1], points[i]));
+  return cumulative;
+}
+
+// La proiezione di un punto sul disegno ufficiale, cercata poco dietro e avanti rispetto a dove si e' arrivati,
+// cosi' una via percorsa due volte non fa saltare al passaggio sbagliato.
+function projectOn(drawn, cumulative, point, from) {
+  const kx = 111320 * Math.cos((point.lat * Math.PI) / 180);
+  const ky = 110540;
+  let best = null;
+  for (let i = 0; i < drawn.length - 1; i += 1) {
+    if (cumulative[i + 1] < from - 50 || cumulative[i] > from + 2000) continue;
+    const ax = (drawn[i].lon - point.lon) * kx;
+    const ay = (drawn[i].lat - point.lat) * ky;
+    const dx = (drawn[i + 1].lon - drawn[i].lon) * kx;
+    const dy = (drawn[i + 1].lat - drawn[i].lat) * ky;
+    const length2 = dx * dx + dy * dy;
+    const t = length2 ? Math.min(1, Math.max(0, -(ax * dx + ay * dy) / length2)) : 0;
+    const distance = Math.hypot(ax + t * dx, ay + t * dy);
+    if (!best || distance < best.distance) best = { distance, along: cumulative[i] + t * (cumulative[i + 1] - cumulative[i]) };
+  }
+  return best ?? { distance: Infinity, along: from };
+}
+
+function drawnBetween(drawn, cumulative, from, to) {
+  const at = (along) => {
+    for (let i = 1; i < drawn.length; i += 1) {
+      if (cumulative[i] >= along) {
+        const t = (along - cumulative[i - 1]) / (cumulative[i] - cumulative[i - 1] || 1);
+        return {
+          lat: drawn[i - 1].lat + (drawn[i].lat - drawn[i - 1].lat) * t,
+          lon: drawn[i - 1].lon + (drawn[i].lon - drawn[i - 1].lon) * t,
+        };
+      }
+    }
+    return drawn[drawn.length - 1];
+  };
+  return [at(from), ...drawn.filter((_, i) => cumulative[i] > from && cumulative[i] < to), at(to)];
+}
+
+// L'aggancio alle strade (OSRM) a volte gira attorno a un isolato per rientrare nel senso giusto: Viale
+// Martiri, Via Gravina all'altezza di Via della Cicoriella. Dove il percorso agganciato si allontana piu' di
+// ALIGN_M metri dal disegno ufficiale della linea, quel pezzo torna a essere il disegno ufficiale.
+export function alignToDrawing(snapped, drawn) {
+  if (drawn.length < 2 || snapped.length < 2) return snapped;
+  const cumulative = measure(drawn);
+  const result = [];
+  let along = 0;
+  let i = 0;
+  while (i < snapped.length) {
+    const here = projectOn(drawn, cumulative, snapped[i], along);
+    if (here.distance <= ALIGN_M) {
+      result.push(snapped[i]);
+      along = Math.max(along, here.along);
+      i += 1;
+      continue;
+    }
+    let j = i + 1;
+    let back = null;
+    while (j < snapped.length) {
+      back = projectOn(drawn, cumulative, snapped[j], along);
+      if (back.distance <= ALIGN_M) break;
+      j += 1;
+    }
+    if (j >= snapped.length || !back || back.along <= along) {
+      result.push(...snapped.slice(i, j));
+      i = j;
+      continue;
+    }
+    result.push(...drawnBetween(drawn, cumulative, along, back.along));
+    along = back.along;
+    i = j;
+  }
+  return result;
+}
+
 const LOOP_MIN_M = 60;
 const LOOP_MAX_M = 900;
 const LOOP_CLOSE_M = 20;
@@ -162,7 +242,10 @@ export async function applyRoadShapes(transport, cacheFile, notes = []) {
         continue;
       }
     }
-    const snapped = entry.forma.map(([lat, lon]) => ({ lat, lon }));
+    const snapped = alignToDrawing(
+      entry.forma.map(([lat, lon]) => ({ lat, lon })),
+      drawn
+    );
     line.shape = removeEmptyLoops(snapped, line.stops);
     if (line.shape.length < snapped.length) notes.push(`${line.name}: tolti dal tracciato giri d'isolato senza fermate`);
   }
