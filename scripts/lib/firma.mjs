@@ -9,7 +9,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-export const DATA_FILES = ['transport', 'events', 'places', 'alerts'];
+export const DATA_FILES = ['transport', 'events', 'places', 'alerts', 'ztl', 'parcheggi'];
 export const MANIFEST_SCHEMA = 2;
 
 /** Legge la chiave privata dall'ambiente (GitHub) o da un file (PC). */

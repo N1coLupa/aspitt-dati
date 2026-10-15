@@ -1,17 +1,11 @@
 import '../lib/node-compat.mjs';
 
-// I PDF orari di MarinoBus sono griglie vettoriali: una colonna con l'elenco
-// numerato delle fermate e una colonna per ogni corsa. Le celle "-" indicano
-// che quella corsa NON serve quella fermata: sono le soppressioni che l'app
-// deve mostrare. L'estrazione va fatta per posizione (x, y), non per testo:
-// l'ordine di lettura del PDF non rispecchia la griglia.
-
 const TIME_RE = /^(\d{1,2})[:.](\d{2})$/;
 const SKIP_RE = /^[-\u2013\u2014]$/;
 const CORSA_RE = /CORSA\s*(\d+|UNICA|BIS)/gi;
 
-const ROW_TOLERANCE = 4; // punti PDF: le righe distano 12
-const COLUMN_TOLERANCE = 14; // le colonne distano ~33
+const ROW_TOLERANCE = 4;
+const COLUMN_TOLERANCE = 14;
 
 function clusterValues(values, tolerance) {
   const sorted = [...values].sort((a, b) => a - b);
@@ -46,8 +40,7 @@ function normaliseTime(raw) {
   return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
 }
 
-// "Da Lunedi' a Sabato (No Domenica e Festivi)" -> giorni ISO serviti.
-export function parseServiceDays(label) {
+function parseServiceDays(label) {
   const text = (label || '').toLowerCase();
   if (!text) return null;
   const noSunday = /no\s+domenic|escluso.*domenic|feriale/.test(text);
@@ -60,19 +53,12 @@ export function parseServiceDays(label) {
 }
 
 function expandCorsaLabels(item) {
-  // Le intestazioni adiacenti a volte arrivano fuse ("CORSA 13 CORSA 14"):
-  // le ridistribuiamo uniformemente sulla larghezza dell'item.
   const labels = [...item.s.matchAll(CORSA_RE)].map((m) => m[1]);
   if (labels.length <= 1) return labels.map((label) => ({ label, x: item.x }));
   const step = item.w / labels.length;
   return labels.map((label, i) => ({ label, x: item.x + step * i }));
 }
 
-/**
- * Nei PDF dell'operatore la legatura "tt" e' codificata con due caratteri
- * ebraici (U+05BC U+05DE): senza questa riparazione le fermate si chiamano
- * "soּמopasso" e "Colleּמa" invece di "sottopasso" e "Colletta".
- */
 const repairLigatures = (text) => text.replace(/ּמ/g, 'tt');
 
 async function readPageItems(page) {
@@ -88,7 +74,8 @@ async function readPageItems(page) {
     }));
 }
 
-function parsePage(items, pageNumber) {
+function parsePage(pageItems, pageNumber) {
+  let items = pageItems;
   const cells = items
     .map((item) => {
       const time = normaliseTime(item.s);
@@ -106,10 +93,26 @@ function parsePage(items, pageNumber) {
   );
   const gridLeft = Math.min(...columns) - COLUMN_TOLERANCE;
 
-  // Ancore di riga: il numero progressivo della fermata. Vive nella colonna piu'
-  // a sinistra della tabella; i civici dentro il nome ("Via Putignano 25") sono
-  // numeri anche loro, per questo il filtro e' sulla colonna, non sul formato.
-  const numeric = items.filter((item) => /^\d{1,3}$/.test(item.s) && item.x < gridLeft);
+  // La tabella comincia sotto l'intestazione delle corse: numeri piu' in alto (i grandi "1 2 3" decorativi
+  // dei PDF di ottobre 2026) non sono fermate.
+  const headerTop = Math.max(...items.filter((item) => /CORSA/i.test(item.s)).map((item) => item.y), -Infinity);
+  const belowHeader = (item) => !Number.isFinite(headerTop) || item.y < headerTop - ROW_TOLERANCE;
+
+  // A volte numero e nome arrivano in un solo pezzo di testo ("1 Via Carpentino fronte 134"): si separano.
+  const split = [];
+  for (const item of items) {
+    const merged = /^(\d{1,3})\s+(\D.*)$/.exec(item.s);
+    if (merged && item.x < gridLeft && belowHeader(item)) {
+      const numberWidth = (item.w * merged[1].length) / item.s.length;
+      split.push(
+        { ...item, s: merged[1], w: numberWidth },
+        { ...item, s: merged[2], x: item.x + numberWidth + 3, w: item.w - numberWidth - 3 }
+      );
+    } else split.push(item);
+  }
+  items = split;
+
+  const numeric = items.filter((item) => /^\d{1,3}$/.test(item.s) && item.x < gridLeft && belowHeader(item));
   if (numeric.length < 2) return null;
 
   const anchorLeft = Math.min(...numeric.map((item) => item.x));
@@ -122,20 +125,19 @@ function parsePage(items, pageNumber) {
     if (!byRow.has(key) || byRow.get(key).x > item.x) byRow.set(key, item);
   }
 
-  const anchors = [...byRow.values()].map((item) => ({ index: Number(item.s), y: item.y })).sort((a, b) => b.y - a.y);
+  const anchors = [...byRow.values()].map((item) => ({ index: Number(item.s), y: item.y, end: item.x + item.w })).sort((a, b) => b.y - a.y);
 
   if (anchors.length < 2) return null;
 
   const stops = anchors.map((anchor, position) => {
     const label = items
-      .filter((item) => Math.abs(item.y - anchor.y) <= ROW_TOLERANCE && item.x >= nameLeft && item.x < gridLeft)
+      .filter((item) => Math.abs(item.y - anchor.y) <= ROW_TOLERANCE && item.x >= Math.min(nameLeft, anchor.end + 1) && item.x < gridLeft)
       .sort((a, b) => a.x - b.x)
       .map((item) => item.s)
       .join(' ')
       .replace(/\s+/g, ' ')
       .replace(/\s+([),])/g, '$1')
       .trim();
-    // Se la numerazione letta non e' progressiva ci fidiamo della posizione.
     const index = anchor.index === position + 1 ? anchor.index : position + 1;
     return { index, y: anchor.y, name: label };
   });
@@ -186,7 +188,6 @@ export async function parseTimetablePdf(buffer) {
     data: new Uint8Array(buffer),
     useSystemFonts: true,
     verbosity: 0,
-    // I PDF arrivano da un sito esterno: niente codice generato dai font (CVE-2024-4367).
     isEvalSupported: false,
   });
   const doc = await task.promise;
