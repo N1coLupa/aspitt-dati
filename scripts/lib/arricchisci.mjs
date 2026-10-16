@@ -3,6 +3,7 @@ import { plausibleDay, publishedOn } from './dates-it.mjs';
 import path from 'node:path';
 import { applyRoadShapes } from './forme-stradali.mjs';
 import { applyHopRoutes } from './tratti-stradali.mjs';
+import { unifyPhysicalStops } from './fermate-uniche.mjs';
 import { applyStopPositions, computeStopPositions, streetsFromCache } from './posizioni.mjs';
 
 const DATA = path.join('scripts', 'data');
@@ -190,6 +191,7 @@ export async function enrichTransport(transport, notes = []) {
   if (estimated.length) notes.push(`posizione solo stimata, da verificare sul posto: ${estimated.join(', ')}`);
 
   await applyRoadShapes(transport, path.join(DATA, 'forme-stradali.json'), notes);
+  unifyPhysicalStops(transport, { streets: streets.map((street) => street.geometry) }, notes);
   await applyHopRoutes(transport, path.join(DATA, 'tratti-stradali.json'), notes);
 
   return transport;

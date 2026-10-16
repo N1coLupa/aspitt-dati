@@ -1,11 +1,10 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { validateEvents, validateParking, validatePlaces, validateTransport } from '../check-data.mjs';
+import { validateEvents, validatePlaces, validateTransport } from '../check-data.mjs';
 import { scrapeTransport } from './transport.mjs';
 import { scrapeEvents } from './events.mjs';
 import { scrapePlaces } from './places.mjs';
-import { scrapeParking } from './parcheggi.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
 
@@ -118,21 +117,18 @@ async function main() {
   const started = Date.now();
   console.log(`Aggiornamento dati Muevt - ${new Date().toLocaleString('it-IT')}\n`);
 
-  console.log('[1/5] Trasporti');
+  console.log('[1/4] Trasporti');
   const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport);
   await writeMissingList().catch(() => {});
   if (usage.missing.size) console.log(`  cosa salvare a mano: ${path.join(COPY_DIR, 'DA-SALVARE.txt')}`);
 
-  console.log('\n[2/5] Eventi');
+  console.log('\n[2/4] Eventi');
   const eventsResult = await refresh('events', scrapeEvents, validateEvents);
 
-  console.log('\n[3/5] Luoghi');
+  console.log('\n[3/4] Luoghi');
   const placesResult = await refresh('places', scrapePlaces, validatePlaces);
 
-  console.log('\n[4/5] Parcheggi');
-  const parkingResult = await refresh('parcheggi', scrapeParking, validateParking);
-
-  console.log('\n[5/5] Avvisi');
+  console.log('\n[4/4] Avvisi');
   const transport = transportResult.data;
   const alerts = transportResult.status === 'aggiornato' ? diffTransport(transportResult.previous, transport) : [];
   const previousAlerts = (await readJson(path.join(DATA_DIR, 'alerts.json')))?.alerts ?? [];
@@ -154,7 +150,7 @@ async function main() {
     await writeJson(path.join(SNAPSHOT_DIR, `transport-${new Date().toISOString().slice(0, 10)}.json`), transportResult.previous);
   }
 
-  const results = [transportResult, eventsResult, placesResult, parkingResult];
+  const results = [transportResult, eventsResult, placesResult];
   const manifest = {
     schema: 1,
     checkedAt: new Date().toISOString(),
@@ -163,7 +159,6 @@ async function main() {
       events: await fileInfo('events'),
       places: await fileInfo('places'),
       alerts: await fileInfo('alerts'),
-      parcheggi: await fileInfo('parcheggi'),
     },
     sources: Object.fromEntries(results.map((result) => [result.name, { status: result.status, error: result.error ?? null }])),
   };
