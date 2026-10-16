@@ -1,12 +1,8 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 
-const OSRM = 'https://routing.openstreetmap.de/routed-car/route/v1/driving/';
-const CHUNK = 25;
 const MIN_SPACING = 35;
-const DETOUR_RATIO = 1.5;
-const DETOUR_SLACK = 60;
-const VERSION = 4;
+const VERSION = 5;
 
 const readJson = async (file, fallback) => {
   try {
@@ -35,20 +31,41 @@ function waypoints(shape) {
   return kept;
 }
 
-async function routeChunk(points) {
-  const coords = points.map((point) => `${point.lon},${point.lat}`).join(';');
-  const url = `${OSRM}${coords}?overview=false&steps=true&geometries=geojson`;
+const MATCH = 'https://routing.openstreetmap.de/routed-car/match/v1/driving/';
+// Il server pubblico accetta poco piu' di dieci punti per richiesta.
+const MATCH_CHUNK = 10;
+const MATCH_RADIUS_M = 35;
+const MAX_GAP_M = 250;
+const MATCH_DETOUR_RATIO = 1.25;
+const MATCH_DETOUR_SLACK = 80;
+
+// Il disegno con un punto almeno ogni MAX_GAP_M: sui rettilinei lunghi il map matching ha bisogno di
+// punti intermedi per non cercare strade alternative.
+function densify(points) {
+  const out = [points[0]];
+  for (let i = 1; i < points.length; i += 1) {
+    const a = points[i - 1];
+    const b = points[i];
+    const steps = Math.ceil(meters(a, b) / MAX_GAP_M);
+    for (let k = 1; k < steps; k += 1) out.push({ lat: a.lat + ((b.lat - a.lat) * k) / steps, lon: a.lon + ((b.lon - a.lon) * k) / steps });
+    out.push(b);
+  }
+  return out;
+}
+
+async function matchChunk(points) {
+  const coords = points.map((point) => `${point.lon.toFixed(6)},${point.lat.toFixed(6)}`).join(';');
+  const radiuses = points.map(() => MATCH_RADIUS_M).join(';');
+  const url = `${MATCH}${coords}?overview=full&geometries=geojson&radiuses=${radiuses}&gaps=ignore`;
   for (let attempt = 1; ; attempt += 1) {
     try {
       const res = await fetch(url, { headers: { 'User-Agent': 'Muevt (app mobilita Altamura)' }, signal: AbortSignal.timeout(30000) });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok && res.status !== 400) throw new Error(`HTTP ${res.status}`);
       const body = await res.json();
-      const route = body.routes?.[0];
-      if (body.code !== 'Ok' || !route) throw new Error(body.code ?? 'nessun percorso');
-      return route.legs.map((leg) => ({
-        distance: leg.distance,
-        points: leg.steps.flatMap((step, i) => step.geometry.coordinates.slice(i ? 1 : 0).map(([lon, lat]) => ({ lat, lon }))),
-      }));
+      // Senza un'unica corrispondenza continua il pezzo resta quello disegnato.
+      if (body.code !== 'Ok' || body.matchings?.length !== 1) return null;
+      const matching = body.matchings[0];
+      return { distance: matching.distance, points: matching.geometry.coordinates.map(([lon, lat]) => ({ lat, lon })) };
     } catch (error) {
       if (attempt >= 3) throw error;
       await sleep(1500 * attempt);
@@ -56,27 +73,30 @@ async function routeChunk(points) {
   }
 }
 
-async function snapToRoads(shape) {
-  const points = waypoints(shape);
+// Il disegno ufficiale della linea agganciato alle strade con il map matching (OSRM match): a differenza
+// del calcolo di un percorso fra punti, sceglie le strade che il disegno segue davvero, senza giri per
+// rientrare nel senso giusto. Un pezzo che risulta molto piu' lungo del disegno resta quello disegnato.
+export async function snapToRoads(shape) {
+  const points = densify(waypoints(shape));
   const result = [];
   let straight = 0;
-  for (let start = 0; start < points.length - 1; start += CHUNK - 1) {
-    const chunk = points.slice(start, start + CHUNK);
-    const legs = await routeChunk(chunk);
-    legs.forEach((leg, i) => {
-      const a = chunk[i];
-      const b = chunk[i + 1];
-      const detour = leg.distance > meters(a, b) * DETOUR_RATIO + DETOUR_SLACK;
-      if (detour) straight += 1;
-      const piece = detour || leg.points.length < 2 ? [a, b] : leg.points;
-      result.push(...(result.length ? piece.slice(1) : piece));
-    });
-    await sleep(300);
+  let total = 0;
+  for (let start = 0; start < points.length - 1; start += MATCH_CHUNK - 1) {
+    const chunk = points.slice(start, start + MATCH_CHUNK);
+    let drawnLength = 0;
+    for (let i = 1; i < chunk.length; i += 1) drawnLength += meters(chunk[i - 1], chunk[i]);
+    const matched = await matchChunk(chunk);
+    const good = matched && matched.points.length > 1 && matched.distance <= drawnLength * MATCH_DETOUR_RATIO + MATCH_DETOUR_SLACK;
+    total += 1;
+    if (!good) straight += 1;
+    const piece = good ? matched.points : chunk;
+    result.push(...(result.length ? piece.slice(1) : piece));
+    await sleep(250);
   }
-  return { points: result, straight, total: points.length - 1 };
+  return { points: result, straight, total };
 }
 
-const ALIGN_M = 30;
+const ALIGN_M = 60;
 
 function measure(points) {
   const cumulative = [0];
@@ -209,47 +229,62 @@ export function removeEmptyLoops(shape, stops = []) {
   return points;
 }
 
+async function snappedFor(cache, cacheKey, drawn, label, notes) {
+  const key = crypto
+    .createHash('sha1')
+    .update(`${VERSION}|${drawn.map((point) => `${point.lat.toFixed(5)},${point.lon.toFixed(5)}`).join(';')}`)
+    .digest('hex');
+  const entry = cache.linee[cacheKey];
+  if (entry?.chiave === key) return { points: entry.forma.map(([lat, lon]) => ({ lat, lon })), changed: false };
+  try {
+    const { points, straight, total } = await snapToRoads(drawn);
+    if (straight > total * 0.25) {
+      notes.push(`${label}: tracciato non agganciato alle strade (${straight} pezzi su ${total}), resta quello disegnato`);
+      return null;
+    }
+    cache.linee[cacheKey] = { chiave: key, forma: points.map((point) => [round(point.lat), round(point.lon)]) };
+    return { points, changed: true };
+  } catch (error) {
+    notes.push(`${label}: tracciato non agganciato alle strade (${error.message}), resta quello disegnato`);
+    return null;
+  }
+}
+
+const clean = (path) => (path ?? []).filter((point) => Number.isFinite(point?.lat) && Number.isFinite(point?.lon));
+
 export async function applyRoadShapes(transport, cacheFile, notes = []) {
   const cache = await readJson(cacheFile, {
-    fonte: '© OpenStreetMap contributors, ODbL (tracciati agganciati alle strade con OSRM)',
+    fonte: '© OpenStreetMap contributors, ODbL (tracciati agganciati alle strade con OSRM match)',
     linee: {},
   });
   let changed = false;
 
   for (const line of transport.lines) {
-    const drawn = (line.shape ?? []).filter((point) => Number.isFinite(point?.lat) && Number.isFinite(point?.lon));
-    if (drawn.length < 2) continue;
-    const key = crypto
-      .createHash('sha1')
-      .update(`${VERSION}|${drawn.map((point) => `${point.lat.toFixed(5)},${point.lon.toFixed(5)}`).join(';')}`)
-      .digest('hex');
-
-    let entry = cache.linee[line.id];
-    if (entry?.chiave !== key) {
-      try {
-        const { points, straight, total } = await snapToRoads(drawn);
-        if (straight > total * 0.25) {
-          notes.push(
-            `${line.name}: tracciato non agganciato alle strade (${straight} tratti su ${total} senza strada), resta quello originale`
-          );
-          continue;
-        }
-        entry = { chiave: key, forma: points.map((point) => [round(point.lat), round(point.lon)]) };
-        cache.linee[line.id] = entry;
-        changed = true;
-      } catch (error) {
-        notes.push(`${line.name}: tracciato non agganciato alle strade (${error.message}), resta quello originale`);
-        continue;
+    const drawn = clean(line.shape);
+    if (drawn.length >= 2) {
+      const snapped = await snappedFor(cache, line.id, drawn, line.name, notes);
+      if (snapped) {
+        changed ||= snapped.changed;
+        const aligned = alignToDrawing(snapped.points, drawn);
+        line.shape = removeEmptyLoops(aligned, line.stops);
+        if (line.shape.length < aligned.length) notes.push(`${line.name}: tolti dal tracciato giri d'isolato senza fermate`);
       }
     }
-    const snapped = alignToDrawing(
-      entry.forma.map(([lat, lon]) => ({ lat, lon })),
-      drawn
-    );
-    line.shape = removeEmptyLoops(snapped, line.stops);
-    if (line.shape.length < snapped.length) notes.push(`${line.name}: tolti dal tracciato giri d'isolato senza fermate`);
+    // Gli altri disegni ufficiali della linea, agganciati allo stesso modo: servono ai tratti che il
+    // tracciato principale non copre (vedi tratti-stradali.mjs).
+    const extras = [];
+    for (const [k, path] of (line.drawnExtra ?? []).entries()) {
+      const extraDrawn = clean(path);
+      if (extraDrawn.length < 2) continue;
+      const snapped = await snappedFor(cache, `${line.id}#${k + 1}`, extraDrawn, `${line.name} (disegno ${k + 2})`, notes);
+      if (snapped) changed ||= snapped.changed;
+      extras.push(snapped ? alignToDrawing(snapped.points, extraDrawn) : extraDrawn);
+    }
+    line.extraShapes = extras;
+    delete line.drawnExtra;
   }
 
-  if (changed) await fs.writeFile(cacheFile, `${JSON.stringify(cache)}\n`);
+  if (changed) await fs.writeFile(cacheFile, `${JSON.stringify(cache)}
+`);
   return transport;
 }

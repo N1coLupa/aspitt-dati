@@ -3,6 +3,8 @@
 // Per quei tratti si chiede il percorso stradale a OSRM e lo si salva in `line.hops`, con cache.
 import fs from 'node:fs/promises';
 
+import { removeEmptyLoops } from './forme-stradali.mjs';
+
 const OSRM = 'https://routing.openstreetmap.de/routed-car/route/v1/driving/';
 const NEAR_SHAPE_M = 60;
 const DETOUR_RATIO = 4;
@@ -62,6 +64,27 @@ function extended(shape) {
   return shape;
 }
 
+function sliceCovered(path, a, b, straight) {
+  const cumulative = measure(path);
+  const fromA = passes(path, cumulative, a);
+  const fromB = passes(path, cumulative, b);
+  let best = null;
+  for (const x of fromA)
+    for (const y of fromB)
+      if (y > x && y - x <= straight * DETOUR_RATIO + DETOUR_EXTRA_M && (!best || y - x < best[1] - best[0])) best = [x, y];
+  if (!best) return null;
+  const at = (along) => {
+    for (let i = 1; i < path.length; i += 1) {
+      if (cumulative[i] >= along) {
+        const t = (along - cumulative[i - 1]) / (cumulative[i] - cumulative[i - 1] || 1);
+        return { lat: path[i - 1].lat + (path[i].lat - path[i - 1].lat) * t, lon: path[i - 1].lon + (path[i].lon - path[i - 1].lon) * t };
+      }
+    }
+    return path[path.length - 1];
+  };
+  return [at(best[0]), ...path.filter((_, i) => cumulative[i] > best[0] && cumulative[i] < best[1]), at(best[1])];
+}
+
 export function uncoveredHops(line) {
   const shape = extended((line.shape ?? []).filter((p) => Number.isFinite(p?.lat)));
   const cumulative = measure(shape);
@@ -82,7 +105,10 @@ export function uncoveredHops(line) {
       const fromA = passes(shape, cumulative, a);
       const fromB = passes(shape, cumulative, b);
       const covered = fromA.some((x) => fromB.some((y) => y > x && y - x <= straight * DETOUR_RATIO + DETOUR_EXTRA_M));
-      if (!covered) hops.set(key, { key, a, b, straight });
+      if (covered) continue;
+      // Prima i disegni ufficiali in piu' della linea (il ritorno disegnato a parte), poi il calcolo.
+      const drawn = (line.extraShapes ?? []).map((extra) => sliceCovered(extra, a, b, straight)).find(Boolean);
+      hops.set(key, { key, a, b, straight, drawn: drawn ?? null });
     }
   }
   return [...hops.values()];
@@ -118,6 +144,10 @@ export async function applyHopRoutes(transport, cacheFile, notes = []) {
     const result = {};
     let failed = 0;
     for (const hop of missing) {
+      if (hop.drawn) {
+        result[hop.key] = removeEmptyLoops(hop.drawn, []).map((p) => [round(p.lat), round(p.lon)]);
+        continue;
+      }
       const id = cacheKey(hop.a, hop.b);
       if (!cache[id]) {
         try {
@@ -133,7 +163,12 @@ export async function applyHopRoutes(transport, cacheFile, notes = []) {
           continue;
         }
       }
-      result[hop.key] = cache[id];
+      // Il percorso parte e arriva sulle fermate, anche dove la strada che OSRM conosce si ferma prima.
+      const routed = cache[id].map(([lat, lon]) => ({ lat, lon }));
+      if (meters(routed[0], hop.a) > 10) routed.unshift({ lat: hop.a.lat, lon: hop.a.lon });
+      if (meters(routed[routed.length - 1], hop.b) > 10) routed.push({ lat: hop.b.lat, lon: hop.b.lon });
+      // Come per i tracciati: niente giri d'isolato per arrivare alla fermata dal lato "giusto".
+      result[hop.key] = removeEmptyLoops(routed, []).map((p) => [round(p.lat), round(p.lon)]);
     }
     if (Object.keys(result).length) line.hops = result;
     else delete line.hops;

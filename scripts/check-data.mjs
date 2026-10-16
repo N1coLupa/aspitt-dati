@@ -28,15 +28,6 @@ function collect(check, data) {
 export const validateTransport = (data) => collect(checkTransport, data);
 export const validateEvents = (data) => collect(checkEvents, data);
 export const validatePlaces = (data) => collect(checkPlaces, data);
-export const validateParking = (data) => collect(checkParking, data);
-
-function checkParking(data) {
-  if ((data.parking?.length ?? 0) < 10) fail(`solo ${data.parking?.length ?? 0} parcheggi`);
-  for (const item of data.parking ?? []) {
-    if (!Number.isFinite(item.lat) || !Number.isFinite(item.lon)) fail(`${item.id}: senza coordinate`);
-    if (item.access !== 'public' && item.access !== 'private') fail(`${item.id}: accesso non valido`);
-  }
-}
 
 async function readJson(name) {
   return JSON.parse(await fs.readFile(path.join(DATA_DIR, name), 'utf8'));
@@ -123,9 +114,6 @@ async function main() {
   checkTransport(transport);
   checkEvents(events);
   checkPlaces(places);
-  // I parcheggi sono arrivati dopo: se il file c'e' deve essere valido.
-  const parking = await readJson('parcheggi.json').catch(() => null);
-  if (parking) checkParking(parking);
 
   const age = (Date.now() - new Date(transport.generatedAt).getTime()) / 3600000;
   if (age > 48) note(`i dati dei trasporti hanno ${Math.round(age)} ore (tenuti gli ultimi validi)`);

@@ -1,6 +1,3 @@
-// Ogni linea di MarinoBus Urbano ha una mappa Google MyMaps: l'export KML
-// contiene i Placemark delle fermate (nome + coordinate) e la LineString del
-// tracciato. E' l'unica fonte con le coordinate reali delle fermate.
 import { XMLParser } from 'fast-xml-parser';
 import { getText } from './http.mjs';
 
@@ -32,7 +29,6 @@ export async function fetchKmlGeometry(kmlUrl) {
   const xml = await getText(kmlUrl);
   const doc = parser.parse(xml);
 
-  // MyMaps annida i Placemark in uno o piu' Folder, oppure li mette in linea.
   const root = doc?.kml?.Document ?? {};
   const placemarks = [...asArray(root.Placemark), ...asArray(root.Folder).flatMap((f) => asArray(f.Placemark))];
 
@@ -49,9 +45,6 @@ export async function fetchKmlGeometry(kmlUrl) {
           .flatMap((mg) => asArray(mg.Point))
           .map((pt) => parseCoordinateList(pt.coordinates)[0])
           .find(Boolean);
-    // Alcuni segnaposto di MyMaps sono geocodificati solo per indirizzo e
-    // l'export KML non riporta le coordinate: li teniamo comunque, verranno
-    // posizionati per interpolazione lungo il tracciato.
     if (name && (point || address)) {
       stops.push({
         name,
@@ -71,7 +64,8 @@ export async function fetchKmlGeometry(kmlUrl) {
     }
   }
 
-  // Il tracciato utile e' il piu' lungo: gli altri sono raccordi o residui.
-  const shape = paths.sort((a, b) => b.length - a.length)[0] ?? [];
-  return { title: typeof root.name === 'string' ? root.name.trim() : '', stops, shape };
+  // La linea piu' lunga e' il tracciato; le altre (il ritorno disegnato a parte, nelle linee scuola)
+  // restano come disegni in piu'.
+  const sorted = paths.filter((path) => path.length >= 2).sort((a, b) => b.length - a.length);
+  return { title: typeof root.name === 'string' ? root.name.trim() : '', stops, shape: sorted[0] ?? [], extra: sorted.slice(1) };
 }

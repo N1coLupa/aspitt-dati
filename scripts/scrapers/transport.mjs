@@ -205,6 +205,7 @@ async function scrapeLine(line, registry, previousLine) {
     }
   }
   result.shape = kml.shape ?? [];
+  result.drawnExtra = kml.extra ?? [];
 
   let tables = [];
   if (line.timetableUrl) {
@@ -224,6 +225,7 @@ async function scrapeLine(line, registry, previousLine) {
       stops: previousLine.stops,
       trips: previousLine.trips,
       shape: result.shape.length ? result.shape : previousLine.shape,
+      drawnExtra: result.shape.length ? result.drawnExtra : (previousLine.drawnExtra ?? []),
     };
   }
 
