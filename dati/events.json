@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:08:45.088Z",
+  "generatedAt": "2026-10-16T15:04:57.583Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -378,6 +378,24 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-pace-e-non-violenza-due-incontri-del-circolo-delle-formiche-",
+      "title": "Pace e non violenza: due incontri del Circolo delle formiche su Danilo Dolci",
+      "url": "https://www.altamuralife.it/eventi/pace-e-non-violenza-due-incontri-del-circolo-delle-formiche-su-danilo-dolci/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }

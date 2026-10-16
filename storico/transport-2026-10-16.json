@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T00:22:23.404Z",
+  "generatedAt": "2026-10-16T09:08:36.483Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -7048,7 +7048,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -14430,12 +14430,15 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": null,
-      "noticeUntil": null,
-      "noticeStart": null,
-      "noticeEnd": null,
-      "noticeStops": [],
-      "noticeText": null,
+      "noticeFrom": "2026-10-22",
+      "noticeUntil": "2026-10-22",
+      "noticeStart": "20:00",
+      "noticeEnd": "22:00",
+      "noticeStops": [
+        "stop-via-iv-novembre-fronte-1",
+        "stop-via-iv-novembre-fronte-74"
+      ],
+      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-06-12"
@@ -26362,7 +26365,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -30487,12 +30490,15 @@
         }
       ],
       "warnings": [],
-      "noticeFrom": null,
-      "noticeUntil": null,
-      "noticeStart": null,
-      "noticeEnd": null,
-      "noticeStops": [],
-      "noticeText": null,
+      "noticeFrom": "2026-10-22",
+      "noticeUntil": "2026-10-22",
+      "noticeStart": "20:00",
+      "noticeEnd": "22:00",
+      "noticeStops": [
+        "stop-via-iv-novembre-fronte-1",
+        "stop-via-iv-novembre-fronte-74"
+      ],
+      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
       "timetableFile": null,
       "school": false,
       "validFrom": "2026-03-30"
