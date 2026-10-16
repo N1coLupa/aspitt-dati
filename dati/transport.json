@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:08:36.483Z",
+  "generatedAt": "2026-10-16T15:04:48.303Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -36691,7 +36691,7 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-12-10-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
@@ -38912,7 +38912,7 @@
       "noticeText": null,
       "timetableFile": null,
       "school": true,
-      "validFrom": "2026-10-12"
+      "validFrom": "2026-10-16"
     },
     {
       "id": "linea-scuola-4",
