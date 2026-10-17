@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:24:35.564Z",
+  "generatedAt": "2026-10-17T14:00:00.156Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -28,17 +28,17 @@
   ],
   "events": [
     {
-      "id": "tacco-sublime-tango",
-      "title": "Sublime Tango",
-      "url": "https://iltaccodibacco.it/puglia/eventi/332965.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "id": "life-pace-e-non-violenza-due-incontri-del-circolo-delle-formiche-",
+      "title": "Pace e non violenza: due incontri del Circolo delle formiche su Danilo Dolci",
+      "url": "https://www.altamuralife.it/eventi/pace-e-non-violenza-due-incontri-del-circolo-delle-formiche-su-danilo-dolci/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
       "publishedAt": null,
-      "startDate": "2026-10-15",
-      "endDate": "2026-10-15",
+      "startDate": null,
+      "endDate": "2026-10-17",
       "startTime": null,
-      "venue": "Teatro Mangiatordi",
-      "summary": "Sublime Tango è uno spettacolo di musica e danza. Un vero e proprio racconto musicale e coreografico, in cui diversi quadri narrativi danno forma a storie intense: a volte d’amore, altre volte popolate da personaggi e…",
+      "venue": null,
+      "summary": "Fino al 17 ottobre",
       "tags": [],
       "categories": [
         "eventi"
@@ -190,6 +190,24 @@
       "startTime": null,
       "venue": "Teatro Mangiatordi",
       "summary": "“Immagini tra le Note” offre un’esperienza straordinaria che esplora il potente legame tra la musica e il cinema, abbracciando una varietà di stili e dimensioni artistiche.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-daria-biancardi-orchestra",
+      "title": "Daria Biancardi & Orchestra",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333333.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "Il concerto è un evento unico che unisce la straordinaria e potente voce soul di Daria Biancardi all’eleganza orchestrale dell’Orchestra del Levante.",
       "tags": [],
       "categories": [
         "cultura"
