@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T00:26:49.663Z",
+  "generatedAt": "2026-10-17T08:41:05.176Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -211,24 +211,6 @@
       "tags": [],
       "categories": [
         "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-gli-inediti-mercadantiani",
-      "title": "Gli Inediti Mercadantiani",
-      "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21",
-      "startTime": null,
-      "venue": "Chiesa Sant'Agostino - Altamura (Ba)",
-      "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
-      "tags": [],
-      "categories": [
-        "eventi"
       ],
       "dated": true
     },
