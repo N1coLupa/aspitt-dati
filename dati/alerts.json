@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-10-15T15:24:37.774Z",
+  "generatedAt": "2026-10-17T14:00:08.080Z",
   "alerts": [
+    {
+      "id": "orari-linea-scuola-3-2026-10-16",
+      "severity": "warning",
+      "lineId": "linea-scuola-3",
+      "title": "Orari aggiornati: Linea Scuola 3",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
+      "createdAt": "2026-10-16T15:05:01.759Z"
+    },
     {
       "id": "orari-linea-scuola-1-2026-10-12",
       "severity": "warning",
