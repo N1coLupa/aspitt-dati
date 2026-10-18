@@ -73,6 +73,14 @@ function diffTransport(previous, next) {
   return alerts;
 }
 
+function settleDate(previous, next) {
+  const { generatedAt: before, ...oldBody } = previous ?? {};
+  const { generatedAt: _after, ...newBody } = next;
+  if (before && JSON.stringify(oldBody) === JSON.stringify(newBody)) next.generatedAt = before;
+  else if (!next.generatedAt || (before && next.generatedAt <= before)) next.generatedAt = new Date().toISOString();
+  return next;
+}
+
 async function refresh(name, scrape, validate, enrich) {
   const file = path.join(DATA_DIR, `${name}.json`);
   const previous = await readJson(file);
@@ -86,7 +94,7 @@ async function refresh(name, scrape, validate, enrich) {
     const { problems, notes } = validate(next);
     for (const message of notes) console.log(`  nota: ${message}`);
     if (problems.length) throw new Error(problems.join('; '));
-    await writeJson(file, next);
+    await writeJson(file, settleDate(previous, next));
     return { name, status: 'aggiornato', data: next, previous };
   } catch (err) {
     console.error(`  ${name}: tenuti i dati precedenti (${err.message})`);
@@ -95,7 +103,7 @@ async function refresh(name, scrape, validate, enrich) {
       const kept = structuredClone(previous);
       await enrich(kept, []);
       if (!validate(kept).problems.length) {
-        await writeJson(file, kept);
+        await writeJson(file, settleDate(previous, kept));
         return { name, status: 'invariato', error: err.message, data: kept, previous };
       }
     }
@@ -141,10 +149,8 @@ async function main() {
     ...previousAlerts.filter((a) => !known.has(a.id) && (a.validUntil ? a.validUntil >= today : a.createdAt >= cutoff)),
   ];
 
-  await writeJson(path.join(DATA_DIR, 'alerts.json'), {
-    generatedAt: new Date().toISOString(),
-    alerts: merged,
-  });
+  const alertsFile = path.join(DATA_DIR, 'alerts.json');
+  await writeJson(alertsFile, settleDate(await readJson(alertsFile), { generatedAt: new Date().toISOString(), alerts: merged }));
 
   if (transportResult.status === 'aggiornato' && transportResult.previous) {
     await writeJson(path.join(SNAPSHOT_DIR, `transport-${new Date().toISOString().slice(0, 10)}.json`), transportResult.previous);
@@ -152,7 +158,7 @@ async function main() {
 
   const results = [transportResult, eventsResult, placesResult];
   const manifest = {
-    schema: 1,
+    schema: 2,
     checkedAt: new Date().toISOString(),
     files: {
       transport: await fileInfo('transport'),
