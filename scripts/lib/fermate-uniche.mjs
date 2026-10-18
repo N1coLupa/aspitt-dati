@@ -1,9 +1,3 @@
-// Una fermata fisica = una fermata nei dati. Le mappe di Marino hanno un segnaposto per linea, con nomi
-// scritti in modi diversi ("Stazione Via XXIV Maggio uscita sottopasso Fal", "Via XXIV Maggio (uscita
-// sottopasso Fal)"): la stessa pensilina finiva in quattro punti con sei nomi. Qui le fermate della stessa
-// via, vicine e percorse nello stesso senso di marcia, diventano una sola; i due lati della strada (andata
-// e ritorno) restano due fermate. La posizione e' quella dei segnaposto ufficiali, portata sulla strada
-// che il bus percorre, dal lato del senso di marcia: niente fermate dentro le case.
 import { slugify, stopKey } from './slug.mjs';
 
 const SAME_STOP_M = 80;
@@ -46,7 +40,6 @@ const angle = (a, b) => {
   return d > 180 ? 360 - d : d;
 };
 
-// Le parole che identificano il posto, senza "fronte", "pensilina", "Alberghiero 2" e simili.
 export function placeTokens(name) {
   const tokens = stopKey(name).split(' ').filter(Boolean);
   const kept = [];
@@ -71,7 +64,6 @@ function compatible(a, b) {
   return small.every((t) => large.includes(t));
 }
 
-// Il senso di marcia del bus alla fermata, dalle fermate prima e dopo nella stessa corsa.
 function directions(line) {
   const byIndex = new Map(line.stops.map((stop) => [stop.index, stop]));
   const found = new Map();
@@ -115,8 +107,6 @@ function projectOn(path, point) {
   return best;
 }
 
-// Sulla strada piu' vicina fra quelle percorse dalle linee della fermata (o, se nessuna e' vicina, fra le
-// vie di OSM), spostata di qualche metro a destra del senso di marcia.
 function onRoad(point, travel, paths, streets) {
   let best = null;
   for (const path of paths) {
@@ -175,7 +165,6 @@ export function unifyPhysicalStops(transport, { streets = [] } = {}, notes = [])
   for (const group of groups.values()) {
     const official = group.filter((m) => m.official);
     const pool = official.length ? official : group;
-    // Il segnaposto ufficiale piu' "centrale" del gruppo: quello piu' vicino a tutti gli altri.
     const center = pool.reduce((best, m) => {
       const sum = pool.reduce((total, other) => total + meters(m.stop, other.stop), 0);
       return !best || sum < best.sum ? { m, sum } : best;

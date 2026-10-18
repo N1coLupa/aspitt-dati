@@ -32,15 +32,12 @@ function waypoints(shape) {
 }
 
 const MATCH = 'https://routing.openstreetmap.de/routed-car/match/v1/driving/';
-// Il server pubblico accetta poco piu' di dieci punti per richiesta.
 const MATCH_CHUNK = 10;
 const MATCH_RADIUS_M = 35;
 const MAX_GAP_M = 250;
 const MATCH_DETOUR_RATIO = 1.25;
 const MATCH_DETOUR_SLACK = 80;
 
-// Il disegno con un punto almeno ogni MAX_GAP_M: sui rettilinei lunghi il map matching ha bisogno di
-// punti intermedi per non cercare strade alternative.
 function densify(points) {
   const out = [points[0]];
   for (let i = 1; i < points.length; i += 1) {
@@ -62,7 +59,6 @@ async function matchChunk(points) {
       const res = await fetch(url, { headers: { 'User-Agent': 'Muevt (app mobilita Altamura)' }, signal: AbortSignal.timeout(30000) });
       if (!res.ok && res.status !== 400) throw new Error(`HTTP ${res.status}`);
       const body = await res.json();
-      // Senza un'unica corrispondenza continua il pezzo resta quello disegnato.
       if (body.code !== 'Ok' || body.matchings?.length !== 1) return null;
       const matching = body.matchings[0];
       return { distance: matching.distance, points: matching.geometry.coordinates.map(([lon, lat]) => ({ lat, lon })) };
@@ -73,9 +69,6 @@ async function matchChunk(points) {
   }
 }
 
-// Il disegno ufficiale della linea agganciato alle strade con il map matching (OSRM match): a differenza
-// del calcolo di un percorso fra punti, sceglie le strade che il disegno segue davvero, senza giri per
-// rientrare nel senso giusto. Un pezzo che risulta molto piu' lungo del disegno resta quello disegnato.
 export async function snapToRoads(shape) {
   const points = densify(waypoints(shape));
   const result = [];
@@ -104,8 +97,6 @@ function measure(points) {
   return cumulative;
 }
 
-// La proiezione di un punto sul disegno ufficiale, cercata poco dietro e avanti rispetto a dove si e' arrivati,
-// cosi' una via percorsa due volte non fa saltare al passaggio sbagliato.
 function projectOn(drawn, cumulative, point, from) {
   const kx = 111320 * Math.cos((point.lat * Math.PI) / 180);
   const ky = 110540;
@@ -140,9 +131,6 @@ function drawnBetween(drawn, cumulative, from, to) {
   return [at(from), ...drawn.filter((_, i) => cumulative[i] > from && cumulative[i] < to), at(to)];
 }
 
-// L'aggancio alle strade (OSRM) a volte gira attorno a un isolato per rientrare nel senso giusto: Viale
-// Martiri, Via Gravina all'altezza di Via della Cicoriella. Dove il percorso agganciato si allontana piu' di
-// ALIGN_M metri dal disegno ufficiale della linea, quel pezzo torna a essere il disegno ufficiale.
 export function alignToDrawing(snapped, drawn) {
   if (drawn.length < 2 || snapped.length < 2) return snapped;
   const cumulative = measure(drawn);
@@ -183,7 +171,6 @@ const STOP_NEAR_M = 50;
 const TURN_PROBE_M = 40;
 const TURN_SAME_M = 25;
 
-// Il punto a circa `distance` metri prima (step -1) o dopo (step +1) dell'indice dato.
 function probe(points, index, step, distance) {
   let k = index;
   let walked = 0;
@@ -194,9 +181,6 @@ function probe(points, index, step, distance) {
   return walked >= distance * 0.6 ? points[k] : null;
 }
 
-// L'aggancio alle strade a volte fa fare all'autobus il giro di un isolato per tornare nello stesso punto
-// (una fermata dall'altra parte della strada, un senso unico). Un giro cosi' si toglie, a meno che serva
-// una fermata o sia un'inversione: in quel caso la linea esce dalla stessa strada da cui e' entrata.
 export function removeEmptyLoops(shape, stops = []) {
   const located = stops.filter((stop) => Number.isFinite(stop?.lat) && Number.isFinite(stop?.lon));
   let points = shape.slice();
@@ -270,8 +254,6 @@ export async function applyRoadShapes(transport, cacheFile, notes = []) {
         if (line.shape.length < aligned.length) notes.push(`${line.name}: tolti dal tracciato giri d'isolato senza fermate`);
       }
     }
-    // Gli altri disegni ufficiali della linea, agganciati allo stesso modo: servono ai tratti che il
-    // tracciato principale non copre (vedi tratti-stradali.mjs).
     const extras = [];
     for (const [k, path] of (line.drawnExtra ?? []).entries()) {
       const extraDrawn = clean(path);
@@ -284,7 +266,11 @@ export async function applyRoadShapes(transport, cacheFile, notes = []) {
     delete line.drawnExtra;
   }
 
-  if (changed) await fs.writeFile(cacheFile, `${JSON.stringify(cache)}
-`);
+  if (changed)
+    await fs.writeFile(
+      cacheFile,
+      `${JSON.stringify(cache)}
+`
+    );
   return transport;
 }

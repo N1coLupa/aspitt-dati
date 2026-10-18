@@ -104,8 +104,6 @@ export function waysFor(street, streets) {
   return scored.filter((entry) => entry.score === best).map((entry) => entry.way);
 }
 
-// Distanza fra un punto e la via scritta nel nome della fermata ("Via Gravina 79" -> Via Gravina).
-// null quando il nome non contiene una via o quella via non c'e' in OSM: in quel caso non si puo' dire nulla.
 export function offStreetMeters(point, name, streets) {
   const street = streetOfStop(name);
   const ways = street ? waysFor(street, streets) : [];
@@ -120,17 +118,12 @@ export function offStreetMeters(point, name, streets) {
   return { meters: best, street: ways[0].name };
 }
 
-// Oltre questa distanza dalla propria via una posizione salvata o copiata da un'altra fermata e' sbagliata:
-// il 20/09/2026 tre fermate del ritorno di Pescariello avevano preso le coordinate di Coseco, a 13 km.
 export const MAX_OFF_STREET_M = 120;
-// Le posizioni salvate a mano (fermate-posizioni.json) possono stare su un tratto che OSM non nomina:
-// si scartano solo quando sono palesemente altrove.
 const MAX_SAVED_OFF_STREET_M = 500;
 const MAX_STREET_DETOUR_M = 1200;
 const SAME_PASS_M = 20;
 const MAX_CROSSING_FROM_ROUTE_M = 150;
 
-// "Via Gravina ang. Via del Timo": la fermata sta all'incrocio delle due vie, che OSM conosce al metro.
 export function crossingOf(name, streets) {
   const text = String(name).replace(/\(([^)]*)\)/g, ' $1 ');
   const first = streetOfStop(text);
@@ -160,11 +153,7 @@ export function crossingOf(name, streets) {
 
 const CROSSING_M = 25;
 const MAX_FROM_CROSSING_M = 120;
-// Due fermate con nomi diversi non stanno nello stesso punto: se una posizione salvata o copiata coincide
-// con il segnaposto di un'altra fermata, e' un segnaposto duplicato nella mappa dell'operatore.
 const SAME_POINT_M = 8;
-// "Via Dei Mille 40" e "Via Dei Mille fronte 40", "(ang. Via II Giugno)" e "(fronte Via II Giugno)":
-// stesso posto scritto in due modi, i due lati della stessa strada.
 const placeKey = (name) =>
   stopKey(String(name).replace(/[()]/g, ' '))
     .split(' ')
@@ -188,8 +177,6 @@ function twinKey(name) {
 export function computeStopPositions(transport, { streets = [], known: allKnown = {}, rejected = [] } = {}) {
   const result = new Map();
 
-  // Un segnaposto dell'operatore con un incrocio nel nome che sta lontano da quell'incrocio e' stato
-  // copiato da un'altra fermata (Via Gravina ang. Via del Timo era sull'incrocio con Via della Cicoriella).
   const misplaced = new Set();
   for (const stop of transport.lines.flatMap((line) => line.stops)) {
     if (stop.interpolated || stop.lat == null) continue;
@@ -197,7 +184,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
     if (crossing && Math.hypot((crossing.lat - stop.lat) * 110540, (crossing.lon - stop.lon) * 84300) > MAX_FROM_CROSSING_M) {
       if (!misplaced.has(stop)) rejected.push(`${stop.name}: segnaposto lontano da ${crossing.detail}, spostato sull'incrocio`);
       misplaced.add(stop);
-      // Da qui in poi conta come fermata da posizionare: applyStopPositions la riscrive.
       stop.interpolated = true;
     }
   }
@@ -210,8 +196,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
         Math.hypot((other.lat - point.lat) * 110540, (other.lon - point.lon) * 84300) < SAME_POINT_M
     );
 
-  // Un nome senza numero civico che e' l'inizio del nome di un solo segnaposto ("Hub Via Santeramo" e
-  // "Hub Via Santeramo ang. Via Rocco Scotellaro") indica lo stesso posto.
   const sameNameMarker = (stop) => {
     const key = placeKey(stop.name);
     if (!key || /\d/.test(key) || key.split(' ').length < 3) return null;
@@ -249,10 +233,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
     if (!line.shape?.length || line.shape.length < 2) continue;
     const proj = projector(line.shape[0].lat);
 
-    // Tracciato di sola andata (Pescariello): se dopo una fermata al capolinea ne vengono altre lontane da li',
-    // il ritorno rifa' lo stesso tracciato al contrario. Prima si guardava solo l'ultima fermata nota: se era
-    // anch'essa nota (Via Selva 117) il ritorno non veniva ricostruito e tutte le fermate del ritorno senza
-    // coordinate finivano al capolinea, a 13 km dalla loro via.
     const isExact = (stop) => known[stop.stopId] || marker(stop);
     const start = proj.to(line.shape[0]);
     const end = proj.to(line.shape[line.shape.length - 1]);
@@ -267,9 +247,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
     const returnLeg = oneWay && turn >= 0;
     const shape = returnLeg ? [...line.shape, ...[...line.shape].reverse().slice(1)] : line.shape;
     const samples = sampleShape(shape, proj);
-    // Il primo passaggio utile, non il piu' vicino in assoluto: quando il tracciato ripassa per la
-    // stessa via (andata e ritorno), il punto piu' vicino puo' stare sul ritorno per pochi centimetri
-    // e trascinare tutte le fermate seguenti alla fine della linea.
     const nearestS = (point, fromS) => {
       const p = proj.to(point);
       const distances = samples.map((q) => (q.s < fromS ? Infinity : Math.hypot(q.x - p.x, q.y - p.y)));
@@ -341,8 +318,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
             const d = Math.hypot(q.x - p.x, q.y - p.y);
             if (!near || d < near.d) near = { d, s: q.s };
           }
-          // L'incrocio nominato vale anche lontano dal tracciato: i ritorni delle linee scuola passano per
-          // strade che la mappa dell'operatore non disegna, e li' l'incrocio e' l'unico dato certo.
           entry.s = near && near.d <= MAX_CROSSING_FROM_ROUTE_M ? near.s : Math.max(lastS + 1, Math.min(toS - 1, (lastS + toS) / 2));
           entry.point = { lat: crossing.lat, lon: crossing.lon };
           entry.position = 'street';
@@ -360,9 +335,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
           }
         }
 
-        // Il tracciato disegnato non passa per la via della fermata (succede nei ritorni ricostruiti al
-        // contrario): la fermata va comunque sulla sua via, nel punto piu' vicino al tratto fra le fermate
-        // accanto, non a meta' strada lungo un tracciato che li' non passa.
         let onStreet = null;
         if (chosen == null && ways.length) {
           const window = samples.filter((q) => q.s > lastS && q.s < toS);

@@ -125,17 +125,11 @@ export function parseItalianDateRange(text, reference = new Date()) {
   return null;
 }
 
-/** La data di caricamento di un file di WordPress (".../wp-content/uploads/2026/10/..."), se c'e'. */
 export function publishedOn(url) {
   const match = /\/uploads\/(20\d{2})\/(\d{2})\//.exec(String(url ?? ''));
   return match ? new Date(Number(match[1]), Number(match[2]) - 1, 15) : null;
 }
 
-/**
- * Corregge l'anno sbagliato di una data scritta dall'operatore. Un avviso o un orario parla di
- * giorni vicini a quando e' stato pubblicato: se l'anno scritto lo allontana di piu' di otto mesi
- * e lo stesso giorno di un anno vicino cade a ridosso della pubblicazione, vale quell'anno.
- */
 export function plausibleDay(isoDay, reference) {
   if (!reference) return isoDay ?? null;
   const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(isoDay ?? '');

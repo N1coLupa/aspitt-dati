@@ -5,8 +5,6 @@ const fold = (value) =>
     .replace(/[’`]/g, "'")
     .toLowerCase();
 
-// Forma confrontabile di un nome di fermata o di un pezzo di testo: minuscole, niente segni,
-// abbreviazioni sciolte. "P.zza Zanardelli 7" e "piazza Zanardelli 7" diventano uguali.
 const plain = (value) =>
   fold(value)
     .replace(/\bp\.?\s?zza\b/g, 'piazza')
@@ -19,7 +17,6 @@ const plain = (value) =>
 const STREET_PREFIX =
   /^(via|viale|v\.le|piazza|p\.zza|p\.za|piazzetta|corso|c\.so|largo|l\.go|vico|vicolo|contrada|c\.da|strada|s\.p\.|sp|s\.s\.|ss)\s+/;
 const NEGATION = /\bnon\b|soppress|sospes|chius|interdett|vietat|esclus/;
-// "saranno garantite solo le seguenti fermate": tutte le altre saltano.
 const ONLY =
   /\bgarantit\w*\s+(?:solo|soltanto|unicamente)\b|\b(?:solo|soltanto|unicamente)\s+(?:le\s+)?(?:seguenti\s+)?fermate\b|\beffettuer\w*\s+solo\b/;
 const DETOUR_BEFORE =
@@ -53,10 +50,6 @@ export function streetOf(stopName) {
   return core.length >= 4 ? core : null;
 }
 
-/**
- * La parte di testo che riguarda una linea. Un avviso puo' parlare di piu' linee
- * ("- LINEA OSPEDALE 1 ...; - LINEA OSPEDALE 2 ..."): ognuna ha la sua sezione.
- */
 export function lineSection(text, lineName, lineNames = []) {
   const source = plain(text);
   const marks = [...new Set([lineName, ...lineNames].map(plain).filter(Boolean))]
@@ -75,13 +68,6 @@ export function lineSection(text, lineName, lineNames = []) {
 
 const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/**
- * Le fermate di una linea che un avviso sopprime. Capisce:
- * - le fermate nominate per intero ("Via Gravina 92");
- * - i tratti "da X a Y" / "da X fino a Y", seguendo l'ordine della linea;
- * - "garantite solo le seguenti": saltano tutte le altre.
- * Le vie citate senza una fermata precisa valgono per tutte le loro fermate.
- */
 export function noticeStops(text, stops, lineName = '', lineNames = []) {
   const section = lineName ? lineSection(text, lineName, lineNames) : plain(text);
   if (!section) return [];
@@ -100,8 +86,6 @@ export function noticeStops(text, stops, lineName = '', lineNames = []) {
       mentions.push({ position, start: match.index, end: match.index + stop.name.length });
     }
   });
-  // Un nome contenuto in uno piu' lungo nello stesso punto ("via gravina 7" dentro "via gravina 79"
-  // e' gia' escluso dai confini) conta una volta sola: vince il piu' lungo.
   mentions.sort((a, b) => a.start - b.start || b.end - a.end);
   const kept = mentions.filter(
     (mention, index) => !mentions.slice(0, index).some((other) => other.start <= mention.start && other.end >= mention.end)
@@ -127,8 +111,6 @@ export function noticeStops(text, stops, lineName = '', lineNames = []) {
   if (!NEGATION.test(section)) return [];
   const skipped = new Set(ordered.filter((_, position) => chosen.has(position)).map((stop) => stop.stopId));
 
-  // Ripiego per le vie nominate senza fermata precisa ("le fermate di Via Cicerone"): valgono
-  // tutte le fermate su quella via, tranne se la via e' gia' stata citata con una fermata esatta.
   const covered = new Set(kept.map((mention) => streetOf(ordered[mention.position].raw)).filter(Boolean));
   for (const stop of stops) {
     if (!stop.stopId || skipped.has(stop.stopId)) continue;

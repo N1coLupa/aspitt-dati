@@ -23,9 +23,6 @@ function nearestVertex(shape, point, fromIndex = 0) {
   return best;
 }
 
-// MyMaps esporta senza coordinate i segnaposto geocodificati per indirizzo.
-// Poiche' conosciamo l'ordine delle fermate e il tracciato completo, quelle
-// mancanti si ricavano interpolando lungo la polilinea fra le due note.
 export function fillMissingStopCoordinates(stops, shape) {
   if (!shape.length) return stops;
 

@@ -1,21 +1,3 @@
-// Scraper degli eventi di Altamura.
-//
-// Sei fonti, nessuna delle quali basta da sola:
-//   - Comune di Altamura: l'agenda ufficiale (Municipium), l'unica con date,
-//     orari e categorie gia' strutturati;
-//   - AltamuraLive: feed RSS di eventi e cultura, stabile nel tempo;
-//   - AltamuraLife: agenda in pagina, con data e luogo separati nel markup;
-//   - Il Tacco di Bacco: schede evento in formato schema.org, con luogo preciso;
-//   - Virgilio Eventi: agenda con intervalli di date e luogo;
-//   - Vito Barone: il calendario delle ricorrenze fisse di Altamura (Carnevale,
-//     San Giuseppe, Sant'Irene, Federicus...), che nessun'altra fonte elenca.
-// Le ultime tre coprono anche i paesi vicini: si tiene solo Altamura.
-//
-// Ogni evento porta con se' la fonte e il link all'articolo originale: i testi
-// restano di chi li ha scritti, l'app li cita e ci rimanda.
-//
-// Uso: node scripts/scrapers/events.mjs
-
 import * as cheerio from 'cheerio';
 import { XMLParser } from 'fast-xml-parser';
 import { getText } from '../lib/http.mjs';
@@ -53,7 +35,6 @@ const SOURCES = {
   },
 };
 
-// Categorie dell'app: la sezione Scopri filtra su queste.
 const CATEGORY_RULES = [
   { category: 'trekking', re: /trekking|escursion|cammin|murgia|pulo|natura|bici|sentier/i },
   { category: 'cultura', re: /mostra|museo|libro|poesia|teatr|concert|arte|conferenz|present|storia|archeolog|cinema|corteo/i },
@@ -84,7 +65,6 @@ const clean = (value) =>
 
 const asArray = (value) => (value == null ? [] : Array.isArray(value) ? value : [value]);
 
-/** Il Comune scrive il fuso come "+00": senza i minuti, Date non lo legge. */
 function isoInstant(value) {
   const date = new Date(String(value ?? '').replace(/([+-]\d{2})$/, '$1:00'));
   return Number.isNaN(date.getTime()) ? null : date.toISOString();
@@ -98,10 +78,6 @@ function classify(...texts) {
   return matched.length ? matched : ['eventi'];
 }
 
-/**
- * Una riga sola che dice di cosa si tratta: e' il testo della fonte, tagliato
- * alla fine di una frase, non un riassunto inventato da noi.
- */
 function shortSummary(text, limit = 220) {
   const full = clean(text);
   if (!full) return null;
@@ -111,8 +87,6 @@ function shortSummary(text, limit = 220) {
   return `${stop > limit * 0.5 ? cut.slice(0, stop + 1) : `${cut.replace(/[\s,;:]+\S*$/, '')}…`}`;
 }
 
-// Molte cronache citano il luogo in chiaro: lo estraiamo per poter poi calcolare
-// le fermate piu' vicine.
 function guessVenue(text) {
   const match =
     /\b(?:presso|nei|nel|nella|negli|a|al|alla|all'|in)\s+((?:Dimora|Palazzo|Teatro|Chiesa|Chiostro|Monastero|Santuario|Museo|Masseria|Piazza|Largo|Claustro|Biblioteca|Parco|Giardini|Cattedrale|Auditorium|Anfiteatro|Villa|Centro)(?:\s+(?:di|del|della|dei|delle|dell'))?(?:\s+(?:SS\.|[A-ZÀ-Ü][\wÀ-ü'.]{1,})){1,4})/.exec(
@@ -121,7 +95,6 @@ function guessVenue(text) {
   return match ? clean(match[1]).replace(/[.,;]$/, '') : null;
 }
 
-/** Il luogo senza la ripetizione della citta': "Chiesa Santa Croce, Altamura" -> "Chiesa Santa Croce". */
 function tidyVenue(value) {
   const text = clean(value)
     .replace(/\s*[-–]\s*Altamura\s*\(BA\)\s*$/i, '')
@@ -131,8 +104,6 @@ function tidyVenue(value) {
   return text && !/^altamura$/i.test(text) ? text : null;
 }
 
-/* --------------------------------------------------- Comune di Altamura */
-
 async function scrapeComune() {
   const list = JSON.parse(await getText(SOURCES.comune.api, { headers: { Accept: 'application/json' } }));
   if (!Array.isArray(list)) throw new Error('risposta inattesa dall’agenda del Comune');
@@ -141,7 +112,6 @@ async function scrapeComune() {
     .filter((event) => event.title && event.start_date)
     .map((event) => {
       const title = clean(event.title);
-      // Gli orari arrivano con una data finta del 2000: conta solo l'ora.
       const time = /T(\d{2}:\d{2})/.exec(event.start_time ?? '')?.[1] ?? null;
       return {
         id: `comune-${event.id}`,
@@ -170,8 +140,6 @@ async function scrapeComune() {
     });
 }
 
-/* ------------------------------------------------------- AltamuraLive */
-
 async function scrapeAltamuraLive() {
   const events = new Map();
 
@@ -195,10 +163,6 @@ async function scrapeAltamuraLive() {
       const categories = asArray(item.category).map(clean);
       const published = item.pubDate ? new Date(item.pubDate).toISOString() : null;
 
-      // La data della notizia non e' la data dell'evento: quella sta nel testo,
-      // quasi sempre senza anno. La data di pubblicazione e' il riferimento
-      // giusto per scioglierla, altrimenti un articolo di maggio finirebbe
-      // nell'anno successivo.
       const reference = published ? new Date(published) : new Date();
       const when =
         parseItalianDateRange(title, reference) ??
@@ -227,8 +191,6 @@ async function scrapeAltamuraLive() {
   return [...events.values()];
 }
 
-/* ------------------------------------------------------- AltamuraLife */
-
 async function scrapeAltamuraLife() {
   const html = await getText(SOURCES.altamuralife.agenda);
   const $ = cheerio.load(html);
@@ -241,7 +203,6 @@ async function scrapeAltamuraLife() {
     const href = anchor.attr('href');
     if (!title || !href) return;
 
-    // "Fino al 27 settembre" / "12 ottobre" + il luogo nel sotto-titolo.
     const info = clean(el.find('.infotitle').clone().find('.infotitle-sub').remove().end().text());
     const venue = tidyVenue(el.find('.infotitle-sub').text());
     const when = parseItalianDateRange(info) ?? parseItalianDateRange(title);
@@ -266,8 +227,6 @@ async function scrapeAltamuraLife() {
   return events;
 }
 
-/* ---------------------------------------------------- Il Tacco di Bacco */
-
 async function scrapeTacco() {
   const html = await getText(SOURCES.tacco.homepage);
   const events = [];
@@ -281,7 +240,6 @@ async function scrapeTacco() {
     }
     if (data?.['@type'] !== 'Event' || !data.name || !data.startDate) continue;
 
-    // La pagina raccoglie tutta la zona: i titoli sono "Citta' | Titolo".
     const [city, ...rest] = String(data.name).split('|');
     const title = clean(rest.join('|') || data.name);
     const place = clean(data.location?.name);
@@ -307,11 +265,8 @@ async function scrapeTacco() {
   return events;
 }
 
-/* -------------------------------------------------------- Virgilio */
-
 const VIRGILIO_MONTHS = { gen: 1, feb: 2, mar: 3, apr: 4, mag: 5, giu: 6, lug: 7, ago: 8, set: 9, ott: 10, nov: 11, dic: 12 };
 
-/** "20 Set" -> data ISO dell'occorrenza piu' vicina (l'anno non e' scritto). */
 function virgilioDate(day, month, today = new Date()) {
   const number = VIRGILIO_MONTHS[String(month).slice(0, 3).toLowerCase()];
   if (!number) return null;
@@ -367,25 +322,13 @@ async function scrapeVirgilio() {
   return events;
 }
 
-/* ------------------------------------------------------- Vito Barone */
-
-/**
- * Il calendario delle ricorrenze di Altamura: una pagina scritta a mano, con
- * una riga per appuntamento ("5 maggio | Festa della Patrona Sant'Irene").
- * Sono le feste che tornano ogni anno e che nessuna testata annuncia in
- * anticipo: qui diventano le voci fisse dell'agenda.
- */
 async function scrapeVitoBarone() {
-  // Pagina scritta a mano, con il segnabyte UTF-8 in testa: senza toglierlo
-  // cheerio se lo porta dietro come carattere invisibile.
   const html = (await getText(SOURCES.vitobarone.homepage)).replace(/^﻿/, '');
   const $ = cheerio.load(html);
   const events = [];
   const today = new Date();
 
   $('td').each((_, cell) => {
-    // Data e titolo stanno nella stessa casella, attaccati:
-    // "19 marzoFesta di San Giuseppe", "14, 15 e 17 febbraio 2026Carnevale".
     const text = clean($(cell).text());
     const split = /^(.{4,70}?[a-zà-ù0-9)])([A-ZÀ-Ù][^]*)$/.exec(text);
     if (!split) return;
@@ -402,7 +345,6 @@ async function scrapeVitoBarone() {
     const range = parseItalianDateRange(when, today);
     if (!range?.start) return;
 
-    // Senza anno, "5 maggio" e' il 5 maggio prossimo, non quello passato.
     const shift = (iso) => {
       if (!iso) return null;
       const date = new Date(`${iso}T12:00:00`);
@@ -432,10 +374,6 @@ async function scrapeVitoBarone() {
   return events;
 }
 
-/* ---------------------------------------------------------- Unione */
-
-// Le fonti coprono gli stessi appuntamenti: si tiene una voce sola, quella con
-// i dati migliori, e le altre restano come rimandi.
 function dedupe(events) {
   const byKey = new Map();
   for (const event of events) {
@@ -457,9 +395,6 @@ function dedupe(events) {
     });
   }
 
-  // Due fonti possono chiamare lo stesso appuntamento in modi diversi
-  // ("Federicus: Corteo Storico..." e "Federicus, festa medioevale"): se le date
-  // si sovrappongono e i titoli condividono le parole che contano, e' uno solo.
   const merged = [];
   for (const event of byKey.values()) {
     const first = keywords(event.title)[0];
@@ -476,8 +411,6 @@ function dedupe(events) {
     twin.alsoOn = [...(twin.alsoOn ?? []), { source: event.source, url: event.url }];
   }
 
-  // Una segnalazione senza data e' un doppione se dice esattamente le stesse
-  // parole di un appuntamento gia' in calendario.
   return merged.filter((event) => {
     if (event.startDate || event.endDate) return true;
     const words = new Set(keywords(event.title));
@@ -507,17 +440,11 @@ const STOPWORDS = new Set([
   'tradizionali',
 ]);
 
-/**
- * Le parole che identificano un appuntamento, senza quelle di servizio. La
- * prima e' il nome della manifestazione ("Federicus", "Murgia a morsi"): due
- * titoli che cominciano cosi', negli stessi giorni, sono lo stesso evento.
- */
 const keywords = (title) =>
   slugify(title)
     .split('-')
     .filter((word) => word.length > 3 && !STOPWORDS.has(word) && !/^\d+$/.test(word));
 
-/** I due appuntamenti cadono negli stessi giorni. */
 function overlap(a, b) {
   const startA = a.startDate ?? a.endDate;
   const startB = b.startDate ?? b.endDate;
@@ -537,7 +464,6 @@ async function collect(label, scrape) {
   }
 }
 
-/** "AAAA-MM-GG" con giorno e mese veri, oppure null. */
 function isoDay(value) {
   const text = typeof value === 'string' ? value.trim().slice(0, 10) : '';
   if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
@@ -560,15 +486,9 @@ export async function scrapeEvents() {
   const recentThreshold = new Date(Date.now() - 45 * 24 * 3600 * 1000).toISOString();
 
   const events = dedupe(fromSources.flat())
-    // Ogni fonte scrive le date a modo suo ("2026-10-05 00:00:00", "2026-10-05T..."):
-    // nell'app arriva solo AAAA-MM-GG valido, o niente. Una data malformata
-    // farebbe fallire la formattazione e chiudere la schermata.
     .map((event) => ({ ...event, startDate: isoDay(event.startDate), endDate: isoDay(event.endDate) }))
     .map((event) => ({ ...event, dated: Boolean(event.startDate || event.endDate) }))
     .filter((event) => {
-      // Gli appuntamenti conclusi escono dall'agenda. Le segnalazioni senza una
-      // data riconoscibile restano solo se ancora fresche: sono spunti per la
-      // sezione Scopri, non voci di calendario.
       if (event.dated) return !event.endDate || event.endDate >= today;
       return !event.publishedAt || event.publishedAt >= recentThreshold;
     })

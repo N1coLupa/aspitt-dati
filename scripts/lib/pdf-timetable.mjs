@@ -93,12 +93,9 @@ function parsePage(pageItems, pageNumber) {
   );
   const gridLeft = Math.min(...columns) - COLUMN_TOLERANCE;
 
-  // La tabella comincia sotto l'intestazione delle corse: numeri piu' in alto (i grandi "1 2 3" decorativi
-  // dei PDF di ottobre 2026) non sono fermate.
   const headerTop = Math.max(...items.filter((item) => /CORSA/i.test(item.s)).map((item) => item.y), -Infinity);
   const belowHeader = (item) => !Number.isFinite(headerTop) || item.y < headerTop - ROW_TOLERANCE;
 
-  // A volte numero e nome arrivano in un solo pezzo di testo ("1 Via Carpentino fronte 134"): si separano.
   const split = [];
   for (const item of items) {
     const merged = /^(\d{1,3})\s+(\D.*)$/.exec(item.s);

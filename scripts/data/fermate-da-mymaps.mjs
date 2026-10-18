@@ -1,19 +1,3 @@
-// Coordinate delle fermate dalle mappe MyMaps dell'operatore.
-//
-// Nell'esportazione KML alcuni segnaposto hanno solo l'indirizzo scritto: le
-// coordinate le calcola Google mentre disegna la mappa, e non finiscono nel
-// file. La pagina della mappa pero' le contiene gia' calcolate, ed e' quello
-// che l'operatore mostra come posizione ufficiale delle sue fermate.
-//
-// Questo script le legge una volta sola e le salva in
-// scripts/data/fermate-posizioni.json come "fonte": "mymaps". Da li' le usa lo
-// scraper a ogni aggiornamento, senza ripassare da Google: va rilanciato solo
-// quando l'operatore cambia le mappe.
-//
-//   node scripts/data/fermate-da-mymaps.mjs
-//
-// Le voci con "fonte": "manuale" (misurate sul posto) non vengono toccate.
-
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { getText, sleep } from '../lib/http.mjs';
@@ -24,7 +8,6 @@ const OUT = path.join('scripts', 'data', 'fermate-posizioni.json');
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
 
-/** Nella pagina ogni segnaposto e' "[lat,lon],[0,-128],\"id\"],[[\"Nome\"]]". */
 const PLACEMARK = /\[(-?\d+\.\d+),(-?\d+\.\d+)\],\[0,-128\],\\"[0-9A-F]+\\"\],\[\[\\"((?:[^"\\]|\\.)*?)\\"\]\]/g;
 
 function placemarksOf(html) {
@@ -40,11 +23,6 @@ function placemarksOf(html) {
 
 const numbersOf = (name) => (stopKey(name).match(/\d{1,4}/g) ?? []).sort().join(' ');
 
-/**
- * Chiave uguale, altrimenti parole in comune. I civici devono coincidere:
- * senza questo controllo "Via Gravina 155" finiva su "Via Gravina 79", che
- * nella stessa via sta a un chilometro e mezzo.
- */
 function matchStop(name, placemarks) {
   const exact = placemarks.get(stopKey(name));
   if (exact) return { ...exact, score: 1 };
@@ -88,8 +66,6 @@ for (const line of transport.lines) {
 
   let nuove = 0;
   for (const stop of line.stops) {
-    // Le fermate che il KML posiziona gia' non si toccano: quelle coordinate
-    // arrivano dalla stessa mappa, senza passare da un abbinamento per nome.
     if (!stop.interpolated || fermate[stop.stopId]?.fonte === 'manuale') continue;
     const match = matchStop(stop.name, placemarks);
     if (!match) {

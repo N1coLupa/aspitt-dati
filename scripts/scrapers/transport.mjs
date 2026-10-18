@@ -167,7 +167,6 @@ const isSpacedOut = (name) =>
     .split(' ')
     .filter((token) => token.length === 1).length >= 6;
 
-// La legatura "tt" dei PDF a volte arriva staccata: "so tt opasso".
 const joinLigature = (name) => String(name).replace(/(\p{Ll}) tt (\p{Ll})/gu, '$1tt$2');
 
 function restoreSpacedName(name, known) {
@@ -229,10 +228,6 @@ async function scrapeLine(line, registry, previousLine) {
     };
   }
 
-  // Ogni pagina del PDF ha il suo elenco di fermate. Se e' lo stesso della prima (corse in piu') si
-  // riusa; se e' diverso (il ritorno, con altre fermate) si aggiunge in coda con numeri propri. Prima
-  // gli orari di ogni pagina venivano letti sulle fermate della prima: dal 12/10/2026 il ritorno della
-  // Linea Scuola 1 finiva su fermate sbagliate.
   const sameList = (a, b) => a.length === b.length && a.every((stop, i) => stopKey(stop.name) === stopKey(b[i].name));
   const pdfStops = [];
   const offsets = tables.map((table, tableIndex) => {
@@ -334,8 +329,6 @@ async function readNotice(url, previousLine, stops, lineName, lineNames) {
   if (!url) return empty;
   try {
     const text = await noticeText(url);
-    // L'anno scritto dall'operatore si controlla con la data in cui il PDF e' stato caricato:
-    // "13 ottobre 2025" in un avviso pubblicato a ottobre 2026 e' un errore di battitura.
     const published = publishedOn(url);
     const range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
     const times = noticeTimes(text);

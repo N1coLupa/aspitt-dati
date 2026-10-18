@@ -1,13 +1,3 @@
-// Prova se da questa rete il sito dell'operatore risponde o chiede la verifica
-// anti-bot. Serve a scegliere da dove far girare l'aggiornamento automatico:
-// si lancia uguale sul PC, su un server, dentro un'azione di GitHub o in n8n.
-//
-//   node scripts/prova-accesso.mjs
-//
-// Esce con 0 se si passa, 1 se il sito blocca, 2 se non risponde proprio.
-// Non tenta in nessun modo di superare la verifica: si limita a dire com'e'
-// andata, e con quale indirizzo IP pubblico e' partita la richiesta.
-
 import { BlockedError, getBuffer, getText } from './lib/http.mjs';
 
 const PAGES = [

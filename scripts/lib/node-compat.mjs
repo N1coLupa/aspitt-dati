@@ -1,6 +1,3 @@
-// pdfjs-dist usa API introdotte in Node 22. Su Node 20 le colmiamo qui, cosi'
-// gli scraper girano anche prima dell'aggiornamento del runtime. Su Node >= 22
-// questo modulo non fa nulla.
 import module from 'node:module';
 
 if (typeof Promise.withResolvers !== 'function') {
