@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checkedAt": "2026-10-18T14:13:33.798Z",
+  "checkedAt": "2026-10-18T21:52:02.056Z",
   "files": {
     "transport": {
       "generatedAt": "2026-10-18T14:12:43.196Z",
@@ -33,11 +33,11 @@
       "error": null
     },
     "places": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "HTTP 500"
     }
   },
   "app": "muevt",
-  "signedAt": "2026-10-18T14:13:46.085Z",
+  "signedAt": "2026-10-18T21:52:13.280Z",
   "keyId": "5VTN2Etz"
 }
