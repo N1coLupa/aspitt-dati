@@ -8,8 +8,6 @@ export function slugify(input) {
     .slice(0, 60);
 }
 
-// I nomi delle fermate arrivano da tre fonti (KML, PDF, sito) con punteggiatura
-// e abbreviazioni diverse. Questa chiave serve a riconoscere che sono la stessa.
 export function stopKey(name) {
   return String(name)
     .normalize('NFD')

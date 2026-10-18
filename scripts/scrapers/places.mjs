@@ -1,17 +1,3 @@
-// Luoghi di Altamura per la sezione Scopri e per la mappa.
-//
-// L'elenco lo decide scripts/data/places-curated.json: sono i luoghi scelti uno
-// per uno, ognuno con la sua descrizione. OpenStreetMap serve solo a completarli
-// (coordinate esatte, indirizzo, sito, orari): un luogo che sta su OSM ma non
-// nel file curato non entra nell'app, perche' una scheda col solo nome non dice
-// niente a nessuno.
-//
-// Nessun luogo ha una fotografia: le foto libere coprivano meno di un luogo su
-// cinque e rendevano incomplete tutte le altre schede. Al loro posto, in app,
-// c'e' una superficie tinta con l'icona del tipo di luogo.
-//
-// Uso: node scripts/scrapers/places.mjs
-
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { slugify } from '../lib/slug.mjs';
@@ -19,10 +5,6 @@ import { distanceMeters } from '../lib/geo.mjs';
 
 const OVERPASS_ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 
-// Il territorio comunale di Altamura vale oltre 400 km2 e comprende il Pulo, la
-// grotta di Lamalunga e le masserie della Murgia. Interrogare il confine
-// amministrativo invece di un riquadro evita di tirare dentro i monumenti di
-// Gravina e Santeramo, che cadono nello stesso rettangolo.
 const QUERY = `
 [out:json][timeout:120];
 area["boundary"="administrative"]["admin_level"="8"]["name"="Altamura"]->.altamura;
@@ -69,7 +51,6 @@ function categorise(tags) {
   return matched.length ? matched : ['cultura'];
 }
 
-// Serve alla mappa: icona nera per i luoghi simbolo, icona leggera per il resto.
 function iconFor(tags) {
   if (tags.leisure === 'park' || tags.leisure === 'garden') return 'park';
   if (tags.leisure === 'nature_reserve' || tags.boundary === 'protected_area') return 'nature';
@@ -132,7 +113,6 @@ export async function scrapePlaces() {
     if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
 
     const id = slugify(name);
-    // Solo i luoghi scelti: OSM ne mappa centinaia, l'app ne racconta quaranta.
     if (!wanted.has(id) || byId.has(id)) continue;
 
     byId.set(id, {
@@ -157,8 +137,6 @@ export async function scrapePlaces() {
     });
   }
 
-  // Il file curato ha la precedenza: sovrascrive e, se serve, aggiunge luoghi
-  // che OSM non mappa (una passeggiata, un itinerario, un'esperienza).
   for (const entry of curated) {
     const id = entry.id ?? slugify(entry.name);
     const existing = byId.get(id);
@@ -174,8 +152,6 @@ export async function scrapePlaces() {
 
   const places = [...byId.values()].filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lon));
 
-  // Ogni luogo porta con se' le fermate piu' vicine: e' cosi' che la scheda
-  // "come arrivarci" funziona anche senza connessione.
   let transport = null;
   try {
     transport = JSON.parse(await fs.readFile(path.join(process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati'), 'transport.json'), 'utf8'));

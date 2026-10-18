@@ -139,8 +139,6 @@ function unifyStopSpellings(transport, notes) {
   notes.push(`unificate ${replaced.size} fermate scritte in modo diverso: ${[...replaced.keys()].join(', ')}`);
 }
 
-// Le linee di una fermata sono quelle che la elencano davvero: dopo esclusioni e unificazioni
-// l'elenco in transport.stops restava con linee che non ci passano piu'.
 export function syncStopLines(transport) {
   const served = new Map();
   for (const line of transport.lines) {

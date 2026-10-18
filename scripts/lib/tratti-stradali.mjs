@@ -1,6 +1,3 @@
-// I tratti fra due fermate consecutive che il tracciato della linea non copre: succede quando la mappa
-// dell'operatore disegna solo l'andata (le linee scuola) o quando l'orario aggiunge fermate nuove.
-// Per quei tratti si chiede il percorso stradale a OSRM e lo si salva in `line.hops`, con cache.
 import fs from 'node:fs/promises';
 
 import { removeEmptyLoops } from './forme-stradali.mjs';
@@ -28,7 +25,6 @@ function measure(shape) {
   return cumulative;
 }
 
-// I passaggi del tracciato vicino a un punto, come distanze dall'inizio.
 function passes(shape, cumulative, point) {
   const kx = 111320 * Math.cos(point.lat * rad);
   const ky = 110540;
@@ -54,8 +50,6 @@ function passes(shape, cumulative, point) {
   return found;
 }
 
-// Il tracciato su cui si cercano i passaggi: come in src/utilita/forme.ts, il disegno di sola andata
-// si ripercorre al contrario e il giro chiuso si ripete.
 function extended(shape) {
   if (shape.length < 2) return shape;
   const gap = meters(shape[0], shape[shape.length - 1]);
@@ -106,7 +100,6 @@ export function uncoveredHops(line) {
       const fromB = passes(shape, cumulative, b);
       const covered = fromA.some((x) => fromB.some((y) => y > x && y - x <= straight * DETOUR_RATIO + DETOUR_EXTRA_M));
       if (covered) continue;
-      // Prima i disegni ufficiali in piu' della linea (il ritorno disegnato a parte), poi il calcolo.
       const drawn = (line.extraShapes ?? []).map((extra) => sliceCovered(extra, a, b, straight)).find(Boolean);
       hops.set(key, { key, a, b, straight, drawn: drawn ?? null });
     }
@@ -152,7 +145,6 @@ export async function applyHopRoutes(transport, cacheFile, notes = []) {
       if (!cache[id]) {
         try {
           const found = await route(hop.a, hop.b);
-          // Un percorso stradale molto piu' lungo della linea d'aria e' un giro sbagliato: meglio niente.
           if (found.distance > hop.straight * MAX_HOP_RATIO + MAX_HOP_EXTRA_M) throw new Error(`${Math.round(found.distance)} m`);
           cache[id] = found.points.map((p) => [round(p.lat), round(p.lon)]);
           changed = true;
@@ -163,11 +155,9 @@ export async function applyHopRoutes(transport, cacheFile, notes = []) {
           continue;
         }
       }
-      // Il percorso parte e arriva sulle fermate, anche dove la strada che OSRM conosce si ferma prima.
       const routed = cache[id].map(([lat, lon]) => ({ lat, lon }));
       if (meters(routed[0], hop.a) > 10) routed.unshift({ lat: hop.a.lat, lon: hop.a.lon });
       if (meters(routed[routed.length - 1], hop.b) > 10) routed.push({ lat: hop.b.lat, lon: hop.b.lon });
-      // Come per i tracciati: niente giri d'isolato per arrivare alla fermata dal lato "giusto".
       result[hop.key] = removeEmptyLoops(routed, []).map((p) => [round(p.lat), round(p.lon)]);
     }
     if (Object.keys(result).length) line.hops = result;

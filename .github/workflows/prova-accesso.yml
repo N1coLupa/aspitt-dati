@@ -1,10 +1,3 @@
-# Prova se dai server di GitHub si riesce a leggere il sito dell'operatore.
-#
-# Il sito blocca certi indirizzi IP con una verifica anti-bot: serve a sapere,
-# senza accendere nessun computer, se l'aggiornamento automatico puo' girare
-# qui. Si lancia a mano dalla scheda Actions ("Run workflow") e scrive il
-# risultato nel riepilogo.
-
 name: Prova accesso al sito
 
 on:
@@ -18,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
           persist-credentials: false
-      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
         with:
           node-version: 22
       - name: Prova

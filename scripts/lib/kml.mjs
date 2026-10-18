@@ -64,8 +64,6 @@ export async function fetchKmlGeometry(kmlUrl) {
     }
   }
 
-  // La linea piu' lunga e' il tracciato; le altre (il ritorno disegnato a parte, nelle linee scuola)
-  // restano come disegni in piu'.
   const sorted = paths.filter((path) => path.length >= 2).sort((a, b) => b.length - a.length);
   return { title: typeof root.name === 'string' ? root.name.trim() : '', stops, shape: sorted[0] ?? [], extra: sorted.slice(1) };
 }

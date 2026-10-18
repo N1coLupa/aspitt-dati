@@ -1,16 +1,3 @@
-// Aggiorna la copia locale delle vie di Altamura (da OpenStreetMap) e mostra
-// dove finiscono le fermate che MyMaps lascia senza coordinate.
-//
-// Lo scraper applica le posizioni a ogni aggiornamento usando la copia locale
-// (scripts/data/vie-altamura.json), quindi questo script serve solo quando
-// cambiano le vie o si vuole rivedere il resoconto:
-//
-//   node scripts/data/posiziona-fermate.mjs
-//
-// Per correggere una fermata dopo un sopralluogo si scrive in
-// scripts/data/fermate-posizioni.json, sotto "fermate", l'id della fermata con
-// lat e lon misurate: vince su qualunque calcolo.
-
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { computeStopPositions, fetchStreets } from '../lib/posizioni.mjs';
