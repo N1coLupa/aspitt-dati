@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { MARINO_HOSTS, allowedUrl } from './lib/http.mjs';
 
 const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
 
@@ -46,6 +47,17 @@ function checkTransport(data) {
   if (withTrips.length < data.lines.length - 2) {
     fail(`${data.lines.length - withTrips.length} linee senza nemmeno una corsa`);
   }
+
+  const checkUrl = (value, what, hosts = MARINO_HOSTS) => {
+    if (value != null && !allowedUrl(value, hosts)) fail(`${what}: indirizzo non ammesso (${value})`);
+  };
+  for (const line of data.lines) {
+    if (/[<>"&]/.test(line.name)) fail(`nome di linea con caratteri non ammessi: ${line.name}`);
+    checkUrl(line.noticeUrl, `${line.name}: avviso`);
+    checkUrl(line.timetableUrl, `${line.name}: orario`);
+    checkUrl(line.mapUrl, `${line.name}: mappa`, ['google.com']);
+  }
+  for (const item of [...(data.news ?? []), ...(data.fares ?? [])]) checkUrl(item.url, 'link');
 
   for (const line of data.lines) {
     if (!line.trips.length) {

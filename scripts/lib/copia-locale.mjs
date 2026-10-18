@@ -1,27 +1,10 @@
-// Copia del sito dell'operatore salvata a mano, per quando il sito blocca lo
-// scraper con la verifica anti-bot.
-//
-// La verifica non si aggira. Se scatta, basta che una persona apra
-// https://marinobusurbano.it/ nel browser e salvi nella cartella:
-//   - la pagina iniziale (Ctrl+S, "Pagina web, solo HTML");
-//   - i PDF degli orari cambiati (quelli che lo scraper elenca come mancanti);
-//   - facoltativo: la pagina https://marinobusurbano.it/news/.
-// I nomi dei file non contano per le pagine; i PDF vanno lasciati col nome
-// originale. La cartella e' MUEVT_COPIA_MARINO, di default "orari-marino" sul
-// Desktop.
-
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { BlockedError, getBuffer, getText } from './http.mjs';
+import { BlockedError, MARINO_HOSTS, getBuffer, getText } from './http.mjs';
 
 export const COPY_DIR = process.env.MUEVT_COPIA_MARINO ?? path.join(os.homedir(), 'Desktop', 'orari-marino');
 
-/**
- * Da dove sono arrivati i dati di questo giro. `files` dice, per ogni
- * indirizzo, il nome del file usato dalla copia: serve per accorgersi che il
- * PDF salvato a mano e' piu' recente di quello che il sito pubblicava.
- */
 export const usage = { local: new Set(), missing: new Set(), files: new Map() };
 
 async function files() {
@@ -34,7 +17,6 @@ async function files() {
 
 const fileName = (url) => decodeURIComponent(new URL(url).pathname.split('/').pop() ?? '');
 
-/** Una pagina HTML salvata che contiene il marcatore indicato. */
 async function localPage(marker) {
   for (const file of await files()) {
     if (!/\.html?$/i.test(file)) continue;
@@ -44,13 +26,9 @@ async function localPage(marker) {
   return null;
 }
 
-/**
- * Scarica una pagina del sito; se il sito chiede la verifica, usa la copia
- * salvata che contiene `marker` (una classe CSS tipica di quella pagina).
- */
 export async function marinoText(url, marker) {
   try {
-    return await getText(url);
+    return await getText(url, { hosts: MARINO_HOSTS });
   } catch (err) {
     if (!(err instanceof BlockedError)) throw err;
     const html = marker ? await localPage(marker) : null;
@@ -63,11 +41,6 @@ export async function marinoText(url, marker) {
   }
 }
 
-/**
- * Il nome del PDF senza la data finale: "..._Orari_Scuola-2-08-09-2026.pdf" e
- * "..._Orari_Scuola-2-02-09-2026.pdf" sono lo stesso quadro orario, in due
- * edizioni. Serve a riconoscere un orario nuovo salvato a mano.
- */
 const timetableKey = (name) =>
   name
     .toLowerCase()
@@ -75,10 +48,9 @@ const timetableKey = (name) =>
     .replace(/[-_]?\d{2}[-_.]\d{2}[-_.]\d{4}$/, '')
     .replace(/[-_]?\d{4}$/, '');
 
-/** Come marinoText, per i PDF: nella copia si cerca il file con lo stesso nome, o una sua edizione piu' recente. */
 export async function marinoBuffer(url) {
   try {
-    return await getBuffer(url);
+    return await getBuffer(url, { hosts: MARINO_HOSTS });
   } catch (err) {
     if (!(err instanceof BlockedError)) throw err;
     const wanted = fileName(url).toLowerCase();
@@ -96,10 +68,6 @@ export async function marinoBuffer(url) {
   }
 }
 
-/**
- * Lascia nella cartella della copia l'elenco di cosa salvare a mano, oppure lo
- * toglie quando non serve piu'. E' il promemoria per chi apre la cartella.
- */
 export async function writeMissingList() {
   const file = path.join(COPY_DIR, 'DA-SALVARE.txt');
   if (!usage.missing.size) {
