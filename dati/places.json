@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:13:33.792Z",
+  "generatedAt": "2026-10-19T17:16:24.996Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,12 +47,12 @@
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-via-pietro-colletta-204",
+          "name": "Via Pietro Colletta 204",
           "lines": [
-            "linea-scuola-3"
+            "pescariello-z-i"
           ],
-          "distance": 150
+          "distance": 73
         }
       ]
     },
@@ -93,7 +93,7 @@
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 113
+          "distance": 111
         }
       ]
     },
@@ -407,7 +407,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 43
+          "distance": 45
         },
         {
           "stopId": "stop-via-bari-14",
@@ -564,6 +564,14 @@
           "distance": 38
         },
         {
+          "stopId": "stop-via-pietro-colletta-204",
+          "name": "Via Pietro Colletta 204",
+          "lines": [
+            "pescariello-z-i"
+          ],
+          "distance": 89
+        },
+        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
@@ -573,16 +581,6 @@
             "pescariello-z-i"
           ],
           "distance": 141
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 142
         }
       ]
     },
@@ -616,7 +614,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 260
+          "distance": 259
         },
         {
           "stopId": "stop-via-santeramo-119",
@@ -710,7 +708,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 255
+          "distance": 254
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -811,7 +809,7 @@
             "linea-scuola-4",
             "pescariello-z-i"
           ],
-          "distance": 180
+          "distance": 176
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -821,7 +819,7 @@
             "ospedale-domenica-e-festivi",
             "pescariello-z-i"
           ],
-          "distance": 261
+          "distance": 257
         }
       ]
     },
@@ -906,7 +904,7 @@
             "ospedale-2",
             "ospedale-domenica-e-festivi"
           ],
-          "distance": 252
+          "distance": 248
         }
       ]
     },
@@ -1019,7 +1017,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 258
+          "distance": 257
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -1037,7 +1035,7 @@
             "navette-hub",
             "linea-scuola-2"
           ],
-          "distance": 348
+          "distance": 349
         }
       ]
     },
@@ -1062,7 +1060,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 43
+          "distance": 45
         },
         {
           "stopId": "stop-via-bari-14",
@@ -1079,7 +1077,7 @@
             "ospedale-2",
             "navette-hub"
           ],
-          "distance": 287
+          "distance": 286
         }
       ]
     },
@@ -1126,7 +1124,7 @@
             "linea-scuola-2",
             "linea-scuola-3"
           ],
-          "distance": 178
+          "distance": 179
         }
       ]
     },
@@ -1187,7 +1185,7 @@
             "linea-scuola-4",
             "pescariello-z-i"
           ],
-          "distance": 160
+          "distance": 156
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -1197,7 +1195,7 @@
             "ospedale-domenica-e-festivi",
             "pescariello-z-i"
           ],
-          "distance": 264
+          "distance": 261
         }
       ]
     },
@@ -1230,7 +1228,7 @@
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 79
+          "distance": 77
         },
         {
           "stopId": "stop-via-madrid-66",
@@ -1240,7 +1238,7 @@
             "ospedale-domenica-e-festivi",
             "linea-scuola-3"
           ],
-          "distance": 97
+          "distance": 99
         },
         {
           "stopId": "stop-via-londra-23",
@@ -1291,7 +1289,7 @@
             "ospedale-1",
             "linea-scuola-2"
           ],
-          "distance": 96
+          "distance": 98
         },
         {
           "stopId": "stop-viale-martiri-83",
@@ -1410,7 +1408,7 @@
             "ospedale-2",
             "ospedale-domenica-e-festivi"
           ],
-          "distance": 252
+          "distance": 248
         }
       ]
     },
@@ -1451,7 +1449,7 @@
             "linea-scuola-4",
             "pescariello-z-i"
           ],
-          "distance": 57
+          "distance": 55
         },
         {
           "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
@@ -1461,7 +1459,7 @@
             "ospedale-domenica-e-festivi",
             "pescariello-z-i"
           ],
-          "distance": 194
+          "distance": 196
         },
         {
           "stopId": "stop-via-iv-novembre-fronte-via-ii-giugno",
@@ -1520,12 +1518,12 @@
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-via-pietro-colletta-204",
+          "name": "Via Pietro Colletta 204",
           "lines": [
-            "linea-scuola-3"
+            "pescariello-z-i"
           ],
-          "distance": 142
+          "distance": 78
         }
       ]
     },

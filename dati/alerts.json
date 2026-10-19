@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:13:33.793Z",
+  "generatedAt": "2026-10-19T17:16:24.997Z",
   "alerts": [
     {
       "id": "orari-linea-scuola-3-2026-10-16",
@@ -9,24 +9,6 @@
       "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
       "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
       "createdAt": "2026-10-16T15:05:01.759Z"
-    },
-    {
-      "id": "orari-linea-scuola-1-2026-10-12",
-      "severity": "warning",
-      "lineId": "linea-scuola-1",
-      "title": "Orari aggiornati: Linea Scuola 1",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-1-12-10-2026.pdf",
-      "createdAt": "2026-10-12T12:15:16.060Z"
-    },
-    {
-      "id": "orari-linea-scuola-3-2026-10-12",
-      "severity": "warning",
-      "lineId": "linea-scuola-3",
-      "title": "Orari aggiornati: Linea Scuola 3",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-12-10-2026.pdf",
-      "createdAt": "2026-10-12T12:15:16.060Z"
     }
   ]
 }
