@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:12:50.640Z",
+  "generatedAt": "2026-10-20T15:29:00.337Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -89,6 +89,26 @@
       "dated": true
     },
     {
+      "id": "comune-731027",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
       "id": "life-nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo",
       "title": "Nel segno di Brera: in mostra i dipinti di Addamiano, De Cosmo e Scazzosi",
       "url": "https://www.altamuralife.it/eventi/nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo-e-scazzosi/",
@@ -121,6 +141,26 @@
       "tags": [],
       "categories": [
         "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-731028",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
       ],
       "dated": true
     },
@@ -161,6 +201,26 @@
       "dated": true
     },
     {
+      "id": "comune-731031",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731031",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
       "id": "tacco-immagini-tra-le-note",
       "title": "Immagini Tra le Note",
       "url": "https://iltaccodibacco.it/puglia/eventi/333332.html",
@@ -175,6 +235,26 @@
       "tags": [],
       "categories": [
         "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-731032",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731032",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
       ],
       "dated": true
     },
@@ -197,6 +277,26 @@
       "dated": true
     },
     {
+      "id": "comune-731033",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731032-731033",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
       "id": "tacco-gli-inediti-mercadantiani",
       "title": "Gli Inediti Mercadantiani",
       "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
@@ -209,6 +309,46 @@
       "venue": "Chiesa Sant'Agostino - Altamura (Ba)",
       "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
       "tags": [],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-731034",
+      "title": "Copia di Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731032-731034",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-29",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-731035",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
+      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731031-731035",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-10-20T11:40:01.000Z",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-06",
+      "startTime": "09:30",
+      "venue": null,
+      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
+      "tags": [
+        "Evento culturale"
+      ],
       "categories": [
         "eventi"
       ],
