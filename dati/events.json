@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:29:00.337Z",
+  "generatedAt": "2026-10-21T00:36:24.194Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -28,28 +28,6 @@
   ],
   "events": [
     {
-      "id": "comune-729858",
-      "title": "Presentazione docu-film su Altamura",
-      "url": "https://www.comune.altamura.ba.it/it/events/altamura-si-prepara-a-raccontarsi-sullo-schermo-729858",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-10-10T11:05:17.000Z",
-      "startDate": "2026-10-20",
-      "endDate": "2026-10-20",
-      "startTime": "21:30",
-      "venue": null,
-      "summary": "Per volontà dell' Amministrazione comunale e dell' Assessore alla Cultura, si è scelto di offrire alla comunità l' opportunità di...",
-      "tags": [
-        "Cinema",
-        "Eventi sociali",
-        "Evento culturale"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
       "id": "tacco-la-favola-de-andre",
       "title": "La Favola de Andrè",
       "url": "https://iltaccodibacco.it/puglia/eventi/332967.html",
@@ -65,27 +43,6 @@
       "categories": [
         "eventi"
       ],
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-giornata-mondiale-del-pane",
-      "title": "Giornata mondiale del Pane",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 16-22 ottobre 2026.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "annual": true,
       "dated": true
     },
     {
@@ -297,24 +254,6 @@
       "dated": true
     },
     {
-      "id": "tacco-gli-inediti-mercadantiani",
-      "title": "Gli Inediti Mercadantiani",
-      "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21",
-      "startTime": null,
-      "venue": "Chiesa Sant'Agostino - Altamura (Ba)",
-      "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
       "id": "comune-731034",
       "title": "Copia di Visite guidate gratuite alla cava dei dinosauri",
       "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731032-731034",
@@ -352,132 +291,6 @@
       "categories": [
         "eventi"
       ],
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-presepe-vivente-al-pisciulo",
-      "title": "Presepe vivente al \"Pisciulo\"",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2026-12-23",
-      "endDate": "2026-12-23",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 23 dicembre 1990.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "annual": true,
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-l-uomo-di-altamura-in-maschera",
-      "title": "L'Uomo di Altamura \"In maschera\"",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2027-02-03",
-      "endDate": "2027-02-03",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 3 febbraio - 3 marzo 2019.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "annual": true,
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-festa-di-san-giuseppe-con-i-tradizionali-falo",
-      "title": "Festa di San Giuseppe con i tradizionali falò",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2027-03-19",
-      "endDate": "2027-03-19",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 19 marzo.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "annual": true,
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-falo-dell-annunziata",
-      "title": "Falò dell'Annunziata",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2027-03-25",
-      "endDate": "2027-03-25",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 25 marzo.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "annual": true,
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-festa-della-patrona-sant-irene",
-      "title": "Festa della Patrona Sant'Irene",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2027-05-05",
-      "endDate": "2027-05-05",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 5 maggio.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "annual": true,
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-festa-dell-assunta-titolare-della-cattedrale",
-      "title": "Festa dell'Assunta, titolare della Cattedrale",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2027-08-15",
-      "endDate": "2027-08-15",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 15 agosto.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "annual": true,
       "dated": true
     },
     {
