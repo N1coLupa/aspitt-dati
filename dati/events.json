@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T09:28:06.049Z",
+  "generatedAt": "2026-10-24T13:57:26.746Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,45 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "tacco-la-favola-de-andre",
-      "title": "La Favola de Andrè",
-      "url": "https://iltaccodibacco.it/puglia/eventi/332967.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "startTime": null,
-      "venue": "Teatro Mangiatordi",
-      "summary": "Un viaggio di parole, musica ed emozioni nel mondo di Fabrizio De André. Un racconto unico per riscoprire l&apos;universo poetico e umano di Fabrizio De André.",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
-      "id": "ricorrenza-giornata-mondiale-del-pane",
-      "title": "Giornata mondiale del Pane",
-      "url": "https://www.vitobarone.it/altamura/eventi.htm",
-      "source": "Vito Barone",
-      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
-      "publishedAt": null,
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "startTime": null,
-      "venue": null,
-      "summary": "Appuntamento fisso del calendario altamurano: 16-22 ottobre 2026.",
-      "tags": [
-        "Ricorrenza"
-      ],
-      "categories": [
-        "esperienze"
-      ],
-      "annual": true,
-      "dated": true
-    },
     {
       "id": "comune-731027",
       "title": "Visite guidate gratuite alla cava dei dinosauri",
@@ -105,6 +66,49 @@
       "dated": true
     },
     {
+      "id": "tacco-marcia-per-la-pace",
+      "title": "Marcia per la Pace",
+      "url": "https://iltaccodibacco.it/puglia/eventi/334424.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "startTime": null,
+      "venue": "Percorso Gravina–Altamura Gravina in Puglia",
+      "summary": "Sabato 24 ottobre 2026 la Murgia tornerà a marciare per la pace con una mobilitazione da Gravina ad Altamura contro la guerra, il riarmo e la militarizzazione dei territori.",
+      "tags": [],
+      "categories": [
+        "trekking"
+      ],
+      "dated": true
+    },
+    {
+      "id": "live-domenica-25-ottobre-la-santa-messa-dalla-cattedrale-di-altam",
+      "title": "Domenica 25 ottobre la Santa Messa dalla Cattedrale di Altamura in diretta su Rai 1",
+      "url": "https://altamuralive.it/2026/10/23/domenica-25-ottobre-la-santa-messa-dalla-cattedrale-di-altamura-in-diretta-su-rai-1/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-10-23T10:47:53.000Z",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "startTime": null,
+      "venue": null,
+      "summary": "Alle ore 10.55 Rai 1 trasmetterà in diretta nazionale la Santa Messa dalla Cattedrale di Santa Maria Assunta. Un appuntamento per la comunità, chiamata a vivere e condividere una celebrazione che porterà la nostra città…",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "Cattedrale di Altamura",
+        "Cattedrale di Santa Maria Assunta",
+        "comune di altamura",
+        "Rai"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
       "id": "tacco-sua-maesta-il-pianoforte",
       "title": "Sua Maestà il Pianoforte!",
       "url": "https://iltaccodibacco.it/puglia/eventi/333329.html",
@@ -119,6 +123,24 @@
       "tags": [],
       "categories": [
         "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "life-la-nuova-murgia-storie-narrazioni-di-comunita-due-incontri",
+      "title": "La Nuova Murgia: \"Storie, narrazioni di comunità\", due incontri",
+      "url": "https://www.altamuralife.it/eventi/la-nuova-murgia-storie-narrazioni-di-comunita-due-incontri/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": "2026-10-29",
+      "startTime": null,
+      "venue": null,
+      "summary": "Fino al 29 ottobre",
+      "tags": [],
+      "categories": [
+        "trekking"
       ],
       "dated": true
     },
@@ -269,6 +291,24 @@
       "tags": [
         "Evento culturale"
       ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-gli-inediti-mercadantiani",
+      "title": "Gli Inediti Mercadantiani",
+      "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "startTime": null,
+      "venue": "Chiesa Sant'Agostino - Altamura (Ba)",
+      "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
+      "tags": [],
       "categories": [
         "eventi"
       ],
@@ -514,6 +554,24 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paes",
+      "title": "Pro Loco Altamura: conoscere la città tra spiritualità e paesaggio rupestre",
+      "url": "https://www.altamuralife.it/eventi/pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paesaggio-rupestre/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }
