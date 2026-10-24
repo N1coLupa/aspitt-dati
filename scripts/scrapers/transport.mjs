@@ -1,15 +1,20 @@
 import * as cheerio from 'cheerio';
-import { BlockedError, sleep } from '../lib/http.mjs';
+import { BlockedError, MARINO_HOSTS, sleep } from '../lib/http.mjs';
+import { normalizeLink } from '../lib/link.mjs';
 import { COPY_DIR, marinoBuffer, marinoText, usage } from '../lib/copia-locale.mjs';
 import { fetchKmlGeometry, kmlUrlFromMyMapsLink } from '../lib/kml.mjs';
 import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
-import { parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
+import { listedDays, parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
 import { noticeStops, noticeTimes } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
 const NEWS_URL = 'https://marinobusurbano.it/news/';
+
+// Qualunque forma abbia il link nel sito dell'operatore (http, https, relativo, scritto male),
+// diventa un https dell'operatore oppure null: un link rovinato non fa scartare gli orari.
+const link = (href) => normalizeLink(href, HOME_URL, MARINO_HOSTS);
 
 const clean = (value) =>
   String(value ?? '')
@@ -24,7 +29,7 @@ function parseLines($) {
   $('.home--lines .line').each((_, node) => {
     const el = $(node);
     const heading = el.find('.line--info h3').first();
-    const noticeUrl = heading.find('a[href]').attr('href') ?? null;
+    const noticeUrl = link(heading.find('a[href]').attr('href')) ?? null;
 
     const name = clean(heading.clone().find('a').remove().end().text()).replace(/[-\s]+$/, '');
     if (!name || seen.has(name)) return;
@@ -35,7 +40,7 @@ function parseLines($) {
 
     const links = el
       .find('a.btn')
-      .map((__, a) => ({ href: $(a).attr('href') ?? '', label: clean($(a).text()) }))
+      .map((__, a) => ({ href: normalizeLink($(a).attr('href'), HOME_URL) ?? '', label: clean($(a).text()) }))
       .get();
 
     lines.push({
@@ -43,8 +48,8 @@ function parseLines($) {
       name,
       color: color ? color.toLowerCase() : null,
       route: clean(el.find('.gen--p').first().text()) || null,
-      timetableUrl: links.find((l) => /\.pdf$/i.test(l.href) && /orari/i.test(l.href))?.href ?? null,
-      mapUrl: links.find((l) => l.href.includes('google.com/maps'))?.href ?? null,
+      timetableUrl: link(links.find((l) => /\.pdf$/i.test(l.href) && /orari/i.test(l.href))?.href),
+      mapUrl: normalizeLink(links.find((l) => l.href.includes('google.com/maps'))?.href, HOME_URL, ['google.com']),
       noticeUrl,
     });
   });
@@ -77,8 +82,9 @@ function parseVendors(html) {
 
 function parseFares($) {
   return $('a[href$=".pdf"]')
-    .map((_, a) => ({ label: clean($(a).text()), url: $(a).attr('href') ?? '' }))
+    .map((_, a) => ({ label: clean($(a).text()), url: link($(a).attr('href')) ?? '' }))
     .get()
+    .filter((f) => f.url)
     .filter((f) => /tariffario|carta-della-mobilita|condizioni-di-viaggio/i.test(f.url))
     .map((f) => ({ ...f, label: f.label || 'Documento' }));
 }
@@ -124,7 +130,7 @@ async function parseNews() {
           title,
           date,
           summary: clean(el.find('.description p').first().text()).slice(0, 500) || null,
-          url: el.find('a[href]').first().attr('href') ?? NEWS_URL,
+          url: link(el.find('a[href]').first().attr('href')) ?? NEWS_URL,
         };
       })
       .get()
@@ -330,7 +336,15 @@ async function readNotice(url, previousLine, stops, lineName, lineNames) {
   try {
     const text = await noticeText(url);
     const published = publishedOn(url);
-    const range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
+    let range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
+    // Piu' giorni separati: l'app conosce un solo intervallo, quindi si pubblica il prossimo giorno
+    // interessato (o l'ultimo, se sono tutti passati). L'aggiornamento successivo passa al giorno dopo.
+    const days = listedDays(text);
+    if (days.length > 1) {
+      const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
+      const next = days.find((day) => day >= today) ?? days[days.length - 1];
+      range = { start: next, end: next };
+    }
     const times = noticeTimes(text);
     return {
       noticeFrom: plausibleDay(range?.start ?? null, published),

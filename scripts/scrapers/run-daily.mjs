@@ -99,14 +99,8 @@ async function refresh(name, scrape, validate, enrich) {
   } catch (err) {
     console.error(`  ${name}: tenuti i dati precedenti (${err.message})`);
     if (!previous) throw new Error(`${name}: nessun dato valido disponibile (${err.message})`);
-    if (enrich) {
-      const kept = structuredClone(previous);
-      await enrich(kept, []);
-      if (!validate(kept).problems.length) {
-        await writeJson(file, settleDate(previous, kept));
-        return { name, status: 'invariato', error: err.message, data: kept, previous };
-      }
-    }
+    // I dati precedenti sono gia' elaborati: rielaborarli rifaceva centinaia di richieste al router
+    // stradale e bloccava l'aggiornamento per 30 minuti. Si tengono cosi' come sono.
     return { name, status: 'invariato', error: err.message, data: previous, previous };
   }
 }

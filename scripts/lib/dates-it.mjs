@@ -125,6 +125,19 @@ export function parseItalianDateRange(text, reference = new Date()) {
   return null;
 }
 
+// Giorni elencati uno per uno ("il giorno 23.10.26 e il giorno 27.10.26"): non sono un intervallo,
+// i giorni in mezzo non sono interessati. Restituisce i giorni in ordine, o [] se c'e' un "dal ... al".
+export function listedDays(text) {
+  const source = String(text ?? '');
+  if (NUM_RANGE_RE.test(source)) return [];
+  const days = new Set();
+  for (const match of source.matchAll(new RegExp(String.raw`(?<!\d)${NUM}`, 'g'))) {
+    const day = iso(fullYear(match[3]), Number(match[2]), Number(match[1]));
+    if (day) days.add(day);
+  }
+  return [...days].sort();
+}
+
 export function publishedOn(url) {
   const match = /\/uploads\/(20\d{2})\/(\d{2})\//.exec(String(url ?? ''));
   return match ? new Date(Number(match[1]), Number(match[2]) - 1, 15) : null;

@@ -52,9 +52,14 @@ export function streetOf(stopName) {
 
 export function lineSection(text, lineName, lineNames = []) {
   const source = plain(text);
-  const marks = [...new Set([lineName, ...lineNames].map(plain).filter(Boolean))]
-    .flatMap((name) => [...source.matchAll(new RegExp(`\\blinea\\s+${name}(?![a-z0-9])`, 'g'))].map((m) => ({ name, at: m.index })))
-    .sort((a, b) => a.at - b.at);
+  const known = [...new Set([lineName, ...lineNames].map(plain).filter(Boolean))].flatMap((name) =>
+    [...source.matchAll(new RegExp(`\\blinea\\s+${name}(?![a-z0-9])`, 'g'))].map((m) => ({ name, at: m.index }))
+  );
+  // Anche le linee che Muevt non conosce (es. "linea jesce") chiudono la sezione della linea precedente.
+  const others = [...source.matchAll(/\blinea\s+[a-z0-9]+/g)]
+    .filter((m) => !known.some((mark) => mark.at === m.index))
+    .map((m) => ({ name: m[0], at: m.index }));
+  const marks = [...known, ...others].sort((a, b) => a.at - b.at);
   const own = plain(lineName);
   const mine = marks.filter((mark) => mark.name === own);
   if (!mine.length) return source;
@@ -108,7 +113,8 @@ export function noticeStops(text, stops, lineName = '', lineNames = []) {
   if (ONLY.test(section)) {
     return chosen.size ? ordered.filter((_, position) => !chosen.has(position)).map((stop) => stop.stopId) : [];
   }
-  if (!NEGATION.test(section)) return [];
+  // "Soppresse" spesso sta nell'intestazione, prima di "LINEA ...": si guarda tutto il testo.
+  if (!NEGATION.test(section) && !NEGATION.test(plain(text))) return [];
   const skipped = new Set(ordered.filter((_, position) => chosen.has(position)).map((stop) => stop.stopId));
 
   const covered = new Set(kept.map((mention) => streetOf(ordered[mention.position].raw)).filter(Boolean));
