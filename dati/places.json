@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:36:58.174Z",
+  "generatedAt": "2026-10-24T18:42:40.292Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -26,12 +26,14 @@
       "tips": "Aperto nei giorni feriali, mattina e pomeriggio: è a due passi dalla Cattedrale.",
       "nearbyStops": [
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 23
         },
@@ -42,17 +44,18 @@
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 150
+          "distance": 118
         }
       ]
     },
@@ -224,24 +227,24 @@
           "distance": 276
         },
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 329
+        },
+        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 333
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 340
         }
       ]
     },
@@ -327,12 +330,12 @@
       "lon": 16.5556,
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
           "lines": [
-            "navette-hub"
+            "linea-la-martella"
           ],
-          "distance": 260
+          "distance": 279
         },
         {
           "stopId": "stop-viale-martiri-6",
@@ -452,6 +455,22 @@
       "tips": "Sta lungo la passeggiata dei claustri: tienilo d'occhio o rischi di passarci davanti senza vederlo.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 171
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 179
+        },
+        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri, 6",
           "lines": [
@@ -459,25 +478,6 @@
             "linea-scuola-3"
           ],
           "distance": 180
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 220
-        },
-        {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 225
         }
       ]
     },
@@ -555,6 +555,22 @@
       "tips": "Gli orari seguono le funzioni: la mattina presto e il tardo pomeriggio sono i momenti buoni.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 34
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 38
+        },
+        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri, 6",
           "lines": [
@@ -562,27 +578,6 @@
             "linea-scuola-3"
           ],
           "distance": 38
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 141
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i"
-          ],
-          "distance": 142
         }
       ]
     },
@@ -627,12 +622,12 @@
           "distance": 301
         },
         {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
-            "navette-hub"
+            "linea-scuola-3"
           ],
-          "distance": 351
+          "distance": 345
         }
       ]
     },
@@ -683,7 +678,8 @@
           "name": "Via Parisi (fronte 66)",
           "lines": [
             "navette-hub",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce"
           ],
           "distance": 372
         }
@@ -747,34 +743,36 @@
       "tips": "Il modo migliore per leggerle è camminare lungo il perimetro del centro storico, non attraversarlo.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 157
+        },
+        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 169
         },
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 177
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 180
         }
       ]
     },
@@ -840,12 +838,12 @@
       "tips": "Si visita in occasione di aperture e giornate speciali: conviene controllare gli eventi prima di andarci.",
       "nearbyStops": [
         {
-          "stopId": "stop-viale-martiri-fronte-83",
-          "name": "Viale Martiri (fronte 83)",
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
           "lines": [
-            "navette-hub"
+            "linea-la-martella"
           ],
-          "distance": 84
+          "distance": 141
         },
         {
           "stopId": "stop-viale-martiri-6",
@@ -857,12 +855,12 @@
           "distance": 141
         },
         {
-          "stopId": "stop-via-gravina-ang-via-del-melo",
-          "name": "Via Gravina ang. Via del Melo",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 195
+          "distance": 173
         }
       ]
     },
@@ -886,16 +884,19 @@
           "lines": [
             "ospedale-1",
             "linea-ovest",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
-          "distance": 224
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille, 40",
+          "name": "Via Dei Mille 40",
           "lines": [
             "navette-hub",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 231
         },
@@ -904,9 +905,10 @@
           "name": "Via Gravina 7",
           "lines": [
             "ospedale-2",
-            "ospedale-domenica-e-festivi"
+            "ospedale-domenica-e-festivi",
+            "linea-la-martella"
           ],
-          "distance": 252
+          "distance": 254
         }
       ]
     },
@@ -930,16 +932,19 @@
           "lines": [
             "ospedale-1",
             "linea-ovest",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
-          "distance": 153
+          "distance": 154
         },
         {
           "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille, 40",
+          "name": "Via Dei Mille 40",
           "lines": [
             "navette-hub",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 161
         },
@@ -974,16 +979,19 @@
           "lines": [
             "ospedale-1",
             "linea-ovest",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
-          "distance": 161
+          "distance": 162
         },
         {
           "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille, 40",
+          "name": "Via Dei Mille 40",
           "lines": [
             "navette-hub",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 169
         },
@@ -1103,7 +1111,8 @@
           "lines": [
             "ospedale-1",
             "linea-scuola-1",
-            "linea-scuola-2"
+            "linea-scuola-2",
+            "linea-la-martella"
           ],
           "distance": 98
         },
@@ -1113,7 +1122,8 @@
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "linea-scuola-3"
+            "linea-scuola-3",
+            "linea-la-martella"
           ],
           "distance": 107
         },
@@ -1277,19 +1287,21 @@
       "nearbyStops": [
         {
           "stopId": "stop-viale-martiri-102",
-          "name": "Viale Martiri, 102",
+          "name": "Viale Martiri 102",
           "lines": [
             "navette-hub",
-            "linea-scuola-2"
+            "linea-scuola-2",
+            "linea-la-martella"
           ],
           "distance": 85
         },
         {
           "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri, 129",
+          "name": "Viale Martiri 129",
           "lines": [
             "ospedale-1",
-            "linea-scuola-2"
+            "linea-scuola-2",
+            "linea-la-martella"
           ],
           "distance": 96
         },
@@ -1298,8 +1310,10 @@
           "name": "Viale Martiri, 83",
           "lines": [
             "ospedale-1",
+            "navette-hub",
             "linea-scuola-2",
-            "linea-scuola-3"
+            "linea-scuola-3",
+            "linea-la-martella"
           ],
           "distance": 232
         }
@@ -1344,17 +1358,20 @@
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 126
         },
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 128
         }
@@ -1390,16 +1407,19 @@
           "lines": [
             "ospedale-1",
             "linea-ovest",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
-          "distance": 224
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille, 40",
+          "name": "Via Dei Mille 40",
           "lines": [
             "navette-hub",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 231
         },
@@ -1408,9 +1428,10 @@
           "name": "Via Gravina 7",
           "lines": [
             "ospedale-2",
-            "ospedale-domenica-e-festivi"
+            "ospedale-domenica-e-festivi",
+            "linea-la-martella"
           ],
-          "distance": 252
+          "distance": 254
         }
       ]
     },
@@ -1449,7 +1470,8 @@
             "linea-scuola-2",
             "linea-scuola-3",
             "linea-scuola-4",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce"
           ],
           "distance": 57
         },
@@ -1499,12 +1521,14 @@
       "tips": "Da qui parte il corso verso la Cattedrale: è il punto d'inizio naturale di qualsiasi giro.",
       "nearbyStops": [
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 21
         },
@@ -1515,17 +1539,18 @@
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 142
+          "distance": 126
         }
       ]
     },
@@ -1551,28 +1576,30 @@
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 133
         },
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 140
+        },
+        {
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 141
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 170
         }
       ]
     },
@@ -1621,17 +1648,20 @@
             "ospedale-1",
             "linea-ovest",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-la-martella"
           ],
           "distance": 82
         },
         {
-          "stopId": "stop-piazza-zanardelli-pensilina",
-          "name": "Piazza Zanardelli (Pensilina)",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
             "navette-hub",
             "linea-scuola-2",
-            "pescariello-z-i"
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
           ],
           "distance": 84
         },

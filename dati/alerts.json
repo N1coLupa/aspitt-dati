@@ -1,4 +1,29 @@
 {
-  "generatedAt": "2026-10-24T13:59:10.909Z",
-  "alerts": []
+  "generatedAt": "2026-10-24T18:42:40.304Z",
+  "alerts": [
+    {
+      "id": "linea-nuova-linea-jesce",
+      "severity": "info",
+      "lineId": "linea-jesce",
+      "title": "Nuova linea: Linea Jesce",
+      "body": "Altamura - Zona Industriale Jesce",
+      "createdAt": "2026-10-24T18:42:40.303Z"
+    },
+    {
+      "id": "linea-nuova-linea-la-martella",
+      "severity": "info",
+      "lineId": "linea-la-martella",
+      "title": "Nuova linea: Linea La Martella",
+      "body": "Altamura - Zona Industriale La Martella (Matera)",
+      "createdAt": "2026-10-24T18:42:40.303Z"
+    },
+    {
+      "id": "linea-nuova-linea-melfi",
+      "severity": "info",
+      "lineId": "linea-melfi",
+      "title": "Nuova linea: Linea Melfi",
+      "body": "Altamura - Gravina - Spinazzola - San Nicola di Melfi (SATA)",
+      "createdAt": "2026-10-24T18:42:40.303Z"
+    }
+  ]
 }
