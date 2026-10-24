@@ -1,3 +1,5 @@
+import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import * as cheerio from 'cheerio';
 import { BlockedError, MARINO_HOSTS, sleep } from '../lib/http.mjs';
 import { normalizeLink } from '../lib/link.mjs';
@@ -7,9 +9,11 @@ import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
 import { listedDays, parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
-import { noticeStops, noticeTimes } from '../lib/avvisi.mjs';
+import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, stopsInTown } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
+const REGIONAL_FILE = fileURLToPath(new URL('../data/linee-regionali.json', import.meta.url));
+const NOTICE_PLACES_FILE = fileURLToPath(new URL('../data/luoghi-avvisi.json', import.meta.url));
 const NEWS_URL = 'https://marinobusurbano.it/news/';
 
 // Qualunque forma abbia il link nel sito dell'operatore (http, https, relativo, scritto male),
@@ -195,8 +199,52 @@ function register(registry, stop, lineId) {
   return entry;
 }
 
+const parsedTables = new Map();
+
+function timetableTables(url) {
+  if (!parsedTables.has(url)) parsedTables.set(url, marinoBuffer(url).then(parseTimetablePdf));
+  return parsedTables.get(url);
+}
+
+const titleKey = (title) =>
+  String(title ?? '')
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+
+// Un PDF con pagine intitolate a linee diverse (le extraurbane) diventa una linea per titolo.
+async function splitByTitle(line, regional) {
+  if (!line.timetableUrl) return [line];
+  let tables;
+  try {
+    tables = await timetableTables(line.timetableUrl);
+  } catch {
+    return [line];
+  }
+  const titles = [...new Set(tables.map((table) => titleKey(table.title)).filter(Boolean))];
+  if (titles.length < 2) return [line];
+  return titles.map((key) => {
+    const pages = tables.filter((table) => titleKey(table.title) === key).map((table) => table.page);
+    const first = tables.find((table) => table.page === pages[0]);
+    const label = first.title.replace(/^\p{Ll}/u, (letter) => letter.toUpperCase());
+    const known = regional[key];
+    const name = known?.name ?? `Linea ${label}`;
+    return {
+      ...line,
+      id: slugify(name),
+      name,
+      route: known?.route ?? `${first.stops[0]?.name ?? ''} - ${first.stops[first.stops.length - 1]?.name ?? ''}`,
+      mapUrl: null,
+      pages,
+    };
+  });
+}
+
 async function scrapeLine(line, registry, previousLine) {
-  const result = { ...line, stops: [], trips: [], shape: [], warnings: [] };
+  const { pages, ...fields } = line;
+  const result = { ...fields, stops: [], trips: [], shape: [], warnings: [] };
 
   let kml = { stops: [], shape: [] };
   if (line.mapUrl) {
@@ -215,11 +263,12 @@ async function scrapeLine(line, registry, previousLine) {
   let tables = [];
   if (line.timetableUrl) {
     try {
-      tables = await parseTimetablePdf(await marinoBuffer(line.timetableUrl));
+      tables = await timetableTables(line.timetableUrl);
     } catch (err) {
       result.warnings.push(`PDF orari non leggibile: ${err.message}`);
     }
   }
+  if (line.pages) tables = tables.filter((table) => line.pages.includes(table.page));
 
   if (!tables.length && previousLine?.trips?.length && previousLine.timetableUrl === line.timetableUrl) {
     result.warnings.push('PDF non scaricabile: tenute le corse di ieri, stesso quadro orario');
@@ -304,60 +353,122 @@ async function scrapeLine(line, registry, previousLine) {
 
 const fileName = (url) => decodeURIComponent(String(url).split(/[?#]/)[0].split('/').pop() ?? '');
 
-const NOTICE_KEYS = ['noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeText'];
-const noticeTexts = new Map();
+const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
+const EMPTY_NOTICE = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
+const noticePages = new Map();
 
-async function noticeText(url) {
-  if (!noticeTexts.has(url)) {
-    noticeTexts.set(
+// I volantini mettono le scritte nel PDF in ordine sparso ("BAR CASABLANCA" prima di "unica fermata presso il"):
+// si rileggono dall'alto in basso e, sulla stessa riga, da sinistra a destra.
+function readingOrder(items) {
+  const rows = [];
+  for (const item of [...items].filter((item) => item.str?.trim()).sort((a, b) => b.transform[5] - a.transform[5])) {
+    const row = rows.find((other) => Math.abs(other.y - item.transform[5]) < Math.max(item.height, 4) / 2);
+    if (row) row.items.push(item);
+    else rows.push({ y: item.transform[5], items: [item] });
+  }
+  return rows.flatMap((row) => row.items.sort((a, b) => a.transform[4] - b.transform[4]));
+}
+
+// Testo di ogni pagina di un avviso: anche quello scritto nei campi modulo del PDF, che pdfjs
+// non restituisce come testo normale. Ogni pagina e' un avviso a se', con le sue date e linee.
+function readNoticePages(url) {
+  if (!noticePages.has(url)) {
+    noticePages.set(
       url,
       (async () => {
         if (!/\.pdf($|\?)/i.test(url)) {
           const page = cheerio.load(await marinoText(url, null));
-          return clean(page('main, article, .entry-content, body').first().text());
+          return [clean(page('main, article, .entry-content, body').first().text())].filter(Boolean);
         }
         const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
         const doc = await pdfjs.getDocument({ data: new Uint8Array(await marinoBuffer(url)), isEvalSupported: false }).promise;
-        const parts = [];
-        for (let page = 1; page <= Math.min(doc.numPages, 3); page += 1) {
-          const content = await (await doc.getPage(page)).getTextContent();
-          parts.push(content.items.map((item) => item.str).join(' '));
+        const pages = [];
+        for (let number = 1; number <= Math.min(doc.numPages, 6); number += 1) {
+          const page = await doc.getPage(number);
+          const content = await page.getTextContent();
+          const fields = (await page.getAnnotations())
+            .map((annotation) => annotation.fieldValue ?? annotation.contentsObj?.str ?? '')
+            .filter((value) => typeof value === 'string');
+          pages.push(clean([...readingOrder(content.items).map((item) => item.str), ...fields].join(' ')));
         }
-        return clean(parts.join(' '));
+        return pages;
       })()
     );
   }
-  return noticeTexts.get(url);
+  return noticePages.get(url);
 }
 
-async function readNotice(url, previousLine, stops, lineName, lineNames) {
-  const empty = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
-  if (!url) return empty;
-  try {
-    const text = await noticeText(url);
-    const published = publishedOn(url);
-    let range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
-    // Piu' giorni separati: l'app conosce un solo intervallo, quindi si pubblica il prossimo giorno
-    // interessato (o l'ultimo, se sono tutti passati). L'aggiornamento successivo passa al giorno dopo.
-    const days = listedDays(text);
-    if (days.length > 1) {
-      const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
-      const next = days.find((day) => day >= today) ?? days[days.length - 1];
-      range = { start: next, end: next };
+function noticeFields(url, text, stops, lineName, lineNames, places) {
+  const published = publishedOn(url);
+  let range = parseItalianDateRange(text, published ?? new Date()) ?? parseItalianDateRange(fileName(url), published ?? new Date());
+  // Piu' giorni separati: l'app conosce un solo intervallo, quindi si pubblica il prossimo giorno
+  // interessato (o l'ultimo, se sono tutti passati). L'aggiornamento successivo passa al giorno dopo.
+  const days = listedDays(text);
+  if (days.length > 1) {
+    const next = days.find((day) => day >= today()) ?? days[days.length - 1];
+    range = { start: next, end: next };
+  }
+  const times = noticeTimes(text);
+  // "Un'unica fermata presso il Bar Casablanca": se il posto e' noto, salta le fermate della linea nel suo comune.
+  const onlyAt = noticeOnlyAt(text);
+  const place = onlyAt ? places[onlyAt.toLowerCase()] : null;
+  const skipped = noticeStops(text, stops, lineName, lineNames);
+  return {
+    noticeUrl: url,
+    noticeFrom: plausibleDay(range?.start ?? null, published),
+    noticeUntil: plausibleDay(range?.end ?? null, published),
+    noticeStart: times.from,
+    noticeEnd: times.to,
+    noticeStops: skipped.length || !place?.comune ? skipped : stopsInTown(stops, place.comune),
+    noticeOnlyAt: onlyAt
+      ? { name: place?.nome ?? onlyAt, address: place?.indirizzo ?? null, lat: place?.lat ?? null, lon: place?.lon ?? null }
+      : null,
+    noticeText: text.slice(0, 1200) || null,
+  };
+}
+
+const today = () => new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
+
+// Un avviso vale per ogni linea citata nel testo, da qualunque linea del sito sia linkato; se non ne
+// cita nessuna, vale per le linee che lo linkano. Fra piu' avvisi di una linea vince quello che arriva prima.
+async function assignNotices(scraped, previous) {
+  const names = scraped.map((line) => line.name);
+  const places = JSON.parse(await fs.readFile(NOTICE_PLACES_FILE, 'utf8').catch(() => '{}')).luoghi ?? {};
+  const notices = [];
+  for (const url of new Set(scraped.map((line) => line.noticeUrl).filter(Boolean))) {
+    const owners = scraped.filter((line) => line.noticeUrl === url);
+    let pages;
+    try {
+      pages = await readNoticePages(url);
+    } catch {
+      usage.missing.delete(url);
+      for (const line of owners) {
+        const before = previous?.lines?.find((item) => item.id === line.id);
+        line.keptNotice =
+          before?.noticeUrl?.split('#')[0] === url
+            ? Object.fromEntries(NOTICE_KEYS.map((key) => [key, before[key] ?? EMPTY_NOTICE[key]]))
+            : null;
+      }
+      continue;
     }
-    const times = noticeTimes(text);
-    return {
-      noticeFrom: plausibleDay(range?.start ?? null, published),
-      noticeUntil: plausibleDay(range?.end ?? null, published),
-      noticeStart: times.from,
-      noticeEnd: times.to,
-      noticeStops: noticeStops(text, stops, lineName, lineNames),
-      noticeText: text.slice(0, 1200) || null,
-    };
-  } catch {
-    if (previousLine?.noticeUrl !== url) return empty;
-    usage.missing.delete(url);
-    return Object.fromEntries(NOTICE_KEYS.map((key) => [key, previousLine[key] ?? empty[key]]));
+    pages.forEach((text, index) => {
+      if (!text) return;
+      const pageUrl = pages.length > 1 ? `${url}#page=${index + 1}` : url;
+      const mentioned = scraped.filter((line) => mentionsLine(text, line.name));
+      for (const line of mentioned.length ? mentioned : owners) {
+        notices.push({ line, fields: noticeFields(pageUrl, text, line.stops, line.name, names, places) });
+      }
+    });
+  }
+  const now = today();
+  const rank = (fields) => {
+    const until = fields.noticeUntil ?? fields.noticeFrom;
+    return until && until < now ? `9${until}` : `0${fields.noticeFrom ?? '0000'}`;
+  };
+  for (const line of scraped) {
+    const own = notices.filter((notice) => notice.line === line).sort((a, b) => rank(a.fields).localeCompare(rank(b.fields)));
+    Object.assign(line, own[0]?.fields ?? line.keptNotice ?? EMPTY_NOTICE);
+    delete line.keptNotice;
   }
 }
 
@@ -366,7 +477,8 @@ export async function scrapeTransport(previous = null) {
   usage.local.clear();
   usage.missing.clear();
   usage.files.clear();
-  noticeTexts.clear();
+  noticePages.clear();
+  parsedTables.clear();
 
   let html = null;
   try {
@@ -377,7 +489,7 @@ export async function scrapeTransport(previous = null) {
   }
   const $ = cheerio.load(html ?? '');
 
-  const lines = html
+  const listed = html
     ? parseLines($)
     : previous.lines.map(({ id, name, color, route, timetableUrl, mapUrl, noticeUrl }) => ({
         id,
@@ -388,6 +500,8 @@ export async function scrapeTransport(previous = null) {
         mapUrl,
         noticeUrl,
       }));
+  const regional = JSON.parse(await fs.readFile(REGIONAL_FILE, 'utf8').catch(() => '{}')).linee ?? {};
+  const lines = (await Promise.all(listed.map((line) => splitByTitle(line, regional)))).flat();
   console.log(`  ${lines.length} linee ${html ? 'trovate' : 'riprese da ieri'}`);
   if (!lines.length) {
     throw new Error('Nessuna linea nella homepage: il sito ha risposto con una pagina di verifica o ha cambiato struttura.');
@@ -399,16 +513,6 @@ export async function scrapeTransport(previous = null) {
     process.stdout.write(`> ${line.name} ... `);
     const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
     const result = await scrapeLine(line, registry, previousLine);
-    Object.assign(
-      result,
-      await readNotice(
-        line.noticeUrl,
-        previousLine,
-        result.stops,
-        line.name,
-        lines.map((item) => item.name)
-      )
-    );
     result.timetableFile = usage.files.get(line.timetableUrl) ?? null;
     const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);
     console.log(
@@ -418,6 +522,8 @@ export async function scrapeTransport(previous = null) {
     scraped.push(result);
     await sleep(400);
   }
+
+  await assignNotices(scraped, previous);
 
   const news = html ? await parseNews() : [];
   usage.missing.delete(NEWS_URL);
@@ -454,7 +560,6 @@ export async function scrapeTransport(previous = null) {
 const invokedDirectly = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').split('/').pop());
 
 if (invokedDirectly) {
-  const fs = await import('node:fs/promises');
   const { enrichTransport } = await import('../lib/arricchisci.mjs');
   const previous = JSON.parse(await fs.readFile('src/dati/transport.json', 'utf8').catch(() => 'null'));
   const data = await enrichTransport(await scrapeTransport(previous));

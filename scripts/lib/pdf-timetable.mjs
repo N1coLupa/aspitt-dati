@@ -52,6 +52,26 @@ function parseServiceDays(label) {
   return null;
 }
 
+// "CORSA" e il numero a volte sono due testi separati sulla stessa riga: li riunisce.
+function joinCorsaNumbers(items) {
+  const used = new Set();
+  const joined = items.map((item) => {
+    if (!/^CORSA$/i.test(item.s)) return item;
+    const number = items.find(
+      (other) =>
+        !used.has(other) &&
+        /^(\d+|UNICA|BIS)$/i.test(other.s) &&
+        Math.abs(other.y - item.y) <= 2 &&
+        other.x >= item.x + item.w - 1 &&
+        other.x <= item.x + item.w + 8
+    );
+    if (!number) return item;
+    used.add(number);
+    return { ...item, s: `CORSA ${number.s}`, w: number.x + number.w - item.x };
+  });
+  return joined.filter((item) => !used.has(item));
+}
+
 function expandCorsaLabels(item) {
   const labels = [...item.s.matchAll(CORSA_RE)].map((m) => m[1]);
   if (labels.length <= 1) return labels.map((label) => ({ label, x: item.x }));
@@ -140,12 +160,42 @@ function parsePage(pageItems, pageNumber) {
   });
 
   const headerY = Math.max(...anchors.map((a) => a.y)) + 6;
-  const corsaLabels = items.filter((item) => /CORSA/i.test(item.s) && item.y > headerY).flatMap(expandCorsaLabels);
+  const corsaLabels = joinCorsaNumbers(items.filter((item) => item.y > headerY))
+    .filter((item) => /CORSA/i.test(item.s))
+    .flatMap(expandCorsaLabels);
   const corsaCenters = corsaLabels.map((c) => c.x);
 
   const serviceLabels = items
     .filter((item) => item.y > headerY && parseServiceDays(item.s))
     .map((item) => ({ label: item.s, days: parseServiceDays(item.s), x: item.x, w: item.w }));
+
+  // Le etichette dei giorni stanno centrate sopra un gruppo di colonne, e ogni gruppo ricomincia
+  // la numerazione delle corse: la prima colonna di un gruppo puo' trovarsi fuori dall'etichetta.
+  const columnLabels = columns.map((columnX) => corsaLabels[nearestIndex(corsaCenters, columnX, 22)] ?? null);
+  const groups = [];
+  columns.forEach((columnX, index) => {
+    const label = columnLabels[index]?.label;
+    const number = Number(label);
+    const last = groups[groups.length - 1];
+    const restarts = last && label != null && (Number.isNaN(number) || (last.number != null && number <= last.number));
+    if (!last || restarts) groups.push({ from: columnX, to: columnX, columns: [index], number: Number.isNaN(number) ? null : number });
+    else {
+      last.to = columnX;
+      last.columns.push(index);
+      if (!Number.isNaN(number)) last.number = number;
+    }
+  });
+  const groupService = new Map();
+  if (groups.length > 1 && serviceLabels.length > 1) {
+    for (const group of groups) {
+      const center = (group.from + group.to) / 2;
+      const overlap = (s) => Math.max(0, Math.min(group.to + COLUMN_TOLERANCE, s.x + s.w) - Math.max(group.from - COLUMN_TOLERANCE, s.x));
+      const best = [...serviceLabels].sort(
+        (a, b) => overlap(b) - overlap(a) || Math.abs(a.x + a.w / 2 - center) - Math.abs(b.x + b.w / 2 - center)
+      )[0];
+      for (const index of group.columns) groupService.set(index, best);
+    }
+  }
 
   const trips = columns.map((columnX, columnIndex) => {
     const stopTimes = stops.map((stop) => {
@@ -157,9 +207,11 @@ function parsePage(pageItems, pageNumber) {
       };
     });
 
-    const corsa = corsaLabels[nearestIndex(corsaCenters, columnX, 22)];
+    const corsa = columnLabels[columnIndex];
     const service =
-      serviceLabels.find((s) => columnX >= s.x - 12 && columnX <= s.x + s.w + 12) ?? (serviceLabels.length === 1 ? serviceLabels[0] : null);
+      groupService.get(columnIndex) ??
+      serviceLabels.find((s) => columnX >= s.x - 12 && columnX <= s.x + s.w + 12) ??
+      (serviceLabels.length === 1 ? serviceLabels[0] : null);
 
     return {
       code: corsa ? `Corsa ${corsa.label.toLowerCase()}` : `Corsa ${columnIndex + 1}`,
@@ -172,8 +224,20 @@ function parsePage(pageItems, pageNumber) {
     };
   });
 
+  // Il nome della linea scritto in testa alla pagina ("Linea Melfi"): un PDF puo' contenere piu' linee.
+  const titleRow = items.find((item) => /^linea$/i.test(item.s) && item.y > headerY);
+  const title = titleRow
+    ? items
+        .filter((item) => Math.abs(item.y - titleRow.y) <= 3 && item.x > titleRow.x && !/^\(/.test(item.s))
+        .sort((a, b) => a.x - b.x)
+        .map((item) => item.s)
+        .join(' ')
+        .trim() || null
+    : null;
+
   return {
     page: pageNumber,
+    title,
     stops: stops.map(({ index, name }) => ({ index, name })),
     trips: trips.filter((t) => t.departure).sort((a, b) => a.departure.localeCompare(b.departure)),
   };

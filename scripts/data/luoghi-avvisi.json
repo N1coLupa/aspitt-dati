@@ -1,0 +1,12 @@
+{
+  "_nota": "Posti citati negli avvisi che non sono fermate (\"un'unica fermata presso il BAR CASABLANCA\"). Con il comune, l'avviso sopprime le fermate della linea in quel comune e l'app mostra il posto come fermata provvisoria. La chiave e' il nome in minuscolo.",
+  "luoghi": {
+    "bar casablanca": {
+      "nome": "Bar Casablanca",
+      "indirizzo": "Corso Giuseppe Di Vittorio 230, Gravina in Puglia",
+      "comune": "Gravina",
+      "lat": 40.8276,
+      "lon": 16.42213
+    }
+  }
+}

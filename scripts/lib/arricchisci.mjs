@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { civicPositions, loadCivics } from './civici.mjs';
 import { plausibleDay, publishedOn } from './dates-it.mjs';
 import path from 'node:path';
 import { applyRoadShapes } from './forme-stradali.mjs';
@@ -54,8 +55,35 @@ function fixTypos(trip, notes, lineName) {
   }
 }
 
+// Capolinea dove la corsa gira: due fermate di fila con lo stesso nome, e prima e dopo le stesse
+// fermate in ordine inverso (andata e ritorno nella stessa colonna del PDF, come la linea Melfi).
+function turnaroundAt(line, served) {
+  const nameOf = new Map(line.stops.map((stop) => [stop.index, spellingKey(stop.name)]));
+  const key = (k) => nameOf.get(served[k]?.st.index) ?? '';
+  for (let k = 1; k < served.length; k += 1) {
+    if (!key(k) || key(k) !== key(k - 1)) continue;
+    const before = new Set([2, 3, 4].map((n) => key(k - n)).filter(Boolean));
+    const after = [1, 2, 3].map((n) => key(k + n)).filter(Boolean);
+    if (after.filter((name) => before.has(name)).length >= 2) return k;
+  }
+  return -1;
+}
+
 function splitAtGaps(line, trip, notes) {
   const served = trip.stopTimes.map((st, pos) => ({ st, pos })).filter(({ st }) => st.served && st.time);
+  const turn = turnaroundAt(line, served);
+  if (turn > 0) {
+    const cut = served[turn].pos;
+    notes.push(`${line.name}, ${trip.code}: andata e ritorno nella stessa colonna, divisa al capolinea`);
+    return [
+      { ...trip, id: `${trip.id}-a`, stopTimes: trip.stopTimes.slice(0, cut).map((st) => ({ ...st })) },
+      ...splitAtGaps(
+        line,
+        { ...trip, id: `${trip.id}-b`, departure: served[turn].st.time, stopTimes: trip.stopTimes.slice(cut).map((st) => ({ ...st })) },
+        notes
+      ),
+    ];
+  }
   for (let k = 1; k < served.length; k += 1) {
     const gap = toMinutes(served[k].st.time) - toMinutes(served[k - 1].st.time);
     if (gap <= SPLIT_GAP_MIN) continue;
@@ -177,13 +205,19 @@ export async function enrichTransport(transport, notes = []) {
     line.trips = line.trips.flatMap((trip) => splitAtGaps(line, trip, notes));
   }
 
+  // Le fermate degli avvisi si seguono come oggetti: l'unificazione qui sotto ne cambia gli ID.
+  const noticeRefs = new Map(transport.lines.map((line) => [line, line.stops.filter((stop) => line.noticeStops?.includes(stop.stopId))]));
   unifyStopSpellings(transport, notes);
 
   const streets = streetsFromCache(await readJson(path.join(DATA, 'vie-altamura.json'), null));
   const manual = (await readJson(path.join(DATA, 'fermate-posizioni.json'), {})).fermate ?? {};
+  for (const line of transport.lines) line.extraurban = line.stops.some((stop) => manual[stop.stopId]?.fuoriAltamura === true);
   const rejected = [];
   applyStopPositions(transport, computeStopPositions(transport, { streets, known: manual, rejected }));
   notes.push(...rejected);
+  applyStopPositions(transport, civicPositions(transport, { civics: await loadCivics(), ways: streets, known: manual, notes }), {
+    replace: true,
+  });
   syncStopLines(transport);
   const estimated = transport.stops.filter((stop) => stop.position === 'estimated').map((stop) => stop.name);
   if (estimated.length) notes.push(`posizione solo stimata, da verificare sul posto: ${estimated.join(', ')}`);
@@ -191,6 +225,7 @@ export async function enrichTransport(transport, notes = []) {
   await applyRoadShapes(transport, path.join(DATA, 'forme-stradali.json'), notes);
   unifyPhysicalStops(transport, { streets: streets.map((street) => street.geometry) }, notes);
   await applyHopRoutes(transport, path.join(DATA, 'tratti-stradali.json'), notes);
+  for (const [line, stops] of noticeRefs) if (line.noticeStops) line.noticeStops = [...new Set(stops.map((stop) => stop.stopId))];
 
   return transport;
 }
