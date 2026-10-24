@@ -1,5 +1,5 @@
 {
-  "_nota": "Fermate misurate sul posto: \"<id fermata>\": { \"lat\": 40.8, \"lon\": 16.5, \"nota\": \"chi e quando\" }. Vincono su qualunque calcolo di scripts/lib/posizioni.mjs.",
+  "_nota": "Fermate misurate sul posto: \"<id fermata>\": { \"lat\": 40.8, \"lon\": 16.5, \"nota\": \"chi e quando\" }. Vincono su qualunque calcolo di scripts/lib/posizioni.mjs. \"fonte\": manuale (sul posto), mymaps (mappa dell'operatore), osm (OpenStreetMap), stima (calcolata, da verificare). \"fuoriAltamura\": true per le fermate in altri comuni. \"controllaVia\": false quando il nome nel PDF somiglia a un'altra via.",
   "fermate": {
     "stop-contempo-logama": {
       "nome": "Contempo/Logama",
@@ -280,7 +280,271 @@
       "lon": 16.563922,
       "fonte": "mymaps",
       "dettaglio": "segnaposto \"Viale Traiano 35\" nella mappa di Ospedale 1"
+    },
+    "stop-ferrosud": {
+      "nome": "FERROSUD",
+      "lat": 40.744042,
+      "lon": 16.666476,
+      "fonte": "osm",
+      "dettaglio": "stabilimento Mermec Ferrosud (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-domar": {
+      "nome": "DOMAR",
+      "lat": 40.735746,
+      "lon": 16.672803,
+      "fonte": "osm",
+      "dettaglio": "stabilimento Domar (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-dileo-incanto": {
+      "nome": "DILEO - INCANTO",
+      "lat": 40.731234,
+      "lon": 16.667635,
+      "fonte": "osm",
+      "dettaglio": "stabilimento Incanto Italia (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-cornacchia-falegnameria": {
+      "nome": "CORNACCHIA (Falegnameria)",
+      "lat": 40.741526,
+      "lon": 16.667529,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-natuzzi-jesce-1": {
+      "nome": "NATUZZI \"Jesce 1\"",
+      "lat": 40.740343,
+      "lon": 16.669798,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-styling": {
+      "nome": "STYLING",
+      "lat": 40.739164,
+      "lon": 16.672071,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-mec-line-laminboard": {
+      "nome": "MEC LINE - LAMINBOARD",
+      "lat": 40.737975,
+      "lon": 16.674334,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-natuzzi-jesce-2": {
+      "nome": "NATUZZI \"Jesce 2\"",
+      "lat": 40.736139,
+      "lon": 16.674289,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-meridianagri": {
+      "nome": "MERIDIANAGRI",
+      "lat": 40.73246,
+      "lon": 16.672412,
+      "fonte": "stima",
+      "dettaglio": "stimata fra Domar e Incanto nella zona industriale di Jesce: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-bawer": {
+      "nome": "BAWER",
+      "lat": 40.732308,
+      "lon": 16.672213,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce dopo Incanto, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-takler": {
+      "nome": "TAKLER",
+      "lat": 40.735696,
+      "lon": 16.674159,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce dopo Incanto, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-loken-sanflex": {
+      "nome": "LOKEN - SANFLEX",
+      "lat": 40.738377,
+      "lon": 16.673575,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce dopo Incanto, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-keoma": {
+      "nome": "KEOMA",
+      "lat": 40.740542,
+      "lon": 16.669417,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce dopo Incanto, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-natuzzi": {
+      "nome": "NATUZZI",
+      "lat": 40.740343,
+      "lon": 16.669798,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-mec-line": {
+      "nome": "MEC LINE",
+      "lat": 40.737975,
+      "lon": 16.674334,
+      "fonte": "stima",
+      "dettaglio": "stimata lungo le strade della zona industriale di Jesce fra Ferrosud e Domar, nell'ordine del quadro orario: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-zona-industriale-la-martella": {
+      "nome": "Zona Industriale La Martella",
+      "lat": 40.681835,
+      "lon": 16.541903,
+      "fonte": "stima",
+      "dettaglio": "centro della Zona Industriale La Martella a Matera (OpenStreetMap): da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-gravina-via-bari": {
+      "nome": "GRAVINA | Via Bari",
+      "lat": 40.818065,
+      "lon": 16.43107,
+      "fonte": "stima",
+      "dettaglio": "Via Bari a Gravina in Puglia, tratto d'ingresso da Altamura (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-gravina-via-tripoli": {
+      "nome": "GRAVINA | Via Tripoli",
+      "lat": 40.815071,
+      "lon": 16.421503,
+      "fonte": "osm",
+      "dettaglio": "Via Tripoli a Gravina in Puglia (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-gravina-piazza-scacchi": {
+      "nome": "GRAVINA | Piazza Scacchi",
+      "lat": 40.81754,
+      "lon": 16.418421,
+      "fonte": "osm",
+      "dettaglio": "Piazza Arcangelo Scacchi a Gravina in Puglia (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-gravina-piazza-stazione": {
+      "nome": "GRAVINA | Piazza Stazione",
+      "lat": 40.824917,
+      "lon": 16.418534,
+      "fonte": "osm",
+      "dettaglio": "fermata bus davanti alla stazione di Gravina in Puglia (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-poggiorsini-scalo-distr": {
+      "nome": "POGGIORSINI | Scalo Distr.",
+      "lat": 40.935069,
+      "lon": 16.266824,
+      "fonte": "osm",
+      "dettaglio": "ex stazione di Poggiorsini, Via Stazione (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-spinazzola-via-a-de-gasperi": {
+      "nome": "SPINAZZOLA | Via A. De Gasperi",
+      "lat": 40.960894,
+      "lon": 16.098711,
+      "fonte": "osm",
+      "dettaglio": "Via Alcide De Gasperi a Spinazzola (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-spinazzola-via-a-grandi": {
+      "nome": "SPINAZZOLA | Via A. Grandi",
+      "lat": 40.964059,
+      "lon": 16.092818,
+      "fonte": "osm",
+      "dettaglio": "Via Achille Grandi a Spinazzola (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-spinazzola-sp-232-bis-km-1-000": {
+      "nome": "SPINAZZOLA | SP 232 bis Km. 1,000",
+      "lat": 40.953324,
+      "lon": 16.084716,
+      "fonte": "stima",
+      "dettaglio": "circa 1 km fuori Spinazzola sulla strada per Melfi: da verificare",
+      "fuoriAltamura": true
+    },
+    "stop-san-nicola-di-melfi-zona-industriale": {
+      "nome": "San Nicola di Melfi Zona Industriale",
+      "lat": 41.072088,
+      "lon": 15.715262,
+      "fonte": "osm",
+      "dettaglio": "stabilimento Stellantis (ex SATA) di San Nicola di Melfi (OpenStreetMap)",
+      "fuoriAltamura": true
+    },
+    "stop-altamura-deposito-via-carpentino": {
+      "nome": "ALTAMURA | Deposito Via Carpentino",
+      "lat": 40.817897,
+      "lon": 16.564228,
+      "fonte": "stima",
+      "dettaglio": "Via Carpentino, tratto sud verso il deposito Marino: da verificare"
+    },
+    "stop-deposito-via-carpentino": {
+      "nome": "Deposito Via Carpentino",
+      "lat": 40.817897,
+      "lon": 16.564228,
+      "fonte": "stima",
+      "dettaglio": "Via Carpentino, tratto sud verso il deposito Marino: da verificare"
+    },
+    "stop-altamura-via-centonze-antonia": {
+      "nome": "ALTAMURA | Via Centonze Antonia",
+      "lat": 40.819939,
+      "lon": 16.542957,
+      "fonte": "stima",
+      "dettaglio": "Via Antonia Centonze (OpenStreetMap): da verificare"
+    },
+    "stop-via-mura-megalitiche-stadio": {
+      "nome": "Via Mura Megalitiche Stadio",
+      "lat": 40.835941,
+      "lon": 16.557384,
+      "fonte": "manuale",
+      "dettaglio": "stessa fermata di \"Via Mura Megalitiche (fronte Stadio)\""
+    },
+    "stop-hub-via-santeramo-ang-via-r-scotellaro": {
+      "nome": "Hub Via Santeramo Ang. Via R. Scotellaro",
+      "lat": 40.825754,
+      "lon": 16.565368,
+      "fonte": "manuale",
+      "dettaglio": "stessa fermata di \"Hub Via Santeramo ang. Via Rocco Scotellaro\""
+    },
+    "stop-via-parisi": {
+      "nome": "Via Parisi",
+      "lat": 40.830708,
+      "lon": 16.547963,
+      "fonte": "stima",
+      "dettaglio": "come \"Via Parisi 66\", fra la Stazione e Via dei Mille nel quadro orario: da verificare"
+    },
+    "stop-via-martiri": {
+      "nome": "Via Martiri",
+      "lat": 40.824074,
+      "lon": 16.553965,
+      "fonte": "stima",
+      "dettaglio": "inizio di Viale Martiri (nel PDF \"Via Martiri\", non e' Via Martiri 1799), come \"Viale Martiri, 6\", dopo Piazza Zanardelli: da verificare",
+      "controllaVia": false
+    },
+    "stop-viale-traiano": {
+      "nome": "Viale Traiano",
+      "lat": 40.82044,
+      "lon": 16.563883,
+      "fonte": "stima",
+      "dettaglio": "come \"Viale Traiano, 16\", fra Viale Martiri e Via Treviso: da verificare"
+    },
+    "stop-via-treviso": {
+      "nome": "Via Treviso",
+      "lat": 40.818655,
+      "lon": 16.555712,
+      "fonte": "stima",
+      "dettaglio": "come \"Via Treviso, 27\", fra Via Manzoni e Via Matera: da verificare"
     }
   },
-  "aggiornato": "2026-09-20"
+  "aggiornato": "2026-10-24"
 }

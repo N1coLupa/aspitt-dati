@@ -207,17 +207,28 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
   const known = {};
   for (const [id, entry] of Object.entries(allKnown)) {
     const name = transport.lines.flatMap((line) => line.stops).find((stop) => stop.stopId === id)?.name ?? entry.nome ?? id;
-    const off = offStreetMeters(entry, name, streets);
+    const off = entry.fuoriAltamura || entry.controllaVia === false ? null : offStreetMeters(entry, name, streets);
     if (off && off.meters > MAX_SAVED_OFF_STREET_M) {
       rejected.push(`${name}: posizione salvata a ${Math.round(off.meters)} m da ${off.street}, scartata e ricalcolata`);
       continue;
     }
-    const twin = entry.fonte !== 'manuale' ? collision(entry, name) : null;
+    const twin = entry.fonte === 'mymaps' ? collision(entry, name) : null;
     if (twin) {
       rejected.push(`${name}: posizione salvata identica a quella di "${twin.name}", scartata e ricalcolata`);
       continue;
     }
     known[id] = entry;
+  }
+
+  // Le posizioni salvate valgono anche per le linee senza tracciato (le extraurbane non hanno mappa).
+  const rank = { exact: 3, street: 2, estimated: 1 };
+  for (const [id, entry] of Object.entries(known)) {
+    result.set(id, {
+      lat: entry.lat,
+      lon: entry.lon,
+      position: entry.fonte === 'stima' ? 'estimated' : 'exact',
+      detail: entry.dettaglio ?? (entry.fonte === 'manuale' ? 'rilevata sul posto' : entry.fonte),
+    });
   }
 
   const twins = new Map();
@@ -371,7 +382,6 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
 
     for (const entry of stops) {
       const previous = result.get(entry.stop.stopId);
-      const rank = { exact: 3, street: 2, estimated: 1 };
       const source = known[entry.stop.stopId];
       const next = entry.exact
         ? {
@@ -387,13 +397,13 @@ export function computeStopPositions(transport, { streets = [], known: allKnown 
   return result;
 }
 
-export function applyStopPositions(transport, positions) {
+export function applyStopPositions(transport, positions, { replace = false } = {}) {
   const round = (value) => +value.toFixed(6);
   for (const line of transport.lines) {
     for (const stop of line.stops) {
       const found = positions.get(stop.stopId);
       if (!found) continue;
-      if (stop.interpolated || stop.lat == null) {
+      if (replace || stop.interpolated || stop.lat == null) {
         stop.lat = round(found.lat);
         stop.lon = round(found.lon);
       }

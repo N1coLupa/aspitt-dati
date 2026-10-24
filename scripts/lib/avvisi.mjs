@@ -18,7 +18,7 @@ const STREET_PREFIX =
   /^(via|viale|v\.le|piazza|p\.zza|p\.za|piazzetta|corso|c\.so|largo|l\.go|vico|vicolo|contrada|c\.da|strada|s\.p\.|sp|s\.s\.|ss)\s+/;
 const NEGATION = /\bnon\b|soppress|sospes|chius|interdett|vietat|esclus/;
 const ONLY =
-  /\bgarantit\w*\s+(?:solo|soltanto|unicamente)\b|\b(?:solo|soltanto|unicamente)\s+(?:le\s+)?(?:seguenti\s+)?fermate\b|\beffettuer\w*\s+solo\b/;
+  /\bgarantit\w*\s+(?:solo|soltanto|unicamente)\b|\b(?:solo|soltanto|unicamente)\s+(?:le\s+)?(?:seguenti\s+)?fermate\b|\beffettuer\w*\s+solo\b|\bunic\w*\s+fermat\w*/;
 const DETOUR_BEFORE =
   /\b(per|lungo|attraverso)\s+(\S+\s+)?$|\b(percorrendo|transitando|proseguendo|deviando|provvisori\w*|sostitutiv\w*|istituit\w*|sostituzione)\b[^,]*$/;
 const RANGE_START = /\b(?:da|dalla|dal|dalle)\s*$/;
@@ -50,17 +50,30 @@ export function streetOf(stopName) {
   return core.length >= 4 ? core : null;
 }
 
+// "Linea Melfi" nel testo e' "LINEA MELFI": il nome si cerca senza la parola "linea" davanti.
+const bareName = (name) => plain(name).replace(/^linea\s+/, '');
+
+/** Il testo dell'avviso cita la linea ("LINEA OSPEDALE 2", "NAVETTE HUB", "linea Melfi")? */
+export function mentionsLine(text, lineName) {
+  const name = bareName(lineName);
+  if (!name) return false;
+  // "Linea Ovest" va cercata come "linea ovest", per non scambiarla con la parola "ovest";
+  // "Ospedale 2" o "Navette HUB" bastano da sole.
+  const wanted = plain(lineName).startsWith('linea ') ? `linea ${name}` : name;
+  return new RegExp(`(?<![a-z0-9])${escape(wanted)}(?![a-z0-9])`).test(plain(text));
+}
+
 export function lineSection(text, lineName, lineNames = []) {
   const source = plain(text);
-  const known = [...new Set([lineName, ...lineNames].map(plain).filter(Boolean))].flatMap((name) =>
+  const known = [...new Set([lineName, ...lineNames].map(bareName).filter(Boolean))].flatMap((name) =>
     [...source.matchAll(new RegExp(`\\blinea\\s+${name}(?![a-z0-9])`, 'g'))].map((m) => ({ name, at: m.index }))
   );
-  // Anche le linee che Muevt non conosce (es. "linea jesce") chiudono la sezione della linea precedente.
+  // Anche una linea che Muevt non conosce ("linea xyz") chiude la sezione della linea precedente.
   const others = [...source.matchAll(/\blinea\s+[a-z0-9]+/g)]
     .filter((m) => !known.some((mark) => mark.at === m.index))
     .map((m) => ({ name: m[0], at: m.index }));
   const marks = [...known, ...others].sort((a, b) => a.at - b.at);
-  const own = plain(lineName);
+  const own = bareName(lineName);
   const mine = marks.filter((mark) => mark.name === own);
   if (!mine.length) return source;
   return mine
@@ -69,6 +82,26 @@ export function lineSection(text, lineName, lineNames = []) {
       return source.slice(mark.at, next ? next.at : undefined);
     })
     .join(' ');
+}
+
+/** "verrà effettuata un'unica fermata presso il BAR CASABLANCA" -> "Bar Casablanca". */
+export function noticeOnlyAt(text) {
+  const match =
+    /\bunic[ao]\s+fermat[ae]\s+(?:presso|in|a|al|alla|allo|davanti\s+al(?:la)?)\s+(?:(?:il|lo|la|i|gli|le)\s+|l['’]\s*)?([^.;:\n]{3,50}?)\s*(?:[.;:\n]|\s-\s|$)/i.exec(
+      String(text ?? '')
+    );
+  if (!match) return null;
+  const place = match[1].trim();
+  return place === place.toUpperCase()
+    ? place.toLowerCase().replace(/(^|[\s'’(-])(\p{L})/gu, (_, before, letter) => before + letter.toUpperCase())
+    : place;
+}
+
+/** Fermate della linea in un altro comune, dal nome ("GRAVINA | Via Bari", "GRAVINA - Piazza Scacchi"). */
+export function stopsInTown(stops, town) {
+  const wanted = plain(town);
+  if (!wanted) return [];
+  return [...new Set(stops.filter((stop) => plain(stop.name).startsWith(`${wanted} `)).map((stop) => stop.stopId))];
 }
 
 const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

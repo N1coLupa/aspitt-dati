@@ -1,0 +1,8 @@
+{
+  "_nota": "L'operatore pubblica le linee extraurbane in un solo PDF, una pagina per linea con il nome in testa (\"Linea Melfi\"). Lo scraper ne fa linee separate: qui nome e percorso mostrati nell'app. Una pagina con un titolo che non e' qui diventa comunque una linea, con nome e percorso ricavati dal PDF.",
+  "linee": {
+    "jesce": { "name": "Linea Jesce", "route": "Altamura - Zona Industriale Jesce" },
+    "la martella": { "name": "Linea La Martella", "route": "Altamura - Zona Industriale La Martella (Matera)" },
+    "melfi": { "name": "Linea Melfi", "route": "Altamura - Gravina - Spinazzola - San Nicola di Melfi (SATA)" }
+  }
+}
