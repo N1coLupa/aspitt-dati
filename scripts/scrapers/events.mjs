@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import { XMLParser } from 'fast-xml-parser';
 import { getText } from '../lib/http.mjs';
+import { normalizeLink } from '../lib/link.mjs';
 import { parseItalianDateRange } from '../lib/dates-it.mjs';
 import { slugify } from '../lib/slug.mjs';
 
@@ -210,7 +211,7 @@ async function scrapeAltamuraLife() {
     events.push({
       id: `life-${slugify(title)}`,
       title,
-      url: new URL(href, SOURCES.altamuralife.homepage).toString(),
+      url: normalizeLink(href, SOURCES.altamuralife.homepage) ?? SOURCES.altamuralife.homepage,
       source: SOURCES.altamuralife.name,
       sourceUrl: SOURCES.altamuralife.homepage,
       publishedAt: null,
@@ -301,7 +302,7 @@ async function scrapeVirgilio() {
     events.push({
       id: `virgilio-${slugify(title)}`,
       title,
-      url: new URL(href, 'https://www.virgilio.it').toString(),
+      url: normalizeLink(href, 'https://www.virgilio.it') ?? SOURCES.virgilio.homepage,
       source: SOURCES.virgilio.name,
       sourceUrl: SOURCES.virgilio.homepage,
       publishedAt: null,
@@ -485,7 +486,20 @@ export async function scrapeEvents() {
   const today = new Date().toISOString().slice(0, 10);
   const recentThreshold = new Date(Date.now() - 45 * 24 * 3600 * 1000).toISOString();
 
+  // Ogni link passa dal normalizzatore: se e' rovinato si usa la pagina eventi della fonte,
+  // cosi' un evento non fa mai scartare l'intero elenco.
+  const homepageOf = new Map(Object.values(SOURCES).map((source) => [source.name, source.homepage]));
+  const fixLink = (url, source) =>
+    normalizeLink(url, homepageOf.get(source) ?? 'https://www.comune.altamura.ba.it/') ?? homepageOf.get(source) ?? null;
   const events = dedupe(fromSources.flat())
+    .map((event) => ({
+      ...event,
+      url: fixLink(event.url, event.source),
+      ...(event.alsoOn
+        ? { alsoOn: event.alsoOn.map((item) => ({ ...item, url: fixLink(item.url, item.source) })).filter((item) => item.url) }
+        : null),
+    }))
+    .filter((event) => event.url)
     .map((event) => ({ ...event, startDate: isoDay(event.startDate), endDate: isoDay(event.endDate) }))
     .map((event) => ({ ...event, dated: Boolean(event.startDate || event.endDate) }))
     .filter((event) => {
