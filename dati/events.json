@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T13:57:26.746Z",
+  "generatedAt": "2026-10-24T22:29:13.981Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -48,38 +48,20 @@
       "dated": true
     },
     {
-      "id": "life-nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo",
-      "title": "Nel segno di Brera: in mostra i dipinti di Addamiano, De Cosmo e Scazzosi",
-      "url": "https://www.altamuralife.it/eventi/nel-segno-di-brera-in-mostra-i-dipinti-di-addamiano-de-cosmo-e-scazzosi/",
+      "id": "life-pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paes",
+      "title": "Pro Loco Altamura: conoscere la città tra spiritualità e paesaggio rupestre",
+      "url": "https://www.altamuralife.it/eventi/pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paesaggio-rupestre/",
       "source": "AltamuraLife",
       "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": "2026-10-24",
-      "startTime": null,
-      "venue": null,
-      "summary": "Fino al 24 ottobre",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-marcia-per-la-pace",
-      "title": "Marcia per la Pace",
-      "url": "https://iltaccodibacco.it/puglia/eventi/334424.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
       "publishedAt": null,
       "startDate": "2026-10-24",
       "endDate": "2026-10-24",
       "startTime": null,
-      "venue": "Percorso Gravina–Altamura Gravina in Puglia",
-      "summary": "Sabato 24 ottobre 2026 la Murgia tornerà a marciare per la pace con una mobilitazione da Gravina ad Altamura contro la guerra, il riarmo e la militarizzazione dei territori.",
+      "venue": null,
+      "summary": "sabato 24 ottobre",
       "tags": [],
       "categories": [
-        "trekking"
+        "eventi"
       ],
       "dated": true
     },
@@ -554,24 +536,6 @@
       "categories": [
         "cultura",
         "esperienze"
-      ],
-      "dated": false
-    },
-    {
-      "id": "life-pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paes",
-      "title": "Pro Loco Altamura: conoscere la città tra spiritualità e paesaggio rupestre",
-      "url": "https://www.altamuralife.it/eventi/pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paesaggio-rupestre/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "summary": "Oggi",
-      "tags": [],
-      "categories": [
-        "eventi"
       ],
       "dated": false
     }

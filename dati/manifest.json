@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checkedAt": "2026-10-24T18:42:40.311Z",
+  "checkedAt": "2026-10-24T22:29:45.123Z",
   "files": {
     "transport": {
       "generatedAt": "2026-10-24T18:41:54.807Z",
@@ -8,9 +8,9 @@
       "sha256": "9c76519aaed7ebe3d9d5e90336657e75b769f1774133b98f20b3f930b5f5f9c2"
     },
     "events": {
-      "generatedAt": "2026-10-24T13:57:26.746Z",
-      "bytes": 21111,
-      "sha256": "52e57826d4f6e110e7bc4c572ae7fa6970144951749f66207571567f50366d8a"
+      "generatedAt": "2026-10-24T22:29:13.981Z",
+      "bytes": 19775,
+      "sha256": "11760318689d929ece9998a34299763ec19fb8a8f7ada65379c56d5f66f09d79"
     },
     "places": {
       "generatedAt": "2026-10-24T18:42:40.292Z",
@@ -25,8 +25,8 @@
   },
   "sources": {
     "transport": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "fetch failed"
     },
     "events": {
       "status": "aggiornato",
@@ -38,6 +38,6 @@
     }
   },
   "app": "muevt",
-  "signedAt": "2026-10-24T18:42:51.126Z",
+  "signedAt": "2026-10-24T22:29:57.232Z",
   "keyId": "5VTN2Etz"
 }
