@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T22:29:13.981Z",
+  "generatedAt": "2026-10-25T00:19:40.624Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -42,24 +42,6 @@
       "tags": [
         "Evento culturale"
       ],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
-      "id": "life-pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paes",
-      "title": "Pro Loco Altamura: conoscere la città tra spiritualità e paesaggio rupestre",
-      "url": "https://www.altamuralife.it/eventi/pro-loco-altamura-conoscere-la-citta-tra-spiritualita-e-paesaggio-rupestre/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-24",
-      "startTime": null,
-      "venue": null,
-      "summary": "sabato 24 ottobre",
-      "tags": [],
       "categories": [
         "eventi"
       ],
