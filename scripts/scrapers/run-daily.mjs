@@ -8,8 +8,8 @@ import { scrapePlaces } from './places.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
 
-const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
-const SNAPSHOT_DIR = process.env.MUEVT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
+const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
+const SNAPSHOT_DIR = process.env.ASPITT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
 
 async function readJson(file) {
   try {

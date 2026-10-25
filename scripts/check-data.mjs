@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { MARINO_HOSTS, allowedUrl } from './lib/http.mjs';
 
-const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
+const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 
 let problems = [];
 let notes = [];

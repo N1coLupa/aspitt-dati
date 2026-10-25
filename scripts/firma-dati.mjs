@@ -1,13 +1,13 @@
 import { loadPrivateKey, rawPublicKey, signData } from './lib/firma.mjs';
 
-const dir = process.argv[2] ?? process.env.MUEVT_DATA_DIR ?? 'dati';
+const dir = process.argv[2] ?? process.env.ASPITT_DATA_DIR ?? 'dati';
 
 const key = await loadPrivateKey().catch((err) => {
   console.error(`Chiave di firma illeggibile: ${err.message}`);
   process.exit(1);
 });
 if (!key) {
-  console.error('Manca la chiave di firma: imposta MUEVT_FIRMA_CHIAVE (GitHub) o MUEVT_FIRMA_FILE (PC).');
+  console.error('Manca la chiave di firma: imposta ASPITT_FIRMA_CHIAVE (GitHub) o ASPITT_FIRMA_FILE (PC).');
   process.exit(1);
 }
 

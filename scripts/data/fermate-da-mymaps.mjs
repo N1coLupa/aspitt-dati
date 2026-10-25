@@ -3,7 +3,7 @@ import path from 'node:path';
 import { getText, sleep } from '../lib/http.mjs';
 import { stopKey } from '../lib/slug.mjs';
 
-const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
+const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 const OUT = path.join('scripts', 'data', 'fermate-posizioni.json');
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
