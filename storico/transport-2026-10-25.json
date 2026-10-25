@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T18:41:54.807Z",
+  "generatedAt": "2026-10-25T00:19:31.490Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -6553,7 +6553,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/linea-ospedale-1.pdf#page=2",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/linea-ospedale-1.pdf#page=1",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -13384,27 +13384,18 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-24",
-      "noticeUntil": "2026-10-24",
-      "noticeStart": "15:00",
-      "noticeEnd": "18:30",
+      "noticeFrom": "2026-10-27",
+      "noticeUntil": "2026-10-27",
+      "noticeStart": "17:30",
+      "noticeEnd": "22:00",
       "noticeStops": [
-        "stop-via-gravina-231",
-        "stop-via-gravina-fronte-via-della-cicoriella",
-        "stop-via-gravina-155",
-        "stop-via-gravina-79",
-        "stop-via-gravina-7",
-        "stop-via-santeramo-161",
-        "stop-via-santeramo-119",
-        "stop-piazza-unita-d-italia-8",
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-74",
-        "stop-via-iv-novembre-fronte-via-ii-giugno",
-        "stop-via-gravina-ang-via-del-timo",
-        "stop-via-gravina-fronte-231"
+        "stop-via-iv-novembre-ang-via-ii-giugno",
+        "stop-via-mura-megalitiche-fronte-stadio",
+        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+        "stop-via-bari-150"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il 24.10.26 dalle 15:00 alle 18:30 le seguenti fermate saranno SOPPRESSE. LINEA OSPEDALE 1: - da via Gravina 231 a Via Selva (ang. via Centonze) - da via Dei Mille 103 a via Gravina (fronte 231) LINEA OSPEDALE 2: - da via Santeramo 161 a via IV Novembre (fronte via II Giugno) - tutte le fermate di via Gravina",
+      "noticeText": "Si comunica che il giorno 23.10.26 e il giorno 27.10.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
