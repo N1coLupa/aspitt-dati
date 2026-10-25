@@ -111,7 +111,7 @@ async function route(a, b) {
   const url = `${OSRM}${a.lon},${a.lat};${b.lon},${b.lat}?overview=full&geometries=geojson`;
   for (let attempt = 1; ; attempt += 1) {
     try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Muevt (app mobilita Altamura)' }, signal: AbortSignal.timeout(30000) });
+      const res = await fetch(url, { headers: { 'User-Agent': 'Aspitt (app mobilita Altamura)' }, signal: AbortSignal.timeout(30000) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const body = await res.json();
       const found = body.routes?.[0];

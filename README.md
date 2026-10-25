@@ -1,7 +1,7 @@
-# Dati di Muevt
+# Dati di Aspitt
 
 Orari degli autobus urbani di Altamura, avvisi dell'operatore, eventi e luoghi,
-nel formato letto dall'app Muevt. Aggiornati ogni giorno da un'azione di GitHub.
+nel formato letto dall'app Aspitt. Aggiornati ogni giorno da un'azione di GitHub.
 
 - `dati/manifest.json`: data del controllo, impronta e stato di ogni fonte.
 - `dati/manifest.sig`: firma Ed25519 del manifest. L'app accetta solo dati

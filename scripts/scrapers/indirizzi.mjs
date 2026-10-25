@@ -25,7 +25,7 @@ async function overpass(query) {
     try {
       const res = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Muevt/1.0 (app di mobilita per Altamura)' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Aspitt/1.0 (app di mobilita per Altamura)' },
         body: new URLSearchParams({ data: query }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -125,7 +125,7 @@ async function anncsu(params) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
       const res = await fetch(`${ANNCSU}?${new URLSearchParams(params)}`, {
-        headers: { 'User-Agent': 'Muevt/1.0 (app di mobilita per Altamura)' },
+        headers: { 'User-Agent': 'Aspitt/1.0 (app di mobilita per Altamura)' },
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const body = await res.json();

@@ -130,7 +130,7 @@ async function main() {
   const age = (Date.now() - new Date(transport.generatedAt).getTime()) / 3600000;
   if (age > 48) note(`i dati dei trasporti hanno ${Math.round(age)} ore (tenuti gli ultimi validi)`);
 
-  console.log('Controllo dati Muevt');
+  console.log('Controllo dati Aspitt');
   console.log(`  linee ${transport.lines.length}, fermate ${transport.stops.length}`);
   console.log(`  eventi ${events.events.length}, luoghi ${places.places.length}`);
 

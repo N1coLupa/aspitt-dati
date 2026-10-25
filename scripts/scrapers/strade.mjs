@@ -18,7 +18,7 @@ async function overpass(query) {
     try {
       const res = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Muevt/1.0 (app di mobilita per Altamura)' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Aspitt/1.0 (app di mobilita per Altamura)' },
         body: new URLSearchParams({ data: query }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);

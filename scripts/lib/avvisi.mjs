@@ -68,7 +68,7 @@ export function lineSection(text, lineName, lineNames = []) {
   const known = [...new Set([lineName, ...lineNames].map(bareName).filter(Boolean))].flatMap((name) =>
     [...source.matchAll(new RegExp(`\\blinea\\s+${name}(?![a-z0-9])`, 'g'))].map((m) => ({ name, at: m.index }))
   );
-  // Anche una linea che Muevt non conosce ("linea xyz") chiude la sezione della linea precedente.
+  // Anche una linea che Aspitt non conosce ("linea xyz") chiude la sezione della linea precedente.
   const others = [...source.matchAll(/\blinea\s+[a-z0-9]+/g)]
     .filter((m) => !known.some((mark) => mark.at === m.index))
     .map((m) => ({ name: m[0], at: m.index }));
