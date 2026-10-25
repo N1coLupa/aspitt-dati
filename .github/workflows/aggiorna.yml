@@ -79,20 +79,20 @@ jobs:
       - name: Controlla
         run: node scripts/check-data.mjs
         env:
-          MUEVT_DATA_DIR: dati
+          ASPITT_DATA_DIR: dati
 
       - name: Firma
         run: node scripts/firma-dati.mjs dati
         env:
-          MUEVT_DATA_DIR: dati
-          MUEVT_FIRMA_CHIAVE: ${{ secrets.MUEVT_FIRMA_CHIAVE }}
+          ASPITT_DATA_DIR: dati
+          ASPITT_FIRMA_CHIAVE: ${{ secrets.ASPITT_FIRMA_CHIAVE }}
 
       - name: Pubblica i dati cambiati
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "muevt-dati"
-          git config user.email "muevt-dati@users.noreply.github.com"
+          git config user.name "aspitt-dati"
+          git config user.email "aspitt-dati@users.noreply.github.com"
           git add dati storico
           if git diff --cached --quiet; then
             echo "Nessun cambiamento"

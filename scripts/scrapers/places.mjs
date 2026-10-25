@@ -154,7 +154,7 @@ export async function scrapePlaces() {
 
   let transport = null;
   try {
-    transport = JSON.parse(await fs.readFile(path.join(process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati'), 'transport.json'), 'utf8'));
+    transport = JSON.parse(await fs.readFile(path.join(process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati'), 'transport.json'), 'utf8'));
   } catch {
     console.warn('  ! transport.json assente: salto il calcolo delle fermate vicine');
   }

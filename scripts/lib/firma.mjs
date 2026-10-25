@@ -6,8 +6,8 @@ export const DATA_FILES = ['transport', 'events', 'places', 'alerts'];
 export const MANIFEST_SCHEMA = 2;
 
 export async function loadPrivateKey() {
-  const inline = process.env.MUEVT_FIRMA_CHIAVE;
-  const file = process.env.MUEVT_FIRMA_FILE;
+  const inline = process.env.ASPITT_FIRMA_CHIAVE;
+  const file = process.env.ASPITT_FIRMA_FILE;
   const pem = inline?.trim() ? inline : file ? await fs.readFile(file, 'utf8') : null;
   if (!pem) return null;
   const key = crypto.createPrivateKey(pem.replace(/\\n/g, '\n'));
@@ -40,7 +40,7 @@ export async function signData(dir, privateKey) {
   const manifest = {
     ...current,
     schema: MANIFEST_SCHEMA,
-    app: 'muevt',
+    app: 'aspitt',
     signedAt: new Date().toISOString(),
     keyId: rawPublicKey(privateKey).slice(0, 8),
     files,

@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { computeStopPositions, fetchStreets } from '../lib/posizioni.mjs';
 
-const DATA_DIR = process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati');
+const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 export const STREETS_FILE = path.join('scripts', 'data', 'vie-altamura.json');
 export const MANUAL_FILE = path.join('scripts', 'data', 'fermate-posizioni.json');
 

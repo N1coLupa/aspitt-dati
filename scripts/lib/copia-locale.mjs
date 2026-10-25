@@ -3,7 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { BlockedError, MARINO_HOSTS, getBuffer, getText } from './http.mjs';
 
-export const COPY_DIR = process.env.MUEVT_COPIA_MARINO ?? path.join(os.homedir(), 'Desktop', 'orari-marino');
+export const COPY_DIR = process.env.ASPITT_COPIA_MARINO ?? path.join(os.homedir(), 'Desktop', 'orari-marino');
 
 export const usage = { local: new Set(), missing: new Set(), files: new Map() };
 
