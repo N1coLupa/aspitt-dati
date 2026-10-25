@@ -72,7 +72,7 @@ async function overpass(query) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'User-Agent': 'Muevt/1.0 (app di mobilita per Altamura)',
+          'User-Agent': 'Aspitt/1.0 (app di mobilita per Altamura)',
         },
         body: new URLSearchParams({ data: query }),
       });
@@ -188,7 +188,7 @@ export async function scrapePlaces() {
     generatedAt: new Date().toISOString(),
     sources: [
       { name: 'OpenStreetMap', url: 'https://www.openstreetmap.org/copyright' },
-      { name: 'Redazione Muevt', url: null },
+      { name: 'Redazione Aspitt', url: null },
     ],
     places: places.sort((a, b) => Number(b.highlight) - Number(a.highlight) || a.name.localeCompare(b.name)),
   };

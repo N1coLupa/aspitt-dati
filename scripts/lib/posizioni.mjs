@@ -1,7 +1,7 @@
 import { getText } from './http.mjs';
 import { stopKey } from './slug.mjs';
 
-const USER_AGENT = 'Muevt/1.0 (app di mobilita per Altamura; ciao@muevt.it)';
+const USER_AGENT = 'Aspitt/1.0 (app di mobilita per Altamura; hello@lykode.com)';
 const ON_STREET_M = 18;
 const STEP_M = 8;
 

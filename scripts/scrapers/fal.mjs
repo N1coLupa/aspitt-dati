@@ -6,7 +6,7 @@ import { FAL_HOSTS, getBuffer, getText } from '../lib/http.mjs';
 
 const PAGE = 'https://ferrovieappulolucane.it/tratta/orari/';
 const OUT = path.join(process.env.MUEVT_DATA_DIR ?? path.join('src', 'dati'), 'fal.json');
-const HEADERS = { 'User-Agent': 'Mozilla/5.0 (Muevt, app mobilita Altamura)' };
+const HEADERS = { 'User-Agent': 'Mozilla/5.0 (Aspitt, app mobilita Altamura)' };
 const TIME = /^([01]?\d|2[0-3])[.:]([0-5]\d)$/;
 const TRAIN = /^\d{1,3}(\/\d{1,3})?$/;
 const RUN = /^\d{2,4}$/;

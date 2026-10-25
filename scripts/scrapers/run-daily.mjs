@@ -117,7 +117,7 @@ async function fileInfo(name) {
 
 async function main() {
   const started = Date.now();
-  console.log(`Aggiornamento dati Muevt - ${new Date().toLocaleString('it-IT')}\n`);
+  console.log(`Aggiornamento dati Aspitt - ${new Date().toLocaleString('it-IT')}\n`);
 
   console.log('[1/4] Trasporti');
   const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport);
