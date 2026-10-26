@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T00:19:40.624Z",
+  "generatedAt": "2026-10-26T00:19:14.396Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,51 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "comune-731027",
-      "title": "Visite guidate gratuite alla cava dei dinosauri",
-      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-10-20T11:40:01.000Z",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "startTime": "09:30",
-      "venue": null,
-      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
-      "tags": [
-        "Evento culturale"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
-      "id": "live-domenica-25-ottobre-la-santa-messa-dalla-cattedrale-di-altam",
-      "title": "Domenica 25 ottobre la Santa Messa dalla Cattedrale di Altamura in diretta su Rai 1",
-      "url": "https://altamuralive.it/2026/10/23/domenica-25-ottobre-la-santa-messa-dalla-cattedrale-di-altamura-in-diretta-su-rai-1/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-10-23T10:47:53.000Z",
-      "startDate": "2026-10-25",
-      "endDate": "2026-10-25",
-      "startTime": null,
-      "venue": null,
-      "summary": "Alle ore 10.55 Rai 1 trasmetterà in diretta nazionale la Santa Messa dalla Cattedrale di Santa Maria Assunta. Un appuntamento per la comunità, chiamata a vivere e condividere una celebrazione che porterà la nostra città…",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "Cattedrale di Altamura",
-        "Cattedrale di Santa Maria Assunta",
-        "comune di altamura",
-        "Rai"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
     {
       "id": "tacco-sua-maesta-il-pianoforte",
       "title": "Sua Maestà il Pianoforte!",
@@ -313,6 +268,24 @@
       "tags": [
         "Evento culturale"
       ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-antonio-ornano-in-grato",
+      "title": "Antonio Ornano - In Grato",
+      "url": "https://iltaccodibacco.it/puglia/eventi/334043.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "In un’epoca in cui tutti sembrano avere la ricetta perfetta per la felicità, in cui siamo continuamente esortati a essere grati, positivi, centrati, connessi con l’energia dell’universo… c’è chi resta perplesso.",
+      "tags": [],
       "categories": [
         "eventi"
       ],
