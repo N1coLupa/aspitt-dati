@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T22:40:32.691Z",
+  "generatedAt": "2026-10-27T09:49:25.081Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -50,12 +50,12 @@
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 150
+          "distance": 118
         }
       ]
     },
@@ -227,6 +227,14 @@
           "distance": 276
         },
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 329
+        },
+        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
@@ -237,15 +245,6 @@
             "linea-la-martella"
           ],
           "distance": 333
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 340
         }
       ]
     },
@@ -290,6 +289,14 @@
       "lon": 16.5586,
       "nearbyStops": [
         {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 52
+        },
+        {
           "stopId": "stop-via-santeramo-ang-via-cassano",
           "name": "Via Santeramo ang. Via Cassano",
           "lines": [
@@ -304,14 +311,6 @@
             "ospedale-2"
           ],
           "distance": 127
-        },
-        {
-          "stopId": "stop-via-cassano-13",
-          "name": "Via Cassano 13",
-          "lines": [
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 130
         }
       ]
     },
@@ -456,6 +455,14 @@
       "tips": "Sta lungo la passeggiata dei claustri: tienilo d'occhio o rischi di passarci davanti senza vederlo.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 171
+        },
+        {
           "stopId": "stop-via-martiri",
           "name": "Via Martiri",
           "lines": [
@@ -471,18 +478,6 @@
             "linea-scuola-3"
           ],
           "distance": 180
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 220
         }
       ]
     },
@@ -560,6 +555,14 @@
       "tips": "Gli orari seguono le funzioni: la mattina presto e il tardo pomeriggio sono i momenti buoni.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 34
+        },
+        {
           "stopId": "stop-via-martiri",
           "name": "Via Martiri",
           "lines": [
@@ -575,18 +578,6 @@
             "linea-scuola-3"
           ],
           "distance": 38
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 141
         }
       ]
     },
@@ -631,12 +622,12 @@
           "distance": 301
         },
         {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
-            "navette-hub"
+            "linea-scuola-3"
           ],
-          "distance": 351
+          "distance": 345
         }
       ]
     },
@@ -752,6 +743,14 @@
       "tips": "Il modo migliore per leggerle è camminare lungo il perimetro del centro storico, non attraversarlo.",
       "nearbyStops": [
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 157
+        },
+        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
@@ -774,14 +773,6 @@
             "linea-la-martella"
           ],
           "distance": 177
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 180
         }
       ]
     },
@@ -864,16 +855,12 @@
           "distance": 141
         },
         {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
-            "ospedale-1",
-            "navette-hub",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-la-martella"
+            "linea-scuola-3"
           ],
-          "distance": 196
+          "distance": 173
         }
       ]
     },
@@ -1260,7 +1247,8 @@
           "name": "Via Madrid 66",
           "lines": [
             "ospedale-2",
-            "ospedale-domenica-e-festivi"
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-3"
           ],
           "distance": 97
         },
@@ -1319,7 +1307,7 @@
         },
         {
           "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lines": [
             "ospedale-1",
             "navette-hub",
@@ -1557,12 +1545,12 @@
           "distance": 29
         },
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
           "lines": [
             "linea-scuola-3"
           ],
-          "distance": 142
+          "distance": 126
         }
       ]
     },
@@ -1594,6 +1582,14 @@
           "distance": 133
         },
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 140
+        },
+        {
           "stopId": "stop-piazza-zanardelli",
           "name": "Piazza Zanardelli",
           "lines": [
@@ -1604,14 +1600,6 @@
             "linea-la-martella"
           ],
           "distance": 141
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 169
         }
       ]
     },
