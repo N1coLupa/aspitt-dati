@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T16:47:54.375Z",
+  "generatedAt": "2026-10-27T09:48:41.548Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -226,7 +226,7 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 23,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
           "interpolated": false,
@@ -6655,11 +6655,11 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-mura-megalitiche",
+          "stopId": "stop-via-mura-megalitiche-fronte-stadio",
           "index": 12,
-          "name": "Via Mura Megalitiche",
-          "lat": 40.835996,
-          "lon": 16.557082,
+          "name": "Via Mura Megalitiche (fronte Stadio)",
+          "lat": 40.835941,
+          "lon": 16.557384,
           "interpolated": false,
           "position": "exact"
         },
@@ -6675,9 +6675,9 @@
         {
           "stopId": "stop-via-bari-150",
           "index": 14,
-          "name": "Via Bari 150",
-          "lat": 40.836432,
-          "lon": 16.56247,
+          "name": "Via Bari, 150",
+          "lat": 40.836378,
+          "lon": 16.562399,
           "interpolated": false,
           "position": "exact"
         },
@@ -6694,8 +6694,8 @@
           "stopId": "stop-via-madrid-66",
           "index": 16,
           "name": "Via Madrid 66",
-          "lat": 40.836087,
-          "lon": 16.568421,
+          "lat": 40.836088,
+          "lon": 16.568422,
           "interpolated": false,
           "position": "exact"
         },
@@ -6703,7 +6703,7 @@
           "stopId": "stop-via-dino-delucia-1",
           "index": 17,
           "name": "Via Dino Delucia 1",
-          "lat": 40.833392,
+          "lat": 40.833391,
           "lon": 16.570059,
           "interpolated": false,
           "position": "exact"
@@ -6918,7 +6918,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "06:25",
               "served": true
@@ -7121,7 +7121,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "07:12",
               "served": true
@@ -7324,7 +7324,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "07:30",
               "served": true
@@ -7527,7 +7527,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "08:05",
               "served": true
@@ -7730,7 +7730,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "08:25",
               "served": true
@@ -7933,7 +7933,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "10:25",
               "served": true
@@ -8136,7 +8136,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "11:25",
               "served": true
@@ -8339,7 +8339,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "12:25",
               "served": true
@@ -8542,7 +8542,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "13:12",
               "served": true
@@ -8745,7 +8745,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "13:25",
               "served": true
@@ -8948,7 +8948,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "14:35",
               "served": true
@@ -9151,7 +9151,7 @@
               "served": false
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": null,
               "served": false
@@ -9354,7 +9354,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "17:25",
               "served": true
@@ -9557,7 +9557,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "18:30",
               "served": true
@@ -9760,7 +9760,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "19:25",
               "served": true
@@ -9963,7 +9963,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "20:20",
               "served": true
@@ -10166,7 +10166,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 12,
               "time": "21:30",
               "served": true
@@ -13390,7 +13390,7 @@
       "noticeEnd": "22:00",
       "noticeStops": [
         "stop-via-iv-novembre-ang-via-ii-giugno",
-        "stop-via-mura-megalitiche",
+        "stop-via-mura-megalitiche-fronte-stadio",
         "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
         "stop-via-bari-150"
       ],
@@ -13521,9 +13521,9 @@
         {
           "stopId": "stop-via-bari-150",
           "index": 13,
-          "name": "Via Bari 150",
-          "lat": 40.836432,
-          "lon": 16.56247,
+          "name": "Via Bari, 150",
+          "lat": 40.836378,
+          "lon": 16.562399,
           "interpolated": false,
           "position": "exact"
         },
@@ -13540,8 +13540,8 @@
           "stopId": "stop-via-madrid-66",
           "index": 15,
           "name": "Via Madrid 66",
-          "lat": 40.836087,
-          "lon": 16.568421,
+          "lat": 40.836088,
+          "lon": 16.568422,
           "interpolated": false,
           "position": "exact"
         },
@@ -13549,7 +13549,7 @@
           "stopId": "stop-via-dino-delucia-1",
           "index": 16,
           "name": "Via Dino Delucia 1",
-          "lat": 40.833392,
+          "lat": 40.833391,
           "lon": 16.570059,
           "interpolated": false,
           "position": "exact"
@@ -13591,11 +13591,11 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 21,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.825579,
-          "lon": 16.565665,
+          "lat": 40.82575,
+          "lon": 16.565316,
           "interpolated": false,
           "position": "exact"
         },
@@ -13903,7 +13903,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "06:23",
               "served": true
@@ -14155,7 +14155,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "07:36",
               "served": true
@@ -14407,7 +14407,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "08:33",
               "served": true
@@ -14659,7 +14659,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "09:33",
               "served": true
@@ -14911,7 +14911,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "11:23",
               "served": true
@@ -15163,7 +15163,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "12:23",
               "served": true
@@ -15415,7 +15415,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "13:23",
               "served": true
@@ -15667,7 +15667,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "14:38",
               "served": true
@@ -15919,7 +15919,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "17:23",
               "served": true
@@ -16171,7 +16171,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "18:23",
               "served": true
@@ -16423,7 +16423,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "19:23",
               "served": true
@@ -16675,7 +16675,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "20:23",
               "served": true
@@ -16927,7 +16927,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 21,
               "time": "21:38",
               "served": true
@@ -24972,7 +24972,7 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 15,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
           "interpolated": true,
@@ -31727,7 +31727,7 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 17,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
           "interpolated": false,
@@ -31817,7 +31817,7 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 27,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
           "interpolated": true,
@@ -35192,7 +35192,7 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026-1.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026-2.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
@@ -35352,9 +35352,144 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 18,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-viale-martiri-83",
+          "index": 19,
+          "name": "Viale Martiri, 83",
+          "lat": 40.823785,
+          "lon": 16.557452,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "index": 20,
+          "name": "Viale Martiri, 1",
+          "lat": 40.824192,
+          "lon": 16.553486,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-bresso-fronte-111",
+          "index": 21,
+          "name": "Via Bresso (fronte 111)",
+          "lat": 40.823171,
+          "lon": 16.546997,
+          "interpolated": false,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-gravina-ang-via-del-melo",
+          "index": 22,
+          "name": "Via Gravina ang. Via del Melo",
+          "lat": 40.823777,
+          "lon": 16.557432,
+          "interpolated": true,
+          "position": "estimated"
+        },
+        {
+          "stopId": "stop-viale-padre-pio",
+          "index": 23,
+          "name": "Viale Padre Pio",
+          "lat": 40.830629,
+          "lon": 16.541718,
+          "interpolated": true,
+          "position": "street"
+        },
+        {
+          "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
+          "index": 24,
+          "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
+          "lat": 40.83735,
+          "lon": 16.552244,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+          "index": 25,
+          "name": "Via Mura Megalitiche ang. Via IV Novembre",
+          "lat": 40.835163,
+          "lon": 16.555218,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
+          "index": 26,
+          "name": "Via Mura Megalitiche (ang. Via Vecchia Buoncammino)",
+          "lat": 40.834673,
+          "lon": 16.559254,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-bari-150",
+          "index": 27,
+          "name": "Via Bari, 150",
+          "lat": 40.836378,
+          "lon": 16.562399,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-londra-30",
+          "index": 28,
+          "name": "Via Londra 30",
+          "lat": 40.837562,
+          "lon": 16.565444,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-madrid-66",
+          "index": 29,
+          "name": "Via Madrid 66",
+          "lat": 40.836088,
+          "lon": 16.568422,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-dino-delucia-1",
+          "index": 30,
+          "name": "Via Dino Delucia 1",
+          "lat": 40.833391,
+          "lon": 16.570059,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-cassano-81",
+          "index": 31,
+          "name": "Via Cassano 81",
+          "lat": 40.829942,
+          "lon": 16.561377,
+          "interpolated": true,
+          "position": "exact"
+        },
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "index": 32,
+          "name": "Via Cassano ang. Via Santeramo",
+          "lat": 40.827959,
+          "lon": 16.558582,
+          "interpolated": true,
+          "position": "street"
+        },
+        {
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "index": 33,
+          "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
+          "lat": 40.82575,
+          "lon": 16.565316,
           "interpolated": true,
           "position": "exact"
         }
@@ -35363,7 +35498,7 @@
         {
           "id": "linea-scuola-3-p1-corsa-unica",
           "code": "Corsa unica",
-          "variant": null,
+          "variant": 1,
           "serviceLabel": "da Lunedì a Sabato",
           "days": [
             1,
@@ -35481,6 +35616,327 @@
               "stopId": "stop-viale-martiri-83",
               "index": 18,
               "time": "07:55",
+              "served": true
+            }
+          ]
+        },
+        {
+          "id": "linea-scuola-3-p2-corsa-1",
+          "code": "Corsa 1",
+          "variant": 2,
+          "serviceLabel": "da Lunedì a Sabato",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "departure": "12:18",
+          "stopTimes": [
+            {
+              "stopId": "stop-viale-martiri-83",
+              "index": 19,
+              "time": "12:18",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-martiri-1",
+              "index": 20,
+              "time": "12:19",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bresso-fronte-111",
+              "index": 21,
+              "time": "12:23",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-gravina-ang-via-del-melo",
+              "index": 22,
+              "time": "12:24",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-padre-pio",
+              "index": 23,
+              "time": "12:29",
+              "served": true
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
+              "index": 24,
+              "time": "12:31",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "index": 25,
+              "time": "12:33",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
+              "index": 26,
+              "time": "12:35",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 27,
+              "time": "12:37",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-londra-30",
+              "index": 28,
+              "time": "12:39",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-madrid-66",
+              "index": 29,
+              "time": "12:40",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-dino-delucia-1",
+              "index": 30,
+              "time": "12:41",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-81",
+              "index": 31,
+              "time": "12:43",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-ang-via-santeramo",
+              "index": 32,
+              "time": "12:45",
+              "served": true
+            },
+            {
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "index": 33,
+              "time": "12:47",
+              "served": true
+            }
+          ]
+        },
+        {
+          "id": "linea-scuola-3-p2-corsa-2",
+          "code": "Corsa 2",
+          "variant": 2,
+          "serviceLabel": "da Lunedì a Sabato",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "departure": "13:18",
+          "stopTimes": [
+            {
+              "stopId": "stop-viale-martiri-83",
+              "index": 19,
+              "time": "13:18",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-martiri-1",
+              "index": 20,
+              "time": "13:19",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bresso-fronte-111",
+              "index": 21,
+              "time": "13:23",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-gravina-ang-via-del-melo",
+              "index": 22,
+              "time": "13:27",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-padre-pio",
+              "index": 23,
+              "time": "13:29",
+              "served": true
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
+              "index": 24,
+              "time": "13:31",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "index": 25,
+              "time": "13:33",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
+              "index": 26,
+              "time": "13:35",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 27,
+              "time": "13:37",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-londra-30",
+              "index": 28,
+              "time": "13:39",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-madrid-66",
+              "index": 29,
+              "time": "13:40",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-dino-delucia-1",
+              "index": 30,
+              "time": "13:41",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-81",
+              "index": 31,
+              "time": "13:43",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-ang-via-santeramo",
+              "index": 32,
+              "time": "13:45",
+              "served": true
+            },
+            {
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "index": 33,
+              "time": "13:47",
+              "served": true
+            }
+          ]
+        },
+        {
+          "id": "linea-scuola-3-p2-corsa-3",
+          "code": "Corsa 3",
+          "variant": 2,
+          "serviceLabel": "da Lunedì a Sabato",
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "departure": "14:23",
+          "stopTimes": [
+            {
+              "stopId": "stop-viale-martiri-83",
+              "index": 19,
+              "time": "14:23",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-martiri-1",
+              "index": 20,
+              "time": "14:24",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bresso-fronte-111",
+              "index": 21,
+              "time": "14:27",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-gravina-ang-via-del-melo",
+              "index": 22,
+              "time": "14:31",
+              "served": true
+            },
+            {
+              "stopId": "stop-viale-padre-pio",
+              "index": 23,
+              "time": "14:31",
+              "served": true
+            },
+            {
+              "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
+              "index": 24,
+              "time": "14:33",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
+              "index": 25,
+              "time": "14:35",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-mura-megalitiche-ang-via-vecchia-buoncammino",
+              "index": 26,
+              "time": "14:37",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-bari-150",
+              "index": 27,
+              "time": "14:39",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-londra-30",
+              "index": 28,
+              "time": "14:41",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-madrid-66",
+              "index": 29,
+              "time": "14:42",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-dino-delucia-1",
+              "index": 30,
+              "time": "14:43",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-81",
+              "index": 31,
+              "time": "14:45",
+              "served": true
+            },
+            {
+              "stopId": "stop-via-cassano-ang-via-santeramo",
+              "index": 32,
+              "time": "14:47",
+              "served": true
+            },
+            {
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "index": 33,
+              "time": "14:49",
               "served": true
             }
           ]
@@ -38050,6 +38506,1284 @@
             40.82574,
             16.56531
           ]
+        ],
+        "19-20": [
+          [
+            40.82375,
+            16.55745
+          ],
+          [
+            40.82379,
+            16.55703
+          ],
+          [
+            40.82384,
+            16.55659
+          ],
+          [
+            40.82389,
+            16.55613
+          ],
+          [
+            40.82394,
+            16.55565
+          ],
+          [
+            40.82398,
+            16.55522
+          ],
+          [
+            40.82399,
+            16.55514
+          ],
+          [
+            40.82402,
+            16.5549
+          ],
+          [
+            40.82404,
+            16.55468
+          ],
+          [
+            40.82405,
+            16.55461
+          ],
+          [
+            40.82406,
+            16.55455
+          ],
+          [
+            40.82408,
+            16.55434
+          ],
+          [
+            40.82408,
+            16.55427
+          ],
+          [
+            40.82409,
+            16.55419
+          ],
+          [
+            40.82416,
+            16.55348
+          ]
+        ],
+        "20-21": [
+          [
+            40.82416,
+            16.55348
+          ],
+          [
+            40.82416,
+            16.55345
+          ],
+          [
+            40.82417,
+            16.55336
+          ],
+          [
+            40.82418,
+            16.55321
+          ],
+          [
+            40.82419,
+            16.55309
+          ],
+          [
+            40.82423,
+            16.55272
+          ],
+          [
+            40.82424,
+            16.5526
+          ],
+          [
+            40.8243,
+            16.5522
+          ],
+          [
+            40.82434,
+            16.55183
+          ],
+          [
+            40.82436,
+            16.55168
+          ],
+          [
+            40.82439,
+            16.55158
+          ],
+          [
+            40.82445,
+            16.55147
+          ],
+          [
+            40.82488,
+            16.55089
+          ],
+          [
+            40.82523,
+            16.55047
+          ],
+          [
+            40.82531,
+            16.55037
+          ],
+          [
+            40.8252,
+            16.55022
+          ],
+          [
+            40.82511,
+            16.55006
+          ],
+          [
+            40.82509,
+            16.55001
+          ],
+          [
+            40.82496,
+            16.54987
+          ],
+          [
+            40.82465,
+            16.54991
+          ],
+          [
+            40.82455,
+            16.54986
+          ],
+          [
+            40.82436,
+            16.54961
+          ],
+          [
+            40.82431,
+            16.54954
+          ],
+          [
+            40.82426,
+            16.54945
+          ],
+          [
+            40.8242,
+            16.54936
+          ],
+          [
+            40.82399,
+            16.54904
+          ],
+          [
+            40.82397,
+            16.54901
+          ],
+          [
+            40.82394,
+            16.54896
+          ],
+          [
+            40.82376,
+            16.54868
+          ],
+          [
+            40.82361,
+            16.54844
+          ],
+          [
+            40.82346,
+            16.54823
+          ],
+          [
+            40.82338,
+            16.54811
+          ],
+          [
+            40.82324,
+            16.5479
+          ],
+          [
+            40.8232,
+            16.54783
+          ],
+          [
+            40.82291,
+            16.54734
+          ],
+          [
+            40.82318,
+            16.54702
+          ]
+        ],
+        "22-23": [
+          [
+            40.82375,
+            16.55743
+          ],
+          [
+            40.82379,
+            16.55703
+          ],
+          [
+            40.82384,
+            16.55659
+          ],
+          [
+            40.82389,
+            16.55613
+          ],
+          [
+            40.82394,
+            16.55565
+          ],
+          [
+            40.82398,
+            16.55522
+          ],
+          [
+            40.82399,
+            16.55514
+          ],
+          [
+            40.82402,
+            16.5549
+          ],
+          [
+            40.82404,
+            16.55468
+          ],
+          [
+            40.82405,
+            16.55461
+          ],
+          [
+            40.82406,
+            16.55455
+          ],
+          [
+            40.82408,
+            16.55434
+          ],
+          [
+            40.82408,
+            16.55427
+          ],
+          [
+            40.82409,
+            16.55419
+          ],
+          [
+            40.82416,
+            16.55345
+          ],
+          [
+            40.82417,
+            16.55336
+          ],
+          [
+            40.82418,
+            16.55321
+          ],
+          [
+            40.82419,
+            16.55309
+          ],
+          [
+            40.82423,
+            16.55272
+          ],
+          [
+            40.82424,
+            16.5526
+          ],
+          [
+            40.8243,
+            16.5522
+          ],
+          [
+            40.82434,
+            16.55183
+          ],
+          [
+            40.82436,
+            16.55168
+          ],
+          [
+            40.82439,
+            16.55158
+          ],
+          [
+            40.82445,
+            16.55147
+          ],
+          [
+            40.82488,
+            16.55089
+          ],
+          [
+            40.82523,
+            16.55047
+          ],
+          [
+            40.82531,
+            16.55037
+          ],
+          [
+            40.82561,
+            16.55011
+          ],
+          [
+            40.82576,
+            16.54998
+          ],
+          [
+            40.82604,
+            16.54975
+          ],
+          [
+            40.82609,
+            16.54971
+          ],
+          [
+            40.82633,
+            16.54951
+          ],
+          [
+            40.82647,
+            16.54939
+          ],
+          [
+            40.8268,
+            16.5491
+          ],
+          [
+            40.82683,
+            16.54908
+          ],
+          [
+            40.82687,
+            16.54906
+          ],
+          [
+            40.82706,
+            16.54901
+          ],
+          [
+            40.82708,
+            16.549
+          ],
+          [
+            40.82728,
+            16.54895
+          ],
+          [
+            40.82733,
+            16.54893
+          ],
+          [
+            40.82748,
+            16.54889
+          ],
+          [
+            40.82775,
+            16.54883
+          ],
+          [
+            40.82799,
+            16.54876
+          ],
+          [
+            40.82804,
+            16.54875
+          ],
+          [
+            40.82833,
+            16.54867
+          ],
+          [
+            40.82863,
+            16.5486
+          ],
+          [
+            40.82898,
+            16.5485
+          ],
+          [
+            40.82897,
+            16.54837
+          ],
+          [
+            40.82894,
+            16.5481
+          ],
+          [
+            40.8289,
+            16.54773
+          ],
+          [
+            40.82889,
+            16.54765
+          ],
+          [
+            40.82887,
+            16.54741
+          ],
+          [
+            40.82886,
+            16.54733
+          ],
+          [
+            40.82885,
+            16.54721
+          ],
+          [
+            40.82883,
+            16.54693
+          ],
+          [
+            40.82881,
+            16.54675
+          ],
+          [
+            40.82879,
+            16.54654
+          ],
+          [
+            40.82876,
+            16.54626
+          ],
+          [
+            40.82875,
+            16.54606
+          ],
+          [
+            40.8287,
+            16.54559
+          ],
+          [
+            40.82866,
+            16.54512
+          ],
+          [
+            40.82863,
+            16.54477
+          ],
+          [
+            40.82862,
+            16.54469
+          ],
+          [
+            40.82859,
+            16.54437
+          ],
+          [
+            40.82855,
+            16.54392
+          ],
+          [
+            40.82854,
+            16.54386
+          ],
+          [
+            40.82843,
+            16.54262
+          ],
+          [
+            40.82837,
+            16.542
+          ],
+          [
+            40.82983,
+            16.54179
+          ],
+          [
+            40.82988,
+            16.5418
+          ],
+          [
+            40.82993,
+            16.54184
+          ],
+          [
+            40.82997,
+            16.54187
+          ],
+          [
+            40.83001,
+            16.54194
+          ],
+          [
+            40.83005,
+            16.54196
+          ],
+          [
+            40.83009,
+            16.54197
+          ],
+          [
+            40.83013,
+            16.54196
+          ],
+          [
+            40.83017,
+            16.54193
+          ],
+          [
+            40.83019,
+            16.54187
+          ],
+          [
+            40.83023,
+            16.5418
+          ],
+          [
+            40.83027,
+            16.54175
+          ],
+          [
+            40.83032,
+            16.54174
+          ],
+          [
+            40.83049,
+            16.54173
+          ],
+          [
+            40.83053,
+            16.54171
+          ],
+          [
+            40.83057,
+            16.5417
+          ],
+          [
+            40.83063,
+            16.5417
+          ]
+        ],
+        "23-24": [
+          [
+            40.83063,
+            16.5417
+          ],
+          [
+            40.83142,
+            16.54161
+          ],
+          [
+            40.83164,
+            16.54158
+          ],
+          [
+            40.83202,
+            16.54154
+          ],
+          [
+            40.83219,
+            16.54155
+          ],
+          [
+            40.83238,
+            16.5416
+          ],
+          [
+            40.83259,
+            16.54168
+          ],
+          [
+            40.8328,
+            16.54178
+          ],
+          [
+            40.83296,
+            16.54189
+          ],
+          [
+            40.83317,
+            16.54204
+          ],
+          [
+            40.83348,
+            16.5423
+          ],
+          [
+            40.83375,
+            16.54253
+          ],
+          [
+            40.83405,
+            16.54277
+          ],
+          [
+            40.83423,
+            16.54293
+          ],
+          [
+            40.8343,
+            16.54301
+          ],
+          [
+            40.83437,
+            16.5431
+          ],
+          [
+            40.83446,
+            16.5433
+          ],
+          [
+            40.83463,
+            16.54367
+          ],
+          [
+            40.83504,
+            16.54456
+          ],
+          [
+            40.83507,
+            16.54467
+          ],
+          [
+            40.83505,
+            16.54472
+          ],
+          [
+            40.83504,
+            16.54477
+          ],
+          [
+            40.83503,
+            16.54483
+          ],
+          [
+            40.83504,
+            16.54488
+          ],
+          [
+            40.83505,
+            16.54494
+          ],
+          [
+            40.83508,
+            16.54498
+          ],
+          [
+            40.83511,
+            16.54502
+          ],
+          [
+            40.83514,
+            16.54505
+          ],
+          [
+            40.83519,
+            16.54507
+          ],
+          [
+            40.83523,
+            16.54508
+          ],
+          [
+            40.83528,
+            16.54507
+          ],
+          [
+            40.83532,
+            16.54505
+          ],
+          [
+            40.83536,
+            16.54502
+          ],
+          [
+            40.83539,
+            16.54498
+          ],
+          [
+            40.83561,
+            16.54494
+          ],
+          [
+            40.83638,
+            16.54542
+          ],
+          [
+            40.83683,
+            16.54569
+          ],
+          [
+            40.83699,
+            16.54584
+          ],
+          [
+            40.8371,
+            16.54599
+          ],
+          [
+            40.83719,
+            16.54616
+          ],
+          [
+            40.83725,
+            16.54634
+          ],
+          [
+            40.8373,
+            16.54658
+          ],
+          [
+            40.83732,
+            16.547
+          ],
+          [
+            40.83732,
+            16.5512
+          ],
+          [
+            40.83733,
+            16.55133
+          ],
+          [
+            40.83735,
+            16.55139
+          ],
+          [
+            40.83735,
+            16.55145
+          ],
+          [
+            40.83736,
+            16.55171
+          ],
+          [
+            40.83738,
+            16.55224
+          ]
+        ],
+        "24-25": [
+          [
+            40.83738,
+            16.55224
+          ],
+          [
+            40.83738,
+            16.5523
+          ],
+          [
+            40.83738,
+            16.5524
+          ],
+          [
+            40.83738,
+            16.55356
+          ],
+          [
+            40.83735,
+            16.55377
+          ],
+          [
+            40.83733,
+            16.55377
+          ],
+          [
+            40.83731,
+            16.55378
+          ],
+          [
+            40.8373,
+            16.55379
+          ],
+          [
+            40.83719,
+            16.55383
+          ],
+          [
+            40.83712,
+            16.55386
+          ],
+          [
+            40.83637,
+            16.55408
+          ],
+          [
+            40.83606,
+            16.55418
+          ],
+          [
+            40.83492,
+            16.5545
+          ],
+          [
+            40.83478,
+            16.55454
+          ],
+          [
+            40.83516,
+            16.55522
+          ]
+        ],
+        "25-26": [
+          [
+            40.83516,
+            16.55522
+          ],
+          [
+            40.83568,
+            16.55613
+          ],
+          [
+            40.83594,
+            16.55662
+          ],
+          [
+            40.83599,
+            16.55676
+          ],
+          [
+            40.83602,
+            16.5569
+          ],
+          [
+            40.83603,
+            16.55702
+          ],
+          [
+            40.83603,
+            16.55715
+          ],
+          [
+            40.83601,
+            16.55729
+          ],
+          [
+            40.83597,
+            16.55742
+          ],
+          [
+            40.83591,
+            16.55754
+          ],
+          [
+            40.83568,
+            16.55787
+          ],
+          [
+            40.83487,
+            16.55904
+          ],
+          [
+            40.8347,
+            16.55928
+          ]
+        ],
+        "26-27": [
+          [
+            40.8347,
+            16.55928
+          ],
+          [
+            40.83466,
+            16.55934
+          ],
+          [
+            40.83441,
+            16.55974
+          ],
+          [
+            40.83483,
+            16.56029
+          ],
+          [
+            40.83529,
+            16.56089
+          ],
+          [
+            40.83576,
+            16.5615
+          ],
+          [
+            40.83583,
+            16.56159
+          ],
+          [
+            40.83611,
+            16.56198
+          ],
+          [
+            40.83614,
+            16.56202
+          ],
+          [
+            40.83617,
+            16.56206
+          ],
+          [
+            40.83641,
+            16.56236
+          ]
+        ],
+        "27-28": [
+          [
+            40.83641,
+            16.56236
+          ],
+          [
+            40.83675,
+            16.56282
+          ],
+          [
+            40.83724,
+            16.56347
+          ],
+          [
+            40.83755,
+            16.56388
+          ],
+          [
+            40.83783,
+            16.56424
+          ],
+          [
+            40.83778,
+            16.56443
+          ],
+          [
+            40.83775,
+            16.56459
+          ],
+          [
+            40.8376,
+            16.56546
+          ]
+        ],
+        "28-29": [
+          [
+            40.8376,
+            16.56546
+          ],
+          [
+            40.83756,
+            16.56566
+          ],
+          [
+            40.83751,
+            16.56594
+          ],
+          [
+            40.83742,
+            16.56641
+          ],
+          [
+            40.83741,
+            16.56647
+          ],
+          [
+            40.83733,
+            16.56692
+          ],
+          [
+            40.8364,
+            16.56667
+          ],
+          [
+            40.83629,
+            16.56733
+          ],
+          [
+            40.83618,
+            16.56803
+          ],
+          [
+            40.83612,
+            16.56843
+          ]
+        ],
+        "29-30": [
+          [
+            40.83612,
+            16.56843
+          ],
+          [
+            40.83605,
+            16.56883
+          ],
+          [
+            40.83591,
+            16.56969
+          ],
+          [
+            40.83476,
+            16.57009
+          ],
+          [
+            40.83464,
+            16.56975
+          ],
+          [
+            40.83419,
+            16.57002
+          ],
+          [
+            40.83414,
+            16.57001
+          ],
+          [
+            40.83371,
+            16.56993
+          ],
+          [
+            40.8334,
+            16.57009
+          ]
+        ],
+        "30-31": [
+          [
+            40.8334,
+            16.57009
+          ],
+          [
+            40.83311,
+            16.57024
+          ],
+          [
+            40.83264,
+            16.56913
+          ],
+          [
+            40.83242,
+            16.56858
+          ],
+          [
+            40.8323,
+            16.5683
+          ],
+          [
+            40.83211,
+            16.56783
+          ],
+          [
+            40.83196,
+            16.56741
+          ],
+          [
+            40.83191,
+            16.56723
+          ],
+          [
+            40.83178,
+            16.56664
+          ],
+          [
+            40.83174,
+            16.5664
+          ],
+          [
+            40.83171,
+            16.56618
+          ],
+          [
+            40.83171,
+            16.56605
+          ],
+          [
+            40.83172,
+            16.56591
+          ],
+          [
+            40.83176,
+            16.56569
+          ],
+          [
+            40.83182,
+            16.56537
+          ],
+          [
+            40.83183,
+            16.56527
+          ],
+          [
+            40.83188,
+            16.56493
+          ],
+          [
+            40.83189,
+            16.56486
+          ],
+          [
+            40.83189,
+            16.56476
+          ],
+          [
+            40.83189,
+            16.56468
+          ],
+          [
+            40.83187,
+            16.56453
+          ],
+          [
+            40.83185,
+            16.56437
+          ],
+          [
+            40.83181,
+            16.56425
+          ],
+          [
+            40.83177,
+            16.56413
+          ],
+          [
+            40.83162,
+            16.56386
+          ],
+          [
+            40.83156,
+            16.56378
+          ],
+          [
+            40.83124,
+            16.56333
+          ],
+          [
+            40.83105,
+            16.56307
+          ],
+          [
+            40.83005,
+            16.5616
+          ],
+          [
+            40.82997,
+            16.56149
+          ],
+          [
+            40.82992,
+            16.56141
+          ]
+        ],
+        "31-32": [
+          [
+            40.82992,
+            16.56141
+          ],
+          [
+            40.82989,
+            16.56137
+          ],
+          [
+            40.82969,
+            16.56109
+          ],
+          [
+            40.82938,
+            16.56064
+          ],
+          [
+            40.82908,
+            16.56021
+          ],
+          [
+            40.82903,
+            16.56014
+          ],
+          [
+            40.82887,
+            16.55991
+          ],
+          [
+            40.82883,
+            16.55985
+          ],
+          [
+            40.82865,
+            16.55958
+          ],
+          [
+            40.82845,
+            16.55928
+          ],
+          [
+            40.8284,
+            16.55922
+          ],
+          [
+            40.8282,
+            16.55892
+          ],
+          [
+            40.82798,
+            16.55862
+          ]
+        ],
+        "32-33": [
+          [
+            40.82796,
+            16.55859
+          ],
+          [
+            40.82798,
+            16.55862
+          ],
+          [
+            40.82793,
+            16.55873
+          ],
+          [
+            40.82767,
+            16.55949
+          ],
+          [
+            40.82741,
+            16.56027
+          ],
+          [
+            40.82718,
+            16.56096
+          ],
+          [
+            40.82702,
+            16.56144
+          ],
+          [
+            40.82694,
+            16.56168
+          ],
+          [
+            40.82672,
+            16.56233
+          ],
+          [
+            40.8265,
+            16.56295
+          ],
+          [
+            40.82637,
+            16.56341
+          ],
+          [
+            40.82627,
+            16.56374
+          ],
+          [
+            40.82624,
+            16.56384
+          ],
+          [
+            40.82608,
+            16.56429
+          ],
+          [
+            40.82586,
+            16.56495
+          ],
+          [
+            40.82582,
+            16.56506
+          ],
+          [
+            40.82574,
+            16.56531
+          ]
         ]
       }
     },
@@ -39627,11 +41361,11 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-via-mura-megalitiche",
+          "stopId": "stop-via-mura-megalitiche-fronte-stadio",
           "index": 13,
-          "name": "Via Mura Megalitiche",
-          "lat": 40.835996,
-          "lon": 16.557082,
+          "name": "Via Mura Megalitiche (fronte Stadio)",
+          "lat": 40.835941,
+          "lon": 16.557384,
           "interpolated": false,
           "position": "exact"
         },
@@ -39647,9 +41381,9 @@
         {
           "stopId": "stop-via-bari-150",
           "index": 15,
-          "name": "Via Bari 150",
-          "lat": 40.836432,
-          "lon": 16.56247,
+          "name": "Via Bari, 150",
+          "lat": 40.836378,
+          "lon": 16.562399,
           "interpolated": false,
           "position": "exact"
         },
@@ -39720,8 +41454,8 @@
           "stopId": "stop-via-mura-megalitiche",
           "index": 23,
           "name": "Via Mura Megalitiche",
-          "lat": 40.835996,
-          "lon": 16.557082,
+          "lat": 40.836066,
+          "lon": 16.557088,
           "interpolated": true,
           "position": "exact"
         },
@@ -39904,7 +41638,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 13,
               "time": "06:18",
               "served": true
@@ -40130,7 +41864,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 13,
               "time": "06:23",
               "served": true
@@ -40356,7 +42090,7 @@
               "served": true
             },
             {
-              "stopId": "stop-via-mura-megalitiche",
+              "stopId": "stop-via-mura-megalitiche-fronte-stadio",
               "index": 13,
               "time": "07:23",
               "served": true
@@ -44562,19 +46296,20 @@
       "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/linea-ospedale-1.pdf#page=1",
       "stops": [
         {
-          "stopId": "stop-hub-via-santeramo",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 1,
-          "name": "Hub Via Santeramo",
-          "lat": null,
-          "lon": null,
-          "interpolated": false
+          "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
+          "lat": 40.82575,
+          "lon": 16.565316,
+          "interpolated": false,
+          "position": "exact"
         },
         {
           "stopId": "stop-via-mura-megalitiche",
           "index": 2,
           "name": "Via Mura Megalitiche",
-          "lat": 40.835996,
-          "lon": 16.557082,
+          "lat": 40.836066,
+          "lon": 16.557088,
           "interpolated": false,
           "position": "exact"
         },
@@ -44894,11 +46629,11 @@
           "position": "estimated"
         },
         {
-          "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
           "index": 38,
-          "name": "Hub Via Santeramo Ang. Via R. Scotellaro",
-          "lat": 40.825747,
-          "lon": 16.565385,
+          "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
+          "lat": 40.82575,
+          "lon": 16.565316,
           "interpolated": false,
           "position": "exact"
         },
@@ -44906,8 +46641,8 @@
           "stopId": "stop-via-mura-megalitiche",
           "index": 39,
           "name": "Via Mura Megalitiche",
-          "lat": 40.835996,
-          "lon": 16.557082,
+          "lat": 40.836066,
+          "lon": 16.557088,
           "interpolated": false,
           "position": "exact"
         },
@@ -45009,7 +46744,7 @@
           "departure": "05:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "05:15",
               "served": true
@@ -45165,7 +46900,7 @@
           "departure": "05:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "05:15",
               "served": true
@@ -45325,7 +47060,7 @@
           "departure": "06:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "06:15",
               "served": true
@@ -45481,7 +47216,7 @@
           "departure": "06:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "06:15",
               "served": true
@@ -45641,7 +47376,7 @@
           "departure": "06:30",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "06:30",
               "served": true
@@ -45801,7 +47536,7 @@
           "departure": "07:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "07:15",
               "served": true
@@ -45957,7 +47692,7 @@
           "departure": "07:15",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "07:15",
               "served": true
@@ -46117,7 +47852,7 @@
           "departure": "10:10",
           "stopTimes": [
             {
-              "stopId": "stop-hub-via-santeramo",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 1,
               "time": "10:10",
               "served": true
@@ -46355,7 +48090,7 @@
               "served": false
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "11:25",
               "served": true
@@ -46511,7 +48246,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "12:35",
               "served": true
@@ -46667,7 +48402,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "13:35",
               "served": true
@@ -46823,7 +48558,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "14:35",
               "served": true
@@ -46983,7 +48718,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "16:44",
               "served": true
@@ -47143,7 +48878,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "17:20",
               "served": true
@@ -47303,7 +49038,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "17:50",
               "served": true
@@ -47463,7 +49198,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-r-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
               "index": 38,
               "time": "18:45",
               "served": true
@@ -47551,10 +49286,160 @@
       "extraurban": true,
       "extraShapes": [],
       "hops": {
+        "1-2": [
+          [
+            40.82574,
+            16.56531
+          ],
+          [
+            40.82582,
+            16.56506
+          ],
+          [
+            40.82586,
+            16.56495
+          ],
+          [
+            40.82608,
+            16.56429
+          ],
+          [
+            40.82624,
+            16.56384
+          ],
+          [
+            40.82627,
+            16.56374
+          ],
+          [
+            40.82637,
+            16.56341
+          ],
+          [
+            40.8265,
+            16.56295
+          ],
+          [
+            40.82708,
+            16.5632
+          ],
+          [
+            40.82859,
+            16.56379
+          ],
+          [
+            40.82895,
+            16.56393
+          ],
+          [
+            40.82914,
+            16.56396
+          ],
+          [
+            40.82931,
+            16.56393
+          ],
+          [
+            40.8296,
+            16.56382
+          ],
+          [
+            40.82988,
+            16.56368
+          ],
+          [
+            40.83105,
+            16.56307
+          ],
+          [
+            40.83192,
+            16.56265
+          ],
+          [
+            40.83194,
+            16.56264
+          ],
+          [
+            40.83195,
+            16.56263
+          ],
+          [
+            40.8324,
+            16.56241
+          ],
+          [
+            40.83261,
+            16.56224
+          ],
+          [
+            40.83276,
+            16.56202
+          ],
+          [
+            40.83294,
+            16.56161
+          ],
+          [
+            40.83312,
+            16.56128
+          ],
+          [
+            40.83329,
+            16.56109
+          ],
+          [
+            40.83397,
+            16.56028
+          ],
+          [
+            40.83417,
+            16.56005
+          ],
+          [
+            40.83425,
+            16.55995
+          ],
+          [
+            40.83441,
+            16.55974
+          ],
+          [
+            40.83466,
+            16.55934
+          ],
+          [
+            40.83487,
+            16.55904
+          ],
+          [
+            40.83568,
+            16.55787
+          ],
+          [
+            40.83591,
+            16.55754
+          ],
+          [
+            40.83597,
+            16.55742
+          ],
+          [
+            40.83601,
+            16.55729
+          ],
+          [
+            40.83603,
+            16.55715
+          ],
+          [
+            40.83603,
+            16.55709
+          ]
+        ],
         "2-3": [
           [
             40.83603,
-            16.55708
+            16.55709
           ],
           [
             40.83603,
@@ -52753,14 +54638,14 @@
             16.56626
           ],
           [
-            40.82572,
-            16.56537
+            40.82574,
+            16.56531
           ]
         ],
         "38-39": [
           [
-            40.82572,
-            16.56537
+            40.82574,
+            16.56531
           ],
           [
             40.82582,
@@ -52904,13 +54789,13 @@
           ],
           [
             40.83603,
-            16.55708
+            16.55709
           ]
         ],
         "39-40": [
           [
             40.83603,
-            16.55708
+            16.55709
           ],
           [
             40.83603,
@@ -55223,8 +57108,8 @@
             16.56626
           ],
           [
-            40.82572,
-            16.56537
+            40.82574,
+            16.56531
           ]
         ]
       }
@@ -55394,7 +57279,7 @@
         {
           "stopId": "stop-viale-martiri-83",
           "index": 18,
-          "name": "Viale Martiri 83",
+          "name": "Viale Martiri, 83",
           "lat": 40.823785,
           "lon": 16.557452,
           "interpolated": false,
@@ -72255,43 +74140,16 @@
       "position": "exact"
     },
     {
-      "id": "stop-hub-via-santeramo",
-      "name": "Hub Via Santeramo",
-      "lat": null,
-      "lon": null,
-      "lines": [
-        "linea-jesce"
-      ]
-    },
-    {
-      "id": "stop-hub-via-santeramo-ang-via-r-scotellaro",
-      "name": "Hub Via Santeramo Ang. Via R. Scotellaro",
-      "lat": 40.825747,
-      "lon": 16.565385,
-      "lines": [
-        "linea-jesce"
-      ],
-      "position": "exact"
-    },
-    {
       "id": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
       "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
       "lat": 40.82575,
       "lon": 16.565316,
       "lines": [
         "ospedale-2",
+        "ospedale-domenica-e-festivi",
         "navette-hub",
-        "linea-scuola-3"
-      ],
-      "position": "exact"
-    },
-    {
-      "id": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
-      "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-      "lat": 40.825579,
-      "lon": 16.565665,
-      "lines": [
-        "ospedale-domenica-e-festivi"
+        "linea-scuola-3",
+        "linea-jesce"
       ],
       "position": "exact"
     },
@@ -72628,10 +74486,10 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-bari-150",
-      "name": "Via Bari 150",
-      "lat": 40.836432,
-      "lon": 16.56247,
+      "id": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+      "name": "Via Bari ang. Via Vincenzo Russo ( Parcheggio Pubblico)",
+      "lat": 40.834778,
+      "lon": 16.560274,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
@@ -72640,13 +74498,14 @@
       "position": "exact"
     },
     {
-      "id": "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
-      "name": "Via Bari ang. Via Vincenzo Russo ( Parcheggio Pubblico)",
-      "lat": 40.834778,
-      "lon": 16.560274,
+      "id": "stop-via-bari-150",
+      "name": "Via Bari, 150",
+      "lat": 40.836378,
+      "lon": 16.562399,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
+        "linea-scuola-3",
         "pescariello-z-i"
       ],
       "position": "exact"
@@ -72694,7 +74553,8 @@
       "lines": [
         "ospedale-1",
         "linea-ovest",
-        "linea-scuola-1"
+        "linea-scuola-1",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -72795,7 +74655,8 @@
       "lat": 40.829942,
       "lon": 16.561377,
       "lines": [
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -72808,6 +74669,16 @@
         "linea-scuola-3"
       ],
       "position": "exact"
+    },
+    {
+      "id": "stop-via-cassano-ang-via-santeramo",
+      "name": "Via Cassano ang. Via Santeramo",
+      "lat": 40.827959,
+      "lon": 16.558582,
+      "lines": [
+        "linea-scuola-3"
+      ],
+      "position": "street"
     },
     {
       "id": "stop-via-cassano-fronte-strada-comunale-fontanelle",
@@ -72924,11 +74795,12 @@
     {
       "id": "stop-via-dino-delucia-1",
       "name": "Via Dino Delucia 1",
-      "lat": 40.833392,
+      "lat": 40.833391,
       "lon": 16.570059,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -73101,6 +74973,16 @@
       "position": "exact"
     },
     {
+      "id": "stop-via-gravina-ang-via-del-melo",
+      "name": "Via Gravina ang. Via del Melo",
+      "lat": 40.823777,
+      "lon": 16.557432,
+      "lines": [
+        "linea-scuola-3"
+      ],
+      "position": "estimated"
+    },
+    {
       "id": "stop-via-iv-novembre-ang-via-ii-giugno",
       "name": "Via IV Novembre (ang. Via II Giugno)",
       "lat": 40.836366,
@@ -73171,7 +75053,8 @@
       "lon": 16.565444,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -73198,11 +75081,12 @@
     {
       "id": "stop-via-madrid-66",
       "name": "Via Madrid 66",
-      "lat": 40.836087,
-      "lon": 16.568421,
+      "lat": 40.836088,
+      "lon": 16.568422,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -73263,10 +75147,9 @@
     {
       "id": "stop-via-mura-megalitiche",
       "name": "Via Mura Megalitiche",
-      "lat": 40.835996,
-      "lon": 16.557082,
+      "lat": 40.836066,
+      "lon": 16.557088,
       "lines": [
-        "ospedale-2",
         "pescariello-z-i",
         "linea-jesce"
       ],
@@ -73278,7 +75161,19 @@
       "lat": 40.834673,
       "lon": 16.559254,
       "lines": [
-        "ospedale-domenica-e-festivi"
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
+      ],
+      "position": "exact"
+    },
+    {
+      "id": "stop-via-mura-megalitiche-fronte-stadio",
+      "name": "Via Mura Megalitiche (fronte Stadio)",
+      "lat": 40.835941,
+      "lon": 16.557384,
+      "lines": [
+        "ospedale-2",
+        "pescariello-z-i"
       ],
       "position": "exact"
     },
@@ -73633,16 +75528,12 @@
       "position": "exact"
     },
     {
-      "id": "stop-viale-martiri-83",
-      "name": "Viale Martiri 83",
-      "lat": 40.823785,
-      "lon": 16.557452,
+      "id": "stop-viale-martiri-1",
+      "name": "Viale Martiri, 1",
+      "lat": 40.824192,
+      "lon": 16.553486,
       "lines": [
-        "ospedale-1",
-        "navette-hub",
-        "linea-scuola-2",
-        "linea-scuola-3",
-        "linea-la-martella"
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -73658,12 +75549,27 @@
       "position": "exact"
     },
     {
+      "id": "stop-viale-martiri-83",
+      "name": "Viale Martiri, 83",
+      "lat": 40.823785,
+      "lon": 16.557452,
+      "lines": [
+        "ospedale-1",
+        "navette-hub",
+        "linea-scuola-2",
+        "linea-scuola-3",
+        "linea-la-martella"
+      ],
+      "position": "exact"
+    },
+    {
       "id": "stop-viale-padre-pio",
       "name": "Viale Padre Pio",
       "lat": 40.830629,
       "lon": 16.541718,
       "lines": [
-        "linea-scuola-1"
+        "linea-scuola-1",
+        "linea-scuola-3"
       ],
       "position": "street"
     },
