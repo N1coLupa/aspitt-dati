@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T20:41:57.062Z",
+  "generatedAt": "2026-10-28T01:18:42.663Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,24 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "tacco-sua-maesta-il-pianoforte",
-      "title": "Sua Maestà il Pianoforte!",
-      "url": "https://iltaccodibacco.it/puglia/eventi/333329.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-10-27",
-      "endDate": "2026-10-27",
-      "startTime": null,
-      "venue": "Teatro Mangiatordi",
-      "summary": "“Sua Maestà il Pianoforte!” è un concerto speciale per due pianoforti che celebra lo strumento simbolo della grande tradizione musicale nella sua veste più spettacolare e coinvolgente.",
-      "tags": [],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
     {
       "id": "life-la-nuova-murgia-storie-narrazioni-di-comunita-due-incontri",
       "title": "La Nuova Murgia: \"Storie, narrazioni di comunità\", due incontri",
@@ -292,6 +274,24 @@
         "eventi"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-antonio-ornano-in-grato",
+      "title": "Antonio Ornano - In Grato",
+      "url": "https://iltaccodibacco.it/puglia/eventi/334043.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "startTime": null,
+      "venue": "Teatro Mangiatordi",
+      "summary": "In un’epoca in cui tutti sembrano avere la ricetta perfetta per la felicità, in cui siamo continuamente esortati a essere grati, positivi, centrati, connessi con l’energia dell’universo… c’è chi resta perplesso.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
       "dated": true
     },
     {
