@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T10:54:00.742Z",
+  "generatedAt": "2026-10-29T18:28:29.323Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -321,24 +321,6 @@
         "eventi"
       ],
       "annual": true,
-      "dated": true
-    },
-    {
-      "id": "tacco-antonio-ornano-in-grato",
-      "title": "Antonio Ornano - In Grato",
-      "url": "https://iltaccodibacco.it/puglia/eventi/334043.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "startTime": null,
-      "venue": "Teatro Mangiatordi",
-      "summary": "In un’epoca in cui tutti sembrano avere la ricetta perfetta per la felicità, in cui siamo continuamente esortati a essere grati, positivi, centrati, connessi con l’energia dell’universo… c’è chi resta perplesso.",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
       "dated": true
     },
     {
