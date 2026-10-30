@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T22:47:00.835Z",
+  "generatedAt": "2026-10-30T23:22:56.045Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -101,6 +101,22 @@
       ]
     },
     {
+      "id": "bosco-sauro",
+      "icon": "park",
+      "categories": [
+        "esperienze",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Bosco Sauro",
+      "duration": "2 h",
+      "lat": 40.91747,
+      "lon": 16.6342,
+      "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
+      "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
+      "nearbyStops": []
+    },
+    {
       "id": "cattedrale-santa-maria-assunta",
       "name": "Cattedrale di Santa Maria Assunta",
       "lat": 40.8274478,
@@ -170,6 +186,406 @@
       "nearbyStops": []
     },
     {
+      "id": "chiesa-della-santissima-annunziata-dei-pastori",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa della Santissima Annunziata dei Pastori",
+      "duration": "10 min",
+      "lat": 40.82518,
+      "lon": 16.55318,
+      "description": "La costruì nel 1606 una confraternita di contadini e pastori, che si fermavano qui a pregare prima di partire per i campi e per la Murgia. È il segno di quanto pesassero le confraternite nella vita della città: gruppi di persone che si occupavano dei bisognosi e di lavori utili a tutti. La facciata è quella del restauro del 1932, con le due date incise sul portone.",
+      "tips": "Sul portone d’ingresso sono scritti l’anno di costruzione e quello del restauro: è la prima cosa da cercare.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 113
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 133
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 139
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-francesco-da-paola",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Francesco da Paola",
+      "duration": "15 min",
+      "lat": 40.825908,
+      "lon": 16.552782,
+      "description": "Si affaccia sul corso, con due campanili che fanno eco a quelli della vicina Cattedrale e una cupola che illumina un interno a pianta esagonale. Nasce all’inizio del Settecento ampliando la chiesa del monastero di Santa Maria del Soccorso, fondato nel 1596 per le clarisse delle famiglie nobili: gli altamurani lo chiamavano «le monache grandi».",
+      "tips": "Accanto c’è l’ex monastero, con il suo grande cortile interno, che oggi ospita attività culturali.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 184
+        },
+        {
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
+          ],
+          "distance": 192
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 200
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-giacomo",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Giacomo",
+      "duration": "10 min",
+      "lat": 40.82779,
+      "lon": 16.55278,
+      "description": "Una piccola chiesa a due passi dalla Cattedrale, probabilmente del Cinquecento, con una facciata rococò del 1754 e un campanile a vela chiuso da una cuspide a bulbo. Dentro c’è un’acquasantiera in pietra del Quattrocento. Nel maggio 1799, durante la Rivoluzione altamurana, qui furono rinchiusi i sanfedisti fatti prigionieri.",
+      "tips": "Alza lo sguardo sul campanile a vela: la cuspide a bulbo è rara nel centro storico.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 234
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 315
+        },
+        {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 323
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-giovanni-bosco",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Giovanni Bosco",
+      "duration": "15 min",
+      "lat": 40.81998,
+      "lon": 16.55679,
+      "description": "La parrocchia del rione Montecalvario, a sud della città, istituita nel 1957 come San Pietro Apostolo e dedicata a don Bosco dal 1960. Sulla facciata c’è il gruppo in bronzo di San Giovanni Bosco e San Domenico Savio dello scultore Mario Colonna; dentro, mosaici con scene mariane, una Via Crucis fiorentina e una tela di don Bosco del 1880.",
+      "tips": "Accanto c’è il Cortile di Don Bosco, l’oratorio inaugurato nel 2023: è il cuore del quartiere.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-treviso-27",
+          "name": "Via Treviso, 27",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-la-martella"
+          ],
+          "distance": 173
+        },
+        {
+          "stopId": "stop-via-treviso-50",
+          "name": "Via Treviso 50",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-jesce",
+            "linea-la-martella"
+          ],
+          "distance": 180
+        },
+        {
+          "stopId": "stop-via-matera-101",
+          "name": "Via Matera, 101",
+          "lines": [
+            "linea-ovest",
+            "pescariello-z-i"
+          ],
+          "distance": 263
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-lorenzo",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Lorenzo",
+      "duration": "15 min",
+      "lat": 40.82648,
+      "lon": 16.55745,
+      "description": "Chiamata anche San Lorenzo fuori le mura, perché è una delle poche chiese antiche costruite all’esterno della cinta medievale, vicino alla scomparsa Porta Foggiali. È documentata dal 1330 e il restauro del 1717 le ha dato l’aspetto tardobarocco di oggi. Sul portale restano il giglio angioino e un’iscrizione gotica che cita la leggenda dei mirmidoni e della regina Altea, da cui il nome Altilia.",
+      "tips": "Fermati davanti al portale: l’iscrizione gotica è la parte più antica della chiesa.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 190
+        },
+        {
+          "stopId": "stop-via-santeramo-ang-via-cassano",
+          "name": "Via Santeramo ang. Via Cassano",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 198
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 211
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-michele-al-corso",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Michele al Corso",
+      "duration": "15 min",
+      "lat": 40.82705,
+      "lon": 16.5533,
+      "description": "Seicentesca, con una facciata sobria segnata da un grande finestrone rettangolare, è conosciuta anche come chiesa del Purgatorio. Il motivo è dentro: fra le tele del Sette e dell’Ottocento c’è la Madonna del Purgatorio di Francesco Guarini, il pittore più importante della vicina Gravina. Altare maggiore e presbiterio sono rococò.",
+      "tips": "È sul corso, a pochi metri dalla Cattedrale: si visita in un quarto d’ora, quando è aperta per le funzioni.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 291
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 318
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 318
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-sant-agostino",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Sant’Agostino",
+      "duration": "15 min",
+      "lat": 40.83095,
+      "lon": 16.55801,
+      "description": "Dal 1541 fu la chiesa dei padri agostiniani, consacrata nel 1570 con il nome di Santa Maria del Popolo. Nel 1808 una legge di Gioacchino Murat cacciò i frati e il convento, dal 1861, diventò il mattatoio comunale. Oggi è una parrocchia del quartiere a nord-est del centro storico, e nella cappella del Santissimo è conservata l’immagine di Santa Maria della Sanità.",
+      "tips": "È a nord-est del centro storico, a pochi minuti a piedi da Porta Bari.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-iv-novembre-fronte-1",
+          "name": "Via IV Novembre (fronte 1)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 193
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 289
+        },
+        {
+          "stopId": "stop-via-cassano-13",
+          "name": "Via Cassano 13",
+          "lines": [
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 292
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-santa-croce",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Santa Croce",
+      "duration": "15 min",
+      "lat": 40.826263,
+      "lon": 16.552129,
+      "description": "Il primo documento che la cita è del 1466 e la dà già per antica. Era la chiesa della confraternita della Pietà di Santa Croce, probabilmente la più antica di Altamura, che accanto gestiva anche un ospizio per i poveri. Le ristrutturazioni dell’Ottocento l’hanno cambiata molto, ma restano due dipinti dell’altamurano Nicolò Maramonte e il portale seicentesco su via Santa Croce.",
+      "tips": "È nel cuore del centro storico, tra la Cattedrale e il Claustro Tradimento: unisci le due soste.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 212
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 218
+        },
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille, 88",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2"
+          ],
+          "distance": 219
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-santa-teresa",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Santa Teresa",
+      "duration": "20 min",
+      "lat": 40.8296,
+      "lon": 16.55086,
+      "description": "La vollero i carmelitani scalzi, i padri teresiani: i lavori cominciano nel 1635, la data sulla facciata è il 1696 e la cupola arriva nei primi anni del Settecento. Dentro c’è una lunga aula a croce latina con cappelle laterali, stucchi chiari alla maniera del tardo barocco napoletano e altari in marmo. Accanto resta il chiostro dei padri.",
+      "tips": "Si affaccia su piazza Santa Teresa, appena fuori dalle mura: guarda il pavimento in maiolica, rifatto nel restauro del 2003.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 247
+        },
+        {
+          "stopId": "stop-via-gravina-7",
+          "name": "Via Gravina 7",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi",
+            "linea-la-martella"
+          ],
+          "distance": 249
+        },
+        {
+          "stopId": "stop-via-gravina-12",
+          "name": "Via Gravina 12",
+          "lines": [
+            "ospedale-1",
+            "linea-la-martella"
+          ],
+          "distance": 252
+        }
+      ]
+    },
+    {
       "id": "claustri-del-centro-storico",
       "icon": "landmark",
       "categories": [
@@ -213,6 +629,97 @@
             "linea-la-martella"
           ],
           "distance": 333
+        }
+      ]
+    },
+    {
+      "id": "claustro-giudecca",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Claustro Giudecca",
+      "duration": "10 min",
+      "lat": 40.826512,
+      "lon": 16.550608,
+      "description": "Il claustro del quartiere ebraico: nel Medioevo gli ebrei erano, con greci e latini, una delle tre comunità della città. La pianta ricorda un candelabro e all’ingresso c’è una cariatide che la tradizione chiama «Sinagoga, la padrona del claustro», forse un frammento di una sinagoga demolita, forse un semplice elemento architettonico a cui la leggenda ha dato un nome.",
+      "tips": "È a pochi passi dalla vecchia Porta del Carmine: cerca la cariatide sullo spigolo, all’ingresso.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 91
+        },
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille, 88",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2"
+          ],
+          "distance": 96
+        },
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 226
+        }
+      ]
+    },
+    {
+      "id": "claustro-tradimento",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Claustro Tradimento",
+      "duration": "10 min",
+      "lat": 40.826009,
+      "lon": 16.551697,
+      "description": "Fino al 1901 si chiamava claustro Cherubino Giorgio. Poi, per il centenario della Rivoluzione altamurana, prese il nome da una leggenda: nel 1799 alcuni cittadini avrebbero fatto entrare i sanfedisti da un passaggio segreto nelle mura, proprio qui. Gli storici l’hanno smentita, ma il nome è rimasto.",
+      "tips": "Abbinalo al Monumento ai Martiri del 1799 in piazza Duomo, a pochi minuti a piedi, per avere tutta la storia.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille, 88",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2"
+          ],
+          "distance": 184
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 185
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 186
         }
       ]
     },
@@ -400,6 +907,22 @@
       ]
     },
     {
+      "id": "pulo-di-altamura",
+      "icon": "nature",
+      "categories": [
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Pulo di Altamura",
+      "highlight": true,
+      "duration": "2 h",
+      "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
+      "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
+      "lat": 40.89015,
+      "lon": 16.56795,
+      "nearbyStops": []
+    },
+    {
       "id": "arco-basso",
       "name": "Arco Basso",
       "lat": 40.8256889,
@@ -450,22 +973,6 @@
       ]
     },
     {
-      "id": "bosco-sauro",
-      "icon": "park",
-      "categories": [
-        "esperienze",
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Bosco Sauro",
-      "duration": "2 h",
-      "lat": 40.91747,
-      "lon": 16.6342,
-      "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
-      "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
-      "nearbyStops": []
-    },
-    {
       "id": "centro-visite-lamalunga",
       "icon": "museum",
       "categories": [
@@ -480,6 +987,63 @@
       "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
       "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
       "nearbyStops": []
+    },
+    {
+      "id": "chiesa-del-santissimo-rosario-di-pompei",
+      "name": "Chiesa del Santissimo Rosario di Pompei",
+      "lat": 40.820262,
+      "lon": 16.548525,
+      "categories": [
+        "cultura"
+      ],
+      "icon": "church",
+      "osm": "way/410904772",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": "Q85860685",
+      "wikipedia": "it:Chiesa del Santissimo Rosario di Pompei (Altamura)",
+      "description": "La chiesa del quartiere di via Pompei, nata negli anni Sessanta quando la città cresceva verso sud-ovest. I progettisti, l’ingegnere Angelo Baldassarre e l’architetto Domenico Di Bari, le diedero la forma di una barca a vela «che scivola nel mare della vita». Sulla facciata c’è un mosaico della Madonna con il Bambino degli anni Novanta.",
+      "highlight": false,
+      "duration": "15 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Guardala di lato per capire la forma della vela; è un esempio dell’architettura sacra moderna della città.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-selva-fronte-117",
+          "name": "Via Selva (fronte 117)",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-ovest",
+            "pescariello-z-i"
+          ],
+          "distance": 259
+        },
+        {
+          "stopId": "stop-via-bresso-111",
+          "name": "Via Bresso 111",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-scuola-4"
+          ],
+          "distance": 347
+        },
+        {
+          "stopId": "stop-via-bresso-fronte-111",
+          "name": "Via Bresso (fronte 111)",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-1",
+            "linea-scuola-3"
+          ],
+          "distance": 348
+        }
+      ]
     },
     {
       "id": "chiesa-della-santissima-trinita",
@@ -577,51 +1141,6 @@
             "ospedale-2"
           ],
           "distance": 336
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-san-michele-al-corso",
-      "icon": "church",
-      "categories": [
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Chiesa di San Michele al Corso",
-      "duration": "15 min",
-      "lat": 40.82705,
-      "lon": 16.5533,
-      "description": "Seicentesca, con una facciata sobria segnata da un grande finestrone rettangolare, è conosciuta anche come chiesa del Purgatorio. Il motivo è dentro: fra le tele del Sette e dell’Ottocento c’è la Madonna del Purgatorio di Francesco Guarini, il pittore più importante della vicina Gravina. Altare maggiore e presbiterio sono rococò.",
-      "tips": "È sul corso, a pochi metri dalla Cattedrale: si visita in un quarto d’ora, quando è aperta per le funzioni.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 291
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 318
-        },
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 318
         }
       ]
     },
@@ -729,48 +1248,50 @@
       ]
     },
     {
-      "id": "chiesa-di-santa-teresa",
+      "id": "chiesa-di-santa-maria-della-consolazione",
       "icon": "church",
       "categories": [
         "cultura"
       ],
       "osm": null,
-      "name": "Chiesa di Santa Teresa",
+      "name": "Chiesa di Santa Maria della Consolazione",
       "duration": "20 min",
-      "lat": 40.8296,
-      "lon": 16.55086,
-      "description": "La vollero i carmelitani scalzi, i padri teresiani: i lavori cominciano nel 1635, la data sulla facciata è il 1696 e la cupola arriva nei primi anni del Settecento. Dentro c’è una lunga aula a croce latina con cappelle laterali, stucchi chiari alla maniera del tardo barocco napoletano e altari in marmo. Accanto resta il chiostro dei padri.",
-      "tips": "Si affaccia su piazza Santa Teresa, appena fuori dalle mura: guarda il pavimento in maiolica, rifatto nel restauro del 2003.",
+      "lat": 40.82427,
+      "lon": 16.551404,
+      "description": "Una chiesa del Novecento a sud del centro storico, che ingloba la più antica chiesa di San Vito del 1618. Dentro custodisce opere che non ti aspetti: la statua in marmo di San Vito scolpita a Napoli nel 1620 da Michelangelo Naccherino, una Madonna con il Bambino di Francesco Curia della fine del Cinquecento e un San Matteo e l’angelo del veneziano Sebastiano Ricci.",
+      "tips": "Entra fuori dagli orari delle funzioni e cerca la tela di Sebastiano Ricci: è il pezzo più prezioso.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-dei-mille-fronte-40",
-          "name": "Via Dei Mille fronte 40",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
+          ],
+          "distance": 49
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
           "lines": [
             "ospedale-1",
             "linea-ovest",
+            "linea-scuola-2",
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 247
+          "distance": 53
         },
         {
-          "stopId": "stop-via-gravina-7",
-          "name": "Via Gravina 7",
+          "stopId": "stop-via-quintino-sella-29",
+          "name": "Via Quintino Sella, 29",
           "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-la-martella"
+            "linea-scuola-3"
           ],
-          "distance": 249
-        },
-        {
-          "stopId": "stop-via-gravina-12",
-          "name": "Via Gravina 12",
-          "lines": [
-            "ospedale-1",
-            "linea-la-martella"
-          ],
-          "distance": 252
+          "distance": 92
         }
       ]
     },
@@ -875,17 +1396,113 @@
       ]
     },
     {
+      "id": "cimitero-ottocentesco",
+      "icon": "cemetery",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Cimitero ottocentesco",
+      "duration": "30 min",
+      "lat": 40.825706,
+      "lon": 16.545047,
+      "description": "Il «cimitero vecchio», oggi inglobato nel cimitero cittadino a ovest del centro. Nasce dalle leggi dell’Ottocento che vietarono di seppellire i morti nelle chiese, e la sua costruzione si trascinò per decenni tra fondi che mancavano e burocrazia. Lo stile si ispira ad Andrea Palladio, e l’antico ingresso, murato nel primo Novecento, è ancora visibile nel muro esterno.",
+      "tips": "Cerca l’ingresso murato lungo il muro di cinta. Dentro, rispetta gli orari e il silenzio del cimitero.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-bresso-fronte-5",
+          "name": "Via Bresso (fronte 5)",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "linea-scuola-3"
+          ],
+          "distance": 75
+        },
+        {
+          "stopId": "stop-via-bresso-5",
+          "name": "Via Bresso 5",
+          "lines": [
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 84
+        },
+        {
+          "stopId": "stop-cimitero-presso-ingresso-monumentale",
+          "name": "Cimitero presso Ingresso Monumentale",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 107
+        }
+      ]
+    },
+    {
+      "id": "epitaffio-di-altamura",
+      "icon": "monument",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Epitaffio",
+      "duration": "10 min",
+      "lat": 40.838425,
+      "lon": 16.550767,
+      "description": "Lo chiamano epitaffio, ma non è una tomba: è un monumento commemorativo in largo Epitaffio, a nord della città. Secondo lo storico Ottavio Serena ricorda la visita di Giuseppe Bonaparte, re di Napoli, l’8 aprile 1807; studi più recenti lo legano invece alla visita di Ferdinando IV e Maria Carolina nel 1797. L’iscrizione e gli stemmi furono cancellati quando tornarono i Borbone, e oggi non si leggono più.",
+      "tips": "È vicino alla stazione: guarda gli stemmi consumati sulla sommità, l’unica traccia di quella storia.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
+          "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi",
+            "linea-ovest",
+            "navette-hub",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-scuola-3",
+            "linea-scuola-4",
+            "pescariello-z-i",
+            "linea-jesce"
+          ],
+          "distance": 172
+        },
+        {
+          "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
+          "name": "Via IV Novembre (ang. Via II Giugno)",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi",
+            "pescariello-z-i"
+          ],
+          "distance": 359
+        },
+        {
+          "stopId": "stop-via-iv-novembre-fronte-via-ii-giugno",
+          "name": "Via IV Novembre (fronte Via II Giugno)",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 359
+        }
+      ]
+    },
+    {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8329482,
-      "lon": 16.5510709,
+      "lat": 40.8317322,
+      "lon": 16.5499294,
       "categories": [
         "cultura"
       ],
       "icon": "archaeology",
-      "osm": "way/1547047721",
+      "osm": "node/4126595981",
       "address": null,
-      "website": "https://www.abmcaltamura.it/ipogeo/",
+      "website": null,
       "phone": null,
       "openingHours": null,
       "wikidata": null,
@@ -898,14 +1515,6 @@
       "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-iv-novembre-fronte-74",
-          "name": "Via IV Novembre (fronte 74)",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 336
-        },
-        {
           "stopId": "stop-via-parisi-66",
           "name": "Via Parisi 66",
           "lines": [
@@ -914,7 +1523,7 @@
             "linea-ovest",
             "pescariello-z-i"
           ],
-          "distance": 361
+          "distance": 201
         },
         {
           "stopId": "stop-via-parisi-fronte-66",
@@ -924,7 +1533,16 @@
             "pescariello-z-i",
             "linea-jesce"
           ],
-          "distance": 372
+          "distance": 211
+        },
+        {
+          "stopId": "stop-via-gravina-12",
+          "name": "Via Gravina 12",
+          "lines": [
+            "ospedale-1",
+            "linea-la-martella"
+          ],
+          "distance": 349
         }
       ]
     },
@@ -1386,6 +2004,47 @@
       ]
     },
     {
+      "id": "palazzo-ponzetti-persio",
+      "icon": "landmark",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Ponzetti-Persio",
+      "duration": "10 min",
+      "lat": 40.826325,
+      "lon": 16.554867,
+      "description": "Un palazzo del Seicento, con una strettoia accanto al portone, legato a uno degli episodi più tristi del 1799. Ci viveva il giurista Orazio Persio, novantenne e malato: quando i sanfedisti presero la città entrarono nel palazzo, lo saccheggiarono e lo gettarono giù per le scale. Morì due mesi dopo.",
+      "tips": "È una dimora privata: si guarda da fuori, con la facciata e lo stretto passaggio a sinistra del portone.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 261
+        },
+        {
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri, 6",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-3"
+          ],
+          "distance": 262
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 264
+        }
+      ]
+    },
+    {
       "id": "palazzo-viti-de-angelis",
       "icon": "landmark",
       "categories": [
@@ -1426,22 +2085,6 @@
           "distance": 287
         }
       ]
-    },
-    {
-      "id": "pulo-di-altamura",
-      "icon": "nature",
-      "categories": [
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Pulo di Altamura",
-      "highlight": true,
-      "duration": "2 h",
-      "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
-      "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
-      "lat": 40.89015,
-      "lon": 16.56795,
-      "nearbyStops": []
     },
     {
       "id": "parco-degli-ulivi",
@@ -1891,6 +2534,47 @@
       ]
     },
     {
+      "id": "porta-dei-martiri",
+      "icon": "monument",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Porta dei Martiri",
+      "duration": "15 min",
+      "lat": 40.827592,
+      "lon": 16.555803,
+      "description": "Gli altamurani la chiamano la Porticella. Delle sei porte delle mura medievali sono rimaste in piedi solo questa e Porta Bari: l’arco in bugnato e, accanto, i resti delle fortificazioni aragonesi. Nel piazzale interno ci sono due chiese: la Madonna dei Martiri, nata nel Duecento e di rito greco fino al Cinquecento, e San Liberatore, costruita dopo la peste del Cinquecento con le parole greche «salvezza» e «liberazione» sugli stipiti.",
+      "tips": "Passa sotto l’arco ed entra nel piazzale: le due chiese sono una accanto all’altra.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 177
+        },
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 237
+        },
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 252
+        }
+      ]
+    },
+    {
       "id": "porta-matera",
       "icon": "monument",
       "categories": [
@@ -1938,30 +2622,6 @@
           "distance": 141
         }
       ]
-    },
-    {
-      "id": "pulicchio-di-toritto",
-      "name": "Pulicchio di Toritto",
-      "lat": 40.93184,
-      "lon": 16.58087,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "node/2129259687",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Il fratello minore del Pulo: una dolina di crollo ovale, profonda una decina di metri, con una conca centrale di circa cinquanta metri di diametro. Si è formata come le altre doline murgiane, con l’acqua piovana che scava una cavità dal basso finché la volta non cede. Sta in località Caselli di Cristo, verso Toritto, qualche chilometro a nord del Pulo.",
-      "highlight": false,
-      "duration": "30 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Si abbina al Pulo di Altamura nella stessa mattinata, in auto o in bici.",
-      "nearbyStops": []
     },
     {
       "id": "santuario-madonna-del-buon-cammino",
