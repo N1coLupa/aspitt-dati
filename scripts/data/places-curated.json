@@ -587,16 +587,198 @@
     "tips": "Si raggiunge dalla vecchia statale 171 per Santeramo. Servono l’auto, acqua e scarpe da sterrato."
   },
   {
-    "id": "pulicchio-di-toritto",
-    "name": "Pulicchio di Toritto",
+    "id": "claustro-giudecca",
+    "name": "Claustro Giudecca",
     "categories": [
-      "trekking"
+      "cultura"
     ],
-    "icon": "nature",
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.826512,
+    "lon": 16.550608,
+    "description": "Il claustro del quartiere ebraico: nel Medioevo gli ebrei erano, con greci e latini, una delle tre comunità della città. La pianta ricorda un candelabro e all’ingresso c’è una cariatide che la tradizione chiama «Sinagoga, la padrona del claustro», forse un frammento di una sinagoga demolita, forse un semplice elemento architettonico a cui la leggenda ha dato un nome.",
+    "tips": "È a pochi passi dalla vecchia Porta del Carmine: cerca la cariatide sullo spigolo, all’ingresso."
+  },
+  {
+    "id": "claustro-tradimento",
+    "name": "Claustro Tradimento",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.826009,
+    "lon": 16.551697,
+    "description": "Fino al 1901 si chiamava claustro Cherubino Giorgio. Poi, per il centenario della Rivoluzione altamurana, prese il nome da una leggenda: nel 1799 alcuni cittadini avrebbero fatto entrare i sanfedisti da un passaggio segreto nelle mura, proprio qui. Gli storici l’hanno smentita, ma il nome è rimasto.",
+    "tips": "Abbinalo al Monumento ai Martiri del 1799 in piazza Duomo, a pochi minuti a piedi, per avere tutta la storia."
+  },
+  {
+    "id": "porta-dei-martiri",
+    "name": "Porta dei Martiri",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "monument",
+    "duration": "15 min",
+    "lat": 40.827592,
+    "lon": 16.555803,
+    "description": "Gli altamurani la chiamano la Porticella. Delle sei porte delle mura medievali sono rimaste in piedi solo questa e Porta Bari: l’arco in bugnato e, accanto, i resti delle fortificazioni aragonesi. Nel piazzale interno ci sono due chiese: la Madonna dei Martiri, nata nel Duecento e di rito greco fino al Cinquecento, e San Liberatore, costruita dopo la peste del Cinquecento con le parole greche «salvezza» e «liberazione» sugli stipiti.",
+    "tips": "Passa sotto l’arco ed entra nel piazzale: le due chiese sono una accanto all’altra."
+  },
+  {
+    "id": "chiesa-di-santa-croce",
+    "name": "Chiesa di Santa Croce",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.826263,
+    "lon": 16.552129,
+    "description": "Il primo documento che la cita è del 1466 e la dà già per antica. Era la chiesa della confraternita della Pietà di Santa Croce, probabilmente la più antica di Altamura, che accanto gestiva anche un ospizio per i poveri. Le ristrutturazioni dell’Ottocento l’hanno cambiata molto, ma restano due dipinti dell’altamurano Nicolò Maramonte e il portale seicentesco su via Santa Croce.",
+    "tips": "È nel cuore del centro storico, tra la Cattedrale e il Claustro Tradimento: unisci le due soste."
+  },
+  {
+    "id": "palazzo-ponzetti-persio",
+    "name": "Palazzo Ponzetti-Persio",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "landmark",
+    "duration": "10 min",
+    "lat": 40.826325,
+    "lon": 16.554867,
+    "description": "Un palazzo del Seicento, con una strettoia accanto al portone, legato a uno degli episodi più tristi del 1799. Ci viveva il giurista Orazio Persio, novantenne e malato: quando i sanfedisti presero la città entrarono nel palazzo, lo saccheggiarono e lo gettarono giù per le scale. Morì due mesi dopo.",
+    "tips": "È una dimora privata: si guarda da fuori, con la facciata e lo stretto passaggio a sinistra del portone."
+  },
+  {
+    "id": "chiesa-di-san-giacomo",
+    "name": "Chiesa di San Giacomo",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "10 min",
+    "lat": 40.82779,
+    "lon": 16.55278,
+    "description": "Una piccola chiesa a due passi dalla Cattedrale, probabilmente del Cinquecento, con una facciata rococò del 1754 e un campanile a vela chiuso da una cuspide a bulbo. Dentro c’è un’acquasantiera in pietra del Quattrocento. Nel maggio 1799, durante la Rivoluzione altamurana, qui furono rinchiusi i sanfedisti fatti prigionieri.",
+    "tips": "Alza lo sguardo sul campanile a vela: la cuspide a bulbo è rara nel centro storico."
+  },
+  {
+    "id": "chiesa-della-santissima-annunziata-dei-pastori",
+    "name": "Chiesa della Santissima Annunziata dei Pastori",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "10 min",
+    "lat": 40.82518,
+    "lon": 16.55318,
+    "description": "La costruì nel 1606 una confraternita di contadini e pastori, che si fermavano qui a pregare prima di partire per i campi e per la Murgia. È il segno di quanto pesassero le confraternite nella vita della città: gruppi di persone che si occupavano dei bisognosi e di lavori utili a tutti. La facciata è quella del restauro del 1932, con le due date incise sul portone.",
+    "tips": "Sul portone d’ingresso sono scritti l’anno di costruzione e quello del restauro: è la prima cosa da cercare."
+  },
+  {
+    "id": "chiesa-di-san-francesco-da-paola",
+    "name": "Chiesa di San Francesco da Paola",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.825908,
+    "lon": 16.552782,
+    "description": "Si affaccia sul corso, con due campanili che fanno eco a quelli della vicina Cattedrale e una cupola che illumina un interno a pianta esagonale. Nasce all’inizio del Settecento ampliando la chiesa del monastero di Santa Maria del Soccorso, fondato nel 1596 per le clarisse delle famiglie nobili: gli altamurani lo chiamavano «le monache grandi».",
+    "tips": "Accanto c’è l’ex monastero, con il suo grande cortile interno, che oggi ospita attività culturali."
+  },
+  {
+    "id": "chiesa-di-san-lorenzo",
+    "name": "Chiesa di San Lorenzo",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.82648,
+    "lon": 16.55745,
+    "description": "Chiamata anche San Lorenzo fuori le mura, perché è una delle poche chiese antiche costruite all’esterno della cinta medievale, vicino alla scomparsa Porta Foggiali. È documentata dal 1330 e il restauro del 1717 le ha dato l’aspetto tardobarocco di oggi. Sul portale restano il giglio angioino e un’iscrizione gotica che cita la leggenda dei mirmidoni e della regina Altea, da cui il nome Altilia.",
+    "tips": "Fermati davanti al portale: l’iscrizione gotica è la parte più antica della chiesa."
+  },
+  {
+    "id": "chiesa-di-sant-agostino",
+    "name": "Chiesa di Sant’Agostino",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.83095,
+    "lon": 16.55801,
+    "description": "Dal 1541 fu la chiesa dei padri agostiniani, consacrata nel 1570 con il nome di Santa Maria del Popolo. Nel 1808 una legge di Gioacchino Murat cacciò i frati e il convento, dal 1861, diventò il mattatoio comunale. Oggi è una parrocchia del quartiere a nord-est del centro storico, e nella cappella del Santissimo è conservata l’immagine di Santa Maria della Sanità.",
+    "tips": "È a nord-est del centro storico, a pochi minuti a piedi da Porta Bari."
+  },
+  {
+    "id": "chiesa-di-santa-maria-della-consolazione",
+    "name": "Chiesa di Santa Maria della Consolazione",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "20 min",
+    "lat": 40.82427,
+    "lon": 16.551404,
+    "description": "Una chiesa del Novecento a sud del centro storico, che ingloba la più antica chiesa di San Vito del 1618. Dentro custodisce opere che non ti aspetti: la statua in marmo di San Vito scolpita a Napoli nel 1620 da Michelangelo Naccherino, una Madonna con il Bambino di Francesco Curia della fine del Cinquecento e un San Matteo e l’angelo del veneziano Sebastiano Ricci.",
+    "tips": "Entra fuori dagli orari delle funzioni e cerca la tela di Sebastiano Ricci: è il pezzo più prezioso."
+  },
+  {
+    "id": "chiesa-del-santissimo-rosario-di-pompei",
+    "name": "Chiesa del Santissimo Rosario di Pompei",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.820262,
+    "lon": 16.548525,
+    "description": "La chiesa del quartiere di via Pompei, nata negli anni Sessanta quando la città cresceva verso sud-ovest. I progettisti, l’ingegnere Angelo Baldassarre e l’architetto Domenico Di Bari, le diedero la forma di una barca a vela «che scivola nel mare della vita». Sulla facciata c’è un mosaico della Madonna con il Bambino degli anni Novanta.",
+    "tips": "Guardala di lato per capire la forma della vela; è un esempio dell’architettura sacra moderna della città."
+  },
+  {
+    "id": "chiesa-di-san-giovanni-bosco",
+    "name": "Chiesa di San Giovanni Bosco",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "church",
+    "duration": "15 min",
+    "lat": 40.81998,
+    "lon": 16.55679,
+    "description": "La parrocchia del rione Montecalvario, a sud della città, istituita nel 1957 come San Pietro Apostolo e dedicata a don Bosco dal 1960. Sulla facciata c’è il gruppo in bronzo di San Giovanni Bosco e San Domenico Savio dello scultore Mario Colonna; dentro, mosaici con scene mariane, una Via Crucis fiorentina e una tela di don Bosco del 1880.",
+    "tips": "Accanto c’è il Cortile di Don Bosco, l’oratorio inaugurato nel 2023: è il cuore del quartiere."
+  },
+  {
+    "id": "cimitero-ottocentesco",
+    "name": "Cimitero ottocentesco",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "cemetery",
     "duration": "30 min",
-    "lat": 40.93184,
-    "lon": 16.58087,
-    "description": "Il fratello minore del Pulo: una dolina di crollo ovale, profonda una decina di metri, con una conca centrale di circa cinquanta metri di diametro. Si è formata come le altre doline murgiane, con l’acqua piovana che scava una cavità dal basso finché la volta non cede. Sta in località Caselli di Cristo, verso Toritto, qualche chilometro a nord del Pulo.",
-    "tips": "Si abbina al Pulo di Altamura nella stessa mattinata, in auto o in bici."
+    "lat": 40.825706,
+    "lon": 16.545047,
+    "description": "Il «cimitero vecchio», oggi inglobato nel cimitero cittadino a ovest del centro. Nasce dalle leggi dell’Ottocento che vietarono di seppellire i morti nelle chiese, e la sua costruzione si trascinò per decenni tra fondi che mancavano e burocrazia. Lo stile si ispira ad Andrea Palladio, e l’antico ingresso, murato nel primo Novecento, è ancora visibile nel muro esterno.",
+    "tips": "Cerca l’ingresso murato lungo il muro di cinta. Dentro, rispetta gli orari e il silenzio del cimitero."
+  },
+  {
+    "id": "epitaffio-di-altamura",
+    "name": "Epitaffio",
+    "categories": [
+      "cultura"
+    ],
+    "icon": "monument",
+    "duration": "10 min",
+    "lat": 40.838425,
+    "lon": 16.550767,
+    "description": "Lo chiamano epitaffio, ma non è una tomba: è un monumento commemorativo in largo Epitaffio, a nord della città. Secondo lo storico Ottavio Serena ricorda la visita di Giuseppe Bonaparte, re di Napoli, l’8 aprile 1807; studi più recenti lo legano invece alla visita di Ferdinando IV e Maria Carolina nel 1797. L’iscrizione e gli stemmi furono cancellati quando tornarono i Borbone, e oggi non si leggono più.",
+    "tips": "È vicino alla stazione: guarda gli stemmi consumati sulla sommità, l’unica traccia di quella storia."
   }
 ]
