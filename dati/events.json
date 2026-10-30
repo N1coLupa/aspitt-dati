@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T22:34:16.289Z",
+  "generatedAt": "2026-10-30T22:46:13.660Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -282,6 +282,153 @@
       "categories": [
         "eventi"
       ],
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-natale-in-corso",
+      "title": "Natale in Corso",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2026-12-08",
+      "endDate": "2026-12-08",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 08 dicembre 2026 - 06 gennaio 2027.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-presepe-vivente-al-pisciulo",
+      "title": "Presepe vivente al \"Pisciulo\"",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2026-12-23",
+      "endDate": "2026-12-23",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 23 dicembre 1990.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-l-uomo-di-altamura-in-maschera",
+      "title": "L'Uomo di Altamura \"In maschera\"",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-02-03",
+      "endDate": "2027-02-03",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 3 febbraio - 3 marzo 2019.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-di-san-giuseppe-con-i-tradizionali-falo",
+      "title": "Festa di San Giuseppe con i tradizionali falò",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-03-19",
+      "endDate": "2027-03-19",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 19 marzo.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-falo-dell-annunziata",
+      "title": "Falò dell'Annunziata",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-03-25",
+      "endDate": "2027-03-25",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 25 marzo.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "eventi"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-della-patrona-sant-irene",
+      "title": "Festa della Patrona Sant'Irene",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-05-05",
+      "endDate": "2027-05-05",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 5 maggio.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
+      "dated": true
+    },
+    {
+      "id": "ricorrenza-festa-dell-assunta-titolare-della-cattedrale",
+      "title": "Festa dell'Assunta, titolare della Cattedrale",
+      "url": "https://www.vitobarone.it/altamura/eventi.htm",
+      "source": "Vito Barone",
+      "sourceUrl": "https://www.vitobarone.it/altamura/eventi.htm",
+      "publishedAt": null,
+      "startDate": "2027-08-15",
+      "endDate": "2027-08-15",
+      "startTime": null,
+      "venue": null,
+      "summary": "Appuntamento fisso del calendario altamurano: 15 agosto.",
+      "tags": [
+        "Ricorrenza"
+      ],
+      "categories": [
+        "esperienze"
+      ],
+      "annual": true,
       "dated": true
     },
     {

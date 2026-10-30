@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T22:34:53.986Z",
+  "generatedAt": "2026-10-30T22:47:00.835Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -11,48 +11,6 @@
     }
   ],
   "places": [
-    {
-      "id": "antico-forno-santa-caterina",
-      "icon": "landmark",
-      "categories": [
-        "esperienze",
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Antico Forno Santa Caterina",
-      "duration": "15 min",
-      "lat": 40.8261,
-      "lon": 16.55359,
-      "description": "L’altro forno storico del centro, fra i vicoli a sud della Cattedrale. Sulla data di fondazione le fonti non sono d’accordo, ma sul resto sì: forno a legna, pane di semola di grano duro e focaccia, con il profumo che riempie il vicolo dalle prime ore del mattino.",
-      "tips": "Fallo insieme al Forno Antico Santa Chiara: sono a pochi minuti a piedi, e assaggiare il pane di entrambi è il modo più semplice per capire che non tutte le semole sono uguali.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 212
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 227
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 227
-        }
-      ]
-    },
     {
       "id": "archivio-biblioteca-museo-civico",
       "icon": "museum",
@@ -917,48 +875,6 @@
       ]
     },
     {
-      "id": "forno-antico-santa-chiara",
-      "icon": "landmark",
-      "categories": [
-        "esperienze",
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Forno Antico Santa Chiara",
-      "duration": "15 min",
-      "lat": 40.82697,
-      "lon": 16.55421,
-      "description": "Un forno a legna nel cuore del centro storico, a pochi passi dal monastero di cui porta il nome, che le guide fanno risalire al 1423. Ogni mattina si cuoce ancora il pane di Altamura come vuole la tradizione: semola rimacinata di grano duro, lievito madre, acqua e sale, nelle due forme classiche, accavallata e a cappello di prete.",
-      "tips": "Vai la mattina, quando il pane esce dal forno; la domenica è chiuso. Il pane di Altamura è DOP dal 2003: è il bollino che lo distingue dal semplice pane di semola.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 287
-        },
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 315
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 322
-        }
-      ]
-    },
-    {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
       "lat": 40.8329482,
@@ -1212,7 +1128,7 @@
       "lat": 40.82763,
       "lon": 16.55246,
       "description": "Aperto nel 2019 in un antico forno del Trecento a pochi passi dalla Cattedrale, è il primo museo dedicato al pane di Altamura. Attrezzi, grani, farine e tipi di pane raccontano il lavoro dei fornai, insieme alla storia di Vito Forte, che in quel forno entrò da apprendista a tredici anni, nel 1956.",
-      "tips": "Controlla gli orari prima di andare, poi chiudi il giro in uno dei forni storici del centro per assaggiare quello che hai appena visto.",
+      "tips": "Controlla gli orari prima di andare: è a due passi dalla Cattedrale, da vedere nello stesso giro.",
       "nearbyStops": [
         {
           "stopId": "stop-piazza-unita-d-italia-8",
