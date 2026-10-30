@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T09:49:25.081Z",
+  "generatedAt": "2026-10-30T22:34:53.986Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -11,6 +11,48 @@
     }
   ],
   "places": [
+    {
+      "id": "antico-forno-santa-caterina",
+      "icon": "landmark",
+      "categories": [
+        "esperienze",
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Antico Forno Santa Caterina",
+      "duration": "15 min",
+      "lat": 40.8261,
+      "lon": 16.55359,
+      "description": "L’altro forno storico del centro, fra i vicoli a sud della Cattedrale. Sulla data di fondazione le fonti non sono d’accordo, ma sul resto sì: forno a legna, pane di semola di grano duro e focaccia, con il profumo che riempie il vicolo dalle prime ore del mattino.",
+      "tips": "Fallo insieme al Forno Antico Santa Chiara: sono a pochi minuti a piedi, e assaggiare il pane di entrambi è il modo più semplice per capire che non tutte le semole sono uguali.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 212
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 227
+        },
+        {
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri, 6",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-3"
+          ],
+          "distance": 227
+        }
+      ]
+    },
     {
       "id": "archivio-biblioteca-museo-civico",
       "icon": "museum",
@@ -101,22 +143,6 @@
       ]
     },
     {
-      "id": "bosco-sauro",
-      "icon": "park",
-      "categories": [
-        "esperienze",
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Bosco Sauro",
-      "duration": "2 h",
-      "lat": 40.91747,
-      "lon": 16.6342,
-      "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
-      "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
-      "nearbyStops": []
-    },
-    {
       "id": "cattedrale-santa-maria-assunta",
       "name": "Cattedrale di Santa Maria Assunta",
       "lat": 40.8274478,
@@ -183,22 +209,6 @@
       "tips": "L'accesso non è libero: si entra solo con le visite guidate organizzate, che vengono annunciate nella sezione Eventi.",
       "lat": 40.80625,
       "lon": 16.62465,
-      "nearbyStops": []
-    },
-    {
-      "id": "centro-visite-lamalunga",
-      "icon": "museum",
-      "categories": [
-        "cultura",
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Centro Visite Lamalunga",
-      "duration": "1 h",
-      "lat": 40.86512,
-      "lon": 16.58153,
-      "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
-      "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
       "nearbyStops": []
     },
     {
@@ -482,6 +492,182 @@
       ]
     },
     {
+      "id": "bosco-sauro",
+      "icon": "park",
+      "categories": [
+        "esperienze",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Bosco Sauro",
+      "duration": "2 h",
+      "lat": 40.91747,
+      "lon": 16.6342,
+      "description": "Un parco all'aperto sulla statale verso Bari, con ricostruzioni di dinosauri a grandezza naturale che si muovono e fanno il verso. Dopo le orme della Cava Pontrelli, è il modo per far vedere ai bambini che aspetto avevano quelli che le hanno lasciate.",
+      "tips": "È fuori città, lungo la statale 96: si raggiunge in auto ed è pensato per le famiglie.",
+      "nearbyStops": []
+    },
+    {
+      "id": "centro-visite-lamalunga",
+      "icon": "museum",
+      "categories": [
+        "cultura",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Centro Visite Lamalunga",
+      "duration": "1 h",
+      "lat": 40.86512,
+      "lon": 16.58153,
+      "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
+      "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
+      "nearbyStops": []
+    },
+    {
+      "id": "chiesa-della-santissima-trinita",
+      "name": "Chiesa della Santissima Trinità",
+      "lat": 40.82617,
+      "lon": 16.55624,
+      "categories": [
+        "cultura"
+      ],
+      "icon": "church",
+      "osm": "way/410903653",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": "Q110335666",
+      "wikipedia": null,
+      "description": "Gli altamurani la chiamano Trinità Vecchia, per non confonderla con la più recente chiesa della Trasfigurazione. Risale probabilmente al Quattrocento: il campanile è del Settecento, mentre l’interno conserva l’impianto del Cinquecento e alcune tele di valore. Accanto sorgeva l’ospedale dei pellegrini, che arrivando baciavano la cosiddetta croce del pellegrino.",
+      "highlight": false,
+      "duration": "15 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "È a pochi passi da Palazzo Baldassarre: si unisce bene alla visita del museo dell’Uomo di Altamura.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 271
+        },
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 280
+        },
+        {
+          "stopId": "stop-via-gravina-ang-via-del-melo",
+          "name": "Via Gravina ang. Via del Melo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 284
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-biagio",
+      "name": "Chiesa di San Biagio",
+      "lat": 40.82826,
+      "lon": 16.55364,
+      "categories": [
+        "cultura"
+      ],
+      "icon": "church",
+      "osm": "way/410918724",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": "Q106245801",
+      "wikipedia": null,
+      "description": "Sta sul corso, accanto a San Nicola dei Greci, e nasce nel 1628 sopra un antico ipogeo, dove prima si riuniva il seggio dei nobili. Fuori la riconosci subito dall’affresco di San Cristoforo con Gesù Bambino sulle spalle, alto circa cinque metri; dentro, una pianta quadrata con la volta a stella. Per secoli è stata la chiesa della confraternita dei calzolai di San Crispino.",
+      "highlight": false,
+      "duration": "15 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Fermati sui gradini: si racconta che da bambino ci suonasse lo zufolo Saverio Mercadante, il compositore a cui è dedicato il teatro.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 154
+        },
+        {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 246
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 336
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-michele-al-corso",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Michele al Corso",
+      "duration": "15 min",
+      "lat": 40.82705,
+      "lon": 16.5533,
+      "description": "Seicentesca, con una facciata sobria segnata da un grande finestrone rettangolare, è conosciuta anche come chiesa del Purgatorio. Il motivo è dentro: fra le tele del Sette e dell’Ottocento c’è la Madonna del Purgatorio di Francesco Guarini, il pittore più importante della vicina Gravina. Altare maggiore e presbiterio sono rococò.",
+      "tips": "È sul corso, a pochi metri dalla Cattedrale: si visita in un quarto d’ora, quando è aperta per le funzioni.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 291
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 318
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 318
+        }
+      ]
+    },
+    {
       "id": "chiesa-di-san-nicola-dei-greci",
       "name": "Chiesa di San Nicola dei Greci",
       "lat": 40.8280825,
@@ -528,6 +714,105 @@
             "ospedale-2"
           ],
           "distance": 327
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-sant-antonio",
+      "name": "Chiesa di Sant’Antonio",
+      "lat": 40.82324,
+      "lon": 16.55672,
+      "categories": [
+        "cultura"
+      ],
+      "icon": "church",
+      "osm": "way/410916419",
+      "address": "Via Annibale di Francia 25",
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": "Q113017415",
+      "wikipedia": "it:Chiesa di Sant'Antonio (Altamura)",
+      "description": "Un tempo era la chiesa dell’Immacolata, poi è diventata il cuore dell’orfanotrofio antoniano voluto da padre Annibale Maria di Francia, oggi santo. Qui riposa Mélanie Calvat, la veggente di La Salette, morta ad Altamura nel 1904: fu proprio padre Annibale, nel dicembre 1918, a far trasferire il suo corpo dal cimitero in questa chiesa.",
+      "highlight": false,
+      "duration": "20 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Accanto c’è il convento delle Figlie del Divino Zelo. La chiesa è appena fuori dal centro storico, verso piazza Aldo Moro.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-gravina-ang-via-del-melo",
+          "name": "Via Gravina ang. Via del Melo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 85
+        },
+        {
+          "stopId": "stop-viale-martiri-83",
+          "name": "Viale Martiri, 83",
+          "lines": [
+            "ospedale-1",
+            "navette-hub",
+            "linea-scuola-2",
+            "linea-scuola-3",
+            "linea-la-martella"
+          ],
+          "distance": 86
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 250
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-santa-teresa",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Santa Teresa",
+      "duration": "20 min",
+      "lat": 40.8296,
+      "lon": 16.55086,
+      "description": "La vollero i carmelitani scalzi, i padri teresiani: i lavori cominciano nel 1635, la data sulla facciata è il 1696 e la cupola arriva nei primi anni del Settecento. Dentro c’è una lunga aula a croce latina con cappelle laterali, stucchi chiari alla maniera del tardo barocco napoletano e altari in marmo. Accanto resta il chiostro dei padri.",
+      "tips": "Si affaccia su piazza Santa Teresa, appena fuori dalle mura: guarda il pavimento in maiolica, rifatto nel restauro del 2003.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-dei-mille-fronte-40",
+          "name": "Via Dei Mille fronte 40",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 247
+        },
+        {
+          "stopId": "stop-via-gravina-7",
+          "name": "Via Gravina 7",
+          "lines": [
+            "ospedale-2",
+            "ospedale-domenica-e-festivi",
+            "linea-la-martella"
+          ],
+          "distance": 249
+        },
+        {
+          "stopId": "stop-via-gravina-12",
+          "name": "Via Gravina 12",
+          "lines": [
+            "ospedale-1",
+            "linea-la-martella"
+          ],
+          "distance": 252
         }
       ]
     },
@@ -632,6 +917,48 @@
       ]
     },
     {
+      "id": "forno-antico-santa-chiara",
+      "icon": "landmark",
+      "categories": [
+        "esperienze",
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Forno Antico Santa Chiara",
+      "duration": "15 min",
+      "lat": 40.82697,
+      "lon": 16.55421,
+      "description": "Un forno a legna nel cuore del centro storico, a pochi passi dal monastero di cui porta il nome, che le guide fanno risalire al 1423. Ogni mattina si cuoce ancora il pane di Altamura come vuole la tradizione: semola rimacinata di grano duro, lievito madre, acqua e sale, nelle due forme classiche, accavallata e a cappello di prete.",
+      "tips": "Vai la mattina, quando il pane esce dal forno; la domenica è chiuso. Il pane di Altamura è DOP dal 2003: è il bollino che lo distingue dal semplice pane di semola.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 287
+        },
+        {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 315
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 322
+        }
+      ]
+    },
+    {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
       "lat": 40.8329482,
@@ -684,6 +1011,31 @@
           "distance": 372
         }
       ]
+    },
+    {
+      "id": "masseria-jesce",
+      "name": "Masseria Jesce",
+      "lat": 40.75109,
+      "lon": 16.6467,
+      "categories": [
+        "cultura",
+        "trekking"
+      ],
+      "icon": "archaeology",
+      "osm": "node/1823005961",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": null,
+      "wikipedia": null,
+      "description": "Una masseria fortificata sulla provinciale per Laterza, costruita sul tracciato della via Appia, poi riusato come tratturo fra Melfi e Castellaneta. Accanto c’è una cripta semi-ipogea con due cicli di affreschi, i più antichi della prima metà del Trecento; intorno, grotte usate come abitazioni, una necropoli del IV–III secolo a.C. e un villaggio neolitico.",
+      "highlight": false,
+      "duration": "1 h",
+      "difficulty": null,
+      "experience": null,
+      "tips": "È una dozzina di chilometri a sud-est del centro. La cripta si apre in occasioni particolari, come le giornate del FAI: controlla prima di partire.",
+      "nearbyStops": []
     },
     {
       "id": "monumento-ai-martiri-del-1799",
@@ -820,6 +1172,74 @@
             "pescariello-z-i"
           ],
           "distance": 261
+        }
+      ]
+    },
+    {
+      "id": "murgia-sgolgore",
+      "name": "Murgia Sgolgore",
+      "lat": 40.8395,
+      "lon": 16.67752,
+      "categories": [
+        "trekking"
+      ],
+      "icon": "peak",
+      "osm": "node/5962117875",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": "Q3867396",
+      "wikipedia": "it:Murgia Sgolgore",
+      "description": "Un’altura di 523 metri a est della città, verso i confini con Santeramo e Cassano, dentro il Parco nazionale dell’Alta Murgia. È terra di masserie, alcune ancora attive e molte abbandonate, fra cui Masseria Viglione sul vecchio tracciato dell’Appia, e ospita il Bosco Botanico Lorenzo Giorgio, un’oasi privata di conifere, latifoglie e macchia mediterranea.",
+      "highlight": false,
+      "duration": "mezza giornata",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Si raggiunge dalla vecchia statale 171 per Santeramo. Servono l’auto, acqua e scarpe da sterrato.",
+      "nearbyStops": []
+    },
+    {
+      "id": "museo-del-pane",
+      "icon": "museum",
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "osm": null,
+      "name": "Museo del Pane",
+      "duration": "40 min",
+      "lat": 40.82763,
+      "lon": 16.55246,
+      "description": "Aperto nel 2019 in un antico forno del Trecento a pochi passi dalla Cattedrale, è il primo museo dedicato al pane di Altamura. Attrezzi, grani, farine e tipi di pane raccontano il lavoro dei fornai, insieme alla storia di Vito Forte, che in quel forno entrò da apprendista a tredici anni, nel 1956.",
+      "tips": "Controlla gli orari prima di andare, poi chiudi il giro in uno dei forni storici del centro per assaggiare quello che hai appena visto.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 264
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 283
+        },
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille, 88",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2"
+          ],
+          "distance": 291
         }
       ]
     },
@@ -1092,55 +1512,6 @@
       ]
     },
     {
-      "id": "parco-scuola-tommaso-fiore",
-      "icon": "park",
-      "categories": [
-        "parchi"
-      ],
-      "osm": null,
-      "name": "Parco della Scuola Tommaso Fiore",
-      "duration": "20 min",
-      "lat": 40.82135,
-      "lon": 16.56429,
-      "description": "Area verde di quartiere accanto alla scuola Tommaso Fiore, con giochi e alberatura: uno di quei posti che tengono insieme un pezzo di città fuori dal centro.",
-      "tips": "È la sosta giusta se stai aspettando alla fermata di viale Martiri con dei bambini.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-traiano-35",
-          "name": "Viale Traiano, 35",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-la-martella"
-          ],
-          "distance": 98
-        },
-        {
-          "stopId": "stop-viale-traiano-16",
-          "name": "Viale Traiano, 16",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-la-martella"
-          ],
-          "distance": 107
-        },
-        {
-          "stopId": "stop-viale-traiano-4",
-          "name": "Viale Traiano, 4",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-3"
-          ],
-          "distance": 178
-        }
-      ]
-    },
-    {
       "id": "pulo-di-altamura",
       "icon": "nature",
       "categories": [
@@ -1208,6 +1579,55 @@
             "pescariello-z-i"
           ],
           "distance": 264
+        }
+      ]
+    },
+    {
+      "id": "parco-scuola-tommaso-fiore",
+      "icon": "park",
+      "categories": [
+        "parchi"
+      ],
+      "osm": null,
+      "name": "Parco della Scuola Tommaso Fiore",
+      "duration": "20 min",
+      "lat": 40.82135,
+      "lon": 16.56429,
+      "description": "Area verde di quartiere accanto alla scuola Tommaso Fiore, con giochi e alberatura: uno di quei posti che tengono insieme un pezzo di città fuori dal centro.",
+      "tips": "È la sosta giusta se stai aspettando alla fermata di viale Martiri con dei bambini.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-viale-traiano-35",
+          "name": "Viale Traiano, 35",
+          "lines": [
+            "ospedale-1",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-la-martella"
+          ],
+          "distance": 98
+        },
+        {
+          "stopId": "stop-viale-traiano-16",
+          "name": "Viale Traiano, 16",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2",
+            "linea-scuola-3",
+            "linea-la-martella"
+          ],
+          "distance": 107
+        },
+        {
+          "stopId": "stop-viale-traiano-4",
+          "name": "Viale Traiano, 4",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-scuola-3"
+          ],
+          "distance": 178
         }
       ]
     },
@@ -1602,6 +2022,30 @@
           "distance": 141
         }
       ]
+    },
+    {
+      "id": "pulicchio-di-toritto",
+      "name": "Pulicchio di Toritto",
+      "lat": 40.93184,
+      "lon": 16.58087,
+      "categories": [
+        "trekking"
+      ],
+      "icon": "nature",
+      "osm": "node/2129259687",
+      "address": null,
+      "website": null,
+      "phone": null,
+      "openingHours": null,
+      "wikidata": null,
+      "wikipedia": null,
+      "description": "Il fratello minore del Pulo: una dolina di crollo ovale, profonda una decina di metri, con una conca centrale di circa cinquanta metri di diametro. Si è formata come le altre doline murgiane, con l’acqua piovana che scava una cavità dal basso finché la volta non cede. Sta in località Caselli di Cristo, verso Toritto, qualche chilometro a nord del Pulo.",
+      "highlight": false,
+      "duration": "30 min",
+      "difficulty": null,
+      "experience": null,
+      "tips": "Si abbina al Pulo di Altamura nella stessa mattinata, in auto o in bici.",
+      "nearbyStops": []
     },
     {
       "id": "santuario-madonna-del-buon-cammino",
