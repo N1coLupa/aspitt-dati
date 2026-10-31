@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T23:21:47.824Z",
+  "generatedAt": "2026-10-31T17:15:27.622Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -27,28 +27,6 @@
     }
   ],
   "events": [
-    {
-      "id": "comune-731977",
-      "title": "Altamura d'autunno: Festival dei Giovani",
-      "url": "https://www.comune.altamura.ba.it/it/events/altamura-d-autunno-festival-dei-giovani",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-10-28T10:58:58.000Z",
-      "startDate": "2026-10-29",
-      "endDate": "2026-10-31",
-      "startTime": "18:30",
-      "venue": null,
-      "summary": "L'Amministrazione comunale organizza l'iniziativa \"Altamura d'Autunno 2026\". Una rassegna culturale che vuole mettere in relazione politiche giovani...",
-      "tags": [
-        "Bimbi",
-        "Concerti",
-        "Evento culturale"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
     {
       "id": "live-festival-dei-giovani-musica-e-laboratori-nel-centro-storico-",
       "title": "Festival dei Giovani, musica e laboratori nel centro storico dal 29 al 31 ottobre per Altamura d’Autunno 2026",
@@ -523,6 +501,24 @@
       "categories": [
         "cultura",
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-festival-dei-giovani-rinviato-l-evento-finale",
+      "title": "Festival dei giovani: rinviato l'evento finale",
+      "url": "https://www.altamuralife.it/eventi/festival-dei-giovani-rinviato-l-evento-finale/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }
