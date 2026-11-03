@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T22:47:02.207Z",
+  "generatedAt": "2026-11-03T11:55:52.370Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -60,6 +60,24 @@
       "tags": [
         "Evento culturale"
       ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-depeche-mode-experience-tribute-show",
+      "title": "Depeche Mode Experience | Tribute Show",
+      "url": "https://iltaccodibacco.it/puglia/eventi/335427.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "startTime": null,
+      "venue": "Via Diego Franco, 20 c/o",
+      "summary": "🌹 Depeche Mode Experience è un Tribute Show dedicato alla musica, all’estetica e allo spirito degli iconici Depeche Mode.",
+      "tags": [],
       "categories": [
         "eventi"
       ],
