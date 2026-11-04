@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:18:31.427Z",
+  "generatedAt": "2026-11-04T12:07:03.981Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -23,7 +23,7 @@
       "route": "Via Gravina - Trentacapilli - Piazza Zanardelli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/03/MarinoBus_Urbano_Orari_Ospedale-1-31-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1tlPJKgyJkTU1oxiuXrDXOT7PosuwWvI&ll=40.8212292561109%2C16.516982050000006&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/linea-ospedale-1.pdf#page=2",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -6520,27 +6520,13 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-24",
-      "noticeUntil": "2026-10-24",
-      "noticeStart": "15:00",
-      "noticeEnd": "18:30",
-      "noticeStops": [
-        "stop-via-gravina-231",
-        "stop-via-del-mandorlo-fronte-conad",
-        "stop-cimitero-viale-della-pace-presso-rotonda",
-        "stop-cimitero-presso-ingresso-monumentale",
-        "stop-via-bresso-fronte-5",
-        "stop-via-bresso-fronte-111",
-        "stop-via-selva-ang-via-centonze",
-        "stop-via-dei-mille-103",
-        "stop-via-dei-mille-fronte-40",
-        "stop-via-gravina-12",
-        "stop-via-gravina-92",
-        "stop-via-gravina-fronte-via-della-cicoriella",
-        "stop-via-gravina-fronte-231"
-      ],
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il 24.10.26 dalle 15:00 alle 18:30 le seguenti fermate saranno SOPPRESSE. LINEA OSPEDALE 1: - da via Gravina 231 a Via Selva (ang. via Centonze) - da via Dei Mille 103 a via Gravina (fronte 231) LINEA OSPEDALE 2: - da via Santeramo 161 a via IV Novembre (fronte via II Giugno) - tutte le fermate di via Gravina",
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-03-31",
       "extraurban": false,
@@ -6553,7 +6539,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -13384,16 +13370,18 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-22",
-      "noticeUntil": "2026-10-22",
-      "noticeStart": "20:00",
+      "noticeFrom": "2026-11-09",
+      "noticeUntil": "2026-11-09",
+      "noticeStart": "17:30",
       "noticeEnd": "22:00",
       "noticeStops": [
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-74"
+        "stop-via-iv-novembre-ang-via-ii-giugno",
+        "stop-via-mura-megalitiche-fronte-stadio",
+        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+        "stop-via-bari-150"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
+      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
@@ -24839,7 +24827,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -28717,16 +28705,13 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-22",
-      "noticeUntil": "2026-10-22",
-      "noticeStart": "20:00",
-      "noticeEnd": "22:00",
-      "noticeStops": [
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-via-ii-giugno"
-      ],
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-03-30",
       "extraurban": false,
@@ -46291,7 +46276,7 @@
       "route": "Altamura - Zona Industriale Jesce",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
       "mapUrl": null,
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/linea-ospedale-1.pdf#page=1",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -49269,8 +49254,8 @@
         "48 fermate senza coordinate"
       ],
       "timetableFile": null,
-      "noticeFrom": "2026-10-27",
-      "noticeUntil": "2026-10-27",
+      "noticeFrom": "2026-11-09",
+      "noticeUntil": "2026-11-09",
       "noticeStart": "17:30",
       "noticeEnd": "22:00",
       "noticeStops": [
@@ -49278,7 +49263,7 @@
         "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 23.10.26 e il giorno 27.10.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
+      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
       "validFrom": "2026-07-16",
       "extraurban": true,
@@ -61836,7 +61821,7 @@
       "route": "Altamura - Gravina - Spinazzola - San Nicola di Melfi (SATA)",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
       "mapUrl": null,
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/melfi.pdf#page=1",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-altamura-deposito-via-carpentino",
@@ -62764,27 +62749,13 @@
         "24 fermate senza coordinate"
       ],
       "timetableFile": null,
-      "noticeFrom": "2026-10-24",
-      "noticeUntil": "2026-10-24",
+      "noticeFrom": null,
+      "noticeUntil": null,
       "noticeStart": null,
       "noticeEnd": null,
-      "noticeStops": [
-        "stop-gravina-via-bari",
-        "stop-gravina-via-tripoli",
-        "stop-gravina-piazza-scacchi",
-        "stop-gravina-piazza-stazione",
-        "stop-gravina-piazza-stazione-2",
-        "stop-gravina-piazza-scacchi-2",
-        "stop-gravina-via-tripoli-2",
-        "stop-gravina-via-bari-2"
-      ],
-      "noticeOnlyAt": {
-        "name": "Bar Casablanca",
-        "address": "Corso Giuseppe Di Vittorio 230, Gravina in Puglia",
-        "lat": 40.8276,
-        "lon": 16.42213
-      },
-      "noticeText": "Si comunica che il giorno 24/10/2026 su tutte le corse della LINEA MELFI verrà effettuata un'unica fermata presso il BAR CASABLANCA",
+      "noticeStops": [],
+      "noticeOnlyAt": null,
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-07-16",
       "extraurban": true,
