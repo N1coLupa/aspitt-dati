@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T11:55:52.370Z",
+  "generatedAt": "2026-11-04T19:44:19.060Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -62,6 +62,31 @@
       ],
       "categories": [
         "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "live-io-giuseppe-giorgi-ad-altamura-dal-7-al-29-novembre-la-perso",
+      "title": "“Io, Giuseppe Giorgi” ad Altamura: dal 7 al 29 novembre la personale dedicata a paesaggio, luce e memoria",
+      "url": "https://altamuralive.it/2026/11/04/io-giuseppe-giorgi-ad-altamura-dal-7-al-29-novembre-la-personale-dedicata-a-paesaggio-luce-e-memoria/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-11-04T16:08:41.000Z",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-29",
+      "startTime": null,
+      "venue": null,
+      "summary": "Dal 7 al 29 novembre, la galleria e spazio culturale Art Immagine ospita la personale del pittore, fra paesaggi e memoria. All'inaugurazione sarà presente l'artista.",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "arte",
+        "artista",
+        "comune di altamura",
+        "Giuseppe Giorgi"
+      ],
+      "categories": [
+        "cultura"
       ],
       "dated": true
     },
