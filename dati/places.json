@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T19:44:57.533Z",
+  "generatedAt": "2026-11-05T12:22:33.619Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -117,58 +117,6 @@
       "nearbyStops": []
     },
     {
-      "id": "cattedrale-santa-maria-assunta",
-      "name": "Cattedrale di Santa Maria Assunta",
-      "lat": 40.8274478,
-      "lon": 16.5528151,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410903032",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q277433",
-      "wikipedia": "it:Cattedrale di Santa Maria Assunta (Altamura)",
-      "description": "Federico II la volle nel 1232 come cappella palatina, e da allora è il centro di tutto: la città le è cresciuta intorno, non il contrario. Il terremoto del 1316 la rase quasi al suolo, gli Angioini la rialzarono e nel 1534 le girarono perfino la facciata, che oggi guarda dalla parte opposta rispetto alle origini. Dentro restano l'ambone cinquecentesco e il coro ligneo del 1543; fuori, le formelle del portale raccontano la vita di Cristo a chi ha la pazienza di leggerle dal basso.",
-      "highlight": true,
-      "duration": "45 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "L'ingresso è gratuito. Nel primo pomeriggio la luce entra dal rosone e attraversa la navata centrale.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 265
-        },
-        {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 301
-        },
-        {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille, 88",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2"
-          ],
-          "distance": 308
-        }
-      ]
-    },
-    {
       "id": "cava-dei-dinosauri-pontrelli",
       "icon": "archaeology",
       "categories": [
@@ -184,6 +132,70 @@
       "lat": 40.80625,
       "lon": 16.62465,
       "nearbyStops": []
+    },
+    {
+      "id": "centro-visite-lamalunga",
+      "icon": "museum",
+      "categories": [
+        "cultura",
+        "trekking"
+      ],
+      "osm": null,
+      "name": "Centro Visite Lamalunga",
+      "duration": "1 h",
+      "lat": 40.86512,
+      "lon": 16.58153,
+      "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
+      "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
+      "nearbyStops": []
+    },
+    {
+      "id": "chiesa-del-santissimo-rosario-di-pompei",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa del Santissimo Rosario di Pompei",
+      "duration": "15 min",
+      "lat": 40.820262,
+      "lon": 16.548525,
+      "description": "La chiesa del quartiere di via Pompei, nata negli anni Sessanta quando la città cresceva verso sud-ovest. I progettisti, l’ingegnere Angelo Baldassarre e l’architetto Domenico Di Bari, le diedero la forma di una barca a vela «che scivola nel mare della vita». Sulla facciata c’è un mosaico della Madonna con il Bambino degli anni Novanta.",
+      "tips": "Guardala di lato per capire la forma della vela; è un esempio dell’architettura sacra moderna della città.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-selva-fronte-117",
+          "name": "Via Selva (fronte 117)",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-ovest",
+            "pescariello-z-i"
+          ],
+          "distance": 259
+        },
+        {
+          "stopId": "stop-via-bresso-111",
+          "name": "Via Bresso 111",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-scuola-4"
+          ],
+          "distance": 347
+        },
+        {
+          "stopId": "stop-via-bresso-fronte-111",
+          "name": "Via Bresso (fronte 111)",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-1",
+            "linea-scuola-3"
+          ],
+          "distance": 348
+        }
+      ]
     },
     {
       "id": "chiesa-della-santissima-annunziata-dei-pastori",
@@ -226,6 +238,87 @@
             "linea-la-martella"
           ],
           "distance": 139
+        }
+      ]
+    },
+    {
+      "id": "chiesa-della-santissima-trinita",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa della Santissima Trinità",
+      "duration": "15 min",
+      "lat": 40.82617,
+      "lon": 16.55624,
+      "description": "Gli altamurani la chiamano Trinità Vecchia, per non confonderla con la più recente chiesa della Trasfigurazione. Risale probabilmente al Quattrocento: il campanile è del Settecento, mentre l’interno conserva l’impianto del Cinquecento e alcune tele di valore. Accanto sorgeva l’ospedale dei pellegrini, che arrivando baciavano la cosiddetta croce del pellegrino.",
+      "tips": "È a pochi passi da Palazzo Baldassarre: si unisce bene alla visita del museo dell’Uomo di Altamura.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 271
+        },
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 280
+        },
+        {
+          "stopId": "stop-via-gravina-ang-via-del-melo",
+          "name": "Via Gravina ang. Via del Melo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 284
+        }
+      ]
+    },
+    {
+      "id": "chiesa-di-san-biagio",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di San Biagio",
+      "duration": "15 min",
+      "lat": 40.82826,
+      "lon": 16.55364,
+      "description": "Sta sul corso, accanto a San Nicola dei Greci, e nasce nel 1628 sopra un antico ipogeo, dove prima si riuniva il seggio dei nobili. Fuori la riconosci subito dall’affresco di San Cristoforo con Gesù Bambino sulle spalle, alto circa cinque metri; dentro, una pianta quadrata con la volta a stella. Per secoli è stata la chiesa della confraternita dei calzolai di San Crispino.",
+      "tips": "Fermati sui gradini: si racconta che da bambino ci suonasse lo zufolo Saverio Mercadante, il compositore a cui è dedicato il teatro.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-unita-d-italia-8",
+          "name": "Piazza Unità D’Italia 8",
+          "lines": [
+            "ospedale-2",
+            "navette-hub"
+          ],
+          "distance": 154
+        },
+        {
+          "stopId": "stop-via-bari-14",
+          "name": "Via Bari 14",
+          "lines": [
+            "navette-hub"
+          ],
+          "distance": 246
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 336
         }
       ]
     },
@@ -494,6 +587,50 @@
       ]
     },
     {
+      "id": "chiesa-di-sant-antonio",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Sant’Antonio",
+      "duration": "20 min",
+      "lat": 40.82324,
+      "lon": 16.55672,
+      "description": "Un tempo era la chiesa dell’Immacolata, poi è diventata il cuore dell’orfanotrofio antoniano voluto da padre Annibale Maria di Francia, oggi santo. Qui riposa Mélanie Calvat, la veggente di La Salette, morta ad Altamura nel 1904: fu proprio padre Annibale, nel dicembre 1918, a far trasferire il suo corpo dal cimitero in questa chiesa.",
+      "tips": "Accanto c’è il convento delle Figlie del Divino Zelo. La chiesa è appena fuori dal centro storico, verso piazza Aldo Moro.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-gravina-ang-via-del-melo",
+          "name": "Via Gravina ang. Via del Melo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 85
+        },
+        {
+          "stopId": "stop-viale-martiri-83",
+          "name": "Viale Martiri, 83",
+          "lines": [
+            "ospedale-1",
+            "navette-hub",
+            "linea-scuola-2",
+            "linea-scuola-3",
+            "linea-la-martella"
+          ],
+          "distance": 86
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 250
+        }
+      ]
+    },
+    {
       "id": "chiesa-di-santa-croce",
       "icon": "church",
       "categories": [
@@ -540,6 +677,54 @@
       ]
     },
     {
+      "id": "chiesa-di-santa-maria-della-consolazione",
+      "icon": "church",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Chiesa di Santa Maria della Consolazione",
+      "duration": "20 min",
+      "lat": 40.82427,
+      "lon": 16.551404,
+      "description": "Una chiesa del Novecento a sud del centro storico, che ingloba la più antica chiesa di San Vito del 1618. Dentro custodisce opere che non ti aspetti: la statua in marmo di San Vito scolpita a Napoli nel 1620 da Michelangelo Naccherino, una Madonna con il Bambino di Francesco Curia della fine del Cinquecento e un San Matteo e l’angelo del veneziano Sebastiano Ricci.",
+      "tips": "Entra fuori dagli orari delle funzioni e cerca la tela di Sebastiano Ricci: è il pezzo più prezioso.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
+          ],
+          "distance": 49
+        },
+        {
+          "stopId": "stop-piazza-zanardelli-7",
+          "name": "Piazza Zanardelli, 7",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-la-martella"
+          ],
+          "distance": 53
+        },
+        {
+          "stopId": "stop-via-quintino-sella-29",
+          "name": "Via Quintino Sella, 29",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 92
+        }
+      ]
+    },
+    {
       "id": "chiesa-di-santa-teresa",
       "icon": "church",
       "categories": [
@@ -582,6 +767,50 @@
             "linea-la-martella"
           ],
           "distance": 252
+        }
+      ]
+    },
+    {
+      "id": "cimitero-ottocentesco",
+      "icon": "cemetery",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Cimitero ottocentesco",
+      "duration": "30 min",
+      "lat": 40.825706,
+      "lon": 16.545047,
+      "description": "Il «cimitero vecchio», oggi inglobato nel cimitero cittadino a ovest del centro. Nasce dalle leggi dell’Ottocento che vietarono di seppellire i morti nelle chiese, e la sua costruzione si trascinò per decenni tra fondi che mancavano e burocrazia. Lo stile si ispira ad Andrea Palladio, e l’antico ingresso, murato nel primo Novecento, è ancora visibile nel muro esterno.",
+      "tips": "Cerca l’ingresso murato lungo il muro di cinta. Dentro, rispetta gli orari e il silenzio del cimitero.",
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-bresso-fronte-5",
+          "name": "Via Bresso (fronte 5)",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest",
+            "linea-scuola-2",
+            "linea-scuola-3"
+          ],
+          "distance": 75
+        },
+        {
+          "stopId": "stop-via-bresso-5",
+          "name": "Via Bresso 5",
+          "lines": [
+            "ospedale-domenica-e-festivi"
+          ],
+          "distance": 84
+        },
+        {
+          "stopId": "stop-cimitero-presso-ingresso-monumentale",
+          "name": "Cimitero presso Ingresso Monumentale",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 107
         }
       ]
     },
@@ -724,722 +953,6 @@
       ]
     },
     {
-      "id": "grotta-di-lamalunga",
-      "name": "Grotta di Lamalunga",
-      "lat": 40.8718519,
-      "lon": 16.5874913,
-      "categories": [
-        "cultura",
-        "trekking"
-      ],
-      "icon": "cave",
-      "osm": "node/8042529354",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q55369216",
-      "wikipedia": null,
-      "description": "Nel 1993 due speleologi trovarono qui lo scheletro più completo di Neanderthal mai scoperto in Europa, saldato alle concrezioni della grotta da 130.000 anni. L'Uomo di Altamura è ancora là dentro, dove è rimasto: la grotta non si visita, ma il vallone attorno sì.",
-      "highlight": true,
-      "duration": "30 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Si arriva al Centro Visite Lamalunga, che racconta la scoperta e organizza le uscite nel vallone.",
-      "nearbyStops": []
-    },
-    {
-      "id": "museo-archeologico-nazionale",
-      "icon": "museum",
-      "categories": [
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Museo Archeologico Nazionale di Altamura",
-      "highlight": true,
-      "duration": "1 h 30",
-      "description": "Racconta la Murgia da quando era fondale marino a quando era terra di pastori: corredi peuceti, ceramiche, armi, e il racconto dell'Uomo di Altamura per chi nella grotta di Lamalunga non potrà mai entrare. È il posto dove capisci che qui sotto ci sono 130.000 anni di storia.",
-      "tips": "Un'ora e mezza basta per la visita completa; il biglietto costa poco e il primo ingresso del mattino è il più tranquillo.",
-      "lat": 40.82749,
-      "lon": 16.5586,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-cassano-ang-via-santeramo",
-          "name": "Via Cassano ang. Via Santeramo",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 52
-        },
-        {
-          "stopId": "stop-via-santeramo-ang-via-cassano",
-          "name": "Via Santeramo ang. Via Cassano",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 53
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 127
-        }
-      ]
-    },
-    {
-      "id": "palazzo-baldassarre",
-      "icon": "museum",
-      "categories": [
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Palazzo Baldassarre",
-      "highlight": true,
-      "duration": "1 h",
-      "description": "Un palazzo del centro storico trasformato nel racconto multimediale dell'Uomo di Altamura: proiezioni, ricostruzioni e la voce di chi quello scheletro l'ha studiato per trent'anni. È la tappa che rende comprensibile tutto il resto, dalla grotta alle vetrine del museo.",
-      "tips": "Fa parte della Rete Museale dell'Uomo di Altamura: conviene abbinarlo al Museo Archeologico nello stesso pomeriggio.",
-      "lat": 40.82626,
-      "lon": 16.5556,
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 279
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 279
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 290
-        }
-      ]
-    },
-    {
-      "id": "parco-nazionale-dell-alta-murgia",
-      "name": "Parco Nazionale dell'Alta Murgia",
-      "lat": 40.8745,
-      "lon": 16.58,
-      "categories": [
-        "trekking"
-      ],
-      "icon": "nature",
-      "osm": "relation/9763706",
-      "address": null,
-      "website": "https://www.parcoaltamurgia.it/",
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q680313",
-      "wikipedia": "fr:Parc national Alta Murgia",
-      "description": "Sessantamila ettari di steppa, muretti a secco, jazzi e masserie: l'ultimo grande pascolo d'Europa comincia dove finiscono le case di Altamura. In primavera è un tappeto di fiori, d'estate è giallo e durissimo, e in ogni stagione è il posto dove si capisce perché qui si fa quel pane.",
-      "highlight": true,
-      "duration": "Mezza giornata",
-      "difficulty": null,
-      "experience": null,
-      "tips": "I sentieri partono dalle strade per il Pulo e per Lamalunga: acqua e cappello non sono un consiglio, sono necessari.",
-      "nearbyStops": []
-    },
-    {
-      "id": "porta-bari",
-      "name": "Porta Bari",
-      "lat": 40.8294872,
-      "lon": 16.5537891,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "monument",
-      "osm": "way/410912237",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q68456596",
-      "wikipedia": "it:Porta Bari (Altamura)",
-      "description": "L'ingresso storico alla città dal lato di Bari, incastonato in Palazzo De Angelis-Viti: passato l'arco comincia il corso e finisce la città moderna. È il punto in cui gli altamurani si danno appuntamento da sempre.",
-      "highlight": true,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "È il migliore punto di partenza per il giro del centro storico, con le fermate degli autobus a pochi metri.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 43
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 116
-        },
-        {
-          "stopId": "stop-via-iv-novembre-fronte-1",
-          "name": "Via IV Novembre (fronte 1)",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 287
-        }
-      ]
-    },
-    {
-      "id": "pulo-di-altamura",
-      "icon": "nature",
-      "categories": [
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Pulo di Altamura",
-      "highlight": true,
-      "duration": "2 h",
-      "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
-      "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
-      "lat": 40.89015,
-      "lon": 16.56795,
-      "nearbyStops": []
-    },
-    {
-      "id": "arco-basso",
-      "name": "Arco Basso",
-      "lat": 40.8256889,
-      "lon": 16.5539534,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "landmark",
-      "osm": "node/13201278789",
-      "address": "Arco Angelo Milano",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Uno dei passaggi più stretti e bassi del centro storico: ci si passa chinando la testa e si sbuca in un claustro. È il dettaglio che spiega meglio di mille parole com'era fatta la città dentro le mura.",
-      "highlight": false,
-      "duration": "10 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Sta lungo la passeggiata dei claustri: tienilo d'occhio o rischi di passarci davanti senza vederlo.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 171
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 179
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 180
-        }
-      ]
-    },
-    {
-      "id": "centro-visite-lamalunga",
-      "icon": "museum",
-      "categories": [
-        "cultura",
-        "trekking"
-      ],
-      "osm": null,
-      "name": "Centro Visite Lamalunga",
-      "duration": "1 h",
-      "lat": 40.86512,
-      "lon": 16.58153,
-      "description": "Il presidio sulla Murgia a pochi passi dalla grotta dove nel 1993 fu trovato l'Uomo di Altamura. Qui si vedono i calchi, si capisce come si è conservato quello scheletro fra le concrezioni e si prenotano le uscite guidate nel vallone.",
-      "tips": "È fuori città, in mezzo alla campagna: conviene telefonare prima e arrivarci in auto o con un'escursione organizzata.",
-      "nearbyStops": []
-    },
-    {
-      "id": "chiesa-del-santissimo-rosario-di-pompei",
-      "name": "Chiesa del Santissimo Rosario di Pompei",
-      "lat": 40.820262,
-      "lon": 16.548525,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904772",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q85860685",
-      "wikipedia": "it:Chiesa del Santissimo Rosario di Pompei (Altamura)",
-      "description": "La chiesa del quartiere di via Pompei, nata negli anni Sessanta quando la città cresceva verso sud-ovest. I progettisti, l’ingegnere Angelo Baldassarre e l’architetto Domenico Di Bari, le diedero la forma di una barca a vela «che scivola nel mare della vita». Sulla facciata c’è un mosaico della Madonna con il Bambino degli anni Novanta.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Guardala di lato per capire la forma della vela; è un esempio dell’architettura sacra moderna della città.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-selva-fronte-117",
-          "name": "Via Selva (fronte 117)",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-ovest",
-            "pescariello-z-i"
-          ],
-          "distance": 259
-        },
-        {
-          "stopId": "stop-via-bresso-111",
-          "name": "Via Bresso 111",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-4"
-          ],
-          "distance": 347
-        },
-        {
-          "stopId": "stop-via-bresso-fronte-111",
-          "name": "Via Bresso (fronte 111)",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-1",
-            "linea-scuola-3"
-          ],
-          "distance": 348
-        }
-      ]
-    },
-    {
-      "id": "chiesa-della-santissima-trinita",
-      "name": "Chiesa della Santissima Trinità",
-      "lat": 40.82617,
-      "lon": 16.55624,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410903653",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q110335666",
-      "wikipedia": null,
-      "description": "Gli altamurani la chiamano Trinità Vecchia, per non confonderla con la più recente chiesa della Trasfigurazione. Risale probabilmente al Quattrocento: il campanile è del Settecento, mentre l’interno conserva l’impianto del Cinquecento e alcune tele di valore. Accanto sorgeva l’ospedale dei pellegrini, che arrivando baciavano la cosiddetta croce del pellegrino.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "È a pochi passi da Palazzo Baldassarre: si unisce bene alla visita del museo dell’Uomo di Altamura.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 271
-        },
-        {
-          "stopId": "stop-via-cassano-ang-via-santeramo",
-          "name": "Via Cassano ang. Via Santeramo",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 280
-        },
-        {
-          "stopId": "stop-via-gravina-ang-via-del-melo",
-          "name": "Via Gravina ang. Via del Melo",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 284
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-san-biagio",
-      "name": "Chiesa di San Biagio",
-      "lat": 40.82826,
-      "lon": 16.55364,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410918724",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q106245801",
-      "wikipedia": null,
-      "description": "Sta sul corso, accanto a San Nicola dei Greci, e nasce nel 1628 sopra un antico ipogeo, dove prima si riuniva il seggio dei nobili. Fuori la riconosci subito dall’affresco di San Cristoforo con Gesù Bambino sulle spalle, alto circa cinque metri; dentro, una pianta quadrata con la volta a stella. Per secoli è stata la chiesa della confraternita dei calzolai di San Crispino.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Fermati sui gradini: si racconta che da bambino ci suonasse lo zufolo Saverio Mercadante, il compositore a cui è dedicato il teatro.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 154
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 246
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 336
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-san-nicola-dei-greci",
-      "name": "Chiesa di San Nicola dei Greci",
-      "lat": 40.8280825,
-      "lon": 16.5537672,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410903036",
-      "address": "Corso Federico II di Svevia",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q1255912",
-      "wikipedia": "it:Chiesa di San Nicola dei Greci",
-      "description": "Eretta alla fine del Duecento, è la chiesa della comunità greco-ortodossa che visse ad Altamura fino al Seicento: due riti, due lingue e due calendari a poche decine di metri dalla Cattedrale. La facciata romanica con il portale scolpito è rimasta quella, incastrata fra le case del centro storico.",
-      "highlight": false,
-      "duration": "20 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Si trova sul corso, a pochi passi da Porta Bari: è la sosta naturale prima di infilarsi nei claustri.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 169
-        },
-        {
-          "stopId": "stop-via-bari-14",
-          "name": "Via Bari 14",
-          "lines": [
-            "navette-hub"
-          ],
-          "distance": 262
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 327
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-sant-antonio",
-      "name": "Chiesa di Sant’Antonio",
-      "lat": 40.82324,
-      "lon": 16.55672,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410916419",
-      "address": "Via Annibale di Francia 25",
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q113017415",
-      "wikipedia": "it:Chiesa di Sant'Antonio (Altamura)",
-      "description": "Un tempo era la chiesa dell’Immacolata, poi è diventata il cuore dell’orfanotrofio antoniano voluto da padre Annibale Maria di Francia, oggi santo. Qui riposa Mélanie Calvat, la veggente di La Salette, morta ad Altamura nel 1904: fu proprio padre Annibale, nel dicembre 1918, a far trasferire il suo corpo dal cimitero in questa chiesa.",
-      "highlight": false,
-      "duration": "20 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Accanto c’è il convento delle Figlie del Divino Zelo. La chiesa è appena fuori dal centro storico, verso piazza Aldo Moro.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-gravina-ang-via-del-melo",
-          "name": "Via Gravina ang. Via del Melo",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 85
-        },
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri, 83",
-          "lines": [
-            "ospedale-1",
-            "navette-hub",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-la-martella"
-          ],
-          "distance": 86
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 250
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-santa-maria-della-consolazione",
-      "icon": "church",
-      "categories": [
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Chiesa di Santa Maria della Consolazione",
-      "duration": "20 min",
-      "lat": 40.82427,
-      "lon": 16.551404,
-      "description": "Una chiesa del Novecento a sud del centro storico, che ingloba la più antica chiesa di San Vito del 1618. Dentro custodisce opere che non ti aspetti: la statua in marmo di San Vito scolpita a Napoli nel 1620 da Michelangelo Naccherino, una Madonna con il Bambino di Francesco Curia della fine del Cinquecento e un San Matteo e l’angelo del veneziano Sebastiano Ricci.",
-      "tips": "Entra fuori dagli orari delle funzioni e cerca la tela di Sebastiano Ricci: è il pezzo più prezioso.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-zanardelli",
-          "name": "Piazza Zanardelli",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-jesce",
-            "linea-la-martella"
-          ],
-          "distance": 49
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 53
-        },
-        {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 92
-        }
-      ]
-    },
-    {
-      "id": "chiesa-san-domenico",
-      "name": "Chiesa e convento di San Domenico",
-      "lat": 40.8238925,
-      "lon": 16.553585,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410903035",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q1255648",
-      "wikipedia": null,
-      "description": "Il complesso cresce fra Cinquecento e Ottocento e conserva altari in marmo e dipinti del Settecento, quando i conventi altamurani erano anche scuole e biblioteche. È uno di quegli interni che non ti aspetti dietro una facciata sobria.",
-      "highlight": false,
-      "duration": "20 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Gli orari seguono le funzioni: la mattina presto e il tardo pomeriggio sono i momenti buoni.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 34
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 38
-        },
-        {
-          "stopId": "stop-viale-martiri-6",
-          "name": "Viale Martiri, 6",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-3"
-          ],
-          "distance": 38
-        }
-      ]
-    },
-    {
-      "id": "chiesa-di-santa-chiara",
-      "name": "Chiesa e monastero di Santa Chiara",
-      "lat": 40.8272128,
-      "lon": 16.5543994,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "church",
-      "osm": "way/410904719",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q1256145",
-      "wikipedia": "it:Chiesa di Santa Chiara (Altamura)",
-      "description": "Chiesa e monastero fra Seicento e Settecento, ancora abitati da una comunità di clausura: dietro le grate la vita scorre con i tempi di quattro secoli fa, a due passi dal traffico del centro. La chiesa custodisce l'apparato decorativo barocco tipico degli istituti femminili altamurani.",
-      "highlight": false,
-      "duration": "20 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Essendo un monastero di clausura, la visita si limita alla chiesa e va rispettato il silenzio.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-unita-d-italia-8",
-          "name": "Piazza Unità D’Italia 8",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 260
-        },
-        {
-          "stopId": "stop-via-santeramo-119",
-          "name": "Via Santeramo 119",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 301
-        },
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 345
-        }
-      ]
-    },
-    {
-      "id": "cimitero-ottocentesco",
-      "icon": "cemetery",
-      "categories": [
-        "cultura"
-      ],
-      "osm": null,
-      "name": "Cimitero ottocentesco",
-      "duration": "30 min",
-      "lat": 40.825706,
-      "lon": 16.545047,
-      "description": "Il «cimitero vecchio», oggi inglobato nel cimitero cittadino a ovest del centro. Nasce dalle leggi dell’Ottocento che vietarono di seppellire i morti nelle chiese, e la sua costruzione si trascinò per decenni tra fondi che mancavano e burocrazia. Lo stile si ispira ad Andrea Palladio, e l’antico ingresso, murato nel primo Novecento, è ancora visibile nel muro esterno.",
-      "tips": "Cerca l’ingresso murato lungo il muro di cinta. Dentro, rispetta gli orari e il silenzio del cimitero.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-bresso-fronte-5",
-          "name": "Via Bresso (fronte 5)",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "linea-scuola-3"
-          ],
-          "distance": 75
-        },
-        {
-          "stopId": "stop-via-bresso-5",
-          "name": "Via Bresso 5",
-          "lines": [
-            "ospedale-domenica-e-festivi"
-          ],
-          "distance": 84
-        },
-        {
-          "stopId": "stop-cimitero-presso-ingresso-monumentale",
-          "name": "Cimitero presso Ingresso Monumentale",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 107
-        }
-      ]
-    },
-    {
       "id": "epitaffio-di-altamura",
       "icon": "monument",
       "categories": [
@@ -1492,81 +1005,18 @@
       ]
     },
     {
-      "id": "complesso-ipogeo-di-san-michele-delle-grotte",
-      "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8329482,
-      "lon": 16.5510709,
-      "categories": [
-        "cultura"
-      ],
-      "icon": "archaeology",
-      "osm": "way/1547047721",
-      "address": null,
-      "website": "https://www.abmcaltamura.it/ipogeo/",
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Chiesa scavata nella roccia appena fuori dall'antico giro delle mura, un tempo chiamata Sant'Angelo di Larissa: una navata sotterranea con affreschi, fredda d'estate e silenziosa sempre. È la Altamura rupestre, quella che sta sotto il livello della strada.",
-      "highlight": false,
-      "duration": "30 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-iv-novembre-fronte-74",
-          "name": "Via IV Novembre (fronte 74)",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 336
-        },
-        {
-          "stopId": "stop-via-parisi-66",
-          "name": "Via Parisi 66",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-ovest",
-            "pescariello-z-i"
-          ],
-          "distance": 361
-        },
-        {
-          "stopId": "stop-via-parisi-fronte-66",
-          "name": "Via Parisi (fronte 66)",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "linea-jesce"
-          ],
-          "distance": 372
-        }
-      ]
-    },
-    {
       "id": "masseria-jesce",
-      "name": "Masseria Jesce",
-      "lat": 40.75109,
-      "lon": 16.6467,
+      "icon": "archaeology",
       "categories": [
         "cultura",
         "trekking"
       ],
-      "icon": "archaeology",
-      "osm": "node/1823005961",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Una masseria fortificata sulla provinciale per Laterza, costruita sul tracciato della via Appia, poi riusato come tratturo fra Melfi e Castellaneta. Accanto c’è una cripta semi-ipogea con due cicli di affreschi, i più antichi della prima metà del Trecento; intorno, grotte usate come abitazioni, una necropoli del IV–III secolo a.C. e un villaggio neolitico.",
-      "highlight": false,
+      "osm": null,
+      "name": "Masseria Jesce",
       "duration": "1 h",
-      "difficulty": null,
-      "experience": null,
+      "lat": 40.75109,
+      "lon": 16.6467,
+      "description": "Una masseria fortificata sulla provinciale per Laterza, costruita sul tracciato della via Appia, poi riusato come tratturo fra Melfi e Castellaneta. Accanto c’è una cripta semi-ipogea con due cicli di affreschi, i più antichi della prima metà del Trecento; intorno, grotte usate come abitazioni, una necropoli del IV–III secolo a.C. e un villaggio neolitico.",
       "tips": "È una dozzina di chilometri a sud-est del centro. La cripta si apre in occasioni particolari, come le giornate del FAI: controlla prima di partire.",
       "nearbyStops": []
     },
@@ -1710,27 +1160,59 @@
     },
     {
       "id": "murgia-sgolgore",
-      "name": "Murgia Sgolgore",
-      "lat": 40.8395,
-      "lon": 16.67752,
+      "icon": "peak",
       "categories": [
         "trekking"
       ],
-      "icon": "peak",
-      "osm": "node/5962117875",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q3867396",
-      "wikipedia": "it:Murgia Sgolgore",
-      "description": "Un’altura di 523 metri a est della città, verso i confini con Santeramo e Cassano, dentro il Parco nazionale dell’Alta Murgia. È terra di masserie, alcune ancora attive e molte abbandonate, fra cui Masseria Viglione sul vecchio tracciato dell’Appia, e ospita il Bosco Botanico Lorenzo Giorgio, un’oasi privata di conifere, latifoglie e macchia mediterranea.",
-      "highlight": false,
+      "osm": null,
+      "name": "Murgia Sgolgore",
       "duration": "mezza giornata",
-      "difficulty": null,
-      "experience": null,
+      "lat": 40.8395,
+      "lon": 16.67752,
+      "description": "Un’altura di 523 metri a est della città, verso i confini con Santeramo e Cassano, dentro il Parco nazionale dell’Alta Murgia. È terra di masserie, alcune ancora attive e molte abbandonate, fra cui Masseria Viglione sul vecchio tracciato dell’Appia, e ospita il Bosco Botanico Lorenzo Giorgio, un’oasi privata di conifere, latifoglie e macchia mediterranea.",
       "tips": "Si raggiunge dalla vecchia statale 171 per Santeramo. Servono l’auto, acqua e scarpe da sterrato.",
       "nearbyStops": []
+    },
+    {
+      "id": "museo-archeologico-nazionale",
+      "icon": "museum",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Museo Archeologico Nazionale di Altamura",
+      "highlight": true,
+      "duration": "1 h 30",
+      "description": "Racconta la Murgia da quando era fondale marino a quando era terra di pastori: corredi peuceti, ceramiche, armi, e il racconto dell'Uomo di Altamura per chi nella grotta di Lamalunga non potrà mai entrare. È il posto dove capisci che qui sotto ci sono 130.000 anni di storia.",
+      "tips": "Un'ora e mezza basta per la visita completa; il biglietto costa poco e il primo ingresso del mattino è il più tranquillo.",
+      "lat": 40.82749,
+      "lon": 16.5586,
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-cassano-ang-via-santeramo",
+          "name": "Via Cassano ang. Via Santeramo",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 52
+        },
+        {
+          "stopId": "stop-via-santeramo-ang-via-cassano",
+          "name": "Via Santeramo ang. Via Cassano",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 53
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 127
+        }
+      ]
     },
     {
       "id": "museo-del-pane",
@@ -1862,6 +1344,48 @@
             "linea-la-martella"
           ],
           "distance": 254
+        }
+      ]
+    },
+    {
+      "id": "palazzo-baldassarre",
+      "icon": "museum",
+      "categories": [
+        "cultura"
+      ],
+      "osm": null,
+      "name": "Palazzo Baldassarre",
+      "highlight": true,
+      "duration": "1 h",
+      "description": "Un palazzo del centro storico trasformato nel racconto multimediale dell'Uomo di Altamura: proiezioni, ricostruzioni e la voce di chi quello scheletro l'ha studiato per trent'anni. È la tappa che rende comprensibile tutto il resto, dalla grotta alle vetrine del museo.",
+      "tips": "Fa parte della Rete Museale dell'Uomo di Altamura: conviene abbinarlo al Museo Archeologico nello stesso pomeriggio.",
+      "lat": 40.82626,
+      "lon": 16.5556,
+      "nearbyStops": [
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 279
+        },
+        {
+          "stopId": "stop-viale-martiri-6",
+          "name": "Viale Martiri, 6",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-3"
+          ],
+          "distance": 279
+        },
+        {
+          "stopId": "stop-via-santeramo-119",
+          "name": "Via Santeramo 119",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 290
         }
       ]
     },
@@ -2086,61 +1610,6 @@
       ]
     },
     {
-      "id": "parco-degli-ulivi",
-      "name": "Parco degli Ulivi",
-      "lat": 40.8339885,
-      "lon": 16.554116,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/272458241",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Il verde più vicino al centro: ulivi, panchine e vialetti dove la città va a prendere aria appena il sole cala. Non è una meta turistica, è il posto dove gli altamurani portano i bambini e i cani.",
-      "highlight": false,
-      "duration": "30 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "A metà pomeriggio è pieno di gente del quartiere; la mattina è il posto più tranquillo della zona.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-iv-novembre-fronte-74",
-          "name": "Via IV Novembre (fronte 74)",
-          "lines": [
-            "ospedale-2"
-          ],
-          "distance": 58
-        },
-        {
-          "stopId": "stop-via-mura-megalitiche-ang-via-iv-novembre",
-          "name": "Via Mura Megalitiche ang. Via IV Novembre",
-          "lines": [
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-scuola-4",
-            "pescariello-z-i"
-          ],
-          "distance": 160
-        },
-        {
-          "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
-          "name": "Via IV Novembre (ang. Via II Giugno)",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "pescariello-z-i"
-          ],
-          "distance": 264
-        }
-      ]
-    },
-    {
       "id": "parco-scuola-tommaso-fiore",
       "icon": "park",
       "categories": [
@@ -2190,347 +1659,20 @@
       ]
     },
     {
-      "id": "parco-san-giuliano",
-      "name": "Parco San Giuliano",
-      "lat": 40.8365692,
-      "lon": 16.5693879,
+      "id": "parco-nazionale-dell-alta-murgia",
+      "icon": "nature",
       "categories": [
-        "parchi"
+        "trekking"
       ],
-      "icon": "park",
-      "osm": "way/512060131",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Il polmone verde a est della città, con spazi ampi per correre e giocare, lontano dal traffico del centro. È la meta di chi vuole camminare un'ora senza incrociare una macchina.",
-      "highlight": false,
-      "duration": "45 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Ci passano le linee che servono la zona dell'ospedale e dell'hub: comodo anche senza auto.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-madrid",
-          "name": "Via Madrid",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 79
-        },
-        {
-          "stopId": "stop-via-madrid-66",
-          "name": "Via Madrid 66",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-3"
-          ],
-          "distance": 97
-        },
-        {
-          "stopId": "stop-via-londra-23",
-          "name": "Via Londra, 23",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 325
-        }
-      ]
-    },
-    {
-      "id": "piazza-aldo-moro",
-      "name": "Piazza Aldo Moro",
-      "lat": 40.8230705,
-      "lon": 16.5600482,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/234593757",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Grande spazio aperto a est del centro, con alberi e panchine, punto di riferimento per il quartiere e per chi aspetta l'autobus.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Da qui partono le linee Scuola: la mattina presto è il posto più affollato della città.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-viale-martiri-102",
-          "name": "Viale Martiri 102",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "linea-la-martella"
-          ],
-          "distance": 85
-        },
-        {
-          "stopId": "stop-viale-martiri-129",
-          "name": "Viale Martiri 129",
-          "lines": [
-            "ospedale-1",
-            "linea-scuola-2",
-            "linea-la-martella"
-          ],
-          "distance": 96
-        },
-        {
-          "stopId": "stop-viale-martiri-83",
-          "name": "Viale Martiri, 83",
-          "lines": [
-            "ospedale-1",
-            "navette-hub",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-la-martella"
-          ],
-          "distance": 232
-        }
-      ]
-    },
-    {
-      "id": "piazza-saverio-mercadante",
-      "name": "Piazza Mercadante",
-      "lat": 40.8250846,
-      "lon": 16.55089,
-      "categories": [
-        "parchi",
-        "cultura"
-      ],
-      "icon": "park",
-      "osm": "way/483653502",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "La piazza davanti al teatro, dedicata al compositore che la città ha dato al mondo. Nelle sere di spettacolo si riempie mezz'ora prima del sipario.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "È a due passi da Piazza della Resistenza: le due si visitano insieme.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 107
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 126
-        },
-        {
-          "stopId": "stop-piazza-zanardelli",
-          "name": "Piazza Zanardelli",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-jesce",
-            "linea-la-martella"
-          ],
-          "distance": 128
-        }
-      ]
-    },
-    {
-      "id": "piazza-santa-teresa",
-      "name": "Piazza Santa Teresa",
-      "lat": 40.8290568,
-      "lon": 16.5510596,
-      "categories": [
-        "parchi",
-        "cultura"
-      ],
-      "icon": "park",
-      "osm": "way/1386093320",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Piazza raccolta davanti all'ex convento dei Carmelitani Scalzi, che oggi ospita il Museo Etnografico. Una di quelle piazze dove ci si siede senza motivo, all'ombra.",
-      "highlight": false,
-      "duration": "15 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Si abbina in dieci minuti alla visita del Museo Etnografico, che si affaccia proprio qui.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-via-dei-mille-fronte-40",
-          "name": "Via Dei Mille fronte 40",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 223
-        },
-        {
-          "stopId": "stop-via-dei-mille-40",
-          "name": "Via Dei Mille 40",
-          "lines": [
-            "navette-hub",
-            "pescariello-z-i",
-            "linea-jesce",
-            "linea-la-martella"
-          ],
-          "distance": 231
-        },
-        {
-          "stopId": "stop-via-gravina-7",
-          "name": "Via Gravina 7",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-la-martella"
-          ],
-          "distance": 254
-        }
-      ]
-    },
-    {
-      "id": "piazza-stazione",
-      "name": "Piazza Stazione",
-      "lat": 40.8369235,
-      "lon": 16.5518645,
-      "categories": [
-        "parchi"
-      ],
-      "icon": "park",
-      "osm": "way/234805688",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "Il piazzale davanti alla stazione delle Ferrovie Appulo Lucane, porta d'ingresso di chi arriva da Bari o da Matera. Il primo pezzo di Altamura che vedono i visitatori.",
-      "highlight": false,
-      "duration": "10 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Qui si incrociano quasi tutte le linee urbane: è il posto giusto per cambiare autobus.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
-          "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "linea-ovest",
-            "navette-hub",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-scuola-3",
-            "linea-scuola-4",
-            "pescariello-z-i",
-            "linea-jesce"
-          ],
-          "distance": 57
-        },
-        {
-          "stopId": "stop-via-iv-novembre-ang-via-ii-giugno",
-          "name": "Via IV Novembre (ang. Via II Giugno)",
-          "lines": [
-            "ospedale-2",
-            "ospedale-domenica-e-festivi",
-            "pescariello-z-i"
-          ],
-          "distance": 194
-        },
-        {
-          "stopId": "stop-via-iv-novembre-fronte-via-ii-giugno",
-          "name": "Via IV Novembre (fronte Via II Giugno)",
-          "lines": [
-            "ospedale-2",
-            "navette-hub"
-          ],
-          "distance": 197
-        }
-      ]
-    },
-    {
-      "id": "piazza-giuseppe-zanardelli",
-      "name": "Piazza Zanardelli",
-      "lat": 40.8240969,
-      "lon": 16.5519898,
-      "categories": [
-        "parchi",
-        "cultura"
-      ],
-      "icon": "park",
-      "osm": "way/234553214",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": null,
-      "wikipedia": null,
-      "description": "La piazza dove la città si ferma: caffè, panchine, l'ABMC sotto i portici e il passeggio della sera. È anche uno dei nodi degli autobus urbani, quindi prima o poi ci passi comunque.",
-      "highlight": false,
-      "duration": "20 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Da qui parte il corso verso la Cattedrale: è il punto d'inizio naturale di qualsiasi giro.",
-      "nearbyStops": [
-        {
-          "stopId": "stop-piazza-zanardelli",
-          "name": "Piazza Zanardelli",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-jesce",
-            "linea-la-martella"
-          ],
-          "distance": 21
-        },
-        {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-la-martella"
-          ],
-          "distance": 29
-        },
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 126
-        }
-      ]
+      "osm": null,
+      "name": "Parco Nazionale dell'Alta Murgia",
+      "highlight": true,
+      "duration": "Mezza giornata",
+      "description": "Sessantamila ettari di steppa, muretti a secco, jazzi e masserie: l'ultimo grande pascolo d'Europa comincia dove finiscono le case di Altamura. In primavera è un tappeto di fiori, d'estate è giallo e durissimo, e in ogni stagione è il posto dove si capisce perché qui si fa quel pane.",
+      "tips": "I sentieri partono dalle strade per il Pulo e per Lamalunga: acqua e cappello non sono un consiglio, sono necessari.",
+      "lat": 40.8745,
+      "lon": 16.58,
+      "nearbyStops": []
     },
     {
       "id": "porta-dei-martiri",
@@ -2623,27 +1765,19 @@
       ]
     },
     {
-      "id": "santuario-madonna-del-buon-cammino",
-      "name": "Santuario di Maria Santissima del Buoncammino",
-      "lat": 40.8489339,
-      "lon": 16.5658981,
+      "id": "pulo-di-altamura",
+      "icon": "nature",
       "categories": [
-        "cultura"
+        "trekking"
       ],
-      "icon": "church",
-      "osm": "way/410919808",
-      "address": null,
-      "website": null,
-      "phone": null,
-      "openingHours": null,
-      "wikidata": "Q1161476",
-      "wikipedia": null,
-      "description": "Sta fuori dall'abitato, sulla strada che sale verso la Murgia, ed è la chiesa che gli altamurani sentono più loro: la Madonna del Buoncammino è compatrona della città. La domenica dopo il 15 agosto qui arriva la Cavalcata, con i cavalli bardati a festa.",
-      "highlight": false,
-      "duration": "30 min",
-      "difficulty": null,
-      "experience": null,
-      "tips": "Ci si arriva in una passeggiata dal centro: la strada è in leggera salita e il tramonto da qui è quello buono.",
+      "osm": null,
+      "name": "Pulo di Altamura",
+      "highlight": true,
+      "duration": "2 h",
+      "description": "La più grande dolina carsica delle Murge: mezzo chilometro di diametro, novanta metri di profondità, pareti bucate da grotte e cavità a nove chilometri dal centro. Ci si affaccia dal bordo e la Murgia, da piatta che sembrava, si apre all'improvviso.",
+      "tips": "Il belvedere è raggiungibile in auto o in bici; scendere dentro la dolina richiede una guida.",
+      "lat": 40.89015,
+      "lon": 16.56795,
       "nearbyStops": []
     },
     {
