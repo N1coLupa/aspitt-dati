@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T19:44:19.060Z",
+  "generatedAt": "2026-11-05T21:05:59.356Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -86,6 +86,32 @@
         "Giuseppe Giorgi"
       ],
       "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "live-murgiagora-ad-altamura-l-arte-da-spazio-alle-voci-e-alle-sfi",
+      "title": "Murgiagorà: ad Altamura l’arte dà spazio alle voci e alle sfide del presente il 7 e l’8 novembre. Ingresso gratuito",
+      "url": "https://altamuralive.it/2026/11/05/murgiagora-ad-altamura-larte-da-spazio-alle-voci-e-alle-sfide-del-presente-il-7-e-l8-novembre-ingresso-gratuito/",
+      "source": "AltamuraLive",
+      "sourceUrl": "https://altamuralive.it/",
+      "publishedAt": "2026-11-05T17:54:17.000Z",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "startTime": null,
+      "venue": null,
+      "summary": "Sabato 7 e domenica 8 novembre Art Immagine ospita “Murgiagorà”, l’iniziativa promossa da La Nuova Murgia tra arte, esperienze femminili, emancipazione e cultura del dono.",
+      "tags": [
+        "Attualità",
+        "Cultura",
+        "arte",
+        "arte in città",
+        "comune di altamura",
+        "Eventi"
+      ],
+      "categories": [
+        "trekking",
         "cultura"
       ],
       "dated": true
@@ -469,32 +495,6 @@
         "EUR-Leg",
         "Feamp Puglia",
         "identità"
-      ],
-      "categories": [
-        "cultura",
-        "esperienze"
-      ],
-      "dated": false
-    },
-    {
-      "id": "live-note-sapori-d-autore-altamura-si-racconta-tra-vicoli-canti-e",
-      "title": "“Note & Sapori d’Autore”, Altamura si racconta tra vicoli, canti e pane",
-      "url": "https://altamuralive.it/2026/09/21/note-sapori-dautore-altamura-si-racconta-tra-vicoli-canti-e-pane/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-09-21T17:11:01.000Z",
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "summary": "Si chiude con una buona affluenza la seconda edizione di “Note & Sapori d’Autore”: tra claustri, tradizioni popolari e Museo del Pane, Altamura ha accolto visitatori dai comuni vicini e turisti dal Nord Italia, dalla…",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "canti popolari",
-        "Claustri",
-        "evento",
-        "pane di altamura"
       ],
       "categories": [
         "cultura",
