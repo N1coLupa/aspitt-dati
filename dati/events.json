@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T02:23:22.809Z",
+  "generatedAt": "2026-11-06T12:05:56.497Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -94,6 +94,27 @@
       ],
       "categories": [
         "trekking",
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "comune-733156",
+      "title": "Settimana delle scarpette rosse: proiezione \"Se domani non torno\"",
+      "url": "https://www.comune.altamura.ba.it/it/events/settimana-delle-scarpette-rosse-proiezione-se-domani-non-torno",
+      "source": "Comune di Altamura",
+      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
+      "publishedAt": "2026-11-06T11:08:36.000Z",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "startTime": "17:00",
+      "venue": null,
+      "summary": "Per la Settimana delle scarpette rosse, edizione 2026, la Commissione speciale pari opportunità del Comune di Altamura organizza la proiezione ...",
+      "tags": [
+        "Cinema",
+        "Evento culturale"
+      ],
+      "categories": [
         "cultura"
       ],
       "dated": true
@@ -212,7 +233,7 @@
     },
     {
       "id": "comune-731034",
-      "title": "Copia di Visite guidate gratuite alla cava dei dinosauri",
+      "title": "Visite guidate gratuite alla cava dei dinosauri",
       "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731032-731034",
       "source": "Comune di Altamura",
       "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
