@@ -1,4 +1,32 @@
 {
-  "generatedAt": "2026-11-03T11:56:23.148Z",
-  "alerts": []
+  "generatedAt": "2026-11-06T12:10:09.830Z",
+  "alerts": [
+    {
+      "id": "orari-linea-jesce-2026-11-06",
+      "severity": "warning",
+      "lineId": "linea-jesce",
+      "title": "Orari aggiornati: Linea Jesce",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-06_11_2026.pdf",
+      "createdAt": "2026-11-06T12:10:09.829Z"
+    },
+    {
+      "id": "orari-linea-la-martella-2026-11-06",
+      "severity": "warning",
+      "lineId": "linea-la-martella",
+      "title": "Orari aggiornati: Linea La Martella",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-06_11_2026.pdf",
+      "createdAt": "2026-11-06T12:10:09.829Z"
+    },
+    {
+      "id": "orari-linea-melfi-2026-11-06",
+      "severity": "warning",
+      "lineId": "linea-melfi",
+      "title": "Orari aggiornati: Linea Melfi",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-06_11_2026.pdf",
+      "createdAt": "2026-11-06T12:10:09.829Z"
+    }
+  ]
 }
