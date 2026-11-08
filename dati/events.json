@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:23:54.818Z",
+  "generatedAt": "2026-11-08T01:24:32.007Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -431,6 +431,24 @@
         "esperienze"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-michael-jackson-anthology",
+      "title": "Michael Jackson Anthology",
+      "url": "https://iltaccodibacco.it/puglia/eventi/334229.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-05-30",
+      "endDate": "2027-05-30",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "Michael Jackson Anthology -The Italian Tribute è uno spettacolo dal vivo immersivo che celebra la musica, la danza e l&apos;energia del Re del Pop.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
       "dated": true
     },
     {
