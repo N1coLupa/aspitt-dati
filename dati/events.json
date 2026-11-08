@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:24:32.007Z",
+  "generatedAt": "2026-11-08T11:17:05.526Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -494,6 +494,24 @@
       ],
       "categories": [
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-altamura-d-autunno-attivita-di-animazione-per-bambini-e-fami",
+      "title": "Altamura d'autunno: attività di animazione per bambini e famiglie",
+      "url": "https://www.altamuralife.it/eventi/altamura-d-autunno-attivita-di-animazione-per-bambini-e-famiglie/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }
