@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T11:17:05.526Z",
+  "generatedAt": "2026-11-09T01:43:02.165Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -28,26 +28,6 @@
   ],
   "events": [
     {
-      "id": "comune-731031",
-      "title": "Visite guidate gratuite alla cava dei dinosauri",
-      "url": "https://www.comune.altamura.ba.it/it/events/visite-guidate-gratuite-alla-cava-dei-dinosauri-731028-731031",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-10-20T11:40:01.000Z",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-08",
-      "startTime": "09:30",
-      "venue": null,
-      "summary": "Da sabato 24 ottobre e fino a domenica 6 dicembre 2026, la Cava Pontrelli di Altamura tornerà ad accogliere i visitatori con un programma di vi...",
-      "tags": [
-        "Evento culturale"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
       "id": "live-io-giuseppe-giorgi-ad-altamura-dal-7-al-29-novembre-la-perso",
       "title": "“Io, Giuseppe Giorgi” ad Altamura: dal 7 al 29 novembre la personale dedicata a paesaggio, luce e memoria",
       "url": "https://altamuralive.it/2026/11/04/io-giuseppe-giorgi-ad-altamura-dal-7-al-29-novembre-la-personale-dedicata-a-paesaggio-luce-e-memoria/",
@@ -68,32 +48,6 @@
         "Giuseppe Giorgi"
       ],
       "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "live-murgiagora-ad-altamura-l-arte-da-spazio-alle-voci-e-alle-sfi",
-      "title": "Murgiagorà: ad Altamura l’arte dà spazio alle voci e alle sfide del presente il 7 e l’8 novembre. Ingresso gratuito",
-      "url": "https://altamuralive.it/2026/11/05/murgiagora-ad-altamura-larte-da-spazio-alle-voci-e-alle-sfide-del-presente-il-7-e-l8-novembre-ingresso-gratuito/",
-      "source": "AltamuraLive",
-      "sourceUrl": "https://altamuralive.it/",
-      "publishedAt": "2026-11-05T17:54:17.000Z",
-      "startDate": "2026-11-08",
-      "endDate": "2026-11-08",
-      "startTime": null,
-      "venue": null,
-      "summary": "Sabato 7 e domenica 8 novembre Art Immagine ospita “Murgiagorà”, l’iniziativa promossa da La Nuova Murgia tra arte, esperienze femminili, emancipazione e cultura del dono.",
-      "tags": [
-        "Attualità",
-        "Cultura",
-        "arte",
-        "arte in città",
-        "comune di altamura",
-        "Eventi"
-      ],
-      "categories": [
-        "trekking",
         "cultura"
       ],
       "dated": true
@@ -246,6 +200,24 @@
       "tags": [
         "Evento culturale"
       ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "life-altamura-d-autunno-attivita-di-animazione-per-bambini-e-fami",
+      "title": "Altamura d'autunno: attività di animazione per bambini e famiglie",
+      "url": "https://www.altamuralife.it/eventi/altamura-d-autunno-attivita-di-animazione-per-bambini-e-famiglie/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": "2026-11-29",
+      "startTime": null,
+      "venue": null,
+      "summary": "Fino al 29 novembre",
+      "tags": [],
       "categories": [
         "eventi"
       ],
@@ -494,24 +466,6 @@
       ],
       "categories": [
         "esperienze"
-      ],
-      "dated": false
-    },
-    {
-      "id": "life-altamura-d-autunno-attivita-di-animazione-per-bambini-e-fami",
-      "title": "Altamura d'autunno: attività di animazione per bambini e famiglie",
-      "url": "https://www.altamuralife.it/eventi/altamura-d-autunno-attivita-di-animazione-per-bambini-e-famiglie/",
-      "source": "AltamuraLife",
-      "sourceUrl": "https://www.altamuralife.it/",
-      "publishedAt": null,
-      "startDate": null,
-      "endDate": null,
-      "startTime": null,
-      "venue": null,
-      "summary": "Oggi",
-      "tags": [],
-      "categories": [
-        "eventi"
       ],
       "dated": false
     }
