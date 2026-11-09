@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T01:43:02.165Z",
+  "generatedAt": "2026-11-09T12:51:05.288Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -124,6 +124,24 @@
       "tags": [
         "Evento culturale"
       ],
+      "categories": [
+        "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "life-pro-loco-suoni-e-sapori-di-pietra-serata-conclusiva",
+      "title": "Pro Loco: Suoni e sapori di pietra, serata conclusiva",
+      "url": "https://www.altamuralife.it/eventi/pro-loco-suoni-e-sapori-di-pietra-serata-conclusiva/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "startTime": null,
+      "venue": null,
+      "summary": "sabato 14 novembre",
+      "tags": [],
       "categories": [
         "eventi"
       ],
