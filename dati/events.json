@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T23:26:19.522Z",
+  "generatedAt": "2026-11-10T12:38:25.863Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -180,6 +180,24 @@
       "tags": [],
       "categories": [
         "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-people-are-bitches-live",
+      "title": "People are bitches live",
+      "url": "https://iltaccodibacco.it/puglia/eventi/336045.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "startTime": null,
+      "venue": "Ludi 84, via Diego Franco 20",
+      "summary": "🔥 **THE DOORS: IL MITO NON MUORE MAI!** 🔥 «Break on through to the other side…» 🎸 *Venerdì 20 novembre* preparatevi a un viaggio nel cuore del rock psichedelico degli anni &apos;60!",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": true
     },
@@ -439,24 +457,6 @@
         "esperienze"
       ],
       "annual": true,
-      "dated": true
-    },
-    {
-      "id": "tacco-michael-jackson-anthology",
-      "title": "Michael Jackson Anthology",
-      "url": "https://iltaccodibacco.it/puglia/eventi/334229.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2027-05-30",
-      "endDate": "2027-05-30",
-      "startTime": null,
-      "venue": "Teatro Mercadante",
-      "summary": "Michael Jackson Anthology -The Italian Tribute è uno spettacolo dal vivo immersivo che celebra la musica, la danza e l&apos;energia del Re del Pop.",
-      "tags": [],
-      "categories": [
-        "eventi"
-      ],
       "dated": true
     },
     {
