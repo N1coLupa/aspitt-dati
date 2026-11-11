@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T12:38:25.863Z",
+  "generatedAt": "2026-11-11T11:52:08.919Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -502,6 +502,24 @@
       ],
       "categories": [
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-settimana-delle-scarpette-rosse-il-tema-della-violenza-digit",
+      "title": "Settimana delle scarpette rosse: il tema della violenza digitale",
+      "url": "https://www.altamuralife.it/eventi/settimana-delle-scarpette-rosse-il-tema-della-violenza-digitale/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "eventi"
       ],
       "dated": false
     }
