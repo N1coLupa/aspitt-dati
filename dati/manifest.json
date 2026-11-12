@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-12T12:42:38.863Z",
+  "checkedAt": "2026-11-12T21:31:10.894Z",
   "files": {
     "transport": {
       "generatedAt": "2026-11-09T12:50:55.697Z",
@@ -33,11 +33,11 @@
       "error": null
     },
     "places": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "HTTP 504"
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-12T12:42:56.287Z",
+  "signedAt": "2026-11-12T21:31:23.824Z",
   "keyId": "5VTN2Etz"
 }
