@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T01:54:15.763Z",
+  "generatedAt": "2026-11-13T02:36:55.645Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -49,24 +49,6 @@
       ],
       "categories": [
         "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-omero-ne-parliamo-il-giovedi",
-      "title": "Omero. Ne parliamo il giovedi",
-      "url": "https://iltaccodibacco.it/puglia/eventi/336000.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-11-12",
-      "endDate": "2026-11-12",
-      "startTime": null,
-      "venue": "Palazzo Baldassarre - Museo dell'Uomo di",
-      "summary": "🏛️ OMERO: NE PARLIAMO IL GIOVEDÌ🏛️ Manca pochissimo all❜inizio di questo straordinario ciclo di incontri❗ ✨ A guidarci in questo viaggio letterario sarà una guida d&apos;eccezione: la professoressa Anna Cornacchia.",
-      "tags": [],
-      "categories": [
-        "eventi"
       ],
       "dated": true
     },
