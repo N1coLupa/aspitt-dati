@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-14T11:28:01.798Z",
+  "checkedAt": "2026-11-14T18:00:07.416Z",
   "files": {
     "transport": {
       "generatedAt": "2026-11-09T12:50:55.697Z",
@@ -8,9 +8,9 @@
       "sha256": "5b3368258c4f2b6e20002adf61730fb2d155e4e2d695bb154d2ed755bccb81b0"
     },
     "events": {
-      "generatedAt": "2026-11-14T00:53:15.916Z",
-      "bytes": 21648,
-      "sha256": "937f1d26c0450f0108fa418b7cdd342e9b337f4b235c5268b4a2d40143f51815"
+      "generatedAt": "2026-11-14T17:59:40.638Z",
+      "bytes": 22234,
+      "sha256": "b72ec856e9bd15f8cb4ea958191826c3f96a1a7ca0048653bf8fb038e844ea2a"
     },
     "places": {
       "generatedAt": "2026-11-05T21:06:45.081Z",
@@ -38,6 +38,6 @@
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-14T11:28:12.903Z",
+  "signedAt": "2026-11-14T18:00:18.719Z",
   "keyId": "5VTN2Etz"
 }

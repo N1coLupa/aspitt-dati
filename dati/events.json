@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T00:53:15.916Z",
+  "generatedAt": "2026-11-14T17:59:40.638Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -551,6 +551,24 @@
       ],
       "categories": [
         "esperienze"
+      ],
+      "dated": false
+    },
+    {
+      "id": "life-architettura-residenza-artistica-nel-museo-etnografico",
+      "title": "Architettura: residenza artistica nel Museo etnografico",
+      "url": "https://www.altamuralife.it/eventi/architettura-residenza-artistica-nel-museo-etnografico/",
+      "source": "AltamuraLife",
+      "sourceUrl": "https://www.altamuralife.it/",
+      "publishedAt": null,
+      "startDate": null,
+      "endDate": null,
+      "startTime": null,
+      "venue": null,
+      "summary": "Oggi",
+      "tags": [],
+      "categories": [
+        "cultura"
       ],
       "dated": false
     },
