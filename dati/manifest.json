@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-15T01:52:34.168Z",
+  "checkedAt": "2026-11-15T11:57:37.285Z",
   "files": {
     "transport": {
       "generatedAt": "2026-11-09T12:50:55.697Z",
@@ -38,6 +38,6 @@
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-15T01:52:46.591Z",
+  "signedAt": "2026-11-15T11:57:52.662Z",
   "keyId": "5VTN2Etz"
 }
