@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { MARINO_HOSTS, allowedUrl } from './lib/http.mjs';
+import { isManualUrl } from './lib/avvisi-manuali.mjs';
 
 const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 
@@ -53,7 +54,8 @@ function checkTransport(data) {
   };
   for (const line of data.lines) {
     if (/[<>"&]/.test(line.name)) fail(`nome di linea con caratteri non ammessi: ${line.name}`);
-    checkUrl(line.noticeUrl, `${line.name}: avviso`);
+    // Gli avvisi scritti a mano puntano alla loro pagina su aspitt.it, quelli dell'operatore al suo sito.
+    checkUrl(line.noticeUrl, `${line.name}: avviso`, isManualUrl(line.noticeUrl) ? ['aspitt.it'] : MARINO_HOSTS);
     checkUrl(line.timetableUrl, `${line.name}: orario`);
     checkUrl(line.mapUrl, `${line.name}: mappa`, ['google.com']);
   }
