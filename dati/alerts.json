@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-11-13T12:12:30.418Z",
+  "generatedAt": "2026-11-16T12:02:54.128Z",
   "alerts": [
+    {
+      "id": "orari-linea-scuola-3-2026-11-16",
+      "severity": "warning",
+      "lineId": "linea-scuola-3",
+      "title": "Orari aggiornati: Linea Scuola 3",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
+      "createdAt": "2026-11-16T12:02:54.124Z"
+    },
+    {
+      "id": "orari-linea-jesce-2026-11-16",
+      "severity": "warning",
+      "lineId": "linea-jesce",
+      "title": "Orari aggiornati: Linea Jesce",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "createdAt": "2026-11-16T12:02:54.124Z"
+    },
+    {
+      "id": "orari-linea-la-martella-2026-11-16",
+      "severity": "warning",
+      "lineId": "linea-la-martella",
+      "title": "Orari aggiornati: Linea La Martella",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "createdAt": "2026-11-16T12:02:54.124Z"
+    },
+    {
+      "id": "orari-linea-melfi-2026-11-16",
+      "severity": "warning",
+      "lineId": "linea-melfi",
+      "title": "Orari aggiornati: Linea Melfi",
+      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
+      "url": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "createdAt": "2026-11-16T12:02:54.124Z"
+    },
     {
       "id": "orari-linea-jesce-2026-11-09",
       "severity": "warning",
