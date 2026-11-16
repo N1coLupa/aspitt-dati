@@ -2,12 +2,20 @@ import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { slugify } from './slug.mjs';
+import { noticeOnlyAt, noticeStops, noticeTimes } from './avvisi.mjs';
+import { listedDays, parseItalianDateRange } from './dates-it.mjs';
 
 // Avvisi scritti a mano in scripts/data/avvisi-manuali.json. Ogni giro li unisce a quelli
 // generati dallo scraper, saltando quelli che ci sono gia' (stesso avviso del sito o stesso titolo).
 export const MANUAL_FILE = fileURLToPath(new URL('../data/avvisi-manuali.json', import.meta.url));
 
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
+
+// Gli avvisi manuali di una linea finiscono anche nei campi "notice" della linea in transport.json,
+// con un link a questa pagina del sito (la serve il worker di aspitt.it leggendo alerts.json).
+export const MANUAL_URL = 'https://aspitt.it/avvisi/';
+export const isManualUrl = (url) => String(url ?? '').startsWith(MANUAL_URL);
+const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
 
 // Testo confrontabile: senza accenti, maiuscole, punteggiatura e spazi doppi.
 export const sameText = (value) =>
@@ -72,12 +80,13 @@ export function manualAlerts(entries, existing, transport, previous, today, now 
 
   const titles = new Set(existing.map((a) => `${a.lineId ?? ''}|${sameText(a.title)}`));
   const anyLineTitles = new Set(existing.map((a) => sameText(a.title)));
+  const siteLines = lines.filter((line) => !isManualUrl(line.noticeUrl));
   const urls = new Set(
-    [...existing.map((a) => a.url), ...lines.map((line) => line.noticeUrl), ...(transport?.news ?? []).map((n) => n.url)]
+    [...existing.map((a) => a.url), ...siteLines.map((line) => line.noticeUrl), ...(transport?.news ?? []).map((n) => n.url)]
       .filter(Boolean)
       .map(sameUrl)
   );
-  const siteTexts = lines.map((line) => sameText(line.noticeText)).filter(Boolean);
+  const siteTexts = siteLines.map((line) => sameText(line.noticeText)).filter(Boolean);
 
   for (const [index, entry] of entries.entries()) {
     const where = `avviso manuale ${index + 1}${entry?.titolo ? ` "${entry.titolo}"` : ''}`;
@@ -101,9 +110,10 @@ export function manualAlerts(entries, existing, transport, previous, today, now 
     }
 
     let lineId = null;
+    let lineName = null;
     if (entry.linea) {
       const line = findLine(lines, entry.linea);
-      if (line) lineId = line.id;
+      if (line) [lineId, lineName] = [line.id, line.name];
       else log.push(`${where}: linea "${entry.linea}" non trovata, pubblicato come avviso generico`);
     }
 
@@ -129,7 +139,7 @@ export function manualAlerts(entries, existing, transport, previous, today, now 
     const alert = {
       id,
       severity: entry.gravita === 'warning' || entry.gravita === 'importante' ? 'warning' : 'info',
-      ...(lineId ? { lineId } : {}),
+      ...(lineId ? { lineId, lineName } : {}),
       title,
       body,
       ...(entry.link ? { url: String(entry.link).trim() } : {}),
@@ -145,4 +155,66 @@ export function manualAlerts(entries, existing, transport, previous, today, now 
   }
 
   return { added, log };
+}
+
+/**
+ * Scrive gli avvisi manuali di una linea nei suoi campi "notice" di transport.json: e' li' che l'app
+ * legge avvisi, banner in Home e notifiche (alerts.json l'app non lo scarica). Giorno, orari e fermate
+ * soppresse si ricavano dal testo come per gli avvisi dell'operatore ("il 22.11.2026 dalle 11:30 alle 17:00
+ * saranno soppresse le fermate da via IV Novembre a via Bari 150"). Si puo' rifare a ogni giro: prima
+ * toglie quelli del giro precedente. Un avviso dell'operatore ancora valido sulla stessa linea ha la precedenza.
+ */
+export function applyManualNotices(transport, entries, today) {
+  const log = [];
+  const lines = transport?.lines ?? [];
+  for (const line of lines) {
+    if (!isManualUrl(line.noticeUrl)) continue;
+    for (const key of NOTICE_KEYS) line[key] = key === 'noticeStops' ? [] : null;
+  }
+  for (const entry of entries) {
+    if (!entry || typeof entry !== 'object' || !String(entry.titolo ?? '').trim() || !String(entry.testo ?? '').trim()) continue;
+    const fino = DAY.test(entry.fino ?? '') ? entry.fino : null;
+    const dal = DAY.test(entry.dal ?? '') ? entry.dal : null;
+    if ((fino && fino < today) || (dal && dal > today)) continue;
+    const where = `"${entry.titolo}"`;
+    if (!entry.linea) {
+      log.push(`${where}: senza linea resta solo nel sito, l'app mostra gli avvisi di una linea`);
+      continue;
+    }
+    const line = findLine(lines, entry.linea);
+    if (!line) continue;
+    if (isManualUrl(line.noticeUrl)) {
+      log.push(`${where}: la linea ${line.id} ha gia' un altro avviso manuale, nell'app va il primo`);
+      continue;
+    }
+    if (line.noticeUrl && (line.noticeUntil ?? line.noticeFrom ?? today) >= today) {
+      log.push(`${where}: la linea ${line.id} ha un avviso dell'operatore ancora valido, nell'app resta quello`);
+      continue;
+    }
+    const text = `${entry.titolo}. ${entry.testo}`;
+    let range = parseItalianDateRange(text, new Date(`${today}T12:00:00`));
+    const days = listedDays(text);
+    if (days.length > 1) {
+      const next = days.find((day) => day >= today) ?? days[days.length - 1];
+      range = { start: next, end: next };
+    }
+    const times = noticeTimes(text);
+    const onlyAt = noticeOnlyAt(text);
+    Object.assign(line, {
+      noticeUrl: `${MANUAL_URL}${manualId(entry)}/`,
+      noticeFrom: range?.start ?? dal ?? today,
+      noticeUntil: range?.end ?? fino,
+      noticeStart: times.from,
+      noticeEnd: times.to,
+      noticeStops: noticeStops(text, line.stops, '', []),
+      noticeOnlyAt: onlyAt ? { name: onlyAt, address: null, lat: null, lon: null } : null,
+      noticeText: String(entry.testo).trim().slice(0, 1200),
+    });
+    log.push(
+      `${where}: nell'app sulla linea ${line.id}, ${line.noticeFrom}${line.noticeUntil && line.noticeUntil !== line.noticeFrom ? ` - ${line.noticeUntil}` : ''}` +
+        `${line.noticeStart ? ` dalle ${line.noticeStart}` : ''}${line.noticeEnd ? ` alle ${line.noticeEnd}` : ''}` +
+        `${line.noticeStops.length ? `, ${line.noticeStops.length} fermate soppresse` : ''}`
+    );
+  }
+  return log;
 }

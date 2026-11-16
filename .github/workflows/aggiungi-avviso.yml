@@ -13,11 +13,11 @@ on:
         required: true
         type: string
       testo:
-        description: 'Testo dell avviso'
+        description: 'Testo (es. Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via X a via Y)'
         required: false
         type: string
       linea:
-        description: 'Linea (es. Ospedale 2). Vuoto = avviso generico'
+        description: 'Linea (es. Ospedale 2). Vuoto = avviso generico, che l app non mostra'
         required: false
         type: string
       fino:
