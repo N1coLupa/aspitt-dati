@@ -7,7 +7,7 @@ import { scrapeEvents } from './events.mjs';
 import { scrapePlaces } from './places.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
-import { manualAlerts, readManual } from '../lib/avvisi-manuali.mjs';
+import { applyManualNotices, manualAlerts, readManual } from '../lib/avvisi-manuali.mjs';
 
 const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 const SNAPSHOT_DIR = process.env.ASPITT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
@@ -82,7 +82,8 @@ function settleDate(previous, next) {
   return next;
 }
 
-async function refresh(name, scrape, validate, enrich) {
+// finish: ritocchi da rifare a ogni giro, anche quando si tengono i dati del giorno prima (avvisi manuali).
+async function refresh(name, scrape, validate, enrich, finish) {
   const file = path.join(DATA_DIR, `${name}.json`);
   const previous = await readJson(file);
   try {
@@ -92,6 +93,7 @@ async function refresh(name, scrape, validate, enrich) {
       await enrich(next, fixes);
       for (const message of fixes) console.log(`  corretto: ${message}`);
     }
+    finish?.(next);
     const { problems, notes } = validate(next);
     for (const message of notes) console.log(`  nota: ${message}`);
     if (problems.length) throw new Error(problems.join('; '));
@@ -100,6 +102,14 @@ async function refresh(name, scrape, validate, enrich) {
   } catch (err) {
     console.error(`  ${name}: tenuti i dati precedenti (${err.message})`);
     if (!previous) throw new Error(`${name}: nessun dato valido disponibile (${err.message})`);
+    if (finish) {
+      const data = structuredClone(previous);
+      finish(data);
+      if (JSON.stringify(data) !== JSON.stringify(previous)) {
+        await writeJson(file, settleDate(previous, data));
+        return { name, status: 'invariato', error: err.message, data, previous };
+      }
+    }
     // I dati precedenti sono gia' elaborati: rielaborarli rifaceva centinaia di richieste al router
     // stradale e bloccava l'aggiornamento per 30 minuti. Si tengono cosi' come sono.
     return { name, status: 'invariato', error: err.message, data: previous, previous };
@@ -121,7 +131,13 @@ async function main() {
   console.log(`Aggiornamento dati Aspitt - ${new Date().toLocaleString('it-IT')}\n`);
 
   console.log('[1/4] Trasporti');
-  const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport);
+  // Gli avvisi manuali di una linea entrano anche in transport.json, perche' l'app li legge da li'.
+  const manualEntries = await readManual();
+  const italianToday = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
+  const withManual = (data) => {
+    for (const message of applyManualNotices(data, manualEntries, italianToday)) console.log(`  avviso manuale ${message}`);
+  };
+  const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport, withManual);
   await writeMissingList().catch(() => {});
   if (usage.missing.size) console.log(`  cosa salvare a mano: ${path.join(COPY_DIR, 'DA-SALVARE.txt')}`);
 
@@ -146,8 +162,7 @@ async function main() {
     ),
   ];
   // Gli avvisi manuali si ricalcolano a ogni giro dal file: toglierli dal file li toglie anche dall'app.
-  const italianToday = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
-  const manual = manualAlerts(await readManual(), automatic, transport, previousAlerts, italianToday);
+  const manual = manualAlerts(manualEntries, automatic, transport, previousAlerts, italianToday);
   for (const message of manual.log) console.log(`  ${message}`);
   const merged = [...manual.added, ...automatic];
 
