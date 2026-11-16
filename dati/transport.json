@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T12:50:55.697Z",
+  "generatedAt": "2026-11-16T12:12:23.057Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -174,7 +174,7 @@
           "index": 17,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": false,
           "position": "exact"
         },
@@ -183,7 +183,7 @@
           "index": 18,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": false,
           "position": "exact"
         },
@@ -227,8 +227,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 23,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": false,
           "position": "exact"
         },
@@ -254,8 +254,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 26,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -6539,7 +6539,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -6626,8 +6626,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 10,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -6770,8 +6770,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 26,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -13370,18 +13370,16 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-11-09",
-      "noticeUntil": "2026-11-09",
-      "noticeStart": "17:30",
+      "noticeFrom": "2026-10-22",
+      "noticeUntil": "2026-10-22",
+      "noticeStart": "20:00",
       "noticeEnd": "22:00",
       "noticeStops": [
-        "stop-via-iv-novembre-ang-via-ii-giugno",
-        "stop-via-mura-megalitiche-fronte-stadio",
-        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
-        "stop-via-bari-150"
+        "stop-via-iv-novembre-fronte-1",
+        "stop-via-iv-novembre-fronte-74"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
+      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
@@ -13394,7 +13392,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub - Trentacapilli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1iCfk8GkhcM_SZt7b7aedeL2_E_uDhNc&ll=40.825646463944054%2C16.51911380000001&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-Linea-Ospedale-Domenica-e-festivi-15.11.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -13472,8 +13470,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 9,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -13577,11 +13575,11 @@
           "position": "exact"
         },
         {
-          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
           "index": 21,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.82575,
-          "lon": 16.565316,
+          "lat": 40.825579,
+          "lon": 16.565665,
           "interpolated": false,
           "position": "exact"
         },
@@ -13617,7 +13615,7 @@
           "index": 25,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818617,
-          "lon": 16.559518,
+          "lon": 16.559512,
           "interpolated": false,
           "position": "exact"
         },
@@ -13889,7 +13887,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "06:23",
               "served": true
@@ -14141,7 +14139,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "07:36",
               "served": true
@@ -14393,7 +14391,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "08:33",
               "served": true
@@ -14645,7 +14643,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "09:33",
               "served": true
@@ -14897,7 +14895,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "11:23",
               "served": true
@@ -15149,7 +15147,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "12:23",
               "served": true
@@ -15401,7 +15399,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "13:23",
               "served": true
@@ -15653,7 +15651,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "14:38",
               "served": true
@@ -15905,7 +15903,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "17:23",
               "served": true
@@ -16157,7 +16155,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "18:23",
               "served": true
@@ -16409,7 +16407,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "19:23",
               "served": true
@@ -16661,7 +16659,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "20:23",
               "served": true
@@ -16913,7 +16911,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 21,
               "time": "21:38",
               "served": true
@@ -20259,13 +20257,13 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-11-15",
-      "noticeUntil": "2026-11-15",
-      "noticeStart": "07:30",
-      "noticeEnd": "13:00",
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
       "noticeStops": [],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il 15.11.26 dalle ore 07:30 fino alle 13:00 la LINEA OSPEDALE DOMENICA E FESTIVI potrà subire RITARDI O VARIAZIONI DI PERCORSO a causa del passaggio della gara podistica \"X Trofeo Correndo tra le mura\"",
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
@@ -20284,8 +20282,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 1,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -20428,7 +20426,7 @@
           "stopId": "stop-via-matera-39",
           "index": 17,
           "name": "Via Matera, 39",
-          "lat": 40.82158,
+          "lat": 40.821578,
           "lon": 16.553566,
           "interpolated": true,
           "position": "exact"
@@ -20455,8 +20453,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 20,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -20482,8 +20480,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 23,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         }
@@ -24827,7 +24825,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -24896,8 +24894,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 8,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -24914,8 +24912,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 10,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": false,
           "position": "exact"
         },
@@ -24923,8 +24921,8 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 11,
           "name": "Via Dei Mille 40",
-          "lat": 40.827987,
-          "lon": 16.548713,
+          "lat": 40.827983,
+          "lon": 16.548714,
           "interpolated": true,
           "position": "exact"
         },
@@ -24941,8 +24939,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 13,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": false,
           "position": "exact"
         },
@@ -24950,8 +24948,8 @@
           "stopId": "stop-viale-martiri-6",
           "index": 14,
           "name": "Viale Martiri, 6",
-          "lat": 40.824074,
-          "lon": 16.553966,
+          "lat": 40.824075,
+          "lon": 16.553956,
           "interpolated": true,
           "position": "exact"
         },
@@ -24959,8 +24957,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 15,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": true,
           "position": "exact"
         },
@@ -28705,13 +28703,16 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": null,
-      "noticeUntil": null,
-      "noticeStart": null,
-      "noticeEnd": null,
-      "noticeStops": [],
+      "noticeFrom": "2026-10-22",
+      "noticeUntil": "2026-10-22",
+      "noticeStart": "20:00",
+      "noticeEnd": "22:00",
+      "noticeStops": [
+        "stop-via-iv-novembre-fronte-1",
+        "stop-via-iv-novembre-fronte-via-ii-giugno"
+      ],
       "noticeOnlyAt": null,
-      "noticeText": null,
+      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
       "school": false,
       "validFrom": "2026-03-30",
       "extraurban": false,
@@ -28740,7 +28741,7 @@
           "index": 2,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818617,
-          "lon": 16.559518,
+          "lon": 16.559512,
           "interpolated": false,
           "position": "exact"
         },
@@ -28829,8 +28830,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 12,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -28847,8 +28848,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 14,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -28956,7 +28957,7 @@
           "index": 26,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": true,
           "position": "exact"
         },
@@ -28965,7 +28966,7 @@
           "index": 27,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": true,
           "position": "exact"
         },
@@ -28973,8 +28974,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 28,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.819088,
-          "lon": 16.563084,
+          "lat": 40.819063,
+          "lon": 16.563105,
           "interpolated": true,
           "position": "exact"
         },
@@ -31658,7 +31659,7 @@
           "index": 11,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": false,
           "position": "exact"
         },
@@ -31667,7 +31668,7 @@
           "index": 12,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": false,
           "position": "exact"
         },
@@ -31675,8 +31676,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 13,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.819088,
-          "lon": 16.563084,
+          "lat": 40.819063,
+          "lon": 16.563105,
           "interpolated": false,
           "position": "exact"
         },
@@ -31711,8 +31712,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 17,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": false,
           "position": "exact"
         },
@@ -31738,8 +31739,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 20,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -31765,8 +31766,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 23,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -31792,8 +31793,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 26,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": true,
           "position": "exact"
         },
@@ -31801,8 +31802,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 27,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": true,
           "position": "exact"
         },
@@ -31856,7 +31857,7 @@
           "index": 33,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818617,
-          "lon": 16.559518,
+          "lon": 16.559512,
           "interpolated": true,
           "position": "exact"
         },
@@ -35175,7 +35176,7 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026-2.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
@@ -35291,8 +35292,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 13,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -35327,8 +35328,8 @@
           "stopId": "stop-viale-martiri-6",
           "index": 17,
           "name": "Viale Martiri, 6",
-          "lat": 40.824074,
-          "lon": 16.553966,
+          "lat": 40.824075,
+          "lon": 16.553956,
           "interpolated": false,
           "position": "exact"
         },
@@ -35336,8 +35337,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 18,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": true,
           "position": "exact"
         },
@@ -35345,8 +35346,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 19,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": true,
           "position": "exact"
         },
@@ -35390,8 +35391,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 24,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -35468,11 +35469,11 @@
           "position": "street"
         },
         {
-          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+          "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
           "index": 33,
           "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
-          "lat": 40.82575,
-          "lon": 16.565316,
+          "lat": 40.825579,
+          "lon": 16.565665,
           "interpolated": true,
           "position": "exact"
         }
@@ -35703,7 +35704,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 33,
               "time": "12:47",
               "served": true
@@ -35810,7 +35811,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 33,
               "time": "13:47",
               "served": true
@@ -35917,7 +35918,7 @@
               "served": true
             },
             {
-              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
+              "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
               "index": 33,
               "time": "14:49",
               "served": true
@@ -38493,7 +38494,7 @@
         "19-20": [
           [
             40.82375,
-            16.55745
+            16.55746
           ],
           [
             40.82379,
@@ -39239,13 +39240,13 @@
           ],
           [
             40.83738,
-            16.55224
+            16.55223
           ]
         ],
         "24-25": [
           [
             40.83738,
-            16.55224
+            16.55223
           ],
           [
             40.83738,
@@ -39764,8 +39765,8 @@
             16.56506
           ],
           [
-            40.82574,
-            16.56531
+            40.82561,
+            16.56568
           ]
         ]
       }
@@ -39846,8 +39847,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 8,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -41284,7 +41285,7 @@
           "stopId": "stop-via-matera-39",
           "index": 6,
           "name": "Via Matera, 39",
-          "lat": 40.82158,
+          "lat": 40.821578,
           "lon": 16.553566,
           "interpolated": false,
           "position": "exact"
@@ -41302,8 +41303,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 8,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -41329,8 +41330,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 11,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -41438,7 +41439,7 @@
           "index": 23,
           "name": "Via Mura Megalitiche",
           "lat": 40.836066,
-          "lon": 16.557088,
+          "lon": 16.557079,
           "interpolated": true,
           "position": "exact"
         },
@@ -41455,8 +41456,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 25,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": true,
           "position": "exact"
         },
@@ -41473,8 +41474,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 27,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": true,
           "position": "exact"
         },
@@ -41482,8 +41483,8 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 28,
           "name": "Via Dei Mille 40",
-          "lat": 40.827987,
-          "lon": 16.548713,
+          "lat": 40.827983,
+          "lon": 16.548714,
           "interpolated": true,
           "position": "exact"
         },
@@ -41491,8 +41492,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 29,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": true,
           "position": "exact"
         },
@@ -41500,7 +41501,7 @@
           "stopId": "stop-via-pietro-colletta-204",
           "index": 30,
           "name": "Via Pietro Colletta 204",
-          "lat": 40.817161,
+          "lat": 40.817162,
           "lon": 16.550584,
           "interpolated": true,
           "position": "street"
@@ -46276,7 +46277,7 @@
       "route": "Altamura - Zona Industriale Jesce",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
       "mapUrl": null,
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-partite-del-23.10.26-e-27.10.26.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -46292,7 +46293,7 @@
           "index": 2,
           "name": "Via Mura Megalitiche",
           "lat": 40.836066,
-          "lon": 16.557088,
+          "lon": 16.557079,
           "interpolated": false,
           "position": "exact"
         },
@@ -46300,8 +46301,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 3,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -46309,8 +46310,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 4,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": false,
           "position": "exact"
         },
@@ -46318,8 +46319,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 5,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": false,
           "position": "exact"
         },
@@ -46327,8 +46328,8 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 6,
           "name": "Via Dei Mille 40",
-          "lat": 40.827987,
-          "lon": 16.548713,
+          "lat": 40.827983,
+          "lon": 16.548714,
           "interpolated": false,
           "position": "exact"
         },
@@ -46336,8 +46337,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 7,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": false,
           "position": "exact"
         },
@@ -46345,8 +46346,8 @@
           "stopId": "stop-via-putignano-25-2",
           "index": 8,
           "name": "Via Putignano 25",
-          "lat": 40.816831,
-          "lon": 16.55205,
+          "lat": 40.816838,
+          "lon": 16.552016,
           "interpolated": false,
           "position": "exact"
         },
@@ -46355,7 +46356,7 @@
           "index": 9,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": false,
           "position": "exact"
         },
@@ -46364,7 +46365,7 @@
           "index": 10,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": false,
           "position": "exact"
         },
@@ -46372,8 +46373,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 11,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.819088,
-          "lon": 16.563084,
+          "lat": 40.819063,
+          "lon": 16.563105,
           "interpolated": false,
           "position": "exact"
         },
@@ -46390,8 +46391,8 @@
           "stopId": "stop-cornacchia-falegnameria",
           "index": 13,
           "name": "CORNACCHIA (Falegnameria)",
-          "lat": 40.741505,
-          "lon": 16.667489,
+          "lat": 40.741513,
+          "lon": 16.667475,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46417,8 +46418,8 @@
           "stopId": "stop-mec-line-laminboard",
           "index": 16,
           "name": "MEC LINE - LAMINBOARD",
-          "lat": 40.737969,
-          "lon": 16.674287,
+          "lat": 40.737984,
+          "lon": 16.674259,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46480,8 +46481,8 @@
           "stopId": "stop-loken-sanflex",
           "index": 23,
           "name": "LOKEN - SANFLEX",
-          "lat": 40.738399,
-          "lon": 16.673613,
+          "lat": 40.738392,
+          "lon": 16.673625,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46507,8 +46508,8 @@
           "stopId": "stop-cornacchia-falegnameria",
           "index": 26,
           "name": "CORNACCHIA (Falegnameria)",
-          "lat": 40.741505,
-          "lon": 16.667489,
+          "lat": 40.741513,
+          "lon": 16.667475,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46534,8 +46535,8 @@
           "stopId": "stop-mec-line-laminboard",
           "index": 29,
           "name": "MEC LINE - LAMINBOARD",
-          "lat": 40.737969,
-          "lon": 16.674287,
+          "lat": 40.737984,
+          "lon": 16.674259,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46597,8 +46598,8 @@
           "stopId": "stop-loken-sanflex",
           "index": 36,
           "name": "LOKEN - SANFLEX",
-          "lat": 40.738399,
-          "lon": 16.673613,
+          "lat": 40.738392,
+          "lon": 16.673625,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46625,7 +46626,7 @@
           "index": 39,
           "name": "Via Mura Megalitiche",
           "lat": 40.836066,
-          "lon": 16.557088,
+          "lon": 16.557079,
           "interpolated": false,
           "position": "exact"
         },
@@ -46633,8 +46634,8 @@
           "stopId": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
           "index": 40,
           "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-          "lat": 40.83735,
-          "lon": 16.552244,
+          "lat": 40.837346,
+          "lon": 16.55223,
           "interpolated": false,
           "position": "exact"
         },
@@ -46642,8 +46643,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 41,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": false,
           "position": "exact"
         },
@@ -46651,8 +46652,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 42,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830593,
-          "lon": 16.54793,
+          "lat": 40.830594,
+          "lon": 16.547929,
           "interpolated": false,
           "position": "exact"
         },
@@ -46660,8 +46661,8 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 43,
           "name": "Via Dei Mille 40",
-          "lat": 40.827987,
-          "lon": 16.548713,
+          "lat": 40.827983,
+          "lon": 16.548714,
           "interpolated": false,
           "position": "exact"
         },
@@ -46669,8 +46670,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 44,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": false,
           "position": "exact"
         },
@@ -46678,8 +46679,8 @@
           "stopId": "stop-via-putignano-25-2",
           "index": 45,
           "name": "Via Putignano 25",
-          "lat": 40.816831,
-          "lon": 16.55205,
+          "lat": 40.816838,
+          "lon": 16.552016,
           "interpolated": false,
           "position": "exact"
         },
@@ -46688,7 +46689,7 @@
           "index": 46,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": false,
           "position": "exact"
         },
@@ -46697,7 +46698,7 @@
           "index": 47,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": false,
           "position": "exact"
         },
@@ -46705,8 +46706,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 48,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.819088,
-          "lon": 16.563084,
+          "lat": 40.819063,
+          "lon": 16.563105,
           "interpolated": false,
           "position": "exact"
         }
@@ -49250,20 +49251,16 @@
         }
       ],
       "shape": [],
-      "warnings": [
-        "48 fermate senza coordinate"
-      ],
       "timetableFile": null,
-      "noticeFrom": "2026-11-09",
-      "noticeUntil": "2026-11-09",
+      "noticeFrom": "2026-10-27",
+      "noticeUntil": "2026-10-27",
       "noticeStart": "17:30",
       "noticeEnd": "22:00",
       "noticeStops": [
-        "stop-via-mura-megalitiche",
-        "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal"
+        "stop-via-mura-megalitiche"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
+      "noticeText": "Si comunica che il giorno 23.10.26 e il giorno 27.10.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
       "validFrom": "2026-11-09",
       "extraurban": true,
@@ -49416,13 +49413,13 @@
           ],
           [
             40.83603,
-            16.55709
+            16.55708
           ]
         ],
         "2-3": [
           [
             40.83603,
-            16.55709
+            16.55708
           ],
           [
             40.83603,
@@ -49530,13 +49527,13 @@
           ],
           [
             40.83738,
-            16.55224
+            16.55223
           ]
         ],
         "3-4": [
           [
             40.83738,
-            16.55224
+            16.55223
           ],
           [
             40.83736,
@@ -49805,15 +49802,15 @@
             16.54875
           ],
           [
-            40.828,
+            40.82799,
+            16.54876
+          ],
+          [
+            40.82799,
             16.54876
           ]
         ],
         "6-7": [
-          [
-            40.828,
-            16.54876
-          ],
           [
             40.82799,
             16.54876
@@ -49907,14 +49904,14 @@
             16.55183
           ],
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ]
         ],
         "7-8": [
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ],
           [
             40.8243,
@@ -50041,14 +50038,14 @@
             16.55113
           ],
           [
-            40.81685,
-            16.55206
+            40.81686,
+            16.55203
           ]
         ],
         "8-9": [
           [
-            40.81685,
-            16.55206
+            40.81686,
+            16.55203
           ],
           [
             40.81677,
@@ -50104,13 +50101,13 @@
           ],
           [
             40.81862,
-            16.5557
+            16.55571
           ]
         ],
         "9-10": [
           [
             40.81862,
-            16.5557
+            16.55571
           ],
           [
             40.81862,
@@ -50138,13 +50135,13 @@
           ],
           [
             40.81859,
-            16.55953
+            16.55954
           ]
         ],
         "10-11": [
           [
             40.81859,
-            16.55953
+            16.55954
           ],
           [
             40.81858,
@@ -50183,14 +50180,14 @@
             16.56308
           ],
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ]
         ],
         "11-12": [
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ],
           [
             40.81877,
@@ -51075,14 +51072,14 @@
             16.66624
           ],
           [
-            40.74153,
-            16.66752
+            40.74154,
+            16.6675
           ]
         ],
         "13-14": [
           [
-            40.74153,
-            16.66752
+            40.74154,
+            16.6675
           ],
           [
             40.74112,
@@ -51149,14 +51146,14 @@
             16.67358
           ],
           [
-            40.73799,
-            16.67431
+            40.73801,
+            16.67428
           ]
         ],
         "16-18": [
           [
-            40.73799,
-            16.67431
+            40.73801,
+            16.67428
           ],
           [
             40.73783,
@@ -51605,14 +51602,14 @@
             16.6746
           ],
           [
-            40.73837,
-            16.67359
+            40.73836,
+            16.6736
           ]
         ],
         "23-24": [
           [
-            40.73837,
-            16.67359
+            40.73836,
+            16.6736
           ],
           [
             40.73838,
@@ -51645,8 +51642,8 @@
         ],
         "8-12": [
           [
-            40.81685,
-            16.55206
+            40.81686,
+            16.55203
           ],
           [
             40.81677,
@@ -52759,8 +52756,8 @@
         ],
         "11-14": [
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ],
           [
             40.81877,
@@ -54772,13 +54769,13 @@
           ],
           [
             40.83603,
-            16.55709
+            16.55708
           ]
         ],
         "39-40": [
           [
             40.83603,
-            16.55709
+            16.55708
           ],
           [
             40.83603,
@@ -54886,13 +54883,13 @@
           ],
           [
             40.83738,
-            16.55224
+            16.55223
           ]
         ],
         "40-41": [
           [
             40.83738,
-            16.55224
+            16.55223
           ],
           [
             40.83736,
@@ -55161,15 +55158,15 @@
             16.54875
           ],
           [
-            40.828,
+            40.82799,
+            16.54876
+          ],
+          [
+            40.82799,
             16.54876
           ]
         ],
         "43-44": [
-          [
-            40.828,
-            16.54876
-          ],
           [
             40.82799,
             16.54876
@@ -55263,14 +55260,14 @@
             16.55183
           ],
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ]
         ],
         "44-45": [
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ],
           [
             40.8243,
@@ -55397,14 +55394,14 @@
             16.55113
           ],
           [
-            40.81685,
-            16.55206
+            40.81686,
+            16.55203
           ]
         ],
         "45-46": [
           [
-            40.81685,
-            16.55206
+            40.81686,
+            16.55203
           ],
           [
             40.81677,
@@ -55460,13 +55457,13 @@
           ],
           [
             40.81862,
-            16.5557
+            16.55571
           ]
         ],
         "46-47": [
           [
             40.81862,
-            16.5557
+            16.55571
           ],
           [
             40.81862,
@@ -55494,13 +55491,13 @@
           ],
           [
             40.81859,
-            16.55953
+            16.55954
           ]
         ],
         "47-48": [
           [
             40.81859,
-            16.55953
+            16.55954
           ],
           [
             40.81858,
@@ -55539,8 +55536,8 @@
             16.56308
           ],
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ]
         ],
         "25-26": [
@@ -55561,14 +55558,14 @@
             16.66624
           ],
           [
-            40.74153,
-            16.66752
+            40.74154,
+            16.6675
           ]
         ],
         "26-27": [
           [
-            40.74153,
-            16.66752
+            40.74154,
+            16.6675
           ],
           [
             40.74112,
@@ -55635,14 +55632,14 @@
             16.67358
           ],
           [
-            40.73799,
-            16.67431
+            40.73801,
+            16.67428
           ]
         ],
         "29-31": [
           [
-            40.73799,
-            16.67431
+            40.73801,
+            16.67428
           ],
           [
             40.73783,
@@ -56091,14 +56088,14 @@
             16.6746
           ],
           [
-            40.73837,
-            16.67359
+            40.73836,
+            16.6736
           ]
         ],
         "36-37": [
           [
-            40.73837,
-            16.67359
+            40.73836,
+            16.6736
           ],
           [
             40.73838,
@@ -57095,7 +57092,8 @@
             16.56531
           ]
         ]
-      }
+      },
+      "warnings": []
     },
     {
       "id": "linea-la-martella",
@@ -57128,8 +57126,8 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 3,
           "name": "Via Dei Mille 40",
-          "lat": 40.827987,
-          "lon": 16.548713,
+          "lat": 40.827983,
+          "lon": 16.548714,
           "interpolated": false,
           "position": "exact"
         },
@@ -57137,8 +57135,8 @@
           "stopId": "stop-piazza-zanardelli",
           "index": 4,
           "name": "Piazza Zanardelli",
-          "lat": 40.82429,
-          "lon": 16.551985,
+          "lat": 40.824292,
+          "lon": 16.551966,
           "interpolated": false,
           "position": "exact"
         },
@@ -57147,7 +57145,7 @@
           "index": 5,
           "name": "Via Martiri",
           "lat": 40.824077,
-          "lon": 16.553964,
+          "lon": 16.553963,
           "interpolated": false,
           "position": "estimated"
         },
@@ -57174,7 +57172,7 @@
           "index": 8,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818617,
-          "lon": 16.559518,
+          "lon": 16.559512,
           "interpolated": false,
           "position": "exact"
         },
@@ -57219,7 +57217,7 @@
           "index": 13,
           "name": "Via Treviso 50",
           "lat": 40.818585,
-          "lon": 16.5557,
+          "lon": 16.555714,
           "interpolated": false,
           "position": "exact"
         },
@@ -57228,7 +57226,7 @@
           "index": 14,
           "name": "Via Treviso ang. Via Manzoni",
           "lat": 40.818546,
-          "lon": 16.559532,
+          "lon": 16.559538,
           "interpolated": false,
           "position": "exact"
         },
@@ -57236,8 +57234,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato",
           "index": 15,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.819088,
-          "lon": 16.563084,
+          "lat": 40.819063,
+          "lon": 16.563105,
           "interpolated": false,
           "position": "exact"
         },
@@ -57263,8 +57261,8 @@
           "stopId": "stop-viale-martiri-83",
           "index": 18,
           "name": "Viale Martiri, 83",
-          "lat": 40.823785,
-          "lon": 16.557452,
+          "lat": 40.823784,
+          "lon": 16.557466,
           "interpolated": false,
           "position": "exact"
         },
@@ -57281,8 +57279,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 20,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -57636,9 +57634,6 @@
         }
       ],
       "shape": [],
-      "warnings": [
-        "22 fermate senza coordinate"
-      ],
       "timetableFile": null,
       "noticeFrom": null,
       "noticeUntil": null,
@@ -57748,15 +57743,15 @@
             16.54875
           ],
           [
-            40.828,
+            40.82799,
+            16.54876
+          ],
+          [
+            40.82799,
             16.54876
           ]
         ],
         "3-4": [
-          [
-            40.828,
-            16.54876
-          ],
           [
             40.82799,
             16.54876
@@ -57850,14 +57845,14 @@
             16.55183
           ],
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ]
         ],
         "4-5": [
           [
-            40.82432,
-            16.55199
+            40.82433,
+            16.55197
           ],
           [
             40.8243,
@@ -58215,13 +58210,13 @@
           ],
           [
             40.81859,
-            16.55952
+            16.55951
           ]
         ],
         "8-9": [
           [
             40.81859,
-            16.55952
+            16.55951
           ],
           [
             40.81859,
@@ -61187,13 +61182,13 @@
           ],
           [
             40.81862,
-            16.5557
+            16.55571
           ]
         ],
         "13-14": [
           [
             40.81862,
-            16.5557
+            16.55571
           ],
           [
             40.81862,
@@ -61221,13 +61216,13 @@
           ],
           [
             40.81859,
-            16.55953
+            16.55954
           ]
         ],
         "14-15": [
           [
             40.81859,
-            16.55953
+            16.55954
           ],
           [
             40.81858,
@@ -61266,14 +61261,14 @@
             16.56308
           ],
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ]
         ],
         "15-16": [
           [
-            40.8191,
-            16.56311
+            40.81908,
+            16.56313
           ],
           [
             40.81913,
@@ -61513,13 +61508,13 @@
           ],
           [
             40.82375,
-            16.55745
+            16.55746
           ]
         ],
         "18-19": [
           [
             40.82375,
-            16.55745
+            16.55746
           ],
           [
             40.82379,
@@ -61812,7 +61807,8 @@
             16.54461
           ]
         ]
-      }
+      },
+      "warnings": []
     },
     {
       "id": "linea-melfi",
@@ -61821,14 +61817,14 @@
       "route": "Altamura - Gravina - Spinazzola - San Nicola di Melfi (SATA)",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
       "mapUrl": null,
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-Melfi-del-13.11.26.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-altamura-deposito-via-carpentino",
           "index": 1,
           "name": "ALTAMURA | Deposito Via Carpentino",
-          "lat": 40.817933,
-          "lon": 16.564234,
+          "lat": 40.817957,
+          "lon": 16.564215,
           "interpolated": false,
           "position": "estimated"
         },
@@ -61836,8 +61832,8 @@
           "stopId": "stop-altamura-via-centonze-antonia",
           "index": 2,
           "name": "ALTAMURA | Via Centonze Antonia",
-          "lat": 40.819975,
-          "lon": 16.542957,
+          "lat": 40.81998,
+          "lon": 16.54294,
           "interpolated": false,
           "position": "estimated"
         },
@@ -62025,8 +62021,8 @@
           "stopId": "stop-altamura-via-centonze-antonia-2",
           "index": 23,
           "name": "Altamura - Via Centonze Antonia",
-          "lat": 40.819903,
-          "lon": 16.542957,
+          "lat": 40.819897,
+          "lon": 16.542974,
           "interpolated": false,
           "position": "estimated"
         },
@@ -62034,8 +62030,8 @@
           "stopId": "stop-altamura-deposito-via-carpentino",
           "index": 24,
           "name": "ALTAMURA | Deposito Via Carpentino",
-          "lat": 40.817933,
-          "lon": 16.564234,
+          "lat": 40.817957,
+          "lon": 16.564215,
           "interpolated": false,
           "position": "estimated"
         }
@@ -62745,31 +62741,14 @@
         }
       ],
       "shape": [],
-      "warnings": [
-        "24 fermate senza coordinate"
-      ],
       "timetableFile": null,
-      "noticeFrom": "2026-11-13",
-      "noticeUntil": "2026-11-13",
-      "noticeStart": "20:00",
-      "noticeEnd": "21:00",
-      "noticeStops": [
-        "stop-gravina-via-bari",
-        "stop-gravina-via-tripoli",
-        "stop-gravina-piazza-scacchi",
-        "stop-gravina-piazza-stazione",
-        "stop-gravina-piazza-stazione-2",
-        "stop-gravina-piazza-scacchi-2",
-        "stop-gravina-via-tripoli-2",
-        "stop-gravina-via-bari-2"
-      ],
-      "noticeOnlyAt": {
-        "name": "Bar Casablanca",
-        "address": "Corso Giuseppe Di Vittorio 230, Gravina in Puglia",
-        "lat": 40.8276,
-        "lon": 16.42213
-      },
-      "noticeText": "Si comunica che il 13.11.26 dalle ore 20:00 fino alle 21:00 a Gravina in Puglia su LINEA MELFI sarà effettuata un'unica fermata presso il BAR CASABLANCA",
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
+      "noticeOnlyAt": null,
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-11-09",
       "extraurban": true,
@@ -62777,8 +62756,8 @@
       "hops": {
         "1-2": [
           [
-            40.81792,
-            16.56421
+            40.81795,
+            16.56419
           ],
           [
             40.81775,
@@ -63045,14 +63024,14 @@
             16.54424
           ],
           [
-            40.81994,
-            16.54294
+            40.81995,
+            16.54292
           ]
         ],
         "2-3": [
           [
-            40.81994,
-            16.54294
+            40.81995,
+            16.54292
           ],
           [
             40.81953,
@@ -73486,13 +73465,13 @@
           ],
           [
             40.81993,
-            16.54297
+            16.54299
           ]
         ],
         "23-24": [
           [
             40.81993,
-            16.54297
+            16.54299
           ],
           [
             40.81953,
@@ -73879,11 +73858,12 @@
             16.56401
           ],
           [
-            40.81792,
-            16.56421
+            40.81795,
+            16.56419
           ]
         ]
-      }
+      },
+      "warnings": []
     }
   ],
   "stops": [
@@ -73914,8 +73894,8 @@
     {
       "id": "stop-altamura-via-centonze-antonia-2",
       "name": "Altamura - Via Centonze Antonia",
-      "lat": 40.819903,
-      "lon": 16.542957,
+      "lat": 40.819897,
+      "lon": 16.542974,
       "lines": [
         "linea-melfi"
       ],
@@ -73924,8 +73904,8 @@
     {
       "id": "stop-altamura-deposito-via-carpentino",
       "name": "ALTAMURA | Deposito Via Carpentino",
-      "lat": 40.817933,
-      "lon": 16.564234,
+      "lat": 40.817957,
+      "lon": 16.564215,
       "lines": [
         "linea-melfi"
       ],
@@ -73934,8 +73914,8 @@
     {
       "id": "stop-altamura-via-centonze-antonia",
       "name": "ALTAMURA | Via Centonze Antonia",
-      "lat": 40.819975,
-      "lon": 16.542957,
+      "lat": 40.81998,
+      "lon": 16.54294,
       "lines": [
         "linea-melfi"
       ],
@@ -73995,8 +73975,8 @@
     {
       "id": "stop-cornacchia-falegnameria",
       "name": "CORNACCHIA (Falegnameria)",
-      "lat": 40.741505,
-      "lon": 16.667489,
+      "lat": 40.741513,
+      "lon": 16.667475,
       "lines": [
         "linea-jesce"
       ],
@@ -74129,10 +74109,20 @@
       "lon": 16.565316,
       "lines": [
         "ospedale-2",
-        "ospedale-domenica-e-festivi",
         "navette-hub",
         "linea-scuola-3",
         "linea-jesce"
+      ],
+      "position": "exact"
+    },
+    {
+      "id": "stop-hub-via-santeramo-ang-via-rocco-scotellaro-2",
+      "name": "Hub Via Santeramo ang. Via Rocco Scotellaro*",
+      "lat": 40.825579,
+      "lon": 16.565665,
+      "lines": [
+        "ospedale-domenica-e-festivi",
+        "linea-scuola-3"
       ],
       "position": "exact"
     },
@@ -74177,8 +74167,8 @@
     {
       "id": "stop-loken-sanflex",
       "name": "LOKEN - SANFLEX",
-      "lat": 40.738399,
-      "lon": 16.673613,
+      "lat": 40.738392,
+      "lon": 16.673625,
       "lines": [
         "linea-jesce"
       ],
@@ -74187,8 +74177,8 @@
     {
       "id": "stop-mec-line-laminboard",
       "name": "MEC LINE - LAMINBOARD",
-      "lat": 40.737969,
-      "lon": 16.674287,
+      "lat": 40.737984,
+      "lon": 16.674259,
       "lines": [
         "linea-jesce"
       ],
@@ -74250,8 +74240,8 @@
     {
       "id": "stop-piazza-zanardelli",
       "name": "Piazza Zanardelli",
-      "lat": 40.82429,
-      "lon": 16.551985,
+      "lat": 40.824292,
+      "lon": 16.551966,
       "lines": [
         "navette-hub",
         "linea-scuola-2",
@@ -74368,8 +74358,8 @@
     {
       "id": "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal",
       "name": "Stazione Via XXIV Maggio uscita sottopasso Fal",
-      "lat": 40.83735,
-      "lon": 16.552244,
+      "lat": 40.837346,
+      "lon": 16.55223,
       "lines": [
         "ospedale-2",
         "ospedale-domenica-e-festivi",
@@ -74612,8 +74602,8 @@
     {
       "id": "stop-via-carpentino-ang-via-s-fortunato",
       "name": "Via Carpentino ang. Via S. Fortunato",
-      "lat": 40.819088,
-      "lon": 16.563084,
+      "lat": 40.819063,
+      "lon": 16.563105,
       "lines": [
         "linea-scuola-1",
         "linea-scuola-2",
@@ -74721,8 +74711,8 @@
     {
       "id": "stop-via-dei-mille-40",
       "name": "Via Dei Mille 40",
-      "lat": 40.827987,
-      "lon": 16.548713,
+      "lat": 40.827983,
+      "lon": 16.548714,
       "lines": [
         "navette-hub",
         "pescariello-z-i",
@@ -74734,8 +74724,8 @@
     {
       "id": "stop-via-dei-mille-fronte-40",
       "name": "Via Dei Mille fronte 40",
-      "lat": 40.828011,
-      "lon": 16.548802,
+      "lat": 40.828021,
+      "lon": 16.5488,
       "lines": [
         "ospedale-1",
         "linea-ovest",
@@ -75077,7 +75067,7 @@
       "id": "stop-via-martiri",
       "name": "Via Martiri",
       "lat": 40.824077,
-      "lon": 16.553964,
+      "lon": 16.553963,
       "lines": [
         "linea-la-martella"
       ],
@@ -75108,7 +75098,7 @@
     {
       "id": "stop-via-matera-39",
       "name": "Via Matera, 39",
-      "lat": 40.82158,
+      "lat": 40.821578,
       "lon": 16.553566,
       "lines": [
         "linea-ovest",
@@ -75131,7 +75121,7 @@
       "id": "stop-via-mura-megalitiche",
       "name": "Via Mura Megalitiche",
       "lat": 40.836066,
-      "lon": 16.557088,
+      "lon": 16.557079,
       "lines": [
         "pescariello-z-i",
         "linea-jesce"
@@ -75250,8 +75240,8 @@
     {
       "id": "stop-via-parisi-fronte-66",
       "name": "Via Parisi (fronte 66)",
-      "lat": 40.830593,
-      "lon": 16.54793,
+      "lat": 40.830594,
+      "lon": 16.547929,
       "lines": [
         "navette-hub",
         "pescariello-z-i",
@@ -75289,7 +75279,7 @@
     {
       "id": "stop-via-pietro-colletta-204",
       "name": "Via Pietro Colletta 204",
-      "lat": 40.817161,
+      "lat": 40.817162,
       "lon": 16.550584,
       "lines": [
         "pescariello-z-i"
@@ -75299,8 +75289,8 @@
     {
       "id": "stop-via-putignano-25-2",
       "name": "Via Putignano 25",
-      "lat": 40.816831,
-      "lon": 16.55205,
+      "lat": 40.816838,
+      "lon": 16.552016,
       "lines": [
         "linea-jesce"
       ],
@@ -75436,7 +75426,7 @@
       "id": "stop-via-treviso-50",
       "name": "Via Treviso 50",
       "lat": 40.818585,
-      "lon": 16.5557,
+      "lon": 16.555714,
       "lines": [
         "ospedale-1",
         "linea-scuola-1",
@@ -75450,7 +75440,7 @@
       "id": "stop-via-treviso-ang-via-manzoni",
       "name": "Via Treviso ang. Via Manzoni",
       "lat": 40.818546,
-      "lon": 16.559532,
+      "lon": 16.559538,
       "lines": [
         "ospedale-1",
         "linea-scuola-1",
@@ -75464,7 +75454,7 @@
       "id": "stop-via-treviso-ang-via-manzoni-2",
       "name": "Via Treviso ang. Via Manzoni",
       "lat": 40.818617,
-      "lon": 16.559518,
+      "lon": 16.559512,
       "lines": [
         "ospedale-domenica-e-festivi",
         "linea-scuola-1",
@@ -75523,8 +75513,8 @@
     {
       "id": "stop-viale-martiri-6",
       "name": "Viale Martiri, 6",
-      "lat": 40.824074,
-      "lon": 16.553966,
+      "lat": 40.824075,
+      "lon": 16.553956,
       "lines": [
         "navette-hub",
         "linea-scuola-3"
@@ -75534,8 +75524,8 @@
     {
       "id": "stop-viale-martiri-83",
       "name": "Viale Martiri, 83",
-      "lat": 40.823785,
-      "lon": 16.557452,
+      "lat": 40.823784,
+      "lon": 16.557466,
       "lines": [
         "ospedale-1",
         "navette-hub",
@@ -75639,148 +75629,308 @@
   ],
   "vendors": [
     {
-      "id": "autolinee-marino-michele-s-r-l",
-      "name": "Autolinee Marino Michele S.R.L",
-      "address": "L.go Francesco Saverio Nitti, n.67",
-      "phone": "0803112335",
-      "lat": 40.8326154,
-      "lon": 16.5571041
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "apoikia-tour",
-      "name": "Apoikia Tour",
-      "address": "Via Carpentino n.59",
-      "phone": "0803149575",
-      "lat": 40.8184072,
-      "lon": 16.5617332
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "bar-gelo",
-      "name": "Bar Gelo",
-      "address": "Piazza Zanardelli n.7",
-      "phone": "0803111924",
-      "lat": 40.824374,
-      "lon": 16.552018
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "bar-tabacchi-madero-chironna",
-      "name": "Bar Tabacchi Madero (Chironna)",
-      "address": "Via Pompei n.55B",
-      "phone": "0803113295",
-      "lat": 40.8205513,
-      "lon": 16.5464403
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "carlo-ventricelli",
-      "name": "Carlo Ventricelli",
-      "address": "Via Vittorio veneto n. 54-56",
-      "phone": "0803111889",
-      "lat": 40.82885,
-      "lon": 16.5487312
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "cartoleria-gatto-silvestro-2-0",
-      "name": "Cartoleria Gatto Silvestro 2.0",
-      "address": "Via Bardia 3",
-      "phone": "3335444320",
-      "lat": 40.8229964,
-      "lon": 16.5622983
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "corantour-s-r-l-s",
-      "name": "Corantour S.r.l.s.",
-      "address": "Via Selva, 6",
-      "phone": "0802377041",
-      "lat": 40.824299,
-      "lon": 16.549591
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "il-pozzo-dei-desideri-tabaccheria-n-7",
-      "name": "Il pozzo dei desideri tabaccheria n. 7",
-      "address": "C.so Umberto 162",
-      "phone": "0803112643",
-      "lat": 40.8264572,
-      "lon": 16.5542893
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "paper-one",
-      "name": "Paper One",
-      "address": "Via Caduti delle Foibe n.32/34",
-      "phone": "0803115729",
-      "lat": 40.8134206,
-      "lon": 16.5421612
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "rivendita-tabacchi-cifa",
-      "name": "Rivendita tabacchi Cifa",
-      "address": "Piazza Epitaffio n.2 (Stazione)",
-      "phone": "3939523433",
-      "lat": 40.8385312,
-      "lon": 16.5472703
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "run-about",
-      "name": "Run About",
-      "address": "Via Torino n.21",
-      "phone": "0803142829",
-      "lat": 40.8248395,
-      "lon": 16.5546491
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "snoopy",
-      "name": "Snoopy",
-      "address": "Via Ugo Foscolo n.36",
-      "phone": "0803148650",
-      "lat": 40.8214396,
-      "lon": 16.5549122
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "soumaya-travel",
-      "name": "Soumaya Travel",
-      "address": "Corso Aldo Moro, 86 (Gravina in Puglia)",
-      "phone": "0803269107",
-      "lat": 40.8226374,
-      "lon": 16.4159498
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "tab-riv-n-23-ceglie-alessandro",
-      "name": "Tab. Riv. N°23 Ceglie Alessandro",
-      "address": "Via San Martino n.6",
-      "phone": "0803106102",
-      "lat": 40.8253254,
-      "lon": 16.5456936
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "tabaccheria-d-amelio-gino",
-      "name": "Tabaccheria D'Amelio Gino",
-      "address": "Piazza Plebiscito n.12 (Spinazzola)",
-      "phone": "0883683169",
-      "lat": 40.9688852,
-      "lon": 15.5270445
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "tabaccheria-n-6",
-      "name": "Tabaccheria n°6",
-      "address": "Via XX Settembre, 34 - Piazza Zanardelli, 62",
-      "phone": "0808413565",
-      "lat": 40.824341,
-      "lon": 16.552531
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "winning-bet-di-lorusso-f-e-papangelo-d-snc",
-      "name": "Winning Bet Di Lorusso F. e Papangelo D. SNC",
-      "address": "Via Istria 22",
-      "phone": "0803106353",
-      "lat": 40.8229734,
-      "lon": 16.5564576
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     },
     {
-      "id": "tabaccheria-n-9",
-      "name": "Tabaccheria n. 9",
-      "address": "Corso Federico II di Svevia, 9",
-      "phone": "0803143909",
-      "lat": 40.829232,
-      "lon": 16.5535167
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": "undefined",
+      "name": "",
+      "address": "",
+      "phone": null,
+      "lat": null,
+      "lon": null
     }
   ],
   "fares": [
