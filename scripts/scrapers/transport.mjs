@@ -7,6 +7,7 @@ import { COPY_DIR, marinoBuffer, marinoText, usage } from '../lib/copia-locale.m
 import { fetchKmlGeometry, kmlUrlFromMyMapsLink } from '../lib/kml.mjs';
 import { parseTimetablePdf } from '../lib/pdf-timetable.mjs';
 import { fillMissingStopCoordinates } from '../lib/geo.mjs';
+import { validFromUrl } from '../lib/arricchisci.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
 import { listedDays, parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
 import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, stopsInTown } from '../lib/avvisi.mjs';
@@ -539,6 +540,16 @@ export async function scrapeTransport(previous = null) {
   for (const line of lines) {
     process.stdout.write(`> ${line.name} ... `);
     const previousLine = previous?.lines?.find((item) => item.id === line.id) ?? null;
+    // Mai tornare indietro: se il sito linka un quadro orario con data piu' vecchia di quello gia'
+    // importato (successo col restyling di novembre 2026), si tengono le corse e il PDF dell'ultimo giro.
+    const listedFrom = validFromUrl(line.timetableUrl);
+    if (previousLine?.trips?.length && previousLine.validFrom && listedFrom && listedFrom < previousLine.validFrom) {
+      for (const stop of previousLine.stops) register(registry, stop, line.id);
+      const { warnings: _w, ...kept } = previousLine;
+      scraped.push({ ...kept, noticeUrl: line.noticeUrl, warnings: [] });
+      console.log(`tenuto il quadro orario del ${previousLine.validFrom}: il sito linka quello piu' vecchio del ${listedFrom}`);
+      continue;
+    }
     const result = await scrapeLine(line, registry, previousLine);
     result.timetableFile = usage.files.get(line.timetableUrl) ?? null;
     const suppressed = result.trips.reduce((total, trip) => total + trip.stopTimes.filter((st) => !st.served).length, 0);

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:02:05.980Z",
+  "generatedAt": "2026-11-09T12:50:55.697Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -6539,7 +6539,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub Via Santeramo - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale-2-12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1X8CgsGjLXSvHJdo3MMPM6O0cBxccziI&ll=40.82854639301995%2C16.519101299999974&z=14",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -13370,16 +13370,18 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-22",
-      "noticeUntil": "2026-10-22",
-      "noticeStart": "20:00",
+      "noticeFrom": "2026-11-09",
+      "noticeUntil": "2026-11-09",
+      "noticeStart": "17:30",
       "noticeEnd": "22:00",
       "noticeStops": [
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-74"
+        "stop-via-iv-novembre-ang-via-ii-giugno",
+        "stop-via-mura-megalitiche-fronte-stadio",
+        "stop-via-bari-ang-via-vincenzo-russo-parcheggio-pubblico",
+        "stop-via-bari-150"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
+      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
@@ -13392,7 +13394,7 @@
       "route": "Via Gravina - Stazione - Parco San Giuliano - Hub - Trentacapilli - Ospedale",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/06/MarinoBus_Urbano_Orari_Ospedale_Domenica-e-Festivi_12-06-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1iCfk8GkhcM_SZt7b7aedeL2_E_uDhNc&ll=40.825646463944054%2C16.51911380000001&z=14",
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-Linea-Ospedale-Domenica-e-festivi-15.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-ospedale-fermata-bus",
@@ -20257,13 +20259,13 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": null,
-      "noticeUntil": null,
-      "noticeStart": null,
-      "noticeEnd": null,
+      "noticeFrom": "2026-11-15",
+      "noticeUntil": "2026-11-15",
+      "noticeStart": "07:30",
+      "noticeEnd": "13:00",
       "noticeStops": [],
       "noticeOnlyAt": null,
-      "noticeText": null,
+      "noticeText": "Si comunica che il 15.11.26 dalle ore 07:30 fino alle 13:00 la LINEA OSPEDALE DOMENICA E FESTIVI potrà subire RITARDI O VARIAZIONI DI PERCORSO a causa del passaggio della gara podistica \"X Trofeo Correndo tra le mura\"",
       "school": false,
       "validFrom": "2026-06-12",
       "extraurban": false,
@@ -24825,7 +24827,7 @@
       "route": "Piazza Unità d'Italia - Stazione - Piazza Zanardelli - Hub Via Santeramo",
       "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/04/MarinoBus_Urbano_Orari_Navette-Hub-30-03-2026.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1Ic7q62Ftd9wkxdl8fCyppRBnIBO9dlI&ll=40.82796529741464%2C16.556631899999992&z=15",
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-22.10.2026.pdf",
+      "noticeUrl": null,
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -28703,16 +28705,13 @@
       ],
       "warnings": [],
       "timetableFile": null,
-      "noticeFrom": "2026-10-22",
-      "noticeUntil": "2026-10-22",
-      "noticeStart": "20:00",
-      "noticeEnd": "22:00",
-      "noticeStops": [
-        "stop-via-iv-novembre-fronte-1",
-        "stop-via-iv-novembre-fronte-via-ii-giugno"
-      ],
+      "noticeFrom": null,
+      "noticeUntil": null,
+      "noticeStart": null,
+      "noticeEnd": null,
+      "noticeStops": [],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 22.10.2026 dalle ore 20:00 alle ore 22:00 su LINEA OSPEDALE 2 e su NAVETTE HUB le seguenti fermate sono SOPPRESSE: - Via IV Novembre fronte 1 - Via IV Novembre fronte 74",
+      "noticeText": null,
       "school": false,
       "validFrom": "2026-03-30",
       "extraurban": false,
@@ -35176,7 +35175,7 @@
       "name": "Linea Scuola 3",
       "color": "#f7907b",
       "route": "Via Santeramo - Parco San Giuliano - Via IV Novembre - Viale Martiri",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026-2.pdf",
       "mapUrl": "https://www.google.com/maps/d/u/0/edit?hl=it&mid=1PbjezY4N1A6nEGHlR2u_6nTsGT6jt_Y&ll=40.83047330924979%2C16.551575800000034&z=15",
       "noticeUrl": null,
       "stops": [
@@ -46275,9 +46274,9 @@
       "name": "Linea Jesce",
       "color": "#cbbba0",
       "route": "Altamura - Zona Industriale Jesce",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
       "mapUrl": null,
-      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/10/Avviso-partite-del-23.10.26-e-27.10.26.pdf",
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-partita-calcio-09.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-hub-via-santeramo-ang-via-rocco-scotellaro",
@@ -48781,36 +48780,36 @@
             4,
             5
           ],
-          "departure": "16:50",
+          "departure": "16:55",
           "stopTimes": [
             {
               "stopId": "stop-ferrosud",
               "index": 25,
-              "time": "16:50",
+              "time": "16:55",
               "served": true
             },
             {
               "stopId": "stop-cornacchia-falegnameria",
               "index": 26,
-              "time": "16:51",
+              "time": "16:56",
               "served": true
             },
             {
               "stopId": "stop-natuzzi",
               "index": 27,
-              "time": "16:52",
+              "time": "16:57",
               "served": true
             },
             {
               "stopId": "stop-styling",
               "index": 28,
-              "time": "16:53",
+              "time": "16:58",
               "served": true
             },
             {
               "stopId": "stop-mec-line-laminboard",
               "index": 29,
-              "time": "16:54",
+              "time": "16:59",
               "served": true
             },
             {
@@ -48822,19 +48821,19 @@
             {
               "stopId": "stop-domar",
               "index": 31,
-              "time": "16:59",
+              "time": "17:01",
               "served": true
             },
             {
               "stopId": "stop-meridianagri",
               "index": 32,
-              "time": "17:00",
+              "time": "17:02",
               "served": true
             },
             {
               "stopId": "stop-dileo-incanto",
               "index": 33,
-              "time": "17:02",
+              "time": "17:03",
               "served": true
             },
             {
@@ -49255,8 +49254,8 @@
         "48 fermate senza coordinate"
       ],
       "timetableFile": null,
-      "noticeFrom": "2026-10-27",
-      "noticeUntil": "2026-10-27",
+      "noticeFrom": "2026-11-09",
+      "noticeUntil": "2026-11-09",
       "noticeStart": "17:30",
       "noticeEnd": "22:00",
       "noticeStops": [
@@ -49264,9 +49263,9 @@
         "stop-stazione-via-xxiv-maggio-uscita-sottopasso-fal"
       ],
       "noticeOnlyAt": null,
-      "noticeText": "Si comunica che il giorno 23.10.26 e il giorno 27.10.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
+      "noticeText": "Si comunica che il giorno 09.11.26 dalle 17:30 alle 22:00 le seguenti fermate saranno SOPPRESSE. - LINEA OSPEDALE 2: da via IV Novembre ang. via II Giugno a via Bari 150 - LINEA JESCE: via Mura Megalitiche Stadio e Stazione via XXIV Maggio",
       "school": false,
-      "validFrom": "2026-07-16",
+      "validFrom": "2026-11-09",
       "extraurban": true,
       "extraShapes": [],
       "hops": {
@@ -57103,7 +57102,7 @@
       "name": "Linea La Martella",
       "color": "#cbbba0",
       "route": "Altamura - Zona Industriale La Martella (Matera)",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
       "mapUrl": null,
       "noticeUrl": null,
       "stops": [
@@ -57649,7 +57648,7 @@
       "noticeOnlyAt": null,
       "noticeText": null,
       "school": false,
-      "validFrom": "2026-07-16",
+      "validFrom": "2026-11-09",
       "extraurban": true,
       "extraShapes": [],
       "hops": {
@@ -61820,9 +61819,9 @@
       "name": "Linea Melfi",
       "color": "#cbbba0",
       "route": "Altamura - Gravina - Spinazzola - San Nicola di Melfi (SATA)",
-      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/07/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-16-07-2026.pdf",
+      "timetableUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
       "mapUrl": null,
-      "noticeUrl": null,
+      "noticeUrl": "https://marinobusurbano.it/wp-content/uploads/2026/11/Avviso-Melfi-del-13.11.26.pdf",
       "stops": [
         {
           "stopId": "stop-altamura-deposito-via-carpentino",
@@ -62025,7 +62024,7 @@
         {
           "stopId": "stop-altamura-via-centonze-antonia-2",
           "index": 23,
-          "name": "ALTAMURA - Via Centonze Antonia",
+          "name": "Altamura - Via Centonze Antonia",
           "lat": 40.819903,
           "lon": 16.542957,
           "interpolated": false,
@@ -62750,15 +62749,29 @@
         "24 fermate senza coordinate"
       ],
       "timetableFile": null,
-      "noticeFrom": null,
-      "noticeUntil": null,
-      "noticeStart": null,
-      "noticeEnd": null,
-      "noticeStops": [],
-      "noticeOnlyAt": null,
-      "noticeText": null,
+      "noticeFrom": "2026-11-13",
+      "noticeUntil": "2026-11-13",
+      "noticeStart": "20:00",
+      "noticeEnd": "21:00",
+      "noticeStops": [
+        "stop-gravina-via-bari",
+        "stop-gravina-via-tripoli",
+        "stop-gravina-piazza-scacchi",
+        "stop-gravina-piazza-stazione",
+        "stop-gravina-piazza-stazione-2",
+        "stop-gravina-piazza-scacchi-2",
+        "stop-gravina-via-tripoli-2",
+        "stop-gravina-via-bari-2"
+      ],
+      "noticeOnlyAt": {
+        "name": "Bar Casablanca",
+        "address": "Corso Giuseppe Di Vittorio 230, Gravina in Puglia",
+        "lat": 40.8276,
+        "lon": 16.42213
+      },
+      "noticeText": "Si comunica che il 13.11.26 dalle ore 20:00 fino alle 21:00 a Gravina in Puglia su LINEA MELFI sarà effettuata un'unica fermata presso il BAR CASABLANCA",
       "school": false,
-      "validFrom": "2026-07-16",
+      "validFrom": "2026-11-09",
       "extraurban": true,
       "extraShapes": [],
       "hops": {
@@ -73900,7 +73913,7 @@
     },
     {
       "id": "stop-altamura-via-centonze-antonia-2",
-      "name": "ALTAMURA - Via Centonze Antonia",
+      "name": "Altamura - Via Centonze Antonia",
       "lat": 40.819903,
       "lon": 16.542957,
       "lines": [
@@ -75626,308 +75639,148 @@
   ],
   "vendors": [
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "autolinee-marino-michele-s-r-l",
+      "name": "Autolinee Marino Michele S.R.L",
+      "address": "L.go Francesco Saverio Nitti, n.67",
+      "phone": "0803112335",
+      "lat": 40.8326154,
+      "lon": 16.5571041
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "apoikia-tour",
+      "name": "Apoikia Tour",
+      "address": "Via Carpentino n.59",
+      "phone": "0803149575",
+      "lat": 40.8184072,
+      "lon": 16.5617332
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "bar-gelo",
+      "name": "Bar Gelo",
+      "address": "Piazza Zanardelli n.7",
+      "phone": "0803111924",
+      "lat": 40.824374,
+      "lon": 16.552018
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "bar-tabacchi-madero-chironna",
+      "name": "Bar Tabacchi Madero (Chironna)",
+      "address": "Via Pompei n.55B",
+      "phone": "0803113295",
+      "lat": 40.8205513,
+      "lon": 16.5464403
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "carlo-ventricelli",
+      "name": "Carlo Ventricelli",
+      "address": "Via Vittorio veneto n. 54-56",
+      "phone": "0803111889",
+      "lat": 40.82885,
+      "lon": 16.5487312
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "cartoleria-gatto-silvestro-2-0",
+      "name": "Cartoleria Gatto Silvestro 2.0",
+      "address": "Via Bardia 3",
+      "phone": "3335444320",
+      "lat": 40.8229964,
+      "lon": 16.5622983
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "corantour-s-r-l-s",
+      "name": "Corantour S.r.l.s.",
+      "address": "Via Selva, 6",
+      "phone": "0802377041",
+      "lat": 40.824299,
+      "lon": 16.549591
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "il-pozzo-dei-desideri-tabaccheria-n-7",
+      "name": "Il pozzo dei desideri tabaccheria n. 7",
+      "address": "C.so Umberto 162",
+      "phone": "0803112643",
+      "lat": 40.8264572,
+      "lon": 16.5542893
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "paper-one",
+      "name": "Paper One",
+      "address": "Via Caduti delle Foibe n.32/34",
+      "phone": "0803115729",
+      "lat": 40.8134206,
+      "lon": 16.5421612
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "rivendita-tabacchi-cifa",
+      "name": "Rivendita tabacchi Cifa",
+      "address": "Piazza Epitaffio n.2 (Stazione)",
+      "phone": "3939523433",
+      "lat": 40.8385312,
+      "lon": 16.5472703
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "run-about",
+      "name": "Run About",
+      "address": "Via Torino n.21",
+      "phone": "0803142829",
+      "lat": 40.8248395,
+      "lon": 16.5546491
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "snoopy",
+      "name": "Snoopy",
+      "address": "Via Ugo Foscolo n.36",
+      "phone": "0803148650",
+      "lat": 40.8214396,
+      "lon": 16.5549122
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "soumaya-travel",
+      "name": "Soumaya Travel",
+      "address": "Corso Aldo Moro, 86 (Gravina in Puglia)",
+      "phone": "0803269107",
+      "lat": 40.8226374,
+      "lon": 16.4159498
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "tab-riv-n-23-ceglie-alessandro",
+      "name": "Tab. Riv. N°23 Ceglie Alessandro",
+      "address": "Via San Martino n.6",
+      "phone": "0803106102",
+      "lat": 40.8253254,
+      "lon": 16.5456936
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "tabaccheria-d-amelio-gino",
+      "name": "Tabaccheria D'Amelio Gino",
+      "address": "Piazza Plebiscito n.12 (Spinazzola)",
+      "phone": "0883683169",
+      "lat": 40.9688852,
+      "lon": 15.5270445
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "tabaccheria-n-6",
+      "name": "Tabaccheria n°6",
+      "address": "Via XX Settembre, 34 - Piazza Zanardelli, 62",
+      "phone": "0808413565",
+      "lat": 40.824341,
+      "lon": 16.552531
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "winning-bet-di-lorusso-f-e-papangelo-d-snc",
+      "name": "Winning Bet Di Lorusso F. e Papangelo D. SNC",
+      "address": "Via Istria 22",
+      "phone": "0803106353",
+      "lat": 40.8229734,
+      "lon": 16.5564576
     },
     {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": "undefined",
-      "name": "",
-      "address": "",
-      "phone": null,
-      "lat": null,
-      "lon": null
+      "id": "tabaccheria-n-9",
+      "name": "Tabaccheria n. 9",
+      "address": "Corso Federico II di Svevia, 9",
+      "phone": "0803143909",
+      "lat": 40.829232,
+      "lon": 16.5535167
     }
   ],
   "fares": [

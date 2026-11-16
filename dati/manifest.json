@@ -1,11 +1,11 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-16T12:02:54.138Z",
+  "checkedAt": "2026-11-16T11:46:18.516Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-11-16T12:02:05.980Z",
-      "bytes": 1631753,
-      "sha256": "6c183b8d814acb00094abe188fd72f71a1526f3c48a7b42d5c11408addc7e90b"
+      "generatedAt": "2026-11-09T12:50:55.697Z",
+      "bytes": 1631246,
+      "sha256": "5b3368258c4f2b6e20002adf61730fb2d155e4e2d695bb154d2ed755bccb81b0"
     },
     "events": {
       "generatedAt": "2026-11-16T11:39:45.992Z",
@@ -18,15 +18,15 @@
       "sha256": "943420782ab76b5befa20450834bd8a4c70e669f24c9ad097e422357d1f821aa"
     },
     "alerts": {
-      "generatedAt": "2026-11-16T12:02:54.128Z",
-      "bytes": 3330,
-      "sha256": "8141b22810629125315ea71eaa1b58070af026a04b8a707b48ee41bec9b4fd6d"
+      "generatedAt": "2026-11-13T12:12:30.418Z",
+      "bytes": 1469,
+      "sha256": "3ad3ea4152262e8f1779c877433d603ee6ea65c4bb2da14b6449d4943561417c"
     }
   },
   "sources": {
     "transport": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "Nessuna linea nella homepage: il sito ha risposto con una pagina di verifica o ha cambiato struttura."
     },
     "events": {
       "status": "aggiornato",
@@ -38,6 +38,6 @@
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-16T12:03:08.464Z",
+  "signedAt": "2026-11-16T11:46:34.696Z",
   "keyId": "5VTN2Etz"
 }
