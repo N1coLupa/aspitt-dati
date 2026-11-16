@@ -26,24 +26,47 @@ const clean = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+// Percorso della linea. Nelle linee scuola del nuovo sito non c'e' la descrizione: il percorso sta
+// nel sottotitolo, dopo l'elenco delle scuole servite (si prende l'ultimo paragrafo che non le elenca).
+function lineRoute($, el) {
+  const old = clean(el.find('.gen--p').first().text());
+  if (old) return old;
+  const desc = clean(el.find('.h26-line--desc').first().text());
+  if (desc) return desc;
+  const subtitle = el.find('.h26-line--subtitle').first();
+  if (!subtitle.length) return null;
+  const parts = subtitle
+    .find('p')
+    .map((_, p) => clean($(p).text()))
+    .get()
+    .filter(Boolean);
+  const route = [...parts].reverse().find((text) => !/scuole servite/i.test(text));
+  if (route) return route.replace(/^percorso:?\s*/i, '') || null;
+  const text = clean(subtitle.text());
+  const after = /percorso:?\s*(.+)$/i.exec(text)?.[1];
+  return after ? clean(after) : null;
+}
+
 function parseLines($) {
   const lines = [];
   const seen = new Set();
 
-  $('.home--lines .line').each((_, node) => {
+  // Due versioni della homepage: quella vecchia (.home--lines .line) e il restyling di novembre 2026
+  // (.h26-lines .h26-line), dove ogni linea compare due volte (griglia desktop e carosello mobile).
+  $('.home--lines .line, .h26-lines .h26-line').each((_, node) => {
     const el = $(node);
-    const heading = el.find('.line--info h3').first();
+    const heading = el.find('.line--info h3, .h26-line--name').first();
     const noticeUrl = link(heading.find('a[href]').attr('href')) ?? null;
 
     const name = clean(heading.clone().find('a').remove().end().text()).replace(/[-\s]+$/, '');
     if (!name || seen.has(name)) return;
     seen.add(name);
 
-    const style = el.find('.line--col').attr('style') ?? '';
-    const color = /background-color:\s*(#[0-9a-f]{3,8})/i.exec(style)?.[1] ?? null;
+    const style = el.find('.line--col').attr('style') ?? el.find('.h26-line--pin').attr('style') ?? '';
+    const color = /(?:^|;|\s)(?:background-)?color:\s*(#[0-9a-f]{3,8})/i.exec(style)?.[1] ?? null;
 
     const links = el
-      .find('a.btn')
+      .find('a.btn, .h26-line--btns a[href]')
       .map((__, a) => ({ href: normalizeLink($(a).attr('href'), HOME_URL) ?? '', label: clean($(a).text()) }))
       .get();
 
@@ -51,7 +74,7 @@ function parseLines($) {
       id: slugify(name),
       name,
       color: color ? color.toLowerCase() : null,
-      route: clean(el.find('.gen--p').first().text()) || null,
+      route: lineRoute($, el),
       timetableUrl: link(links.find((l) => /\.pdf$/i.test(l.href) && /orari/i.test(l.href))?.href),
       mapUrl: normalizeLink(links.find((l) => l.href.includes('google.com/maps'))?.href, HOME_URL, ['google.com']),
       noticeUrl,
@@ -482,7 +505,7 @@ export async function scrapeTransport(previous = null) {
 
   let html = null;
   try {
-    html = await marinoText(HOME_URL, 'home--lines');
+    html = await marinoText(HOME_URL, ['home--lines', 'h26-lines']);
   } catch (err) {
     if (!(err instanceof BlockedError) || !previous?.lines?.length) throw err;
     console.log('  homepage non disponibile: elenco linee da quello di ieri');
@@ -500,6 +523,10 @@ export async function scrapeTransport(previous = null) {
         mapUrl,
         noticeUrl,
       }));
+  // Se il sito non mostra piu' il percorso in un formato riconosciuto, si tiene quello dell'ultimo giro.
+  for (const line of listed) {
+    if (!line.route) line.route = previous?.lines?.find((item) => item.id === line.id)?.route ?? null;
+  }
   const regional = JSON.parse(await fs.readFile(REGIONAL_FILE, 'utf8').catch(() => '{}')).linee ?? {};
   const lines = (await Promise.all(listed.map((line) => splitByTitle(line, regional)))).flat();
   console.log(`  ${lines.length} linee ${html ? 'trovate' : 'riprese da ieri'}`);
