@@ -21,7 +21,7 @@ async function localPage(marker) {
   for (const file of await files()) {
     if (!/\.html?$/i.test(file)) continue;
     const html = await fs.readFile(file, 'utf8');
-    if (html.includes(marker)) return html;
+    if ([marker].flat().some((m) => html.includes(m))) return html;
   }
   return null;
 }
