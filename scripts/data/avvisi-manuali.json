@@ -1,0 +1,4 @@
+{
+  "_istruzioni": "Avvisi scritti a mano. Ognuno: titolo e testo obbligatori; linea (id o nome, vuota = avviso generico), dal e fino (AAAA-MM-GG), link, gravita (info o warning). Senza 'fino' resta finche' non lo togli dal file. Puoi usare anche il workflow 'Aggiungi avviso' dalla scheda Actions.",
+  "avvisi": []
+}
