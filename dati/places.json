@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:28:07.449Z",
+  "generatedAt": "2026-11-16T12:32:55.305Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -35,7 +35,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 25
+          "distance": 26
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -354,7 +354,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 179
+          "distance": 178
         },
         {
           "stopId": "stop-via-matera-101",
@@ -1274,7 +1274,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 46
+          "distance": 44
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1843,7 +1843,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2342,7 +2342,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 125
+          "distance": 124
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2391,7 +2391,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2511,7 +2511,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 22
+          "distance": 23
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2621,7 +2621,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 142
+          "distance": 143
         }
       ]
     },
@@ -2673,7 +2673,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 81
+          "distance": 80
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
