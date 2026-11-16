@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:59:46.004Z",
+  "generatedAt": "2026-11-16T11:39:45.992Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -240,6 +240,12 @@
       "categories": [
         "eventi"
       ],
+      "alsoOn": [
+        {
+          "source": "Comune di Altamura",
+          "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-oltre-lo-schermo-734120"
+        }
+      ],
       "dated": true
     },
     {
@@ -281,6 +287,10 @@
         "eventi"
       ],
       "alsoOn": [
+        {
+          "source": "Comune di Altamura",
+          "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-oltre-lo-schermo"
+        },
         {
           "source": "AltamuraLife",
           "url": "https://www.altamuralife.it/eventi/settimana-delle-scarpette-rosse-il-tema-della-violenza-digitale/"
