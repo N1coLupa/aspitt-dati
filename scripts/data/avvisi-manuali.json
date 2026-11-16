@@ -1,4 +1,12 @@
 {
   "_istruzioni": "Avvisi scritti a mano. Ognuno: titolo e testo obbligatori; linea (id o nome, vuota = avviso generico), dal e fino (AAAA-MM-GG), link, gravita (info o warning). Senza 'fino' resta finche' non lo togli dal file. Puoi usare anche il workflow 'Aggiungi avviso' dalla scheda Actions.",
-  "avvisi": []
+  "avvisi": [
+    {
+      "titolo": "Fermate soppresse domenica 22 novembre",
+      "testo": "Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre (ang. via II Giugno) a via Bari 150 sulla Linea Ospedale Domenica e Festivi.",
+      "linea": "ospedale-domenica-e-festivi",
+      "fino": "2026-11-22",
+      "gravita": "warning"
+    }
+  ]
 }
