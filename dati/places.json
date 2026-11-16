@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:44:58.729Z",
+  "generatedAt": "2026-11-16T13:20:19.067Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -35,7 +35,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 28
+          "distance": 29
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1274,7 +1274,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 41
+          "distance": 39
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1330,6 +1330,14 @@
           "distance": 34
         },
         {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 37
+        },
+        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri, 6",
           "lines": [
@@ -1337,14 +1345,6 @@
             "linea-scuola-3"
           ],
           "distance": 37
-        },
-        {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 38
         }
       ]
     },
@@ -1839,7 +1839,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2338,7 +2338,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 121
+          "distance": 120
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2387,7 +2387,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2507,7 +2507,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 24
+          "distance": 25
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2617,7 +2617,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 144
+          "distance": 145
         }
       ]
     },
@@ -2669,7 +2669,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 78
+          "distance": 76
         },
         {
           "stopId": "stop-piazza-zanardelli-7",

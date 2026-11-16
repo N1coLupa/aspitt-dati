@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-11-16T12:32:55.313Z",
+  "generatedAt": "2026-11-16T13:20:19.080Z",
   "alerts": [
     {
       "id": "manuale-fermate-soppresse-domenica-22-novembre-35712a80",
       "severity": "warning",
       "lineId": "ospedale-domenica-e-festivi",
+      "lineName": "Ospedale - Domenica e Festivi",
       "title": "Fermate soppresse domenica 22 novembre",
       "body": "Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre (ang. via II Giugno) a via Bari 150 sulla Linea Ospedale Domenica e Festivi.",
       "createdAt": "2026-11-16T12:32:55.312Z",
@@ -19,33 +20,6 @@
       "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
       "url": "https://marinobusurbano.it/wp-content/uploads/2026/10/MarinoBus_Urbano_Orari_Scuola-3-16-10-2026.pdf",
       "createdAt": "2026-11-16T12:18:02.461Z"
-    },
-    {
-      "id": "orari-linea-jesce-2026-11-09",
-      "severity": "warning",
-      "lineId": "linea-jesce",
-      "title": "Orari aggiornati: Linea Jesce",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
-      "createdAt": "2026-11-09T12:56:07.878Z"
-    },
-    {
-      "id": "orari-linea-la-martella-2026-11-09",
-      "severity": "warning",
-      "lineId": "linea-la-martella",
-      "title": "Orari aggiornati: Linea La Martella",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
-      "createdAt": "2026-11-09T12:56:07.878Z"
-    },
-    {
-      "id": "orari-linea-melfi-2026-11-09",
-      "severity": "warning",
-      "lineId": "linea-melfi",
-      "title": "Orari aggiornati: Linea Melfi",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Jesce-Melfi-LaMartella-09_11_2026.pdf",
-      "createdAt": "2026-11-09T12:56:07.878Z"
     }
   ]
 }
