@@ -1,0 +1,88 @@
+name: Aggiungi avviso
+
+on:
+  workflow_dispatch:
+    inputs:
+      azione:
+        description: 'aggiungi un avviso nuovo o togli uno esistente (per togliere basta il titolo)'
+        type: choice
+        options: [aggiungi, togli]
+        default: aggiungi
+      titolo:
+        description: 'Titolo (es. Possibili ritardi)'
+        required: true
+        type: string
+      testo:
+        description: 'Testo dell avviso'
+        required: false
+        type: string
+      linea:
+        description: 'Linea (es. Ospedale 2). Vuoto = avviso generico'
+        required: false
+        type: string
+      fino:
+        description: 'Valido fino al (AAAA-MM-GG). Vuoto = 7 giorni'
+        required: false
+        type: string
+      dal:
+        description: 'Pubblica dal (AAAA-MM-GG). Vuoto = subito'
+        required: false
+        type: string
+      link:
+        description: 'Link (facoltativo, es. il PDF dell avviso)'
+        required: false
+        type: string
+      gravita:
+        description: 'info = normale, warning = importante'
+        type: choice
+        options: [info, warning]
+        default: info
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aggiorna-dati
+  cancel-in-progress: false
+
+jobs:
+  avviso:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 22
+
+      - name: Modifica avvisi-manuali.json
+        env:
+          AVVISO_AZIONE: ${{ inputs.azione }}
+          AVVISO_TITOLO: ${{ inputs.titolo }}
+          AVVISO_TESTO: ${{ inputs.testo }}
+          AVVISO_LINEA: ${{ inputs.linea }}
+          AVVISO_FINO: ${{ inputs.fino }}
+          AVVISO_DAL: ${{ inputs.dal }}
+          AVVISO_LINK: ${{ inputs.link }}
+          AVVISO_GRAVITA: ${{ inputs.gravita }}
+          ASPITT_DATA_DIR: dati
+        run: node scripts/aggiungi-avviso.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Salva e lancia l'aggiornamento
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AZIONE: ${{ inputs.azione }}
+        run: |
+          git config user.name "aspitt-dati"
+          git config user.email "aspitt-dati@users.noreply.github.com"
+          git add scripts/data/avvisi-manuali.json
+          git commit -m "Avviso manuale: $AZIONE"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+          gh workflow run aggiorna.yml --ref "${GITHUB_REF_NAME}" --repo "${GITHUB_REPOSITORY}"
+          echo "Avviato 'Aggiorna dati': l'avviso arriva nell'app quando finisce (qualche minuto)." >> "$GITHUB_STEP_SUMMARY"

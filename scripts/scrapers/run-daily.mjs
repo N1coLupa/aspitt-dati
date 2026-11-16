@@ -7,6 +7,7 @@ import { scrapeEvents } from './events.mjs';
 import { scrapePlaces } from './places.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
+import { manualAlerts, readManual } from '../lib/avvisi-manuali.mjs';
 
 const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 const SNAPSHOT_DIR = process.env.ASPITT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
@@ -138,10 +139,17 @@ async function main() {
   const cutoff = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
   const known = new Set(alerts.map((a) => a.id));
   const today = new Date().toISOString().slice(0, 10);
-  const merged = [
+  const automatic = [
     ...alerts,
-    ...previousAlerts.filter((a) => !known.has(a.id) && (a.validUntil ? a.validUntil >= today : a.createdAt >= cutoff)),
+    ...previousAlerts.filter(
+      (a) => a.source !== 'manuale' && !known.has(a.id) && (a.validUntil ? a.validUntil >= today : a.createdAt >= cutoff)
+    ),
   ];
+  // Gli avvisi manuali si ricalcolano a ogni giro dal file: toglierli dal file li toglie anche dall'app.
+  const italianToday = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
+  const manual = manualAlerts(await readManual(), automatic, transport, previousAlerts, italianToday);
+  for (const message of manual.log) console.log(`  ${message}`);
+  const merged = [...manual.added, ...automatic];
 
   const alertsFile = path.join(DATA_DIR, 'alerts.json');
   await writeJson(alertsFile, settleDate(await readJson(alertsFile), { generatedAt: new Date().toISOString(), alerts: merged }));
@@ -167,7 +175,7 @@ async function main() {
   console.log(`\nFatto in ${Math.round((Date.now() - started) / 1000)}s`);
   for (const result of results) console.log(`  ${result.name}: ${result.status}`);
   console.log(`  linee ${transport.lines.length}  fermate ${transport.stops.length}`);
-  console.log(`  avvisi attivi ${merged.length} (${alerts.length} nuovi oggi)`);
+  console.log(`  avvisi attivi ${merged.length} (${alerts.length} nuovi oggi, ${manual.added.length} manuali)`);
 }
 
 main().catch((err) => {
