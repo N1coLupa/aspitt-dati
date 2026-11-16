@@ -29,3 +29,19 @@ Oltre a quelli presi dal sito, si possono pubblicare avvisi scritti a mano, anch
 Un avviso non viene aggiunto se ce n'e' gia' uno con lo stesso titolo (sulla stessa linea), con lo stesso
 link di un avviso del sito, o con lo stesso testo di un avviso del sito. In `dati/alerts.json` gli avvisi
 manuali hanno `"source": "manuale"`; quelli senza linea non hanno `lineId`.
+
+**Cosa arriva nell'app.** L'app non legge `alerts.json`: legge gli avvisi dalle linee di `transport.json`.
+Per questo un avviso manuale **con una linea** viene scritto anche sulla linea, come quelli dell'operatore:
+compare in Home e negli Avvisi, fa partire la notifica e, toccandolo, apre `aspitt.it/avvisi/<id>/` con il
+testo intero. Dal testo si ricavano giorno, orari e fermate soppresse, quindi conviene scriverlo così:
+
+> Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre a via Bari 150.
+
+- il giorno come `22.11.2026` o `domenica 22 novembre` (senza giorno vale da subito fino a "fino");
+- gli orari come `dalle 11:30 alle 17:00`;
+- le fermate col nome che hanno nell'app, una per una o `da <fermata> a <fermata>`: l'app le salta in
+  orari e percorsi per quel giorno; per "solo presso" scrivi `un'unica fermata presso <posto>`.
+
+Una linea mostra un avviso alla volta: se l'operatore ne ha già uno valido sulla stessa linea, nell'app resta
+quello dell'operatore. Gli avvisi **senza linea** restano solo in `alerts.json`: l'app attuale non li mostra.
+Il registro di **Aggiorna dati** dice per ogni avviso manuale come è finito nell'app.
