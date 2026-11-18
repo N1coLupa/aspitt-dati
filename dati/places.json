@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:23:11.985Z",
+  "generatedAt": "2026-11-18T03:42:58.392Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 34
+          "distance": 35
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -354,7 +354,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 175
+          "distance": 174
         },
         {
           "stopId": "stop-via-matera-101",
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 33
+          "distance": 32
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2339,7 +2339,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 115
+          "distance": 114
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2499,18 +2499,6 @@
       "tips": "Da qui parte il corso verso la Cattedrale: è il punto d'inizio naturale di qualsiasi giro.",
       "nearbyStops": [
         {
-          "stopId": "stop-piazza-zanardelli",
-          "name": "Piazza Zanardelli",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2",
-            "pescariello-z-i",
-            "linea-jesce",
-            "linea-la-martella"
-          ],
-          "distance": 29
-        },
-        {
           "stopId": "stop-piazza-zanardelli-7",
           "name": "Piazza Zanardelli, 7",
           "lines": [
@@ -2521,6 +2509,18 @@
             "linea-la-martella"
           ],
           "distance": 29
+        },
+        {
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2",
+            "pescariello-z-i",
+            "linea-jesce",
+            "linea-la-martella"
+          ],
+          "distance": 30
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2618,7 +2618,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 148
+          "distance": 149
         }
       ]
     },
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 72
+          "distance": 70
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
