@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:02:55.140Z",
+  "generatedAt": "2026-11-18T21:57:03.651Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 37
+          "distance": 38
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 31
+          "distance": 29
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -1851,7 +1851,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 231
+          "distance": 232
         },
         {
           "stopId": "stop-via-gravina-7",
@@ -2339,7 +2339,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 113
+          "distance": 112
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2520,7 +2520,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 31
+          "distance": 32
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 69
+          "distance": 68
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
