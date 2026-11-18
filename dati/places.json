@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:42:58.392Z",
+  "generatedAt": "2026-11-18T13:02:55.140Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 35
+          "distance": 37
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -265,7 +265,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 196
+          "distance": 197
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -334,17 +334,6 @@
       "tips": "Accanto c’è il Cortile di Don Bosco, l’oratorio inaugurato nel 2023: è il cuore del quartiere.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-treviso-27",
-          "name": "Via Treviso, 27",
-          "lines": [
-            "ospedale-domenica-e-festivi",
-            "linea-scuola-1",
-            "linea-scuola-2",
-            "linea-la-martella"
-          ],
-          "distance": 173
-        },
-        {
           "stopId": "stop-via-treviso-50",
           "name": "Via Treviso 50",
           "lines": [
@@ -354,7 +343,18 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 174
+          "distance": 173
+        },
+        {
+          "stopId": "stop-via-treviso-27",
+          "name": "Via Treviso, 27",
+          "lines": [
+            "ospedale-domenica-e-festivi",
+            "linea-scuola-1",
+            "linea-scuola-2",
+            "linea-la-martella"
+          ],
+          "distance": 173
         },
         {
           "stopId": "stop-via-matera-101",
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 32
+          "distance": 31
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2339,7 +2339,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 114
+          "distance": 113
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2520,7 +2520,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 30
+          "distance": 31
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2618,7 +2618,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 149
+          "distance": 150
         }
       ]
     },
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 70
+          "distance": 69
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
