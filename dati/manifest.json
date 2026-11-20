@@ -1,16 +1,16 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-20T12:54:07.619Z",
+  "checkedAt": "2026-11-20T21:54:31.843Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-11-20T12:52:58.026Z",
-      "bytes": 1633646,
-      "sha256": "ccb6a0a4a11169060da1f646a2f076104b6814a35e5aa4ffad5ee43ea6e1dd46"
+      "generatedAt": "2026-11-20T21:49:10.521Z",
+      "bytes": 1633522,
+      "sha256": "46c4147ddb6f08dfdeab21e666ce5974c4de117e6d8a9110a5637803f981d96c"
     },
     "events": {
-      "generatedAt": "2026-11-20T12:53:35.056Z",
-      "bytes": 18999,
-      "sha256": "d33420626b53b26accc7739ec533815f60e5c3cd550a7733e48f752c0908aaea"
+      "generatedAt": "2026-11-20T21:49:53.190Z",
+      "bytes": 18265,
+      "sha256": "3225c81b0d1efeea569baf55d67d84059b240fb0b8a561be554b09291cb20625"
     },
     "places": {
       "generatedAt": "2026-11-20T12:54:07.580Z",
@@ -33,11 +33,11 @@
       "error": null
     },
     "places": {
-      "status": "aggiornato",
-      "error": null
+      "status": "invariato",
+      "error": "HTTP 504"
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-20T12:54:29.718Z",
+  "signedAt": "2026-11-20T21:54:45.852Z",
   "keyId": "5VTN2Etz"
 }
