@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T03:08:38.760Z",
+  "generatedAt": "2026-11-20T12:53:35.056Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -131,6 +131,24 @@
       "tags": [],
       "categories": [
         "eventi"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-piccoli-grandi-ritmi",
+      "title": "Piccoli grandi ritmi",
+      "url": "https://iltaccodibacco.it/puglia/eventi/335217.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "startTime": null,
+      "venue": "Agorateca",
+      "summary": "Laboratorio musicale aperto a bambini dai 7 ai 10 anni in cui conosceremo attraverso il gioco alcuni strumenti a percussione (triangoli, maracas, tamburelli, xilofono, sonagli), boomwhackers (tubi colorati e intonati) e…",
+      "tags": [],
+      "categories": [
+        "esperienze"
       ],
       "dated": true
     },

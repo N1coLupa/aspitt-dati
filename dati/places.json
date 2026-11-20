@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T22:10:30.795Z",
+  "generatedAt": "2026-11-20T12:54:07.580Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 42
+          "distance": 44
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -225,7 +225,7 @@
           "lines": [
             "linea-la-martella"
           ],
-          "distance": 139
+          "distance": 138
         }
       ]
     },
@@ -343,7 +343,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 171
+          "distance": 170
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 25
+          "distance": 22
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1657,7 +1657,7 @@
           "lines": [
             "linea-la-martella"
           ],
-          "distance": 180
+          "distance": 179
         }
       ]
     },
@@ -2322,14 +2322,6 @@
       "tips": "È a due passi da Piazza della Resistenza: le due si visitano insieme.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-quintino-sella-29",
-          "name": "Via Quintino Sella, 29",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 107
-        },
-        {
           "stopId": "stop-piazza-zanardelli",
           "name": "Piazza Zanardelli",
           "lines": [
@@ -2339,7 +2331,15 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 108
+          "distance": 106
+        },
+        {
+          "stopId": "stop-via-quintino-sella-29",
+          "name": "Via Quintino Sella, 29",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 107
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2399,7 +2399,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 231
+          "distance": 232
         },
         {
           "stopId": "stop-via-gravina-7",
@@ -2520,7 +2520,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 36
+          "distance": 38
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2618,7 +2618,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 152
+          "distance": 154
         }
       ]
     },
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 65
+          "distance": 63
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
