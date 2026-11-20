@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T22:09:51.216Z",
+  "generatedAt": "2026-11-20T03:08:38.760Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -46,27 +46,6 @@
         "artista",
         "comune di altamura",
         "Giuseppe Giorgi"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-734594",
-      "title": "Presentazione di \"Inside Altamura\"",
-      "url": "https://www.comune.altamura.ba.it/it/events/presentazione-di-inside-altamura",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-11-19T09:18:34.000Z",
-      "startDate": "2026-11-19",
-      "endDate": "2026-11-19",
-      "startTime": "17:30",
-      "venue": null,
-      "summary": "La cittadinanza è invitata giovedì 19 novembre, alle ore 17.30, in Sala consiliare, per la presentazione di \"InsideAltamura\", l'assistente vir...",
-      "tags": [
-        "Eventi sociali",
-        "Evento culturale"
       ],
       "categories": [
         "cultura"
