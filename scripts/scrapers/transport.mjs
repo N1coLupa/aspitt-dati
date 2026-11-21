@@ -10,7 +10,7 @@ import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { validFromUrl } from '../lib/arricchisci.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
 import { listedDays, parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
-import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, stopsInTown } from '../lib/avvisi.mjs';
+import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, noticeWindows, stopsInTown } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
 const REGIONAL_FILE = fileURLToPath(new URL('../data/linee-regionali.json', import.meta.url));
@@ -85,25 +85,42 @@ function parseLines($) {
   return lines;
 }
 
-function parseVendors(html) {
-  const block = /markers_list\s*=\s*\[([\s\S]*?)\];/.exec(html);
+// Il sito ha usato due formati per markers_list: un array di oggetti, oppure un array di stringhe JSON.
+// Si accettano entrambi e si scartano le voci senza nome o senza coordinate valide.
+export function parseVendors(html) {
+  const block = /markers_list\s*=\s*(\[[\s\S]*?\]);/.exec(html);
   if (!block) return [];
 
+  let items = [];
+  try {
+    items = JSON.parse(block[1]);
+  } catch {
+    items = [...block[1].matchAll(/"((?:\\.|[^"\\])*)"/g)].map((match) => match[1]);
+  }
+
   const vendors = [];
-  for (const match of block[1].matchAll(/"((?:\\.|[^"\\])*)"/g)) {
-    try {
-      const parsed = JSON.parse(JSON.parse(`"${match[1]}"`));
-      const lat = Number(parsed.lat);
-      const lon = Number(parsed.lng);
-      vendors.push({
-        id: slugify(parsed.title),
-        name: clean(parsed.title),
-        address: clean(parsed.address),
-        phone: parsed.phone ? String(parsed.phone).replace(/\D/g, '') : null,
-        lat: Number.isFinite(lat) ? lat : null,
-        lon: Number.isFinite(lon) ? lon : null,
-      });
-    } catch {}
+  for (const item of items) {
+    let parsed = item;
+    if (typeof item === 'string') {
+      try {
+        parsed = JSON.parse(JSON.parse(`"${item}"`));
+      } catch {
+        continue;
+      }
+    }
+    if (!parsed || typeof parsed !== 'object') continue;
+    const name = clean(parsed.title ?? '');
+    if (!name) continue;
+    const lat = Number(parsed.lat);
+    const lon = Number(parsed.lng ?? parsed.lon);
+    vendors.push({
+      id: slugify(name),
+      name,
+      address: clean(parsed.address ?? ''),
+      phone: parsed.phone ? String(parsed.phone).replace(/\D/g, '') || null : null,
+      lat: Number.isFinite(lat) && lat !== 0 ? lat : null,
+      lon: Number.isFinite(lon) && lon !== 0 ? lon : null,
+    });
   }
   return vendors;
 }
@@ -377,7 +394,7 @@ async function scrapeLine(line, registry, previousLine) {
 
 const fileName = (url) => decodeURIComponent(String(url).split(/[?#]/)[0].split('/').pop() ?? '');
 
-const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
+const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeWindows', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
 const EMPTY_NOTICE = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
 const noticePages = new Map();
 
@@ -433,6 +450,7 @@ function noticeFields(url, text, stops, lineName, lineNames, places) {
     range = { start: next, end: next };
   }
   const times = noticeTimes(text);
+  const windows = noticeWindows(text);
   // "Un'unica fermata presso il Bar Casablanca": se il posto e' noto, salta le fermate della linea nel suo comune.
   const onlyAt = noticeOnlyAt(text);
   const place = onlyAt ? places[onlyAt.toLowerCase()] : null;
@@ -443,6 +461,7 @@ function noticeFields(url, text, stops, lineName, lineNames, places) {
     noticeUntil: plausibleDay(range?.end ?? null, published),
     noticeStart: times.from,
     noticeEnd: times.to,
+    noticeWindows: windows.length > 1 ? windows : null,
     noticeStops: skipped.length || !place?.comune ? skipped : stopsInTown(stops, place.comune),
     noticeOnlyAt: onlyAt
       ? { name: place?.nome ?? onlyAt, address: place?.indirizzo ?? null, lat: place?.lat ?? null, lon: place?.lon ?? null }
@@ -589,7 +608,11 @@ export async function scrapeTransport(previous = null) {
     },
     lines: scraped,
     stops: [...registry.values()],
-    vendors: html ? parseVendors(html) : (previous?.vendors ?? []),
+    vendors: (() => {
+      const parsed = html ? parseVendors(html) : [];
+      // Se la pagina cambia formato e non si legge nulla, si tengono le rivendite valide dell'ultima volta.
+      return parsed.length ? parsed : (previous?.vendors ?? []).filter((vendor) => vendor.name);
+    })(),
     fares: html ? parseFares($) : (previous?.fares ?? []),
     news,
   };
