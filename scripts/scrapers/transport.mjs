@@ -10,7 +10,7 @@ import { fillMissingStopCoordinates } from '../lib/geo.mjs';
 import { validFromUrl } from '../lib/arricchisci.mjs';
 import { slugify, stopKey } from '../lib/slug.mjs';
 import { listedDays, parseItalianDateRange, plausibleDay, publishedOn } from '../lib/dates-it.mjs';
-import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, stopsInTown } from '../lib/avvisi.mjs';
+import { mentionsLine, noticeOnlyAt, noticeStops, noticeTimes, noticeWindows, stopsInTown } from '../lib/avvisi.mjs';
 
 const HOME_URL = 'https://marinobusurbano.it/';
 const REGIONAL_FILE = fileURLToPath(new URL('../data/linee-regionali.json', import.meta.url));
@@ -377,7 +377,7 @@ async function scrapeLine(line, registry, previousLine) {
 
 const fileName = (url) => decodeURIComponent(String(url).split(/[?#]/)[0].split('/').pop() ?? '');
 
-const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
+const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeWindows', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
 const EMPTY_NOTICE = Object.fromEntries(NOTICE_KEYS.map((key) => [key, key === 'noticeStops' ? [] : null]));
 const noticePages = new Map();
 
@@ -433,6 +433,7 @@ function noticeFields(url, text, stops, lineName, lineNames, places) {
     range = { start: next, end: next };
   }
   const times = noticeTimes(text);
+  const windows = noticeWindows(text);
   // "Un'unica fermata presso il Bar Casablanca": se il posto e' noto, salta le fermate della linea nel suo comune.
   const onlyAt = noticeOnlyAt(text);
   const place = onlyAt ? places[onlyAt.toLowerCase()] : null;
@@ -443,6 +444,7 @@ function noticeFields(url, text, stops, lineName, lineNames, places) {
     noticeUntil: plausibleDay(range?.end ?? null, published),
     noticeStart: times.from,
     noticeEnd: times.to,
+    noticeWindows: windows.length > 1 ? windows : null,
     noticeStops: skipped.length || !place?.comune ? skipped : stopsInTown(stops, place.comune),
     noticeOnlyAt: onlyAt
       ? { name: place?.nome ?? onlyAt, address: place?.indirizzo ?? null, lat: place?.lat ?? null, lon: place?.lon ?? null }
