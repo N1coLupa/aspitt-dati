@@ -11,6 +11,28 @@ export const MANUAL_FILE = fileURLToPath(new URL('../data/avvisi-manuali.json', 
 
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
 
+// Avvisi che si ripetono ogni settimana: "giorni": ["sabato"] nel file, oppure "ogni sabato" nel testo.
+const WEEKDAYS = ['domenica', 'lunedi', 'martedi', 'mercoledi', 'giovedi', 'venerdi', 'sabato'];
+const weekdayOf = (name) => WEEKDAYS.indexOf(sameText(name).replace(/ /g, ''));
+
+export function weeklyDays(entry) {
+  const named = (Array.isArray(entry.giorni) ? entry.giorni : entry.giorni ? [entry.giorni] : []).map(weekdayOf);
+  const written = [...sameText(`${entry.titolo} ${entry.testo}`).matchAll(/\bogni (domenica|lunedi|martedi|mercoledi|giovedi|venerdi|sabato)\b/g)].map(
+    (match) => weekdayOf(match[1])
+  );
+  return [...new Set([...named, ...written].filter((day) => day >= 0))].sort();
+}
+
+// Il primo giorno da oggi in poi che cade in uno dei giorni della settimana (0 = domenica).
+export function nextWeekday(today, days) {
+  for (let n = 0; n < 7; n += 1) {
+    const day = new Date(`${today}T12:00:00Z`);
+    day.setUTCDate(day.getUTCDate() + n);
+    if (days.includes(day.getUTCDay())) return day.toISOString().slice(0, 10);
+  }
+  return null;
+}
+
 // Gli avvisi manuali di una linea finiscono anche nei campi "notice" della linea in transport.json,
 // con un link a questa pagina del sito (la serve il worker di aspitt.it leggendo alerts.json).
 export const MANUAL_URL = 'https://aspitt.it/avvisi/';
@@ -161,7 +183,8 @@ export function manualAlerts(entries, existing, transport, previous, today, now 
  * Scrive gli avvisi manuali di una linea nei suoi campi "notice" di transport.json: e' li' che l'app
  * legge avvisi, banner in Home e notifiche (alerts.json l'app non lo scarica). Giorno, orari e fermate
  * soppresse si ricavano dal testo come per gli avvisi dell'operatore ("il 22.11.2026 dalle 11:30 alle 17:00
- * saranno soppresse le fermate da via IV Novembre a via Bari 150"). Si puo' rifare a ogni giro: prima
+ * saranno soppresse le fermate da via IV Novembre a via Bari 150"). Un avviso settimanale ("ogni sabato") va
+ * nell'app come avviso del prossimo sabato. Si puo' rifare a ogni giro: prima
  * toglie quelli del giro precedente. Un avviso dell'operatore ancora valido sulla stessa linea ha la precedenza.
  */
 export function applyManualNotices(transport, entries, today) {
@@ -194,7 +217,12 @@ export function applyManualNotices(transport, entries, today) {
     const text = `${entry.titolo}. ${entry.testo}`;
     let range = parseItalianDateRange(text, new Date(`${today}T12:00:00`));
     const days = listedDays(text);
-    if (days.length > 1) {
+    const weekly = weeklyDays(entry);
+    if (weekly.length) {
+      // Nell'app va la prossima volta (oggi compreso); dopo quel giorno il giro successivo passa a quella dopo.
+      const next = nextWeekday(today, weekly);
+      range = { start: next, end: next };
+    } else if (days.length > 1) {
       const next = days.find((day) => day >= today) ?? days[days.length - 1];
       range = { start: next, end: next };
     }

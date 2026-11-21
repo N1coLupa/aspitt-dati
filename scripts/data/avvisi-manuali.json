@@ -1,11 +1,20 @@
 {
-  "_istruzioni": "Avvisi scritti a mano. Ognuno: titolo e testo obbligatori; linea (id o nome, vuota = avviso generico), dal e fino (AAAA-MM-GG), link, gravita (info o warning). Senza 'fino' resta finche' non lo togli dal file. Puoi usare anche il workflow 'Aggiungi avviso' dalla scheda Actions.",
+  "_istruzioni": "Avvisi scritti a mano. Ognuno: titolo e testo obbligatori; linea (id o nome, vuota = avviso generico), dal e fino (AAAA-MM-GG), link, gravita (info o warning), giorni (es. [\"sabato\"]) per un avviso che si ripete ogni settimana. Senza 'fino' resta finche' non lo togli dal file. Puoi usare anche il workflow 'Aggiungi avviso' dalla scheda Actions.",
   "avvisi": [
     {
       "titolo": "Fermate soppresse domenica 22 novembre",
       "testo": "Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre (ang. via II Giugno) a via Bari 150 sulla Linea Ospedale Domenica e Festivi.",
       "linea": "ospedale-domenica-e-festivi",
       "fino": "2026-11-22",
+      "gravita": "warning"
+    },
+    {
+      "titolo": "Fermate soppresse ogni sabato",
+      "testo": "Ogni sabato dalle 6:00 alle 15:00 sulla Linea Ospedale 1 sono soppresse le fermate Via Treviso 50, Via Treviso ang. Via Manzoni e Via Carpentino (ang. via Salvatore Fortunato).",
+      "linea": "ospedale-1",
+      "giorni": [
+        "sabato"
+      ],
       "gravita": "warning"
     }
   ]
