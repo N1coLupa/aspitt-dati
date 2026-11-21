@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T03:13:04.243Z",
+  "generatedAt": "2026-11-21T12:39:05.988Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 46
+          "distance": 47
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -343,7 +343,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 169
+          "distance": 168
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 21
+          "distance": 20
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -2331,7 +2331,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 105
+          "distance": 104
         },
         {
           "stopId": "stop-via-quintino-sella-29",
@@ -2520,7 +2520,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 39
+          "distance": 41
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 62
+          "distance": 61
         },
         {
           "stopId": "stop-piazza-zanardelli-7",

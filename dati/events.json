@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T03:12:24.624Z",
+  "generatedAt": "2026-11-21T12:38:21.773Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -348,6 +348,24 @@
         "eventi"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-karima-con-la-sinedriorchestra",
+      "title": "Karima con la SinedriOrchestra",
+      "url": "https://iltaccodibacco.it/puglia/eventi/337188.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-01-15",
+      "endDate": "2027-01-15",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "La rassegna Around Jazz si apre con un concerto speciale di Karima con la SinedriOrchestra, in programma al Teatro Mercadante di Altamura.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
       "dated": true
     },
     {
