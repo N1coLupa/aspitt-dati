@@ -40,6 +40,21 @@ export function noticeTimes(text) {
   return { from: hhmm(from[1], from[2]), to: to ? hhmm(to[1], to[2]) : null };
 }
 
+// Tutte le fasce orarie ("dalle 09:00 alle 13:00 e dalle 14:30 alle 17:30"). L'app vecchia legge solo
+// noticeStart/noticeEnd (la prima fascia); quella nuova legge noticeWindows quando ce n'e' piu' d'una.
+export function noticeWindows(text) {
+  const windows = [];
+  const source = fold(text);
+  for (const from of source.matchAll(/\b(?:dalle|a partire dalle)\s+(?:ore\s+)?(\d{1,2})(?:[:.,](\d{2}))?(?![\d./-])/g)) {
+    const rest = source.slice(from.index + from[0].length, from.index + from[0].length + 40);
+    const to = /^\s*(?:e\s+)?(?:fino\s+)?alle\s+(?:ore\s+)?(\d{1,2})(?:[:.,](\d{2}))?(?![\d./-])/.exec(rest);
+    const start = hhmm(from[1], from[2]);
+    const end = to ? hhmm(to[1], to[2]) : null;
+    if (start && !windows.some((w) => w.start === start && w.end === end)) windows.push({ start, end });
+  }
+  return windows;
+}
+
 export function streetOf(stopName) {
   const base = fold(stopName)
     .replace(/\(.*?\)/g, ' ')

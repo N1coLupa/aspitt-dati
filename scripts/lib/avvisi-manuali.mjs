@@ -2,7 +2,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { slugify } from './slug.mjs';
-import { noticeOnlyAt, noticeStops, noticeTimes } from './avvisi.mjs';
+import { noticeOnlyAt, noticeStops, noticeTimes, noticeWindows } from './avvisi.mjs';
 import { listedDays, parseItalianDateRange } from './dates-it.mjs';
 
 // Avvisi scritti a mano in scripts/data/avvisi-manuali.json. Ogni giro li unisce a quelli
@@ -37,7 +37,7 @@ export function nextWeekday(today, days) {
 // con un link a questa pagina del sito (la serve il worker di aspitt.it leggendo alerts.json).
 export const MANUAL_URL = 'https://aspitt.it/avvisi/';
 export const isManualUrl = (url) => String(url ?? '').startsWith(MANUAL_URL);
-const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
+const NOTICE_KEYS = ['noticeUrl', 'noticeFrom', 'noticeUntil', 'noticeStart', 'noticeEnd', 'noticeWindows', 'noticeStops', 'noticeOnlyAt', 'noticeText'];
 
 // Testo confrontabile: senza accenti, maiuscole, punteggiatura e spazi doppi.
 export const sameText = (value) =>
@@ -218,22 +218,27 @@ export function applyManualNotices(transport, entries, today) {
     let range = parseItalianDateRange(text, new Date(`${today}T12:00:00`));
     const days = listedDays(text);
     const weekly = weeklyDays(entry);
+    let occurrence = null;
     if (weekly.length) {
       // Nell'app va la prossima volta (oggi compreso); dopo quel giorno il giro successivo passa a quella dopo.
-      const next = nextWeekday(today, weekly);
-      range = { start: next, end: next };
+      occurrence = nextWeekday(today, weekly);
+      range = { start: occurrence, end: occurrence };
     } else if (days.length > 1) {
       const next = days.find((day) => day >= today) ?? days[days.length - 1];
       range = { start: next, end: next };
     }
     const times = noticeTimes(text);
+    const windows = noticeWindows(text);
     const onlyAt = noticeOnlyAt(text);
     Object.assign(line, {
-      noticeUrl: `${MANUAL_URL}${manualId(entry)}/`,
+      // L'app notifica un avviso una volta sola per indirizzo: con il giorno nell'indirizzo un avviso
+      // settimanale torna a notificare ogni settimana (la pagina su aspitt.it ignora il "?giorno=").
+      noticeUrl: `${MANUAL_URL}${manualId(entry)}/${occurrence ? `?giorno=${occurrence}` : ''}`,
       noticeFrom: range?.start ?? dal ?? today,
       noticeUntil: range?.end ?? fino,
       noticeStart: times.from,
       noticeEnd: times.to,
+      noticeWindows: windows.length > 1 ? windows : null,
       noticeStops: noticeStops(text, line.stops, '', []),
       noticeOnlyAt: onlyAt ? { name: onlyAt, address: null, lat: null, lon: null } : null,
       noticeText: String(entry.testo).trim().slice(0, 1200),
