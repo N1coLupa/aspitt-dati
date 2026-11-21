@@ -8,6 +8,7 @@ import { scrapePlaces } from './places.mjs';
 import { enrichTransport } from '../lib/arricchisci.mjs';
 import { COPY_DIR, usage, writeMissingList } from '../lib/copia-locale.mjs';
 import { applyManualNotices, manualAlerts, readManual } from '../lib/avvisi-manuali.mjs';
+import { applyRecurringSkips, readRecurring } from '../lib/soppressioni.mjs';
 
 const DATA_DIR = process.env.ASPITT_DATA_DIR ?? path.join('src', 'dati');
 const SNAPSHOT_DIR = process.env.ASPITT_SNAPSHOT_DIR ?? path.join('data', 'snapshots');
@@ -133,9 +134,11 @@ async function main() {
   console.log('[1/4] Trasporti');
   // Gli avvisi manuali di una linea entrano anche in transport.json, perche' l'app li legge da li'.
   const manualEntries = await readManual();
+  const recurringEntries = await readRecurring();
   const italianToday = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Rome' });
   const withManual = (data) => {
     for (const message of applyManualNotices(data, manualEntries, italianToday)) console.log(`  avviso manuale ${message}`);
+    for (const message of applyRecurringSkips(data, recurringEntries)) console.log(`  soppressione ricorrente ${message}`);
   };
   const transportResult = await refresh('transport', scrapeTransport, validateTransport, enrichTransport, withManual);
   await writeMissingList().catch(() => {});

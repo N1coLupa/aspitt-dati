@@ -1,0 +1,12 @@
+{
+  "_istruzioni": "Fermate saltate sempre negli stessi giorni e orari, gia' previste dall'operatore: l'app le mostra come soppresse in orari, fermate e percorsi, ma senza avviso ne' notifica. Ognuna: linea (id), giorni (es. [\"sabato\"]), dalle e alle (HH:MM), fermate (id come in transport.json).",
+  "soppressioni": [
+    {
+      "linea": "ospedale-1",
+      "giorni": ["sabato"],
+      "dalle": "06:00",
+      "alle": "15:00",
+      "fermate": ["stop-via-treviso-50", "stop-via-treviso-ang-via-manzoni", "stop-via-carpentino-ang-via-salvatore-fortunato"]
+    }
+  ]
+}
