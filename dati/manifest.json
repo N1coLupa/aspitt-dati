@@ -1,11 +1,11 @@
 {
   "schema": 2,
-  "checkedAt": "2026-11-21T12:39:06.008Z",
+  "checkedAt": "2026-11-21T17:03:04.737Z",
   "files": {
     "transport": {
-      "generatedAt": "2026-11-21T12:37:40.459Z",
-      "bytes": 1634126,
-      "sha256": "6cd53fc2227ea577ddc498325971d6a213a76d7ba42fa48ba3e34dd9eda22f51"
+      "generatedAt": "2026-11-21T17:01:42.719Z",
+      "bytes": 1633613,
+      "sha256": "30bbedb4ae64e1e070bf93c901f9118347d9af1e9a78b0e7a99db93d0b8f345f"
     },
     "events": {
       "generatedAt": "2026-11-21T12:38:21.773Z",
@@ -13,9 +13,9 @@
       "sha256": "d5f00c70a78194dbbaca2fa128a5c7d41ef486b4baf524e338e636bae6f21d4e"
     },
     "places": {
-      "generatedAt": "2026-11-21T12:39:05.988Z",
+      "generatedAt": "2026-11-21T17:03:04.714Z",
       "bytes": 89087,
-      "sha256": "e0bdd0e6403d1d81f8c39dc1162463d2d2b259808fc995c9baaee9ef118be781"
+      "sha256": "ed014fa92c4c0a0c3b2f6bfa455a9833f1f10c01fec4d329f8a644996ea40651"
     },
     "alerts": {
       "generatedAt": "2026-11-21T09:16:42.193Z",
@@ -38,6 +38,6 @@
     }
   },
   "app": "aspitt",
-  "signedAt": "2026-11-21T12:39:18.446Z",
+  "signedAt": "2026-11-21T17:03:15.917Z",
   "keyId": "5VTN2Etz"
 }
