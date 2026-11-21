@@ -218,10 +218,11 @@ export function applyManualNotices(transport, entries, today) {
     let range = parseItalianDateRange(text, new Date(`${today}T12:00:00`));
     const days = listedDays(text);
     const weekly = weeklyDays(entry);
+    let occurrence = null;
     if (weekly.length) {
       // Nell'app va la prossima volta (oggi compreso); dopo quel giorno il giro successivo passa a quella dopo.
-      const next = nextWeekday(today, weekly);
-      range = { start: next, end: next };
+      occurrence = nextWeekday(today, weekly);
+      range = { start: occurrence, end: occurrence };
     } else if (days.length > 1) {
       const next = days.find((day) => day >= today) ?? days[days.length - 1];
       range = { start: next, end: next };
@@ -229,7 +230,9 @@ export function applyManualNotices(transport, entries, today) {
     const times = noticeTimes(text);
     const onlyAt = noticeOnlyAt(text);
     Object.assign(line, {
-      noticeUrl: `${MANUAL_URL}${manualId(entry)}/`,
+      // L'app notifica un avviso una volta sola per indirizzo: con il giorno nell'indirizzo un avviso
+      // settimanale torna a notificare ogni settimana (la pagina su aspitt.it ignora il "?giorno=").
+      noticeUrl: `${MANUAL_URL}${manualId(entry)}/${occurrence ? `?giorno=${occurrence}` : ''}`,
       noticeFrom: range?.start ?? dal ?? today,
       noticeUntil: range?.end ?? fino,
       noticeStart: times.from,
