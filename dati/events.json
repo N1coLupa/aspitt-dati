@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T21:49:53.190Z",
+  "generatedAt": "2026-11-21T03:12:24.624Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -49,50 +49,6 @@
       ],
       "categories": [
         "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-733943",
-      "title": "Settimana Scarpette Rosse 2026: \"Progetto Albero delle voci spezzate\"",
-      "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-per-non-avere-paura-733942-733943",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-11-13T09:31:12.000Z",
-      "startDate": "2026-11-20",
-      "endDate": "2026-11-20",
-      "startTime": "18:00",
-      "venue": null,
-      "summary": "In occasione della Giornata internazionale per l'eliminazione della violenza contro le donne 2026, è stato già avviato il programma della \"Sett...",
-      "tags": [
-        "Eventi sociali"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "alsoOn": [
-        {
-          "source": "Comune di Altamura",
-          "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-per-non-avere-paura-733942-733943-733945"
-        }
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-people-are-bitches-live",
-      "title": "People are bitches live",
-      "url": "https://iltaccodibacco.it/puglia/eventi/336045.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-11-20",
-      "endDate": "2026-11-20",
-      "startTime": null,
-      "venue": "Ludi 84, via Diego Franco 20",
-      "summary": "🔥 **THE DOORS: IL MITO NON MUORE MAI!** 🔥 «Break on through to the other side…» 🎸 *Venerdì 20 novembre* preparatevi a un viaggio nel cuore del rock psichedelico degli anni &apos;60!",
-      "tags": [],
-      "categories": [
-        "eventi"
       ],
       "dated": true
     },

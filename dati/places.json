@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T12:54:07.580Z",
+  "generatedAt": "2026-11-21T03:13:04.243Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 44
+          "distance": 46
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -265,7 +265,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 199
+          "distance": 200
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -343,7 +343,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 170
+          "distance": 169
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -520,15 +520,6 @@
           "distance": 212
         },
         {
-          "stopId": "stop-via-dei-mille-103",
-          "name": "Via Dei Mille 103",
-          "lines": [
-            "ospedale-1",
-            "linea-ovest"
-          ],
-          "distance": 218
-        },
-        {
           "stopId": "stop-piazza-zanardelli",
           "name": "Piazza Zanardelli",
           "lines": [
@@ -538,7 +529,16 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 219
+          "distance": 218
+        },
+        {
+          "stopId": "stop-via-dei-mille-103",
+          "name": "Via Dei Mille 103",
+          "lines": [
+            "ospedale-1",
+            "linea-ovest"
+          ],
+          "distance": 218
         }
       ]
     },
@@ -713,13 +713,13 @@
           "distance": 185
         },
         {
-          "stopId": "stop-piazza-zanardelli-7",
-          "name": "Piazza Zanardelli, 7",
+          "stopId": "stop-piazza-zanardelli",
+          "name": "Piazza Zanardelli",
           "lines": [
-            "ospedale-1",
-            "linea-ovest",
+            "navette-hub",
             "linea-scuola-2",
             "pescariello-z-i",
+            "linea-jesce",
             "linea-la-martella"
           ],
           "distance": 186
@@ -1275,7 +1275,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 22
+          "distance": 21
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
@@ -1791,14 +1791,6 @@
       "tips": "Si visita in occasione di aperture e giornate speciali: conviene controllare gli eventi prima di andarci.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 142
-        },
-        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri, 6",
           "lines": [
@@ -1806,6 +1798,14 @@
             "linea-scuola-3"
           ],
           "distance": 142
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 143
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2331,7 +2331,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 106
+          "distance": 105
         },
         {
           "stopId": "stop-via-quintino-sella-29",
@@ -2520,7 +2520,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 38
+          "distance": 39
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -2618,7 +2618,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 154
+          "distance": 155
         }
       ]
     },
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 63
+          "distance": 62
         },
         {
           "stopId": "stop-piazza-zanardelli-7",
