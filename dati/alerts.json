@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:16:42.193Z",
+  "generatedAt": "2026-11-21T17:31:46.715Z",
   "alerts": [
     {
       "id": "manuale-fermate-soppresse-domenica-22-novembre-35712a80",
@@ -10,16 +10,6 @@
       "body": "Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre (ang. via II Giugno) a via Bari 150 sulla Linea Ospedale Domenica e Festivi.",
       "createdAt": "2026-11-16T12:32:55.312Z",
       "validUntil": "2026-11-22",
-      "source": "manuale"
-    },
-    {
-      "id": "manuale-fermate-soppresse-ogni-sabato-ddbe211f",
-      "severity": "warning",
-      "lineId": "ospedale-1",
-      "lineName": "Ospedale 1",
-      "title": "Fermate soppresse ogni sabato",
-      "body": "Ogni sabato dalle 6:00 alle 15:00 sulla Linea Ospedale 1 sono soppresse le fermate Via Treviso 50, Via Treviso ang. Via Manzoni e Via Carpentino (ang. via Salvatore Fortunato).",
-      "createdAt": "2026-11-21T09:16:42.192Z",
       "source": "manuale"
     },
     {
