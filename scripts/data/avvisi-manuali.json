@@ -7,15 +7,6 @@
       "linea": "ospedale-domenica-e-festivi",
       "fino": "2026-11-22",
       "gravita": "warning"
-    },
-    {
-      "titolo": "Fermate soppresse ogni sabato",
-      "testo": "Ogni sabato dalle 6:00 alle 15:00 sulla Linea Ospedale 1 sono soppresse le fermate Via Treviso 50, Via Treviso ang. Via Manzoni e Via Carpentino (ang. via Salvatore Fortunato).",
-      "linea": "ospedale-1",
-      "giorni": [
-        "sabato"
-      ],
-      "gravita": "warning"
     }
   ]
 }
