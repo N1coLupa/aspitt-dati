@@ -38,7 +38,8 @@ async function readJson(name) {
 function checkTransport(data) {
   if (data.lines.length < 8) fail(`solo ${data.lines.length} linee: attese almeno 8`);
   if (data.stops.length < 100) fail(`solo ${data.stops.length} fermate: attese almeno 100`);
-  if (!data.vendors.length) fail('nessun punto vendita');
+  const vendors = data.vendors.filter((vendor) => vendor.name && vendor.lat != null && vendor.lon != null);
+  if (vendors.length < 5) fail(`solo ${vendors.length} punti vendita validi (con nome e coordinate)`);
 
   const located = data.stops.filter((stop) => stop.lat != null).length;
   const ratio = located / Math.max(data.stops.length, 1);

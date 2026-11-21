@@ -85,25 +85,42 @@ function parseLines($) {
   return lines;
 }
 
-function parseVendors(html) {
-  const block = /markers_list\s*=\s*\[([\s\S]*?)\];/.exec(html);
+// Il sito ha usato due formati per markers_list: un array di oggetti, oppure un array di stringhe JSON.
+// Si accettano entrambi e si scartano le voci senza nome o senza coordinate valide.
+export function parseVendors(html) {
+  const block = /markers_list\s*=\s*(\[[\s\S]*?\]);/.exec(html);
   if (!block) return [];
 
+  let items = [];
+  try {
+    items = JSON.parse(block[1]);
+  } catch {
+    items = [...block[1].matchAll(/"((?:\\.|[^"\\])*)"/g)].map((match) => match[1]);
+  }
+
   const vendors = [];
-  for (const match of block[1].matchAll(/"((?:\\.|[^"\\])*)"/g)) {
-    try {
-      const parsed = JSON.parse(JSON.parse(`"${match[1]}"`));
-      const lat = Number(parsed.lat);
-      const lon = Number(parsed.lng);
-      vendors.push({
-        id: slugify(parsed.title),
-        name: clean(parsed.title),
-        address: clean(parsed.address),
-        phone: parsed.phone ? String(parsed.phone).replace(/\D/g, '') : null,
-        lat: Number.isFinite(lat) ? lat : null,
-        lon: Number.isFinite(lon) ? lon : null,
-      });
-    } catch {}
+  for (const item of items) {
+    let parsed = item;
+    if (typeof item === 'string') {
+      try {
+        parsed = JSON.parse(JSON.parse(`"${item}"`));
+      } catch {
+        continue;
+      }
+    }
+    if (!parsed || typeof parsed !== 'object') continue;
+    const name = clean(parsed.title ?? '');
+    if (!name) continue;
+    const lat = Number(parsed.lat);
+    const lon = Number(parsed.lng ?? parsed.lon);
+    vendors.push({
+      id: slugify(name),
+      name,
+      address: clean(parsed.address ?? ''),
+      phone: parsed.phone ? String(parsed.phone).replace(/\D/g, '') || null : null,
+      lat: Number.isFinite(lat) && lat !== 0 ? lat : null,
+      lon: Number.isFinite(lon) && lon !== 0 ? lon : null,
+    });
   }
   return vendors;
 }
@@ -591,7 +608,11 @@ export async function scrapeTransport(previous = null) {
     },
     lines: scraped,
     stops: [...registry.values()],
-    vendors: html ? parseVendors(html) : (previous?.vendors ?? []),
+    vendors: (() => {
+      const parsed = html ? parseVendors(html) : [];
+      // Se la pagina cambia formato e non si legge nulla, si tengono le rivendite valide dell'ultima volta.
+      return parsed.length ? parsed : (previous?.vendors ?? []).filter((vendor) => vendor.name);
+    })(),
     fares: html ? parseFares($) : (previous?.fares ?? []),
     news,
   };
