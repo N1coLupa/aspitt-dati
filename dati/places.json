@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T20:32:27.249Z",
+  "generatedAt": "2026-11-22T02:12:45.307Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -47,7 +47,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 51
+          "distance": 52
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -256,6 +256,14 @@
           "distance": 184
         },
         {
+          "stopId": "stop-viale-martiri-1",
+          "name": "Viale Martiri, 1",
+          "lines": [
+            "linea-scuola-3"
+          ],
+          "distance": 200
+        },
+        {
           "stopId": "stop-piazza-zanardelli",
           "name": "Piazza Zanardelli",
           "lines": [
@@ -265,15 +273,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 200
-        },
-        {
-          "stopId": "stop-viale-martiri-1",
-          "name": "Viale Martiri, 1",
-          "lines": [
-            "linea-scuola-3"
-          ],
-          "distance": 200
+          "distance": 201
         }
       ]
     },
@@ -343,7 +343,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 166
+          "distance": 165
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -695,15 +695,6 @@
       "tips": "Abbinalo al Monumento ai Martiri del 1799 in piazza Duomo, a pochi minuti a piedi, per avere tutta la storia.",
       "nearbyStops": [
         {
-          "stopId": "stop-via-dei-mille-88",
-          "name": "Via Dei Mille, 88",
-          "lines": [
-            "navette-hub",
-            "linea-scuola-2"
-          ],
-          "distance": 184
-        },
-        {
           "stopId": "stop-piazza-zanardelli",
           "name": "Piazza Zanardelli",
           "lines": [
@@ -713,7 +704,16 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 185
+          "distance": 184
+        },
+        {
+          "stopId": "stop-via-dei-mille-88",
+          "name": "Via Dei Mille, 88",
+          "lines": [
+            "navette-hub",
+            "linea-scuola-2"
+          ],
+          "distance": 184
         },
         {
           "stopId": "stop-via-dei-mille-103",
@@ -1545,7 +1545,7 @@
             "pescariello-z-i",
             "linea-jesce"
           ],
-          "distance": 371
+          "distance": 370
         }
       ]
     },
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2331,7 +2331,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 100
+          "distance": 99
         },
         {
           "stopId": "stop-via-quintino-sella-29",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2670,7 +2670,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 58
+          "distance": 57
         },
         {
           "stopId": "stop-piazza-zanardelli-7",

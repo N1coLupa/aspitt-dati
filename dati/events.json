@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:38:21.773Z",
+  "generatedAt": "2026-11-22T02:11:48.847Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -67,24 +67,6 @@
       "tags": [
         "Evento culturale"
       ],
-      "categories": [
-        "eventi"
-      ],
-      "dated": true
-    },
-    {
-      "id": "tacco-gli-inediti-mercadantiani",
-      "title": "Gli Inediti Mercadantiani",
-      "url": "https://iltaccodibacco.it/puglia/eventi/333336.html",
-      "source": "Il Tacco di Bacco",
-      "sourceUrl": "https://iltaccodibacco.it/altamura/",
-      "publishedAt": null,
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21",
-      "startTime": null,
-      "venue": "Chiesa San Francesco da Paola",
-      "summary": "Il progetto si propone di rendere fruibile alcune pagine note ed altre completamente inedite di Francesco Saverio Mercadante (Altamura 1795-Napoli, 1870), grande compositore pugliese noto, soprattutto per i suoi…",
-      "tags": [],
       "categories": [
         "eventi"
       ],
@@ -390,6 +372,43 @@
       "dated": true
     },
     {
+      "id": "tacco-chiara-civello-quintet",
+      "title": "Chiara Civello Quintet",
+      "url": "https://iltaccodibacco.it/puglia/eventi/337189.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-03-05",
+      "endDate": "2027-03-05",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "Il secondo appuntamento di Around Jazz è affidato al Chiara Civello Quintet, in scena al Teatro Mercadante di Altamura.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
+      "dated": true
+    },
+    {
+      "id": "tacco-the-brand-new-heavies",
+      "title": "The Brand New Heavies",
+      "url": "https://iltaccodibacco.it/puglia/eventi/337190.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-03-19",
+      "endDate": "2027-03-19",
+      "startTime": null,
+      "venue": "Palazzetto dello Sport di Altamura",
+      "summary": "La seconda edizione di Around Jazz si conclude con l’anteprima nazionale del nuovo tour dei britannici The Brand New Heavies, in concerto al Palazzetto dello Sport di Altamura.",
+      "tags": [],
+      "categories": [
+        "cultura",
+        "esperienze"
+      ],
+      "dated": true
+    },
+    {
       "id": "ricorrenza-festa-di-san-giuseppe-con-i-tradizionali-falo",
       "title": "Festa di San Giuseppe con i tradizionali falò",
       "url": "https://www.vitobarone.it/altamura/eventi.htm",
@@ -450,6 +469,24 @@
         "esperienze"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-michael-jackson-anthology",
+      "title": "Michael Jackson Anthology",
+      "url": "https://iltaccodibacco.it/puglia/eventi/334229.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-05-30",
+      "endDate": "2027-05-30",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "Michael Jackson Anthology -The Italian Tribute è uno spettacolo dal vivo immersivo che celebra la musica, la danza e l&apos;energia del Re del Pop.",
+      "tags": [],
+      "categories": [
+        "eventi"
+      ],
       "dated": true
     },
     {
