@@ -1,17 +1,6 @@
 {
-  "generatedAt": "2026-11-21T17:31:46.715Z",
+  "generatedAt": "2026-11-23T02:43:55.621Z",
   "alerts": [
-    {
-      "id": "manuale-fermate-soppresse-domenica-22-novembre-35712a80",
-      "severity": "warning",
-      "lineId": "ospedale-domenica-e-festivi",
-      "lineName": "Ospedale - Domenica e Festivi",
-      "title": "Fermate soppresse domenica 22 novembre",
-      "body": "Il 22.11.2026 dalle 11:30 alle 17:00 saranno soppresse le fermate da via IV Novembre (ang. via II Giugno) a via Bari 150 sulla Linea Ospedale Domenica e Festivi.",
-      "createdAt": "2026-11-16T12:32:55.312Z",
-      "validUntil": "2026-11-22",
-      "source": "manuale"
-    },
     {
       "id": "orari-linea-scuola-1-2026-11-19",
       "severity": "warning",
