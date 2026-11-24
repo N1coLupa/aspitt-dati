@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T05:59:53.591Z",
+  "generatedAt": "2026-11-24T14:53:16.874Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
