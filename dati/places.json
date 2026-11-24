@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T02:43:55.614Z",
+  "generatedAt": "2026-11-24T02:55:08.640Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -1805,7 +1805,7 @@
           "lines": [
             "linea-la-martella"
           ],
-          "distance": 143
+          "distance": 144
         },
         {
           "stopId": "stop-viale-martiri-1",
@@ -1851,7 +1851,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 232
+          "distance": 233
         },
         {
           "stopId": "stop-via-gravina-7",
