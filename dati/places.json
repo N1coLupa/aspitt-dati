@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T02:55:08.640Z",
+  "generatedAt": "2026-11-24T05:59:53.591Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -343,7 +343,7 @@
             "linea-jesce",
             "linea-la-martella"
           ],
-          "distance": 164
+          "distance": 163
         },
         {
           "stopId": "stop-via-treviso-27",
@@ -1840,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2388,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 223
+          "distance": 222
         },
         {
           "stopId": "stop-via-dei-mille-40",
