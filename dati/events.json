@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:52:36.484Z",
+  "generatedAt": "2026-11-25T00:43:38.791Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -49,36 +49,6 @@
       ],
       "categories": [
         "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-733953",
-      "title": "Settimana Scarpette Rosse 2026: \"Chi c'è dietro lo schermo\"",
-      "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-open-day-non-sei-sola-733953",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-11-13T09:54:28.000Z",
-      "startDate": "2026-11-24",
-      "endDate": "2026-11-24",
-      "startTime": "18:30",
-      "venue": null,
-      "summary": "In occasione della Giornata internazionale per l'eliminazione della violenza contro le donne 2026, è stato già avviato il programma della \"Sett...",
-      "tags": [
-        "Eventi sociali"
-      ],
-      "categories": [
-        "eventi"
-      ],
-      "alsoOn": [
-        {
-          "source": "Comune di Altamura",
-          "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-per-non-avere-paura-733942-733943-733945-733951"
-        },
-        {
-          "source": "Comune di Altamura",
-          "url": "https://www.comune.altamura.ba.it/it/events/settimana-scarpette-rosse-2026-open-day-non-sei-sola-733950"
-        }
       ],
       "dated": true
     },
