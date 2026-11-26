@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T14:20:38.863Z",
+  "generatedAt": "2026-11-26T00:20:04.281Z",
   "sources": [
     {
       "name": "Comune di Altamura",
@@ -46,26 +46,6 @@
         "artista",
         "comune di altamura",
         "Giuseppe Giorgi"
-      ],
-      "categories": [
-        "cultura"
-      ],
-      "dated": true
-    },
-    {
-      "id": "comune-735498",
-      "title": "Giornata del 25 novembre: proiezione film \"Se domani non torno\"",
-      "url": "https://www.comune.altamura.ba.it/it/events/giornata-del-25-novembre-proiezione-film-se-domani-non-torno",
-      "source": "Comune di Altamura",
-      "sourceUrl": "https://www.comune.altamura.ba.it/it/eventi",
-      "publishedAt": "2026-11-25T11:08:49.000Z",
-      "startDate": "2026-11-25",
-      "endDate": "2026-11-25",
-      "startTime": "19:15",
-      "venue": null,
-      "summary": "Per la Settimana delle scarpette rosse, proiezioni (ore 19.15 e ore 20.30) del film \"Se domani non torno\", dedicato alla storia di Giulia Cecchettin, ...",
-      "tags": [
-        "Cinema"
       ],
       "categories": [
         "cultura"
@@ -291,6 +271,24 @@
         "eventi"
       ],
       "annual": true,
+      "dated": true
+    },
+    {
+      "id": "tacco-karima-con-la-sinedriorchestra",
+      "title": "Karima con la SinedriOrchestra",
+      "url": "https://iltaccodibacco.it/puglia/eventi/337188.html",
+      "source": "Il Tacco di Bacco",
+      "sourceUrl": "https://iltaccodibacco.it/altamura/",
+      "publishedAt": null,
+      "startDate": "2027-01-15",
+      "endDate": "2027-01-15",
+      "startTime": null,
+      "venue": "Teatro Mercadante",
+      "summary": "La rassegna Around Jazz si apre con un concerto speciale di Karima con la SinedriOrchestra, in programma al Teatro Mercadante di Altamura.",
+      "tags": [],
+      "categories": [
+        "cultura"
+      ],
       "dated": true
     },
     {
