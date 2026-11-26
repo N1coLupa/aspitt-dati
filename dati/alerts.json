@@ -1,14 +1,4 @@
 {
-  "generatedAt": "2026-11-23T14:40:32.347Z",
-  "alerts": [
-    {
-      "id": "orari-linea-scuola-1-2026-11-19",
-      "severity": "warning",
-      "lineId": "linea-scuola-1",
-      "title": "Orari aggiornati: Linea Scuola 1",
-      "body": "L’operatore ha pubblicato un nuovo quadro orario. Controlla le partenze prima di metterti in strada.",
-      "url": "https://marinobusurbano.it/wp-content/uploads/2026/11/MarinoBus_Urbano_Orari_Scuola-1-19-11-2026.pdf",
-      "createdAt": "2026-11-19T13:03:44.960Z"
-    }
-  ]
+  "generatedAt": "2026-11-26T13:55:39.174Z",
+  "alerts": []
 }
