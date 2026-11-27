@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T23:01:35.079Z",
+  "generatedAt": "2026-11-27T04:13:56.020Z",
   "sources": [
     {
       "name": "OpenStreetMap",
@@ -808,14 +808,6 @@
       "lon": 16.5556,
       "nearbyStops": [
         {
-          "stopId": "stop-via-martiri",
-          "name": "Via Martiri",
-          "lines": [
-            "linea-la-martella"
-          ],
-          "distance": 280
-        },
-        {
           "stopId": "stop-viale-martiri-6",
           "name": "Viale Martiri, 6",
           "lines": [
@@ -823,6 +815,14 @@
             "linea-scuola-3"
           ],
           "distance": 280
+        },
+        {
+          "stopId": "stop-via-martiri",
+          "name": "Via Martiri",
+          "lines": [
+            "linea-la-martella"
+          ],
+          "distance": 281
         },
         {
           "stopId": "stop-via-santeramo-119",
@@ -1498,15 +1498,15 @@
     {
       "id": "complesso-ipogeo-di-san-michele-delle-grotte",
       "name": "Ipogeo di San Michele delle Grotte",
-      "lat": 40.8317322,
-      "lon": 16.5499294,
+      "lat": 40.8329482,
+      "lon": 16.5510709,
       "categories": [
         "cultura"
       ],
       "icon": "archaeology",
-      "osm": "node/4126595981",
+      "osm": "way/1547047721",
       "address": null,
-      "website": null,
+      "website": "https://www.abmcaltamura.it/ipogeo/",
       "phone": null,
       "openingHours": null,
       "wikidata": null,
@@ -1519,6 +1519,14 @@
       "tips": "L'apertura non è continua: conviene informarsi o approfittare delle visite guidate.",
       "nearbyStops": [
         {
+          "stopId": "stop-via-iv-novembre-fronte-74",
+          "name": "Via IV Novembre (fronte 74)",
+          "lines": [
+            "ospedale-2"
+          ],
+          "distance": 336
+        },
+        {
           "stopId": "stop-via-parisi-66",
           "name": "Via Parisi 66",
           "lines": [
@@ -1527,7 +1535,7 @@
             "linea-ovest",
             "pescariello-z-i"
           ],
-          "distance": 201
+          "distance": 361
         },
         {
           "stopId": "stop-via-parisi-fronte-66",
@@ -1537,16 +1545,7 @@
             "pescariello-z-i",
             "linea-jesce"
           ],
-          "distance": 209
-        },
-        {
-          "stopId": "stop-via-gravina-12",
-          "name": "Via Gravina 12",
-          "lines": [
-            "ospedale-1",
-            "linea-la-martella"
-          ],
-          "distance": 349
+          "distance": 369
         }
       ]
     },
@@ -1841,7 +1840,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
@@ -2389,7 +2388,7 @@
             "pescariello-z-i",
             "linea-la-martella"
           ],
-          "distance": 222
+          "distance": 223
         },
         {
           "stopId": "stop-via-dei-mille-40",
