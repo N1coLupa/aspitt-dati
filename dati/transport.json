@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T22:41:36.643Z",
+  "generatedAt": "2026-11-28T03:53:15.962Z",
   "source": "https://marinobusurbano.it/",
   "retrieval": {
     "mode": "rete",
@@ -173,8 +173,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 17,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": false,
           "position": "exact"
         },
@@ -254,8 +254,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 26,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -20467,8 +20467,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 20,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -24927,8 +24927,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 10,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": false,
           "position": "exact"
         },
@@ -24936,7 +24936,7 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 11,
           "name": "Via Dei Mille 40",
-          "lat": 40.827923,
+          "lat": 40.827922,
           "lon": 16.548731,
           "interpolated": true,
           "position": "exact"
@@ -28969,8 +28969,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 26,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": true,
           "position": "exact"
         },
@@ -31706,8 +31706,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 11,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": false,
           "position": "exact"
         },
@@ -41354,8 +41354,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 8,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -41525,8 +41525,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 27,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": true,
           "position": "exact"
         },
@@ -41534,7 +41534,7 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 28,
           "name": "Via Dei Mille 40",
-          "lat": 40.827923,
+          "lat": 40.827922,
           "lon": 16.548731,
           "interpolated": true,
           "position": "exact"
@@ -46362,8 +46362,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 4,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": false,
           "position": "exact"
         },
@@ -46371,8 +46371,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 5,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": false,
           "position": "exact"
         },
@@ -46380,7 +46380,7 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 6,
           "name": "Via Dei Mille 40",
-          "lat": 40.827923,
+          "lat": 40.827922,
           "lon": 16.548731,
           "interpolated": false,
           "position": "exact"
@@ -46398,8 +46398,8 @@
           "stopId": "stop-via-putignano-25-2",
           "index": 8,
           "name": "Via Putignano 25",
-          "lat": 40.816597,
-          "lon": 16.550977,
+          "lat": 40.816573,
+          "lon": 16.55097,
           "interpolated": false,
           "position": "exact"
         },
@@ -46407,8 +46407,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 9,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": false,
           "position": "exact"
         },
@@ -46425,8 +46425,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato-2",
           "index": 11,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.818401,
-          "lon": 16.563729,
+          "lat": 40.818396,
+          "lon": 16.563734,
           "interpolated": false,
           "position": "exact"
         },
@@ -46443,8 +46443,8 @@
           "stopId": "stop-cornacchia-falegnameria",
           "index": 13,
           "name": "CORNACCHIA (Falegnameria)",
-          "lat": 40.741854,
-          "lon": 16.666823,
+          "lat": 40.741862,
+          "lon": 16.666809,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46470,8 +46470,8 @@
           "stopId": "stop-mec-line-laminboard",
           "index": 16,
           "name": "MEC LINE - LAMINBOARD",
-          "lat": 40.738648,
-          "lon": 16.672999,
+          "lat": 40.738663,
+          "lon": 16.672971,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46533,8 +46533,8 @@
           "stopId": "stop-loken-sanflex",
           "index": 23,
           "name": "LOKEN - SANFLEX",
-          "lat": 40.738088,
-          "lon": 16.674199,
+          "lat": 40.738081,
+          "lon": 16.674212,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46560,8 +46560,8 @@
           "stopId": "stop-cornacchia-falegnameria",
           "index": 26,
           "name": "CORNACCHIA (Falegnameria)",
-          "lat": 40.741854,
-          "lon": 16.666823,
+          "lat": 40.741862,
+          "lon": 16.666809,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46587,8 +46587,8 @@
           "stopId": "stop-mec-line-laminboard",
           "index": 29,
           "name": "MEC LINE - LAMINBOARD",
-          "lat": 40.738648,
-          "lon": 16.672999,
+          "lat": 40.738663,
+          "lon": 16.672971,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46650,8 +46650,8 @@
           "stopId": "stop-loken-sanflex",
           "index": 36,
           "name": "LOKEN - SANFLEX",
-          "lat": 40.738088,
-          "lon": 16.674199,
+          "lat": 40.738081,
+          "lon": 16.674212,
           "interpolated": false,
           "position": "estimated"
         },
@@ -46695,8 +46695,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 41,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": false,
           "position": "exact"
         },
@@ -46704,8 +46704,8 @@
           "stopId": "stop-via-parisi-fronte-66",
           "index": 42,
           "name": "Via Parisi (fronte 66)",
-          "lat": 40.830668,
-          "lon": 16.547883,
+          "lat": 40.83067,
+          "lon": 16.547882,
           "interpolated": false,
           "position": "exact"
         },
@@ -46713,7 +46713,7 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 43,
           "name": "Via Dei Mille 40",
-          "lat": 40.827923,
+          "lat": 40.827922,
           "lon": 16.548731,
           "interpolated": false,
           "position": "exact"
@@ -46731,8 +46731,8 @@
           "stopId": "stop-via-putignano-25-2",
           "index": 45,
           "name": "Via Putignano 25",
-          "lat": 40.816597,
-          "lon": 16.550977,
+          "lat": 40.816573,
+          "lon": 16.55097,
           "interpolated": false,
           "position": "exact"
         },
@@ -46740,8 +46740,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 46,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": false,
           "position": "exact"
         },
@@ -46758,8 +46758,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato-2",
           "index": 48,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.818401,
-          "lon": 16.563729,
+          "lat": 40.818396,
+          "lon": 16.563734,
           "interpolated": false,
           "position": "exact"
         }
@@ -50118,9 +50118,17 @@
           [
             40.81659,
             16.55101
+          ],
+          [
+            40.81657,
+            16.55101
           ]
         ],
         "8-9": [
+          [
+            40.81657,
+            16.55101
+          ],
           [
             40.81659,
             16.55101
@@ -50191,13 +50199,13 @@
           ],
           [
             40.81861,
-            16.55638
+            16.55639
           ]
         ],
         "9-10": [
           [
             40.81861,
-            16.55638
+            16.55639
           ],
           [
             40.81861,
@@ -51158,14 +51166,14 @@
             16.66624
           ],
           [
-            40.74188,
-            16.66685
+            40.74189,
+            16.66683
           ]
         ],
         "13-14": [
           [
-            40.74188,
-            16.66685
+            40.74189,
+            16.66683
           ],
           [
             40.74112,
@@ -51228,14 +51236,14 @@
             16.67207
           ],
           [
-            40.73867,
-            16.67302
+            40.73868,
+            16.67299
           ]
         ],
         "16-18": [
           [
-            40.73867,
-            16.67302
+            40.73868,
+            16.67299
           ],
           [
             40.73838,
@@ -51688,14 +51696,14 @@
             16.6746
           ],
           [
-            40.73806,
-            16.67417
+            40.73805,
+            16.67419
           ]
         ],
         "23-24": [
           [
-            40.73806,
-            16.67417
+            40.73805,
+            16.67419
           ],
           [
             40.73838,
@@ -51727,6 +51735,10 @@
           ]
         ],
         "8-12": [
+          [
+            40.81657,
+            16.55101
+          ],
           [
             40.81659,
             16.55101
@@ -55506,9 +55518,17 @@
           [
             40.81659,
             16.55101
+          ],
+          [
+            40.81657,
+            16.55101
           ]
         ],
         "45-46": [
+          [
+            40.81657,
+            16.55101
+          ],
           [
             40.81659,
             16.55101
@@ -55579,13 +55599,13 @@
           ],
           [
             40.81861,
-            16.55638
+            16.55639
           ]
         ],
         "46-47": [
           [
             40.81861,
-            16.55638
+            16.55639
           ],
           [
             40.81861,
@@ -55684,14 +55704,14 @@
             16.66624
           ],
           [
-            40.74188,
-            16.66685
+            40.74189,
+            16.66683
           ]
         ],
         "26-27": [
           [
-            40.74188,
-            16.66685
+            40.74189,
+            16.66683
           ],
           [
             40.74112,
@@ -55754,14 +55774,14 @@
             16.67207
           ],
           [
-            40.73867,
-            16.67302
+            40.73868,
+            16.67299
           ]
         ],
         "29-31": [
           [
-            40.73867,
-            16.67302
+            40.73868,
+            16.67299
           ],
           [
             40.73838,
@@ -56214,14 +56234,14 @@
             16.6746
           ],
           [
-            40.73806,
-            16.67417
+            40.73805,
+            16.67419
           ]
         ],
         "36-37": [
           [
-            40.73806,
-            16.67417
+            40.73805,
+            16.67419
           ],
           [
             40.73838,
@@ -57253,7 +57273,7 @@
           "stopId": "stop-via-dei-mille-40",
           "index": 3,
           "name": "Via Dei Mille 40",
-          "lat": 40.827923,
+          "lat": 40.827922,
           "lon": 16.548731,
           "interpolated": false,
           "position": "exact"
@@ -57272,7 +57292,7 @@
           "index": 5,
           "name": "Via Martiri",
           "lat": 40.824081,
-          "lon": 16.553918,
+          "lon": 16.553917,
           "interpolated": false,
           "position": "estimated"
         },
@@ -57343,8 +57363,8 @@
           "stopId": "stop-via-treviso-50",
           "index": 13,
           "name": "Via Treviso 50",
-          "lat": 40.818576,
-          "lon": 16.556374,
+          "lat": 40.818575,
+          "lon": 16.556388,
           "interpolated": false,
           "position": "exact"
         },
@@ -57361,8 +57381,8 @@
           "stopId": "stop-via-carpentino-ang-via-s-fortunato-2",
           "index": 15,
           "name": "Via Carpentino ang. Via S. Fortunato",
-          "lat": 40.818401,
-          "lon": 16.563729,
+          "lat": 40.818396,
+          "lon": 16.563734,
           "interpolated": false,
           "position": "exact"
         },
@@ -57406,8 +57426,8 @@
           "stopId": "stop-via-dei-mille-fronte-40",
           "index": 20,
           "name": "Via Dei Mille fronte 40",
-          "lat": 40.828011,
-          "lon": 16.548802,
+          "lat": 40.828021,
+          "lon": 16.5488,
           "interpolated": false,
           "position": "exact"
         },
@@ -61345,13 +61365,13 @@
           ],
           [
             40.81861,
-            16.55638
+            16.55639
           ]
         ],
         "13-14": [
           [
             40.81861,
-            16.55638
+            16.55639
           ],
           [
             40.81861,
@@ -61999,8 +62019,8 @@
           "stopId": "stop-altamura-deposito-via-carpentino",
           "index": 1,
           "name": "ALTAMURA | Deposito Via Carpentino",
-          "lat": 40.818876,
-          "lon": 16.564212,
+          "lat": 40.818894,
+          "lon": 16.56419,
           "interpolated": false,
           "position": "estimated"
         },
@@ -62008,8 +62028,8 @@
           "stopId": "stop-altamura-via-centonze-antonia",
           "index": 2,
           "name": "ALTAMURA | Via Centonze Antonia",
-          "lat": 40.820225,
-          "lon": 16.542175,
+          "lat": 40.820231,
+          "lon": 16.542158,
           "interpolated": false,
           "position": "estimated"
         },
@@ -62197,8 +62217,8 @@
           "stopId": "stop-altamura-via-centonze-antonia-2",
           "index": 23,
           "name": "Altamura - Via Centonze Antonia",
-          "lat": 40.819652,
-          "lon": 16.543741,
+          "lat": 40.819646,
+          "lon": 16.543758,
           "interpolated": false,
           "position": "estimated"
         },
@@ -62206,8 +62226,8 @@
           "stopId": "stop-altamura-deposito-via-carpentino",
           "index": 24,
           "name": "ALTAMURA | Deposito Via Carpentino",
-          "lat": 40.818876,
-          "lon": 16.564212,
+          "lat": 40.818894,
+          "lon": 16.56419,
           "interpolated": false,
           "position": "estimated"
         }
@@ -62932,8 +62952,8 @@
       "hops": {
         "1-2": [
           [
-            40.81886,
-            16.56419
+            40.81888,
+            16.56416
           ],
           [
             40.81855,
@@ -63213,13 +63233,13 @@
           ],
           [
             40.8202,
-            16.54216
+            16.54214
           ]
         ],
         "2-3": [
           [
             40.8202,
-            16.54216
+            16.54214
           ],
           [
             40.81953,
@@ -73653,13 +73673,13 @@
           ],
           [
             40.81968,
-            16.54376
+            16.54378
           ]
         ],
         "23-24": [
           [
             40.81968,
-            16.54376
+            16.54378
           ],
           [
             40.81953,
@@ -74038,8 +74058,8 @@
             16.56411
           ],
           [
-            40.81886,
-            16.56419
+            40.81888,
+            16.56416
           ]
         ]
       },
@@ -74075,8 +74095,8 @@
     {
       "id": "stop-altamura-via-centonze-antonia-2",
       "name": "Altamura - Via Centonze Antonia",
-      "lat": 40.819652,
-      "lon": 16.543741,
+      "lat": 40.819646,
+      "lon": 16.543758,
       "lines": [
         "linea-melfi"
       ],
@@ -74085,8 +74105,8 @@
     {
       "id": "stop-altamura-deposito-via-carpentino",
       "name": "ALTAMURA | Deposito Via Carpentino",
-      "lat": 40.818876,
-      "lon": 16.564212,
+      "lat": 40.818894,
+      "lon": 16.56419,
       "lines": [
         "linea-melfi"
       ],
@@ -74095,8 +74115,8 @@
     {
       "id": "stop-altamura-via-centonze-antonia",
       "name": "ALTAMURA | Via Centonze Antonia",
-      "lat": 40.820225,
-      "lon": 16.542175,
+      "lat": 40.820231,
+      "lon": 16.542158,
       "lines": [
         "linea-melfi"
       ],
@@ -74156,8 +74176,8 @@
     {
       "id": "stop-cornacchia-falegnameria",
       "name": "CORNACCHIA (Falegnameria)",
-      "lat": 40.741854,
-      "lon": 16.666823,
+      "lat": 40.741862,
+      "lon": 16.666809,
       "lines": [
         "linea-jesce"
       ],
@@ -74348,8 +74368,8 @@
     {
       "id": "stop-loken-sanflex",
       "name": "LOKEN - SANFLEX",
-      "lat": 40.738088,
-      "lon": 16.674199,
+      "lat": 40.738081,
+      "lon": 16.674212,
       "lines": [
         "linea-jesce"
       ],
@@ -74358,8 +74378,8 @@
     {
       "id": "stop-mec-line-laminboard",
       "name": "MEC LINE - LAMINBOARD",
-      "lat": 40.738648,
-      "lon": 16.672999,
+      "lat": 40.738663,
+      "lon": 16.672971,
       "lines": [
         "linea-jesce"
       ],
@@ -74784,8 +74804,8 @@
     {
       "id": "stop-via-carpentino-ang-via-s-fortunato-2",
       "name": "Via Carpentino ang. Via S. Fortunato",
-      "lat": 40.818401,
-      "lon": 16.563729,
+      "lat": 40.818396,
+      "lon": 16.563734,
       "lines": [
         "linea-jesce",
         "linea-la-martella"
@@ -74891,7 +74911,7 @@
     {
       "id": "stop-via-dei-mille-40",
       "name": "Via Dei Mille 40",
-      "lat": 40.827923,
+      "lat": 40.827922,
       "lon": 16.548731,
       "lines": [
         "navette-hub",
@@ -74904,8 +74924,8 @@
     {
       "id": "stop-via-dei-mille-fronte-40",
       "name": "Via Dei Mille fronte 40",
-      "lat": 40.828011,
-      "lon": 16.548802,
+      "lat": 40.828021,
+      "lon": 16.5488,
       "lines": [
         "ospedale-1",
         "linea-ovest",
@@ -75247,7 +75267,7 @@
       "id": "stop-via-martiri",
       "name": "Via Martiri",
       "lat": 40.824081,
-      "lon": 16.553918,
+      "lon": 16.553917,
       "lines": [
         "linea-la-martella"
       ],
@@ -75421,8 +75441,8 @@
     {
       "id": "stop-via-parisi-fronte-66",
       "name": "Via Parisi (fronte 66)",
-      "lat": 40.830668,
-      "lon": 16.547883,
+      "lat": 40.83067,
+      "lon": 16.547882,
       "lines": [
         "navette-hub",
         "pescariello-z-i",
@@ -75470,8 +75490,8 @@
     {
       "id": "stop-via-putignano-25-2",
       "name": "Via Putignano 25",
-      "lat": 40.816597,
-      "lon": 16.550977,
+      "lat": 40.816573,
+      "lon": 16.55097,
       "lines": [
         "linea-jesce"
       ],
@@ -75606,8 +75626,8 @@
     {
       "id": "stop-via-treviso-50",
       "name": "Via Treviso 50",
-      "lat": 40.818576,
-      "lon": 16.556374,
+      "lat": 40.818575,
+      "lon": 16.556388,
       "lines": [
         "ospedale-1",
         "linea-scuola-1",
